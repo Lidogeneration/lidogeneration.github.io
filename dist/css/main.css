@@ -396,7 +396,7 @@ nav {
 /* --- FORMS START --- */
 /* --- SLIDER START --- */
 .slick-dots li button:before {
-  font-size: 28px; }
+  font-size: 22px; }
 
 .slick-next:before, .slick-prev:before {
   color: #2ecc71;
