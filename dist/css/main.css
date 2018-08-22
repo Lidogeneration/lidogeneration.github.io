@@ -174,7 +174,7 @@ nav {
     top: 0;
     left: 0;
     background-color: #000;
-    opacity: 0.8; }
+    opacity: 0.6; }
   .connt .head-cont-left {
     border-left: 3px solid #2ecc71;
     padding: 10px;
@@ -258,16 +258,12 @@ nav {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     width: 40%; }
-  .advantages img {
-    width: 300px;
-    margin-bottom: 5px; }
   .advantages p {
     background: rgba(255, 255, 255, 0.5);
     padding: 20px;
     -webkit-box-shadow: 0 0 0 1px silver, 0 -20px 0 -10px coral, 20px 0 0 -10px darkturquoise, 0 20px 0 -10px gold, -20px 0 0 -10px chartreuse;
             box-shadow: 0 0 0 1px silver, 0 -20px 0 -10px coral, 20px 0 0 -10px darkturquoise, 0 20px 0 -10px gold, -20px 0 0 -10px chartreuse; }
   .advantages .video-tmp {
-    border: 2px solid black;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -279,14 +275,19 @@ nav {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 5px; }
+    .advantages .video-tmp img {
+      -webkit-border-radius: 5px;
+              border-radius: 5px; }
 
 .reviews {
   padding: 30px;
   background: #ccc;
   min-height: 470px; }
   .reviews .reviews-wrap .reviews-cont {
-    padding: 30px; }
+    padding: 30px;
+    min-height: 379px; }
     .reviews .reviews-wrap .reviews-cont img {
       display: inline;
       -webkit-border-radius: 50%;
