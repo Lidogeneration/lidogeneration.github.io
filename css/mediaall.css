@@ -1,0 +1,67 @@
+@media only screen and (max-width : 992px) {
+body
+{
+
+}
+.how-main
+{
+	display: none;
+}
+.connt
+{
+	padding-top: 5px;
+}
+.mainVideo, .mainVideo-how
+{
+ display: none;
+}
+
+}
+@media only screen and (max-width : 960px)
+{
+
+}
+@media only screen and (max-width : 780px)
+{
+.about h2{
+	font-size: 1.8rem;
+}
+	.consult
+	{
+		display: none;
+	}
+.delivery
+{
+	padding-top: 50px;
+}
+}
+@media only screen and (max-width : 576px)
+{
+	.buttom-main
+	{
+		display: block;
+	}
+	.navbar-brand p{
+		font-size: 14px;
+	}
+.about .about-left .about-left-text p
+	{
+		text-align: center;
+		padding-left: 0;
+	}
+.button-header
+{
+	display: block;
+}
+.about .about-right-text .font-about {
+    font-size: 26px;
+}
+	.navbar-brand
+	{
+		display: none;
+	}
+}
+@media only screen and (max-width : 440px)
+{
+
+}
