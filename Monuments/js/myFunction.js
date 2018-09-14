@@ -1,11 +1,11 @@
 var check = false;
 
-$('.nav-item-fb, .btn-theme-sm-1, .delivery-fb').magnificPopup();
-
-$(document).ready(function() {
+$(function() { 
+    $('.nav-item-fb, .btn-theme-sm-1, .delivery-fb').magnificPopup();
+    FormCheck();
     CheckResize();
     CheckScroll();
-    FormCheck();
+    OnClick();
 });
 
 $(window).resize(function() {
@@ -15,6 +15,17 @@ $(window).resize(function() {
 $(window).scroll(function() {
     CheckScroll();
 });
+
+function CheckScroll() {
+    if($(window).width() >= 1098){
+        scroll_top_header();
+        scroll_top_navbar();
+    }
+    else {
+       scroll_top_header();
+       scroll_top_navbar();
+    }
+};
 
 function CheckResize() {
     if($(window).width() < 991) {
@@ -32,17 +43,6 @@ function CheckResize() {
     }
 };
 
-function CheckScroll() {
-    if($(window).width() >= 1098){
-        scroll_top_header();
-        scroll_top_navbar();
-    }
-    else {
-       scroll_top_header();
-       scroll_top_navbar();
-    }
-};
-
 function FormCheck() {
     $('#phoneid').inputmask('+38(999) 999-99-99',{ "oncomplete": function() { 
         $('#buttonform').prop("disabled", false);
@@ -53,8 +53,8 @@ function FormCheck() {
     } });
 };
 
-$(document).ready(function() {  
-    $('#menu').on("click","a", function (event) {
+function OnClick() {
+        $('#menu').on("click","a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
@@ -63,21 +63,7 @@ $(document).ready(function() {
             $('#gamburgerId').click();
         }
     });
-});
-
-$('#gamburgerId').on('click', function (e) {
-     var scroll = $(window).scrollTop();
-    if(!check){
-        $('.navbar').removeClass('tr0').addClass('tr1'); 
-        head_and_nav_add_sctolDown();
-        check = true;
-    }
-    else {
-        $('.navbar').removeClass('tr1').addClass('tr0');
-        head_and_nav_remove_sctolDown();
-        check = false;
-    }
-});
+};
 
 function scroll_top_header() {
     if(!check) {
@@ -103,16 +89,28 @@ function scroll_top_navbar() {
      }
 };
 
+$('#gamburgerId').on('click', function (e) {
+     var scroll = $(window).scrollTop();
+    if(!check){
+        $('.navbar').removeClass('tr0').addClass('tr1'); 
+        head_and_nav_add_sctolDown();
+        check = true;
+    }
+    else {
+        $('.navbar').removeClass('tr1').addClass('tr0');
+        head_and_nav_remove_sctolDown();
+        check = false;
+    }
+});
+
 function head_and_nav_add_sctolDown() {
      $('.navbar').addClass('scrolDown');
      $('.header').addClass('scrolDown');
-}
+};
 
 function head_and_nav_remove_sctolDown() {
     if($(window).scrollTop() <= 30) {
         $('.navbar').removeClass('scrolDown');
         $('.header').removeClass('scrolDown');
     }
-}
-
-
+};
