@@ -100,6 +100,9 @@ p {
     z-index: 10;
     stroke: #fff; }
 
+.ham-disabled {
+  display: none; }
+
 /* line 86, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .tr0 {
   transition: .1s;
