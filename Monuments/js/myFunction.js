@@ -1,16 +1,64 @@
 var check = false;
 
+$(document).ready(function(){  
+    $('#menu').on("click","a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+        
+        if(check) {
+            $('#gamburgerId').click();
+        }
+    });
+});
+
+$(document).ready(function(){
+    $(window).scroll();
+});
+
+$(document).ready(function(){
+    $(window).resize();
+});
+
+$(window).resize(function() {
+    if($(window).width() <= 991) {
+        $('.ham').removeClass('collapse').addClass('show');
+        $('.navbar-nav').removeClass('float-right');
+        $('.navbar').addClass('tr0');
+    }
+    else {
+        $('.ham').removeClass('show').addClass('collapse'); 
+        $('.navbar-nav').addClass('float-right');
+        $('.navbar').removeClass('tr0');
+    }
+    if(check) {
+        $('#gamburgerId').click();
+    }
+});
+
+$(document).ready(function(){
+    FormCheck();
+});
+
+function FormCheck() {
+    $('#phoneid').inputmask('+38(999) 999-99-99',{ "oncomplete": function(){ 
+        $('#buttonform').prop("disabled", false);
+        $('#buttonform').removeClass('btn-disabled').addClass('btn-enabled');
+    }, "onincomplete": function(){ 
+        $('#buttonform').prop("disabled", true);
+        $('#buttonform').removeClass('btn-enabled').addClass('btn-disabled');
+    } });
+};
+
 function scroll_top_header() {
     if(!check) {
         if($(window).scrollTop() > 30) {
             $('.header').addClass('scrolDown');
-            $('.header').addClass('border-btm-transparent').removeClass('border-btm');
+            $('.header').removeClass('border-btm').addClass('border-btm-transparent');
         }
         else {
-            $('.header').addClass('border-btm').removeClass('border-btm-transparent');
-            if($(window).width() <= 449){
-                $('.header').addClass('border-btm-transparent').removeClass('border-btm');
-            }
+            $('.header').removeClass('border-btm-transparent').addClass('border-btm');
             $('.header').removeClass('scrolDown');
         }
     }
@@ -54,37 +102,9 @@ $(function() {
 
 
 
-function FormCheck() {
-    $('#phoneid').inputmask('+38(999) 999-99-99',{ "oncomplete": function(){ 
-        $('#buttonform').prop("disabled", false);
-        $('#buttonform').removeClass('btn-disabled').addClass('btn-enabled');
-    }, "onincomplete": function(){ 
-        $('#buttonform').prop("disabled", true);
-        $('#buttonform').removeClass('btn-enabled').addClass('btn-disabled');
-    } });
-};
 
-$(window).resize(function() {
-    if($(window).width() <= 991) {
-        $('.ham').removeClass('collapse').addClass('show');
-        $('.navbar-nav').removeClass('float-right');
-        $('.navbar').addClass('tr0');
-       
-    }else{
-        $('.ham').removeClass('show').addClass('collapse'); 
-         $('.navbar-nav').addClass('float-right');
-         $('.navbar').removeClass('tr0');
-    }
-    if($(window).width() <= 449){
-        $('#headerId').addClass('border-btm-transparent');
-    }
-    else{
-        $('#headerId').removeClass('border-btm-transparent');
-    }
-    if(check) {
-        $('#gamburgerId').click();
-    }
-});
+
+
 
 $('#gamburgerId').on('click', function (e) {
      var scroll = $(window).scrollTop();
@@ -96,35 +116,10 @@ $('#gamburgerId').on('click', function (e) {
     else {
         $('.navbar').removeClass('tr1').addClass('tr0');
         head_and_nav_remove_sctolDown();
-        if($(window).scrollTop() < 30){
-        }
         check = false;
     }
 })
 
-$(document).ready(function(){  
-    $('#menu').on("click","a", function (event) {
-        event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
-        
-        if(check) {
-            $('#gamburgerId').click();
-        }
-    });
-});
 
-$(document).ready(function(){
-    $(window).scroll();
-});
-
-$(document).ready(function(){
-    $(window).resize();
-});
-
-$(document).ready(function(){
-    FormCheck();
-});
 
 $('.nav-item-fb, .btn-theme-sm-1, .delivery-fb').magnificPopup();
