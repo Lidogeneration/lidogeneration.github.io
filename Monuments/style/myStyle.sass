@@ -13,16 +13,6 @@ p
     height: 60px
     z-index: 2
     background-color: rgba(59, 57, 45, 0.8)
-    .label-zp
-        position: absolute
-        top: 14px
-        left: 250px
-        right: 0
-        width: 120px
-        p
-            color: #fff
-            text-shadow: 1px 1px 1px #D5D5D5
-            font-size: 20px
     .logo
         height: 100%
         z-index: -1
@@ -58,7 +48,7 @@ p
     z-index: 2
     border-bottom: 1px solid transparent
         
-.navbar-nav
+.navbar-nav 
     flex-direction: row
     margin-left: auto
     .num-tel
@@ -68,6 +58,24 @@ p
         a
             color: #fff
             text-shadow: 1px 1px 1px #D5D5D5
+    .nav-item-zp
+        position: fixed
+        top: 12px
+        left: 250px
+        right: 0
+        p
+            color: #fff
+            margin: 0
+            padding-top: 3px
+            padding-bottom: 2px
+            color: #fff
+            text-shadow: 1px 1px 1px #D5D5D5
+            font-size: 19px
+            
+//     height: 100%
+            
+//             margin-top: auto
+   //         margin-bottom: auto
                 
 .ham
     right: 0 
@@ -105,6 +113,9 @@ p
     position: relative
     display: flex
     align-items: center
+    background: url("../image/pamyatnik-poster.png")
+    background-repeat: no-repeat
+    background-size: cover
     h1
         text-align: center
         font-size: 35px
@@ -139,14 +150,18 @@ p
         .stock
             padding-left: 24px
             display: inline
-            width: 50%
-            text-align: center
+            width: 100%
             p
-                width: 50%
-                text-align: center
+                text-align: left
             .akcia
-                color: #FF1818
-                text-shadow: 0px 0px 1px #FF1818
+                width: 100%
+                .row
+                    width: 100%
+                    .col-md-6
+                        justify-content: center
+                        p
+                            color: #FF1818
+                            text-shadow: 0px 0px 1px #FF1818
         div
             display: flex
             i
@@ -198,6 +213,7 @@ p
     background: #f0f0f0
     padding-top: 100px
     padding-bottom: 100px
+    margin: auto
     h1
         color: #515769
     .container
@@ -208,6 +224,7 @@ p
     padding-bottom: 50px
     padding-left: 20px
     padding-right: 20px
+    margin: auto
     
 .our_work
     text-align: center
@@ -277,8 +294,13 @@ p
             font-size: 18px
             padding: 10px
             text-shadow: 0px 0px 1px #302391
-        img
-            margin-top: 6px
+        i
+            font-size: 25px
+            padding: 10px
+        .fa-viber
+            color: #7B58EA
+        .fa-telegram
+            color: #269EDA
         
 .footer
     .footer-list-link
@@ -340,6 +362,9 @@ p
             padding-bottom: 50px
     .col
         text-align: center
+        div
+            p
+                padding-top: 10px
             
                 
 
@@ -348,20 +373,17 @@ p
 // advantages
 
             
-.advantages
+.advantages  
     min-height: 100vh
     height: 100%
     .container-fluid
         text-align: center
         margin-top: 30px
         .adv-title
-            position: absolute
-            top: auto
-            right: 40%
+            margin: auto
+            width: 280px
             background: #fff
             transform: skewX(160deg)
-            padding-left: 10px
-            padding-right: 10px
             border: 2px solid #000
             h2
                 color: #000
@@ -407,24 +429,6 @@ p
 .advantages-desc
     overflow: hidden
             
-.work-zp
-    position: fixed
-    margin-top: 60px
-    z-index: 1
-    width: 100%
-    .work-zp-col
-        text-align: center
-        z-index: 3
-        border-bottom: 1px solid #8E8E8E
-        border-right: 1px solid #8E8E8E
-        background-color: rgba(59, 57, 45, 0.8)
-        border-bottom-right-radius: 10px
-    p
-        font-size: 16px
-        color: #fff
-        height: 100%
-        margin-top: 5px
-        margin-bottom: 5px
 
 // end advantages
 

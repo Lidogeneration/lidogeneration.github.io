@@ -36,9 +36,6 @@
                <img class="logo-img logo-img-main show" src="image/logo002.png" width="180" height="50" alt="Asentus Logo">
             </a>
        </div>
-    <div class="label-zp fixed-top">
-           <p>г. Запорожье</p>
-       </div>
         <!-- END LOGO -->
         <!---- NAVBAR ----->
     <nav id="navHeadId" class="navbar" role="navigation">
@@ -48,8 +45,8 @@
                     <div class="navbar-collapse nav-collapse">
                         <div class="menu-container">
                             <ul id="menu" class="navbar-nav navbar-nav-right float-right">
+                                <li class="nav-item-zp"><p>г. Запорожье</p></li>
                                 <li class="num-tel"><a href="tel:+380507510606">(050) 751-06-06</a><a href="tel:+380687510606">(068) 751-06-06</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.html">Главная</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#about-us-id">О нас</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#katalogId">Каталог</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#footerId">Контакты</a></li>
@@ -71,21 +68,10 @@
    <!-- END GAMBURGER -->
    
 </header>
-<section class="work-zp">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="work-zp-col col-lg-4 col-md-6">
-                <p>г. Запорожье</p>
-            </div>
-            <div class="col-lg-4 col-md-4"></div>
-            <div class="col-lg-4 col-md-2"></div>
-        </div>
-    </div>
-</section>
     <!--========== END HEADER ==========-->
-<section class="FirstScroll">
+<section class="FirstScroll"> 
    <div class="container-fluid">
-        <div class="video-cont">
+       <div class="video-cont">
            <video poster="image/pamyatnik-poster.png" id="bgvid" playsinline autoplay muted loop>
                 <source src="video/bg pamyatniki121.mp4" type="video/mp4">
             </video>
@@ -119,7 +105,12 @@
                                     <p data-aos="fade-down-left" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="700">100% гарантии качеста на нашу работу</p>
                                 </div>
                                 <div class="stock">
-                                   <p class="akcia" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="900">Акция!</p>
+                                  <div class="akcia">
+                                    <div class="row">
+                                      <div class="col-md-6 col-sm-6"><p data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="900">Акция!</p></div>
+                                      <div class="col-md-6 col-sm-6"></div>
+                                   </div>
+                                 </div>
                                    <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="1100">Закажи до 30-го сентября и получи установку бесплатно</p>
                                 </div>
                             </div>
@@ -136,13 +127,13 @@
    </div>
 </section>
 <section id="about-us-id" class="about-us parallax-window" data-parallax="scroll" data-image-src="image/kapli-voda-dozhd-poverhnost.jpg">
-    <div class="container-fluid">
+    <div class="container-fluid"> 
         <div class="row">
            <div class="about-us-title-div col-sm-12 col-md-12 col-lg-12 col-12">
                <h2>О нас</h2>
-           </div>
+           </div> 
             <div class="col col-sm-6 col-md-6 col-lg-6">
-                <div>
+                <div class="title-about-us"> 
                     <h1 data-aos="fade-right" data-aos-delay="100">Гранитные</h1>
                     <h1 data-aos="fade-right" data-aos-delay="150">памятники</h1>
                     <h1 data-aos="fade-right" data-aos-delay="200">от мастерской</h1>
@@ -165,22 +156,22 @@
                         <h1 class="carousel-title font-size30">Гранитные памятники</h1>
                   </div>
               </div>
-               <div class="col col-xl-3 col-lg-4 col-md-6">
+               <div class="col col-xl-3 col-lg-6 col-md-6">
                    <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/odinarnue-1.jpg">Памятник 1</a>
                    </div>
                </div>
-               <div class="col col-xl-3 col-lg-4 col-md-6">
+               <div class="col col-xl-3 col-lg-6 col-md-6">
                    <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/odinarnue-2.jpg">Памятник 2</a>
                    </div>
                </div>
-              <div class="col col-xl-3 col-lg-4 col-md-6">
+              <div class="col col-xl-3 col-lg-6 col-md-6">
                    <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/odinarnue-5.jpg">Памятник 3</a>
                     </div>
                </div>
-              <div class="col col-xl-3 col-lg-12 col-md-6">
+              <div class="col col-xl-3 col-lg-6 col-md-6">
                    <div class="our_work mx-auto">
                         <a href="#"><img src="image/products/odinarnue-4.jpg">Памятник 4</a>
                     </div>
@@ -192,22 +183,22 @@
                         <h1 class="carousel-title font-size30">Бетонные памятники</h1>
                   </div>
               </div>
-               <div class="col col-xl-3 col-lg-4 col-md-6">
+               <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/odinarnue-6.jpg">Памятник 5</a>
                    </div>
                </div>
-               <div class="col col-xl-3 col-lg-4 col-md-6">
+               <div class="col col-xl-3 col-lg-64 col-md-6">
                     <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/odinarnue-7.jpg">Памятник 6</a>
                    </div>
                </div>
-               <div class="col col-xl-3 col-lg-4 col-md-6">
+               <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/odinarnue-8.jpg">Памятник 7</a>
                    </div>
                </div>
-               <div class="col col-xl-3 col-lg-12 col-md-6">
+               <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/odinarnue-9.jpg">Памятник 8</a>
                    </div>
@@ -219,22 +210,22 @@
                         <h1 class="carousel-title font-size30">Фотокерамика</h1>
                   </div>
               </div>
-               <div class="col col-xl-3 col-lg-4 col-md-6">
+               <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/1.jpg">1</a>
                    </div>
                </div>
-               <div class="col col-xl-3 col-lg-4 col-md-6">
+               <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/2.jpg">2</a>
                    </div>
                </div>
-               <div class="col col-xl-3 col-lg-4 col-md-6">
+               <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/3.jpg">3</a>
                    </div>
                </div>
-               <div class="col col-xl-3 col-lg-12 col-md-6">
+               <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
                        <a href="#"><img src="image/products/4.jpg">4</a>
                    </div>
@@ -257,31 +248,31 @@
                 <div class="col col-md-2  col-sm-12 col-12">
                    <div>
                     <img src="image/talking.png">
-                    <p>Действие 1</p>
-                    </div>
+                    <p>Действие 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ut.</p>
+                  </div>
                 </div>
                 <div class="col col-md-2 col-sm-12 col-12">
                     <div>
                     <img src="image/list.png">
-                    <p>Действие 2</p>
+                    <p>Действие 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ut.</p>
                     </div>
                 </div>
                 <div class="col col-md-2 col-sm-12 col-12">
                    <div>
                     <img src="image/online-shop.png">
-                    <p>Действие 3</p>
+                    <p>Действие 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ut.</p>
                     </div>
                 </div>
                 <div class="col col-md-2 col-sm-12 col-12">
                     <div>
                     <img src="image/package.png">
-                    <p>Действие 4</p>
+                    <p>Действие 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ut.</p>
                     </div>
                 </div>
                 <div class="col col-md-2 col-sm-12 col-12">
                     <div>
                     <img src="image/delivery.png">
-                    <p>Действие 5</p>
+                    <p>Действие 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ut.</p>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
@@ -343,9 +334,9 @@
                 <div class="col-sm-7 sm-margin-b-50">
                    <h2>Контакты:</h2>
                     <ul class="list_">
-                        <li class="list-item-link"><img data-aos="zoom-out-right" data-aos-offset="10" data-aos-delay="100" src="image/if_viber_317970.png" height="35" width="35"><p>(050) 751-06-06</p></li>
-                        <li class="list-item-link"><img data-aos="zoom-out-right" data-aos-offset="10" data-aos-delay="300" src="image/if_social_media_isometric_19-telegram_3529658.png" height="35" width="35"><p>(068) 751-06-06</p></li>
-                        <li class="list-item-link"><img data-aos="zoom-out-right" data-aos-offset="10" data-aos-delay="500" src="image/if_whatsapp-hexagon-social-media_764794.png" height="35" width="35"><p>(073) 751-06-06</p></li>
+                        <li class="list-item-link"><i class="fab fa-viber" data-aos="zoom-out-right" data-aos-offset="10" data-aos-delay="100"></i><p>(050) 751-06-06</p></li>
+                        <li class="list-item-link"><i class="fab fa-telegram" data-aos="zoom-out-right" data-aos-offset="10" data-aos-delay="300"></i><p>(068) 751-06-06</p></li>
+                       <!-- <li class="list-item-link"><img data-aos="zoom-out-right" data-aos-offset="10" data-aos-delay="500" src="image/if_whatsapp-hexagon-social-media_764794.png" height="35" width="35"><p>(073) 751-06-06</p></li> -->
                     </ul>
                     <h2>Адрес:</h2>
                     <h4>г. Запорожье, ул. Какая-то, №</h4>
@@ -364,7 +355,6 @@
             <!-- End Links -->
 </footer>
 <!--========== END FOOTER ==========-->
- 
  <!-- FORM -->
  <div class="hidden mx-auto">
      <form class="formFb" id="feedbackId">

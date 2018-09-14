@@ -5,7 +5,6 @@ function scroll_top_header() {
         if($(window).scrollTop() > 30) {
             $('.header').addClass('scrolDown');
             $('.header').addClass('border-btm-transparent').removeClass('border-btm');
-           // $('.line').removeClass('color-ham-first').addClass('color-ham-last');
         }
         else {
             $('.header').addClass('border-btm').removeClass('border-btm-transparent');
@@ -13,7 +12,6 @@ function scroll_top_header() {
                 $('.header').addClass('border-btm-transparent').removeClass('border-btm');
             }
             $('.header').removeClass('scrolDown');
-           // $('.line').removeClass('color-ham-last').addClass('color-ham-first');
         }
     }
 };
@@ -32,7 +30,6 @@ function scroll_top_navbar() {
 function head_and_nav_add_sctolDown(){
      $('.navbar').addClass('scrolDown');
     $('.header').addClass('scrolDown');
-     // $('.line').removeClass('color-ham-first').addClass('color-ham-last');
 }
 
 function head_and_nav_remove_sctolDown(){
@@ -96,18 +93,28 @@ $('#gamburgerId').on('click', function (e) {
     if(!check){
         $('.navbar').removeClass('tr0').addClass('tr1'); 
         head_and_nav_add_sctolDown();
-       // $('.line').removeClass('color-ham-first').addClass('color-ham-last');
         check = true;
     }
     else {
         $('.navbar').removeClass('tr1').addClass('tr0');
         head_and_nav_remove_sctolDown();
         if($(window).scrollTop() < 30){
-           // $('.line').removeClass('color-ham-last').addClass('color-ham-first');
         }
         check = false;
     }
 })
+
+jQuery(function($){
+    $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
+        var block = $("#menu"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+        if (block.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
+             if(check) {
+                $('#gamburgerId').click();
+            } // если условия выполняются - скрываем наш элемент
+        }
+    });
+});
+
 
 $(document).ready(function(){  
     $('#menu').on("click","a", function (event) {
@@ -115,6 +122,10 @@ $(document).ready(function(){
         var id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
+        
+        if(check) {
+            $('#gamburgerId').click();
+        }
     });
 });
 

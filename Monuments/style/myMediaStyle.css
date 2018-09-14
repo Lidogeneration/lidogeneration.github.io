@@ -69,8 +69,11 @@
         margin: auto;
         margin-top: 60px
     }
-    .advantages .container-fluid .adv-title {
-        right: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .FirstScroll .container-fluid .video-cont {
+        display: none;
     }
 }
 
@@ -104,8 +107,14 @@
     .advantages .container-fluid .cont-columns .col2 p {
         transform: skewX(0deg);
     }
+    .about-us .container-fluid .row .col .title-about-us {
+        padding-top: 10px
+    }
     .advantages .container-fluid .adv-title {
-        right: 27%;
+        transform: skewX(0deg);
+    }
+    .advantages .container-fluid .adv-title h2 {
+        transform: skewX(0deg);
     }
 }
 
@@ -126,16 +135,8 @@
     .advantages .container-fluid .cont-columns .col1 .adv-col-all h2 i {
         font-size: 22px;
     }
-    .advantages .container-fluid .adv-title {
-        right: 23%;
-    }
 }
 
-@media only screen and (max-width: 350px) {
-    .advantages .container-fluid .adv-title {
-        right: 20%;
-    }
-}
 
 @media only screen and (min-width: 1099px) {
     .navbar {
@@ -147,7 +148,6 @@
 
 @media only screen and (max-width: 1139px){
     .navbar-nav .num-tel{
-        display: none;
     }
 }
 
@@ -167,7 +167,7 @@
     .navbar-nav {
         flex-direction: column;
         margin: auto;
-        padding-top: 5px;
+        padding-top: 60px;
         padding-left: 25px;
     }
     .navbar-nav li {
@@ -189,6 +189,9 @@
     }
     .header .nav-item-fb {
         padding: 5px 10px;
+    }
+    .navbar-nav .nav-item-zp {
+        left: 80px;
     }
 }
 
@@ -222,7 +225,7 @@
         font-size: 20px;
     }
     .FirstScroll p {
-        font-size: 16px;
+        font-size: 17px;    
     }
     .FirstScroll .trigger div i {
         font-size: 16px;
@@ -262,7 +265,7 @@
         font-size: 18px;
     }
     .FirstScroll p {
-        font-size: 14px;
+        font-size: 16px;
     }
     .FirstScroll .trigger div i {
         font-size: 14px;
@@ -281,9 +284,6 @@
 }
 
 @media only screen and (max-width: 449px) {
-    .header .label-zp {
-        display: none;
-    }
     .main-title {
         padding: 0;
         padding-top: 30px;
