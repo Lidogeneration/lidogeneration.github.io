@@ -1,6 +1,7 @@
 /* line 1, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 body {
-  background: #CBCDAE; }
+  background: #CBCDAE;
+  overflow-x: hidden; }
 
 /* line 4, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 a {
