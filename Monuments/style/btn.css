@@ -1,0 +1,86 @@
+/*------------------------------------------------------------------
+  	[Button]
+------------------------------------------------------------------*/
+
+.btn-theme {
+  position: relative;
+  display: inline-block;
+  line-height: 1.4;
+  text-align: center;
+  background-image: none;
+  border-style: solid;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-theme:hover {
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.btn-theme:hover, .btn-theme:focus, .btn-theme.focus {
+  text-decoration: none;
+}
+
+.btn-theme:active, .btn-theme.active {
+  background-image: none;
+  outline: 0;
+}
+
+.btn-theme.disabled, .btn-theme[disabled],
+fieldset[disabled] .btn-theme {
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}
+
+.btn-white-brd {
+  color: #fff;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-width: 2px;
+  background-color: rgba(5, 13, 16, 0.4)
+}
+
+.btn-white-brd:hover, .btn-white-brd:focus, .btn-white-brd.focus {
+  color: #515769;
+  background: #fff;
+  border-color: transparent;
+  box-shadow: 1px 1px 1px #fff, 0 0 5em rgba(104, 40, 139, .3)
+}
+
+.btn-theme-sm-1 {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 15px 35px;
+  
+}
+
+.btn-theme-sm-2 {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 20px 45px;
+}
+
+.btn-base-bg {
+  color: #fff;
+  background: #3B375B;
+  border-color: transparent;
+  border-width: 0;
+  margin-top: 20px
+}
+
+.btn-base-bg:hover, .btn-base-bg:focus, .btn-base-bg.focus {
+  color: #fff;
+  background: #565085;
+  border-color: transparent;
+}
