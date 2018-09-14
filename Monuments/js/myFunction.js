@@ -46,19 +46,6 @@ function CheckResize() {
     }
 };
 
-jQuery(function($){
-    $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
-        var block = $("#menu"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
-        var ham = $("#gamburgerId");
-        if (!block.is(e.target) // проверка условия если клик был не по нашему блоку
-            && block.has(e.target).length === 0 && !ham.is(e.target)) { // проверка условия если клик не по его дочерним элементам
-             if(check) {
-                $('#gamburgerId').click();
-            } // если условия выполняются - скрываем наш элемент
-        }
-    });
-});
-
 function FormCheck() {
     $('#phoneid').inputmask('+38(999) 999-99-99',{ "oncomplete": function() { 
         $('#buttonform').prop("disabled", false);
