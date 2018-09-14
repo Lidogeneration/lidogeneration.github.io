@@ -97,7 +97,7 @@ p {
     position: fixed;
     top: 4px;
     right: 1px; 
-    z-index: 3;
+    z-index: 10;
     stroke: #fff; }
 
 /* line 86, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
