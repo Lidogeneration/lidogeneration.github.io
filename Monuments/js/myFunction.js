@@ -53,8 +53,8 @@ $(function() {
 });
 
 $(document).ready(function(){
-    $(window).resize();
     $(window).scroll();
+    $(window).resize();
     FormCheck();
 });
 
