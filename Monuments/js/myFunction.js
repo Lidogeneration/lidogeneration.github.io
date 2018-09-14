@@ -7,7 +7,7 @@ $(function() {
     CheckScroll();
     OnClick();
     if($(window).width() < 992) {
-       $('.ham').removeClass('ham-disabled');
+       $('.ham').addClass('show');
     }
 });
 
