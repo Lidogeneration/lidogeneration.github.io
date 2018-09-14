@@ -1,40 +1,5 @@
 var check = false;
 
-function scroll_top_header() {
-    if(!check) {
-        if($(window).scrollTop() > 30) {
-            $('.header').addClass('scrolDown');
-            $('.header').removeClass('border-btm').addClass('border-btm-transparent');
-        }
-        else {
-            $('.header').removeClass('border-btm-transparent').addClass('border-btm');
-            $('.header').removeClass('scrolDown');
-        }
-    }
-};
-
-function scroll_top_navbar() {
-     if(!check) { 
-        if($(window).scrollTop() > 30) {
-            $('.navbar').addClass('scrolDown');
-        }
-        else {
-            $('.navbar').removeClass('scrolDown');
-        }
-     }
-};
-
-function head_and_nav_add_sctolDown() {
-     $('.navbar').addClass('scrolDown');
-     $('.header').addClass('scrolDown');
-}
-
-function head_and_nav_remove_sctolDown() {
-    if($(window).scrollTop() <= 30) {
-        $('.navbar').removeClass('scrolDown');
-        $('.header').removeClass('scrolDown');
-    }
-}
 
 
 $('.nav-item-fb, .btn-theme-sm-1, .delivery-fb').magnificPopup();
@@ -114,4 +79,41 @@ $('#gamburgerId').on('click', function (e) {
         check = false;
     }
 });
+
+function scroll_top_header() {
+    if(!check) {
+        if($(window).scrollTop() > 30) {
+            $('.header').addClass('scrolDown');
+            $('.header').removeClass('border-btm').addClass('border-btm-transparent');
+        }
+        else {
+            $('.header').removeClass('border-btm-transparent').addClass('border-btm');
+            $('.header').removeClass('scrolDown');
+        }
+    }
+};
+
+function scroll_top_navbar() {
+     if(!check) { 
+        if($(window).scrollTop() > 30) {
+            $('.navbar').addClass('scrolDown');
+        }
+        else {
+            $('.navbar').removeClass('scrolDown');
+        }
+     }
+};
+
+function head_and_nav_add_sctolDown() {
+     $('.navbar').addClass('scrolDown');
+     $('.header').addClass('scrolDown');
+}
+
+function head_and_nav_remove_sctolDown() {
+    if($(window).scrollTop() <= 30) {
+        $('.navbar').removeClass('scrolDown');
+        $('.header').removeClass('scrolDown');
+    }
+}
+
 
