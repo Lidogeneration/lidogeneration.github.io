@@ -52,11 +52,7 @@ $(function() {
     });
 });
 
-$(document).ready(function(){
-    $(window).scroll();
-    $(window).resize();
-    FormCheck();
-});
+
 
 function FormCheck() {
     $('#phoneid').inputmask('+38(999) 999-99-99',{ "oncomplete": function(){ 
@@ -117,6 +113,18 @@ $(document).ready(function(){
             $('#gamburgerId').click();
         }
     });
+});
+
+$(document).ready(function(){
+    $(window).scroll();
+});
+
+$(document).ready(function(){
+    $(window).resize();
+});
+
+$(document).ready(function(){
+    FormCheck();
 });
 
 $('.nav-item-fb, .btn-theme-sm-1, .delivery-fb').magnificPopup();
