@@ -95,9 +95,10 @@ p {
 /* line 80, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .ham {
     position: fixed;
-    top: 0;
+    top: 4px;
     right: 1px; 
-    z-index: 3; }
+    z-index: 3;
+    stroke: #fff; }
 
 /* line 86, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .tr0 {
@@ -110,14 +111,6 @@ p {
   transition: .3s;
   transform: scaleY(1);
   transform-origin: top; }
-
-/* line 96, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.color-ham-first {
-  stroke: #fff; }
-
-/* line 99, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.color-ham-last {
-  stroke: #f0f0f0; }
 
 /* line 108, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .FirstScroll {
