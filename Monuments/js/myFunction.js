@@ -107,8 +107,9 @@ $('#gamburgerId').on('click', function (e) {
 jQuery(function($){
     $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
         var block = $("#menu"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+        var ham = $("#gamburgerId");
         if (!block.is(e.target) // проверка условия если клик был не по нашему блоку
-            && block.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
+            && block.has(e.target).length === 0 && ham.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
              if(check) {
                 $('#gamburgerId').click();
             } // если условия выполняются - скрываем наш элемент
