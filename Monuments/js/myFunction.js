@@ -53,7 +53,12 @@ $(function() {
 });
 
 $(document).ready(function(){
-    
+    $(window).resize();
+    $(window).scroll();
+    FormCheck();
+});
+
+function FormCheck() {
     $('#phoneid').inputmask('+38(999) 999-99-99',{ "oncomplete": function(){ 
         $('#buttonform').prop("disabled", false);
         $('#buttonform').removeClass('btn-disabled').addClass('btn-enabled');
@@ -61,10 +66,7 @@ $(document).ready(function(){
         $('#buttonform').prop("disabled", true);
         $('#buttonform').removeClass('btn-enabled').addClass('btn-disabled');
     } });
-    
-    $(window).resize();
-    $(window).scroll();
-});
+};
 
 $(window).resize(function() {
     if($(window).width() <= 991) {
