@@ -1,7 +1,5 @@
 var check = false;
 
-
-
 $('.nav-item-fb, .btn-theme-sm-1, .delivery-fb').magnificPopup();
 
 $(document).ready(function(){
@@ -9,13 +7,13 @@ $(document).ready(function(){
 });
 
 $(window).resize(function() {
-    if($(window).width() <= 991) {
-        $('.ham').removeClass('collapse').addClass('show');
+    if($(window).width() < 991) {
+        $('.ham').removeClass('ham-disabled');
         $('.navbar-nav').removeClass('float-right');
         $('.navbar').addClass('tr0');
     }
     else {
-        $('.ham').removeClass('show').addClass('collapse'); 
+         $('.ham').addClass('ham-disabled');
         $('.navbar-nav').addClass('float-right');
         $('.navbar').removeClass('tr0');
     }
