@@ -6,6 +6,9 @@ $(function() {
     CheckResize();
     CheckScroll();
     OnClick();
+    if($(window).width() < 992) {
+       $('.ham').removeClass('ham-disabled');
+    }
 });
 
 $(window).resize(function() {
