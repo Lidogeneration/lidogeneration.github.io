@@ -53,7 +53,7 @@ $(function() {
 });
 
 $(document).ready(function(){
-    $('.nav-item-fb, .btn-theme-sm-1, .delivery-fb').magnificPopup();
+    
     $('#phoneid').inputmask('+38(999) 999-99-99',{ "oncomplete": function(){ 
         $('#buttonform').prop("disabled", false);
         $('#buttonform').removeClass('btn-disabled').addClass('btn-enabled');
@@ -117,15 +117,4 @@ $(document).ready(function(){
     });
 });
 
-
-$('.slick-container').slick({
-  dots: true,
-  infinite: true,
-  autoplay: true, 
-  speed: 300,
-  autoplaySpeed: 1000,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  prevArrow: '<button type="button" class="slickPrevButton slickButtonStyle"><i class="fas fa-chevron-circle-left"></i></button>',
-  nextArrow: '<button type="button" class="slickNextButton slickButtonStyle"><i class="fas fa-chevron-circle-right"></i></button>'
-});
+$('.nav-item-fb, .btn-theme-sm-1, .delivery-fb').magnificPopup();
