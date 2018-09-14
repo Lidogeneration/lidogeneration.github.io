@@ -1,7 +1,7 @@
 /* line 1, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 body {
   background: #CBCDAE;
-  overflow-x: hidden; }
+ }
 
 /* line 4, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 a {
@@ -127,7 +127,9 @@ p {
   align-items: center;
   background: url("../image/pamyatnik-poster.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden;
+}
   /* line 119, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .FirstScroll h1 {
     text-align: center;
