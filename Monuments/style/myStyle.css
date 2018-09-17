@@ -129,6 +129,7 @@ p {
   background: url("../image/pamyatnik-poster.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
   /* line 119, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
