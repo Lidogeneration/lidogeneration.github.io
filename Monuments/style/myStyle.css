@@ -407,33 +407,36 @@ p {
 .advantages {
   min-height: 100vh;
   height: 100%;
-  overflow: hidden;}
-  /* line 379, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  overflow: hidden;
+  position: relative; }
+  /* line 406, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .advantages .container-fluid {
     text-align: center;
     margin-top: 30px; }
-    /* line 382, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .advantages .container-fluid .adv-title {
-      margin: auto;
-      width: 280px;
-      background: #fff;
-      transform: skewX(160deg);
-      border: 2px solid #000; }
-      /* line 388, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .advantages .container-fluid .adv-title h2 {
-        color: #000;
-        transform: skewX(-160deg); }
-    /* line 391, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 409, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .advantages .container-fluid .cont-columns {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center; }
-      /* line 396, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      justify-content: center;
+      padding-top: 20px; }
+      /* line 415, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .advantages .container-fluid .cont-columns .adv-title {
+        position: absolute;
+        top: 40px;
+        width: 280px;
+        transform: skewX(160deg);
+        border: 2px solid #000;
+        background: #fff; }
+        /* line 422, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+        .advantages .container-fluid .cont-columns .adv-title h2 {
+          color: #000;
+          transform: skewX(-160deg); }
+      /* line 425, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
       .advantages .container-fluid .cont-columns h2 {
         color: #000;
         text-align: center; }
-      /* line 399, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      /* line 428, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
       .advantages .container-fluid .cont-columns .col-common {
         height: 70%;
         border: 2px solid #000;
@@ -441,7 +444,7 @@ p {
         transform: skewX(160deg);
         padding-top: 30px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7); }
-      /* line 406, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      /* line 435, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
       .advantages .container-fluid .cont-columns .col2 {
         right: 100px;
         width: 600px;
@@ -449,23 +452,23 @@ p {
         display: flex;
         align-items: center;
         padding: 50px; }
-        /* line 413, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+        /* line 442, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
         .advantages .container-fluid .cont-columns .col2 p {
           text-align: center;
           color: #000;
           transform: skewX(-160deg); }
-      /* line 417, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      /* line 446, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
       .advantages .container-fluid .cont-columns .col1 {
         width: 500px;
         margin-right: 10px; }
-        /* line 420, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+        /* line 449, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
         .advantages .container-fluid .cont-columns .col1 .adv-col-all {
           text-align: center;
           transform: skewX(-160deg); }
-          /* line 423, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+          /* line 452, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
           .advantages .container-fluid .cont-columns .col1 .adv-col-all h2 {
             padding-bottom: 20px; }
-            /* line 425, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+            /* line 454, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
             .advantages .container-fluid .cont-columns .col1 .adv-col-all h2 i {
               margin-right: 20px; }
 
