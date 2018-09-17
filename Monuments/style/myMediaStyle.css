@@ -62,8 +62,7 @@
     .advantages .container-fluid .cont-columns {
         display: block;
         height: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-bottom: 50px;
     }
     .advantages .container-fluid .cont-columns .adv-title {
         position: relative;
