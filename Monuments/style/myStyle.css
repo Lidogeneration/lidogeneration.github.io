@@ -303,6 +303,7 @@ p {
   height: 100%;
   display: flex;
   align-items: center;
+  box-shadow: inset 0px 0px 20px 5px rgba(255,255,255,1);
   overflow: hidden;}
   /* line 273, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .about-us h1 {
