@@ -283,11 +283,6 @@
     }
 }
 
-@media only screen and (max-width: 449px) {
-    .main-title {
-    }
-}
-
 @media only screen and (max-width: 420px) {
     .FirstScroll h1 {
         font-size: 24px;
@@ -300,6 +295,12 @@
     }
     .adv-collection div h2 {
         font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1px) {
+    .FirstScroll .container-fluid .carousel-centered .row .carousel-col .row .main-title {
+        padding-top: 20px;
     }
 }
 
