@@ -3,6 +3,7 @@
 ------------------------------------------------------------------*/
 .footer {
   background-color: #FAFAFA;
+  overflow: hidden;
 }
 
 .footer .footer-seperator {
