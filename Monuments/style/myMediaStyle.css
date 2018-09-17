@@ -65,6 +65,11 @@
         margin-top: 30px;
         margin-bottom: 30px;
     }
+    .advantages .container-fluid .cont-columns .adv-title {
+        position: relative;
+        margin: auto;
+        top: 0;
+    }
     .advantages .container-fluid .cont-columns .col-common {
         margin: auto;
         margin-top: 30px;
@@ -110,10 +115,10 @@
     .about-us .container-fluid .row .col .title-about-us {
         padding-top: 10px
     }
-    .advantages .container-fluid .adv-title {
+    .advantages .container-fluid .cont-columns .adv-title {
         transform: skewX(0deg);
     }
-    .advantages .container-fluid .adv-title h2 {
+    .advantages .container-fluid .cont-columns .adv-title h2 {
         transform: skewX(0deg);
     }
 }
