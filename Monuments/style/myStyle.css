@@ -238,7 +238,7 @@ p {
   background: #f0f0f0;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin: auto; }
+  margin: auto;}
   /* line 217, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .TwoScroll h1 {
     color: #515769; }
@@ -300,7 +300,8 @@ p {
   min-height: 100vh;
   height: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden;}
   /* line 273, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .about-us h1 {
     text-align: center;
@@ -372,7 +373,8 @@ p {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background: #fff; }
+  background: #fff;
+  overflow: hidden;}
   /* line 348, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .delivery .container-fluid .button-buy {
     text-align: center;
@@ -403,7 +405,8 @@ p {
 /* line 376, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .advantages {
   min-height: 100vh;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden;}
   /* line 379, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .advantages .container-fluid {
     text-align: center;
