@@ -376,7 +376,7 @@ p {
   /* line 348, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .delivery .container-fluid .button-buy {
     text-align: center;
-    margin-top: 50px; }
+    padding-top: 50px; }
     /* line 351, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .delivery .container-fluid .button-buy a {
       border: 1px solid transparent;
