@@ -461,14 +461,15 @@ p {
       /* line 446, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
       .advantages .container-fluid .cont-columns .col1 {
         width: 500px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        padding-top: 25px;}
         /* line 449, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
         .advantages .container-fluid .cont-columns .col1 .adv-col-all {
           text-align: center;
           transform: skewX(-160deg); }
           /* line 452, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
           .advantages .container-fluid .cont-columns .col1 .adv-col-all h2 {
-            padding-bottom: 20px; }
+            padding-bottom: 15px; }
             /* line 454, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
             .advantages .container-fluid .cont-columns .col1 .adv-col-all h2 i {
               margin-right: 20px; }
