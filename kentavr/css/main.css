@@ -1,0 +1,182 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background: #204718;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  body a {
+    text-decoration: none;
+    color: #fff; }
+    body a:hover {
+      text-decoration: none;
+      color: #fff; }
+
+.hidden {
+  display: none; }
+
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .loader .loader_inner {
+    background-image: url("../img/preloader.gif");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 256px;
+    width: 256px; }
+
+/* --- Navbar START --- */
+.navbar {
+  background: rgba(32, 71, 24, 0.9);
+  color: #fdd907;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(32, 71, 24, 0.7);
+          box-shadow: 0px 5px 10px 0px rgba(32, 71, 24, 0.7); }
+  .navbar a {
+    color: #fdd907; }
+  .navbar p {
+    color: #fff;
+    margin: 0;
+    padding-right: 10px;
+    display: inline-block; }
+  .navbar .navbar-toggler-icon {
+    background: url("../img/burger.png");
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 1.6em;
+    height: 1.6em; }
+
+/* --- Navbar END --- */
+/* --- Header START --- */
+.header {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 50px 0;
+  background: url("../img/head_bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  .header__wrap {
+    padding-top: 20px; }
+  .header__hcont {
+    padding: 20px 10px;
+    margin: 30px 0;
+    background: rgba(32, 71, 24, 0.6);
+    -webkit-box-shadow: 0px 0px 30px 8px #204718;
+            box-shadow: 0px 0px 30px 8px #204718; }
+    .header__hcont hr {
+      width: 80%;
+      color: #fdd907;
+      background-color: #fdd907; }
+    .header__hcont .slog {
+      color: #fdd907; }
+  .header .img-main {
+    margin-bottom: 10px; }
+  .header ul {
+    padding: 7px;
+    list-style: none;
+    border: 2px solid #fff; }
+    .header ul li {
+      font-size: 16px;
+      padding: 5px; }
+      .header ul li:nth-child(odd) {
+        background: rgba(32, 71, 24, 0.7); }
+      .header ul li:nth-child(even) {
+        background: rgba(32, 71, 24, 0.9); }
+      .header ul li i {
+        color: #fdd907; }
+  .header .slider-wrap {
+    padding-bottom: 10px; }
+    .header .slider-wrap .slider-cont img {
+      border: 2px dashed #fdd907; }
+
+/* --- Header END --- */
+/* --- About START --- */
+.about {
+  padding: 30px 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  color: #000;
+  -webkit-box-shadow: inset 0px 5px 15px 0px rgba(32, 71, 24, 0.7);
+          box-shadow: inset 0px 5px 15px 0px rgba(32, 71, 24, 0.7); }
+  .about h2, .about h4 {
+    color: #204718; }
+  .about hr {
+    width: 80%;
+    color: #fdd907;
+    background-color: #fdd907; }
+  .about img {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.countr i {
+  color: #fdd907;
+  font-size: 40px; }
+
+.countr p {
+  font-size: 20px;
+  height: 64px; }
+
+.countr .count-wrap {
+  color: #fff;
+  border: 2px solid #204718;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  width: 90px;
+  height: 90px;
+  background: #204718;
+  margin-bottom: 15px; }
+
+/* --- About END --- */
+/* --- Button style START --- */
+.header-button {
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 280px;
+  display: block;
+  padding: 10px 10px;
+  background: rgba(255, 0, 0, 0.8);
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease; }
+  .header-button:hover {
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    background: rgba(253, 217, 7, 0.8); }
+
+/* --- Button style END --- */
