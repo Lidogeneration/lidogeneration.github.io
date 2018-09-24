@@ -1,0 +1,372 @@
+@media only screen and (max-width: 991px) {
+    .my-header .my-nav-menu .navbar-nav {
+        padding-left: 5px;
+    }
+    .my-header .my-nav-menu button {
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .FirstScroll .container-fluid .video-cont {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .about-us .container-fluid .row .col .title-about-us {
+        padding-top: 10px
+    }
+}
+
+@media only screen and (min-width: 992px) /* !!!!! */
+{
+    .my-header ul .navigations{
+        display: flex;
+        align-items: center;
+    }
+    .my-header ul .num-tel a{
+        padding: 0;
+    }
+    .my-header .my-nav-menu {
+        background-color: rgba(52, 58, 64, 1);
+    }
+    .my-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(52, 58, 64, 1);
+    }
+    .first-scroll .container-fluid .row .col-logotip a {
+       /* display: none;
+        position: fixed; */
+    }
+}
+
+@media only screen and (max-width: 1023px)
+{
+    .first-scroll .container-fluid .row .col-contacts div a {
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 991px)
+{
+    .first-scroll .container-fluid .row {
+        padding-top: 60px;
+    }
+    .first-scroll .container-fluid .row .col-candle{
+        display: none;
+    }  
+    .first-scroll .container-fluid .row .col-contacts{
+        display: none;
+    }
+    .first-scroll .container-fluid .row .col-logotip{
+        display: none;
+    }
+    .my-header .logotip {
+        display: flex;
+    }
+    .my-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: rgba(52, 58, 64, 1);
+        display: flex;
+        transition: .3s;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+    .my-header .my-nav-menu {
+        background-color: rgba(52, 58, 64, 1);
+    }
+    .my-header ul {
+        display: block;
+    }
+    .my-header .my-nav-menu {
+        padding-bottom: 2px;
+    }
+    .first-scroll .container-fluid .row .col-logotip a {
+        display: none;
+    }
+    .first-scroll .container-fluid .row .col .my-navigation-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 769px)
+{
+    .reviews {
+        height: 90vh;
+    }
+    .my-advantages .container-fluid .row .col div p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .my-advantages .container-fluid .row .col .logotip {
+    }
+    .reviews {
+        height: 150vh;
+    }
+    .footer .footer-seperator .container .row div h2 {
+        font-size: 25px;
+    }
+    .footer .footer-seperator .container .row div h4 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 677px){
+    .reviews {
+        height: 140vh;
+    }
+    .reviews div{
+        top: 890px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .first-scroll .container-fluid .row .col-triggers h2 {
+        font-size: 35px;
+    }
+    .first-scroll .container-fluid .row .col-triggers .triggers div p {
+        font-size: 20px;
+    }
+    .reviews {
+        height: 70vh
+    }
+    .reviews div{
+        top: 800px;
+    }
+    .reviews div .container .row .col div p {
+        font-size: 14px;
+    }
+    .reviews div .container .row .col div {
+        align-items: flex-start;
+    }
+    .reviews div .container .row .col div div img {
+        height: 100px;
+        width: 100px;
+    }
+    .container-fluid .row .col .logotip img {
+        height: 100px;
+        width: 250px;
+    }
+    .my-advantages .container-fluid .row .col div h1 {
+        font-weight: 500;
+    }
+    .my-advantages .container-fluid .row .col div img{
+        height: 70px;
+        width: 70px;
+    } 
+    
+    .my-advantages .container-fluid .row .col div p{
+        font-size: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 991px){
+    .footer {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 522px){
+    .footer {
+        padding-top: 100px;
+    }
+    .my-advantages .container-fluid .row .col div h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 489px){
+    .footer {
+        padding-top: 150px;
+    }
+    .container-fluid .row .col .logotip img {
+        height: 70px;
+        width: 210px;
+    }
+     .my-advantages .container-fluid .row .col div img{
+        height: 50px;
+        width: 50px;
+    } 
+    .my-advantages .container-fluid .row .col div p{
+        font-size: 18px;
+    }
+    .reviews div{
+        top: 700px;
+    }
+}
+
+@media only screen and (max-width: 472px){
+    .footer {
+        padding-top: 250px;
+    }
+}
+
+@media only screen and (max-width: 437px){
+    .footer {
+        padding-top: 350px;
+    }
+}
+
+@media only screen and (max-width: 417px){
+    .footer {
+        padding-top: 450px;
+    }
+}
+
+@media only screen and (max-width: 404px){
+    .footer {
+        padding-top: 550px;
+    }
+}
+
+@media only screen and (max-width: 385px){
+    .footer {
+        padding-top: 650px;
+    }
+}
+
+@media only screen and (max-width: 378px){
+    .footer {
+        padding-top: 750px;
+    }
+}
+
+@media only screen and (max-width: 369px){
+    .footer {
+        padding-top: 850px;
+    }
+}
+
+@media only screen and (max-width: 359px){
+    .footer {
+        padding-top: 950px;
+    }
+}
+
+@media only screen and (max-width: 347px){
+    .footer {
+        padding-top: 1050px;
+    }
+}
+
+@media only screen and (max-width: 339px){
+    .footer {
+        padding-top: 1150px;
+    }
+}
+
+@media only screen and (max-width: 332px){
+    .reviews div .container .row .col div div img {
+        height: 80px;
+        width: 80px;
+    }
+    .reviews div .container .row .col div p {
+    }
+    .footer {
+        padding-top: 1000px;
+    }
+}
+
+@media only screen and (max-width: 329px){
+    .footer {
+        padding-top: 1100px;
+    }
+}
+
+@media only screen and (max-width: 324px){
+    .footer {
+        padding-top: 1150px;
+    }
+}
+
+@media only screen and (max-width: 420px)
+{
+    .my-header .name-city p{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .our_work {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1054px) {
+    .about-us h1 {
+        font-size: 70px;
+    }
+    .adv-collection div h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+     .about-us h1 {
+        font-size: 70px;
+    }
+}
+
+
+@media only screen and (max-width: 872px) {
+    .about-us h1 {
+        font-size: 50px;
+    }
+    .adv-collection div h2 {
+        font-size: 22px;
+    }
+    .delivery .col img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about-us h1 {
+        font-size: 45px;
+    }
+    .delivery .container-fluid .delivery-title-div {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 689px) {
+    .about-us h1 {
+        font-size: 40px;
+    }
+    .adv-collection div h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .about-us h1 {
+        font-size: 30px;
+    }
+    .adv-collection div h2 {
+        font-size: 18px;
+    }
+     .my-header .my-nav-menu .navbar-nav .name-city p {
+        display: flex;
+    }
+}
+
+/* about us -------------------- */
+
+
+/* and about us ---------------- */
+
+
+
