@@ -23,7 +23,9 @@
     height: 100%;
     min-height: 100vh;
     overflow: hidden;
-    background: rgba(0,0,0,0.7);
+    background: url(../../image/pamyatnik-poster.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*poster="image/pamyatnik-poster.png"*/

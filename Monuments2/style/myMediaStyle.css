@@ -5,6 +5,9 @@
     .my-header .my-nav-menu button {
         margin-left: 5px;
     }
+    .about-us .container-fluid .video-cont video {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -109,7 +112,8 @@
 
 @media only screen and (max-width: 767px)
 {
-    .my-advantages .container-fluid .row .col .logotip {
+    .my-advantages .container-fluid .row .col .logotip img {
+        display: none;
     }
     .reviews {
         height: 150vh;
