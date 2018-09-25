@@ -524,7 +524,9 @@ p {
   align-items: center;
   min-height: 100vh;
   background: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  background: rgba(25,10,41,0.1);
+  box-shadow: inset 0px 0px 10px 1px #000;}
   /* line 533, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .delivery .container-fluid .row .col-md-3 .arrow-down {
     transform: rotate(50deg);
