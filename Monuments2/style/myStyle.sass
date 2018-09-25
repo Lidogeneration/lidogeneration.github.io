@@ -18,9 +18,6 @@ p
     transition: .3s
     transform: scaleY(0)
     transform-origin: top
-    .candle
-        border: 1px solid #f0f0f0
-        margin-left: 5px
     .logotip
         img
             margin-left: 5px
@@ -28,13 +25,21 @@ p
         p
             margin: 0
             font-size: 18px
-            color: #D5D5D5
-            text-shadow: 0px 0px 1px #D5D5D5
+            color: #fff
+            text-shadow: 0px 0px 1px #fff
+        div
+            padding-left: 10px
+            a
+                color: #fff
+                text-shadow: 0px 0px 1px #fff
+                &:hover
+                    color: #F0f0f0
+                    text-shadow: 1px 1px 1px #fff
     #hamId
         height: 50px
     .my-nav-menu
+        background: #fff
         ul
-            margin-left: auto
             .name-city
                 p
                     display: none
@@ -42,18 +47,26 @@ p
             li
                 a
                     color: #fff
-                    text-shadow: 0px 0px 1px #D5D5D5
+                    text-shadow: 0px 0px 1px #fff
+                    &:hover
+                        color: #F0f0f0
+                        text-shadow: 1px 1px 1px #fff
             .num-tel
                 margin-right: 20px
         button
-            border-color: transparent
             border-width: 2px
             color: #fff
-            background-color: #2F649A
             margin-right: 5px
+            transition: .3s
+            background-color: #4D257A
+            border: 2px solid rgba(80,36,129, 0.9)
+            background: rgba(80,36,129, 0.8)
+            border-radius: 5px
             &:hover
-                background-color: transparent
-                border-color: #2F649A
+                transition: .3s
+                border-color: #D8DACE
+            
+            
             
 
 .show-nav-menu
@@ -65,11 +78,162 @@ p
 
 // first scroll
 
-.first-scroll
-    min-height: 100vh
-    background: url("../image/photo_2018-09-20_17-18-10.jpg")
+.f-scroll
+    background: url("../image/back-first-scroll.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top center
+    width: 100%
+    overflow: hidden
+    a
+        color: #fff
+    .container-fluid
+        height: 100%
+        padding: 0
+        background-color: rgba(25,10,41,0.3)
+        .row
+            margin: 0
+            width: 100%
+            height: 100%
+            padding-top: 0px
+            .col-lg-3
+                .angel
+                    width: 150px
+                    margin-top: 6px
+                .n-tels
+                    a
+                        display: block
+                    p
+                        color: #fff
+                        font-size: 16px
+                        font-weight: 600
+                        margin: 0
+            .col-contact-w-us
+                div
+                    a
+                        padding: 7px 15px
+                        transition: .3s
+                        border: 2px solid rgba(80,36,129, 0.9)
+                        background: rgba(80,36,129, 0.8)
+                        border-radius: 5px
+                        &:hover
+                            transition: .3s
+                            border-color: #D8DACE
+            .col-lg-12
+                background: rgba(80,36,129, 0.2)
+                display: flex
+                align-items: center
+                justify-content: center
+                border-top: 2px solid #fff
+                border-bottom: 2px solid #fff
+                ul
+                    list-style: none
+                    text-align: center
+                    margin: 0
+                    padding-top: 12px
+                    padding-bottom: 12px
+                    li
+                        display: inline-block
+                        text-align: center
+                        a
+                            padding-left: 15px
+                            padding-right: 15px
+                            padding-top: 16px
+                            padding-bottom: 14px
+                            border-left: 1px solid transparent
+                            border-right: 1px solid transparent
+                            transition: .3s
+                            background: transparent
+                            &:hover
+                                transition: .3s
+                                background: rgba(80,36,255, 0.3)
+                                border-left: 1px solid #fff
+                                border-right: 1px solid #fff
+                                
+           
+    /*       .my-navigaftion-menu  
+                    list-style: none
+                    display: flex
+                    justify-content: center
+                    border-top: 2px solid #fff
+                    border-bottom: 2px solid #fff
+                    margin-top: 50px
+                    background: rgba(0,0,0,0.3)
+                    li
+                        padding-top: 17px
+                        padding-bottom: 17px
+                        a
+                            font-size: 18px
+                            color: #fff
+                            text-shadow: 1px 1px 1px #D5D5D5
+                            border-left: 1px solid transparent
+                            border-right: 1px solid transparent
+                            padding: 20px
+                            padding-left: 40px
+                            padding-right: 40px
+                            &:hover
+                                transition: 0.6s
+                                border-left: 1px solid #D5D5D5
+                                border-right: 1px solid #D5D5D5
+                                background: rgba(0,0,0,0.5)*/        
+                        
+.f-scroll-2
+    padding-bottom: 20px
+    height: 68vh
+    overflow: hidden
+    .container-fluid
+        .row
+            .col-lg-6
+                h2
+                    font-size: 40px
+                    color: #fff
+                    text-shadow: 2px 2px 2px #000
+                    text-align: center
+                    padding-bottom: 10px
+                    text-transform: uppercase
+                    font-weight: bold
+                    font-size: 45px
+                    box-shadow: 2px 2px 10px 2px #fff
+                    border-radius: 3px
+                .triggers
+                    padding-top: 20px
+                    div
+                        i
+                            margin-top: 4px
+                            margin-right: 10px
+                        p
+                .d-monument-img
+                    max-width: 450px
+                    padding: 10px
+                    border-radius: 3px
+                    image
+                            
+.style-p
+    color: #fff
+    font-size: 23px
+    margin-left: 5px
+    text-shadow: 3px 3px 3px #000
+                    
+.back-scroll
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background: rgba(25,10,41,0.2)
     background-repeat: no-repeat
     background-size: cover
+    z-index: -1
+
+                    
+    
+                
+                
+
+/*.first-scroll
+    min-height: 100vh
     overflow: hidden
     padding-bottom: 20px
     a
@@ -159,7 +323,6 @@ p
                                 border-left: 1px solid #D5D5D5
                                 border-right: 1px solid #D5D5D5
                                 background: rgba(0,0,0,0.5)
-                            
                 .triggers
                     padding-top: 10px
                     padding-bottom: 20px
@@ -179,35 +342,23 @@ p
                     text-transform: uppercase
                     font-weight: bold
                     font-size: 45px
-                    box-shadow: 2px 2px 10px 2px #000
+                    box-shadow: 2px 2px 10px 2px #000*/
                     
-.style-p
-    color: #fff
-    font-size: 25px
-    margin-left: 5px
-    text-shadow: 3px 3px 3px #000
-    
-                        
-                                
-                            
-                    
-    
-
-            
+   
         
 .about-us-title-div
     width: 100%
-    padding-bottom: 20px
+    padding-top: 30px
+    padding-bottom: 30px
     h2
         text-align: center
         margin: auto
-        background: rgba(0,0,0,0.5)
-        width: 120px
-        padding-bottom: 5px
+        width: 250px
         border-radius: 3px
+        font-size: 40px
         font-weight: 1000
-        color: #fff
-        text-shadow: 2px 2px 2px #000
+        color: #5f309c
+        text-shadow: 1px 1px 1px #000
         
 .first-scroll-offer
     padding-bottom: 20px
@@ -232,7 +383,7 @@ p
 .TwoScroll
     height: 100vh
     height: 100%
-    background: #f0f0f0
+    background: rgba(25,10,41,0.6)
     padding-top: 100px
     padding-bottom: 100px
     margin: auto
@@ -251,7 +402,6 @@ p
 .our_work
     text-align: center
     max-width: 250px
-    margin-top: 50px
     padding: 0
     padding-bottom: 10px
     transition: .7s
@@ -264,7 +414,7 @@ p
         transition: .7s
         box-shadow: 2px 2px 1px #E4E9ED, 1em 2em 1em #5C5F61        
     a
-        color: #4E5967
+        color: #4B267A
         font-weight: 400
         &:hover
             transition: .7s
@@ -272,19 +422,15 @@ p
         
 .our-work-title
     text-align: center
-    padding: 5px
     .our-work-title-main
-        margin-bottom: 20px
-        padding: 50px
         font-weight: 1000
-        color: #2F649A
-        text-shadow: 2px 2px 2px #000
+        color: #5f309c
+        text-shadow: 1px 1px 1px #000
     hr
         background-color: rgba(78, 89, 103, 0.2)
         height: 1px
         
     h1
-        margin-top: 15px
     
 .font-size30
     font-size: 30px
@@ -303,8 +449,9 @@ p
     display: flex
     align-items: center
     overflow: hidden
-    box-shadow: inset 0px 0px 20px 5px rgba(255,255,255,1)
     position: relative
+    background: rgba(25,10,41,0.1)
+    box-shadow: inset 0px 0px 10px 1px #000
     h1
         text-align: center
         font-size: 75px
@@ -313,7 +460,6 @@ p
         animation-duration: 5s
         animation-iteration-count: infinite
     .col-lg-6
-        background-color: rgba(0,0,0,0.5)
         .descr-about-us
             padding-bottom: 30px
             font-size: 18px;
@@ -322,15 +468,21 @@ p
             a
                 text-align: center
                 color: #fff
-                text-shadow: 0px 0px 1px #fff
-                background-color: #1A3856
                 padding: 15px 30px
-                border: 2px solid transparent
                 font-size: 16px
                 border-radius: 3px
+                transition: .3s
+                background-color: #4D257A
+                border: 2px solid rgba(80,36,129, 0.9)
+                background: rgba(80,36,129, 0.8)
+                border-radius: 5px
                 &:hover
-                    background-color: transparent
-                    border: 2px solid #1A3856
+                    transition: .3s
+                    border-color: #D8DACE
+                
+                        
+                        
+                        
                 
 .about-us
     .container-fluid
@@ -360,8 +512,8 @@ p
     p
         text-align: center
         padding: 10px
-        color: #fff
-        text-shadow: 1px 1px 1px #FEFEFE, 0 0 1em #a6a7aa
+        color: #000
+        font-weight: 300
     
 
 // end about us
@@ -375,45 +527,77 @@ p
     min-height: 100vh
     background: #fff
     overflow: hidden
-    .container-fluid
-        .button-buy
-            text-align: center
-            padding-top: 50px
-            padding-bottom: 50px
-            a
-                text-align: center
-                color: #fff
-                text-shadow: 0px 0px 1px #fff
-                background-color: #1A3856
-                padding: 15px 30px
-                border: 2px solid transparent
-                font-size: 16px
-                border-radius: 3px
-                &:hover
-                    background-color: transparent
-                    border: 2px solid #1A3856
-                    color: #1A3856
-                    text-shadow: 0px 0px 1px #1A3856
-        .delivery-title-div
-            text-align: center
-            padding-bottom: 50px
-            h2
-                font-weight: 1000
-                color: #2F649A
-                text-shadow: 2px 2px 2px #000
-    .col
-        text-align: center
-        img
-            height: 90px
-            width: 90px
-        div
-            padding-top: 20px
-            p
-                padding-top: 10px
-                font-size: 20px
-                color: #2F649A
-                text-shadow: 0px 0px 1px #1A3856
+    .container-fluid 
+        .row                        
+            .col-md-3
+                .arrow-down
+                    transform: rotate(50deg)
+                    right: 25%
+                    i
+                        color: #4B267A
+                        text-shadow: 1px 1px 1px #000
+                        font-size: 30px
+                p
+                    width: 200px
+                    margin-left: auto
+                    margin-right: auto
+                    color: #000
+                    text-transform: uppercase
+            .col_
+                padding-top: 40px
+                p
+                    width: 200px
+                    margin-left: auto
+                    margin-right: auto
+                    color: #000
+                    text-transform: uppercase
+                .arrow-up
+                    transform: rotate(-50deg)
+                    top: 0
+                    i
+                        font-size: 30px
+                        color: #4B267A
+                        text-shadow: 1px 1px 1px #000
+                .arrow-up-1
+                    right: 10%
+                .arrow-up-2
+                    right: 30%
+                .arrow-up-3
+                    right: 0
+            .col-md-12
+                div
+                    padding-bottom: 50px
+                    h2
+                        font-size: 40px
+                        padding-bottom: 20px
+                        font-weight: 1000
+                        color: #5f309c
+                        text-shadow: 1px 1px 1px #000
+                .d-cont-us
+                    padding-top: 30px
+                    a
+                        color: #fff
+                        padding: 15px 30px
+                        font-size: 16px
+                        border-radius: 3px
+                        transition: .3s
+                        background-color: #4D257A
+                        border: 2px solid rgba(80,36,129, 0.9)
+                        background: rgba(80,36,129, 0.8)
+                        border-radius: 5px
+                        &:hover
+                            transition: .3s
+                            border-color: #D8DACE
+                    
                 
+                    
+                    
+                       
+                        
+                    
+    
+    
+
             
                 
 
@@ -471,65 +655,71 @@ p
 // reviews
 
 .reviews
-    min-height: 80%
-    height: 80vh
-    display: flex
-    align-items: center
-    overflow: hidden
-    background-color: #FAFAFA
-    justify-content: center
-    div 
-        background-color: #fff
-        top: 850px
-        border-radius: 15px
-        .container
-            box-shadow: 3px 0px 20px 5px #000
-            .row
-                padding-top: 30px
-                padding-bottom: 30px
-                .col
-                    display: flex
-                    align-items: center
-                    justify-content: center
-                    top: 0
-                    div 
-                        display: flex
-                        align-items: center
-                        h1
-                            color: #2F649A
-                            font-weight: 1000
-                            text-shadow: 2px 2px 1px #000
-                            padding: 20px
-                        hr
-                            background-color: #000
-                        p
-                            color: #212531
-                            text-shadow: 0px 0px 1px #1A3856
-                        .p1
-                            border-bottom: 1px solid #CDCDCD
-                            padding: 5px
-                            border-right: 1px solid #CDCDCD
-                            box-shadow: 0px 1px 2px 0px #000
-                        .p2
-                            border-bottom: 1px solid #CDCDCD
-                            padding: 5px
-                            border-left: 1px solid #CDCDCD
-                            border-right: 1px solid #CDCDCD
-                            box-shadow: 0px 1px 2px 0px #000
-                        div
-                            display: block
-                            padding: 20px
-                            p
-                                text-align: center
-                                padding-top: 5px
-                                border-bottom: 1px solid transparent
-                            img
-                                text-align: center
-                                border: 2px solid #2F649A
-                                border-radius: 100px
-                                background-color: #2F649A
+    min-height: 100vh
+    padding-top: 30px
+    padding-bottom: 30px
+    .container-fluid
+        .row
+            .col-md-12
+                div
+                    h1
+                        font-size: 40px
+                        padding-bottom: 20px
+                        font-weight: 1000
+                        color: #5f309c
+                        text-shadow: 1px 1px 1px #000
+                    hr
+                        background: rgba(47, 00, 47, .7)
+                        box-shadow: 0px 2px 1px 0px rgba(47, 00, 47, .7)
+            .col-md-3
+                div
+                    padding-top: 10px
+                    padding-bottom: 10px
+                    img
+                    p
+                        margin: 0
 
 // end reviews
+
+
+.advantages
+	width: 100%
+	min-height: 100vh
+	height: 100%
+	padding: 30px 0
+	background: rgba(47, 00, 47, .7)
+	color: #fff
+	overflow: hidden
+	h2
+		text-transform: uppercase
+		background: rgba(0,0,0, .3)
+		box-shadow: 0px 0px 10px 1px rgba(0,0,0,.3)
+		padding: 10px 0
+	.col-auto
+		border: 1px solid #ffffff
+		padding: 20px 40px
+		margin: 10px
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,1)
+		background: rgba(47, 00, 47, .4)
+	&__wrap
+		i
+			margin-left: auto!important
+			margin-right: auto!important
+			width: 110px
+			height: 110px
+			font-size: 50px
+			border: 2px solid #fff
+			padding: 15px
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			box-shadow: inset 0px 0px 10px 1px rgba(255,255,255,1)
+		p
+			font-size: 20px
+			width: 150px
+			text-align: center
+			padding-top: 20px
 
 // FOOTER
 
@@ -566,17 +756,42 @@ p
 .footer
     .col-sm-5
         button
-            background-color: #1A3856
+            color: #fff
+            padding: 15px 30px
+            font-size: 16px
             border-radius: 3px
+            transition: .3s
+            background-color: #4D257A
+            border: 2px solid rgba(80,36,129, 0.9)
+            background: rgba(80,36,129, 0.8)
+            border-radius: 5px
             &:hover
-                background-color: #20466B
+                transition: .3s
+                border-color: #D8DACE
     .col-sm-7
-        h2
-            padding-bottom: 20px
+        div
+            img
+                width: 200px
+                height: 150px
+                border: 1px solid rgba(80,36,129, 0.8)
         .list_
             padding-left: 0
         h4
-            text-shadow: 0px 0px 1px #1A3856
+            text-shadow: 0px 0px 1px #4D257A
+        h2
+            text-shadow: 0px 0px 1px #4D257A
+        .social-net
+            padding-left: 50px
+            padding-bottom: 10px
+            a
+                i
+                    font-size: 25px
+                    padding-left: 20px
+                    color: rgba(80,36,129, 0.8)
+                    &:hover
+                        color: rgba(80,36,129, 0.7)
+                        
+        
             
 
 // FEEDBACK

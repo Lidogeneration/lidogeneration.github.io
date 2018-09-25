@@ -23,180 +23,182 @@ p {
   transition: .3s;
   transform: scaleY(0);
   transform-origin: top; }
-  /* line 21, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .my-header .candle {
-    border: 1px solid #f0f0f0;
-    margin-left: 5px; }
-  /* line 25, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 22, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .my-header .logotip img {
     margin-left: 5px; }
-  /* line 28, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 25, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .my-header .name-city p {
     margin: 0;
     font-size: 18px;
-    color: #D5D5D5;
-    text-shadow: 0px 0px 1px #D5D5D5; }
-  /* line 33, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    color: #fff;
+    text-shadow: 0px 0px 1px #fff; }
+  /* line 30, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .my-header .name-city div {
+    padding-left: 10px; }
+    /* line 32, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .my-header .name-city div a {
+      color: #fff;
+      text-shadow: 0px 0px 1px #fff; }
+      /* line 35, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .my-header .name-city div a:hover {
+        color: #F0f0f0;
+        text-shadow: 1px 1px 1px #fff; }
+  /* line 38, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .my-header #hamId {
     height: 50px; }
-  /* line 36, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .my-header .my-nav-menu ul {
-    margin-left: auto; }
-    /* line 39, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 40, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .my-header .my-nav-menu {
+    background: #fff; }
+    /* line 44, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .my-header .my-nav-menu ul .name-city p {
       display: none;
       padding-top: 10px; }
-    /* line 43, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 48, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .my-header .my-nav-menu ul li a {
       color: #fff;
-      text-shadow: 0px 0px 1px #D5D5D5; }
-    /* line 46, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      text-shadow: 0px 0px 1px #fff; }
+      /* line 51, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .my-header .my-nav-menu ul li a:hover {
+        color: #F0f0f0;
+        text-shadow: 1px 1px 1px #fff; }
+    /* line 54, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .my-header .my-nav-menu ul .num-tel {
       margin-right: 20px; }
-  /* line 48, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .my-header .my-nav-menu button {
-    border-color: transparent;
-    border-width: 2px;
-    color: #fff;
-    background-color: #2F649A;
-    margin-right: 5px; }
-    /* line 54, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .my-header .my-nav-menu button:hover {
-      background-color: transparent;
-      border-color: #2F649A; }
+    /* line 56, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .my-header .my-nav-menu button {
+      border-width: 2px;
+      color: #fff;
+      margin-right: 5px;
+      transition: .3s;
+      background-color: #4D257A;
+      border: 2px solid rgba(80, 36, 129, 0.9);
+      background: rgba(80, 36, 129, 0.8);
+      border-radius: 5px; }
+      /* line 65, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .my-header .my-nav-menu button:hover {
+        transition: .3s;
+        border-color: #D8DACE; }
 
-/* line 59, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 72, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .show-nav-menu {
   transition: .3s;
   transform: scaleY(1);
   transform-origin: top; }
 
-/* line 68, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.first-scroll {
-  min-height: 100vh;
-  background: url("../image/photo_2018-09-20_17-18-10.jpg");
-  background-repeat: no-repeat;
+/* line 81, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.f-scroll {
+  background: url("../image/back-first-scroll.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
   overflow: hidden;
-  padding-bottom: 20px; }
-  /* line 75, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll a {
-    color: #000; }
-  /* line 79, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll .container-fluid .row .col-candle {
-    padding-top: 5px;
-    display: flex; }
-    /* line 82, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .first-scroll .container-fluid .row .col-candle img {
-      box-shadow: 1px 4px 4px 1px #212531;
-      border: 1px solid #f0f0f0; }
-    /* line 85, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .first-scroll .container-fluid .row .col-candle div {
-      display: flex;
-      align-items: center; }
-      /* line 88, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .first-scroll .container-fluid .row .col-candle div p {
-        margin: 0;
-        margin-left: 10px;
+  /*       .my-navigaftion-menu
+                    list-style: none
+                    display: flex
+                    justify-content: center
+                    border-top: 2px solid #fff
+                    border-bottom: 2px solid #fff
+                    margin-top: 50px
+                    background: rgba(0,0,0,0.3)
+                    li
+                        padding-top: 17px
+                        padding-bottom: 17px
+                        a
+                            font-size: 18px
+                            color: #fff
+                            text-shadow: 1px 1px 1px #D5D5D5
+                            border-left: 1px solid transparent
+                            border-right: 1px solid transparent
+                            padding: 20px
+                            padding-left: 40px
+                            padding-right: 40px
+                            &:hover
+                                transition: 0.6s
+                                border-left: 1px solid #D5D5D5
+                                border-right: 1px solid #D5D5D5
+                                background: rgba(0,0,0,0.5)*/ }
+  /* line 88, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .f-scroll a {
+    color: #fff; }
+  /* line 90, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .f-scroll .container-fluid {
+    height: 100%;
+    padding: 0;
+    background-color: rgba(25, 10, 41, 0.3); }
+    /* line 94, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .f-scroll .container-fluid .row {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 0px; }
+      /* line 100, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .f-scroll .container-fluid .row .col-lg-3 .angel {
+        width: 150px;
+        margin-top: 6px; }
+      /* line 104, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .f-scroll .container-fluid .row .col-lg-3 .n-tels a {
+        display: block; }
+      /* line 106, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .f-scroll .container-fluid .row .col-lg-3 .n-tels p {
         color: #fff;
-        text-shadow: 0px 0px 1px #D5D5D5;
-        font-size: 18px; }
-  /* line 94, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll .container-fluid .row .col-contacts {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; }
-    /* line 99, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .first-scroll .container-fluid .row .col-contacts div a {
-      margin-right: 30px;
-      padding: 0;
-      color: #fff;
-      text-shadow: 1px 1px 1px #D5D5D5; }
-    /* line 104, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .first-scroll .container-fluid .row .col-contacts div button {
-      border-color: transparent;
-      border-width: 2px;
-      color: #fff;
-      background-color: #2F649A; }
-      /* line 109, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .first-scroll .container-fluid .row .col-contacts div button:hover {
-        background-color: transparent;
-        border-color: #2F649A; }
-  /* line 112, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll .container-fluid .row .col-logotip {
-    padding-top: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    /* line 117, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .first-scroll .container-fluid .row .col-logotip a {
-      position: absolute;
-      top: 5px;
-      z-index: 2; }
-  /* line 121, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll .container-fluid .row .col-triggers {
-    padding-top: 50px;
-    text-align: center; }
-  /* line 124, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll .container-fluid .row .col-img-right-field {
-    display: flex;
-    justify-content: center; }
-  /* line 128, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll .container-fluid .row .col .img-right-field {
-    margin-top: 50px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid rgba(0, 0, 0, 0.4);
-    border-radius: 2px; }
-    /* line 134, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .first-scroll .container-fluid .row .col .img-right-field img {
-      border: 2px solid rgba(0, 0, 0, 0.3);
-      border-radius: 2px; }
-  /* line 137, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll .container-fluid .row .col .my-navigation-menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    margin-top: 50px;
-    background: rgba(0, 0, 0, 0.3); }
-    /* line 145, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .first-scroll .container-fluid .row .col .my-navigation-menu li {
-      padding-top: 17px;
-      padding-bottom: 17px; }
-      /* line 148, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .first-scroll .container-fluid .row .col .my-navigation-menu li a {
-        font-size: 18px;
-        color: #fff;
-        text-shadow: 1px 1px 1px #D5D5D5;
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        padding: 20px;
-        padding-left: 40px;
-        padding-right: 40px; }
-        /* line 157, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-        .first-scroll .container-fluid .row .col .my-navigation-menu li a:hover {
-          transition: 0.6s;
-          border-left: 1px solid #D5D5D5;
-          border-right: 1px solid #D5D5D5;
-          background: rgba(0, 0, 0, 0.5); }
-  /* line 163, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll .container-fluid .row .col .triggers {
-    padding-top: 10px;
-    padding-bottom: 20px; }
-    /* line 166, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .first-scroll .container-fluid .row .col .triggers div {
-      display: flex; }
-      /* line 168, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .first-scroll .container-fluid .row .col .triggers div i {
-        margin-top: 5px; }
-      /* line 170, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .first-scroll .container-fluid .row .col .triggers div p {
-        padding-left: 5px;
-        text-align: left; }
-  /* line 173, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .first-scroll .container-fluid .row .col h2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0; }
+      /* line 113, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .f-scroll .container-fluid .row .col-contact-w-us div a {
+        padding: 7px 15px;
+        transition: .3s;
+        border: 2px solid rgba(80, 36, 129, 0.9);
+        background: rgba(80, 36, 129, 0.8);
+        border-radius: 5px; }
+        /* line 119, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+        .f-scroll .container-fluid .row .col-contact-w-us div a:hover {
+          transition: .3s;
+          border-color: #D8DACE; }
+      /* line 122, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .f-scroll .container-fluid .row .col-lg-12 {
+        background: rgba(80, 36, 129, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff; }
+        /* line 129, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+        .f-scroll .container-fluid .row .col-lg-12 ul {
+          list-style: none;
+          text-align: center;
+          margin: 0;
+          padding-top: 12px;
+          padding-bottom: 12px; }
+          /* line 135, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+          .f-scroll .container-fluid .row .col-lg-12 ul li {
+            display: inline-block;
+            text-align: center; }
+            /* line 138, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+            .f-scroll .container-fluid .row .col-lg-12 ul li a {
+              padding-left: 15px;
+              padding-right: 15px;
+              padding-top: 16px;
+              padding-bottom: 14px;
+              border-left: 1px solid transparent;
+              border-right: 1px solid transparent;
+              transition: .3s;
+              background: transparent; }
+              /* line 147, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+              .f-scroll .container-fluid .row .col-lg-12 ul li a:hover {
+                transition: .3s;
+                background: rgba(80, 36, 255, 0.3);
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff; }
+
+/* line 180, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.f-scroll-2 {
+  padding-bottom: 20px;
+  height: 68vh;
+  overflow: hidden; }
+  /* line 187, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .f-scroll-2 .container-fluid .row .col-lg-6 h2 {
     font-size: 40px;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
@@ -205,62 +207,200 @@ p {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 45px;
-    box-shadow: 2px 2px 10px 2px #000; }
+    box-shadow: 2px 2px 10px 2px #fff;
+    border-radius: 3px; }
+  /* line 198, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .f-scroll-2 .container-fluid .row .col-lg-6 .triggers {
+    padding-top: 20px; }
+    /* line 201, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .f-scroll-2 .container-fluid .row .col-lg-6 .triggers div i {
+      margin-top: 4px;
+      margin-right: 10px; }
+  /* line 205, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .f-scroll-2 .container-fluid .row .col-lg-6 .d-monument-img {
+    max-width: 450px;
+    padding: 10px;
+    border-radius: 3px; }
 
-/* line 184, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 211, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .style-p {
   color: #fff;
-  font-size: 25px;
+  font-size: 23px;
   margin-left: 5px;
   text-shadow: 3px 3px 3px #000; }
 
-/* line 198, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 217, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.back-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(25, 10, 41, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; }
+
+/*.first-scroll
+    min-height: 100vh
+    overflow: hidden
+    padding-bottom: 20px
+    a
+        color: #000
+    .container-fluid
+        .row
+            .col-candle
+                padding-top: 5px
+                display: flex
+                img
+                    box-shadow: 1px 4px 4px 1px #212531
+                    border: 1px solid #f0f0f0
+                div
+                    display: flex
+                    align-items: center
+                    p
+                        margin: 0
+                        margin-left: 10px
+                        color: #fff
+                        text-shadow: 0px 0px 1px #D5D5D5
+                        font-size: 18px
+            .col-contacts
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                div
+                    a
+                        margin-right: 30px
+                        padding: 0
+                        color: #fff
+                        text-shadow: 1px 1px 1px #D5D5D5
+                    button
+                        border-color: transparent
+                        border-width: 2px
+                        color: #fff
+                        background-color: #2F649A
+                        &:hover
+                            background-color: transparent
+                            border-color: #2F649A
+            .col-logotip
+                padding-top: 60px
+                display: flex
+                align-items: center
+                justify-content: center
+                a
+                    position: absolute
+                    top: 5px
+                    z-index: 2
+            .col-triggers
+                padding-top: 50px
+                text-align: center
+            .col-img-right-field
+                display: flex
+                justify-content: center
+            .col
+                .img-right-field
+                    margin-top: 50px
+                    padding: 20px
+                    background: rgba(0,0,0,0.4)
+                    border: 2px solid rgba(0,0,0,0.4)
+                    border-radius: 2px
+                    img
+                        border: 2px solid rgba(0,0,0,0.3)
+                        border-radius: 2px
+                .my-navigation-menu
+                    list-style: none
+                    display: flex
+                    justify-content: center
+                    border-top: 2px solid #fff
+                    border-bottom: 2px solid #fff
+                    margin-top: 50px
+                    background: rgba(0,0,0,0.3)
+                    li
+                        padding-top: 17px
+                        padding-bottom: 17px
+                        a
+                            font-size: 18px
+                            color: #fff
+                            text-shadow: 1px 1px 1px #D5D5D5
+                            border-left: 1px solid transparent
+                            border-right: 1px solid transparent
+                            padding: 20px
+                            padding-left: 40px
+                            padding-right: 40px
+                            &:hover
+                                transition: 0.6s
+                                border-left: 1px solid #D5D5D5
+                                border-right: 1px solid #D5D5D5
+                                background: rgba(0,0,0,0.5)
+                .triggers
+                    padding-top: 10px
+                    padding-bottom: 20px
+                    div
+                        display: flex
+                        i
+                            margin-top: 5px
+                        p
+                            padding-left: 5px
+                            text-align: left
+                h2
+                    font-size: 40px
+                    color: #fff
+                    text-shadow: 2px 2px 2px #000
+                    text-align: center
+                    padding-bottom: 10px
+                    text-transform: uppercase
+                    font-weight: bold
+                    font-size: 45px
+                    box-shadow: 2px 2px 10px 2px #000*/
+/* line 349, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .about-us-title-div {
   width: 100%;
-  padding-bottom: 20px; }
-  /* line 201, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  /* line 353, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .about-us-title-div h2 {
     text-align: center;
     margin: auto;
-    background: rgba(0, 0, 0, 0.5);
-    width: 120px;
-    padding-bottom: 5px;
+    width: 250px;
     border-radius: 3px;
+    font-size: 40px;
     font-weight: 1000;
-    color: #fff;
-    text-shadow: 2px 2px 2px #000; }
+    color: #5f309c;
+    text-shadow: 1px 1px 1px #000; }
 
-/* line 212, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 363, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .first-scroll-offer {
   padding-bottom: 20px; }
 
-/* line 216, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 367, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .carousel-centered {
   text-align: left; }
-  /* line 218, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 369, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .carousel-centered .carousel-col {
     padding-bottom: 0px; }
 
-/* line 221, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 372, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .carousel-col-btm {
   text-align: center; }
 
-/* line 232, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 383, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .TwoScroll {
   height: 100vh;
   height: 100%;
-  background: #f0f0f0;
+  background: rgba(25, 10, 41, 0.6);
   padding-top: 100px;
   padding-bottom: 100px;
   margin: auto; }
-  /* line 239, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 390, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .TwoScroll h1 {
     color: #515769; }
-  /* line 241, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 392, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .TwoScroll .container {
     padding: 0; }
 
-/* line 244, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 395, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .two-scr {
   background-color: #fff;
   padding-bottom: 50px;
@@ -268,57 +408,50 @@ p {
   padding-right: 20px;
   margin: auto; }
 
-/* line 251, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 402, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .our_work {
   text-align: center;
   max-width: 250px;
-  margin-top: 50px;
   padding: 0;
   padding-bottom: 10px;
   transition: .7s;
   box-shadow: 1px 1px 1px #B1B2B3, 0.5em 0.5em 0.5em #5C5F61; }
-  /* line 259, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 409, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .our_work img {
     height: 280px;
     width: 100%;
     margin-bottom: 10px; }
-  /* line 263, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 413, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .our_work:hover {
     transition: .7s;
     box-shadow: 2px 2px 1px #E4E9ED, 1em 2em 1em #5C5F61; }
-  /* line 266, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 416, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .our_work a {
-    color: #4E5967;
+    color: #4B267A;
     font-weight: 400; }
-    /* line 269, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 419, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .our_work a:hover {
       transition: .7s;
       text-shadow: 1px 1px 1px #2E2E31; }
 
-/* line 273, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 423, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .our-work-title {
-  text-align: center;
-  padding: 5px; }
-  /* line 276, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  text-align: center; }
+  /* line 425, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .our-work-title .our-work-title-main {
-    margin-bottom: 20px;
-    padding: 50px;
     font-weight: 1000;
-    color: #2F649A;
-    text-shadow: 2px 2px 2px #000; }
-  /* line 282, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    color: #5f309c;
+    text-shadow: 1px 1px 1px #000; }
+  /* line 429, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .our-work-title hr {
     background-color: rgba(78, 89, 103, 0.2);
     height: 1px; }
-  /* line 286, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .our-work-title h1 {
-    margin-top: 15px; }
 
-/* line 289, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 435, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .font-size30 {
   font-size: 30px; }
 
-/* line 298, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 444, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .about-us {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -327,9 +460,10 @@ p {
   display: flex;
   align-items: center;
   overflow: hidden;
-  box-shadow: inset 0px 0px 20px 5px white;
-  position: relative; }
-  /* line 308, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  position: relative;
+  background: rgba(25, 10, 41, 0.1);
+  box-shadow: inset 0px 0px 10px 1px #000; }
+  /* line 455, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .about-us h1 {
     text-align: center;
     font-size: 75px;
@@ -337,135 +471,160 @@ p {
     animation-name: example;
     animation-duration: 5s;
     animation-iteration-count: infinite; }
-  /* line 315, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .about-us .col-lg-6 {
-    background-color: rgba(0, 0, 0, 0.5); }
-    /* line 317, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .about-us .col-lg-6 .descr-about-us {
-      padding-bottom: 30px;
-      font-size: 18px; }
-      /* line 320, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .about-us .col-lg-6 .descr-about-us div {
-        text-align: center; }
-      /* line 322, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .about-us .col-lg-6 .descr-about-us a {
-        text-align: center;
-        color: #fff;
-        text-shadow: 0px 0px 1px #fff;
-        background-color: #1A3856;
-        padding: 15px 30px;
-        border: 2px solid transparent;
-        font-size: 16px;
-        border-radius: 3px; }
-        /* line 331, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-        .about-us .col-lg-6 .descr-about-us a:hover {
-          background-color: transparent;
-          border: 2px solid #1A3856; }
+  /* line 463, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .about-us .col-lg-6 .descr-about-us {
+    padding-bottom: 30px;
+    font-size: 18px; }
+    /* line 466, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .about-us .col-lg-6 .descr-about-us div {
+      text-align: center; }
+    /* line 468, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .about-us .col-lg-6 .descr-about-us a {
+      text-align: center;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 16px;
+      border-radius: 3px;
+      transition: .3s;
+      background-color: #4D257A;
+      border: 2px solid rgba(80, 36, 129, 0.9);
+      background: rgba(80, 36, 129, 0.8);
+      border-radius: 5px; }
+      /* line 479, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .about-us .col-lg-6 .descr-about-us a:hover {
+        transition: .3s;
+        border-color: #D8DACE; }
 
-/* line 338, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 490, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .about-us .container-fluid .row .col-lg-6 {
   display: flex;
   justify-content: center; }
-  /* line 341, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 493, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .about-us .container-fluid .row .col-lg-6 .aus-left-field-img {
     padding: 10px; }
-    /* line 343, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 495, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .about-us .container-fluid .row .col-lg-6 .aus-left-field-img img {
       text-align: center; }
 
-/* line 356, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 508, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .descr-about-us {
   height: 100%;
   display: flex;
   align-items: center; }
-  /* line 360, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 512, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .descr-about-us p {
     text-align: center;
     padding: 10px;
-    color: #fff;
-    text-shadow: 1px 1px 1px #FEFEFE, 0 0 1em #a6a7aa; }
+    color: #000;
+    font-weight: 300; }
 
-/* line 372, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 524, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .delivery {
   display: flex;
   align-items: center;
   min-height: 100vh;
   background: #fff;
   overflow: hidden; }
-  /* line 379, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .delivery .container-fluid .button-buy {
-    text-align: center;
-    padding-top: 50px;
+  /* line 533, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .delivery .container-fluid .row .col-md-3 .arrow-down {
+    transform: rotate(50deg);
+    right: 25%; }
+    /* line 536, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .delivery .container-fluid .row .col-md-3 .arrow-down i {
+      color: #4B267A;
+      text-shadow: 1px 1px 1px #000;
+      font-size: 30px; }
+  /* line 540, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .delivery .container-fluid .row .col-md-3 p {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    text-transform: uppercase; }
+  /* line 546, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .delivery .container-fluid .row .col_ {
+    padding-top: 40px; }
+    /* line 548, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .delivery .container-fluid .row .col_ p {
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #000;
+      text-transform: uppercase; }
+    /* line 554, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .delivery .container-fluid .row .col_ .arrow-up {
+      transform: rotate(-50deg);
+      top: 0; }
+      /* line 557, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .delivery .container-fluid .row .col_ .arrow-up i {
+        font-size: 30px;
+        color: #4B267A;
+        text-shadow: 1px 1px 1px #000; }
+    /* line 561, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .delivery .container-fluid .row .col_ .arrow-up-1 {
+      right: 10%; }
+    /* line 563, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .delivery .container-fluid .row .col_ .arrow-up-2 {
+      right: 30%; }
+    /* line 565, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .delivery .container-fluid .row .col_ .arrow-up-3 {
+      right: 0; }
+  /* line 568, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .delivery .container-fluid .row .col-md-12 div {
     padding-bottom: 50px; }
-    /* line 383, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .delivery .container-fluid .button-buy a {
-      text-align: center;
-      color: #fff;
-      text-shadow: 0px 0px 1px #fff;
-      background-color: #1A3856;
-      padding: 15px 30px;
-      border: 2px solid transparent;
-      font-size: 16px;
-      border-radius: 3px; }
-      /* line 392, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .delivery .container-fluid .button-buy a:hover {
-        background-color: transparent;
-        border: 2px solid #1A3856;
-        color: #1A3856;
-        text-shadow: 0px 0px 1px #1A3856; }
-  /* line 397, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .delivery .container-fluid .delivery-title-div {
-    text-align: center;
-    padding-bottom: 50px; }
-    /* line 400, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .delivery .container-fluid .delivery-title-div h2 {
+    /* line 570, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .delivery .container-fluid .row .col-md-12 div h2 {
+      font-size: 40px;
+      padding-bottom: 20px;
       font-weight: 1000;
-      color: #2F649A;
-      text-shadow: 2px 2px 2px #000; }
-  /* line 404, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .delivery .col {
-    text-align: center; }
-    /* line 406, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .delivery .col img {
-      height: 90px;
-      width: 90px; }
-    /* line 409, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .delivery .col div {
-      padding-top: 20px; }
-      /* line 411, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .delivery .col div p {
-        padding-top: 10px;
-        font-size: 20px;
-        color: #2F649A;
-        text-shadow: 0px 0px 1px #1A3856; }
+      color: #5f309c;
+      text-shadow: 1px 1px 1px #000; }
+  /* line 576, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .delivery .container-fluid .row .col-md-12 .d-cont-us {
+    padding-top: 30px; }
+    /* line 578, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .delivery .container-fluid .row .col-md-12 .d-cont-us a {
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 16px;
+      border-radius: 3px;
+      transition: .3s;
+      background-color: #4D257A;
+      border: 2px solid rgba(80, 36, 129, 0.9);
+      background: rgba(80, 36, 129, 0.8);
+      border-radius: 5px; }
+      /* line 588, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      .delivery .container-fluid .row .col-md-12 .d-cont-us a:hover {
+        transition: .3s;
+        border-color: #D8DACE; }
 
-/* line 425, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 609, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .my-advantages {
   min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
   padding-bottom: 700px; }
-  /* line 433, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 617, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .my-advantages .container-fluid .row .col {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0; }
-    /* line 438, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 622, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .my-advantages .container-fluid .row .col .logotip {
       z-index: 9; }
-      /* line 440, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      /* line 624, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
       .my-advantages .container-fluid .row .col .logotip img .my-advantages {
         z-index: -1000; }
-    /* line 442, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 626, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .my-advantages .container-fluid .row .col div {
       z-index: 10;
       padding-top: 10px;
       padding-bottom: 10px;
       width: 100%;
       text-align: center; }
-      /* line 448, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      /* line 632, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
       .my-advantages .container-fluid .row .col div p {
         text-align: center;
         margin: 0;
@@ -475,153 +634,174 @@ p {
         font-size: 25px;
         font-family: Pompadur;
         text-shadow: 3px 5px 1px #000; }
-      /* line 457, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+      /* line 641, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
       .my-advantages .container-fluid .row .col div h1 {
         color: #fff;
         font-weight: 1000;
         text-shadow: 3px 5px 1px #000;
         padding: 50px; }
 
-/* line 465, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 649, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .advantages-desc {
   overflow: hidden; }
 
-/* line 473, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 657, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .reviews {
-  min-height: 80%;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-color: #FAFAFA;
-  justify-content: center; }
-  /* line 481, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .reviews div {
-    background-color: #fff;
-    top: 850px;
-    border-radius: 15px; }
-    /* line 485, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-    .reviews div .container {
-      box-shadow: 3px 0px 20px 5px #000; }
-      /* line 487, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-      .reviews div .container .row {
-        padding-top: 30px;
-        padding-bottom: 30px; }
-        /* line 490, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-        .reviews div .container .row .col {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          top: 0; }
-          /* line 495, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-          .reviews div .container .row .col div {
-            display: flex;
-            align-items: center; }
-            /* line 498, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-            .reviews div .container .row .col div h1 {
-              color: #2F649A;
-              font-weight: 1000;
-              text-shadow: 2px 2px 1px #000;
-              padding: 20px; }
-            /* line 503, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-            .reviews div .container .row .col div hr {
-              background-color: #000; }
-            /* line 505, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-            .reviews div .container .row .col div p {
-              color: #212531;
-              text-shadow: 0px 0px 1px #1A3856; }
-            /* line 508, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-            .reviews div .container .row .col div .p1 {
-              border-bottom: 1px solid #CDCDCD;
-              padding: 5px;
-              border-right: 1px solid #CDCDCD;
-              box-shadow: 0px 1px 2px 0px #000; }
-            /* line 513, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-            .reviews div .container .row .col div .p2 {
-              border-bottom: 1px solid #CDCDCD;
-              padding: 5px;
-              border-left: 1px solid #CDCDCD;
-              border-right: 1px solid #CDCDCD;
-              box-shadow: 0px 1px 2px 0px #000; }
-            /* line 519, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-            .reviews div .container .row .col div div {
-              display: block;
-              padding: 20px; }
-              /* line 522, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-              .reviews div .container .row .col div div p {
-                text-align: center;
-                padding-top: 5px;
-                border-bottom: 1px solid transparent; }
-              /* line 526, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-              .reviews div .container .row .col div div img {
-                text-align: center;
-                border: 2px solid #2F649A;
-                border-radius: 100px;
-                background-color: #2F649A; }
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  /* line 665, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .reviews .container-fluid .row .col-md-12 div h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: 1000;
+    color: #5f309c;
+    text-shadow: 1px 1px 1px #000; }
+  /* line 671, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .reviews .container-fluid .row .col-md-12 div hr {
+    background: rgba(47, 0, 47, 0.7);
+    box-shadow: 0px 2px 1px 0px rgba(47, 0, 47, 0.7); }
+  /* line 675, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .reviews .container-fluid .row .col-md-3 div {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    /* line 679, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .reviews .container-fluid .row .col-md-3 div p {
+      margin: 0; }
 
-/* line 536, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 685, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.advantages {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 30px 0;
+  background: rgba(47, 0, 47, 0.7);
+  color: #fff;
+  overflow: hidden; }
+  /* line 693, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .advantages h2 {
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    padding: 10px 0; }
+  /* line 698, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .advantages .col-auto {
+    border: 1px solid #ffffff;
+    padding: 20px 40px;
+    margin: 10px;
+    box-shadow: 5px 5px 2px 0px black;
+    background: rgba(47, 0, 47, 0.4); }
+  /* line 705, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .advantages__wrap i {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 110px;
+    height: 110px;
+    font-size: 50px;
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px 1px white; }
+  /* line 718, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .advantages__wrap p {
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    padding-top: 20px; }
+
+/* line 726, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .list_ {
   list-style: none; }
-  /* line 538, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 728, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .list_ li {
     display: flex; }
-    /* line 540, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 730, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .list_ li a {
       color: #1A3856;
       font-size: 18px;
       padding: 10px;
       text-shadow: 0px 0px 1px #1A3856; }
-    /* line 545, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 735, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .list_ li i {
       font-size: 25px;
       padding: 10px; }
-    /* line 548, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 738, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .list_ li .fa-viber {
       color: #7B58EA; }
-    /* line 550, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    /* line 740, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .list_ li .fa-telegram {
       color: #269EDA; }
 
-/* line 553, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 743, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .footer {
   top: auto;
   right: 0;
   left: 0;
   z-index: -10; }
-  /* line 558, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 748, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .footer .footer-list-link {
     color: #5C8288; }
 
-/* line 563, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 753, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .footer .footer-list-link:hover {
   color: #1A3856; }
 
-/* line 568, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 758, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .footer .col-sm-5 button {
-  background-color: #1A3856;
-  border-radius: 3px; }
-  /* line 571, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: .3s;
+  background-color: #4D257A;
+  border: 2px solid rgba(80, 36, 129, 0.9);
+  background: rgba(80, 36, 129, 0.8);
+  border-radius: 5px; }
+  /* line 768, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .footer .col-sm-5 button:hover {
-    background-color: #20466B; }
+    transition: .3s;
+    border-color: #D8DACE; }
 
-/* line 574, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.footer .col-sm-7 h2 {
-  padding-bottom: 20px; }
+/* line 773, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-sm-7 div img {
+  width: 200px;
+  height: 150px;
+  border: 1px solid rgba(80, 36, 129, 0.8); }
 
-/* line 576, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 777, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .footer .col-sm-7 .list_ {
   padding-left: 0; }
 
-/* line 578, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 779, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .footer .col-sm-7 h4 {
-  text-shadow: 0px 0px 1px #1A3856; }
+  text-shadow: 0px 0px 1px #4D257A; }
 
-/* line 584, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 781, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-sm-7 h2 {
+  text-shadow: 0px 0px 1px #4D257A; }
+
+/* line 783, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-sm-7 .social-net {
+  padding-left: 50px;
+  padding-bottom: 10px; }
+  /* line 787, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .footer .col-sm-7 .social-net a i {
+    font-size: 25px;
+    padding-left: 20px;
+    color: rgba(80, 36, 129, 0.8); }
+    /* line 791, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+    .footer .col-sm-7 .social-net a i:hover {
+      color: rgba(80, 36, 129, 0.7); }
+
+/* line 799, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .hidden {
   display: none;
   text-align: center; }
 
-/* line 588, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 803, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .formFb {
   padding: 20px 20px;
   background: rgba(250, 250, 250, 0.4);
@@ -631,34 +811,34 @@ p {
   text-align: center;
   border: 2px solid rgba(47, 100, 154, 0.8);
   border-radius: 3px; }
-  /* line 597, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 812, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .formFb input {
     width: 100%; }
-  /* line 599, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 814, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .formFb .input-name {
     margin-top: 35px;
     margin-bottom: 20px; }
-  /* line 602, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 817, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .formFb .input-phone {
     margin-bottom: 20px; }
-  /* line 604, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 819, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .formFb button {
     border-radius: 3px;
     padding: 5px 10px; }
 
-/* line 609, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 824, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .btn-disabled {
   border: 2px solid rgba(253, 83, 83, 0.8);
   background: rgba(250, 250, 250, 0.7); }
-  /* line 612, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 827, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .btn-disabled:hover {
     cursor: default; }
 
-/* line 615, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+/* line 830, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .btn-enabled {
   background: #fafafa;
   border: 2px solid rgba(47, 100, 154, 0.8); }
-  /* line 618, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  /* line 833, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .btn-enabled:hover {
     cursor: pointer; }
 
