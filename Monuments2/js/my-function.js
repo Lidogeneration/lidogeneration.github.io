@@ -6,6 +6,41 @@ $(function() {
     OnClick();
 });
 
+$('.my-reviews').slick({
+  dots: true,
+  infinite: true,
+  autoplay: true, 
+  speed: 300,
+  autoplaySpeed: 5000,
+ // slidesToShow: 1,
+  adaptiveHeight: true,
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ],
+  prevArrow: '<button type="button" class="b-slick-prev b-slick-style"><i class="fas fa-chevron-circle-left"></i></button>',
+  nextArrow: '<button type="button" class="b-slick-next b-slick-style"><i class="fas fa-chevron-circle-right"></i></button>'
+});
+
 function FormCheck() {
     $('#phoneid, #phoneid2').inputmask('+38(999) 999-99-99',{ "oncomplete": function() { 
         $('#buttonform').prop("disabled", false);
@@ -36,17 +71,19 @@ $(window).on('scroll', function() {
 });
 
 $('#hamId').on('click', function (e) {
-    $('#hamId').toggleClass('is-active');
     if(!check){
         check = true;
+         $('#hamId').addClass('is-active');
     }
     else {
         check = false;
+         $('#hamId').removeClass('is-active');
     }
 });
 
+
 function OnClick() {
-    $('#menu, #menu2').on("click","a", function (event) {
+    $('.nav-link-a, .menu2').on("click","a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
@@ -63,10 +100,8 @@ jQuery(function($){
     $(document).mouseup(function (e) { 
         var block = $("#menu"); 
         if (!block.is(e.target) && block.has(e.target).length === 0) {
-            if(check){ 
-              //  $('#hamId').click();
-               
-            }
         }
     });
 });
+
+

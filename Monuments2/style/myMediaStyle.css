@@ -10,12 +10,6 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .FirstScroll .container-fluid .video-cont {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 576px) {
     .about-us .container-fluid .row .col .title-about-us {
         padding-top: 10px
@@ -42,42 +36,19 @@
         left: 0;
         background-color: rgba(72,32,119,0.7);
     }
-    .first-scroll .container-fluid .row .col-logotip a {
-       /* display: none;
-        position: fixed; */
-    }
-    .delivery .container-fluid .row .col-tel-phone img {
-    }
-    .delivery .container-fluid .row .col-tel-phone p {
-    }
-    .delivery .container-fluid .row .col-act img {
-    }
-     .delivery .container-fluid .row .col-act p {
-    }
-}
-
-@media only screen and (max-width: 1023px)
-{
-    .first-scroll .container-fluid .row .col-contacts div a {
-        margin-right: 15px;
-    }
 }
 
 @media only screen and (max-width: 991px)
 {
-    .first-scroll .container-fluid .row .col .img-right-field {
-        margin-top: 0;
-    }
-    .first-scroll .container-fluid .row {
-        padding-top: 60px;
-    }
-    .first-scroll .container-fluid .row .col-candle{
-        display: none;
-    }  
-    .first-scroll .container-fluid .row .col-contacts{
+    .f-scroll {
         display: none;
     }
-    .first-scroll .container-fluid .row .col-logotip{
+    .f-scroll-2 {
+        min-height: 100vh;
+        height: 100%;
+        padding-top: 100px;
+    }
+    .my-header .name-city div {
         display: none;
     }
     .my-header .logotip {
@@ -104,222 +75,15 @@
     .my-header .my-nav-menu {
         padding-bottom: 2px;
     }
-    .first-scroll .container-fluid .row .col-logotip a {
-        display: none;
-    }
-    .first-scroll .container-fluid .row .col .my-navigation-menu {
-        display: none;
-    }
 }
 
-@media only screen and (max-width: 769px)
+@media only screen and (max-width: 493px)
 {
-    .reviews {
-        height: 90vh;
-    }
-    .my-advantages .container-fluid .row .col div p {
-        font-size: 22px;
-    }
-}
-
-@media only screen and (max-width: 767px)
-{
-    .delivery i {
-        display: none;
-    }
-    .delivery void {
-        display: none;
-    }
-    .delivery img {
-        margin-bottom: 20px;
-    }
-    .my-advantages .container-fluid .row .col .logotip img {
-        display: none;
-    }
-    .reviews {
-        height: 150vh;
-    }
-    .footer .footer-seperator .container .row div h2 {
-        font-size: 25px;
-    }
-    .footer .footer-seperator .container .row div h4 {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 677px){
-    .reviews {
-        height: 140vh;
-    }
-    .reviews div{
-        top: 890px;
-    }
-}
-
-@media only screen and (max-width: 575px){
-    .first-scroll .container-fluid .row .col-triggers h2 {
-        font-size: 35px;
-    }
-    .first-scroll .container-fluid .row .col-triggers .triggers div p {
-        font-size: 20px;
-    }
-    .reviews {
-        height: 70vh
-    }
-    .reviews div{
-        top: 800px;
-    }
-    .reviews div .container .row .col div p {
-        font-size: 14px;
-    }
-    .reviews div .container .row .col div {
-        align-items: flex-start;
-    }
-    .reviews div .container .row .col div div img {
-        height: 100px;
-        width: 100px;
-    }
-    .container-fluid .row .col .logotip img {
-        height: 100px;
-        width: 250px;
-    }
-    .my-advantages .container-fluid .row .col div h1 {
-        font-weight: 500;
-    }
-    .my-advantages .container-fluid .row .col div img{
-        height: 70px;
-        width: 70px;
-    } 
-    
-    .my-advantages .container-fluid .row .col div p{
-        font-size: 20px;
-    }
-    
-}
-
-@media only screen and (max-width: 991px){
-    .footer {
-        padding-top: 50px;
-    }
-}
-
-@media only screen and (max-width: 522px){
-    .footer {
-        padding-top: 100px;
-    }
-    .my-advantages .container-fluid .row .col div h1 {
+    .f-scroll-2 .container-fluid .row .col-md-12 .h2 {
         font-size: 30px;
     }
-}
-
-@media only screen and (max-width: 489px){
-    .footer {
-        padding-top: 150px;
-    }
-    .container-fluid .row .col .logotip img {
-        height: 70px;
-        width: 210px;
-    }
-     .my-advantages .container-fluid .row .col div img{
-        height: 50px;
-        width: 50px;
-    } 
-    .my-advantages .container-fluid .row .col div p{
-        font-size: 18px;
-    }
-    .reviews div{
-        top: 700px;
-    }
-}
-
-@media only screen and (max-width: 472px){
-    .footer {
-        padding-top: 250px;
-    }
-}
-
-@media only screen and (max-width: 437px){
-    .footer {
-        padding-top: 350px;
-    }
-}
-
-@media only screen and (max-width: 417px){
-    .footer {
-        padding-top: 450px;
-    }
-}
-
-@media only screen and (max-width: 404px){
-    .footer {
-        padding-top: 550px;
-    }
-}
-
-@media only screen and (max-width: 385px){
-    .footer {
-        padding-top: 650px;
-    }
-}
-
-@media only screen and (max-width: 378px){
-    .footer {
-        padding-top: 750px;
-    }
-}
-
-@media only screen and (max-width: 369px){
-    .footer {
-        padding-top: 850px;
-    }
-}
-
-@media only screen and (max-width: 359px){
-    .footer {
-        padding-top: 950px;
-    }
-}
-
-@media only screen and (max-width: 347px){
-    .footer {
-        padding-top: 1050px;
-    }
-}
-
-@media only screen and (max-width: 339px){
-    .footer {
-        padding-top: 1150px;
-    }
-}
-
-@media only screen and (max-width: 332px){
-    .reviews div .container .row .col div div img {
-        height: 80px;
-        width: 80px;
-    }
-    .reviews div .container .row .col div p {
-    }
-    .footer {
-        padding-top: 1000px;
-    }
-}
-
-@media only screen and (max-width: 329px){
-    .footer {
-        padding-top: 1100px;
-    }
-}
-
-@media only screen and (max-width: 324px){
-    .footer {
-        padding-top: 1150px;
-    }
-}
-
-@media only screen and (max-width: 420px)
-{
-    .my-header .name-city p{
-        display: none;
+    .style-p {
+        font-size: 20px;
     }
 }
 
@@ -364,6 +128,12 @@
     }
     .delivery .container-fluid .delivery-title-div {
         margin-top: 50px;
+    }
+    .arrow-down {
+        display: none;
+    }
+    .arrow-up {
+        display: none;
     }
 }
 

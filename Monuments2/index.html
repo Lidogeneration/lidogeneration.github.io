@@ -22,6 +22,8 @@
    <link rel="stylesheet" href="style/myStyle.css">
    <link rel="stylesheet" href="style/myMediaStyle.css">
    <link rel="stylesheet" href="style/gamburger.css">
+   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
    <!--=================================-->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <style>
@@ -37,7 +39,7 @@
     <a href="index.html" class="navbar-brand logotip m-0 mr-2">
         <img src="image/Logo_.png" height="50" width="100" alt="logo" class="">
     </a>
-    <div class="name-city d-flex align-items-center">
+    <div class="name-city d-flex align-items-center"> 
       <p>г. Запорожье</p>
       <div>
           <a class="d-block" href="tel:+380507510606">(050) 751-06-06</a>
@@ -50,7 +52,7 @@
       </span>
     </button>
     <div class="collapse navbar-collapse my-nav-menu" id="navbarSupportedContent">
-        <ul id="menu" class="navbar-nav mx-auto"> 
+        <ul class="navbar-nav mx-auto"> 
             <li class="nav-item navigations name-city"> 
                 <p>г. Запорожье</p>
             </li>
@@ -58,19 +60,19 @@
                 <a class="nav-link" href="tel:+380507510606">(050) 751-06-06</a>
                 <a class="nav-link" href="tel:+380687510606">(068) 751-06-06</a>
             </li>
-            <li class="nav-item navigations">
+            <li class="nav-item navigations nav-link-a">
                 <a href="#about-us-id" class="nav-link">О нас</a>
             </li>
-            <li class="nav-item navigations">
+            <li class="nav-item navigations nav-link-a">
                 <a href="#katalogId" class="nav-link">Наши работы</a>
             </li>
-             <li class="nav-item navigations">
-                <a href="#" class="nav-link">Преимущества</a>
+             <li class="nav-item navigations nav-link-a">
+                <a href="#advantagesId" class="nav-link">Преимущества</a>
             </li>
-             <li class="nav-item navigations">
+             <li class="nav-item navigations nav-link-a">
                 <a href="#reviewsId" class="nav-link">Отзывы</a>
             </li>
-            <li class="nav-item navigations">
+            <li class="nav-item navigations nav-link-a">
                 <a href="#footerId" class="nav-link">Контакты</a>
             </li>
         </ul>
@@ -91,19 +93,19 @@
             <div class="col-lg-3 col-logo">
                 <a href="#"><img class="img-fluid" src="image/Logo_.png"></a>
             </div>
-            <div class="col-lg-3 text-center">
+            <div class="col-lg-3 angel-col text-center">
                 <img class="img-fluid angel" src="image/angel.png">
             </div>
             <div class="col-lg-3 text-right col-contact-w-us">
                 <div>
-                    <a href="#">Связаться с нами</a>
+                    <a href="#feedbackId" class="b-contact-us">Связаться с нами</a>
                 </div>
             </div>
             <div class="col-lg-12">
-                <ul>
+                <ul class="menu2">
                     <li><a href="#about-us-id" class="">О нас</a></li>
                     <li><a href="#katalogId" class="">Наши работы</a></li>
-                    <li><a href="#" class="">Преимущества</a></li>
+                    <li><a href="#advantagesId" class="">Преимущества</a></li>
                     <li><a href="#reviewsId" class="">Отзывы</a></li>
                     <li><a href="#footerId" class="">Контакты</a></li>
                 </ul>
@@ -111,11 +113,12 @@
         </div>
     </div>
 </section>
-<section class="f-scroll-2 position-relative d-flex align-items-center parallax-window"
+
+<section class="f-scroll-2 d-flex align-items-center parallax-window"
     data-parallax="scroll" data-image-src="image/back-first-scroll.jpg">
     <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
+        <div class="row align-items-center"> 
+            <div class="col-md-12 col-lg-6">
                 <h2 class="text-center" data-aos="zoom-in">Делаем памятники</h2> 
                 <div class="triggers d-block">
                    <div class="d-flex">
@@ -132,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 d-flex justify-content-center">
+            <div class="col-md-12 col-lg-6 d-flex justify-content-center">
                 <div class="d-monument-img" data-aos="fade-left" data-aos-delay="10" data-aos-duration="1500">
                     <img class="img-fluid" data-aos="fade-left" data-aos-delay="10" data-aos-duration="1500" src="image/222222222.PNG">
                 </div>
@@ -141,71 +144,8 @@
     </div>
     <div class="back-scroll"></div>
 </section>
+   
     <!--========== END HEADER ==========-->
-<!--<section class="first-scroll"> 
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4 col-candle">
-              <img src="image/1482921522_2485.gif" height="50" width="50" alt="logo" class="ml-1">
-              <div>
-               <p>г. Запорожье</p>
-               </div>
-          </div>
-           <div class="col-logotip col-md-4">
-               <a href="index.html" class="logotip">
-                 <img src="image/logo002.png" height="50" alt="logo" class="">
-               </a>
-           </div>
-           <div class="col-md-4 col-contacts"> 
-               <div>
-                    <a class="nav-link" href="tel:+380507510606">(050) 751-06-06</a>
-                    <a class="nav-link" href="tel:+380687510606">(068) 751-06-06</a>
-                </div>
-                <div>
-                   <button type="button" href="#feedbackId" class="btn btn-outline-info b-contact-us">Связаться с нами</button>
-               </div>
-           </div>
-            <div class="col col-md-12 col-sm-12 col-lg-12">
-                <ul id="menu2" class="my-navigation-menu">
-                    <li class="my-nav-item">
-                        <a href="#about-us-id" class="">О нас</a>
-                    </li>
-                    <li class="my-nav-item">
-                         <a href="#katalogId" class="">Наши работы</a>
-                    </li>
-                    <li class="my-nav-item">
-                         <a href="#reviewsId" class="">Отзывы</a>
-                    </li>
-                    <li class="my-nav-item">
-                         <a href="#footerId" class="">Контакты</a>
-                    </li>
-                </ul>
-           </div>
-            <div class="col col-lg-6 col-md-12 col-sm-12 col-12 col-triggers">
-                <h2 data-aos="zoom-in">Делаем памятники</h2> 
-                <div class="triggers">
-                   <div>
-                        <i class="fas fa-chevron-circle-right tFas style-p"  data-aos-offset="0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"></i>
-                        <p class="style-p" data-aos="fade-down-left" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="100">Собственное производство</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-chevron-circle-right style-p" data-aos-offset="0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"></i>
-                        <p class="style-p" data-aos="fade-down-left" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="500">Выполнение заказа в четко поставленные сроки</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-chevron-circle-right style-p" data-aos-offset="0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700"></i>
-                        <p class="style-p" data-aos="fade-down-left" data-aos-offset="0" data-aos-duration="1000" data-aos-delay="700">100% гарантии качеста на нашу работу</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-lg-6 col-md-12 col-sm-12 col-12 col-img-right-field"> 
-                <div class="img-right-field" data-aos="fade-left" data-aos-delay="10" data-aos-duration="1500">
-                    <img class="img-fluid" data-aos="fade-left" data-aos-delay="10" data-aos-duration="3000" src="image/photo_2018-09-21_14-07-44.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>-->
 <section id="about-us-id" class="about-us">
     <div class="container-fluid">  
        <!--<div class="video-cont">
@@ -243,6 +183,7 @@
         </div>
     </div>
 </section>
+
 <section id="katalogId" class="TwoScroll parallax-window"
     data-parallax="scroll" data-image-src="image/purple_bgg.jpg">
        <div class="container">
@@ -260,22 +201,22 @@
               </div>
                <div class="col col-xl-3 col-lg-6 col-md-6">
                    <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/odinarnue-1.jpg">Памятник 1</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/odinarnue-1.jpg">Памятник 1</a>
                    </div>
                </div>
                <div class="col col-xl-3 col-lg-6 col-md-6">
                    <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/odinarnue-2.jpg">Памятник 2</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/odinarnue-2.jpg">Памятник 2</a>
                    </div>
                </div>
               <div class="col col-xl-3 col-lg-6 col-md-6">
                    <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/odinarnue-5.jpg">Памятник 3</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/odinarnue-5.jpg">Памятник 3</a>
                     </div>
                </div>
               <div class="col col-xl-3 col-lg-6 col-md-6">
                    <div class="our_work mx-auto">
-                        <a href="#"><img src="image/products/odinarnue-4.jpg">Памятник 4</a>
+                        <a href="#feedbackId" class="b-contact-us"><img src="image/products/odinarnue-4.jpg">Памятник 4</a>
                     </div>
                </div>
             </div>
@@ -287,22 +228,22 @@
               </div>
                <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/odinarnue-6.jpg">Памятник 5</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/odinarnue-6.jpg">Памятник 5</a>
                    </div>
                </div>
                <div class="col col-xl-3 col-lg-64 col-md-6">
                     <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/odinarnue-7.jpg">Памятник 6</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/odinarnue-7.jpg">Памятник 6</a>
                    </div>
                </div>
                <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/odinarnue-8.jpg">Памятник 7</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/odinarnue-8.jpg">Памятник 7</a>
                    </div>
                </div>
                <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/odinarnue-9.jpg">Памятник 8</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/odinarnue-9.jpg">Памятник 8</a>
                    </div>
                </div>
            </div>
@@ -314,89 +255,28 @@
               </div>
                <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/1.jpg">1</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/1.jpg">1</a>
                    </div>
                </div>
                <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/2.jpg">2</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/2.jpg">2</a>
                    </div>
                </div>
                <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/3.jpg">3</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/3.jpg">3</a>
                    </div>
                </div>
                <div class="col col-xl-3 col-lg-6 col-md-6">
                     <div class="our_work mx-auto">
-                       <a href="#"><img src="image/products/4.jpg">4</a>
+                       <a href="#feedbackId" class="b-contact-us"><img src="image/products/4.jpg">4</a>
                    </div>
                </div>
            </div> 
        </div>
    </section>
-<!--<section class="delivery">
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-           <div class="delivery-title-div">
-            <h2>КАК ОФОРМИТЬ ЗАКАЗ</h2>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="row">
-                <div class="col col-md-3  col-sm-12 col-12">
-                   <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-delay="50">
-                    <img src="image/talking.png">
-                    <p>1. Заполнение формы заявки</p>
-                  </div>
-                </div>
-                <div class="col col-md-3 col-sm-12 col-12">
-                    <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-delay="100">
-                    <img src="image/list.png">
-                    <p>2. Консультация по телефону</p>
-                    </div>
-                </div>
-                <div class="col col-md-3 col-sm-12 col-12">
-                   <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-delay="150">
-                    <img src="image/online-shop.png">
-                    <p>3. Выезд специалиста на кладбище</p>
-                    </div>
-                </div>
-                <div class="col col-md-3 col-sm-12 col-12">
-                    <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-delay="200">
-                    <img src="image/package.png">
-                    <p>4. Оформление договора</p>
-                    </div>
-                </div>
-                <div class="col col-md-4 col-sm-12 col-12">
-                    <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-delay="250">
-                    <img src="image/wrench.png">
-                    <p>5. Изготовление и установка</p>
-                    </div>
-                </div>
-                <div class="col col-md-4 col-sm-12 col-12">
-                    <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-delay="300">
-                    <img src="image/sign.png">
-                    <p>6. Подписание акта выполненных работ</p>
-                    </div>
-                </div>
-                <div class="col col-md-4 col-sm-12 col-12">
-                    <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-delay="300">
-                    <img src="image/delivery.png">
-                    <p>7. Расчет</p>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-              <div class="button-buy">
-                  <a class="b-contact-us" href="#feedbackId">Оформить заказ</a>
-              </div>
-          </div>
-        </div>
-    </div>
-</section>-->
+   
 <section class="delivery d-flex align-items-center">
     <div class="container-fluid"> 
         <div class="row">
@@ -470,74 +350,7 @@
     </div>
 </section>
 
-<!--<div class="position-relative">
-<section class="my-advantages parallax-window" data-parallax="scroll" data-image-src="image/dark-waves-4k-black-wallpapers.jpg">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col col-12 col-sm-12 col-md-12">
-                <div>
-                    <h1>ПРЕИМУЩЕСТВА</h1>
-                </div>
-            </div>
-            <div class="col col-4 col-sm-4 col-md-4">
-                <div>
-                   <img src="image/icons8-опыт-работы-100.png"> 
-                    <p>Опыт работы более 20 лет</p>
-                </div>
-            </div>
-            <div class="col col-4 col-sm-4 col-md-4">
-                <div>
-                    <img src="image/icons8-завод-filled-100.png">
-                    <p>Собственное производство</p>
-                </div>
-            </div>
-            <div class="col col-4 col-sm-4 col-md-4">
-                <div>
-                   <img src="image/icons8-гарантия-50.png">
-                    <p>Гарантия до 50 лет</p>
-                </div>
-            </div>
-            <div class="col col-4 col-sm-4 col-md-4">
-                <div>
-                   <img src="image/icons8-процент-100.png">
-                    <p>Беспроцентная расрочка</p>
-                </div>
-            </div>
-            <div class="col col-4 col-sm-4 col-md-4">
-                <a href="#" class="navbar-brand logotip m-0 off">
-                    <img src="image/logo002.png" height="100" alt="logo" class="">
-                </a>
-            </div>
-            <div class="col col-4 col-sm-4 col-md-4">
-                <div>
-                   <img src="image/icons8-табель-успеваемости-100.png">
-                    <p>Отчёт на каждом этапе</p>
-                </div>
-            </div>
-            <div class="col col-4 col-sm-4 col-md-4">
-                <div>
-                   <img src="image/icons8-рабочие-100.png">
-                    <p>Опытные специалисты</p>
-                </div>
-            </div>
-            <div class="col col-4 col-sm-4 col-md-4">
-                <div>
-                   <img src="image/icons8-водитель-100.png">
-                    <p>Выезд мастера на кладбище</p>
-                </div>
-            </div>
-            <div class="col col-4 col-sm-4 col-md-4">
-                <div>
-                   <img src="image/icons8-подарок-100.png">
-                    <p>Бесплатное ответственное хранение</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-</div>-->
-<section class="advantages d-flex align-items-center justify-content-center parallax-window"
+<section id="advantagesId" class="advantages d-flex align-items-center justify-content-center parallax-window"
     data-parallax="scroll" data-image-src="image/purple_bgg.jpg">
 		<div class="container">
 			<h2 class="text-center" data-aos="fade-down" data-aos-duration="2000">Наши преимущества</h2>
@@ -586,50 +399,50 @@
 		</div>
 	</section>
 
-<section class="reviews d-flex align-items-center justify-content-center">
+<section id="reviewsId" class="my-reviews-section d-flex align-items-center"> 
     <div class="container-fluid">
         <div class="row">
-           <div class="col-md-12">
-                <div>
-                    <h1 class="text-center">ОТЗЫВЫ</h1>
-                    <hr>
-                </div>
+            <div class="col-md-12 text-center">
+                <h2>ОТЗЫВЫ</h2>
             </div>
-            <div class="col-md-3 d-block">
-                <div class="text-center">
-                    <img height="150" width="150" src="image/r1.png">
-                    <p>Анна Степановна</p>
-                    </div>
-                    <p>Случилось горе в моей семье, ушла из жизни моя мама. Для меня она была самым дорогим и любимым человеком в этой жизни! Я была обязана отдать ей честь, и я хотела, 
-что–бы памятник был достойным для памяти моей мамы! Проконсультировалась по телефону, выбрала памятник и в кротчайшие сроки все было выполнено! Осталась очень довольна! Качественно и красиво, именно то что искала!</p>
-            </div>
-            <div class="col-md-3 d-block">
-               <div class="text-center">
-                    <img height="150" width="150" src="image/r2.png">
-                    <p>Виктор Андреевич</p>
-                </div>
-                <p class="p2">Для каждого   потеря родного человека – это удар. Так случилось и в моей семье, брата не стало из-за болезни. Все трудные моменты прошли плечом к плечу, и поставить не качественный  памятник – это было бы не уважительно по отношению к нему! Обратился я в компанию «Днипро» и с консультантом подобрали лучший вариант! Боялся что с годами с памятником что-то может произойти, но уже 3й год стоит как новый!</p>
-               
-            </div>
-            <div class="col-md-3 d-block">
-                <div class="text-center">
-                    <img height="150" width="150" src="image/r3.png">
-                    <p>Михаил Владимирович</p>
-                    </div>
-                    <p class="p1">Потеря близкого человека – это горе в семье. В прошлом году моей родной сестры не стало.  Но нас не покидало ощущение, что она еще жива, а просто ушла и не вернулась.
+            <div class="col-md-12">
+                <div class="my-reviews">
+  <div class="text-center d-rev">
+      <div>
+        <img class="img-fluid mx-auto" height="150" width="150" src="image/r4.png">
+        <p>Анатолий Сергеевич</p>
+        </div>
+        <p>Мой отец для меня был примером подражания, достойный мужчина! Время не щадит никого, и каждому отведено определенное время. Для отца я хотел сделать нечто - особенное, что - бы почтить его светлую память! В компании «Днипро» мне помогли с этим, индивидуально под меня сделали памятник, который действительно выглядит как произведение искусства! Очень качественно, а главное в короткие сроки было все сделано! </p>  
+  </div>
+   <div class="text-center d-rev">
+     <div>
+      <img class="img-fluid mx-auto" height="150" width="150" src="image/r3.png">
+        <p>Михаил Владимирович</p>
+        </div>
+        <p class="p1">Потеря близкого человека – это горе в семье. В прошлом году моей родной сестры не стало.  Но нас не покидало ощущение, что она еще жива, а просто ушла и не вернулась.
 И мы отказывались верить в то, что ее больше нет. Но реальность сурова. Моя семья обратилась в компанию «Днипро» которая занимается памятниками, и все наши пожелания были учтены. Памятник действительно выполнен на высшем уровне. И иногда появляется такое ощущение, когда приходишь на могилу, что это не кладбище, а небольшой парк.</p>
-            </div>
-            <div class="col-md-3 d-block">
-                <div class="text-center">
-                         <img height="150" width="150" src="image/r4.png">
-                        <p>Анатолий Сергеевич</p>
-                    </div>
-                <p class="p2">Мой отец для меня был примером подражания, достойный мужчина! Время не щадит никого, и каждому отведено определенное время. Для отца я хотел сделать нечто - особенное, что - бы почтить его светлую память! В компании «Днипро» мне помогли с этим, индивидуально под меня сделали памятник, который действительно выглядит как произведение искусства! Очень качественно, а главное в короткие сроки было все сделано! </p>
-                  
+  </div>
+   <div class="text-center d-rev">
+      <div>
+        <img class="img-fluid mx-auto" height="150" width="150" src="image/r1.png">
+        <p>Анна Степановна</p>
+        </div>
+        <p>Случилось горе в моей семье, ушла из жизни моя мама. Для меня она была самым дорогим и любимым человеком в этой жизни! Я была обязана отдать ей честь, и я хотела, 
+что–бы памятник был достойным для памяти моей мамы! Проконсультировалась по телефону, выбрала памятник и в кротчайшие сроки все было выполнено! Осталась очень довольна! Качественно и красиво, именно то что искала!</p>
+  </div>
+   <div class="text-center d-rev">
+      <div>
+        <img class="img-fluid mx-auto" height="150" width="150" src="image/r2.png">
+        <p>Виктор Андреевич</p>
+    </div>
+    <p class="p2">Для каждого   потеря родного человека – это удар. Так случилось и в моей семье, брата не стало из-за болезни. Все трудные моменты прошли плечом к плечу, и поставить не качественный  памятник – это было бы не уважительно по отношению к нему! Обратился я в компанию «Днипро» и с консультантом подобрали лучший вариант! Боялся что с годами с памятником что-то может произойти, но уже 3й год стоит как новый!</p> 
+  </div>
+</div>
             </div>
         </div>
     </div>
 </section>
+
 
 <footer id="footerId" class="footer">
     <div class="footer-seperator"> 
@@ -665,7 +478,6 @@
     </div>
 </footer>
 
-
  <div class="hidden mx-auto">
      <form class="formFb" id="feedbackId">
          <input class="input-name" type="text" name="name" placeholder="Имя" required><br>
@@ -681,6 +493,7 @@
 <script src="js/parallax.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/jquery.inputmask.bundle.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <!--============My scripts============-->
 <script src="js/my-function.js"></script>
 <!--=================================-->
