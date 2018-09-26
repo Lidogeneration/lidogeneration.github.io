@@ -446,11 +446,10 @@ p {
       right: 0; }
   /* line 434, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .delivery .container-fluid .row .col-md-12 div {
-    padding-bottom: 50px; }
+    padding-bottom: 30px; }
     /* line 436, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .delivery .container-fluid .row .col-md-12 div h2 {
       font-size: 40px;
-      padding-bottom: 20px;
       font-weight: 1000;
       color: #5f309c;
       text-shadow: 1px 1px 1px #000; }
