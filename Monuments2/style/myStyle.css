@@ -446,7 +446,7 @@ p {
       right: 0; }
   /* line 434, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .delivery .container-fluid .row .col-md-12 div {
-    padding-bottom: 30px; }
+    padding-bottom: 50px; }
     /* line 436, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .delivery .container-fluid .row .col-md-12 div h2 {
       font-size: 40px;
@@ -455,7 +455,7 @@ p {
       text-shadow: 1px 1px 1px #000; }
   /* line 442, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .delivery .container-fluid .row .col-md-12 .d-cont-us {
-    padding-top: 30px; }
+    padding-top: 50px; }
     /* line 444, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
     .delivery .container-fluid .row .col-md-12 .d-cont-us a {
       color: #fff;
