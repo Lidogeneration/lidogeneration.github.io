@@ -224,8 +224,7 @@ p {
 /* line 207, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .about-us-title-div {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 10px; }
   /* line 211, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
   .about-us-title-div h2 {
     text-align: center;
@@ -320,8 +319,8 @@ p {
 
 /* line 302, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
 .about-us {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   min-height: 100vh;
   height: 100%;
   display: flex;
