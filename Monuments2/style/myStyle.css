@@ -674,12 +674,12 @@ p {
 .footer .footer-list-link:hover {
   color: #472047; }
 
-/* line 661, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.footer .col-sm-5 h2 {
+/* line 662, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-md-5 h2 {
   text-shadow: 0px 0px 1px #470047; }
 
-/* line 663, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.footer .col-sm-5 button {
+/* line 664, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-md-5 button {
   color: #fff;
   padding: 15px 30px;
   font-size: 16px;
@@ -689,28 +689,41 @@ p {
   border: 2px solid rgba(80, 36, 129, 0.9);
   background: rgba(80, 36, 129, 0.8);
   border-radius: 5px; }
-  /* line 673, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-  .footer .col-sm-5 button:hover {
+  /* line 674, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .footer .col-md-5 button:hover {
     transition: .3s;
     border-color: #D8DACE; }
 
-/* line 678, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.footer .col-sm-7 div img {
+/* line 679, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-md-7 .row .col-md-6 {
+  width: 100%; }
+
+/* line 684, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-md-7 .row .col-md-12 div a i {
+  font-size: 30px;
+  padding-left: 20px;
+  color: rgba(80, 36, 129, 0.8); }
+  /* line 688, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+  .footer .col-md-7 .row .col-md-12 div a i:hover {
+    color: rgba(80, 36, 129, 0.7); }
+
+/* line 691, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-md-7 .photo-mag img {
   width: 200px;
   height: 150px;
   border: 1px solid rgba(80, 36, 129, 0.8); }
 
-/* line 682, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.footer .col-sm-7 .list_ {
+/* line 696, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-md-7 div .list_ {
   padding-left: 0; }
 
-/* line 684, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.footer .col-sm-7 h4 {
+/* line 698, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-md-7 div h4 {
   color: #470047;
   text-shadow: 0px 0px 1px #000; }
 
-/* line 687, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
-.footer .col-sm-7 h2 {
+/* line 701, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
+.footer .col-md-7 div h2 {
   text-shadow: 0px 0px 1px #470047; }
 
 /* line 689, C:/Users/Rodion/Desktop/web/Monuments/style/myStyle.sass */
