@@ -37,9 +37,14 @@ p
                     text-shadow: 1px 1px 1px #fff
     #hamId
         height: 50px
-    .my-nav-menu
+    .my-nav-menu  
         background: #fff
         ul
+            .name-city-in-nav
+                p
+                    color: #fff
+                    text-shadow: 0px 0px 1px #fff
+                    font-size: 18px
             .name-city
                 p
                     display: none
@@ -59,8 +64,8 @@ p
             margin-right: 5px
             transition: .3s
             background-color: #4D257A
-            border: 2px solid rgba(80,36,129, 0.9)
-            background: rgba(80,36,129, 0.8)
+            border: 2px solid rgba(80,36,129, 1)
+            background: rgba(80,36,129, .9)
             border-radius: 5px
             &:hover
                 transition: .3s
@@ -108,6 +113,7 @@ p
                         font-weight: 600
                         margin: 0
             .col-contact-w-us
+                height: 100%
                 div
                     a
                         padding: 7px 15px
@@ -205,8 +211,7 @@ p
         
 .about-us-title-div
     width: 100%
-    padding-top: 30px
-    padding-bottom: 30px
+    padding-bottom: 10px
     h2
         text-align: center
         margin: auto
@@ -244,6 +249,7 @@ p
     padding-top: 100px
     padding-bottom: 100px
     margin: auto
+    overflow: hidden
     h1
         color: #515769
     .container
@@ -299,8 +305,8 @@ p
 // About Us
 
 .about-us
-    padding-top: 50px
-    padding-bottom: 50px
+    padding-top: 30px
+    padding-bottom: 30px
     min-height: 100vh
     height: 100%
     display: flex
@@ -455,81 +461,6 @@ p
 // advantages
 
 
-.my-advantages
-    min-height: 100vh
-    display: flex
-    align-items: center
-    overflow: hidden
-    padding-bottom: 700px
-    .container-fluid
-        .row
-            .col
-                display: flex
-                align-items: center
-                justify-content: center
-                padding: 0
-                .logotip 
-                    z-index: 9
-                    img .my-advantages 
-                        z-index: -1000
-                div
-                    z-index: 10
-                    padding-top: 10px
-                    padding-bottom: 10px
-                    width: 100%
-                    text-align: center
-                    p  
-                        text-align: center
-                        margin: 0
-                        padding-top: 5px
-                        padding-bottom: 50px
-                        color: #fff
-                        font-size: 25px
-                        font-family: Pompadur
-                        text-shadow: 3px 5px 1px #000
-                    h1
-                        color: #fff
-                        font-weight: 1000
-                        text-shadow: 3px 5px 1px #000
-                        padding: 50px
-                        
-
-                        
-.advantages-desc
-    overflow: hidden
-            
-
-// end advantages
-
-// reviews
-
-.reviews
-    min-height: 100vh
-    padding-top: 30px
-    padding-bottom: 30px
-    .container-fluid
-        .row
-            .col-md-12
-                div
-                    h1
-                        font-size: 40px
-                        padding-bottom: 20px
-                        font-weight: 1000
-                        color: #5f309c
-                        text-shadow: 1px 1px 1px #000
-                    hr
-                        background: rgba(47, 00, 47, .7)
-                        box-shadow: 0px 2px 1px 0px rgba(47, 00, 47, .7)
-            .col-md-3
-                div
-                    padding-top: 10px
-                    padding-bottom: 10px
-                    img
-                    p
-                        margin: 0
-
-// end reviews
-
 
 .advantages
 	width: 100%
@@ -569,7 +500,7 @@ p
 			width: 150px
 			text-align: center
 			padding-top: 20px
-
+// end advantages
 
 // REVIEWS
 .my-reviews-section
@@ -657,7 +588,8 @@ p
             color: #472047
         
 .footer
-    .col-sm-5
+    overflow: hidden
+    .col-md-5
         h2
             text-shadow: 0px 0px 1px #470047
         button
@@ -673,29 +605,31 @@ p
             &:hover
                 transition: .3s
                 border-color: #D8DACE
-    .col-sm-7
-        div
+    .col-md-7
+        .row
+            .col-md-6
+                div
+                    a
+                        i
+                            font-size: 30px
+                            padding-left: 20px
+                            color: rgba(80,36,129, 0.8)
+                            &:hover
+                                color: rgba(80,36,129, 0.7)
+        .photo-mag
             img
                 width: 200px
                 height: 150px
                 border: 1px solid rgba(80,36,129, 0.8)
-        .list_
-            padding-left: 0
-        h4
-            color: #470047
-            text-shadow: 0px 0px 1px #000
-        h2
-            text-shadow: 0px 0px 1px #470047
-        .social-net
-            padding-left: 50px
-            padding-bottom: 10px
-            a
-                i
-                    font-size: 30px
-                    padding-left: 20px
-                    color: rgba(80,36,129, 0.8)
-                    &:hover
-                        color: rgba(80,36,129, 0.7)       
+        div
+            .list_
+                padding-left: 0
+            h4
+                color: #470047
+                text-shadow: 0px 0px 1px #000
+            h2
+                text-shadow: 0px 0px 1px #470047
+                               
 
 // FEEDBACK
 

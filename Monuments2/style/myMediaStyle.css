@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1048px){
+    .my-header .name-city p {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .my-header .my-nav-menu .navbar-nav {
         padding-left: 5px;
@@ -40,6 +46,9 @@
 
 @media only screen and (max-width: 991px)
 {
+    .my-header .name-city p {
+        display: inline;
+    }
     .f-scroll {
         display: none;
     }
@@ -74,6 +83,18 @@
     }
     .my-header .my-nav-menu {
         padding-bottom: 2px;
+    }
+}
+
+@media only screen and (max-width: 343px){
+     .my-header .name-city p{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 344px) {
+    .my-header .my-nav-menu .navbar-nav .name-city-in-nav {
+        display: none;
     }
 }
 
@@ -154,3 +175,11 @@
         font-size: 18px;
     }
 }
+
+/* about us -------------------- */
+
+
+/* and about us ---------------- */
+
+
+
