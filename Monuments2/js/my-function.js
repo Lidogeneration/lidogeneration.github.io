@@ -72,14 +72,14 @@ $(window).on('scroll', function() {
 
 $('#hamId').on('click', function (e) {
     if(!check){
-        check = true;
          $('#hamId').addClass('is-active');
+         check = true;
     }
     else {
-        check = false;
          $('#hamId').removeClass('is-active');
+        check = false;
     }
-});
+}); 
 
 
 function OnClick() {
