@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body a {
   font-size: 20px;
   color: #fff;
@@ -165,24 +166,113 @@ body h2 {
     .fifth-scroll .container .row .col-slick .slick-img {
       height: auto;
       max-width: 900px; }
-  .fifth-scroll .container .row .col-prod {
-    padding-top: 30px;
-    padding-bottom: 30px; }
-    .fifth-scroll .container .row .col-prod .d-title h2 {
+  .fifth-scroll .container .row .col-md-12 .d-title {
+    padding-top: 30px; }
+    .fifth-scroll .container .row .col-md-12 .d-title h2 {
       font-size: 35px;
       color: #585858;
       font-weight: lighter;
       line-height: 1.23; }
-    .fifth-scroll .container .row .col-prod div .a-prod {
-      text-shadow: none; }
-      .fifth-scroll .container .row .col-prod div .a-prod img {
-        max-width: 400px; }
-      .fifth-scroll .container .row .col-prod div .a-prod h4 {
-        color: #000; }
-      .fifth-scroll .container .row .col-prod div .a-prod p {
-        color: #000;
-        font-size: 16px; }
-      .fifth-scroll .container .row .col-prod div .a-prod:hover {
+  .fifth-scroll .container .row .col-prod {
+    padding-bottom: 30px; }
+    .fifth-scroll .container .row .col-prod div {
+      padding-bottom: 20px; }
+      .fifth-scroll .container .row .col-prod div .a-prod {
         text-shadow: none; }
+        .fifth-scroll .container .row .col-prod div .a-prod img {
+          max-width: 400px; }
+        .fifth-scroll .container .row .col-prod div .a-prod h4 {
+          color: #000; }
+        .fifth-scroll .container .row .col-prod div .a-prod p {
+          color: #000;
+          font-size: 16px;
+          margin: 0; }
+        .fifth-scroll .container .row .col-prod div .a-prod:hover {
+          text-shadow: none; }
+        .fifth-scroll .container .row .col-prod div .a-prod div {
+          padding-bottom: 15px; }
+      .fifth-scroll .container .row .col-prod div .d-prod-more {
+        width: 200px; }
+        .fifth-scroll .container .row .col-prod div .d-prod-more .a-prod-more {
+          text-shadow: none;
+          font-size: 17px;
+          color: #000;
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: 2px solid #FEF13D;
+          transition: 0.2s;
+          background: #FEF13D;
+          top: auto;
+          bottom: 1px;
+          right: 38.5%;
+          transform: scale(1, 1); }
+          .fifth-scroll .container .row .col-prod div .d-prod-more .a-prod-more:hover {
+            text-shadow: none;
+            transition: 0.2s;
+            background: transparent;
+            transform: scale(1.1, 1.1); }
+  .fifth-scroll .container .row .col-md-4-prod div .a-prod img {
+    max-width: 300px; }
+  .fifth-scroll .container .row .col-md-4-prod div .d-prod-more .a-prod-more {
+    right: 32.5%; }
+
+del {
+  color: #000; }
+
+.sixth-scroll .container-fluid {
+  padding: 0; }
+  .sixth-scroll .container-fluid .row {
+    margin: 0; }
+    .sixth-scroll .container-fluid .row .col-md-12 {
+      padding: 0; }
+
+.seventh-scroll {
+  height: 100%;
+  min-height: 100vh; }
+  .seventh-scroll .container .row .col-md-6 {
+    padding-top: 100px; }
+    .seventh-scroll .container .row .col-md-6 div img {
+      width: 100px; }
+    .seventh-scroll .container .row .col-md-6 div h4 {
+      font-size: 22px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .seventh-scroll .container .row .col-md-6 div p {
+      color: #000;
+      font-size: 16px;
+      margin: 0; }
+
+.eighth-scroll {
+  height: 100%;
+  min-height: 100vh;
+  background: #F5F5F5;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .eighth-scroll .container .row .col-md-12 div {
+    width: 700px; }
+    .eighth-scroll .container .row .col-md-12 div p {
+      color: #383838;
+      font-size: 18px;
+      font-weight: 300; }
+    .eighth-scroll .container .row .col-md-12 div .my-form-contact-us {
+      padding-top: 30px; }
+      .eighth-scroll .container .row .col-md-12 div .my-form-contact-us .form-control {
+        background: transparent;
+        margin-top: 20px;
+        margin-bottom: 20pх;
+        border-radius: 30px;
+        padding: 30px; }
+      .eighth-scroll .container .row .col-md-12 div .my-form-contact-us textarea {
+        margin-bottom: 20px; }
+      .eighth-scroll .container .row .col-md-12 div .my-form-contact-us button {
+        float: left;
+        background: #FEF13D;
+        border: none;
+        padding: 20px 40px;
+        border-radius: 40px;
+        font-weight: 600;
+        border: 2px solid #FEF13D; }
+        .eighth-scroll .container .row .col-md-12 div .my-form-contact-us button:hover {
+          cursor: pointer; }
 
 /*# sourceMappingURL=my-style.css.map */
