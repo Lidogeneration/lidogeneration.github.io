@@ -10,7 +10,9 @@
 
 @media only screen and (max-width : 992px) {
 
-
+.reviews__cont{
+	margin-right: 5px;
+}
 .mainVideo
 {
 	display:none;

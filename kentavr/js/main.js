@@ -6,7 +6,35 @@ $('.slider-wrap').slick({
     arrows: false,
     dots: false
 
-});      
+});   
+$('.rew__main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.reviews__wrap'
+  });
+  $('.reviews__wrap').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.rew__main',
+    dots: false,
+    arrows: true,
+    centerMode: true,
+    focusOnSelect: true,
+    autoplay: true,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        }
+        ]
+  });  
 AOS.init();
 $('.nav-link-new').mPageScroll2id();
 $('.button-nav, .products-buy-button').magnificPopup();
