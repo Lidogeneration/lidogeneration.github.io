@@ -1,169 +1,85 @@
-$(document).ready(function($) {
+$(function(){
 
-	"use strict";
+$('.slider-wrap').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false,
+    dots: false
 
-	// loader
-	var loader = function() {
-		setTimeout(function() { 
-			if($('#ftco-loader').length > 0) {
-				$('#ftco-loader').removeClass('show');
-			}
-		}, 1);
-	};
-	loader();
+});      
+AOS.init();
+$('.nav-link-new').mPageScroll2id();
+$('.button-nav, .products-buy-button').magnificPopup();
 
-	var carousel = function() {
-		$('.owl-carousel').owlCarousel({
-			loop: true,
-			margin: 10,
-			nav: true,
-			stagePadding: 5,
-			nav: false,
-			navText: ['<span class="icon-chevron-left">', '<span class="icon-chevron-right">'],
-			responsive:{
-				0:{
-					items: 1
-				},
-				600:{
-					items: 2
-				},
-				1000:{
-					items: 3
-				}
-			}
-		});
-	};
-	carousel();
+$('#phoneid').inputmask('9(999) 999-99-99');
+$(function(){
+        $('#opt_ph').change(function(){
+        var curcolor = $('#opt_ph :selected').val();
+        $("#phonediscount").inputmask(curcolor);
+        $("#phonediscount").removeAttr("readonly");
+        $("#phonediscount").attr("placeholder", "Введите номер");
+    })
+});
+$(function(){
+        $('#opt_ph_popup').change(function(){
+        var curcolor = $('#opt_ph_popup :selected').val();
+        $("#phoneidpopup").inputmask(curcolor);
+        $("#phoneidpopup").removeAttr("readonly");
+        $("#phoneidpopup").attr("placeholder", "Введите номер");
+    })
+});
+$(function(){
+        $('#opt_ph_order').change(function(){
+        var curcolor = $('#opt_ph_order :selected').val();
+        $("#phoneid").inputmask(curcolor);
+        $("#phoneid").removeAttr("readonly");
+        $("#phoneid").attr("placeholder", "Введите номер");
+    })
+});
+});
 
-	// scroll
-	var scrollWindow = function() {
-		$(window).scroll(function(){
-			var $w = $(this),
-					st = $w.scrollTop(),
-					navbar = $('.ftco_navbar'),
-					sd = $('.js-scroll-wrap');
+$(function() {
+    var header = $("#myHeaderId");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
 
-			if (st > 150) {
-				if ( !navbar.hasClass('scrolled') ) {
-					navbar.addClass('scrolled');	
-				}
-			} 
-			if (st < 150) {
-				if ( navbar.hasClass('scrolled') ) {
-					navbar.removeClass('scrolled sleep');
-				}
-			} 
-			if ( st > 350 ) {
-				if ( !navbar.hasClass('awake') ) {
-					navbar.addClass('awake');	
-				}
-				
-				if(sd.length > 0) {
-					sd.addClass('sleep');
-				}
-			}
-			if ( st < 350 ) {
-				if ( navbar.hasClass('awake') ) {
-					navbar.removeClass('awake');
-					navbar.addClass('sleep');
-				}
-				if(sd.length > 0) {
-					sd.removeClass('sleep');
-				}
-			}
-		});
-	};
-	scrollWindow();
+        if (scroll >= 500) {
+            header.removeClass("scrollfirs").addClass("scroll");
+        } else {
+            header.removeClass("scroll").addClass("scrollfirs");
+        }
+    });
+});
 
-	var counter = function() {
-		
-		$('#section-counter').waypoint( function( direction ) {
+jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+                delay: 10,
+                time: 2000
+        });
+});
 
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+$('.card-my').on('click',function(){
+    $('.cont-wrap').toggleClass('cont-origin');
+});
 
-				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-				$('.ftco-number').each(function(){
-					var $this = $(this),
-						num = $this.data('number');
-						console.log(num);
-					$this.animateNumber(
-					  {
-					    number: num,
-					    numberStep: comma_separator_number_step
-					  }, 7000
-					);
-				});
-				
-			}
+$(document).ready(function(){
+    $('#form-order, #call-back, #call-back-discount').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            type:'POST',
+            url:'http://generationleadstudio.com/wp-content/themes/lead/tele_order.php',
+            data: $(this).serialize()
+        }).done(function(){
+                $.magnificPopup.close(); 
+            setTimeout(function(){
+                window.location = 'http://generationleadstudio.com/done';
+            },1);
+        });
+        });
+    });
 
-		} , { offset: '95%' } );
-
-	}
-	counter();
-	
-	
-
-	var contentWayPoint = function() {
-		var i = 0;
-		$('.ftco-animate').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
-				i++;
-
-				$(this.element).addClass('item-animate');
-				setTimeout(function(){
-
-					$('body .ftco-animate.item-animate').each(function(k){
-						var el = $(this);
-						setTimeout( function () {
-							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
-								el.addClass('fadeIn ftco-animated');
-							} else if ( effect === 'fadeInLeft') {
-								el.addClass('fadeInLeft ftco-animated');
-							} else if ( effect === 'fadeInRight') {
-								el.addClass('fadeInRight ftco-animated');
-							} else {
-								el.addClass('fadeInUp ftco-animated');
-							}
-							el.removeClass('item-animate');
-						},  k * 50, 'easeInOutExpo' );
-					});
-					
-				}, 100);
-				
-			}
-
-		} , { offset: '95%' } );
-	};
-	contentWayPoint();
-
-	// navigation
-	var OnePageNav = function() {
-		$(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
-		 	e.preventDefault();
-
-		 	var hash = this.hash,
-		 			navToggler = $('.navbar-toggler');
-		 	$('html, body').animate({
-		    scrollTop: $(hash).offset().top
-		  }, 700, 'easeInOutExpo', function(){
-		    window.location.hash = hash;
-		  });
-
-
-		  if ( navToggler.is(':visible') ) {
-		  	navToggler.click();
-		  }
-		});
-		$('body').on('activate.bs.scrollspy', function () {
-		  console.log('nice');
-		})
-	};
-	OnePageNav();
-
-
-
+$(window).on('load', function(){
+$(".loaderInner").fadeOut();
+$(".loader").delay(400).fadeOut("slow");
 });
 
