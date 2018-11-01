@@ -289,6 +289,7 @@ header .intro-text p{
 
 #about .container .row .col-video {
 	height: 50vh;
+	padding-bottom: 15px;
 }
 #about .container .row .col-video .d-play {
 	background: url("../img/Screenshot_2.png");
