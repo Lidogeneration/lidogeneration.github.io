@@ -20,6 +20,12 @@
    	
 }
 
+@media only screen and (max-width: 767px){
+    #bs-example-navbar-collapse-1 {
+        background: #262626;
+    }
+}
+
 @media only screen and (max-width: 575px){
     .col-disable {
         display: none;
