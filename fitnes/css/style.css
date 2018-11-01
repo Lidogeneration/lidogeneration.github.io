@@ -250,8 +250,6 @@ header .intro-text p{
 	padding: 30px 0;
 }
 
-
-
 .hrr {
 	margin: 0;
 	width: 40px;
@@ -289,6 +287,7 @@ header .intro-text p{
 
 #about .container .row .col-video {
 	height: 50vh;
+	padding-bottom: 15px;
 }
 #about .container .row .col-video .d-play {
 	background: url("../img/Screenshot_2.png");
@@ -491,6 +490,33 @@ background: rgba(0, 0, 0, 0.5); }
 #portfolio .section-title h2 {
 	color: #fff;
 }
+#portfolio .section-title p{
+	text-transform: uppercase;
+}
+.border-green-2x {
+	border: 1px solid #8EB640;
+    position: relative;
+	z-index: 1;
+	max-width: 70%;
+	margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+}
+.border-green-2x:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 2%;
+		left: 0;
+		right: 0;
+		bottom: 2%;
+		border: solid 1px #95D516;
+		width:98%;
+		z-index: 10;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 .categories {
 	padding-bottom: 30px;
 	text-align: center;
