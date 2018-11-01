@@ -1,7 +1,6 @@
 @media only screen and (max-width : 1200px) {
-	.products__imgcont img
-	{
-	height: 300px;
+	.navbar{
+		margin: 0;
 	}
 }
 @media only screen and (max-width : 1140px) {
@@ -10,17 +9,7 @@
 
 @media only screen and (max-width : 992px) {
 
-.reviews__cont{
-	margin-right: 5px;
-}
-.mainVideo
-{
-	display:none;
-}
-.products__imgcont img
-{
-	height: auto;
-}
+
 }
 @media only screen and (max-width : 960px)
 {
