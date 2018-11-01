@@ -511,6 +511,10 @@ background: rgba(0, 0, 0, 0.5); }
 	padding: 0;
 }
 
+.bc{
+	color: black;
+}
+
 .fsize30px{
 	font-size: 20px;
 }
