@@ -1815,6 +1815,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: relative;
 }
 
+.home-content__main h2{
+   color: #fff;
+}
+
 .home-content__buttons {
     padding-top: 6rem;
     text-align: left;
