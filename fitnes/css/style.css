@@ -105,16 +105,18 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #8eb640;
 	font-weight: 700;
 	letter-spacing: 1px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #ddd;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 14px;
 	padding: 5px 0;
 	border: 2px solid transparent;
 	letter-spacing: 0.5px;
-	margin: 10px 15px 0 15px;
+	margin: 10px 0px 0 15px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #8eb640;
@@ -253,6 +255,18 @@ header .intro-text p{
 #about {
 	padding: 30px 0;
 }
+
+.about-txt-div {
+	margin-bottom: 20px;
+}
+.about-txt-div div {
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.about-txt-div hr {
+}
+
 
 .num {
 	font-weight: bold;

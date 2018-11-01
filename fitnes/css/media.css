@@ -1,10 +1,10 @@
 @media only screen and (min-width: 992px){
-    #about .container .row .col-md-12 .col-md-2 div h3 {
+    /*#about .container .row .col-md-12 .col-md-2 div h3 {
         height: 60px;
         margin-left: 2px;
         margin-right: 2px;
         font-size: 20px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 991px){
@@ -17,7 +17,14 @@
     .work .container .row .col-md-4 {
         padding-top: 15px;
     }
-   	
+   	.num {
+        display: none;
+    }
+    .num-transp {
+        display: inline;
+        color: transparent!important;
+        border-color: transparent;
+    }
 }
 
 @media only screen and (max-width: 767px){
