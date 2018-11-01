@@ -13,7 +13,7 @@ function main() {
               scrollTop: target.offset().top - 40
             }, 900);
             return false;
-          }
+          } 
         }
       });
 
