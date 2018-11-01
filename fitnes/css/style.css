@@ -127,8 +127,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 .logo_ {
-	height: 90px;
-	width: 90px;
+	height: auto;
+	width: 65px;
+	z-index: 88;
 }
 
 
