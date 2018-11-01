@@ -92,7 +92,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Navigation */
 #menu {
 	padding: 20px;
-	-webkit-transition: all 0.8s;
 	transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -165,7 +164,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	letter-spacing: 0.5px;
 	border-radius: 0;
 	margin-top: 20px;
-	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
@@ -178,17 +176,13 @@ header {
 	padding: 0;
 	background: url(../img/intro-bg.jpg) no-repeat center center;
 	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	align-items: center;
+	justify-content: center;
 	position: relative;
 }
 
@@ -281,10 +275,6 @@ header .intro-text p{
 	color: black;
 }
 
-.col-3 {
-	display: block;
-}
-
 #about .container .row .col-video {
 	height: 50vh;
 }
@@ -294,42 +284,32 @@ header .intro-text p{
 	background-repeat: no-repeat;
 	height: 100%;
 	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center; 
+	align-items: center;
+	justify-content: center; 
 	position: relative; }
 
 #about .container .row .col-video .d-play:before {
-	display: block;
-	content: '';
-	position: absolute;
-	top: 6px;
-	right: 6px;
-	bottom: 6px;
-	left: 6px;
-	border: 1px solid rgba(255, 255, 255, 0.6);
-}
+		display: block;
+		content: '';
+		position: absolute;
+		top: 6px;
+		right: 6px;
+		bottom: 6px;
+		left: 6px;
+		border: 1px solid rgba(255, 255, 255, 0.6);
+	}
 
 #about .container .row .col-video .d-play .a-play {
 	z-index: 50; }
 #about .container .row .col-video .d-play .a-play a i {
 	font-size: 65px;
-	-webkit-transition: 0.2s;
 	transition: 0.2s;
-	-webkit-transform: scale(1, 1);
-	        transform: scale(1, 1);
+	transform: scale(1, 1);
 	color: #a7c44c; }
 #about .container .row .col-video .d-play .a-play a i:hover {
-	-webkit-transition: 0.2s;
 	transition: 0.2s;
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
 	 }
 	 #about .container .row .col-title {
 		 text-align: center;
@@ -341,12 +321,8 @@ header .intro-text p{
 }
 
 #about .container .row .col-button {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	justify-content: center;
 }
 
 .back-video {
@@ -363,6 +339,7 @@ background: rgba(0, 0, 0, 0.5); }
  .mfp-fade.mfp-bg {
 	opacity: 0;
 	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
 	transition: all 0.15s ease-out; }
   
   .mfp-fade.mfp-bg.mfp-ready {
@@ -374,6 +351,7 @@ background: rgba(0, 0, 0, 0.5); }
   .mfp-fade.mfp-wrap .mfp-content {
 	opacity: 0;
 	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
 	transition: all 0.15s ease-out; }
   
   .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
@@ -385,9 +363,6 @@ background: rgba(0, 0, 0, 0.5); }
 /* Menu Section */
 #restaurant-menu {
 	padding: 0 0 60px 0;
-}
-#restaurant-menu .container .btn {
-	margin: 0;
 }
 #restaurant-menu .section-title {
 	background: #444 url(../img/menu-bg.jpg) center center no-repeat fixed;
@@ -442,20 +417,14 @@ background: rgba(0, 0, 0, 0.5); }
 }
 
 #restaurant-menu .container .row .col-xs-12 .menu-section .profit {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	justify-content: center;
 	margin-bottom: 10px;
 }
 #restaurant-menu .container .row .col-xs-12 .menu-section .profit p {
 	margin: 0;
 }
 #restaurant-menu .container .row .col-xs-12 .menu-section .menu-price {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 }
 #restaurant-menu .container .row .col-xs-12 .menu-section .roz {
@@ -529,6 +498,7 @@ ol.type li a:hover {
 .isotope, .isotope .isotope-item {
 	/* change duration value to whatever you like */
 	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 }
 .isotope-item {
@@ -540,16 +510,15 @@ ol.type li a:hover {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
 	transition-property: height, width;
 }
 .isotope .isotope-item {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	-webkit-transition-property: -webkit-transform, opacity;
-	-webkit-transition-property: opacity, -webkit-transform;
-	transition-property: opacity, -webkit-transform;
+	-moz-transition-property: -moz-transform, opacity;
 	transition-property: transform, opacity;
-	transition-property: transform, opacity, -webkit-transform;
 }
 .portfolio-item {
 	margin: 15px 0;
@@ -578,7 +547,6 @@ ol.type li a:hover {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
 .hover-bg .hover-text>h4 {
@@ -586,7 +554,6 @@ ol.type li a:hover {
 	color: #fff;
 	-webkit-transform: translateY(100%);
 	transform: translateY(100%);
-	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	font-size: 17px;
 	letter-spacing: 0.5px;
@@ -657,8 +624,9 @@ ol.type li a:hover {
 	padding: 90px 0;
 	color: #fff;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8eb640+50,779936+100 */
-	background: rgb(142,182,64); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(142,182,64,1)), to(rgba(119,153,54,1)));
+	background: rgb(142,182,64); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(142,182,64,1) 50%, rgba(119,153,54,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(142,182,64,1) 50%, rgba(119,153,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(142,182,64,1) 50%, rgba(119,153,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eb640', endColorstr='#779936', GradientType=0 ); /* IE6-9 */
 }
@@ -722,6 +690,7 @@ label {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	-webkit-transition: none;
+	-o-transition: none;
 	transition: none;
 }
 #contact .form-control:focus {
@@ -771,8 +740,9 @@ color: #777;
 	padding: 20px 0;
 	margin-top: 50px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#779936+0,8eb640+50 */
-	background: rgb(119,153,54); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(119,153,54,1)), color-stop(50%, rgba(142,182,64,1)));
+	background: rgb(119,153,54); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', endColorstr='#8eb640', GradientType=0 ); /* IE6-9 */
 }
@@ -787,7 +757,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', end
 	font-size: 26px;
 	padding: 4px;
 	color: #fff;
-	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 #footer .social i.fa:hover {
@@ -817,28 +786,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', end
 	margin-left: auto;
 	margin-right: auto;
 }
-.work .container .row .col-md-4, .work .container .row .col-md-6 {
-	display: -webkit-box;
-	display: -ms-flexbox;
+.work .container .row .col-md-4 {
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-			justify-content: center;
+	justify-content: center;
 }
 
-
-.work .container .row .col-md-6 {
-padding-top: 15px;}
-
-.work .container .row .col-md-4 div, .work .container .row .col-md-6 div {
+.work .container .row .col-md-4 div {
 	text-align: center;
 }
-.work .container .row .col-md-4 div img, .work .container .row .col-md-6 div img{
+.work .container .row .col-md-4 div img{
 	margin-bottom: 5px;
 	height: auto;
 	max-width: 60px;
 }
 
+.work .container .row .col-md-4 p {
+}
 
 /* DELIVERY */
 
@@ -862,7 +825,6 @@ padding-top: 15px;}
 
 .line_txt {
 	text-decoration: underline;
-	-webkit-text-decoration-color: #628d0f;
-	        text-decoration-color: #628d0f;
+	text-decoration-color: #628d0f;
 	font-weight: bold;
 }
