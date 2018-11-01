@@ -122,13 +122,21 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #8eb640;
 }
 .navbar .container .navbar-header a {
-	font-size: 18px!important;
-	font-family: 'Roboto', sans-serif!important;
+	display: flex;
+	align-items: center;
 }
+
+.logo_ {
+	height: 90px;
+	width: 90px;
+}
+
+
+
 .on {
-	background-color: #262626 !important;
+	background-color: #fff !important;
 	padding: 0 !important;
-	padding: 10px 0 !important;
+	padding: 10px 0 !important; 
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #8eb640 !important;
@@ -206,9 +214,6 @@ header .back {
 	left: 0;
 	background: rgba(0,0,0,.4);
 	z-index: -1;
-}
-
-header .intro .overlay {
 }
 
 .intro h1 {
@@ -932,4 +937,8 @@ padding-top: 15px;}
 	-webkit-text-decoration-color: #628d0f;
 	        text-decoration-color: #628d0f;
 	font-weight: bold;
+}
+
+.bltxcl {
+	color: #777777!important;
 }

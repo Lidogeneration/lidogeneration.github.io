@@ -29,7 +29,10 @@
 
 @media only screen and (max-width: 767px){
     #bs-example-navbar-collapse-1 {
-        background: #262626;
+        background: #fff;
+    }
+    .cba {
+        color: #777777!important;
     }
 }
 
