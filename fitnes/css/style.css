@@ -258,6 +258,12 @@ header .intro-text p{
 	font-weight: bold;
 	margin: 0!important;
 	color: #8EB640!important;
+	border: 2px dotted #8EB640;
+	border-radius: 50%;
+	width: 28px;
+	text-align: center;
+	margin-left: auto!important;
+	margin-right: auto!important;
 }
 
 #about .container .row .col-md-12 .col-md-2 div h3 {
