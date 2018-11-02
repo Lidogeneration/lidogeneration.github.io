@@ -105,28 +105,39 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #8eb640;
 	font-weight: 700;
 	letter-spacing: 1px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #ddd;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 14px;
 	padding: 5px 0;
 	border: 2px solid transparent;
 	letter-spacing: 0.5px;
-	margin: 10px 15px 0 15px;
+	margin: 10px 0px 0 15px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #8eb640;
 }
 .navbar .container .navbar-header a {
-	font-size: 18px!important;
-	font-family: 'Roboto', sans-serif!important;
+	display: flex;
+	align-items: center;
 }
+
+.logo_ {
+	height: auto;
+	width: 65px;
+	z-index: 88;
+}
+
+
+
 .on {
-	background-color: #262626 !important;
+	background-color: #fff !important;
 	padding: 0 !important;
-	padding: 10px 0 !important;
+	padding: 10px 0 !important; 
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #8eb640 !important;
@@ -206,9 +217,6 @@ header .back {
 	z-index: -1;
 }
 
-header .intro .overlay {
-}
-
 .intro h1 {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
@@ -253,6 +261,18 @@ header .intro-text p{
 #about {
 	padding: 30px 0;
 }
+
+.about-txt-div {
+	margin-bottom: 20px;
+}
+.about-txt-div div {
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.about-txt-div hr {
+}
+
 
 .num {
 	font-weight: bold;
@@ -489,6 +509,10 @@ background: rgba(0, 0, 0, 0.5); }
 #restaurant-menu .container .row .col-xs-12 .menu-section h3 {
 	margin: 10px;
 	padding: 0;
+}
+
+.bc{
+	color: black;
 }
 
 .fsize30px{
@@ -918,4 +942,8 @@ padding-top: 15px;}
 	-webkit-text-decoration-color: #628d0f;
 	        text-decoration-color: #628d0f;
 	font-weight: bold;
+}
+
+.bltxcl {
+	color: #777777!important;
 }

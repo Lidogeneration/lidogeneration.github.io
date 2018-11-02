@@ -23,8 +23,10 @@ function main() {
         var navHeight = $(window).height() - 500;
         if ($(window).scrollTop() > navHeight) {
             $('.navbar-default').addClass('on');
+            $('.cba').addClass('bltxcl');
         } else {
             $('.navbar-default').removeClass('on');
+            $('.cba').removeClass('bltxcl');
         }
     });
 
