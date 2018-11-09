@@ -83,15 +83,12 @@ h5 {
 a {
     color: #6195FF;
     text-decoration: none;
-    -webkit-transition: 0.2s opacity;
-    transition: 0.2s opacity;
+
 }
 
 a:hover, a:focus {
     text-decoration: none;
-    outline: none;
-    opacity: 0.8;
-    color: #6195FF;
+
 }
 
 .main-color {
@@ -109,7 +106,7 @@ a:hover, a:focus {
 .white-text {
     color: #FFF;
 }
-
+/*
 ::-moz-selection {
     background-color: #6195FF;
     color: #FFF;
@@ -119,7 +116,7 @@ a:hover, a:focus {
     background-color: #6195FF;
     color: #FFF;
 }
-
+*/
 ul, ol {
     margin: 0;
     padding: 0;
@@ -186,6 +183,9 @@ ul, ol {
 .section-header {
     position: relative;
     margin-bottom: 60px;
+}
+#portfolio ul{
+  margin-bottom: 20px;
 }
 
 .section-header .title {
@@ -809,7 +809,9 @@ header {
 /*------------------------------------*\
 	Services
 \*------------------------------------*/
-
+#service .row{
+    margin-bottom: 20px;
+}
 .service {
     position: relative;
     padding: 40px 20px 0px 70px;
@@ -983,7 +985,67 @@ header {
     padding-top: 20px;
     padding-bottom: 40px;
 }
+.price-wrap
+{
+    border: 2px solid #6195FF;
+    padding: 5px;
+    margin-bottom: 10px;
 
+}
+
+
+.price-wrap h4
+{
+    text-align: center;
+    background: #6195FF;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.price-wrap h5
+{
+    color: grey;
+    text-align: center;
+    margin: 0 20px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 5px;
+}
+.price-wrap ul
+{
+    text-decoration: none;
+    background-color: grey;
+    margin-top: 15px;
+    padding: 5px;
+    min-height: 220px;
+}
+@media only screen and (max-width: 992px) {
+
+    .price-wrap ul
+        {
+            min-height: 310px;
+        }
+        .price-wrap h5
+        {
+            margin: 0 10px;
+            font-size: 12px;
+        }
+}
+@media only screen and (max-width: 767px) {
+    .price-wrap{
+        margin: 10px 30px;
+    }
+    .price-wrap ul
+    {
+        min-height: 100px;
+    }
+
+}
+.price-wrap ul li{
+    color: #fff;
+}
+.price-wrap img{
+    margin-top: 10px;
+}
 /*------------------------------------*\
 	Testimonial
 \*------------------------------------*/
@@ -1607,7 +1669,7 @@ header {
 
 .owl-theme .owl-dots .owl-dot span {
     border: none;
-    background: #EEE;
+    background: grey;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
 }
@@ -1778,3 +1840,78 @@ header {
             transform:scale(0);
   }
 }
+
+/* --- BUTTON START --- */
+
+.order-button
+{
+    background: #6195FF;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: 1px solid #6195FF;
+    padding: 10px;
+    margin-top: 10px;
+}
+.order-button:hover
+{
+    background: #fff;
+    color: #6195FF;
+    transition: 0.3s;
+    border: 1px solid #6195FF;
+}
+
+
+
+.more-button
+{
+    background: #6195FF;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: 1px solid #6195FF;
+    width: 280px;
+    margin: auto;
+}
+.more-button:hover
+{
+    background: #fff;
+    color: #6195FF;
+    transition: 0.3s;
+    border: 1px solid #6195FF;
+}
+
+.button-header
+{
+    background: #fff;
+    color: #6195FF;
+    padding: 10px 20px;
+    width: 280px;
+    margin: auto;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: 1px solid #fff;
+}
+.button-header:hover{
+    transition: 0.3s;
+    background: #6195FF;
+    color: #fff;
+}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+}
+/* --- BUTTON END ---*/
+.hidden
+{
+    display: none;
+}
+/* --- FORM START ---*/
+
+
+/* --- FORM END ---*/
