@@ -1,4 +1,5 @@
 $(function() { 
+    AOS.init();
     $('.contactpopup').magnificPopup();
     FormCheck();
 });

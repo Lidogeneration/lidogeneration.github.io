@@ -1,0 +1,92 @@
+a:hover {
+  text-decoration: none; }
+
+.title-scroll {
+  height: 100%;
+  min-height: 100vh;
+  background: url("../img/bg-img/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  padding-bottom: 30px; }
+  .title-scroll h1, .title-scroll h2, .title-scroll p {
+    color: white;
+    margin: 0; }
+  .title-scroll .my-btn {
+    margin-top: 10px; }
+  .title-scroll p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 10px;
+    max-width: 600px;
+    border-radius: 5px;
+    font-size: 23px;
+    text-align: left; }
+  .title-scroll .b-contact {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .title-scroll .hero-slides-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    max-width: 700px;
+    border-radius: 5px;
+    box-shadow: 12px 14px 28px rgba(0, 0, 0, 0.45), 0 10px 10px rgba(0, 0, 0, 0.32);
+    background: rgba(93, 190, 44, 0.1); }
+
+.my-btn {
+  border-radius: 5px;
+  padding: 13px 25px;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0 5px 0 #5AA037;
+  text-transform: uppercase;
+  transition: 0.2s;
+  background: linear-gradient(to top, #70c745, #7DDE4D); }
+  .my-btn:hover, .my-btn:focus {
+    transition: 0.2s;
+    background: linear-gradient(to right, #70c745, #7DDE4D);
+    text-decoration: none;
+    color: white; }
+
+.my-btn-form {
+  border: none; }
+
+.my-btn .active {
+  transition: 0.2s;
+  background: #7FE14E; }
+
+.back_ {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  background: rgba(0, 0, 0, 0.3); }
+
+.alazea-video-area {
+  height: auto;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.new-arrivals-products-area {
+  padding-top: 60px;
+  padding-bottom: 30px; }
+  .new-arrivals-products-area .col-box {
+    padding-top: 15px;
+    padding-bottom: 30px; }
+    .new-arrivals-products-area .col-box img {
+      height: auto;
+      max-width: 400px; }
+
+.footer-area {
+  background: url("../img/footer/bg-foot.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; }
+
+.contact-area .col-img {
+  padding: 0 0 30px 0; }
+
+/*# sourceMappingURL=my_style.css.map */
