@@ -60,7 +60,7 @@
 		delegate: '.lightbox',
 		type: 'image'
 	});
-
+	$('.order-button, .more-button, .button-header').magnificPopup();
 	///////////////////////////
 	// Owl Carousel
 	$('#about-slider').owlCarousel({
