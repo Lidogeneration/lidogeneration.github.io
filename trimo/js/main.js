@@ -59,7 +59,9 @@ $('.rew__main').slick({
         }
         ]
   });  
-  AOS.init();
+  AOS.init({
+    startEvent: 'load',
+  });
 $('.nav-link-new').mPageScroll2id();
 $('.button-nav, .products-buy-button').magnificPopup();
 
