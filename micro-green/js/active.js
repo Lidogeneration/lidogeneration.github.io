@@ -48,7 +48,7 @@
             nav: false,
             dots: true,
             autoplay: true,
-            autoplayTimeout: 5000,
+            autoplayTimeout: 7000,
             smartSpeed: 700,
             animateIn: 'fadeIn',
             animateOut: 'fadeOut'
@@ -65,7 +65,7 @@
             autoplayTimeout: 5000,
             smartSpeed: 700,
             center: true
-        });
+        }); 
     }
 
     // :: 5.0 Masonary Gallery Active Code
@@ -129,7 +129,7 @@
             animateOnResize: true
         });
     }
-
+ 
     // :: 8.0 ScrollUp Active Code
     if ($.fn.scrollUp) {
         browserWindow.scrollUp({
