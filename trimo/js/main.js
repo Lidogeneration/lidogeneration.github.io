@@ -1,5 +1,29 @@
 $(function(){
 
+    var rellax = new Rellax('.rellax');
+	///////////////////////////
+	// On Scroll
+	$(window).on('scroll', function() {
+		var wScroll = $(this).scrollTop();
+
+		// Fixed nav
+		wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
+
+		// Back To Top Appear
+		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+	});
+    $(function(){ 
+        var navMain = $(".navbar-collapse"); // avoid dependency on #id
+        // "a:not([data-toggle])" - to avoid issues caused
+        // when you have dropdown inside navbar
+        navMain.on("click", "a:not([data-toggle])", null, function () {
+            navMain.collapse('hide');
+        });
+    });
+    $(document).click(function(event) {
+        $(event.target).closest(".navbar").length || $(".navbar-collapse.show").length && $(".navbar-collapse.show").collapse("hide")
+      });
+
 $('.slider-wrap').slick({
     autoplay: true,
     autoplaySpeed: 4000,
@@ -35,7 +59,7 @@ $('.rew__main').slick({
         }
         ]
   });  
-AOS.init();
+  AOS.init();
 $('.nav-link-new').mPageScroll2id();
 $('.button-nav, .products-buy-button').magnificPopup();
 
