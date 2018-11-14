@@ -1,5 +1,8 @@
 $(document).ready(function() {
+	AOS.init();
 	OnClickMenu();
+	$('.contactpopup').magnificPopup();
+	FormCheck();
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -17,7 +20,15 @@ $(document).ready(function() {
 			}
 		}
 	});
-});
+}); 
+
+function FormCheck() {
+    jQuery('.telephone').inputmask('+38(999) 999-99-99',{ "oncomplete": function() { 
+        jQuery('.my-btn-send').prop("disabled", false);
+    }, "onincomplete": function(){ 
+        jQuery('.my-btn-send').prop("disabled", true);
+    } }); 
+};
 
 function OnClickMenu() {
     $('.menu-a').on("click", function (event) {

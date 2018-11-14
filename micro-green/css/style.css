@@ -1471,6 +1471,9 @@ padding-bottom: 30px; }
         width: 250px;
         height: 250px;
         margin-bottom: 50px; } }
+        .single-testimonial-slide .testimonial-content {
+          padding: 50px;
+        }
   .single-testimonial-slide .testimonial-content .testimonial-author-info h6 {
     font-size: 18px;
     margin-bottom: 0; }
@@ -2655,6 +2658,11 @@ padding-bottom: 30px; }
 
 /* ======= START My Style ======= */
 
+.hidden {
+  display: none;
+}
+
+.contactpopup {}
 
 
 /* ======= The End My Style ======= */
