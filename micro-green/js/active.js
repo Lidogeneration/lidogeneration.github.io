@@ -49,9 +49,7 @@
             dots: true,
             autoplay: true,
             autoplayTimeout: 7000,
-            smartSpeed: 700,
-            animateIn: 'fadeIn',
-            animateOut: 'fadeOut'
+            smartSpeed: 700
         });
 
         portfolioSlides.owlCarousel({
