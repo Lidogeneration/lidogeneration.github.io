@@ -60,6 +60,10 @@ $('.rew__main').slick({
         ]
   });  
   AOS.init();
+
+  window.addEventListener('load', function() {
+    AOS.refresh();
+  });
 $('.nav-link-new').mPageScroll2id();
 $('.button-nav, .products-buy-button').magnificPopup();
 
