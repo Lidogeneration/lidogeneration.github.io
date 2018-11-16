@@ -24,29 +24,25 @@ $(function(){
         $(event.target).closest(".navbar").length || $(".navbar-collapse.show").length && $(".navbar-collapse.show").collapse("hide")
       });
 
-$('.slider-wrap').slick({
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: false,
-    dots: false
 
-});   
-$('.rew__main').slick({
+$('.med-wrap').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.reviews__wrap'
+    asNavFor: '.small-wrap'
   });
-  $('.reviews__wrap').slick({
+  $('.small-wrap').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: '.rew__main',
-    dots: false,
+    asNavFor: '.med-wrap',
+    dots: true,
     arrows: true,
     centerMode: true,
+    centerPadding: '10px',
     focusOnSelect: true,
     autoplay: true,
+    vertical: true,
     responsive: [
         {
           breakpoint: 1024,
@@ -54,7 +50,8 @@ $('.rew__main').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
+            dots: false,
+            arrows: true,
           }
         }
         ]

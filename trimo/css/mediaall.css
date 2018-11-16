@@ -16,6 +16,19 @@
 		left: -35px;
 		font-size: 30px;
 	}
+	.padding-big
+	{
+		padding-left: 5rem !important;
+		padding-right: 5rem !important;
+	}
+	.about .container-fluid .row .header-wrap
+	{
+		width: 90% !important;
+	}
+	.project .small-wrap .small-cont img
+	{
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width : 1200px) {
@@ -31,9 +44,24 @@
 }
 
 @media only screen and (max-width : 992px) {
-
-
+	.arrow-pr
+	{
+		display: none;
+	}
+.about .container-fluid .row img
+{
+	padding-top: 20px;
 }
+}
+@media only screen and (max-width : 800px) {
+	.project .bg-for {
+		margin-bottom: 40px !important;
+	}
+	.about .container-fluid .row img
+	{
+		padding-top: 20px;
+	}
+	}
 @media only screen and (max-width : 960px)
 {
 

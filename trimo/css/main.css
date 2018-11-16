@@ -143,8 +143,8 @@ body {
     width: 100%;
     height: 100%;
     background: #383b3e;
-    -webkit-animation: animate 5s linear infinite;
-            animation: animate 5s linear infinite; }
+    -webkit-animation: animate 7s linear infinite;
+            animation: animate 7s linear infinite; }
 
 @-webkit-keyframes animate {
   0% {
@@ -197,7 +197,7 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  border-bottom: 1px solid #373a3d; }
+  border-bottom: 1px solid #878c92; }
 
 .navbar-nav {
   text-align: center; }
@@ -291,10 +291,200 @@ body {
 /* --- head-wrap END --- */
 /* --- About START --- */
 .about {
-  min-height: 100vh;
-  padding: 30px 0; }
+  padding: 30px 0;
+  background: #fff;
+  overflow: hidden; }
+  .about .container-fluid {
+    margin: 0;
+    padding: 0; }
+    .about .container-fluid .hr-right {
+      display: block;
+      width: 70%;
+      margin: 10px 0 0 0;
+      padding: 0; }
+    .about .container-fluid .hr-left {
+      display: block;
+      width: 70%;
+      margin: 30px 0 0 0;
+      padding: 0; }
+    .about .container-fluid .hr-about-color {
+      background-color: #ececec;
+      background: #ececec; }
+    .about .container-fluid .row {
+      margin: 0;
+      padding: 30px 0 0 0; }
+      .about .container-fluid .row img {
+        display: block;
+        width: 75%;
+        height: auto;
+        max-width: 100%; }
+      .about .container-fluid .row .col-lg-6 {
+        padding: 0;
+        margin: 0; }
+      .about .container-fluid .row .header-wrap {
+        background: #ececec;
+        width: 85%;
+        padding: 10px 15px 10px 10px;
+        margin: 0 30px 0px 0; }
+        .about .container-fluid .row .header-wrap h4 {
+          text-transform: uppercase;
+          display: inline;
+          margin: 0; }
+        .about .container-fluid .row .header-wrap i {
+          font-size: 16px;
+          color: #73a880;
+          display: inline;
+          padding-right: 10px; }
 
 /* --- About END --- */
+/* --- Project start --- */
+.project {
+  background: #fff;
+  padding-bottom: 30px;
+  overflow: hidden; }
+  .project .bg-for {
+    background: url("../img/pr_bg.png");
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 30px; }
+  .project .header-wrap {
+    background: #ececec;
+    padding: 15px 5px 15px 5px; }
+    .project .header-wrap h4 {
+      text-transform: uppercase;
+      display: inline;
+      margin: 0; }
+    .project .header-wrap i {
+      font-size: 16px;
+      color: #73a880;
+      display: inline;
+      padding-right: 10px; }
+  .project .head-hr {
+    margin: 0;
+    padding: 0;
+    background-color: #373a3d;
+    width: 70%; }
+  .project .header-small-wrap {
+    padding: 30px 5px 30px 5px; }
+    .project .header-small-wrap h5 {
+      text-transform: uppercase;
+      display: inline;
+      margin: 0; }
+    .project .header-small-wrap i {
+      font-size: 16px;
+      color: #73a880;
+      display: inline;
+      padding-right: 10px; }
+  .project .small-wrap {
+    position: relative;
+    z-index: 2;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .project .small-wrap .slick-current {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      border-left: 2px solid #373a3d !important; }
+      .project .small-wrap .slick-current img {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        border: 3px solid #ececec !important;
+        opacity: 1 !important; }
+    .project .small-wrap .small-cont {
+      padding: 10px;
+      z-index: 2;
+      border-left: 2px solid #fff; }
+      .project .small-wrap .small-cont:focus {
+        outline: none; }
+      .project .small-wrap .small-cont img {
+        cursor: pointer;
+        width: 50% !important;
+        border: 3px solid #fff;
+        opacity: 0.6; }
+    .project .small-wrap .slick-next {
+      left: 47%;
+      top: -3%;
+      width: 30px;
+      height: 30px; }
+      .project .small-wrap .slick-next:before {
+        position: absolute;
+        color: #000;
+        content: '';
+        border-top: 2px solid #373a3d;
+        border-right: 2px solid #373a3d;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+    .project .small-wrap .slick-prev {
+      left: 47%;
+      bottom: -40px;
+      top: 103%;
+      width: 30px;
+      height: 30px; }
+      .project .small-wrap .slick-prev:before {
+        position: absolute;
+        color: #000;
+        content: '';
+        border-bottom: 2px solid #373a3d;
+        border-right: 2px solid #373a3d;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transform: rotate(44deg);
+            -ms-transform: rotate(44deg);
+                transform: rotate(44deg); }
+  .project .slick-dots {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 25px;
+    z-index: 2;
+    width: 50px; }
+    .project .slick-dots .slick-active button:before {
+      background: #73a880; }
+    .project .slick-dots li {
+      margin: 5px; }
+      .project .slick-dots li button:before {
+        position: absolute;
+        content: '';
+        border: 2px solid #73a880;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0; }
+
+.slick-slider {
+  margin-bottom: 0 !important; }
+
+.arrow-pr {
+  position: absolute;
+  left: 2vw;
+  bottom: -2.4vh; }
+
+/* --- Project END --- */
 @-webkit-keyframes lianim {
   0% {
     left: -20px; }
@@ -325,5 +515,8 @@ body {
 
 .ml50 {
   margin-left: 170px !important; }
+
+.left-p {
+  padding-left: 10px !important; }
 
 /* -- Decoration END ---*/
