@@ -1,0 +1,79 @@
+@media only screen and (min-width : 1500px) {
+	.head-wrap .container-fluid .row .wrap-text-left h1
+	{
+		font-size: 3em;
+	}
+	.head-wrap .container-fluid .row .wrap-text-left h3
+	{
+		font-size: 2.5em;
+	}
+	.head-wrap .container-fluid .row .wrap-text-right ul li
+	{
+		font-size: 1.6rem;
+	}
+	.head-wrap .container-fluid .row .wrap-text-right ul li i
+	{
+		left: -35px;
+		font-size: 30px;
+	}
+	.padding-big
+	{
+		padding-left: 5rem !important;
+		padding-right: 5rem !important;
+	}
+	.about .container-fluid .row .header-wrap
+	{
+		width: 90% !important;
+	}
+	.project .small-wrap .small-cont img
+	{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.navbar{
+		margin: 0;
+	}
+}
+@media only screen and (max-width : 1140px) {
+.navbar-nav
+{
+	background:rgba(255,255,255, 0.9);
+}
+}
+
+@media only screen and (max-width : 992px) {
+	.arrow-pr
+	{
+		display: none;
+	}
+.about .container-fluid .row img
+{
+	padding-top: 20px;
+}
+}
+@media only screen and (max-width : 800px) {
+	.project .bg-for {
+		margin-bottom: 40px !important;
+	}
+	.about .container-fluid .row img
+	{
+		padding-top: 20px;
+	}
+	}
+@media only screen and (max-width : 960px)
+{
+
+}
+@media only screen and (max-width : 576px)
+{
+	.head-wrap .container-fluid .row .wrap-text-right ul li
+	{
+		margin-left: 10px !important;
+	}
+	.head-wrap .container-fluid .row .wrap-text-left h1
+	{
+		font-size: 1.7rem;
+	}
+}
