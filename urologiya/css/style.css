@@ -2547,6 +2547,37 @@ body {background: #E4E4E4;}
     transition: 0.2s !important;
     background: linear-gradient(to right, #F44336, #A30159) !important; }
 
+  /* copywrite-text */
+
+.copywrite-text {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0; }
+
+  @media only screen and (max-width: 767px) {
+    .copywrite-text {
+        text-align: center;
+        padding-bottom: 0; } }
+.copywrite-text p {
+      font-size: 14px;
+      color: #565956;
+      font-weight: 400;
+      margin-bottom: 0; }
+      @media only screen and (max-width: 767px) {
+      .copywrite-text p {
+          font-size: 12px; } }
+  .copywrite-text p a {
+        font-size: 14px;
+        color: #393B39;
+        font-weight: 500; }
+    .copywrite-text p a:hover, .copywrite-text p a:focus {
+          color: #202120; }
+        @media only screen and (max-width: 767px) {
+       .copywrite-text p a {
+            font-size: 12px; } }
+
+/* end copywrite-text */
+
 /*Clicking on any thumbnail now should activate the image related to it*/
 
 /*We are done :)*/
