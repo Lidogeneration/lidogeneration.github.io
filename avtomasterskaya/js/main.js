@@ -14,11 +14,11 @@
         if ($(window).scrollTop() > 50) {
             $('.scrolling-navbar').addClass('top-nav-collapse');
             $('.scrolling-navbar').removeClass('bb_navbar');
-            $('.logoimg').attr("src", "../images/logo_AS_BLACK.png");
+            $('.logoimg').attr("src", "./images/logo_AS_BLACK.png");
         } else {
             $('.scrolling-navbar').removeClass('top-nav-collapse');
             $('.scrolling-navbar').addClass('bb_navbar');
-            $('.logoimg').attr("src", "../images/logo_AS_WHITE.png");
+            $('.logoimg').attr("src", "./images/logo_AS_WHITE.png");
         }
     });
 
