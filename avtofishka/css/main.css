@@ -4682,15 +4682,18 @@ img {
   background: #F2F4F5;
   padding: 20px;
   padding-bottom: 35px;
-  background: #1B262C radial-gradient(circle at 50% 0, rgba(242, 244, 245, 0.65), rgba(242, 244, 245, 0.35)); }
+  background: #1B262C radial-gradient(circle at 50% 0, rgba(105, 122, 130, 1), rgba(75, 107, 122, 0.35)); }
   .my-contact-form h4 {
     color: #2E5568; }
   .my-contact-form .my-btn {
     font-size: 18px;
     padding: 10px 20px; }
 
+.my-contact-form p {
+  color: #BDBFC1;
+}
+
 .my_input2 {
-  color: #8B8B8B;
     font-size: 16px;
     text-align: center;
     transition: .3s;
@@ -4703,6 +4706,7 @@ img {
 }
 .my_input2:focus {
         color: white;
+        fill: white;
         transition: .3s;
         background-color: rgba(52, 152, 219, 0.1);
         border-color: rgba(52, 152, 219, 0.5);
