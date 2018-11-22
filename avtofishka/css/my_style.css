@@ -162,20 +162,25 @@ body {
     background-color: rgba(52, 152, 219, 0.1);
     border-color: rgba(52, 152, 219, 0.5); }
 
-#about .about.block {
-  border: 1px solid #D0D0D0;
-  border-radius: 5px;
-  padding: 15px 0;
-  height: 100%;
-  background: linear-gradient(to bottom left, #E1E1E1, #f0f0f0);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), -10px 0 20px -10px rgba(0, 0, 0, 0.3), 10px 0 20px -10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
-  #about .about.block p {
-    font-size: 18px;
-    margin: 0; }
-  #about .about.block img {
-    margin-bottom: 5px; }
+#about {
+  background: url("../images/01background.png");
+  background-attachment: fixed; }
+  #about .about.block {
+    border: 1px solid #D0D0D0;
+    border-radius: 5px;
+    padding: 15px 0;
+    height: 100%;
+    background: linear-gradient(to bottom left, #E1E1E1, #f0f0f0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), -10px 0 20px -10px rgba(0, 0, 0, 0.3), 10px 0 20px -10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+    #about .about.block p {
+      font-size: 18px;
+      margin: 0; }
+    #about .about.block img {
+      margin-bottom: 5px; }
 
 .my_services {
+  background: url("../images/01background.png");
+  background-attachment: fixed;
   padding: 30px 0; }
   .my_services .container {
     padding-bottom: 30px; }
@@ -211,7 +216,10 @@ body {
   padding-bottom: 8px; }
 
 .my_security {
-  padding: 30px 0; }
+  background: url("../images/01background.png");
+  background-attachment: fixed;
+  padding: 30px 0;
+  overflow: hidden; }
   .my_security .d_img_secur_top {
     margin-left: auto;
     margin-right: auto;
@@ -257,5 +265,16 @@ body {
 
 .hidden {
   display: none; }
+
+.my_reviews {
+  background: url("../images/01background.png");
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 30px 0; }
+  .my_reviews img {
+    height: auto;
+    max-width: 200px; }
+  .my_reviews .name_ {
+    font-size: 18px; }
 
 /*# sourceMappingURL=my_style.css.map */
