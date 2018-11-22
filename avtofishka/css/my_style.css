@@ -179,8 +179,6 @@ body {
       margin-bottom: 5px; }
 
 .my_services {
-  background: url("../images/01background.png");
-  background-attachment: fixed;
   padding: 30px 0; }
   .my_services .container {
     padding-bottom: 30px; }
@@ -267,8 +265,6 @@ body {
   display: none; }
 
 .my_reviews {
-  background: url("../images/01background.png");
-  background-attachment: fixed;
   overflow: hidden;
   padding: 30px 0; }
   .my_reviews img {
