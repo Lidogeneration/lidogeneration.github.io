@@ -1,0 +1,300 @@
+$main_color: #73472C
+$main_color_rgba05: rgba(115,71,44,.5)
+$main_color_rgba08: rgba(202,108,49,.8)
+
+.red
+    color: #D80D0D
+    font-size: 18px
+
+
+
+body
+    font-family: 'Exo 2', sans-serif
+
+p
+    
+.my_header
+    height: 100%
+    min-height: 100vh
+    h4
+        font-size: 22px
+        display: inline-block
+        border-bottom: 3px solid $main_color
+        padding: 5px
+        color: #323232
+    a
+        font-family: 'Exo 2', sans-serif!important
+        &:hover 
+            color: black!important
+    .navbar
+        background: white
+        .navbar-brand
+            img
+                height: auto
+                max-width: 150px
+    .contents
+        padding: 0
+        .head-title
+            color: #323232
+            display: inline-block
+            padding: 10px
+            font-size: 30px
+    .triggers
+        border-left: 3px solid $main_color
+        padding: 5px
+        box-shadow: 0px 6px 12px -6px rgba(0,0,0,0.75)
+        h4
+            margin-left: auto
+            margin-right: auto
+        p
+            color: #323232
+            font-size: 22px
+            padding: 5px
+    .col_img
+        display: flex
+        justify-content: center
+        img
+            box-shadow: 0px 6px 12px -6px rgba(0,0,0,0.75)
+            border-right: 3px solid $main_color
+
+.d_arrow_down
+    padding-top: 60px
+    transform: scale(1,1)
+    -webkit-animation: shake .5s linear alternate-reverse infinite
+    animation: shake .5s linear alternate-reverse infinite
+    img
+        width: 20px
+
+.video_scroll
+    padding: 30px 0
+
+// video-promo
+
+.video-promo
+    padding: 30px 0
+    background: white
+    .col_video
+        img
+            height: auto
+            width: 100%
+        .poster
+            border: 5px solid #4A2E1C
+
+// box-item
+
+.my_advantages
+    padding: 30px 0
+    .box-item
+        height: 150px
+        .text
+            height: 110px
+            box-shadow: 0px 0px 16px rgba(131, 131, 131, 0.35)
+            p
+                font-size: 16px
+
+.br_
+    border-right: 3px solid $main_color
+
+.bl_
+    border-left: 3px solid $main_color
+
+// my_prod
+
+.my_prod
+    overflow: hidden
+    padding: 30px 0
+    .single-team
+        margin-left: 25px
+        margin-right: 25px
+        .team-thumb
+            .hit
+                top: 0px
+                right: 0px
+                height: 80px
+                width: 80px
+                z-index: 999
+    .social-list
+        width: 100%
+        li
+            a
+                transition: .2s!important
+                border-bottom: 2px solid transparent
+                &:hover
+                    transition: .2s!important
+                    background: transparent!important
+                    border-bottom: 2px solid white
+
+// reviews
+
+.reviews
+    padding: 30px 0
+    .testimonial-item
+        min-height: 488px
+        .img-thumb
+            img
+                height: 50px
+                width: 50px
+                border-radius: 0
+
+// questions
+
+.questions
+    padding: 30px 0
+    .items_quests
+        .quest
+            color: #191C1E
+            padding-bottom: 2px
+            border-bottom: 1px solid transparent
+            &:hover
+                border-bottom-color: $main_color
+    .my_btn_d
+        padding-top: 30px
+        .btn
+            border: 2px solid $main_color
+            transition: .3s
+            transform: scale(1,1)
+            &:hover
+                transition: .3s
+                color: white
+                transform: scale(1.05,1.05)
+                background: $main-color
+
+.menu-bg
+    z-index: 999!important
+
+.answer
+    position: relative
+    background: white
+    max-width: 80%
+    margin-left: auto
+    margin-right: auto
+    padding: 10px
+    border-left: 3px solid $main-color
+    text-align: center
+    z-index: 9999!important
+    img
+        max-width: 700px
+    p
+        text-align: left
+    .mfp-close
+        top: 2%
+        right: -50px
+        border-radius: 50%
+        transition: .3s
+        background: black
+        opacity: 1
+        color: red
+        &:hover
+            transition: .3s
+            background: #ccc
+            border-radius: 50%
+            color: #f0f0f0
+    .table
+        img
+            height: auto
+            max-width: 100px!important
+
+
+.hidden
+    display: none
+
+// akcia
+
+.pricing-section
+    padding: 30px 0
+    .pricing-table
+        ul
+            li
+                font-size: 18px 
+    .pricing-details
+        img 
+            height: 40px
+            width: 40px
+            margin-left: 30px
+
+.fs_22px
+    font-size: 22px
+
+.my_form
+    padding: 29px 0
+    justify-content: flex-start
+    .my_inp
+        padding: 10px
+        width: 100%
+        margin: 10px 0
+        border-radius: 30px
+        transition: .3s
+        border: 2px solid #ccc
+        &:focus
+            transition: .3s
+            border-color: $main_color
+
+    .my_btn
+        margin-top: 20px
+        padding: 15px 40px
+        color: $main_color
+        transition: .3s
+        background: transparent
+        border: 2px solid $main_color
+        &:hover
+            transition: .3s
+            color: white
+            background: $main_color
+
+.pptt
+    padding-bottom: 0
+    &:hover
+        background-image: -moz-linear-gradient(0deg, white 0%, white 0%)
+        background-image: -webkit-linear-gradient(0deg, white 0%, white 0%)
+        background-image: -ms-linear-gradient(0deg,white 0%, white 0%)
+        box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.23)
+
+// blog
+
+#blog
+    .blog-item-wrapper
+        min-height: 451px
+        max-width: 400px
+        .small_
+            font-size: 20px
+        h3
+            color: white
+        .title_blog
+            width: 100%
+            top: 25%
+            text-align: center
+
+// footer-Content
+
+.footer-Content
+    .widget
+        p
+            color: white
+            font-size: 16px
+            img
+                height: 25px
+                width: 25px
+    .col_logo
+        img
+            height: auto
+            width: 25%
+            border-radius: 50%
+        .energi
+            width: 15%
+        h5
+            color: white
+            font-size: 30px
+            text-align: center
+            width: 70%
+            margin-right: auto
+
+// akcia_hover
+
+.navbar-expand-md
+    .navbar-nav 
+        .akcia_hover::before
+            background: #D80D0D!important
+                
+
+
+
