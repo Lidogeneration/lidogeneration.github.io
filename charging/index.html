@@ -42,9 +42,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#app-features">Видео-обзор</a>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#advantagesId">Приемущества</a>
               </li>                            
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">Каталог</a>
@@ -53,11 +50,11 @@
                 <a class="nav-link page-scroll" href="#testimonial">Отзывы</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link page-scroll akcia_hover" href="#pricing">Акция!</a>
-              </li> 
-              <li class="nav-item">
                 <a class="nav-link page-scroll" href="#contactId">Контакты</a>
               </li> 
+              <li class="nav-item">
+                  <a class="nav-link contact_ myContBtn" href="#myMainFormId">Обратный звонок</a>
+                </li> 
             </ul>
           </div>
         </div>
@@ -232,7 +229,7 @@
     </div>
     <!-- features Section End -->
 
-      <!-- Team section Start -->
+      <!-- Team section Start --> 
       <section id="team" class="section my_prod">
           <div class="container">
             <div class="section-header">        
@@ -244,8 +241,8 @@
                   <div class="team-thumb">
                     <img src="images/smart_b/standart-black.jpg" alt="">
                     <ul class="social-list">
-                      <li class="google-plus"><a href="#">Подробнее</a></li>
-                      <li class="linkedin"><a href="#">Заказать</a></li>
+                      <li class="google-plus"><a href="single-post.html">Подробнее</a></li>
+                      <li class="linkedin"><a class="contact_" href="#myFormId1">Заказать</a></li>
                     </ul>
                   </div>
                   <div class="team-details">
@@ -257,13 +254,30 @@
                     </div>
                   </div>
                 </div>
+                <div class="hidden">
+                    <form id="myFormId1" action="" class="mx-auto my_form myContactDForm">
+                            <div class="section-header">      
+                              <h2 class="section-title">Оставь заявку и мы скоро перезвоним</h2>
+                            </div>
+                            <hr class="hr_ w-75">
+                            <div class="d_inp">
+                            <input type="text" name="name" class="my_inp" placeholder="Имя" required>
+                          </div>
+                          <div class="d_inp">
+                              <input type="tel" name="phone" class="my_inp telephone" placeholder="Телефон" required>
+                            </div>
+                            <div class="d_btn">
+                            <button class="d-block mx-auto my_btn btn btn_send">Отправить</button>
+                          </div>
+                  </form>
+                </div>
               </div>
               <div class="col-sm-6 col-lg-4 col-md-4 col-xs-12">
                 <div class="single-team wow fadeInUp" data-wow-delay="0.3s">
                   <div class="team-thumb">
                     <img src="images/smart-silver/smart-silver.jpg" alt="">
                     <ul class="social-list">
-                        <li class="google-plus"><a href="#">Подробнее</a></li>
+                        <li class="google-plus"><a href="single-post.html">Подробнее</a></li>
                         <li class="linkedin"><a href="#">Заказать</a></li>
                       </ul>
                     </div>
@@ -282,7 +296,7 @@
                   <div class="team-thumb">
                     <img src="images/wood-holder/wood-holder.jpg" alt="">
                     <ul class="social-list">
-                        <li class="google-plus"><a href="#">Подробнее</a></li>
+                        <li class="google-plus"><a href="single-post.html">Подробнее</a></li>
                         <li class="linkedin"><a href="#">Заказать</a></li>
                       </ul>
                       <img src="images/hit.png" class="position-absolute hit">
@@ -302,7 +316,7 @@
                     <div class="team-thumb">
                       <img src="images/standart-gold/standart-gold.jpg" alt="">
                       <ul class="social-list">
-                        <li class="google-plus"><a href="#">Подробнее</a></li>
+                        <li class="google-plus"><a href="single-post.html">Подробнее</a></li>
                         <li class="linkedin"><a href="#">Заказать</a></li>
                       </ul>
                     </div>
@@ -321,7 +335,7 @@
                   <div class="team-thumb">
                     <img src="images/standart-silver/standart-silver.jpg" alt="">
                     <ul class="social-list">
-                        <li class="google-plus"><a href="#">Подробнее</a></li>
+                        <li class="google-plus"><a href="single-post.html">Подробнее</a></li>
                         <li class="linkedin"><a href="#">Заказать</a></li>
                       </ul>
                     </div>
@@ -340,7 +354,7 @@
                   <div class="team-thumb">
                     <img src="images/double-silver/double-silver.jpg" alt="">
                     <ul class="social-list">
-                        <li class="google-plus"><a href="#">Подробнее</a></li>
+                        <li class="google-plus"><a href="single-post.html">Подробнее</a></li>
                         <li class="linkedin"><a href="#">Заказать</a></li>
                       </ul>
                       <img src="images/new.png" class="position-absolute hit">
@@ -1037,7 +1051,7 @@ ZTE Telstra Tough Max<br>
               </div>
               <div class="col-md-12 d-flex justify-content-center">
                 <div class="my_btn_d">
-                  <a href="#" class="contact_ btn">Остались вопросы?</a>
+                  <a href="#myMainFormId" class="contact_ btn">Остались вопросы?</a>
                 </div>
               </div>
             </div>
@@ -1119,13 +1133,12 @@ ZTE Telstra Tough Max<br>
                             </div>
                             <form class="my_form d-flex flex-column">
                               <input class="my_inp" type="text" placeholder="Имя" required>
-                              <input class="my_inp" type="tel" placeholder="Телефон" required>
-                              <button class="d-block mx-auto my_btn btn">Отправить</button>
+                              <input class="my_inp telephone" type="tel" placeholder="Телефон" required>
+                              <button class="d-block mx-auto my_btn btn btn_send">Отправить</button>
                             </form>
                       </div>
                     </div>
               </div>
-    
             </div>
           </div>
         </div>
@@ -1245,6 +1258,23 @@ ZTE Telstra Tough Max<br>
     
   </footer>
   <!-- Footer Section End --> 
+<div class="hidden">
+    <form id="myMainFormId" action="page-done.html" class="mx-auto my_form myContactDForm">
+            <div class="section-header mb-3">      
+              <h2 class="section-title">Оставь заявку и мы скоро перезвоним</h2>
+            </div>
+            <hr class="hr_ w-75">
+            <div class="d_inp">
+            <input type="text" name="name" class="my_inp" placeholder="Имя" required>
+          </div>
+          <div class="d_inp">
+              <input type="tel" name="phone" class="my_inp telephone" placeholder="Телефон" required>
+            </div>
+            <div class="d_btn">
+            <button class="d-block mx-auto my_btn btn btn_send">Отправить</button>
+          </div>
+  </form>
+</div>
 
     <!-- Go To Top Link -->
     <a href="#" class="back-to-top">
@@ -1269,11 +1299,13 @@ ZTE Telstra Tough Max<br>
     <script src="js/wow.js"></script>   
     <script src="js/jquery.counterup.min.js"></script>     
     <script src="js/nivo-lightbox.js"></script>     
-    <script src="js/jquery.magnific-popup.min.js"></script>     
+    <script src="js/jquery.magnific-popup.min.js"></script>   
+    <script src="js/jquery.inputmask.bundle.min.js"></script>  
     <script src="js/waypoints.min.js"></script>      
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>   
     <script src="js/main.js"></script>
     <script src="js/func.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
   </body>
 </html>
