@@ -1,3 +1,19 @@
+@media only screen and (min-width: 1200px){
+    .my_header .colPhotos .viewPhoto{
+        height: 360px!important;
+    }
+}
+
+@media only screen and (max-width: 1999px){
+    .my_header .colPhotos .viewPhoto{
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .my_header .colPhotos {
+    }
+}
+
 @media only screen and (max-width: 991px){
     .my_header .contents {
         display: flex;
@@ -31,12 +47,51 @@
     .single-team .social-list {
         left: 0px!important;
     }
+    .my_header .colTitleProd {
+        padding-top: 50px;
+    }
+    .my_header .colPhotos .viewPhoto{
+        align-items: flex-start!important;
+        height: 220px;
+    }
+    .my_header .d_b_backmain {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .my_header .colPhotos .viewPhoto{
+        height: 340px;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 991px){
     .my_prod .single-team {
         margin-left: 0;
         margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+  
+    .viewPhoto {
+        margin: 0!important;
+    }
+    .colPhotos {
+        height: auto;
+    }
+    .colPhotosA {
+        margin-top: 0;
+    
+    }
+    .my_header .colPhotos {
+        padding-top: 100px;
+    }
+    .my_header .colPhotos .viewPhoto{
+        height: auto;
+    }
+    .my_header .colPhotos {
+        padding-top: 30px;
     }
 }
 

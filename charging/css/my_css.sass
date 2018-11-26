@@ -13,9 +13,54 @@ body
 
 p
     
-.my_header
+.my_header, .thank
     height: 100%
-    min-height: 100vh
+    min-height: 100vh 
+    .d_b_backmain
+        display: inline-block
+        margin-top: 100px
+        transition: .3s
+        transform: translate(0px)
+        &:hover
+            transition: .3s
+            transform: translate(-10px)
+        .b_backmain
+            color: white
+            font-size: 16px
+            border-top-left-radius: 15px
+            border-bottom-left-radius: 15px
+            padding: 10px 20px
+            background: $main_color
+            &:hover
+                color: white!important
+    .colTitleProd
+        padding-top: 100px
+        padding-bottom: 30px
+        .nav-tabs
+            border: none!important
+            a 
+                color: black!important
+            .dropdown-menu
+                background: linear-gradient(to bottom, #f0f0f0, #ccc)
+    .colPhotosA
+        padding-top: 10px
+        #thumbs
+            a
+                margin-top: 5px
+                padding: 5px
+                border: 1px solid #f0f0f0
+                &:hover
+                    border-color: #ccc
+                &:focus
+                    border-color: #ccc
+    .colPhotos
+        padding-top: 30px
+        .viewPhoto
+            width: 100%
+            margin-bottom: 10px
+            -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.75)
+            -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.75)
+            box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.75)
     h4
         font-size: 22px
         display: inline-block
@@ -56,6 +101,18 @@ p
         img
             box-shadow: 0px 6px 12px -6px rgba(0,0,0,0.75)
             border-right: 3px solid $main_color
+    .myContBtn
+        color: white!important
+        background: $main_color
+        padding: 5px 10px!important
+        border-radius: 25px
+        border: 2px solid $main_color
+        &:hover
+            color:  $main_color!important
+            background: transparent
+        &:before
+            background: none!important
+
 
 .d_arrow_down
     padding-top: 60px
@@ -247,7 +304,7 @@ p
         background-image: -moz-linear-gradient(0deg, white 0%, white 0%)
         background-image: -webkit-linear-gradient(0deg, white 0%, white 0%)
         background-image: -ms-linear-gradient(0deg,white 0%, white 0%)
-        box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.23)
+        box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.5)
 
 // blog
 
@@ -294,6 +351,87 @@ p
     .navbar-nav 
         .akcia_hover::before
             background: #D80D0D!important
+
+// myContactForm
+
+.myContactDForm
+    max-width: 350px
+    background: #CACACA
+    position: relative
+    .section-header
+        .section-title
+            background-image: linear-gradient(to top left, #f0f0f0, white)!important
+            margin: 0!important
+    .my_inp
+        max-width: 300px
+        margin-left: 25px
+        margin-right: 25px
+        &:focus
+            border-color: transparent
+            box-shadow: 0px 0px 5px #dddddd
+    .my_btn
+        border-color: white
+        color: white
+        &:hover
+            background: white
+            color: $main_color
+    .mfp-close
+
+.hr_
+    border: 0
+    height: 0
+    margin-top: 0!important
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+
+.btn
+
+.contSlider
+    padding-top: 50px
+    .slider
+        .img_
+            width: 100%!important
+
+input
+    &:focus
+        outline: none!important
+
+.thank
+    .thankText
+        height: 160px
+        background: linear-gradient(to bottom, #f0f0f0, #ccc)
+        h3
+            color: $main_color
+    .d_b_backmain
+        margin-top: 20px
+    .dAkcProd
+        img
+            height: auto
+            max-width: 100%
+    .skidca
+        display: inline-block
+        padding: 25px 20px
+        margin-top: 20px
+        border-radius: 50%
+        background: linear-gradient(to left, #E14141, #EA0000)
+        p
+            color: white
+            font-size: 16px
+    .dPriceAndPay
+        justify-content: space-around
+        padding-bottom: 20px
+        p
+            font-size: 18px
+        .pay
+            background: $main_color
+            color: white
+            border: 2px solid $main_color
+            &:hover
+                color: $main_color!important
+                background: transparent
+
+
+
                 
 
 

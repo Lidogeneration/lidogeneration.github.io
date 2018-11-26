@@ -5,48 +5,103 @@
 body {
   font-family: "Exo 2", sans-serif; }
 
-.my_header {
+.my_header, .thank {
   height: 100%;
   min-height: 100vh; }
-  .my_header h4 {
+  .my_header .d_b_backmain, .thank .d_b_backmain {
+    display: inline-block;
+    margin-top: 100px;
+    transition: 0.3s;
+    transform: translate(0px); }
+    .my_header .d_b_backmain:hover, .thank .d_b_backmain:hover {
+      transition: 0.3s;
+      transform: translate(-10px); }
+    .my_header .d_b_backmain .b_backmain, .thank .d_b_backmain .b_backmain {
+      color: white;
+      font-size: 16px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      padding: 10px 20px;
+      background: #73472C; }
+      .my_header .d_b_backmain .b_backmain:hover, .thank .d_b_backmain .b_backmain:hover {
+        color: white !important; }
+  .my_header .colTitleProd, .thank .colTitleProd {
+    padding-top: 100px;
+    padding-bottom: 30px; }
+    .my_header .colTitleProd .nav-tabs, .thank .colTitleProd .nav-tabs {
+      border: none !important; }
+      .my_header .colTitleProd .nav-tabs a, .thank .colTitleProd .nav-tabs a {
+        color: black !important; }
+      .my_header .colTitleProd .nav-tabs .dropdown-menu, .thank .colTitleProd .nav-tabs .dropdown-menu {
+        background: linear-gradient(to bottom, #f0f0f0, #ccc); }
+  .my_header .colPhotosA, .thank .colPhotosA {
+    padding-top: 10px; }
+    .my_header .colPhotosA #thumbs a, .thank .colPhotosA #thumbs a {
+      margin-top: 5px;
+      padding: 5px;
+      border: 1px solid #f0f0f0; }
+      .my_header .colPhotosA #thumbs a:hover, .thank .colPhotosA #thumbs a:hover {
+        border-color: #ccc; }
+      .my_header .colPhotosA #thumbs a:focus, .thank .colPhotosA #thumbs a:focus {
+        border-color: #ccc; }
+  .my_header .colPhotos, .thank .colPhotos {
+    padding-top: 30px; }
+    .my_header .colPhotos .viewPhoto, .thank .colPhotos .viewPhoto {
+      width: 100%;
+      margin-bottom: 10px;
+      -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75); }
+  .my_header h4, .thank h4 {
     font-size: 22px;
     display: inline-block;
     border-bottom: 3px solid #73472C;
     padding: 5px;
     color: #323232; }
-  .my_header a {
+  .my_header a, .thank a {
     font-family: "Exo 2", sans-serif !important; }
-    .my_header a:hover {
+    .my_header a:hover, .thank a:hover {
       color: black !important; }
-  .my_header .navbar {
+  .my_header .navbar, .thank .navbar {
     background: white; }
-    .my_header .navbar .navbar-brand img {
+    .my_header .navbar .navbar-brand img, .thank .navbar .navbar-brand img {
       height: auto;
       max-width: 150px; }
-  .my_header .contents {
+  .my_header .contents, .thank .contents {
     padding: 0; }
-    .my_header .contents .head-title {
+    .my_header .contents .head-title, .thank .contents .head-title {
       color: #323232;
       display: inline-block;
       padding: 10px;
       font-size: 30px; }
-  .my_header .triggers {
+  .my_header .triggers, .thank .triggers {
     border-left: 3px solid #73472C;
     padding: 5px;
     box-shadow: 0px 6px 12px -6px rgba(0, 0, 0, 0.75); }
-    .my_header .triggers h4 {
+    .my_header .triggers h4, .thank .triggers h4 {
       margin-left: auto;
       margin-right: auto; }
-    .my_header .triggers p {
+    .my_header .triggers p, .thank .triggers p {
       color: #323232;
       font-size: 22px;
       padding: 5px; }
-  .my_header .col_img {
+  .my_header .col_img, .thank .col_img {
     display: flex;
     justify-content: center; }
-    .my_header .col_img img {
+    .my_header .col_img img, .thank .col_img img {
       box-shadow: 0px 6px 12px -6px rgba(0, 0, 0, 0.75);
       border-right: 3px solid #73472C; }
+  .my_header .myContBtn, .thank .myContBtn {
+    color: white !important;
+    background: #73472C;
+    padding: 5px 10px !important;
+    border-radius: 25px;
+    border: 2px solid #73472C; }
+    .my_header .myContBtn:hover, .thank .myContBtn:hover {
+      color: #73472C !important;
+      background: transparent; }
+    .my_header .myContBtn:before, .thank .myContBtn:before {
+      background: none !important; }
 
 .d_arrow_down {
   padding-top: 60px;
@@ -215,7 +270,7 @@ body {
     background-image: -moz-linear-gradient(0deg, white 0%, white 0%);
     background-image: -webkit-linear-gradient(0deg, white 0%, white 0%);
     background-image: -ms-linear-gradient(0deg, white 0%, white 0%);
-    box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.23); }
+    box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.5); }
 
 #blog .blog-item-wrapper {
   min-height: 451px;
@@ -250,5 +305,73 @@ body {
 
 .navbar-expand-md .navbar-nav .akcia_hover::before {
   background: #D80D0D !important; }
+
+.myContactDForm {
+  max-width: 350px;
+  background: #CACACA;
+  position: relative; }
+  .myContactDForm .section-header .section-title {
+    background-image: linear-gradient(to top left, #f0f0f0, white) !important;
+    margin: 0 !important; }
+  .myContactDForm .my_inp {
+    max-width: 300px;
+    margin-left: 25px;
+    margin-right: 25px; }
+    .myContactDForm .my_inp:focus {
+      border-color: transparent;
+      box-shadow: 0px 0px 5px #dddddd; }
+  .myContactDForm .my_btn {
+    border-color: white;
+    color: white; }
+    .myContactDForm .my_btn:hover {
+      background: white;
+      color: #73472C; }
+
+.hr_ {
+  border: 0;
+  height: 0;
+  margin-top: 0 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.contSlider {
+  padding-top: 50px; }
+  .contSlider .slider .img_ {
+    width: 100% !important; }
+
+input:focus {
+  outline: none !important; }
+
+.thank .thankText {
+  height: 160px;
+  background: linear-gradient(to bottom, #f0f0f0, #ccc); }
+  .thank .thankText h3 {
+    color: #73472C; }
+.thank .d_b_backmain {
+  margin-top: 20px; }
+.thank .dAkcProd img {
+  height: auto;
+  max-width: 100%; }
+.thank .skidca {
+  display: inline-block;
+  padding: 25px 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background: linear-gradient(to left, #E14141, #EA0000); }
+  .thank .skidca p {
+    color: white;
+    font-size: 16px; }
+.thank .dPriceAndPay {
+  justify-content: space-around;
+  padding-bottom: 20px; }
+  .thank .dPriceAndPay p {
+    font-size: 18px; }
+  .thank .dPriceAndPay .pay {
+    background: #73472C;
+    color: white;
+    border: 2px solid #73472C; }
+    .thank .dPriceAndPay .pay:hover {
+      color: #73472C !important;
+      background: transparent; }
 
 /*# sourceMappingURL=my_css.css.map */

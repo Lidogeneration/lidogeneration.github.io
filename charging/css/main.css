@@ -56,10 +56,6 @@ p {
   margin-bottom: 0;
 }
 
-a:hover, a:focus {
-  color: #3c9cfd;
-}
-
 a {
   color: #3c9cfd;
   -webkit-transition: all 0.3s ease-in-out;
@@ -604,7 +600,7 @@ button:focus {
 }
 
 .navbar-expand-md .navbar-toggler i {
-  color: #fff !important;
+  color: black !important;
 }
 
 .navbar-expand-md .navbar-toggler:focus {
@@ -1447,7 +1443,7 @@ button:focus {
   -moz-transition: background-image 0.3s  ease-out;
   -o-transition: background-image 0.3s  ease-out;
   transition: background-image 0.3s  ease-out;
-  box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.23);
+  box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.5);
 }
 
 .pricing-table .icon {
@@ -2432,4 +2428,28 @@ footer .menu li a:hover {
 
 .my_inp:required:focus {
     box-shadow: none;
+}
+
+#big {
+  height: auto;
+   max-width:100%; 
+   margin-bottom: 10px; 
+  }
+
+#thumbs a { display: block; float: left; margin-right: 10px; }
+#thumbs a img { 
+  height: 50px; 
+}
+
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
 }
