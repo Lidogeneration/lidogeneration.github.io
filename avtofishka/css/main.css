@@ -814,15 +814,15 @@ footer .menu li a:hover {
 
 /* Default Button */
 .btn-common, .btn-common:active, .btn-common:focus {
-  color: #EB586F;
-  border: 2px solid #EB586F;
+  color: #9CDD05;
+  border: 2px solid #9CDD05;
   background: transparent;
 }
 
 .btn-common:hover {
   color: #fff;
-  background: #EB586F;
-  border: 2px solid #EB586F;
+  background: #9CDD05;
+  border: 2px solid #9CDD05;
 }
 
 .btn-border {
@@ -4843,7 +4843,7 @@ img {
 
 /* Отключение видео для устройств с размером экрана менее 800px: */
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-width: 800px) {
 	#video-bg > video {
 		display: none; 
     }
@@ -4852,4 +4852,14 @@ img {
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
-	}
+  }
+  
+  
+  .my_video {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
