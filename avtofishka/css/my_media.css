@@ -103,7 +103,7 @@
         transform: rotateX(55deg)!important;
     }
     .title_scroll {
-        background: url(/images/title_scroll/bg2.jpg);
+        background: url("../images/title_scroll/bg2.jpg");
         background-position: center;
         background-attachment: fixed;
     }
