@@ -37,6 +37,9 @@
 }
 
 @media only screen and (max-width: 991px){
+    .my_video {
+        display: none;
+    }
     .navbar .navbar-header img{
             width: 55px;
     }
