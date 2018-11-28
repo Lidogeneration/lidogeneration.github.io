@@ -53,19 +53,19 @@ body {
   transition-duration: 0.3s;
   transform: rotateX(0deg);
   margin-bottom: 10px;
-  width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%; }
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%; }
   .d_contact:hover {
     color: white;
     transition-duration: 0.3s;
     transform: rotateX(25deg); }
     .d_contact:hover .a_contact {
       transition-duration: 0.2s;
-      box-shadow: 0px 5px 2px 0px #7EB204, 0px 15px 22px -1px #999; }
+      box-shadow: 0px 3px 2px 0px #7EB204, 0px 5px 2px -1px black; }
   .d_contact .a_contact, .d_contact .a_cont_ {
     width: 100%;
     background: #9CDD05;
@@ -74,7 +74,7 @@ body {
     font-size: 18px;
     border-radius: 3px;
     transition-duration: 0.2s;
-    box-shadow: 0px 5px 2px 0px #7EB204, 0px 10px 22px -1px #999; }
+    box-shadow: 0px 3px 2px 0px #7EB204, 0px 2px 2px -1px black; }
 
 .navbar .navbar-header img {
   height: auto;
@@ -277,6 +277,19 @@ body {
   background-attachment: fixed;
   padding: 30px 0;
   overflow: hidden; }
+  .my_security .d_adv_img img {
+    box-shadow: 0px 0px 3px 0px black; }
+  .my_security .d_adv_ul ul li {
+    padding: 15px 5px;
+    margin: 5px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3); }
+    .my_security .d_adv_ul ul li img {
+      height: 20px;
+      width: 20px;
+      margin-right: 5px; }
   .my_security .d_img_secur_top {
     margin-left: auto;
     margin-right: auto;
@@ -326,10 +339,15 @@ body {
 .my_reviews {
   overflow: hidden;
   padding: 30px 0; }
-  .my_reviews img {
+  .my_reviews .d-rev img {
     height: auto;
-    max-width: 200px; }
+    max-width: 200px;
+    box-shadow: 0px 0px 3px 0px black; }
   .my_reviews .name_ {
     font-size: 18px; }
+
+.myFooter {
+  height: 200px;
+  background: linear-gradient(to bottom left, #E1E1E1, #f0f0f0); }
 
 /*# sourceMappingURL=my_style.css.map */

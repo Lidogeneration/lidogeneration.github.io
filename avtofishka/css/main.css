@@ -479,16 +479,22 @@ footer #copyright .nav-inline {
   border-color: #3b5998;
 }
 
-.social-footer .fa-twitter:hover {
-  background: #55acee;
+.social-footer .fa-facebook-messenger:hover {
+  background: #00BCFE;
   color: #fff;
-  border-color: #55acee;
+  border-color: #00BCFE;
 }
 
-.social-footer .fa-linkedin:hover {
-  background: #007bb6;
+.social-footer .fa-vk:hover {
+  background: #4A76A8;
   color: #fff;
-  border-color: #007bb6;
+  border-color: #4A76A8;
+}
+
+.social-footer .fa-instagram:hover {
+  background: #F2195D;
+  color: #fff;
+  border-color: #F2195D;
 }
 
 .social-footer .fa-google-plus:hover {
@@ -4839,10 +4845,9 @@ img {
 
 @media screen and (max-device-width: 800px) {
 	#video-bg > video {
-		display: none;
+		display: none; 
     }
     .bg_scroll {
-      background: url("../images/01background.png");
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;

@@ -64,19 +64,19 @@ body
     transition-duration: .3s
     transform: rotateX(0deg)
     margin-bottom: 10px
-    width: 100%
-    display: flex
+    display: flex 
     justify-content: center
     text-align: center
-    padding-left: 20%
-    padding-right: 20%
+    padding-left: 15px
+    padding-right: 15px
+    width: 100%
     &:hover
         color: white
         transition-duration: .3s
         transform: rotateX(25deg)
         .a_contact
             transition-duration: .2s
-            box-shadow: 0px 5px 2px 0px $green_black, 0px 15px 22px -1px #999
+            box-shadow: 0px 3px 2px 0px $green_black, 0px 5px 2px -1px black
     .a_contact, .a_cont_
         width: 100%
         background: $pink_color
@@ -85,7 +85,7 @@ body
         font-size: 18px
         border-radius: 3px
         transition-duration: .2s
-        box-shadow: 0px 5px 2px 0px $green_black, 0px 10px 22px -1px #999
+        box-shadow: 0px 3px 2px 0px $green_black, 0px 2px 2px -1px black
 
 
 // navbar
@@ -229,7 +229,7 @@ body
 #servIdGruz
     background: url('../images/servs/gruz.jpg')
     background-position: center
-    background-size: cover
+    background-size: cover 
 
 #servIdKuzov
     background: url('../images/servs/kuzovnoj_remont.jpg')
@@ -313,6 +313,22 @@ body
     background-attachment: fixed
     padding: 30px 0
     overflow: hidden
+    .d_adv_img
+        img
+            box-shadow: 0px 0px 3px 0px black
+    .d_adv_ul
+        ul
+            li
+                padding: 15px 5px
+                margin: 5px
+                background: #ccc
+                display: flex
+                align-items: center
+                box-shadow: 0px 2px 2px 0px rgba(0,0,0,.3)
+                img
+                    height: 20px
+                    width: 20px
+                    margin-right: 5px
     .d_img_secur_top
         margin-left: auto
         margin-right: auto
@@ -367,11 +383,19 @@ body
 .my_reviews
     overflow: hidden
     padding: 30px 0
-    img
-        height: auto
-        max-width: 200px
+    .d-rev
+        img
+            height: auto
+            max-width: 200px
+            box-shadow: 0px 0px 3px 0px black
     .name_
         font-size: 18px
+
+// FOOTER
+
+.myFooter
+    height: 200px
+    background: linear-gradient(to bottom left, #E1E1E1, #f0f0f0)
 
 
 

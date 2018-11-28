@@ -109,6 +109,12 @@
     }
 }
 
+@media only screen and (min-width: 768px){
+    .d_adv_ul {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px){
     .d_txt {
         height: 220px;
@@ -143,6 +149,13 @@
     .d-flex {
         margin-left: auto;
         margin-right: auto;
+    }
+    .d_adv_img {
+        display: none;
+    }
+    .d_all_contact {
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }
 
