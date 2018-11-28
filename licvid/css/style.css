@@ -173,7 +173,7 @@ ul, ol {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .8;
+    opacity: .5;
     background: #1C1D21;
 }
 
@@ -638,7 +638,7 @@ header {
 .about {
     position: relative;
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px;
     border: 1px solid #EEE;
     margin: 15px 0px;
     height: 100%;
@@ -674,7 +674,16 @@ header {
 .about:hover h3 {
     color: #fff;
 }
-
+#about .col-md-6
+{
+    margin: 0;
+    padding: 0;
+}
+#about .col-md-12
+{
+    margin: 0;
+    padding: 0;
+}
 
 /*------------------------------------*\
 	Portfolio
@@ -818,6 +827,7 @@ header {
     margin: 15px 0px;
     border: 1px solid #EEE;
     height: 100%;
+    background: #fff;
 }
 
 .service i {
@@ -829,7 +839,7 @@ header {
     border-radius: 50%;
 }
 
-.service:after {
+/* .service:after {
     content: "";
     background-color: #1C1D21;
     position: absolute;
@@ -844,15 +854,25 @@ header {
 
 .service:hover:after {
     width: 100%;
-}
+} */
 
 .service h3 {
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
+  text-align: center;
 }
+.service h4 {
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+    text-align: center;
+  }
 
-.service:hover h3 {
+/* .service:hover h3 {
     color: #fff;
+}
+.service:hover h4 {
+    color: #fff;
+     */
 }
 
 /*------------------------------------*\
@@ -1017,6 +1037,7 @@ header {
     margin-top: 15px;
     padding: 5px;
     min-height: 220px;
+    color: #fff;
 }
 @media only screen and (max-width: 992px) {
 
@@ -1912,6 +1933,18 @@ header {
     display: none;
 }
 /* --- FORM START ---*/
-
+.main-form{
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 10px;
+    background: #fff;
+}
+.main-form input
+{
+    margin: 10px;
+    width: 90%;
+}
 
 /* --- FORM END ---*/
