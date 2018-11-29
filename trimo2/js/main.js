@@ -24,7 +24,13 @@ $(function(){
         $(event.target).closest(".navbar").length || $(".navbar-collapse.show").length && $(".navbar-collapse.show").collapse("hide")
       });
 
-
+$('.slider-about-wrap').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false
+  });
 $('.med-wrap').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

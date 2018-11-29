@@ -65,6 +65,7 @@
 @media only screen and (max-width : 960px)
 {
 
+
 }
 @media only screen and (max-width : 576px)
 {
@@ -75,5 +76,8 @@
 	.head-wrap .container-fluid .row .wrap-text-left h1
 	{
 		font-size: 1.7rem;
+	}
+	.navbar img {
+		width: 200px;
 	}
 }
