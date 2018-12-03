@@ -29,11 +29,16 @@
 	{
 		width: 100%;
 	}
+
 }
 
 @media only screen and (max-width : 1200px) {
 	.navbar{
 		margin: 0;
+	}
+ .project .med-cont	.project-descr
+	{
+		position: relative;
 	}
 }
 @media only screen and (max-width : 1140px) {
@@ -78,6 +83,19 @@
 		font-size: 1.7rem;
 	}
 	.navbar img {
-		width: 200px;
+		width: 180px;
 	}
+	.about .about-trimo
+	{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+						flex-direction: column;
+	}
+	.about .about-trimo img
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 }

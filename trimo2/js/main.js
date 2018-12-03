@@ -29,7 +29,8 @@ $('.slider-about-wrap').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    arrows: false
+    arrows: false,
+    autoplay: true
   });
 $('.med-wrap').slick({
     slidesToShow: 1,
