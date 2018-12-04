@@ -232,9 +232,9 @@ body {
           background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  position: relative;
-  overflow: hidden; }
-  .head-wrap #particles-js {
+  overflow: hidden;
+  position: relative; }
+  .head-wrap .animation-head {
     position: absolute;
     width: 100%;
     min-height: 100vh; }
@@ -629,7 +629,43 @@ body {
 /* --- Project END --- */
 /* --- adwantages START --- */
 .adwantages {
-  padding: 30px 0; }
+  padding: 30px 0;
+  overflow: hidden;
+  background: url("../img/adw_bg.jpg");
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .adwantages .header-wrap {
+    background: #ececec;
+    padding: 15px 5px 15px 5px;
+    position: relative; }
+    .adwantages .header-wrap h4 {
+      text-transform: uppercase;
+      display: inline;
+      margin: 0; }
+    .adwantages .header-wrap i {
+      font-size: 16px;
+      color: #73a880;
+      display: inline;
+      padding-right: 10px; }
+  .adwantages .header-wrap-after:after {
+    content: '';
+    position: absolute;
+    width: 15vw;
+    height: 30px;
+    background: #fff;
+    left: 5vw;
+    bottom: -15px; }
+  .adwantages .head-hr {
+    margin: 0;
+    padding: 0;
+    background-color: #373a3d;
+    width: 75%; }
+  .adwantages .adw-text-wrap {
+    padding: 30px; }
+    .adwantages .adw-text-wrap ul {
+      list-style: none; }
 
 /* --- adwantages END --- */
 @-webkit-keyframes lianim {
