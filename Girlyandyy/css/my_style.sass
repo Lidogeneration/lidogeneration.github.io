@@ -1,0 +1,441 @@
+$purple_color: #623CFF
+$purple_color_: #1F0731
+$biruz_culor: #36E0FF
+$purple_color_rgba: rgba(31,7,49,.8)
+
+.cursor-pointer
+    &:hover
+        cursor: pointer
+
+.red_color
+    color: red
+
+.hr_in_main_form
+    border: 0
+    border-radius: 5px
+    height: 3px
+    background-image: linear-gradient(to right,$purple_color, rgba(0, 0, 0, 0), $purple_color)
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75)
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75)
+  
+.hr_form 
+    height: 12px 
+    border: 0
+    box-shadow: inset 0 12px 12px -12px #623CFF
+
+.nnnn
+    background: rgba(0,0,0,.6)
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,.4)
+    padding: 20px
+    border-radius: 5px
+    
+.offer
+    height: 100%
+    min-height: 100vh
+    padding-top: 40px
+    padding-bottom: 60px
+    overflow: hidden
+    .triggers
+        padding: 20px
+        padding-bottom: 2px
+        .d_trig
+            margin-bottom: 10px
+            p
+                color: white
+                font-size: 18px
+                margin: 0
+            img
+                height: 20px
+                width: 20px
+                margin-right: 5px
+    .left_orig
+        top: auto
+        left: 0
+        bottom: -10px
+        height: auto
+        max-width: 400px
+        transform: rotate(-130deg)
+    .col-md-6, .col-md-12
+        z-index: 99
+    .discount
+        padding-top: 30px
+        h3
+            color: white
+        a
+            position: relative
+            padding: 10px 25px
+            color: white
+            border-radius: 10px
+            font-weight: 500
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,.5)
+            transition: .3s
+            background: linear-gradient(to top, $purple_color, $biruz_culor)
+            &:before
+                position: absolute
+                content: ''
+                top: 2px
+                left: 2px
+                right: 2px
+                bottom: 2px
+                transition: .3s
+                border: 1px solid transparent
+                border-radius: 10px
+            &:hover
+                transition: .3s
+                color: white
+                text-decoration: none
+                &:before
+                    transition: .3s
+                    border-color: white
+    img
+        height: auto
+        width: 100%
+    .d_title
+        text-align: left
+        h1
+            font-size: 45px
+            text-shadow: 1px 1px 1px black
+            font-weight: 400
+        h2
+            color: white
+            text-align: center
+            font-size: 30px
+    .tagline 
+        color: white
+        text-shadow: 1px 1px 1px black
+
+.my_video
+    position: absolute
+    top: 0 
+    right: 0
+    left: 0
+    bottom: 0
+    min-height: 100%
+    min-width: 100%
+
+
+.back_blackrgba, .back_purplergba
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    
+.back_blackrgba
+    background: rgba(0,0,0,.55)
+
+.back_purplergba
+    background: $purple_color_rgba
+    z-index: -2
+
+.my_strong500
+    font-size: 30px
+    font-weight: 600
+
+// MY FORMA
+
+.d_my_form
+    width: 100%
+    .my_form
+        width: 60%
+        box-shadow: 0px 0px 15px 5px rgba(0,0,0,.7)
+        padding: 30px 20px
+        background: url('../images/FirstScroll/back_form.png')
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        position: relative
+        .form_interface
+            .my_input
+                margin: 20px 0
+                padding: 10px
+                width: 100%
+                padding-left: 30px
+                border: none
+                transition: .3s
+                border-bottom: 2px solid $purple_color
+                background: rgba(0,0,0,.5)
+                borde
+                &:hover
+                    transition: .3s
+                    background: rgba(0,0,0,.6)
+                &:focus
+                    transition: .3s
+                    border-bottom-color: #D0D0D0
+        h4
+            color: #f0f0f0
+            margin-bottom: 5px 
+            text-shadow: 1px 1px 1px black
+
+
+ 
+// about_us
+
+#features
+    .discount
+        a
+            position: relative
+            padding: 10px 25px
+            color: white
+            border-radius: 10px
+            font-weight: 500
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,.5)
+            transition: .3s
+            background: linear-gradient(to top, $purple_color, $biruz_culor)
+            &:before
+                position: absolute
+                content: ''
+                top: 2px
+                left: 2px
+                right: 2px
+                bottom: 2px
+                transition: .3s
+                border: 1px solid transparent
+                border-radius: 10px
+            &:hover
+                transition: .3s
+                color: white
+                text-decoration: none
+                &:before
+                    transition: .3s
+                    border-color: white  
+    .alazea-video-area
+        max-width: 600px
+        margin-left: auto
+        margin-right: auto 
+        box-shadow: 0px 10px 15px -6px black
+        img
+            height: auto
+            max-width: 100% 
+    .col_video
+        padding-bottom: 50px
+    .media-body
+        min-height: 186px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    .card 
+        display: inline-block
+
+.my_prod
+    background: url("../images/products/back.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    background-attachment: fixed
+    padding-bottom: 40px
+    .section-title
+        h3
+            color: white
+    .nav-tabs
+        .nav-link
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 0 10px
+            height: 70px
+    .tab-pane
+        img
+            height: 120px
+            width: 120px
+        .rounded
+            margin-right: 50px!important
+    .dPrice
+        padding-top: 30px
+        display: inline-block
+        .bGetPrice
+            position: relative
+            padding: 15px 30px
+            color: white
+            border-radius: 10px
+            font-weight: 500
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,.5)
+            transition: .3s
+            background: linear-gradient(to top, $purple_color, $biruz_culor)
+            &:before
+                position: absolute
+                content: ''
+                top: 2px
+                left: 2px
+                right: 2px
+                bottom: 2px
+                transition: .3s
+                border: 1px solid transparent
+                border-radius: 10px
+            &:hover
+                transition: .3s
+                color: white
+                text-decoration: none
+                &:before
+                    transition: .3s
+                    border-color: white
+    .productExample
+        .prodEx
+            margin: 5px 0
+            max-width: 208px
+            padding-bottom: 10px
+            border: 1px solid #ccc
+            margin-left: 2px
+            margin-right: 2px
+            box-shadow: 0px 5px 15px 0px rgba(0,0,0,.2)
+            img
+                box-shadow: 1px 2px 25px 0px rgba(0,0,0,.7)
+
+.hidden
+    display: none
+
+.red-color
+    color: red
+
+.my_form_all
+    max-width: 350px
+    background: $purple_color
+    margin-left: auto
+    margin-right: auto
+    padding: 30px 20px
+    position: relative
+    .my_inp2
+        width: 100%
+        color: black
+        padding-left: 30px
+        margin: 15px 0
+        margin-top: 2px
+        border: none
+        background: white
+        padding-top: 5px
+        padding-bottom: 5px
+        transition: .3s
+        border-bottom: 2px solid black
+        &:focus
+            transition: .3s
+            border-color: $biruz_culor
+    .my_btn
+        border: 2px solid white
+    p
+        color: white
+        margin-bottom: 1px
+    h4
+        color: white
+        text-align: center
+
+.advantages
+    padding: 30px 0
+    h4
+        color: #e38cb7
+    .container
+        .d_adv
+            display: flex
+            flex-direction: column
+            box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2)
+            padding: 5px 10px
+            transition: .2s
+            transform: scale(1,1)
+            &:hover
+                transition: .2s
+                transform: scale(1.05,1.05)
+
+.my_reviews
+    padding: 30px 0
+
+.my_footer
+    padding: 30px 0
+    background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%)
+    h4
+        color: white
+    .d_my_form
+        width: 100%
+        .my_form 
+            width: 100%
+            padding: 5px 5px
+            .form_interface
+                .my_input
+                    margin: 0
+                    color: white
+                button
+                    float: left
+                    margin-top: 2px
+                    margin-bottom: 0
+    .social_icon
+        font-size: 22px
+        transition: .2s
+        color: white
+        &:hover
+            transition: .2s
+            color: #ccc
+
+.my_btn
+    margin-left: auto
+    margin-right: auto
+    margin-top: 30px
+    border: none
+    padding: 10px 30px
+    border-radius: 5px
+    transition: .3s
+    color: #f0f0f0
+    border: 2px solid $purple_color
+    background: transparent
+    &:hover
+        cursor: pointer
+        transition: .3s
+        border-color: #D0D0D0
+        background: $purple_color_rgba
+
+.fa-chevron-right, .fa-chevron-left
+    transition: .2s
+    color: #FA2A8F!important
+
+.b-slick-style 
+    &:hover
+        .fa-chevron-right
+            transition: .2s
+            color: $purple_color!important
+        .fa-chevron-left
+            transition: .2s
+            color: $purple_color!important
+
+.products
+    min-height: 100vh
+    padding: 30px 0
+    background: url('../images/FirstScroll/novyy-god-girlyanda-noch.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-attachment: fixed
+    .section-title
+        margin-bottom: 30px
+        h3
+            display: inline-block
+            padding: 5px 15px
+            color: white
+            background: $purple_color_rgba
+            border-radius: 5px
+            border-bottom: 2px solid white
+            border-bottom-right-radius: 0px
+            border-bottom-left-radius: 0px
+    .d_img
+        img
+            height: auto
+            max-width: 100%
+    .col-md-6
+        background: white
+        h3
+            color: $purple_color
+    .slider_images
+        .slide_img
+            img
+                height: auto
+                width: 100%
+                max-width: 100%
+    .b-slick-style
+        height: 100px
+        top: 50%
+    .b-slick-prev
+        left: 10px
+    .b-slick-next
+        right: 10px
+
+.col_fon
+    background: white
+
+
+
+
