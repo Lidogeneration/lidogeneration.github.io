@@ -1,0 +1,258 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: 999;
+}
+
+.navbar .a_logo {
+  font-weight: 600;
+  -webkit-transition: 0.2s !important;
+  transition: 0.2s !important;
+  color: black;
+}
+
+.navbar .navbar-nav {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  width: auto;
+  display: inline-block;
+  font-weight: 600 !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:focus .hover_nav_item {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:focus .hover_nav_item:before {
+  opacity: 1;
+  top: 0px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:focus .hover_nav_item:after {
+  opacity: 1;
+  bottom: 0px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .hover_nav_item {
+  position: relative;
+  display: block;
+  padding: 0px 5px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .hover_nav_item:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #D2B356;
+  -webkit-transition: .2s;
+  transition: .2s;
+  top: -10px;
+  opacity: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .hover_nav_item:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #D2B356;
+  -webkit-transition: .2s;
+  transition: .2s;
+  bottom: -10px;
+  opacity: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .hover_nav_item:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .hover_nav_item:hover:before {
+  opacity: 1;
+  top: 0px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link .hover_nav_item:hover:after {
+  opacity: 1;
+  bottom: 0px;
+}
+
+.navbar .navbar_contact .navbar-nav {
+  margin-left: 0;
+}
+
+.d_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d_contact .a_contact {
+  margin: 30px 0;
+  padding: 11px 16px;
+  font-weight: 700;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: 3px solid black;
+  color: black;
+}
+
+.d_contact .a_contact:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #D2B356;
+  border-color: #D2B356;
+}
+
+.first_scroll {
+  height: 100%;
+  min-height: 100vh;
+  background: url("../images/bg_first_scroll/noutbook.png");
+  background-size: 50% auto;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.first_scroll .container .row .content {
+  padding: 20px;
+  position: relative;
+}
+
+.first_scroll .container .row .content:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: 0;
+  height: 6px;
+  background: #D2B356;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 35px;
+}
+
+.first_scroll .container .row .content:after {
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 0;
+  height: 6px;
+  background: #D2B356;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 35px;
+}
+
+.first_scroll .container .row .content .animate_bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .7s;
+  transition: .7s;
+  width: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.first_scroll .container .row .content:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.first_scroll .container .row .content:hover .animate_bg {
+  width: 100%;
+}
+
+.first_scroll .container .row .content:hover:before {
+  width: 100%;
+}
+
+.first_scroll .container .row .content:hover:after {
+  width: 100%;
+}
+
+.first_scroll .container .row .content h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.first_scroll .container .row .content h2 {
+  color: black;
+}
+
+.first_scroll .container .row .triggers .trigger {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 10px 0px;
+  padding: 0px 20px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.first_scroll .container .row .triggers .trigger:before {
+  position: absolute;
+  content: '';
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.first_scroll .container .row .triggers .trigger .fa-rocket {
+  color: #D2B356;
+  font-size: 25px;
+  -webkit-transition: .8s;
+  transition: .8s;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.first_scroll .container .row .triggers .trigger p {
+  margin: 0;
+  padding: 10px;
+}
+
+.first_scroll .container .row .triggers .trigger:hover {
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.first_scroll .container .row .triggers .trigger:hover .fa-rocket {
+  -webkit-transform: translate(400px, -200px);
+          transform: translate(400px, -200px);
+}
+
+.content, .triggers {
+  margin-top: 100px;
+}
+/*# sourceMappingURL=style.css.map */
