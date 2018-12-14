@@ -31,7 +31,96 @@
 	}
 
 }
+@media only screen and (max-width : 1800px)
+{
+	.about-new  .two-h4
+	{
+		margin-top: 150px;
+		font-size: 1.4rem;
+	}
+	.about-new .first-h4
+	{
+		margin-top: 40px;
+		font-size: 1.4rem;
+	}
+}
+@media only screen and (max-width : 1600px)
+{
+	.about-new  .two-h4
+	{
+		margin-top: 130px;
+	}
+	.about-new img
+	{
+		width: 160px;
+	}
+	.about-new .first-h4
+	{
+		margin-top: 40px;
+		font-size: 1.3rem;
+	}
+}
+@media only screen and (max-width : 1450px)
+{
+	.about-new  .two-h4
+	{
+		font-size: 1.1rem;
+	}
+	.about-new img
+	{
+		width: 160px;
+	}
+	.about-new .first-h4
+	{
+		margin-top: 30px;
+		font-size: 1.1rem;
+	}
+}
+@media only screen and (max-width : 1280px)
+{
+	.more-button
+	{
+		margin-top: 70px;
+	}
+	.about-new  .two-h4
+	{
+		margin-top: 110px;
+	}
+	.about-new img
+	{
+		width: 120px;
+	}
+	.about-new .first-h4
+	{
+		margin-top: 25px;
 
+	}
+}
+@media only screen and (max-width : 1200px)
+{
+	.more-button
+	{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+	}
+	.about-new
+	{
+		background: url('../img/bg_about_mobile.jpg');
+		height: auto;
+	}
+	.about-new .two-h4
+	{
+		margin-top: 25px;
+		background: rgba(236, 236, 236, .8);
+		padding: 5px;
+	}
+	.about-new .first-h4
+	{
+		background: rgba(236, 236, 236, .8);
+		padding: 5px;
+	}
+}
 @media only screen and (max-width : 1200px) {
 	.navbar{
 		margin: 0;

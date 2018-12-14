@@ -508,6 +508,7 @@ body {
       position: absolute;
       bottom: 0;
       left: 0;
+      right: 0;
       padding: 15px 10px;
       background: rgba(0, 0, 0, 0.7); }
   .project .header-small-wrap {
@@ -668,6 +669,28 @@ body {
       list-style: none; }
 
 /* --- adwantages END --- */
+/* --- about-new start --- */
+.about-new {
+  position: relative;
+  padding: 30px 0;
+  height: -webkit-calc(100vh + 100px);
+  height: calc(100vh + 100px);
+  background: url("../img/about_bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: scroll; }
+  .about-new .col-12 img {
+    background: #fff;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75); }
+  .about-new .first-h4 {
+    margin-top: 50px; }
+  .about-new .two-h4 {
+    margin-top: 180px; }
+
+/* --- about-new end --- */
 @-webkit-keyframes lianim {
   0% {
     left: -20px; }
@@ -764,27 +787,11 @@ body {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
-  .more-button:after {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    position: absolute;
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: #73a880;
-    left: -25px;
-    top: 23%; }
   .more-button:hover {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     background: #b3b3b3;
     color: #fff; }
-    .more-button:hover:after {
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      background: #ececec; }
 
 /*--- Buttons END ---*/
