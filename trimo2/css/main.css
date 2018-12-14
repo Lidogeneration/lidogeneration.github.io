@@ -671,6 +671,7 @@ body {
 /* --- adwantages END --- */
 /* --- about-new start --- */
 .about-new {
+  overflow: hidden;
   position: relative;
   padding: 30px 0;
   height: -webkit-calc(100vh + 100px);
