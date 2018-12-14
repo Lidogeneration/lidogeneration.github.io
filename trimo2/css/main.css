@@ -636,11 +636,48 @@ body {
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
+  .adwantages .bg-cont {
+    margin-top: 29px;
+    min-height: 50vh;
+    background: url("../img/bgadw.jpg");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-bottom: 30px; }
+    .adwantages .bg-cont .head-hr {
+      border-bottom: 1px solid #383b3e;
+      position: absolute;
+      right: 0;
+      top: -2px; }
+    .adwantages .bg-cont .header-bg-adw {
+      bottom: -40px;
+      left: 20%;
+      position: absolute;
+      background: #ececec;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 20px;
+      width: 60%;
+      text-align: center;
+      border-bottom: 2px solid #383b3e; }
+      .adwantages .bg-cont .header-bg-adw i {
+        font-size: 16px;
+        color: #73a880; }
+  .adwantages .header-abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
   .adwantages .header-wrap {
     background: #ececec;
     padding: 15px 5px 15px 5px;
-    position: relative; }
+    position: relative;
+    z-index: 99; }
     .adwantages .header-wrap h4 {
       text-transform: uppercase;
       display: inline;
@@ -655,18 +692,28 @@ body {
     position: absolute;
     width: 15vw;
     height: 30px;
-    background: #fff;
+    background: #ececec;
     left: 5vw;
     bottom: -15px; }
   .adwantages .head-hr {
     margin: 0;
     padding: 0;
     background-color: #373a3d;
-    width: 75%; }
+    width: 75%;
+    z-index: 999; }
   .adwantages .adw-text-wrap {
     padding: 30px; }
     .adwantages .adw-text-wrap ul {
       list-style: none; }
+  .adwantages .row ul {
+    margin-top: 50px;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .adwantages .row ul li {
+      font-size: 18px; }
+  .adwantages .row .border-left {
+    border-left: 2px solid #383b3e !important; }
 
 /* --- adwantages END --- */
 /* --- about-new start --- */
