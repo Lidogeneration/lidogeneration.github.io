@@ -1,9 +1,0 @@
-@media only screen and (max-width: 991px){
-  .navbar .navbar_contact {
-    margin-left: 0;
-    flex-direction: column;
-  }
-  .triggers {
-    margin-top: 0;
-  }
-}
