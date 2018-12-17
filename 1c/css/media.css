@@ -1,0 +1,35 @@
+@media only screen and (max-width: 991px){
+  .navbar .navbar_contact {
+    margin-left: 0;
+    flex-direction: column;
+  }
+  .services .col_services .nav_services .nav-tabs .nav-link .nav_img_hover img {
+    max-width: 50px;
+  }
+  .services .col_services .nav_services .nav-tabs .nav-link .nav_img_hover {
+    max-width: 56px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .first_scroll .container .row .triggers .trigger {
+    text-align: left;
+  }
+  .first_scroll .container .row .triggers .col_trigger {
+    margin: 5px 0;
+  }
+}
+
+@keyframes hand_point_down {
+  0% { 
+    transform: translateY(-2px);
+  }
+  50% {
+      transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
