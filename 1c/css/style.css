@@ -822,6 +822,7 @@ a:focus {
 
 .reviews .container .row .col_review .div_review .div_img_review img {
   height: auto;
+  max-height: 120px;
   max-width: 120px;
   border-radius: 50%;
   -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.6);
