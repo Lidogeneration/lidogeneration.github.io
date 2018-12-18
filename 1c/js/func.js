@@ -5,15 +5,28 @@ const nNavBar = document.getElementById('nav_bar_id');
 const aLogo = document.getElementsByName('nALogo');
 const arrNavLinks = document.getElementsByClassName('nav-link');
 
-$(document).ready(()=> {
-  ClickNavMenu();
+$(document).ready(() => {
+  clickNavMenu();
+  goPopUpYoutube();
+  popUpContactForm();
+  changeNavColor();
 });
+
+function popUpContactForm() {
+  $('.contact_popup').magnificPopup();
+};
+
+function goPopUpYoutube() {
+  $('.popup-youtube').magnificPopup({
+		type: 'iframe'
+	});
+}
 
 $(document).click(function(event) { 
-  CheckClickOutSide();
+  checkClickOutSide();
 });
 
-function CheckClickOutSide() {
+function checkClickOutSide() {
   if(!$(event.target).closest(dNavBar).length && dNavBar.classList.contains('show')) bNav.click();
 };
 
@@ -26,26 +39,27 @@ bNav.onclick = function() {
     nNavBar.style.backgroundColor= 'white';
   //  aLogo[0].style.color = 'black';
     $('.nav-link').removeClass('color_white');
-  }else if($(window).scrollTop() <= 30 && dNavBar.classList.contains('show')) {
+  } else if($(window).scrollTop() <= 30 && dNavBar.classList.contains('show')) {
     nNavBar.style.backgroundColor = 'transparent';
    // aLogo[0].style.color = 'white';
   }
 };
 
 window.onscroll = function() {
-  ChangeInNavbar();
+  changeNavColor();
 };
 
-function ChangeInNavbar() {
-  if($(window).scrollTop() > 30){
+function changeNavColor() {
+  if($(window).scrollTop() > 30) {
     nNavBar.style.backgroundColor= 'white';
+    nNavBar.style.boxShadow = "0px 2px 3px 0px rgba(0,0,0,.4)";
    // aLogo[0].style.color = 'black';
     $('.nav-link').removeClass('color_white');
   }
   else {
-    if(dNavBar.classList.contains('show')){
+    nNavBar.style.boxShadow = 'none';
+    if(dNavBar.classList.contains('show'))
       $('.nav-link').removeClass('color_white');
-    }
     else{
       nNavBar.style.backgroundColor = 'transparent';
     //  aLogo[0].style.color = 'white';
@@ -61,13 +75,12 @@ $(window).click(()=>{
 $(document).mouseup(function (e) {
 });
 
-function ClickNavMenu() {
+function clickNavMenu() {
   $(".a_menu").on("click", function (event) {
 		event.preventDefault();
 		let id = $(this).attr('href'),
 			top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1000);
-      if(window.innerWidth < 992 && 
-        $("#b_nav_id").attr("aria-expanded")) bNav.click();
+      if(window.innerWidth < 992 && $("#b_nav_id").attr("aria-expanded")) bNav.click();
 	});
 };
