@@ -4,8 +4,6 @@ body {
   font-size: 16px;
   background: #fff;
   color: #373a3d;
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
   margin: 0;
   padding: 0;
   position: relative;
@@ -227,6 +225,7 @@ body {
 .head-wrap {
   min-height: 100vh;
   height: 100%;
+  width: 100%;
   background: url("../img/head_bg.jpg");
   -webkit-background-size: cover;
           background-size: cover;
@@ -237,7 +236,8 @@ body {
   .head-wrap .animation-head {
     position: absolute;
     width: 100%;
-    min-height: 100vh; }
+    min-height: 100vh;
+    height: 100%; }
   .head-wrap .container-fluid {
     min-height: 100vh;
     height: 100%;
@@ -739,6 +739,87 @@ body {
     margin-top: 180px; }
 
 /* --- about-new end --- */
+/* --- Reviews START --- */
+.reviews {
+  position: relative;
+  padding-bottom: 50px;
+  overflow: hidden;
+  background: url("../img/rewbg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .reviews .header-wrap {
+    background: #ececec;
+    padding: 15px 5px 15px 5px;
+    position: relative; }
+    .reviews .header-wrap h4 {
+      text-transform: uppercase;
+      display: inline;
+      margin: 0; }
+    .reviews .header-wrap i {
+      font-size: 16px;
+      color: #73a880;
+      display: inline;
+      padding-right: 10px; }
+  .reviews .header-wrap-after:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    right: 15vw;
+    bottom: -15px; }
+  .reviews .head-hr {
+    margin: 0;
+    padding: 0;
+    background-color: #373a3d;
+    width: 65%; }
+  .reviews .text-wrap {
+    background: #fff;
+    position: relative; }
+  .reviews .text-cont {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .reviews .text-cont .text-border {
+      padding: 20px;
+      border-left: 1px solid #373a3d; }
+  .reviews .img-bg {
+    background: url("../img/img-bg.png");
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .reviews .img-bg .img-wrap {
+      position: absolute;
+      bottom: -30px;
+      left: -50vw; }
+
+/* --- Reviews end --- */
+/* --- footer Start --- */
+.footer {
+  min-height: 50vh;
+  padding: 30px 0;
+  background: url("../img/footerbg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .footer .container-fluid .row {
+    min-height: 50vh; }
+  .footer .footer-adress iframe {
+    width: 100%;
+    height: 200px; }
+  .footer .footer-adress h4 {
+    text-align: center;
+    color: #fff; }
+
+/* --- footer end --- */
 @-webkit-keyframes lianim {
   0% {
     left: -20px; }
@@ -772,6 +853,15 @@ body {
 
 .left-p {
   padding-left: 10px !important; }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.rew-cont {
+  height: 100%; }
 
 /* -- Decoration END ---*/
 /*--- Buttons START ---*/
@@ -843,3 +933,39 @@ body {
     color: #fff; }
 
 /*--- Buttons END ---*/
+/*--- Form START ---*/
+.footer-form {
+  width: 320px;
+  max-width: 100%;
+  padding: 30px 20px;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 0px 0px #999999;
+          box-shadow: 5px 5px 0px 0px #999999; }
+  .footer-form h3, .footer-form h4 {
+    text-align: center; }
+  .footer-form hr {
+    width: 60%;
+    background-color: #373a3d; }
+  .footer-form input {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    background: #ececec;
+    border: none;
+    border-bottom: 1px solid #373a3d;
+    padding: 10px; }
+  .footer-form button {
+    padding: 10px;
+    color: #73a880;
+    text-transform: uppercase;
+    margin: 20px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ececec;
+    -webkit-box-shadow: 2px 2px 0px 0px #999999;
+            box-shadow: 2px 2px 0px 0px #999999;
+    border: none; }
+
+/*--- Form END ---*/
