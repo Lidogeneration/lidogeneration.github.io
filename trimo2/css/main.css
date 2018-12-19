@@ -280,12 +280,11 @@ body {
               -webkit-animation: lianim 5s linear infinite;
                       animation: lianim 5s linear infinite; }
       .head-wrap .container-fluid .row .wrap-text-left {
+        color: #fff;
         position: relative;
         text-align: center;
-        background: -webkit-linear-gradient(269.352deg, rgba(255, 255, 255, 0.8) 41.58273%, rgba(255, 255, 255, 0.8) 41.94245%, rgba(255, 255, 255, 0.00736134) 84.7482%, rgba(255, 255, 255, 0) 84.7482%);
-        background: -o-linear-gradient(269.352deg, rgba(255, 255, 255, 0.8) 41.58273%, rgba(255, 255, 255, 0.8) 41.94245%, rgba(255, 255, 255, 0.00736134) 84.7482%, rgba(255, 255, 255, 0) 84.7482%);
-        background: linear-gradient(180.64753deg, rgba(255, 255, 255, 0.8) 41.58273%, rgba(255, 255, 255, 0.8) 41.94245%, rgba(255, 255, 255, 0.00736134) 84.7482%, rgba(255, 255, 255, 0) 84.7482%);
-        min-height: 40vh;
+        background: rgba(0, 0, 0, 0.4);
+        border-left: 2px solid #73a880;
         width: 90%;
         padding: 10px; }
         .head-wrap .container-fluid .row .wrap-text-left h1 {
@@ -312,8 +311,7 @@ body {
           left: 300px;
           bottom: -150px; }
         .head-wrap .container-fluid .row .wrap-text-left h3 {
-          margin-bottom: 15px;
-          mix-blend-mode: multiply; }
+          margin-bottom: 15px; }
 
 /* --- head-wrap END --- */
 /* --- About START --- */
