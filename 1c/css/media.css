@@ -1,0 +1,140 @@
+@media only screen and (min-width: 1200px) {
+  .services .col_tab_menu .tab_menu .nav-pills {
+    max-width: 45%;
+   }
+}
+
+@media only screen and (max-width: 1199px) {
+  .services .col_services .nav_services .nav-tabs {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .navbar .navbar_contact {
+    margin-left: 0;
+    flex-direction: column;
+  }
+  .intro .desc .subtitle, .services .col_services .nav_services {
+    padding-bottom: 0;
+  }
+  .services .col_services .nav_services, .services .title, .advantages .title {
+    padding-top: 0;
+  }
+  .intro .title, .services .title, .advantages .title {
+    padding-bottom: 10px;
+  }
+  .services .col_tab_menu .tab_menu {
+    flex-direction: column;
+  }
+  .services .col_tab_menu .tab_menu .nav-pills {
+    flex-direction: row!important;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    max-width: 100%;
+  }
+}
+
+/* Мобильная версия скролла УСЛУГИ */
+@media only screen and (max-width: 991px){
+  .hidden_mobile {
+    display: none;
+    min-height: 100%;
+  } 
+  .mfp-content {
+  }
+  .mfp-content .mfp-close {
+    background: red;
+    color: white;
+    border-top-right-radius: 3px;
+    margin: 2px;
+  }
+  .mfp-content .tab-pane {
+    background: url("../images/bg_first_scroll/bg_first_scroll_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #D2B356;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 45px;
+  }
+  .mfp-content .tab-pane .desc_pane {
+    background: rgba(0,0,0,.6);
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,.5);
+  }
+  .mfp-content .tab-pane .desc_pane li {
+    color: white;
+  }
+  .mfp-content .tab-pane .desc_pane p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  .mfp-content .tab-pane .title_pane h5 {
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    background: rgba(0,0,0,.6);
+    display: inline-block;
+    margin-left: 50%;
+    min-width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    transform: translateX(-50%);
+  }
+  .mfp-content .tab-pane .title_pane h5:before {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 50%;
+    right: 50%;
+    height: 3px;
+    border-radius: 5px;
+    background: #D2B356;
+    transition: .5s;
+    width: 35px;
+    transform: translateX(-50%);
+  }
+
+  .mfp-content .tab-pane .d_contact {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .mfp-content .tab-pane .d_contact .a_contact {
+    display: inline-block;
+    font-size: 14px;
+    padding: 7px 10px;
+    color: white;
+    border-color: white;
+    background: rgba(0,0,0,.6);
+  }
+  .mfp-content .tab-pane .d_contact .a_contact:hover  {
+    color: #D2B356;
+    border-color: #D2B356;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .first_scroll .container .row .triggers .trigger {
+    text-align: left;
+  }
+  .first_scroll .container .row .triggers .col_trigger {
+    margin: 5px 0;
+  }
+}
+
+@keyframes hand_point_down {
+  0% { 
+    transform: translateY(-2px);
+  }
+  50% {
+      transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
