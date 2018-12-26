@@ -147,6 +147,11 @@
 }
 
 @media only screen and (max-width : 992px) {
+	.video-head .container-fluid h1
+	{
+		width: 100% !important;
+		font-size: 1.6rem;
+	}
 
 	.video-cont video
 	{
