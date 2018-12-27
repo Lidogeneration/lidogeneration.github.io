@@ -1,0 +1,292 @@
+@media only screen and (min-width: 1200px) {
+  .services .col_tab_menu .tab_menu .nav-pills {
+    max-width: 45%;
+   }
+}
+
+@media only screen and (max-width: 1199px) {
+  .services .col_services .nav_services .nav-tabs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .services .col_tab_menu .tab_menu .nav-pills {
+    max-width: 50%;
+  }
+  #gamburger-id {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .navbar .navbar_contact {
+    margin-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro {
+    padding-bottom: 0;
+  }
+  .intro .d_contact {
+    padding-top: 20px;
+  }
+  .intro .title {
+    margin-bottom: 20px;
+  }
+  .intro .desc .subtitle, .services .col_services .nav_services {
+    padding-bottom: 0;
+  }
+  .intro .desc .subtitle .subtit {
+    margin-bottom: 30px;
+  }
+  .services .col_services .nav_services, .services .title, .advantages .title {
+    padding-top: 0;
+  }
+  .intro .title, .services .title, .advantages .title {
+    padding-bottom: 10px;
+  }
+  .services .col_tab_menu .tab_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services .col_tab_menu .tab_menu .nav-pills {
+    -webkit-box-orient: horizontal!important;
+    -webkit-box-direction: normal!important;
+        -ms-flex-direction: row!important;
+            flex-direction: row!important;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 20px;
+    max-width: 100%;
+  }
+  .services .col_tab_menu {
+    padding-top: 35px;
+  }
+  .services .col_tab_menu .tab_menu .nav-pills {
+    padding-bottom: 0;
+  }
+  .advantages .title {
+    margin-bottom: 40px;
+  }
+  .reviews .container .row .title {
+    margin-bottom: 30px;
+    margin-top: 30px; 
+  }
+}
+
+/* Мобильная версия скролла УСЛУГИ */
+@media only screen and (max-width: 991px){
+  .hidden_mobile {
+    display: none;
+    min-height: 100%;
+  } 
+  .mfp-content {
+  }
+  .mfp-content .mfp-close {
+    color: black;
+    border-top-right-radius: 3px;
+    margin: 2px;
+  }
+  .mfp-content .tab-pane {
+    background: url("../images/bg_first_scroll/bg_first_scroll_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #D2B356;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 45px;
+  }
+  .mfp-content .tab-pane .desc_pane {
+    background: rgba(0,0,0,.6);
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,.5);
+  }
+  .mfp-content .tab-pane .desc_pane li {
+    color: white;
+  }
+  .mfp-content .tab-pane .desc_pane p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  .mfp-content .tab-pane .title_pane h5 {
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    background: rgba(0,0,0,.6);
+    display: inline-block;
+    margin-left: 50%;
+    min-width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .mfp-content .tab-pane .title_pane h5:before {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 50%;
+    right: 50%;
+    height: 3px;
+    border-radius: 5px;
+    background: #D2B356;
+    -webkit-transition: .5s;
+    transition: .5s;
+    width: 35px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .mfp-content .tab-pane .d_contact {
+    display: inline-block;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .mfp-content .tab-pane .d_contact .a_contact {
+    display: inline-block;
+    font-size: 14px;
+    padding: 7px 10px;
+    color: white;
+    border-color: white;
+    background: rgba(0,0,0,.6);
+  }
+  .mfp-content .tab-pane .d_contact .a_contact:hover  {
+    color: #D2B356;
+    border-color: #D2B356;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .first_scroll .container .row .triggers .trigger {
+    text-align: left;
+  }
+  .first_scroll .container .row .triggers .col_trigger {
+    margin: 5px 0;
+  }
+  .advantages .col-spans-adv {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages .col-spans-adv .div-adv-counters {
+    margin: 5px 0;
+    width: 255px;
+  }
+  .reviews .container .row .col_review .div_review {
+    margin: 5px 0;
+  }
+  .advantages .col-spans-adv {
+    padding: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link i{
+    font-size: 20px;
+  }
+  .first_scroll .container .row .content h1 {
+    font-size: 30px;
+  }
+  .first_scroll .container .row .content h2 {
+    font-size: 25px;
+  }
+  .d_contact h4 {
+    font-size: 18px;
+  }
+  .d_contact .a_contact {
+    font-size: 14px;
+    border-width: 2px;
+  }
+  .first_scroll .container .row .triggers .trigger {
+    font-size: 14px;
+  }
+  .first_scroll .container .row .triggers .trigger .fa-rocket {
+    font-size: 18px;
+  }
+  .title h3 {
+    font-size: 18px;
+  }
+  .services .col_tab_menu .tab_menu .nav-pills .nav-link {
+    height: 140px;
+  }
+  .services .col_tab_menu .tab_menu .nav-pills .nav-link .nav-link-img img {
+    height: 50px;
+    width: 50px;
+  }
+  .advantages .col-spans-adv .d-title-spans h5{
+    font-size: 16px;
+  }
+  .advantages .col-spans-adv .d-title-spans p{
+    font-size: 14px;
+  }
+  .advantages .col-spans-adv .div-adv-counters .d-counter-span-adv span {
+    font-size: 25px!important;
+  }
+  .advantages .col-spans-adv .div-adv-counters .d-counter-span-adv {
+    width: 73px; 
+  }
+  .reviews .container .row .col_review .div_review .p_review {
+    font-size: 14px;
+  }
+  .reviews .container .row .col_review .div_review .p_name {
+    font-size: 15px;
+  }
+  footer .col_contactyy .title {
+    font-size: 18px;
+  }
+  footer .col_contactyy .cont a {
+    font-size: 14px;
+  }
+  .developed h5 {
+    font-size: 16px;
+  }
+  .advantages .title {
+    margin-bottom: 10px;
+  }
+  .one-title-mt-3 {
+    margin-top: 30px;
+  }
+}
+
+@-webkit-keyframes hand_point_down {
+  0% { 
+    -webkit-transform: translateY(-2px); 
+            transform: translateY(-2px);
+  }
+  50% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+@keyframes hand_point_down {
+  0% { 
+    -webkit-transform: translateY(-2px); 
+            transform: translateY(-2px);
+  }
+  50% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
