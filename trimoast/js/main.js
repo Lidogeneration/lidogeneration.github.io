@@ -27,19 +27,19 @@ $(function(){
     $('#open-popup01').magnificPopup({
         items: [
           {
-            src: '../img/pr_new01.jpg',
+            src: './img/pr_new01.jpg',
             title: 'Логистические комплексы 1'
           },
           {
-            src: '../img/06medium.jpg',
+            src: './img/06medium.jpg',
             title: 'Логистические комплексы 2'
           },
           {
-            src: '../img/pr_new01.jpg',
+            src: './img/pr_new01.jpg',
             title: 'Логистические комплексы 3'
           },
           {
-            src: '../img/pr_new01.jpg',
+            src: './img/pr_new01.jpg',
             title: 'Логистические комплексы 4'
           },
         ],
