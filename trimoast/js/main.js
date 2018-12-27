@@ -130,20 +130,28 @@ $(function(){
     $('#open-popup05').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Магазины и торговые центры 1'
+            src: './img/mt01.jpg',
+            title: 'Магазины и торговые центры'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Магазины и торговые центры 2'
+            src: './img/mt02.jpg',
+            title: 'Магазины и торговые центры'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Магазины и торговые центры 3'
+            src: './img/mt03.jpg',
+            title: 'Магазины и торговые центры'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Магазины и торговые центры 4'
+            src: './img/mt05.jpg',
+            title: 'Магазины и торговые центры'
+          },
+          {
+            src: './img/mt06.jpg',
+            title: 'Магазины и торговые центры'
+          },
+          {
+            src: './img/mt07.jpg',
+            title: 'Магазины и торговые центры'
           },
         ],
         gallery: {
@@ -155,20 +163,28 @@ $(function(){
     $('#open-popup06').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 1'
+            src: './img/sp01.jpg',
+            title: 'Спорткомплексы'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 2'
+            src: './img/sp02.jpg',
+            title: 'Спорткомплексы'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 3'
+            src: './img/sp03.jpg',
+            title: 'Спорткомплексы'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 4'
+            src: './img/sp04.jpg',
+            title: 'Спорткомплексы'
+          },
+          {
+            src: './img/sp05.jpg',
+            title: 'Спорткомплексы'
+          },
+          {
+            src: './img/sp06.jpg',
+            title: 'Спорткомплексы'
           },
         ],
         gallery: {
@@ -180,20 +196,20 @@ $(function(){
     $('#open-popup07').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 1'
+            src: './img/sh01.jpg',
+            title: 'Сельскохозяйственные здания'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 2'
+            src: './img/sh02.jpg',
+            title: 'Сельскохозяйственные здания'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 3'
+            src: './img/sh03.jpg',
+            title: 'Сельскохозяйственные здания'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 4'
+            src: './img/sh04.jpg',
+            title: 'Сельскохозяйственные здания'
           },
         ],
         gallery: {
@@ -204,20 +220,24 @@ $(function(){
     $('#open-popup08').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 1'
+            src: './img/ot01.jpg',
+            title: 'Здания иного назначения'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 2'
+            src: './img/ot02.jpg',
+            title: 'Здания иного назначения'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 3'
+            src: './img/ot03.jpg',
+            title: 'Здания иного назначения'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 4'
+            src: './img/ot04.jpg',
+            title: 'Здания иного назначения'
+          },
+          {
+            src: './img/ot05.jpg',
+            title: 'Здания иного назначения'
           },
         ],
         gallery: {
