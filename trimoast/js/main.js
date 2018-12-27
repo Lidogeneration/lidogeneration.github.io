@@ -105,19 +105,19 @@ $(function(){
     $('#open-popup04').magnificPopup({
         items: [
           {
-            src: './img/mp01.JPG',
+            src: './img/mp01.jpg',
             title: 'Многоуровневые паркинги'
           },
           {
-            src: './img/mp02.JPG',
+            src: './img/mp02.jpg',
             title: 'Многоуровневые паркинги'
           },
           {
-            src: './img/mp03.JPG',
+            src: './img/mp03.jpg',
             title: 'Многоуровневые паркинги'
           },
           {
-            src: './img/mp04.JPG',
+            src: './img/mp04.jpg',
             title: 'Многоуровневые паркинги'
           },
         ],
