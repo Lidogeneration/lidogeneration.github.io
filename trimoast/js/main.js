@@ -27,20 +27,20 @@ $(function(){
     $('#open-popup01').magnificPopup({
         items: [
           {
-            src: '../img/pr_new01.jpg',
-            title: 'Логистические комплексы 1'
+            src: './img/l01.jpeg',
+            title: 'Логистические комплексы'
           },
           {
-            src: '../img/06medium.jpg',
-            title: 'Логистические комплексы 2'
+            src: './img/l02.jpg',
+            title: 'Логистические комплексы'
           },
           {
-            src: '../img/pr_new01.jpg',
-            title: 'Логистические комплексы 3'
+            src: './img/l03.jpg',
+            title: 'Логистические комплексы'
           },
           {
-            src: '../img/pr_new01.jpg',
-            title: 'Логистические комплексы 4'
+            src: './img/l04.jpg',
+            title: 'Логистические комплексы'
           },
         ],
         gallery: {
@@ -52,20 +52,24 @@ $(function(){
     $('#open-popup02').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Производственные здания 1'
+            src: './img/pr01.jpg',
+            title: 'Производственные здания'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Производственные здания 2'
+            src: './img/pr02.jpg',
+            title: 'Производственные здания'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Производственные здания 3'
+            src: './img/pr03.jpg',
+            title: 'Производственные здания'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Производственные здания 4'
+            src: './img/pr04.jpg',
+            title: 'Производственные здания'
+          },
+          {
+            src: './img/pr05.jpg',
+            title: 'Производственные здания'
           },
         ],
         gallery: {
@@ -76,19 +80,19 @@ $(function(){
     $('#open-popup03').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
+            src: './img/of02.jpg',
             title: 'Офисные здания 1'
           },
           {
-            src: '../img/11medium.jpg',
+            src: './img/of03.jpg',
             title: 'Офисные здания 2'
           },
           {
-            src: '../img/11medium.jpg',
+            src: './img/of04.jpg',
             title: 'Офисные здания 3'
           },
           {
-            src: '../img/11medium.jpg',
+            src: './img/of05.jpg',
             title: 'Офисные здания 4'
           },
         ],
@@ -101,20 +105,20 @@ $(function(){
     $('#open-popup04').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Многоуровневые паркинги 1'
+            src: './img/mp01.jpg',
+            title: 'Многоуровневые паркинги'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Многоуровневые паркинги 2'
+            src: './img/mp02.jpg',
+            title: 'Многоуровневые паркинги'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Многоуровневые паркинги 3'
+            src: './img/mp03.jpg',
+            title: 'Многоуровневые паркинги'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Многоуровневые паркинги 4'
+            src: './img/mp04.jpg',
+            title: 'Многоуровневые паркинги'
           },
         ],
         gallery: {
@@ -126,20 +130,28 @@ $(function(){
     $('#open-popup05').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Магазины и торговые центры 1'
+            src: './img/mt01.jpg',
+            title: 'Магазины и торговые центры'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Магазины и торговые центры 2'
+            src: './img/mt02.jpg',
+            title: 'Магазины и торговые центры'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Магазины и торговые центры 3'
+            src: './img/mt03.jpg',
+            title: 'Магазины и торговые центры'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Магазины и торговые центры 4'
+            src: './img/mt05.jpg',
+            title: 'Магазины и торговые центры'
+          },
+          {
+            src: './img/mt06.jpg',
+            title: 'Магазины и торговые центры'
+          },
+          {
+            src: './img/mt07.jpg',
+            title: 'Магазины и торговые центры'
           },
         ],
         gallery: {
@@ -151,20 +163,28 @@ $(function(){
     $('#open-popup06').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 1'
+            src: './img/sp01.jpg',
+            title: 'Спорткомплексы'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 2'
+            src: './img/sp02.jpg',
+            title: 'Спорткомплексы'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 3'
+            src: './img/sp03.jpg',
+            title: 'Спорткомплексы'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 4'
+            src: './img/sp04.jpg',
+            title: 'Спорткомплексы'
+          },
+          {
+            src: './img/sp05.jpg',
+            title: 'Спорткомплексы'
+          },
+          {
+            src: './img/sp06.jpg',
+            title: 'Спорткомплексы'
           },
         ],
         gallery: {
@@ -176,20 +196,20 @@ $(function(){
     $('#open-popup07').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 1'
+            src: './img/sh01.jpg',
+            title: 'Сельскохозяйственные здания'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 2'
+            src: './img/sh02.jpg',
+            title: 'Сельскохозяйственные здания'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 3'
+            src: './img/sh03.jpg',
+            title: 'Сельскохозяйственные здания'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 4'
+            src: './img/sh04.jpg',
+            title: 'Сельскохозяйственные здания'
           },
         ],
         gallery: {
@@ -200,20 +220,24 @@ $(function(){
     $('#open-popup08').magnificPopup({
         items: [
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 1'
+            src: './img/ot01.jpg',
+            title: 'Здания иного назначения'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 2'
+            src: './img/ot02.jpg',
+            title: 'Здания иного назначения'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 3'
+            src: './img/ot03.jpg',
+            title: 'Здания иного назначения'
           },
           {
-            src: '../img/11medium.jpg',
-            title: 'Логистические комплексы 4'
+            src: './img/ot04.jpg',
+            title: 'Здания иного назначения'
+          },
+          {
+            src: './img/ot05.jpg',
+            title: 'Здания иного назначения'
           },
         ],
         gallery: {
