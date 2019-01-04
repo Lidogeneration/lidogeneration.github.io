@@ -37,6 +37,7 @@ body
 /* --- Navbar START ---------------------------------------------------*/
 .navbar
 	background: #fff
+	box-shadow: 0px 2px 2px 0px $main_blue5
 	.navbar-toggler-icon
 		background: url('../img/burger.png')
 		background-size: 100% 100%
@@ -261,6 +262,35 @@ body
 /* --- count-skroll END ---------------------------------------------------*/
 
 
+/* --- where START ---------------------------------------------------*/
+.where
+	padding: 30px 0 0 0 
+	&__form-wrap
+		margin-bottom: 15px
+		h3
+			text-transform: uppercase
+			margin: 15px
+	.container-fluid
+		background: url('../img/bg_delivery.jpg') 50% 0
+		background-size: cover
+		background-repeat: no-repeat
+		padding-top: 45px
+		padding-bottom: 30px
+		h3, h4
+			color: #ffffff
+			text-align: center
+			text-transform: uppercase
+		img
+			border-radius: 5px
+		ul
+			list-style: none
+			text-align: left
+			li
+				color: #fff
+				font-size: 20px
+/* --- where END ---------------------------------------------------*/
+
+
 /* --- Button style START ---------------------------------------------------*/
 .header-button
 	text-transform: uppercase
@@ -366,6 +396,34 @@ body
 		font-size: 20px
 		transition: 0.3s
 		border: 2px solid $main_red
+		&:hover
+			background: $main_blue5
+		&:disabled
+			background: $main_grey
+
+
+.open-form-where
+	input
+		background: rgba(0,0,0, .1)
+		padding: 10px
+		text-align: center
+		margin: 10px
+		border: none
+		border-radius: 15px
+		border-bottom: 3px solid $main_color
+		&:focus
+			outline: none
+	.btn-form-where
+		cursor: pointer
+		color: #fff
+		border: none
+		margin-top: 15px
+		text-transform: uppercase
+		background: $main_color
+		border-radius: 15px
+		padding: 8px 30px
+		font-size: 20px
+		transition: 0.3s
 		&:hover
 			background: $main_blue5
 		&:disabled
