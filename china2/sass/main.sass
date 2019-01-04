@@ -1,11 +1,13 @@
 
 	
 /* --- Colors START ---------------------------------------------------*/
-$main_yellow: #ffcc00
+$main_yellow: #D5B135
 $main_color: #00346f
 $main_blue5: rgba(0, 52, 111, .5)
 $main_blue3: rgba(0, 52, 111, .3)
 $main_grey: #808080
+$main_red: #AA3B00
+$main_blue_light: #5282B7
 /* --- Colors END ---------------------------------------------------*/	
 
 /* --- Default START ---------------------------------------------------*/
@@ -88,8 +90,8 @@ body
 	&__arrow-down
 		position: absolute
 		z-index: 2
-		right: 50px
-		bottom: 90px
+		right: 30px
+		bottom: 60px
 		a
 			text-transform: uppercase
 			position: relative
@@ -191,8 +193,72 @@ body
 
 /* --- About START ---------------------------------------------------*/
 .about
-	min-height: 100vh
+	padding: 50px 0
+	background: url('../img/aboutbg.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-attachment: fixed
+	&__text-wrap
+		text-align: center
+		background: rgba(255,255,255, .7)
+		padding: 15px
+		border-radius: 15px
+		box-shadow: 0px 0px 5px 3px $main_blue5
+		h4
+			background: $main_color
+			color: #fff
+			padding: 10px
+			border-radius: 15px
+			border: 2px solid $main_red
 /* --- About END ---------------------------------------------------*/
+
+
+/* --- count-skroll start ---------------------------------------------------*/
+.count-skroll
+	padding: 30px 0
+	min-height: 50vh
+	background: $main_color
+	color: #fff
+	position: relative
+	overflow: hidden
+	background: url('../img/boing.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	background-attachment: fixed
+	.video-cont
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		video
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__overlay
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: $main_blue5
+	h4
+		text-align: center
+		margin: 15px
+		font-size: 1.1rem
+	&__wrap
+		text-align: center
+		width: 250px
+		max-width: 100%
+		height: 100px
+		background: rgba(255,255,255, .5)
+		border: 2px solid #fff
+		span
+			font-size: 34px
+
+/* --- count-skroll END ---------------------------------------------------*/
+
 
 /* --- Button style START ---------------------------------------------------*/
 .header-button
@@ -247,6 +313,8 @@ body
 		border: none
 		border-radius: 15px
 		border-bottom: 2px solid $main_color
+		&:focus
+			outline: none
 	.btn-form-hidden
 		cursor: pointer
 		color: #fff
@@ -262,6 +330,45 @@ body
 			background: $main_blue5
 		&:disabled
 			background: $main_grey
+
+
+.open-form
+	width: 300px
+	display: block
+	margin-right: auto
+	margin-left: auto
+	text-align: center
+	border: 2px solid $main_red
+	padding: 20px
+	border-radius: 15px
+	background: rgba(255,255,255, .7)
+	input
+		padding: 10px
+		text-align: center
+		margin-top: 10px
+		margin-bottom: 10px
+		width: 100%
+		border: none
+		border-radius: 15px
+		border-bottom: 2px solid $main_red
+		&:focus
+			outline: none
+	.btn-form
+		cursor: pointer
+		color: #fff
+		border: none
+		margin-top: 15px
+		text-transform: uppercase
+		background: $main_color
+		border-radius: 15px
+		padding: 5px 30px
+		font-size: 20px
+		transition: 0.3s
+		border: 2px solid $main_red
+		&:hover
+			background: $main_blue5
+		&:disabled
+			background: $main_grey
 /* --- FORM style END ---------------------------------------------------*/
 
 
@@ -273,11 +380,11 @@ body
 		color: #fff
 		border-color: #fff
 	50%
-		color: #4d4dff
-		border-color: #4d4dff
+		color: $main_color
+		border-color: $main_color
 	75%
-		color: red
-		border-color: red
+		color: $main_red
+		border-color: $main_red
 	100%
 		color: #fff
 		border-color: #fff

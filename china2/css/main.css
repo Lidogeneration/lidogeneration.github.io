@@ -111,8 +111,8 @@ body a:hover {
 .header__arrow-down {
   position: absolute;
   z-index: 2;
-  right: 50px;
-  bottom: 90px;
+  right: 30px;
+  bottom: 60px;
 }
 
 .header__arrow-down a {
@@ -237,7 +237,7 @@ body a:hover {
 
 .header__logist-wrap h3 {
   text-transform: uppercase;
-  color: #ffcc00;
+  color: #D5B135;
   display: inline-block;
   margin-right: 15px;
 }
@@ -249,10 +249,90 @@ body a:hover {
 /* --- header END ---------------------------------------------------*/
 /* --- About START ---------------------------------------------------*/
 .about {
-  min-height: 100vh;
+  padding: 50px 0;
+  background: url("../img/aboutbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.about__text-wrap {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 52, 111, 0.5);
+          box-shadow: 0px 0px 5px 3px rgba(0, 52, 111, 0.5);
+}
+
+.about__text-wrap h4 {
+  background: #00346f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #AA3B00;
 }
 
 /* --- About END ---------------------------------------------------*/
+/* --- count-skroll start ---------------------------------------------------*/
+.count-skroll {
+  padding: 30px 0;
+  min-height: 50vh;
+  background: #00346f;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  background: url("../img/boing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.count-skroll .video-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.count-skroll .video-cont video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.count-skroll__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 52, 111, 0.5);
+}
+
+.count-skroll h4 {
+  text-align: center;
+  margin: 15px;
+  font-size: 1.1rem;
+}
+
+.count-skroll__wrap {
+  text-align: center;
+  width: 250px;
+  max-width: 100%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid #fff;
+}
+
+.count-skroll__wrap span {
+  font-size: 34px;
+}
+
+/* --- count-skroll END ---------------------------------------------------*/
 /* --- Button style START ---------------------------------------------------*/
 .header-button {
   text-transform: uppercase;
@@ -278,7 +358,7 @@ body a:hover {
   right: 0;
   bottom: 0;
   content: '';
-  background: #ffcc00;
+  background: #D5B135;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: scaleX(0);
@@ -323,6 +403,10 @@ body a:hover {
   border-bottom: 2px solid #00346f;
 }
 
+.hidden-form input:focus {
+  outline: none;
+}
+
 .hidden-form .btn-form-hidden {
   cursor: pointer;
   color: #fff;
@@ -345,6 +429,56 @@ body a:hover {
   background: #808080;
 }
 
+.open-form {
+  width: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border: 2px solid #AA3B00;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.open-form input {
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  border-bottom: 2px solid #AA3B00;
+}
+
+.open-form input:focus {
+  outline: none;
+}
+
+.open-form .btn-form {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+  text-transform: uppercase;
+  background: #00346f;
+  border-radius: 15px;
+  padding: 5px 30px;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #AA3B00;
+}
+
+.open-form .btn-form:hover {
+  background: rgba(0, 52, 111, 0.5);
+}
+
+.open-form .btn-form:disabled {
+  background: #808080;
+}
+
 /* --- FORM style END ---------------------------------------------------*/
 @-webkit-keyframes color_more {
   0% {
@@ -352,12 +486,12 @@ body a:hover {
     border-color: #fff;
   }
   50% {
-    color: #4d4dff;
-    border-color: #4d4dff;
+    color: #00346f;
+    border-color: #00346f;
   }
   75% {
-    color: red;
-    border-color: red;
+    color: #AA3B00;
+    border-color: #AA3B00;
   }
   100% {
     color: #fff;
@@ -370,12 +504,12 @@ body a:hover {
     border-color: #fff;
   }
   50% {
-    color: #4d4dff;
-    border-color: #4d4dff;
+    color: #00346f;
+    border-color: #00346f;
   }
   75% {
-    color: red;
-    border-color: red;
+    color: #AA3B00;
+    border-color: #AA3B00;
   }
   100% {
     color: #fff;

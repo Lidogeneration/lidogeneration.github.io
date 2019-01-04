@@ -29,6 +29,12 @@ $(function(){
 $('.nav-link-new').mPageScroll2id();
 $('.mpopup').magnificPopup();
 
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+            delay: 10,
+            time: 2000
+    });
+});
 
 $('.phoneinput').inputmask('+79(999) 999-99-99',{ "oncomplete": function(){ 
   $(".btn-dis").prop("disabled", false);
