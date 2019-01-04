@@ -92,36 +92,39 @@ body
 		bottom: 90px
 		a
 			text-transform: uppercase
-			color: #fff
 			position: relative
-			padding-right: 10px
+			padding: 10px
 			transition: 0.5s
+			border: 2px solid #fff
+			border-radius: 20px
+			animation: color_more 3s linear infinite
 			&:after
 				position: absolute
 				content: ''
-				right: 0
-				top: 0
-				bottom: -100px
+				right: 37%
+				top: 45px
+				bottom: -45px
 				border: 1px solid #fff
+				transform: rotate(45deg)
+				animation: color_more 3s linear infinite
 			&:before
 				position: absolute
 				content: ''
-				right: 0
-				bottom: -91px
-				top: 88px
+				left: 37%
+				bottom: -45px
+				top: 45px
+				transform: rotate(-45deg)
+				animation: color_more 3s linear infinite
 				border: 1px solid #fff
-				transform: rotate(-50deg)
-				transform-origin: bottom
 			&:hover
 				transition: 0.5s
-				color: $main_yellow
-				&:after
-					transition: 0.5s
-					border: 1px solid $main_yellow
-				&:before
-					transition: 0.5s
-					border: 1px solid $main_yellow
-
+				color: #fff
+				// &:after
+				// 	transition: 0.5s
+				// 	border: 1px solid $main_yellow
+				// &:before
+				// 	transition: 0.5s
+				// 	border: 1px solid $main_yellow
 	.container
 		padding-top: 70px
 		z-index: 2
@@ -260,3 +263,21 @@ body
 		&:disabled
 			background: $main_grey
 /* --- FORM style END ---------------------------------------------------*/
+
+
+
+
+
+@keyframes color_more
+	0%
+		color: #fff
+		border-color: #fff
+	50%
+		color: #4d4dff
+		border-color: #4d4dff
+	75%
+		color: red
+		border-color: red
+	100%
+		color: #fff
+		border-color: #fff
