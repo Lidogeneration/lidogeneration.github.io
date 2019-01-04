@@ -255,6 +255,7 @@ body a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .about__text-wrap {
