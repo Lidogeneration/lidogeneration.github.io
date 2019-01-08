@@ -306,12 +306,25 @@ body
 /* --- how START ---------------------------------------------------*/	
 .how
 	padding: 30px 0
-	min-height: 50vh
-	background: url('../img/bg_how.jpg') 50% 0
-	background-size: cover
-	background-repeat: no-repeat
-	color: #fff
 	overflow: hidden
+	position: relative
+	.border-all
+		border: 2px solid $main_color
+	.bg-color
+		background: $main_color
+		color: #fff
+	.box-shadow-right
+		box-shadow: 7px 7px 0px 0px $main_color
+	.box-shadow-left
+		box-shadow: -7px 7px 0px 0px $main_color
+	.number-wrap
+		.number-cont
+			text-align: center
+			padding: 5px
+			h2
+				font-size: 9rem
+			h3
+				font-size: 3rem
 	h3
 		text-transform: uppercase
 /* --- how END ---------------------------------------------------*/
@@ -321,8 +334,12 @@ body
 .how-two
 	padding: 30px 0
 	overflow: hidden
+	background: url('../img/bg_delivery.jpg') 50% 0
+	background-size: cover
+	background-repeat: no-repeat
+	color: #fff
 	.border-right-how
-		border-right: 2px solid $main_color
+		border-right: 2px solid #fff
 	.text-left-main
 		text-align: left
 	.text-wrap
@@ -523,10 +540,9 @@ body
 			background: $main_grey
 	
 /* --- FORM style END ---------------------------------------------------*/
-
-
-
-
+.row-eq-height
+  display: flex
+  flex-wrap: wrap
 
 @keyframes color_more
 	0%
