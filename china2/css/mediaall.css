@@ -63,6 +63,13 @@
 		padding: 10px;
 		border-radius: 15px
 	}
+	.how-two .text-left-main
+	{
+		text-align: center !important;
+	}
+	.how-two img{
+		width: 50%;
+	}
 }
 @media only screen and (max-width : 800px) {
 
@@ -74,5 +81,12 @@
 }
 @media only screen and (max-width : 576px)
 {
+.form-calc input
+{
+	width: 100%;
+}
+.how-two img{
+	width: 100%;
+}
 
 }

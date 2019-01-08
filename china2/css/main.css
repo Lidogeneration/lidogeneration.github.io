@@ -338,6 +338,7 @@ body a:hover {
 /* --- count-skroll END ---------------------------------------------------*/
 /* --- where START ---------------------------------------------------*/
 .where {
+  overflow: hidden;
   padding: 30px 0 0 0;
 }
 
@@ -379,6 +380,64 @@ body a:hover {
 }
 
 /* --- where END ---------------------------------------------------*/
+/* --- Calc START ---------------------------------------------------*/
+.calc {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.calc .calc-wrap h3 {
+  text-transform: uppercase;
+}
+
+/* --- Calc END ---------------------------------------------------*/
+/* --- how START ---------------------------------------------------*/
+.how {
+  padding: 30px 0;
+  min-height: 50vh;
+  background: url("../img/bg_how.jpg") 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.how h3 {
+  text-transform: uppercase;
+}
+
+/* --- how END ---------------------------------------------------*/
+/* --- how-two START ---------------------------------------------------*/
+.how-two {
+  padding: 30px 0;
+}
+
+.how-two .border-right-how {
+  border-right: 2px solid #00346f;
+}
+
+.how-two .text-left-main {
+  text-align: left;
+}
+
+.how-two .text-wrap h2, .how-two .text-wrap h3, .how-two .text-wrap h4 {
+  text-transform: uppercase;
+}
+
+.how-two .text-wrap h4 {
+  margin-bottom: 20px;
+}
+
+.how-two .text-wrap i {
+  margin-right: 10px;
+}
+
+/* --- how-two END ---------------------------------------------------*/
+/* --- contacts START ---------------------------------------------------*/
+.contacts {
+  min-height: 50vh;
+}
+
+/* --- contacts END ---------------------------------------------------*/
 /* --- Button style START ---------------------------------------------------*/
 .header-button {
   text-transform: uppercase;
@@ -558,6 +617,67 @@ body a:hover {
 }
 
 .open-form-where .btn-form-where:disabled {
+  background: #808080;
+}
+
+.form-calc {
+  text-align: center;
+  padding: 10px;
+}
+
+.form-calc h3 {
+  text-transform: uppercase;
+}
+
+.form-calc input {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  border: none;
+  border-radius: 15px;
+  border-bottom: 3px solid #00346f;
+}
+
+.form-calc input:focus {
+  outline: none;
+}
+
+.form-calc textarea {
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  border: none;
+  border-radius: 15px;
+  border-bottom: 3px solid #00346f;
+}
+
+.form-calc textarea:focus {
+  outline: none;
+}
+
+.form-calc .btn-form-where {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+  text-transform: uppercase;
+  background: #00346f;
+  border-radius: 15px;
+  padding: 8px 30px;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form-calc .btn-form-where:hover {
+  background: rgba(0, 52, 111, 0.5);
+}
+
+.form-calc .btn-form-where:disabled {
   background: #808080;
 }
 
