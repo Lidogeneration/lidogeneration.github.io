@@ -190,6 +190,7 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="calc" id="calc-link">
 		<div class="container-fluid">
 			<div class="row">
@@ -203,27 +204,27 @@
 								<hr>
 								<div class="calc-programs">
 								<div class="calc-radio">
-										<input type="radio" checked name="products" id="other-prod">
+										<input type="radio" value="other_prod" checked name="products" id="other-prod">
 										<label for="other-prod">
 										<span>Остальные товары</span>
 									</label>
 								</div>
 
 								<div class="calc-radio">
-										<input type="radio" name="products" id="phones">
+										<input type="radio" value="phones" name="products" id="phones">
 										<label for="phones">
 											<span>Телефоны</span>
 										</label>
 									</div>
 
 									<div class="calc-radio">
-											<input type="radio" name="products" id="smart-clock">
+											<input type="radio" value="smart_clock" name="products" id="smart-clock">
 											<label for="smart-clock">
 												<span>Смарт часы</span>
 											</label>
 										</div>
 										<div class="calc-radio">
-												<input type="radio" name="products" id="mining">
+												<input type="radio" value="mining" name="products" id="mining">
 												<label for="mining">													
 													<span>Майнинг</span>
 												</label>
@@ -237,27 +238,27 @@
 									<hr>
 									<div class="calc-programs">
 									<div class="calc-radio">
-											<input type="radio" checked name="delivery" id="plane">
+											<input type="radio" value="plane" checked name="delivery" id="plane">
 											<label for="plane">
 											<span>Авиа 4.5$</span>
 										</label>
 									</div>
 	
 									<div class="calc-radio">
-											<input type="radio" name="delivery" id="train">
+											<input type="radio" value="train" name="delivery" id="train">
 											<label for="train">
 												<span>Поезд 3$</span>
 											</label>
 										</div>
 	
 										<div class="calc-radio">
-												<input type="radio" name="delivery" id="sea">
+												<input type="radio" value="sea" name="delivery" id="sea">
 												<label for="sea">
 													<span>Морем 1.5$</span>
 												</label>
 											</div>
 											<div class="calc-radio">
-													<input type="radio" name="delivery" id="auto">
+													<input type="radio" value="auto" name="delivery" id="auto">
 													<label for="auto">													
 														<span>Авто 2$</span>
 													</label>
@@ -271,21 +272,21 @@
 										<hr>
 										<div class="calc-programs">
 										<div class="calc-radio">
-												<input type="radio" checked name="bag" id="basik">
+												<input type="radio" value="basik" checked name="bag" id="basik">
 												<label for="basik">
 												<span>Базовая 10$</span>
 											</label>
 										</div>
 		
 										<div class="calc-radio">
-												<input type="radio" name="bag" id="def">
+												<input type="radio" value="def" name="bag" id="def">
 												<label for="def">
 													<span>Защита упаковки крупного груза 20$</span>
 												</label>
 											</div>
 		
 											<div class="calc-radio">
-													<input type="radio" name="bag" id="maxdef">
+													<input type="radio" value="maxdef" name="bag" id="maxdef">
 													<label for="maxdef">
 														<span>Максимальная защита 30$</span>
 													</label>
@@ -309,7 +310,7 @@
 										<div class="col-lg-6"></div>
 										<div class="col-lg-6 result">
 											<div class="result-wrap">
-											<p>Итоговая сумма:</p><span> 0</span><span>$</span>
+											<p>Итоговая сумма:</p><span id="last-summ"> 0</span><span>$</span>
 											</div>
 											<div class="result-wrap">
 											<p>Доставка груза:</p><span> 0</span><span>$</span>
@@ -480,6 +481,7 @@
 	</div>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/calc.js"></script>
 </body>
 
 </html>
