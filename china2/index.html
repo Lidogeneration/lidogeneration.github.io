@@ -193,12 +193,139 @@
 	<section class="calc" id="calc-link">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 align-self-center text-center">
+				<div class="col-lg-7 align-self-center text-center">
 					<div class="calc-wrap">
-						<h3>контейнер для калькулятора</h3>
+						<div class="row">
+							<div class="col-lg-5"><h5>Калькулятор доставки</h5></div>
+							<div class="col-lg-7"><p class="phead">Лучшее решение для вашего бизнеса <i class="fas fa-info-circle"></i></p></div>
+							<div class="col-12">
+								<p class="programs-head">Вид товара:</p>
+								<hr>
+								<div class="calc-programs">
+								<div class="calc-radio">
+										<input type="radio" checked name="products" id="other-prod">
+										<label for="other-prod">
+										<span>Остальные товары</span>
+									</label>
+								</div>
+
+								<div class="calc-radio">
+										<input type="radio" name="products" id="phones">
+										<label for="phones">
+											<span>Телефоны</span>
+										</label>
+									</div>
+
+									<div class="calc-radio">
+											<input type="radio" name="products" id="smart-clock">
+											<label for="smart-clock">
+												<span>Смарт часы</span>
+											</label>
+										</div>
+										<div class="calc-radio">
+												<input type="radio" name="products" id="mining">
+												<label for="mining">													
+													<span>Майнинг</span>
+												</label>
+											</div>
+							</div>
+							<hr>
+							</div>
+
+							<div class="col-12">
+									<p class="programs-head">Способ доставки:</p>
+									<hr>
+									<div class="calc-programs">
+									<div class="calc-radio">
+											<input type="radio" checked name="delivery" id="plane">
+											<label for="plane">
+											<span>Авиа 4.5$</span>
+										</label>
+									</div>
+	
+									<div class="calc-radio">
+											<input type="radio" name="delivery" id="train">
+											<label for="train">
+												<span>Поезд 3$</span>
+											</label>
+										</div>
+	
+										<div class="calc-radio">
+												<input type="radio" name="delivery" id="sea">
+												<label for="sea">
+													<span>Морем 1.5$</span>
+												</label>
+											</div>
+											<div class="calc-radio">
+													<input type="radio" name="delivery" id="auto">
+													<label for="auto">													
+														<span>Авто 2$</span>
+													</label>
+												</div>
+								</div>
+								<hr>
+								</div>
+
+								<div class="col-12">
+										<p class="programs-head">Упаковка:</p>
+										<hr>
+										<div class="calc-programs">
+										<div class="calc-radio">
+												<input type="radio" checked name="bag" id="basik">
+												<label for="basik">
+												<span>Базовая 10$</span>
+											</label>
+										</div>
+		
+										<div class="calc-radio">
+												<input type="radio" name="bag" id="def">
+												<label for="def">
+													<span>Защита упаковки крупного груза 20$</span>
+												</label>
+											</div>
+		
+											<div class="calc-radio">
+													<input type="radio" name="bag" id="maxdef">
+													<label for="maxdef">
+														<span>Максимальная защита 30$</span>
+													</label>
+												</div>
+									</div>
+									<hr>
+									</div>
+
+										<div class="col-lg-6 mb-3"><p class="programs-head">Количество дней ожидания груза:</p></div>
+										<div class="col-lg-6 mb-3"><p class="programs-head">9-12 дней <b>(Таможенная очистка включена!)</b></p></div>
+										<div class="col-lg-6"><p class="programs-head">Суммарный вес товаров:</p></div>
+										<div class="col-lg-6">
+											<input maxlength="16" name="" id="" placeholder="16" class="nums-only"></input>
+											<span>кг</span>
+										</div>
+										<div class="col-lg-6"><p class="programs-head">Цена товара:</p></div>
+										<div class="col-lg-6">
+											<input maxlength="16" name="" id="" placeholder="24" class="nums-only"></input>
+											<span class="ml-1">$</span>
+										</div>
+										<div class="col-lg-6"></div>
+										<div class="col-lg-6 result">
+											<div class="result-wrap">
+											<p>Итоговая сумма:</p><span> 0</span><span>$</span>
+											</div>
+											<div class="result-wrap">
+											<p>Доставка груза:</p><span> 0</span><span>$</span>
+											</div>
+											<div class="result-wrap">
+											<p>Упаковка:</p><span> 0</span><span>$</span>
+											</div>
+											<div class="result-wrap">
+												<p>Страховка:</p><span> 0</span><span>$</span>
+											</div>
+										</div>
+
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-6" data-aos="fade-down" data-aos-duration="1000">
+				<div class="col-lg-5 align-self-center" data-aos="fade-down" data-aos-duration="1000">
 					<img src="img/calc.jpg" alt="" class="img-fluid">
 					<form class="form-calc">
 						<h3>остались вопросы? задавайте!</h3>
@@ -289,7 +416,7 @@
 							<div class="number-cont">
 									<h4>ПОГРУЗКА В САМОЛЕТ, АВТО
 											ИЛИ ПОЕЗД, ПО ПРИБЫТИЮ 
-											РАСТМОМОЖКА (СТОИМОСТЬ
+											РАСТАМОЖКА (СТОИМОСТЬ
 											ВХОДИТ В СТОИМОСТЬ 
 											ДОСТАВКИ), ДОСТАВКА ГРУЗА
 											В ВАШ ГОРОД!</h4>
