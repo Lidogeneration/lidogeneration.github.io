@@ -139,9 +139,10 @@ body
 
 /* --- head START ------------------------------------------------*/
 .head
+	overflow: hidden
 	min-height: 100vh
 	width: 100%
-	padding: 30px 0
+	padding: 30px 30px
 	position: relative
 	background: url('../img/headbg.jpg')
 	background-size: cover
@@ -191,13 +192,22 @@ body
 			li
 				font-size: 22px
 				text-align: center
+				transition: 0.5s
+				&:hover
+					transition: 0.5s
+					background: rgba(255,255,255, .3)
+					i
+						transition: 0.5s
+						margin-right: 15px
 				i
+					transition: 0.5s
 					margin-right: 5px
 /* --- head END ------------------------------------------------*/
 
 
 /* --- about START ------------------------------------------------*/
 .about
+	overflow: hidden
 	width: 100%
 	min-height: 50vh
 	padding: 30px 0
@@ -207,6 +217,7 @@ body
 	background-repeat: no-repeat
 	background-attachment: fixed
 	border-top: 1px solid $main_green
+	border-bottom: 1px solid $main_green
 	h2
 		text-transform: uppercase
 		text-align: center
@@ -218,8 +229,13 @@ body
 		i
 			color: $main_green
 	&_right-img
+		overflow: hidden
+		border: 2px solid $main_green
+		padding: 0
 		img
-			border: 2px solid $main_green
+			transition: 0.5s
+			&:hover
+				transform: scale(1.2)
 	&_logo-wrapb
 		background: $main_green
 		padding: 10px
@@ -233,6 +249,10 @@ body
 	&_text-wrap
 		border: 2px solid $main_green
 		background: rgba(255,255,255, .7)
+		transition: 0.5s
+		&:hover
+			background: #fff
+			box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75)
 		hr
 			width: 90%
 		p
@@ -242,9 +262,62 @@ body
 			margin: 10px
 /* --- about END ------------------------------------------------*/
 
+/* --- Prod START ------------------------------------------------*/
+.product
+	padding: 30px 70px
+	background: $main_bg_light
+	background: url('../img/prodbg.jpg')
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	background-attachment: fixed
+	overflow: hidden
+	h2
+		text-transform: uppercase
+		text-align: center
+		color: $main_color
+		border-bottom: 2px solid $main_green
+		border-right: 2px solid $main_green
+		background: #fff
+		padding: 10px
+		display: block
+		width: 80%
+		margin-left: auto
+		margin-right: auto
+		i
+			color: $main_green
+	.border-prod
+		border: 2px solid $main_green
+		background: rgba(255,255,255, .9)
+		transition: 0.5s
+		&:hover
+			background: #fff
+			transition: 0.5s
+			hr
+				transition: 0.5s
+				border: 1px solid $main_color
+				width: 90%
+	.border-prod-img
+		border: 2px solid $main_green
+		background: #fff
+	&_text-wrap
+		padding: 10px
+		hr
+			width: 50%
+			transition: 0.5s
+			border: 1px solid $main_color
+		h3
+			text-align: center
+			text-transform: uppercase
+		p
+			font-size: 18px
+	&_img-wrap
+		background: #fff
+/* --- Prod END ------------------------------------------------*/
 
 /* ---- Button Start ------------------------------------------------*/
 .head-button
+	background: #fff
 	border: 2px solid #fff
 	display: block
 	text-align: center
@@ -252,5 +325,83 @@ body
 	margin-left: auto
 	margin-right: auto
 	text-transform: uppercase
-	color: #fff
+	color: $main_color
+	padding: 5px
+	position: relative
+	transition: 0.5s
+	&:after
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		border-bottom: 2px solid $main_green
+		border-top: 2px solid $main_green
+		transform: scaleX(0)
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		border-left: 2px solid $main_green
+		border-right: 2px solid $main_green
+		transform: scaleY(0)
+	&:hover
+		color: #fff
+		background: $main_bg_light_hover
+		&:after
+			transform: scaleX(1)
+		&:before
+			transform: scaleY(1)
+.prod-button
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75)
+	background: #fff
+	border: 2px solid #fff
+	display: block
+	text-align: center
+	width: 200px
+	margin-left: auto
+	margin-right: auto
+	text-transform: uppercase
+	color: $main_color
+	padding: 5px
+	position: relative
+	transition: 0.5s
+	&:after
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		border-bottom: 2px solid $main_green
+		border-top: 2px solid $main_green
+		transform: scaleX(0)
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		border-left: 2px solid $main_green
+		border-right: 2px solid $main_green
+		transform: scaleY(0)
+	&:hover
+		color: #fff
+		background: $main_bg_light_hover
+		&:after
+			transform: scaleX(1)
+		&:before
+			transform: scaleY(1)
 /* ---- Button END ------------------------------------------------*/
+.row-eq-height
+	display: flex
+	flex-wrap: wrap

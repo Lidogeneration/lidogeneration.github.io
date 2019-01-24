@@ -235,9 +235,10 @@ body a:hover {
 /* --- Navbar END ------------------------------------------------*/
 /* --- head START ------------------------------------------------*/
 .head {
+  overflow: hidden;
   min-height: 100vh;
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 30px;
   position: relative;
   background: url("../img/headbg.jpg");
   background-size: cover;
@@ -308,15 +309,32 @@ body a:hover {
 .head_text-wrap ul li {
   font-size: 22px;
   text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.head_text-wrap ul li:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.head_text-wrap ul li:hover i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-right: 15px;
 }
 
 .head_text-wrap ul li i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   margin-right: 5px;
 }
 
 /* --- head END ------------------------------------------------*/
 /* --- about START ------------------------------------------------*/
 .about {
+  overflow: hidden;
   width: 100%;
   min-height: 50vh;
   padding: 30px 0;
@@ -326,6 +344,7 @@ body a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-top: 1px solid #008238;
+  border-bottom: 1px solid #008238;
 }
 
 .about h2 {
@@ -342,8 +361,20 @@ body a:hover {
   color: #008238;
 }
 
-.about_right-img img {
+.about_right-img {
+  overflow: hidden;
   border: 2px solid #008238;
+  padding: 0;
+}
+
+.about_right-img img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about_right-img img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .about_logo-wrapb {
@@ -367,6 +398,14 @@ body a:hover {
 .about_text-wrap {
   border: 2px solid #008238;
   background: rgba(255, 255, 255, 0.7);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about_text-wrap:hover {
+  background: #fff;
+  -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
 }
 
 .about_text-wrap hr {
@@ -383,8 +422,89 @@ body a:hover {
 }
 
 /* --- about END ------------------------------------------------*/
+/* --- Prod START ------------------------------------------------*/
+.product {
+  padding: 30px 70px;
+  background: #ececec;
+  background: url("../img/prodbg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.product h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #373a3d;
+  border-bottom: 2px solid #008238;
+  border-right: 2px solid #008238;
+  background: #fff;
+  padding: 10px;
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product h2 i {
+  color: #008238;
+}
+
+.product .border-prod {
+  border: 2px solid #008238;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product .border-prod:hover {
+  background: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product .border-prod:hover hr {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #373a3d;
+  width: 90%;
+}
+
+.product .border-prod-img {
+  border: 2px solid #008238;
+  background: #fff;
+}
+
+.product_text-wrap {
+  padding: 10px;
+}
+
+.product_text-wrap hr {
+  width: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #373a3d;
+}
+
+.product_text-wrap h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product_text-wrap p {
+  font-size: 18px;
+}
+
+.product_img-wrap {
+  background: #fff;
+}
+
+/* --- Prod END ------------------------------------------------*/
 /* ---- Button Start ------------------------------------------------*/
 .head-button {
+  background: #fff;
   border: 2px solid #fff;
   display: block;
   text-align: center;
@@ -392,8 +512,127 @@ body a:hover {
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
+  color: #373a3d;
+  padding: 5px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.head-button:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid #008238;
+  border-top: 2px solid #008238;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.head-button:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #008238;
+  border-right: 2px solid #008238;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.head-button:hover {
   color: #fff;
+  background: #b3b3b3;
+}
+
+.head-button:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.head-button:hover:before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.prod-button {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  background: #fff;
+  border: 2px solid #fff;
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  color: #373a3d;
+  padding: 5px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.prod-button:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid #008238;
+  border-top: 2px solid #008238;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.prod-button:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #008238;
+  border-right: 2px solid #008238;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.prod-button:hover {
+  color: #fff;
+  background: #b3b3b3;
+}
+
+.prod-button:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.prod-button:hover:before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 /* ---- Button END ------------------------------------------------*/
+.row-eq-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 /*# sourceMappingURL=main.css.map */

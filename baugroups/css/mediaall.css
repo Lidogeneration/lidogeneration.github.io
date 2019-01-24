@@ -36,7 +36,10 @@
 
 @media only screen and (max-width : 992px)
 {
-
+  .product
+  {
+    padding: 30px 30px;
+  }
 }
 @media only screen and (max-width : 800px)
 {
@@ -48,5 +51,24 @@
 }
 @media only screen and (max-width : 576px)
 {
-
+  .head
+  {
+    padding: 30px 0;
+  }
+  .product h2
+  {
+    width: 95%;
+  }
+  .product p
+  {
+    font-size: 18px;
+  }
+  .product
+  {
+    padding: 30px 5px;
+  }
+  .product_text-wrap h3
+  {
+    font-size: 1.5rem;
+  }
 }
