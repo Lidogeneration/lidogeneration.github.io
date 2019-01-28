@@ -628,11 +628,288 @@ body a:hover {
 }
 
 /* ---- Button END ------------------------------------------------*/
+/* ---- advantage Start ------------------------------------------------*/
+.advantage {
+  padding: 30px 0;
+  background: url("../img/aboutbg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.advantage h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #373a3d;
+  border-bottom: 2px solid #008238;
+  border-right: 2px solid #008238;
+  background: #fff;
+  padding: 10px;
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantage h2 i {
+  color: #008238;
+}
+
+.advantage .text-wrap {
+  border: 1px solid #008238;
+  display: block;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.advantage .text-wrap h4 {
+  padding: 10px;
+  color: #ffffff;
+  background: #008238;
+  text-align: center;
+  margin: 0;
+}
+
+.advantage .text-wrap p {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ---- advantage END ------------------------------------------------*/
+/* ---- Steps Start ------------------------------------------------*/
+.steps {
+  padding: 30px 0;
+  background: url("../img/stepsbg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.steps h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #373a3d;
+  border-bottom: 2px solid #008238;
+  border-right: 2px solid #008238;
+  background: #fff;
+  padding: 10px;
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.steps h2 i {
+  color: #008238;
+}
+
+.steps .text-wrap {
+  text-align: center;
+  height: 3px;
+  border: 1px solid #008238;
+  display: block;
+  height: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 7px 7px 0px 0px #fff;
+          box-shadow: 7px 7px 0px 0px #fff;
+}
+
+.steps .text-wrap i {
+  color: #008238;
+}
+
+.steps .text-wrap .animation-main {
+  -webkit-animation: blick-icon 4s linear infinite;
+          animation: blick-icon 4s linear infinite;
+}
+
+.steps .text-wrap h4 {
+  text-transform: uppercase;
+}
+
+.steps .text-wrap .icon {
+  font-size: 36px;
+  margin: 10px;
+}
+
+.steps .text-wrap p {
+  font-size: 20px;
+}
+
+/* ---- Steps END ------------------------------------------------*/
+/* ---- Certificate START ------------------------------------------------*/
+.certificate {
+  padding: 30px 0;
+  position: relative;
+  background: url("../img/aboutbg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.certificate h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #373a3d;
+  border-bottom: 2px solid #008238;
+  border-right: 2px solid #008238;
+  background: #fff;
+  padding: 10px;
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.certificate h2 i {
+  color: #008238;
+}
+
+.certificate .slick-cert {
+  position: relative;
+}
+
+.certificate .slick-cert .img-wrap {
+  padding: 10px;
+}
+
+.certificate .slick-cert .img-wrap img {
+  border: 1px solid #008238;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* ---- Certificate END ------------------------------------------------*/
+/* ---- contacts Start ------------------------------------------------*/
+.contacts {
+  padding: 30px 0;
+  background: #ececec;
+  border-top: 1px solid #008238;
+}
+
+.contacts h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #373a3d;
+  border-bottom: 2px solid #008238;
+  border-right: 2px solid #008238;
+  background: #fff;
+  padding: 10px;
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts h2 i {
+  color: #008238;
+}
+
+.contacts iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts .border-cont {
+  border-left: 2px solid #008238;
+  border-right: 2px solid #008238;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+}
+
+/* ---- contacts END ------------------------------------------------*/
+/*--- Form START ---*/
+.footer-form {
+  width: 320px;
+  max-width: 100%;
+  padding: 30px 20px;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 0px 0px #999999;
+          box-shadow: 5px 5px 0px 0px #999999;
+}
+
+.footer-form h3, .footer-form h4 {
+  text-align: center;
+}
+
+.footer-form hr {
+  width: 60%;
+  background-color: #373a3d;
+}
+
+.footer-form input {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  background: #ececec;
+  border: none;
+  border-bottom: 1px solid #373a3d;
+  padding: 10px;
+}
+
+.footer-form button {
+  padding: 10px;
+  color: #008238;
+  text-transform: uppercase;
+  margin: 20px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ececec;
+  -webkit-box-shadow: 2px 2px 0px 0px #999999;
+          box-shadow: 2px 2px 0px 0px #999999;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer-form button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #383b3e;
+  color: #fff;
+}
+
+/*--- Form END ---*/
 .row-eq-height {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@-webkit-keyframes blick-icon {
+  0% {
+    color: #008238;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: #008238;
+  }
+}
+
+@keyframes blick-icon {
+  0% {
+    color: #008238;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: #008238;
+  }
 }
 /*# sourceMappingURL=main.css.map */
