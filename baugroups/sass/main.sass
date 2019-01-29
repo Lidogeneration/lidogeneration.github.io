@@ -85,7 +85,7 @@ body
 	position: relative
 	overflow: hidden
 	span
-		color: $main_green
+		color: $main_green !important
 	&:before
 		transition: 0.5s
 		position: absolute
@@ -494,6 +494,7 @@ body
 			animation: blick-icon 4s linear infinite
 		h4
 			text-transform: uppercase
+			font-size: 1.1rem
 		.icon
 			font-size: 36px
 			margin: 10px
@@ -536,6 +537,72 @@ body
 /* ---- Certificate END ------------------------------------------------*/
 
 
+/* ---- reviews START ------------------------------------------------*/
+.reviews
+	padding: 30px 0
+	background: url('../img/revbg.jpg')
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	background-attachment: fixed
+	overflow: hidden
+	h2
+		text-transform: uppercase
+		text-align: center
+		color: $main_color
+		border-bottom: 2px solid $main_green
+		border-right: 2px solid $main_green
+		background: #fff
+		padding: 10px
+		display: block
+		width: 80%
+		margin-left: auto
+		margin-right: auto
+		i
+			color: $main_green
+	&_img-wrap
+		padding: 15px
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
+			width: 250px
+			box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.75)
+	&_text-cont
+		display: block
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+	&_text-wrap
+		padding: 10px 20px
+		background: rgba(255,255,255, .9)
+		margin-bottom: 15px
+		margin-top: 15px
+		transition: 0.5s
+		&:hover
+			transition: 0.5s
+			box-shadow: 10px 10px 0px 0px $main_green
+			background: white
+// Borders
+.bortl
+	border-top: 2px solid #005525
+	border-left: 2px solid #005525
+	box-shadow: inset 2px 2px 0px 0px $main_green
+
+.borb
+	border-bottom: 2px solid #005525
+	box-shadow: 0px 2px 0px 0px $main_green
+
+.borrb
+	border-right: 2px solid #005525
+	border-bottom: 2px solid #005525
+	box-shadow: 2px 2px 0px 0px $main_green
+
+
+/* ---- reviews END ------------------------------------------------*/	
+
+
 /* ---- contacts Start ------------------------------------------------*/
 .contacts
 	padding: 30px 0
@@ -563,6 +630,12 @@ body
 		border-right: 2px solid $main_green
 		background: rgba(255,255,255, .4)
 		padding: 20px
+		a
+			font-size: 20px
+			transition: 0.3s
+			&:hover
+				transition: 0.3s
+				color: $main_green
 /* ---- contacts END ------------------------------------------------*/	
 
 

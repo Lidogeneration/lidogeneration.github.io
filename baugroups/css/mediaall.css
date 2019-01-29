@@ -49,6 +49,14 @@
 {
 
 }
+@media only screen and (max-width : 768px)
+{
+  .bortl , .borb, .borrb
+  {
+    border: none;
+    box-shadow: none;
+  }
+}
 @media only screen and (max-width : 576px)
 {
   .head

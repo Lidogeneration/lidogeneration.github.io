@@ -119,7 +119,7 @@ body a:hover {
 }
 
 .active span {
-  color: #008238;
+  color: #008238 !important;
 }
 
 .active:before {
@@ -750,6 +750,7 @@ body a:hover {
 
 .steps .text-wrap h4 {
   text-transform: uppercase;
+  font-size: 1.1rem;
 }
 
 .steps .text-wrap .icon {
@@ -807,6 +808,100 @@ body a:hover {
 }
 
 /* ---- Certificate END ------------------------------------------------*/
+/* ---- reviews START ------------------------------------------------*/
+.reviews {
+  padding: 30px 0;
+  background: url("../img/revbg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.reviews h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #373a3d;
+  border-bottom: 2px solid #008238;
+  border-right: 2px solid #008238;
+  background: #fff;
+  padding: 10px;
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews h2 i {
+  color: #008238;
+}
+
+.reviews_img-wrap {
+  padding: 15px;
+}
+
+.reviews_img-wrap img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.75);
+          box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.75);
+}
+
+.reviews_text-cont {
+  display: block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews_text-wrap {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 15px;
+  margin-top: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.reviews_text-wrap:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 10px 10px 0px 0px #008238;
+          box-shadow: 10px 10px 0px 0px #008238;
+  background: white;
+}
+
+.bortl {
+  border-top: 2px solid #005525;
+  border-left: 2px solid #005525;
+  -webkit-box-shadow: inset 2px 2px 0px 0px #008238;
+          box-shadow: inset 2px 2px 0px 0px #008238;
+}
+
+.borb {
+  border-bottom: 2px solid #005525;
+  -webkit-box-shadow: 0px 2px 0px 0px #008238;
+          box-shadow: 0px 2px 0px 0px #008238;
+}
+
+.borrb {
+  border-right: 2px solid #005525;
+  border-bottom: 2px solid #005525;
+  -webkit-box-shadow: 2px 2px 0px 0px #008238;
+          box-shadow: 2px 2px 0px 0px #008238;
+}
+
+/* ---- reviews END ------------------------------------------------*/
 /* ---- contacts Start ------------------------------------------------*/
 .contacts {
   padding: 30px 0;
@@ -842,6 +937,18 @@ body a:hover {
   border-right: 2px solid #008238;
   background: rgba(255, 255, 255, 0.4);
   padding: 20px;
+}
+
+.contacts .border-cont a {
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts .border-cont a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #008238;
 }
 
 /* ---- contacts END ------------------------------------------------*/
