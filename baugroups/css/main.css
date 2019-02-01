@@ -493,15 +493,19 @@ body a:hover {
   text-transform: uppercase;
 }
 
-.product_text-wrap p {
-  font-size: 18px;
-}
-
 .product_img-wrap {
   background: #fff;
 }
 
 /* --- Prod END ------------------------------------------------*/
+/* --- Advantage big start------------------------------------------------*/
+.adwantage-big {
+  padding: 30px 0;
+  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* --- Advantage big end ------------------------------------------------*/
 /* ---- Button Start ------------------------------------------------*/
 .head-button {
   background: #fff;
