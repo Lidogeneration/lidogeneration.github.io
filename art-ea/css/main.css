@@ -304,6 +304,8 @@ body a:hover {
 
 /* --- About END ------------------------------------------------*/
 /* --- product Start ------------------------------------------------*/
+/* --- product END ------------------------------------------------*/
+/* --- product new START ------------------------------------------------*/
 .product {
   padding: 50px 0;
   overflow: hidden;
@@ -328,53 +330,74 @@ body a:hover {
   border: 1px solid #1b1b1b;
 }
 
-.product .img-wrap {
-  margin-top: 30px;
+.product .text-wrap-left h3 {
   position: relative;
+}
+
+.product .text-wrap-left h3:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: -10%;
+  right: 85%;
+  border-bottom: 2px solid #E9204F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.product .text-wrap-left h3:hover:before {
+  ransition: 0.3s;
+  left: 3%;
+  right: 80%;
+}
+
+.product .text-wrap-left h3 span {
+  color: #E9204F;
+}
+
+.product .text-wrap-right h3 {
+  position: relative;
+}
+
+.product .text-wrap-right h3:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 85%;
+  right: -10%;
+  border-bottom: 2px solid #E9204F;
+  z-index: 999;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.product .text-wrap-right h3:hover:before {
+  ransition: 0.3s;
+  right: 3%;
+  left: 80%;
+}
+
+.product .text-wrap-right h3 span {
+  color: #E9204F;
+}
+
+.product .img-wrap {
   overflow: hidden;
 }
 
 .product .img-wrap img {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product .img-wrap img:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.product .img-wrap .txt-wrap {
-  max-width: 320px;
-  top: 5%;
-  left: 10%;
-  position: absolute;
-  line-height: 1.1em;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-}
-
-.product .img-wrap .txt-wrap h4 {
-  color: #888;
-}
-
-.product .img-wrap .txt-wrap h3 {
-  text-transform: uppercase;
-}
-
-.product .img-wrap .txt-wrap hr {
-  width: 250px;
-  display: block;
-  margin: 0;
-  margin-right: auto;
-  color: #E9204F;
-  background-color: #E9204F;
-  border-bottom: 1px solid #E9204F;
-}
-
-/* --- product Start ------------------------------------------------*/
+/* --- product new END ------------------------------------------------*/
 /* --- Other START ------------------------------------------------*/
 .row-eq-height {
   display: -webkit-box;

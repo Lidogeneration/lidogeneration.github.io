@@ -191,7 +191,58 @@ body
 /* --- About END ------------------------------------------------*/		
 
 
+
 /* --- product Start ------------------------------------------------*/	
+// .product
+// 	padding: 50px 0
+// 	overflow: hidden
+// 	h2
+// 		text-align: center
+// 		color: $main_red
+// 		position: relative
+// 		display: block
+// 		max-width: 300px
+// 		margin-left: auto
+// 		margin-right: auto
+// 		&:before
+// 			position: absolute
+// 			content: ''
+// 			left: 30%
+// 			right: 0
+// 			bottom: -15%
+// 			border: 1px solid $main_color
+// 	.img-wrap
+// 		margin-top: 30px
+// 		position: relative
+// 		overflow: hidden
+// 		img
+// 			transition: 0.5s
+// 			&:hover
+// 				transition: 0.5s
+// 				transform: scale(1.1)
+// 		.txt-wrap
+// 			max-width: 320px
+// 			top: 5%
+// 			left: 10%
+// 			position: absolute
+// 			line-height: 1.1em
+// 			background: rgba(255,255,255, .7)
+// 			padding: 10px
+// 			h4
+// 				color: $main_color_light
+// 			h3
+// 				text-transform: uppercase
+// 			hr
+// 				width: 250px
+// 				display: block
+// 				margin: 0
+// 				margin-right: auto
+// 				color: $main_red
+// 				background-color: $main_red
+// 				border-bottom: 1px solid $main_red
+
+/* --- product END ------------------------------------------------*/	
+/* --- product new START ------------------------------------------------*/	
 .product
 	padding: 50px 0
 	overflow: hidden
@@ -210,39 +261,51 @@ body
 			right: 0
 			bottom: -15%
 			border: 1px solid $main_color
+	.text-wrap-left
+		h3
+			position: relative
+			&:before
+				position: absolute
+				content: ''
+				bottom: 0
+				left: -10%
+				right: 85%
+				border-bottom: 2px solid $main_red
+				transition: 0.3s
+			&:hover
+				&:before
+					ransition: 0.3s
+					left: 3%
+					right: 80%				
+			span
+				color: $main_red
+	.text-wrap-right
+		h3
+			position: relative
+			&:before
+				position: absolute
+				content: ''
+				bottom: 0
+				left: 85%
+				right: -10%
+				border-bottom: 2px solid $main_red
+				z-index: 999
+				transition: 0.3s
+			&:hover
+				&:before
+					ransition: 0.3s
+					right: 3%
+					left: 80%
+			span
+				color: $main_red
 	.img-wrap
-		margin-top: 30px
-		position: relative
 		overflow: hidden
 		img
-			transition: 0.5s
+			transition: 0.3s
 			&:hover
-				transition: 0.5s
+				transition: 0.3s
 				transform: scale(1.1)
-		.txt-wrap
-			max-width: 320px
-			top: 5%
-			left: 10%
-			position: absolute
-			line-height: 1.1em
-			background: rgba(255,255,255, .7)
-			padding: 10px
-			h4
-				color: $main_color_light
-			h3
-				text-transform: uppercase
-			hr
-				width: 250px
-				display: block
-				margin: 0
-				margin-right: auto
-				color: $main_red
-				background-color: $main_red
-				border-bottom: 1px solid $main_red
-
-/* --- product Start ------------------------------------------------*/	
-
-
+/* --- product new END ------------------------------------------------*/	
 
 /* --- Other START ------------------------------------------------*/	
 .row-eq-height
