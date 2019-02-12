@@ -1,0 +1,99 @@
+@media only screen and (min-width : 1500px) 
+{
+
+}
+
+
+
+@media only screen and (max-width : 1800px)
+{
+
+}
+@media only screen and (max-width : 1600px)
+{
+
+}
+@media only screen and (max-width : 1450px)
+{
+
+}
+@media only screen and (max-width : 1280px)
+{
+
+}
+@media only screen and (max-width : 1200px)
+{
+
+}
+@media only screen and (max-width : 1140px) 
+{
+
+}
+
+@media only screen and (max-width : 992px)
+{
+  .headerCont .text-wrap
+  {
+    background: rgba(27, 167, 185, .8);
+    color: #fff;
+    text-align: center;
+  }
+  .headerCont .text-wrap span
+  {
+    color: #fff;
+  }
+  .headerCont .text-wrap:before {
+    display: none;
+  }
+  .openFormHor input
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width : 800px)
+{
+
+}
+@media only screen and (max-width : 960px)
+{
+
+}
+@media only screen and (max-width : 768px)
+{
+
+}
+@media only screen and (max-width : 576px)
+{
+  .headerCont .text-wrap h1
+  {
+    font-size: 2rem;
+  }
+  .headerCont .text-wrap h3
+  {
+    font-size: 1.5rem;
+  }
+  .headerCont .text-wrap ul
+  {
+    padding: 0;
+  }
+  .headerCont .text-wrap ul li
+  {
+    font-size: 16px;
+  }
+
+  .about .text-wrap ul{
+  margin: 0;
+  }
+}
+@media only screen and (max-width : 450px)
+{
+
+
+}
+@media only screen and (max-width : 400px)
+{
+
+
+}
