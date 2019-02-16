@@ -5,8 +5,8 @@ $email = $_POST['email'];
 $order = $_POST['order'];
 
 
-$token ="673296501:AAGqaJFWTX9R6Q86DxjbLbMV__1T8OaY7Rc";
-$chat_id ="-271936991";
+$token ="577537053:AAFkjkBlfH5OMRxoFSJ25XL--SfHHiSUl9k";
+$chat_id ="-378178700";
 $arr = array(
 	'Имя: ' => $name,
 	'Телефон: ' => $phone,
@@ -20,18 +20,21 @@ foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };
 
+
+mail("art-color@i.ua", "Новая заявка с сайта Art-Color", " Имя: ".$name.". \n Телефон: ".$phone.". \n Цель: ".$order, "\r\n");
+
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 $file = "./files/offer.pdf"; // файл
 $mailTo = $_POST['email']; // кому
-$from = "Baugroup"; // от кого
-$subject = "Прайс-лист от Baugroup"; // тема письма
-$message = "Предоставляем прайс-лист от Baugroup.<br/>
+$from = "Art-color"; // от кого
+$subject = "Прайс-лист от Art-color"; // тема письма
+$message = "Предоставляем прайс-лист от Art-color.<br/>
   <br/>
- С уважением, Baugroup! <br/>
-Tel: +380 67 288 9691<br/>
-mail: Baugroup<br/>
-https://baugroups.com.ua/"; // текст письма
+ С уважением, Art-color! <br/>
+Tel: +(380) 66 805 7770<br/>
+mail: art-color@i.ua<br/>
+http://art-color.org/"; // текст письма
 $r = sendMailAttachment($mailTo, $from, $subject, $message, $file); // отправка письма c вложением
 echo ($r)?'Письмо отправлено':'Ошибка. Письмо не отправлено!';
 //$r = sendMailAttachment($mailTo, $from, $subject, $message); // отправка письма без вложения

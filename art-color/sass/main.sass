@@ -29,7 +29,8 @@ body
 .hidden
 	display: none
 
-
+section
+	overflow: hidden
 /* --- Navbar START ------------------------------------------------*/
 .navbar
 	transition: 0.5s
@@ -423,6 +424,8 @@ body
 
 
 .buttonHead
+	outline: none
+	border: none
 	background: $main_orange
 	text-transform: uppercase
 	padding: 10px 20px 10px 20px
@@ -433,6 +436,10 @@ body
 	text-align: center
 	margin-left: auto
 	margin-right: auto
+	&:focus
+		outline: none
+	&:disabled
+		background: $main_bg
 	span
 		color: $main_white
 		transition: 0.3s
@@ -457,6 +464,7 @@ body
 		span
 			transition: 0.3s
 			mix-blend-mode: screen
+
 
 .buttonAdw
 	display: inline-block
@@ -494,6 +502,37 @@ body
 /* --- BUttons END ------------------------------------------------*/
 
 /* --- Form START ------------------------------------------------*/
+.footer-form-hidden
+	position: relative
+	padding: 20px
+	text-align: center
+	width: 700px
+	max-width: 100%
+	display: block
+	margin-left: auto
+	margin-right: auto
+	border: 2px solid $main_orange
+	border-radius: 33px
+	background: rgba(255,255,255, .9)
+	input
+		width: 250px
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin-top: 20px
+		margin-bottom: 20px
+		text-align: center
+		border-radius: 33px
+		border: 1px solid $main_bg
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+		padding: 10px
+		outline: none
+	button
+	 &:focus
+		 outline: none
+
+
+
 .mainForm
 	padding: 20px
 	text-align: center
@@ -506,7 +545,7 @@ body
 	border-radius: 33px
 	background: rgba(255,255,255, .9)
 	input
-		width: 50%
+		width: 250px
 		display: block
 		margin-left: auto
 		margin-right: auto

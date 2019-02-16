@@ -63,11 +63,12 @@ $('.card-my').on('click',function(){
 });
 
 $(document).ready(function(){
-    $('.order-main').submit(function(e){
+    $('.order-main, .mainForm').submit(function(e){
         e.preventDefault();
+        $.magnificPopup.close(); 
         $.ajax({
             type:'POST',
-            url:'tele_order.php',
+            url:'http://generationleadstudio.com/wp-content/themes/lead/tele_order.php',
             data: $(this).serialize()
         }).done(function(){
                 $.magnificPopup.close(); 
@@ -81,6 +82,7 @@ $(document).ready(function(){
     $(document).ready(function(){
         $('.order-email').submit(function(e){
             e.preventDefault();
+            $.magnificPopup.close(); 
             $.ajax({
                 type:'POST',
                 url:'tele_and_send_price.php',
@@ -124,6 +126,7 @@ $(document).ready(function(){
             removalDelay: 300,
             mainClass: 'my-mfp-slide-bottom'
         });
+
 
  const nameScroll = document.getElementById('input_order');
   function setNameScroll(namescroll="-") {

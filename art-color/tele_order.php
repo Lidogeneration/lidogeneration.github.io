@@ -5,17 +5,21 @@ $order = $_POST['order'];
 
 
 
-$token ="673296501:AAGqaJFWTX9R6Q86DxjbLbMV__1T8OaY7Rc";
-$chat_id ="-271936991";
+$token ="577537053:AAFkjkBlfH5OMRxoFSJ25XL--SfHHiSUl9k";
+$chat_id ="-378178700";
 $arr = array(
 	'Имя: ' => $name,
 	'Телефон: ' => $phone,
 	'Цель: ' => $order,
 );
 
+
+
 foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };
+
+mail("art-color@i.ua", "Новая заявка с сайта Art-Color", " Имя: ".$name.". \n Телефон: ".$phone.". \n Цель: ".$order, "\r\n");
 
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 ?>
