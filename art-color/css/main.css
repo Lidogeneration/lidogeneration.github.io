@@ -539,7 +539,7 @@ section {
 /* --- OpenForm END ------------------------------------------------*/
 /* --- contacts START ------------------------------------------------*/
 .contacts {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   background: #F5F5F5;
   text-align: center;
 }
@@ -582,6 +582,32 @@ section {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #8b9dc3;
+}
+
+.contacts .map {
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.contacts .map iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.contacts .dev {
+  padding: 5px;
+}
+
+.contacts .dev a {
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts .dev a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #9E9E9E;
 }
 
 /* --- contacts END ------------------------------------------------*/
