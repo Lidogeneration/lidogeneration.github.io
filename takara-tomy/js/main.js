@@ -154,3 +154,12 @@ $(document).ready(function(){
       nameScroll.value = namescroll;
     };
 
+
+    $('.slickWrap').slick({
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        autoplay: true,
+        cssEase: 'linear'
+      });

@@ -27,7 +27,9 @@ body
 		&:hover
 			text-decoration: none
 			color: $main_color
-
+section
+	padding: 50px 0
+	overflow: hidden
 .hidden
 	display: none
 
@@ -187,7 +189,6 @@ body
 
 /* --- priceSmall Start ------------------------------------------------*/	
 .priceSmall
-	padding: 50px 0
 	background-image: radial-gradient(circle, #09c7e0, #10bfd6, #15b7cc, #18afc3, #1ba7b9);
 	color: $main_white
 	border-top: 2px solid $main_bg
@@ -205,33 +206,11 @@ body
 
 /* --- About Start ------------------------------------------------*/	
 .about
-	overflow: hidden
-	padding: 50px 0
 	min-height: 50vh
 	background: url('../img/about.jpg')
 	background-size: 100% 100%
 	background-repeat: no-repeat
 	background-attachment: fixed
-	h2
-		text-align: center
-		text-transform: uppercase
-		display: block
-		width: 250px
-		padding: 5px
-		position: relative
-		background: $main_bg_light1
-		border: 2px solid $main_bg
-		transition: 1s
-		&:before
-			background: $main_bg_light2
-			box-shadow: 0 0 15px $main_bg_light2
-			content: ''
-			position: absolute
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
-			transition: 0.5s
 	.img-wrap
 		border: 2px solid $main_bg
 	.text-wrap
@@ -270,9 +249,7 @@ body
 
 
 /* --- product Start ------------------------------------------------*/	
-.product
-	overflow: hidden
-	padding: 50px 0
+.productHit
 	background: url('../img/prodbg.jpg')
 	background-size: 100% 100%
 	background-repeat: no-repeat
@@ -280,26 +257,6 @@ body
 	border-top: 1px solid $main_bg
 	.prod-wrap
 		border: 1px solid $main_bg
-	h2
-		text-align: center
-		text-transform: uppercase
-		display: block
-		width: 250px
-		padding: 5px
-		position: relative
-		background: $main_bg_light1
-		border: 2px solid $main_bg
-		transition: 1s
-		&:before
-			background: $main_bg_light2
-			box-shadow: 0 0 15px $main_bg_light2
-			content: ''
-			position: absolute
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
-			transition: 0.5s
 	.row
 		border: 2px solid $main_bg
 		padding: 30px 0 30px 0
@@ -370,7 +327,218 @@ body
 /* --- product END ------------------------------------------------*/	
 
 
+/* --- advantage START ------------------------------------------------*/	
+.advantage
+	background: #fff
+	border-top: 1px solid $main_bg
+	border-bottom: 1px solid $main_bg
+	.textWrap
+		background: $main_bg_light
+		height: 100%
+		border: 2px solid $main_bg
+		transition: 0.5s
+		&:hover
+			transition: 0.5s
+			box-shadow: 0 0 15px $main_bg_light8
+			h4
+				transition: 0.3s
+				color: $main_yellow
+		h4
+			transition: 0.3s
+			background: $main_bg
+			color: $main_white
+			padding: 10px 5px 10px 5px
+			margin: 0
+			text-transform: uppercase
+		p
+			color: $main_white
+			background: $main_bg_light
+			margin: 0
+			padding: 10px 5px 10px 5px
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- steps start ------------------------------------------------*/	
+.steps
+	background: url('../img/stepsBg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-attachment: fixed
+	.textWrap
+		display: block
+		height: 100%
+		text-align: center
+		border: 2px solid $main_bg
+		background: url('../img/stepsL.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		padding: 30px 10px 20px 10px
+		transition: 0.3s
+		box-shadow: 0 0 5px rgba(0,0,0,.5)
+		&:hover
+			transition: 0.3s
+			transform: scale(1.03)
+			i
+				transition: 0.3s
+				margin-left: 10px
+			p
+				transition: 0.3s
+				background: $main_bg
+				color: $main_white
+				span
+					transition: 0.3s
+					color: $main_yellow
+		hr
+			background-color: $main_bg
+		i
+			transition: 0.3s
+			color: $main_bg
+		h4
+			text-transform: uppercase
+			font-size: 1.1rem
+		.icon
+			font-size: 36px
+			margin: 10px
+		p
+			transition: 0.3s
+			padding: 20px 10px 20px 10px
+			font-size: 20px
+			background: $main_bg_light2
+			span
+				transition: 0.3s
+				text-transform: uppercase
+				color: $main_bg
+/* --- steps END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/	
+.reviews
+	background: url('../img/headerbg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-attachment: fixed
+	.slick-prev
+		z-index: 999
+		left: 5%
+		position: absolute
+		width: 30px
+		height: 30px
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-left: 3px solid $main_red
+			border-top: 3px solid $main_red
+			color: #000
+			transform: rotate(-45deg)
+	.slick-next
+		z-index: 999
+		right: 5%
+		position: absolute
+		width: 30px
+		height: 30px
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-right: 3px solid $main_red
+			border-top: 3px solid $main_red
+			color: #000
+			transform: rotate(45deg)
+	.slickWrap
+		position: relative
+		margin-top: 20px
+		.slickCont
+			&:focus
+				outline: none
+			img
+				width: 300px
+				display: block
+				margin-left: auto
+				margin-right: auto
+/* --- reviews END ------------------------------------------------*/	
+
+
+/* --- contacts START ------------------------------------------------*/
+.contacts
+	background-image: linear-gradient(to right bottom, #1ba7b9, #18afc3, #15b7cc, #10bfd6, #09c7e0)
+	color: $main_white
+	a
+		transition: 0.3s
+		color: $main_white
+		&:hover
+			transition: 0.3s
+			color: $main_red
+		i
+			margin-right: 15px
+			font-size: 30px
+	h4
+		margin-bottom: 5px
+	.borderRight
+		border-right: 2px solid $main_white
+	p
+		text-indent: 20px
+		margin: 0
+		a
+			color: $main_white
+/* --- contacts END ------------------------------------------------*/	
+
+
 /* --- Form Start ------------------------------------------------*/	
+.openFormVer
+	text-align: center
+	display: block
+	margin-left: auto
+	margin-right: auto
+	width: 300px
+	max-width: 100%
+	padding: 20px 10px 20px 10px
+	border: 2px solid $main_white
+	h3
+		font-size: 1.6rem
+	input
+		text-align: center
+		padding: 5px
+		width: 90%
+		margin: 10px 0 10px 0
+		border: none
+		box-shadow: 0 0 5px rgba(0,0,0,.5)
+	.buttonOpenForm
+		margin: 20px
+		cursor: pointer
+		border: none
+		font-size: 20px
+		text-transform: uppercase
+		padding: 5px 30px
+		background: rgba(255,255,255, .4)
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+		position: relative
+		color: red
+		transition: 0.3s
+		span
+			transition: 0.3s
+			color: white
+			mix-blend-mode: screen
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: $main_bg
+			transform-origin: bottom
+			transform: scaleY(0)
+		&:hover
+			&:before
+				transform: scaleY(1)
 .openFormHor
 	width: 100%
 	display: block
@@ -459,6 +627,37 @@ body
 	&:hover
 		&:before
 			transform: scaleY(1)
+
+.buttonMainDark
+	margin: 20px
+	cursor: pointer
+	border: none
+	font-size: 20px
+	text-transform: uppercase
+	padding: 10px 30px
+	background: $main_bg_light
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+	position: relative
+	color: red
+	transition: 0.3s
+	span
+		transition: 0.3s
+		color: white
+		mix-blend-mode: screen
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_bg
+		transform-origin: bottom
+		transform: scaleY(0)
+	&:hover
+		&:before
+			transform: scaleY(1)				
 /* --- Button End ------------------------------------------------*/		
 
 
@@ -475,3 +674,22 @@ body
 	display: flex
 	flex-wrap: wrap
 
+.myH2
+	text-align: center
+	text-transform: uppercase
+	display: inline-block
+	padding: 5px
+	position: relative
+	background: $main_bg_light1
+	border: 2px solid $main_bg
+	transition: 1s
+	&:before
+		background: $main_bg_light2
+		box-shadow: 0 0 15px $main_bg_light2
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		transition: 0.5s
