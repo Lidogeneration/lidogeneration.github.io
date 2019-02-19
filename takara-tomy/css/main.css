@@ -43,7 +43,7 @@ section {
 }
 
 .navbar img {
-  width: 100px;
+  width: 80px;
   margin: 0;
   padding: 0;
 }
@@ -235,11 +235,15 @@ section {
 .headerCont {
   overflow: hidden;
   padding: 30px 0;
-  min-height: 100vh;
+  min-height: 77vh;
   background: url("../img/headerbg.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.headerCont h1 {
+  font-size: 2rem;
 }
 
 .headerCont h1, .headerCont h3 {
@@ -247,7 +251,7 @@ section {
 }
 
 .headerCont h1 span, .headerCont h3 span {
-  color: #1BA7B9;
+  color: #fff;
 }
 
 .headerCont .container-fluid {
@@ -258,7 +262,7 @@ section {
   padding: 10px;
   position: relative;
   border: 2px solid #1BA7B9;
-  background: rgba(27, 167, 185, 0.1);
+  background: rgba(27, 167, 185, 0.2);
 }
 
 .headerCont .text-wrap:before {
@@ -297,6 +301,7 @@ section {
 /* --- Header END ------------------------------------------------*/
 /* --- priceSmall Start ------------------------------------------------*/
 .priceSmall {
+  min-height: 20vh;
   background-image: radial-gradient(circle, #09c7e0, #10bfd6, #15b7cc, #18afc3, #1ba7b9);
   color: #fff;
   border-top: 2px solid #1BA7B9;
@@ -726,6 +731,83 @@ section {
 }
 
 /* --- reviews END ------------------------------------------------*/
+/* --- together start ------------------------------------------------*/
+.together {
+  background: #fff;
+}
+
+.together img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.together .wrapper {
+  -webkit-box-shadow: 7px 7px 3px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 7px 7px 3px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+  height: 100%;
+  background: #09c7e0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.together .wrapper h5 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.together .wrapper:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #1BA7B9;
+}
+
+.together .wrapper:hover h5 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #F9F871;
+}
+
+.together .wrapper:hover .logoCont, .together .wrapper:hover .imgCont {
+  border: 2px solid #1BA7B9;
+}
+
+.together .wrapper .logoCont {
+  border: 2px solid #09c7e0;
+  padding: 20px;
+}
+
+.together .wrapper .logoCont img {
+  width: 70%;
+  border: 2px solid #09c7e0;
+}
+
+.together .wrapper .imgCont {
+  border: 2px solid #09c7e0;
+  overflow: hidden;
+}
+
+.together .wrapper .imgCont img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.together .wrapper .imgCont img:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.together .wrapper .textCont {
+  padding: 10px;
+  color: #fff;
+}
+
+/* --- together END ------------------------------------------------*/
 /* --- contacts START ------------------------------------------------*/
 .contacts {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#1ba7b9), color-stop(#18afc3), color-stop(#15b7cc), color-stop(#10bfd6), to(#09c7e0));
@@ -1034,6 +1116,7 @@ section {
 }
 
 .myH2 {
+  font-size: 1.8rem;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;

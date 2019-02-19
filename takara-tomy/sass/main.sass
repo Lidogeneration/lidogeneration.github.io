@@ -41,7 +41,7 @@ section
 	.navbar-brand
 		padding: 0
 	img
-		width: 100px
+		width: 80px
 		margin: 0
 		padding: 0
 	.anim
@@ -142,23 +142,26 @@ section
 /* --- Header start------------------------------------------------*/	
 .headerCont
 	overflow: hidden
-	padding: 30px 0
-	min-height: 100vh
+	padding: 30px 0 
+	min-height: 77vh
 	background: url('../img/headerbg.jpg')
 	background-size: 100% 100%
 	background-repeat: no-repeat
 	background-attachment: fixed
+	h1
+		font-size: 2rem
+
 	h1, h3
 		text-transform: uppercase
 		span
-			color: $main_bg
+			color: $main_white
 	.container-fluid
 		margin-top: 40px
 	.text-wrap
 		padding: 10px
 		position: relative
 		border: 2px solid $main_bg
-		background: $main_bg_light1
+		background: $main_bg_light2
 		&:before
 			background: $main_bg_light1
 			box-shadow: 0 0 15px $main_bg_light1
@@ -189,6 +192,7 @@ section
 
 /* --- priceSmall Start ------------------------------------------------*/	
 .priceSmall
+	min-height: 20vh
 	background-image: radial-gradient(circle, #09c7e0, #10bfd6, #15b7cc, #18afc3, #1ba7b9);
 	color: $main_white
 	border-top: 2px solid $main_bg
@@ -465,6 +469,55 @@ section
 /* --- reviews END ------------------------------------------------*/	
 
 
+/* --- together start ------------------------------------------------*/
+.together
+	background: $main_white
+	img
+		max-width: 100%
+		height: auto
+		display: block
+		margin-left: auto
+		margin-right: auto
+	.wrapper
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.3)
+		display: block
+		height: 100%
+		background: $main_bg_light
+		transition: 0.5s
+		h5
+			transition: 0.5s
+		&:hover
+			transition: 0.5s
+			background: $main_bg
+			h5
+				transition: 0.5s
+				color: $main_yellow
+			.logoCont, .imgCont
+				border: 2px solid $main_bg
+		.logoCont
+			border: 2px solid $main_bg_light
+			padding: 20px
+			img
+				width: 70%
+				border: 2px solid $main_bg_light
+		.imgCont
+			border: 2px solid $main_bg_light
+			overflow: hidden
+			img
+				transition: 0.5s
+				&:hover
+					transition: 0.5s
+					transform: scale(1.1)
+		.textCont
+			padding: 10px
+			color: $main_white
+/* --- together END ------------------------------------------------*/	
+
+
+
+
+
+
 /* --- contacts START ------------------------------------------------*/
 .contacts
 	background-image: linear-gradient(to right bottom, #1ba7b9, #18afc3, #15b7cc, #10bfd6, #09c7e0)
@@ -675,6 +728,7 @@ section
 	flex-wrap: wrap
 
 .myH2
+	font-size: 1.8rem
 	text-align: center
 	text-transform: uppercase
 	display: inline-block
