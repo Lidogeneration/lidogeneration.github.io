@@ -32,9 +32,13 @@
 
 @media only screen and (max-width : 992px)
 {
+  .openformScroll h2
+  {
+    font-size: 1.6rem;
+  }
   .contacts .borderRight 
   {
-    border: none
+    border: none;
   }
   .headerCont .text-wrap
   {
