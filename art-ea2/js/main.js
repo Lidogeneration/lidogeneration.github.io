@@ -30,7 +30,7 @@ $('.nav-link-new').mPageScroll2id();
 $('.mpopup').magnificPopup();
 
 
-$('.phoneidcl').inputmask('+38(999) 999-99-99',{ "oncomplete": function(){ 
+$('.phoneidcl').inputmask('+99(999) 999-99-99',{ "oncomplete": function(){ 
     $(".disbutt").prop("disabled", false);
 }, "onincomplete": function(){ $(".disbutt").prop("disabled", true); } });
 
@@ -94,22 +94,20 @@ $(document).ready(function(){
             });
         });
 
-    $(document).ready(function() {
-        $('.slick-cert').magnificPopup({
-            delegate: 'a',
+        $('.image-popup-no-margins').magnificPopup({
             type: 'image',
-            tLoading: 'Loading image #%curr%...',
-            mainClass: 'mfp-img-mobile',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-            },
+            closeOnContentClick: true,
+            closeBtnInside: false,
+            fixedContentPos: true,
+            mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
             image: {
-                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                verticalFit: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300 // don't foget to change the duration also in CSS
             }
         });
-    });
 
 
  const nameScroll = document.getElementById('input_order');
