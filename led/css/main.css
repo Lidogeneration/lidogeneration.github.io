@@ -1,0 +1,617 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background: #fff;
+  color: #262626;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+  color: #262626;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #262626;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0);
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar img {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .anim {
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .anim span {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.navbar .anim:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #fff;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.navbar .anim:hover span {
+  color: #954B4B;
+}
+
+.navbar .anim:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar p {
+  font-size: 24px;
+  text-shadow: 0px 0px 20px #fff;
+  color: #fff;
+  margin: 0;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.navbar .navbar-toggler-icon {
+  background: url("../img/burger-light.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.navbar .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.navbar .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.active {
+  position: relative;
+  overflow: hidden;
+}
+
+.active span {
+  color: #954B4B !important;
+}
+
+.active:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #262626;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: animate 7s linear infinite;
+          animation: animate 7s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+.fixed-nav {
+  background: rgba(255, 255, 255, 0.9);
+  color: #737272;
+  padding: .4rem .4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.fixed-nav .anim span {
+  color: #262626;
+}
+
+.fixed-nav p {
+  color: #262626;
+}
+
+.fixed-nav .navbar-toggler-icon {
+  background: url("../img/burger-black.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.fixed-nav .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.fixed-nav .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fixed-nav .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #262626;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* --- Navbar END ------------------------------------------------*/
+/* --- Header start------------------------------------------------*/
+.headerCont {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1;
+}
+
+.headerCont .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  z-index: -1;
+}
+
+.headerCont .slider .image {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  background-size: cover;
+  height: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.headerCont .slider .bg01 {
+  background: url("../img/headbg01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headerCont .slider .bg02 {
+  background: url("../img/headbg02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headerCont .slider .bg03 {
+  background: url("../img/headbg03.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headerCont .slider .activet {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  height: 100%;
+}
+
+.headerCont .slider .deactive {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  height: 0;
+}
+
+.headerCont .contWrap {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.headerCont .contWrap .container-fluid {
+  text-align: center;
+}
+
+.headerCont .contWrap .container-fluid h1 {
+  max-width: 100%;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  border: 5px solid #fff;
+  padding: 20px 30px 20px 30px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 0px 10px 5px white;
+          box-shadow: 0px 0px 10px 5px white;
+}
+
+.headerCont .contWrap .container-fluid ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  border: 2px solid #fff;
+}
+
+.headerCont .contWrap .container-fluid ul li {
+  margin: 10px;
+  margin-bottom: 15px;
+  padding: 5px 5px 5px 10px;
+  font-size: 24px;
+  color: #262626;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid #262626;
+  -webkit-box-shadow: 0px 0px 20px 5px white;
+          box-shadow: 0px 0px 20px 5px white;
+}
+
+.headerCont .contWrap .textActionWrap h3 {
+  text-shadow: 0px 0px 10px #954B4B;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* --- Header END ------------------------------------------------*/
+.tmp {
+  min-height: 100vh;
+}
+
+/* --- coutNumm Start ------------------------------------------------*/
+.coutNumm {
+  background: #e6e6e6;
+}
+
+.coutNumm .counter {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.coutNumm .textWrap {
+  color: #737272;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* --- coutNumm END ------------------------------------------------*/
+/* --- About Start ------------------------------------------------*/
+.about {
+  background: #f8f8f8;
+}
+
+.about h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about hr {
+  width: 50%;
+  background-color: #954B4B;
+  border: 1px solid #954B4B;
+}
+
+.about p {
+  text-indent: 20px;
+}
+
+.about img {
+  border: 2px solid #fff;
+  -webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* --- About END ------------------------------------------------*/
+/* --- product Start ------------------------------------------------*/
+.product h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.product h3 span {
+  color: #954B4B;
+}
+
+.product .wrapper {
+  padding: 0;
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+  background: #e6e6e6;
+}
+
+.product .wrapper .textWrap hr {
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.product .wrapper .textWrap h4 {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.product .wrapper .textWrap p {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+/* --- product END ------------------------------------------------*/
+/* --- ProductAll Start ------------------------------------------------*/
+.productAll {
+  background: #f8f8f8;
+}
+
+.productAll h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.productAll .wrapper {
+  padding: 0;
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+  background: #e6e6e6;
+}
+
+.productAll .wrapper .textWrap hr {
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.productAll .wrapper .textWrap h4 {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.productAll .wrapper .textWrap p {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+/* --- ProductAll END ------------------------------------------------*/
+/* --- Button Start ------------------------------------------------*/
+.mainButton {
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 10px 20px 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+
+.mainButton span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #262626;
+  mix-blend-mode: multiply;
+}
+
+.mainButton:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e6e6e6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.mainButton:hover {
+  -webkit-box-shadow: 0px 0px 10px 5px white;
+          box-shadow: 0px 0px 10px 5px white;
+}
+
+.mainButton:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.prodButton {
+  display: inline-block;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 10px 15px 10px 15px;
+  background: #954B4B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+
+.prodButton span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  mix-blend-mode: screen;
+}
+
+.prodButton:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e6e6e6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.prodButton:hover {
+  -webkit-box-shadow: 0px 0px 10px 5px white;
+          box-shadow: 0px 0px 10px 5px white;
+}
+
+.prodButton:hover span {
+  color: #262626;
+  mix-blend-mode: multiply;
+}
+
+.prodButton:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* --- Button END ------------------------------------------------*/
+/* --- Other START ------------------------------------------------*/
+.row-eq-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=main.css.map */

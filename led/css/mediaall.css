@@ -1,0 +1,88 @@
+@media only screen and (min-width : 1500px) 
+{
+
+}
+@media only screen and (max-height : 530px) 
+{
+  .headerCont
+  {
+    padding-top: 75px;
+  }
+}
+
+
+
+@media only screen and (max-width : 1800px)
+{
+
+}
+@media only screen and (max-width : 1600px)
+{
+
+}
+@media only screen and (max-width : 1450px)
+{
+
+}
+@media only screen and (max-width : 1280px)
+{
+
+}
+@media only screen and (max-width : 1200px)
+{
+  .navbar{
+    transition: 0.5s;
+    background: rgba(255,255,255, .9);
+  }
+}
+@media only screen and (max-width : 1140px) 
+{
+
+}
+
+@media only screen and (max-width : 992px)
+{
+  .headerCont .container-fluid h1 
+  {
+    font-size: 2rem;
+  }
+
+}
+@media only screen and (max-width : 800px)
+{
+
+}
+@media only screen and (max-width : 960px)
+{
+
+}
+@media only screen and (max-width : 768px)
+{
+
+}
+@media only screen and (max-width : 576px)
+{
+  .coutNumm .textWrap 
+  {
+    font-size: 14px;
+  }
+  .headerCont .container-fluid h1 
+  {
+    padding: 10px !important;
+    font-size: 1.8rem;
+  }
+  .headerCont .contWrap .container-fluid ul li
+  {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width : 450px)
+{
+
+
+}
+@media only screen and (max-width : 400px)
+{
+
+
+}
