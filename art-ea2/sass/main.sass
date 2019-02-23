@@ -3,7 +3,7 @@ $main_color_light: #888
 $main_white: #fff
 $main_red: #E9204F
 $main_bg: #f6f6f6
-
+$main_bg_dark: #f2f2f2
 
 
 body
@@ -166,6 +166,14 @@ section
 		padding: 10px
 /* --- Header END ------------------------------------------------*/
 
+/* --- aboutMain END ------------------------------------------------*/
+.aboutMain
+	background: $main_bg_dark
+	.imgWrap
+		img
+			box-shadow: 0 4px 5px 0 #737272
+/* --- aboutMain END ------------------------------------------------*/
+
 
 /* --- Contacts Start ------------------------------------------------*/
 .contacts
@@ -203,13 +211,13 @@ section
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
-.imgWrap
-	border: 5px solid $main_white
-	padding: 10px
-	background: rgba(255,255,255, .5)
-	img
+	.imgWrap
 		border: 5px solid $main_white
-		background: $main_bg
+		padding: 10px
+		background: rgba(255,255,255, .5)
+		img
+			border: 5px solid $main_white
+			background: $main_bg
 .textWrap
 	margin-bottom: 20px
 /* --- About END ------------------------------------------------*/

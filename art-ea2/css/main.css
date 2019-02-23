@@ -275,6 +275,17 @@ section {
 }
 
 /* --- Header END ------------------------------------------------*/
+/* --- aboutMain END ------------------------------------------------*/
+.aboutMain {
+  background: #f2f2f2;
+}
+
+.aboutMain .imgWrap img {
+  -webkit-box-shadow: 0 4px 5px 0 #737272;
+          box-shadow: 0 4px 5px 0 #737272;
+}
+
+/* --- aboutMain END ------------------------------------------------*/
 /* --- Contacts Start ------------------------------------------------*/
 .contacts {
   background: #f6f6f6;
@@ -328,13 +339,13 @@ section {
   background-repeat: no-repeat;
 }
 
-.imgWrap {
+.about .imgWrap {
   border: 5px solid #fff;
   padding: 10px;
   background: rgba(255, 255, 255, 0.5);
 }
 
-.imgWrap img {
+.about .imgWrap img {
   border: 5px solid #fff;
   background: #f6f6f6;
 }
