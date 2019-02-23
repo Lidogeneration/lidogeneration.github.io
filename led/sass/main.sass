@@ -56,7 +56,7 @@ section
 			left: 0
 			width: 100%
 			height: 100%
-			border-bottom: 2px solid $main_white
+			border-bottom: 2px solid $main_yellow
 			transform-origin: right
 			transform: scaleX(0)
 		&:hover
@@ -221,7 +221,7 @@ section
 					font-size: 24px
 					color: $main_color
 					background: rgba(255,255,255, .7)
-					border-bottom: 2px solid $main_color
+					border-bottom: 2px solid $main_yellow
 					box-shadow: 0px 0px 20px 5px rgba(255,255,255,1)
 		.textActionWrap
 			h3
@@ -243,8 +243,6 @@ section
 
 /* --- Header END ------------------------------------------------*/	
 
-.tmp
-	min-height: 100vh
 /* --- coutNumm Start ------------------------------------------------*/
 .coutNumm
 	background: $main_bg
@@ -341,6 +339,213 @@ section
 /* --- ProductAll END ------------------------------------------------*/	
 
 
+/* --- dropshipping Start ------------------------------------------------*/	
+.dropshipping
+	background: url('../img/dropBg.jpg') center no-repeat
+	background-size: cover
+	background-attachment: fixed
+	.textWrap
+		text-align: center
+		h3
+			text-align: center
+			text-transform: uppercase
+		h4
+			text-align: center
+			margin-bottom: 20px
+		background: rgba(255,255,255, .5)
+		padding: 20px 20px 30px 20px
+		border: 5px solid $main_white
+		box-shadow: 0 2px 3px 0 $main_color_light
+		position: relative
+		transition: 0.5s
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			right: -100%
+			top: 30%
+			width: 100%
+			height: 10px
+			border-top: 10px solid $main_white
+		&:after
+			transition: 0.5s
+			position: absolute
+			content: ''
+			right: -100%
+			bottom: 30%
+			width: 100%
+			height: 10px
+			border-bottom: 10px solid $main_white
+		p
+			text-align: left
+			padding: 0
+			margin: 0 0 10px 0
+			text-indent: 20px
+		ul
+			text-align: left
+	.imgWrap
+		box-shadow: 0 2px 3px 0 $main_color_light
+		border: 5px solid $main_white
+		transition: 0.5s
+/* --- dropshipping END ------------------------------------------------*/	
+
+
+
+
+/* --- action END ------------------------------------------------*/
+.action
+	border-top: 2px solid $main_white
+	border-bottom: 2px solid $main_white
+	min-height: 50vh
+	background: url('../img/actionBg.jpg') center no-repeat
+	background-size: cover
+	background-attachment: fixed
+	text-align: center
+	box-shadow: inset 0px 0px 5px 3px $main_white
+	.textWrap
+		padding: 20px
+		h2,h3
+			background: $main_yellow
+			display: block
+			color: $main_white
+			padding: 15px 30px 15px 30px
+			text-transform: uppercase
+			margin-bottom: 20px
+			box-shadow: 7px 7px 0px 0px $main_white
+	.imgWrap
+		border: 5px solid $main_white
+		position: relative
+		box-shadow: 0 2px 3px 0 $main_color_light
+		img
+			max-width: 100%
+			height: auto
+		.bestP
+			position: absolute
+			bottom: 2%
+			left: 0
+			img
+				display: block
+				margin-right: auto
+				width: 50%
+/* --- action END ------------------------------------------------*/	
+
+
+/* --- advantage Start ------------------------------------------------*/	
+.advantage
+	background: $main_bg_light
+	.adwWrap
+		box-shadow: 0 2px 3px 0 $main_color_light
+		width: 300px
+		max-width: 100%
+		display: block
+		text-align: center
+		border: 5px solid $main_bg
+		margin-bottom: 20px
+		p
+			font-weight: bold
+			background: $main_bg
+			margin: 0
+			padding: 10px 5px 10px 5px
+			text-transform: uppercase
+	.imgMain
+		img
+			box-shadow: 0 2px 3px 0 $main_color_light
+			display: block
+			margin-left: auto
+			margin-right: auto
+			border: 5px solid $main_bg
+			position: relative
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/
+.reviews
+	background: $main_bg
+	img
+		max-width: 100%
+		height: auto
+		display: block
+		margin-left: auto
+		margin-right: auto
+		box-shadow: 0 2px 3px 0 $main_color_light
+	h3
+		text-align: center
+		text-transform: uppercase
+	.sliderRew
+		padding: 15px
+		outline: none
+		border: 5px solid $main_white
+		&:focus
+			outline: none
+		.sliderRewCont
+			padding: 15px
+			outline: none
+			h4
+				margin-top: 10px
+			&:focus
+				outline: none
+	.slick-prev
+		z-index: 999
+		position: absolute
+		width: 30px
+		height: 30px
+		left: -5%
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-left: 4px solid $main_white
+			border-top: 4px solid $main_white
+			color: #000
+			transform: rotate(-45deg)
+	.slick-next
+		z-index: 999
+		position: absolute
+		width: 30px
+		height: 30px
+		right: -5%
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-right: 4px solid $main_white
+			border-top: 4px solid $main_white
+			color: #000
+			transform: rotate(45deg)
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+.contacts
+	background: url('../img/contBg.jpg') top center no-repeat
+	background-size: cover
+	.textWrap
+		box-shadow: 0 2px 3px 0 $main_color_light
+		background: rgba(255,255,255, .7)
+		padding: 10px
+		a
+			display: block
+		i
+			font-size: 20px
+			margin-right: 10px
+			color: $main_yellow
+		.fbinst
+			font-size: 30px
+	iframe
+		box-shadow: 0 2px 3px 0 $main_color_light
+		width: 100%
+		height: 300px
+/* --- contacts END ------------------------------------------------*/
+
+
+
 /* --- Button Start ------------------------------------------------*/
 .mainButton
 	text-transform: uppercase
@@ -399,8 +604,54 @@ section
 			mix-blend-mode: multiply
 		&:before
 			transform: scaleX(1)
-
+.actionButton
+	display: inline-block
+	text-transform: uppercase
+	box-shadow: 7px 7px 0px 0px $main_white
+	padding: 10px 30px 10px 30px
+	background: $main_yellow
+	transition: 0.5s
+	position: relative
+	font-size: 20px
+	span
+		transition: 0.5s
+		color: $main_white
+		mix-blend-mode: screen
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_bg
+		transition: 0.5s
+		transform: scaleX(0)
+		transform-origin: left
+	&:hover
+		box-shadow: 0px 0px 10px 5px rgba(255,255,255,1)
+		span
+			color: $main_color
+			mix-blend-mode: multiply
+		&:before
+			transform: scaleX(1)
 /* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+.formOpen
+	box-shadow: 0 2px 3px 0 $main_color_light
+	text-align: center
+	padding: 20px 15px 20px 15px
+	width: 300px
+	max-width: 100%
+	background: $main_bg
+	input
+		padding: 10px 5px 10px 5px
+		width: 100%
+		text-align: center
+		margin-bottom: 15px
+/* --- Form END ------------------------------------------------*/	
 
 
 /* --- Other START ------------------------------------------------*/	

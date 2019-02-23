@@ -53,7 +53,7 @@ $(function() {
 jQuery(document).ready(function($) {
         $('.counter').counterUp({
                 delay: 5,
-                time: 1000
+                time: 2000
         });
 });
 
@@ -146,3 +146,13 @@ window.onresize = function()
         navBarMy.classList.add('fixed-nav');
     }
 }
+
+$('.sliderRew').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 5000,
+    adaptiveHeight: true
+  });

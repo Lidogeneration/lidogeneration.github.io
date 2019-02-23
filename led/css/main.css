@@ -71,7 +71,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #954B4B;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transform: scaleX(0);
@@ -360,7 +360,7 @@ section {
   font-size: 24px;
   color: #262626;
   background: rgba(255, 255, 255, 0.7);
-  border-bottom: 2px solid #262626;
+  border-bottom: 2px solid #954B4B;
   -webkit-box-shadow: 0px 0px 20px 5px white;
           box-shadow: 0px 0px 20px 5px white;
 }
@@ -373,10 +373,6 @@ section {
 }
 
 /* --- Header END ------------------------------------------------*/
-.tmp {
-  min-height: 100vh;
-}
-
 /* --- coutNumm Start ------------------------------------------------*/
 .coutNumm {
   background: #e6e6e6;
@@ -512,6 +508,290 @@ section {
 }
 
 /* --- ProductAll END ------------------------------------------------*/
+/* --- dropshipping Start ------------------------------------------------*/
+.dropshipping {
+  background: url("../img/dropBg.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.dropshipping .textWrap {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 20px 30px 20px;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.dropshipping .textWrap h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dropshipping .textWrap h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dropshipping .textWrap:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  right: -100%;
+  top: 30%;
+  width: 100%;
+  height: 10px;
+  border-top: 10px solid #fff;
+}
+
+.dropshipping .textWrap:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  right: -100%;
+  bottom: 30%;
+  width: 100%;
+  height: 10px;
+  border-bottom: 10px solid #fff;
+}
+
+.dropshipping .textWrap p {
+  text-align: left;
+  padding: 0;
+  margin: 0 0 10px 0;
+  text-indent: 20px;
+}
+
+.dropshipping .textWrap ul {
+  text-align: left;
+}
+
+.dropshipping .imgWrap {
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+  border: 5px solid #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* --- dropshipping END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+.action {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  min-height: 50vh;
+  background: url("../img/actionBg.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  -webkit-box-shadow: inset 0px 0px 5px 3px #fff;
+          box-shadow: inset 0px 0px 5px 3px #fff;
+}
+
+.action .textWrap {
+  padding: 20px;
+}
+
+.action .textWrap h2, .action .textWrap h3 {
+  background: #954B4B;
+  display: block;
+  color: #fff;
+  padding: 15px 30px 15px 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 7px 7px 0px 0px #fff;
+          box-shadow: 7px 7px 0px 0px #fff;
+}
+
+.action .imgWrap {
+  border: 5px solid #fff;
+  position: relative;
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+}
+
+.action .imgWrap img {
+  max-width: 100%;
+  height: auto;
+}
+
+.action .imgWrap .bestP {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+}
+
+.action .imgWrap .bestP img {
+  display: block;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* --- action END ------------------------------------------------*/
+/* --- advantage Start ------------------------------------------------*/
+.advantage {
+  background: #f8f8f8;
+}
+
+.advantage .adwWrap {
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+  width: 300px;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+  border: 5px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+
+.advantage .adwWrap p {
+  font-weight: bold;
+  background: #e6e6e6;
+  margin: 0;
+  padding: 10px 5px 10px 5px;
+  text-transform: uppercase;
+}
+
+.advantage .imgMain img {
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #e6e6e6;
+  position: relative;
+}
+
+/* --- advantage END ------------------------------------------------*/
+/* --- reviews Start ------------------------------------------------*/
+.reviews {
+  background: #e6e6e6;
+}
+
+.reviews img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+}
+
+.reviews h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviews .sliderRew {
+  padding: 15px;
+  outline: none;
+  border: 5px solid #fff;
+}
+
+.reviews .sliderRew:focus {
+  outline: none;
+}
+
+.reviews .sliderRew .sliderRewCont {
+  padding: 15px;
+  outline: none;
+}
+
+.reviews .sliderRew .sliderRewCont h4 {
+  margin-top: 10px;
+}
+
+.reviews .sliderRew .sliderRewCont:focus {
+  outline: none;
+}
+
+.reviews .slick-prev {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -5%;
+}
+
+.reviews .slick-prev:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid #fff;
+  border-top: 4px solid #fff;
+  color: #000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.reviews .slick-next {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -5%;
+}
+
+.reviews .slick-next:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #fff;
+  border-top: 4px solid #fff;
+  color: #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* --- reviews END ------------------------------------------------*/
+/* --- contacts Start ------------------------------------------------*/
+.contacts {
+  background: url("../img/contBg.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+.contacts .textWrap {
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+
+.contacts .textWrap a {
+  display: block;
+}
+
+.contacts .textWrap i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #954B4B;
+}
+
+.contacts .textWrap .fbinst {
+  font-size: 30px;
+}
+
+.contacts iframe {
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+  width: 100%;
+  height: 300px;
+}
+
+/* --- contacts END ------------------------------------------------*/
 /* --- Button Start ------------------------------------------------*/
 .mainButton {
   text-transform: uppercase;
@@ -605,7 +885,77 @@ section {
           transform: scaleX(1);
 }
 
+.actionButton {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-box-shadow: 7px 7px 0px 0px #fff;
+          box-shadow: 7px 7px 0px 0px #fff;
+  padding: 10px 30px 10px 30px;
+  background: #954B4B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  font-size: 20px;
+}
+
+.actionButton span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  mix-blend-mode: screen;
+}
+
+.actionButton:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e6e6e6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.actionButton:hover {
+  -webkit-box-shadow: 0px 0px 10px 5px white;
+          box-shadow: 0px 0px 10px 5px white;
+}
+
+.actionButton:hover span {
+  color: #262626;
+  mix-blend-mode: multiply;
+}
+
+.actionButton:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 /* --- Button END ------------------------------------------------*/
+/* --- Form START ------------------------------------------------*/
+.formOpen {
+  -webkit-box-shadow: 0 2px 3px 0 #737272;
+          box-shadow: 0 2px 3px 0 #737272;
+  text-align: center;
+  padding: 20px 15px 20px 15px;
+  width: 300px;
+  max-width: 100%;
+  background: #e6e6e6;
+}
+
+.formOpen input {
+  padding: 10px 5px 10px 5px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* --- Form END ------------------------------------------------*/
 /* --- Other START ------------------------------------------------*/
 .row-eq-height {
   display: -webkit-box;
