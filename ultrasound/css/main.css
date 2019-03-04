@@ -1,0 +1,478 @@
+body {
+  background: #55595c;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+  color: #111;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.done {
+  min-height: 100vh;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0);
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar img {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .anim {
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .anim span {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.navbar .anim:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #0084c7;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.navbar .anim:hover span {
+  color: #0084c7;
+}
+
+.navbar .anim:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar p {
+  font-size: 24px;
+  text-shadow: 0px 0px 20px #fff;
+  color: #fff;
+  margin: 0;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.navbar .navbar-toggler-icon {
+  background: url("../img/burger-light.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.navbar .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.navbar .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.active {
+  position: relative;
+  overflow: hidden;
+}
+
+.active span {
+  color: #0084c7 !important;
+}
+
+.active:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #111;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: animate 7s linear infinite;
+          animation: animate 7s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+.fixed-nav {
+  background: rgba(255, 255, 255, 0.9);
+  color: #55595c;
+  padding: .4rem .4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.fixed-nav .anim span {
+  color: #111;
+}
+
+.fixed-nav p {
+  color: #111;
+}
+
+.fixed-nav .navbar-toggler-icon {
+  background: url("../img/burger-black.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.fixed-nav .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.fixed-nav .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fixed-nav .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #111;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* --- Navbar END ------------------------------------------------*/
+/* --- headCont start------------------------------------------------*/
+/* --- headCont END ------------------------------------------------*/
+/* --- About Start ------------------------------------------------*/
+.headContT {
+  min-height: 100vh;
+  background: url("../img/headBG.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.headContT .textHwrap {
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+  background: #0084c7;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.headContT .textHwrap span {
+  mix-blend-mode: screen;
+}
+
+.headContT .textHwrap:before {
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  background: #fff;
+  position: absolute;
+  content: '';
+  top: -5%;
+  left: -2%;
+  width: 2%;
+  height: 110%;
+}
+
+.headContT .textHwrap hr {
+  width: 50%;
+  background-color: #fff;
+}
+
+.headContT .triggersWrap {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  background: #0084c7;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headContT .pWrap {
+  position: relative;
+  padding: 20px;
+  background: #0084c7;
+  color: #fff;
+}
+
+.headContT .pWrap hr {
+  width: 50%;
+  background-color: #fff;
+}
+
+.headContT .pWrap p {
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+}
+
+.headContT .pWrap h4 {
+  text-shadow: 3px 3px 0px #005781;
+  color: #fff;
+  text-align: center;
+}
+
+.headContT .pWrap h5 {
+  text-align: center;
+}
+
+.headContT .pWrap:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid #fff;
+}
+
+.headContT .img-wrap {
+  position: relative;
+}
+
+.headContT .img-wrap img {
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.2);
+          box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.2);
+}
+
+.headContT .img-wrap a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.headContT .img-wrap a i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #cc181e;
+  font-size: 70px;
+}
+
+.headContT .img-wrap a:hover i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: red;
+}
+
+/* --- About END ------------------------------------------------*/
+/* --- product Start ------------------------------------------------*/
+/* --- product END ------------------------------------------------*/
+/* --- ProductAll Start ------------------------------------------------*/
+/* --- ProductAll END ------------------------------------------------*/
+/* --- dropshipping Start ------------------------------------------------*/
+/* --- dropshipping END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- advantage Start ------------------------------------------------*/
+/* --- advantage END ------------------------------------------------*/
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+/* --- Button Start ------------------------------------------------*/
+.mainButton {
+  padding: 6px 16px 6px 16px;
+  border: 2px solid #fff;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  background: #fff;
+  position: relative;
+}
+
+.mainButton:before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #fff;
+}
+
+.mainButton:hover {
+  color: #0084c7;
+}
+
+.mainButton:hover:before {
+  border: 3px solid #0084c7;
+}
+
+/* --- Button END ------------------------------------------------*/
+/* --- Form START ------------------------------------------------*/
+/* --- Form END ------------------------------------------------*/
+/* --- Other START ------------------------------------------------*/
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+/*# sourceMappingURL=main.css.map */
