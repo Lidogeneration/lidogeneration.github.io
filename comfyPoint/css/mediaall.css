@@ -1,0 +1,109 @@
+@media only screen and (min-width : 1500px) 
+{
+
+}
+@media only screen and (max-height : 600px) 
+{
+  .head
+  {
+    padding-top: 75px;
+  }
+}
+
+
+
+@media only screen and (max-width : 1800px)
+{
+
+}
+@media only screen and (max-width : 1600px)
+{
+
+}
+@media only screen and (max-width : 1450px)
+{
+
+}
+@media only screen and (max-width : 1280px)
+{
+
+}
+@media only screen and (max-width : 1200px)
+{
+  .navbar{
+    transition: 0.5s;
+    background: rgba(255,255,255, .9);
+  }
+}
+@media only screen and (max-width : 1140px) 
+{
+
+}
+
+@media only screen and (max-width : 992px)
+{
+  .reviews .leftMain
+  {
+    width: 100%;
+  }
+  .reviews .rightMain
+  {
+    width: 100%;
+  }
+  h2
+  {
+    font-size: 1.6rem;
+  }
+  .delivery {
+    min-height: 895px;
+    background: url('../img/deliveryBgSmall.png') no-repeat top right;
+  }
+  .head ul 
+  {
+    padding: 0;
+  }
+  .how p 
+  {
+    font-size: 16px;
+  }
+
+}
+@media only screen and (max-width : 800px)
+{
+
+}
+@media only screen and (max-width : 960px)
+{
+
+}
+@media only screen and (max-width : 768px)
+{
+  .head .textWrap h1
+  {
+    font-size: 1.6rem;
+  }
+  .delivery
+  {
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+  }
+
+}
+@media only screen and (max-width : 576px)
+{
+  .reviews img
+  {
+    width: 90%;
+  }
+}
+@media only screen and (max-width : 450px)
+{
+
+
+}
+@media only screen and (max-width : 400px)
+{
+
+
+}

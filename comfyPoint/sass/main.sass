@@ -1,0 +1,481 @@
+$main_color: #363636
+$main_color_light: #999999
+$main_white: #fff
+$main_rgb: #0a1992
+$main_red: #db2d2e
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+
+
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, .9)
+	.navbar-brand
+		padding: 0
+	img
+		width: 140px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_color
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_red
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		text-shadow: 0px 0px 20px $main_white
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.anim
+		span
+			color: $main_color
+	p
+		color: $main_color
+	background: rgba(255,255,255, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- Header start------------------------------------------------*/	
+.head
+	padding-top: 75px;
+	min-height: 100vh
+	background: url('../img/headbg.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	background-attachment: fixed
+	.textWrap
+		padding: 20px 25px 20px 25px
+		color: $main_white
+		background: $main_red
+		position: relative
+		overflow: hidden
+		margin-bottom: 30px
+		h1
+			font-size: 2.4rem
+			text-align: center
+			text-transform: uppercase
+		img
+			width: 200px
+			display: block
+			margin-left: auto
+			margin-right: auto
+		.leftM
+			position: absolute
+			top: 0
+			left: 1%
+			width: 2%
+			background: #fff
+			height: 0
+			transition: 2s
+		.rightM
+			position: absolute
+			bottom: 0
+			right: 1%
+			width: 2%
+			background: #fff
+			height: 0
+			transition: 2s
+	ul
+		list-style: none
+		li
+			background:  rgba($main_white,.8)
+			padding: 5px
+			text-transform: uppercase
+			font-weight: bold
+			margin-bottom: 20px
+			border-bottom: 2px solid $main_color
+/* --- Header END ------------------------------------------------*/	
+
+
+/* --- About Start ------------------------------------------------*/
+.about
+	background: $main_bg_light
+	h2
+		text-align: center
+		display: inline-block
+		text-transform: uppercase
+		background: $main_red
+		padding: 10px
+		color: $main_white
+		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75)
+		margin-bottom: 20px
+	.textWrap	
+		text-align: left
+		overflow: hidden
+		ul
+			padding: 10px
+			list-style: none
+			border-right: 2px solid $main_color
+			li
+				font-size: 18px
+				padding: 10px
+				&:nth-child(odd)
+					background: $main_white
+				i
+					margin-right: 10px
+					color: $main_red
+	.imgWrap
+		position: relative
+		a
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			span
+				box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75)
+				background: $main_red
+				border-radius: 50%
+				display: block
+				width: 70px
+				height: 70px
+				border: 1px solid $main_red
+				position: relative
+				transition: 0.3s
+				&:after
+					transform: rotate(45deg)
+					position: absolute
+					content: ''
+					top: 25%
+					left: 15%
+					width: 35px
+					height: 35px
+					border-top: 3px solid $main_white
+					border-right: 3px solid $main_white
+				&:before
+					position: absolute
+					content: ''
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					border: 2px solid $main_white
+					border-radius: 50%
+					transition: 0.3s
+				&:hover
+					transition: 0.3s
+					box-shadow: 2px 2px 2px 0px rgba(0,0,0,0)
+					&:before
+						transition: 0.3s
+						border: 2px solid $main_red
+						top: -7px
+						left: -7px
+						right: -7px
+						bottom: -7px
+/* --- About END ------------------------------------------------*/	
+
+
+/* --- How Start ------------------------------------------------*/
+.how
+	h2
+		text-align: center
+		display: inline-block
+		text-transform: uppercase
+		background: $main_red
+		padding: 10px
+		color: $main_white
+		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75)
+		margin-bottom: 20px
+	p
+		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75)
+		font-size: 18px
+		background: $main_bg_light
+		padding: 15px 10px 15px 10px
+		text-indent: 20px
+		border: 2px solid $main_bg
+/* --- How END ------------------------------------------------*/	
+
+/* --- ProductAll Start ------------------------------------------------*/
+.adw
+	h2
+		text-align: center
+		display: inline-block
+		text-transform: uppercase
+		background: $main_red
+		padding: 10px
+		color: $main_white
+		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75)
+		margin-bottom: 20px
+	img
+		transition: 0.3s
+		border: 2px solid $main_white
+		&:hover
+			border: 2px solid $main_color
+/* --- ProductAll END ------------------------------------------------*/	
+
+
+/* --- delivery Start ------------------------------------------------*/	
+.delivery
+	width: 100%
+	min-height: 844px
+	background: url('../img/deliveryBg.png') no-repeat top center
+	h3
+		background: $main_red
+		padding: 10px
+		color: $main_white
+		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75)
+		margin-bottom: 20px
+/* --- delivery END ------------------------------------------------*/	
+
+
+
+
+
+
+/* --- reviews Start ------------------------------------------------*/
+.reviews
+	.leftMain
+		padding: 20px 10px 20px 10px
+		margin-right: auto
+		margin-left: auto
+		width: 60%
+		font-size: 22px
+		border: 2px solid $main_bg
+		background: $main_bg_light
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			bottom: 25%
+			right: -80%
+			width: 80%
+			height: 5px
+			background: $main_bg
+		&:after
+			position: absolute
+			content: ''
+			top: 25%
+			right: -80%
+			width: 80%
+			height: 5px
+			background: $main_bg	
+	.rightMain
+		padding: 20px 10px 20px 10px
+		margin-right: auto
+		margin-left: auto
+		width: 60%
+		font-size: 22px
+		border: 2px solid $main_bg
+		background: $main_bg_light
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			bottom: 25%
+			left: -100%
+			width: 100%
+			height: 5px
+			background: $main_bg
+		&:after
+			position: absolute
+			content: ''
+			top: 25%
+			left: -100%
+			width: 100%
+			height: 5px
+			background: $main_bg	
+	img
+		display: block
+		margin-left: auto
+		margin-right: auto
+		width: 80%
+		border: 2px solid $main_bg
+		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.4)
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+.contact
+	background: $main_bg
+	a
+		display: block
+		font-size: 20px
+		i
+			font-size: 20px
+			color: $main_red
+	.fbinst
+		font-size: 30px
+		margin-right: 10px
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.buttonDark
+	border: 1px solid $main_color
+	padding: 10px 15px 10px 15px
+	text-transform: uppercase
+	display: block
+	width: 200px
+	text-align: center
+	text-indent: 0
+	margin: auto
+	background: $main_bg
+	position: relative
+	span
+		mix-blend-mode: multiply
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_white
+		transition: 0.3s
+		transform: scaleX(0)
+		transform-origin: right
+	&:hover
+		&:before
+			transition: 0.3s
+			transform: scaleX(1)
+
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+.formOpen
+	position: relative
+	box-shadow: 0 2px 3px 0 $main_color_light
+	text-align: center
+	padding: 20px 15px 20px 15px
+	width: 300px
+	max-width: 100%
+	background: $main_white
+	input
+		padding: 10px 5px 10px 5px
+		width: 100%
+		text-align: center
+		margin-bottom: 15px
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+.zMain
+	z-index: 999
