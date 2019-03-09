@@ -463,13 +463,23 @@ section {
 }
 
 .how p {
+  text-align: center;
+  font-size: 32px;
   -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  font-size: 18px;
   background: #f8f8f8;
   padding: 15px 10px 15px 10px;
   text-indent: 20px;
   border: 2px solid #e6e6e6;
+}
+
+.how p a {
+  font-size: 16px;
+}
+
+.how img {
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* --- How END ------------------------------------------------*/
