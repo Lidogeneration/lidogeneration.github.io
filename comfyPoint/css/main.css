@@ -598,6 +598,98 @@ section {
 }
 
 /* --- reviews END ------------------------------------------------*/
+/* --- reviewsMore start ------------------------------------------------*/
+.reviewsMore {
+  background: #f8f8f8;
+}
+
+.reviewsMore img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0 2px 3px 0 #999999;
+          box-shadow: 0 2px 3px 0 #999999;
+}
+
+.reviewsMore h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviewsMore .sliderRew {
+  padding: 15px;
+  outline: none;
+  border: 5px solid #db2d2e;
+}
+
+.reviewsMore .sliderRew .sliderRewCont {
+  border: 5px solid #e6e6e6;
+}
+
+.reviewsMore .sliderRew:focus {
+  outline: none;
+}
+
+.reviewsMore .sliderRew .sliderRewCont {
+  padding: 15px;
+  outline: none;
+}
+
+.reviewsMore .sliderRew .sliderRewCont h4 {
+  margin-top: 10px;
+}
+
+.reviewsMore .sliderRew .sliderRewCont:focus {
+  outline: none;
+}
+
+.reviewsMore .slick-prev {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -5%;
+}
+
+.reviewsMore .slick-prev:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid #db2d2e;
+  border-top: 4px solid #db2d2e;
+  color: #000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.reviewsMore .slick-next {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -5%;
+}
+
+.reviewsMore .slick-next:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #db2d2e;
+  border-top: 4px solid #db2d2e;
+  color: #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* --- reviewsMore END ------------------------------------------------*/
 /* --- contacts Start ------------------------------------------------*/
 .contact {
   background: #e6e6e6;

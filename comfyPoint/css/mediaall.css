@@ -92,7 +92,19 @@
 }
 @media only screen and (max-width : 576px)
 {
+  .reviewsMore .slick-prev
+  {
+    left: 5%;
+  }
+  .reviewsMore .slick-next
+  {
+    right: 5%;
+  }
   .reviews img
+  {
+    width: 90%;
+  }
+  .reviewsMore img
   {
     width: 90%;
   }
