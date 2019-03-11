@@ -46,6 +46,9 @@
     padding: 10px;
     background: rgba(255,255,255, .9)
   }
+  .head h4 {
+    background: rgba(255,255,255, .9)
+  }
   .reviews .leftMain
   {
     width: 100%;

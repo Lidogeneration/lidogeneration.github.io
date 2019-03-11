@@ -359,6 +359,10 @@ section {
   color: #db2d2e;
 }
 
+.head h4 {
+  text-align: center;
+}
+
 /* --- Header END ------------------------------------------------*/
 /* --- firstAbout Start ------------------------------------------------*/
 .firstAbout ul {
