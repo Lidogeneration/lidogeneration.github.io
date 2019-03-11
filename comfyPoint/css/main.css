@@ -294,11 +294,24 @@ section {
   text-transform: uppercase;
 }
 
+.head .textWrap h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.head .textWrap hr {
+  width: 60%;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
 .head .textWrap img {
   width: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
 }
 
 .head .textWrap .leftM {
@@ -336,7 +349,33 @@ section {
   border-bottom: 2px solid #363636;
 }
 
+.head h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.head h3 span {
+  color: #db2d2e;
+}
+
 /* --- Header END ------------------------------------------------*/
+/* --- firstAbout Start ------------------------------------------------*/
+.firstAbout ul {
+  padding: 0;
+  list-style: none;
+}
+
+.firstAbout ul li {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 22px;
+  padding: 10px;
+  background: #f8f8f8;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+/* --- firstAbout END ------------------------------------------------*/
 /* --- About Start ------------------------------------------------*/
 .about {
   background: #f8f8f8;
@@ -754,6 +793,58 @@ section {
           transform: scaleX(1);
 }
 
+.buttonHeader {
+  border: 3px solid #db2d2e;
+  padding: 10px 15px 10px 15px;
+  text-transform: uppercase;
+  display: block;
+  width: 250px;
+  text-align: center;
+  text-indent: 0;
+  margin: auto;
+  background: #db2d2e;
+  position: relative;
+}
+
+.buttonHeader span {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+  mix-blend-mode: screen;
+}
+
+.buttonHeader:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.buttonHeader:hover span {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #363636;
+  mix-blend-mode: multiply;
+}
+
+.buttonHeader:hover:before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
 /* --- Button END ------------------------------------------------*/
 /* --- Form START ------------------------------------------------*/
 .formOpen {
@@ -778,5 +869,36 @@ section {
 /* --- Other START ------------------------------------------------*/
 .zMain {
   z-index: 999;
+}
+
+/*------- TIMER START --------------------*/
+#clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  color: #363636;
+}
+
+#clockdiv > div {
+  padding: 5px;
+  border-radius: 3px;
+  background: #db2d2e;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #fff;
+  display: inline-block;
+}
+
+#clockdiv .smalltext {
+  color: #fff;
+  padding-top: 5px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */

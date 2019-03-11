@@ -178,11 +178,20 @@ section
 			font-size: 2.4rem
 			text-align: center
 			text-transform: uppercase
+		h2
+			font-size: 1.8rem
+			text-transform: uppercase
+			text-align: center
+		hr
+			width: 60%
+			background-color: #fff
+			border: 1px solid $main_white
 		img
 			width: 200px
 			display: block
 			margin-left: auto
 			margin-right: auto
+			margin-bottom: 15px
 		.leftM
 			position: absolute
 			top: 0
@@ -208,9 +217,30 @@ section
 			font-weight: bold
 			margin-bottom: 20px
 			border-bottom: 2px solid $main_color
+	h3
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+		span
+			color: $main_red
 /* --- Header END ------------------------------------------------*/	
 
 
+/* --- firstAbout Start ------------------------------------------------*/
+.firstAbout
+	ul
+		padding: 0
+		list-style: none
+		li
+			text-align: center
+			margin-bottom: 15px
+			font-size: 22px
+			padding: 10px
+			background: $main_bg_light
+			border-bottom: 2px solid $main_bg
+/* --- firstAbout END ------------------------------------------------*/
+
+	
 /* --- About Start ------------------------------------------------*/
 .about
 	background: $main_bg_light
@@ -526,6 +556,42 @@ section
 			transition: 0.3s
 			transform: scaleX(1)
 
+.buttonHeader
+	border: 3px solid $main_red
+	padding: 10px 15px 10px 15px
+	text-transform: uppercase
+	display: block
+	width: 250px
+	text-align: center
+	text-indent: 0
+	margin: auto
+	background: $main_red
+	position: relative
+	span
+		transition: 0.3s
+		color: $main_white
+		mix-blend-mode: screen
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_white
+		transition: 0.3s
+		transform: scaleY(0)
+		transform-origin: top
+	&:hover
+		span
+			transition: 0.3s
+			color: $main_color
+			mix-blend-mode: multiply
+		&:before
+			transition: 0.3s
+			transform: scaleY(1)
 /* --- Button END ------------------------------------------------*/	
 
 
@@ -549,3 +615,30 @@ section
 /* --- Other START ------------------------------------------------*/	
 .zMain
 	z-index: 999
+
+
+/*------- TIMER START --------------------*/
+#clockdiv
+  font-family: sans-serif
+  color: #fff
+  display: inline-block
+  font-weight: 100
+  text-align: center
+  font-size: 30px
+  > div
+    padding: 5px
+    -webkit-border-radius: 3px
+    border-radius: 3px
+    background: $main_red
+    display: inline-block
+  div > span
+    padding: 15px
+    -webkit-border-radius: 3px
+    border-radius: 3px
+    background: $main_white
+    display: inline-block
+		color: $main_color
+		.smalltext
+			color: $main_white
+			padding-top: 5px
+			font-size: 16px
