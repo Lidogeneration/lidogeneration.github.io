@@ -160,17 +160,18 @@ section
 
 /* --- Header start------------------------------------------------*/	
 .head
-	padding-top: 75px;
+	padding-top: 75px
 	min-height: 100vh
-	background: url('../img/headbg.jpg')
-	background-position: center
-	background-size: cover
-	background-repeat: no-repeat
-	background-attachment: fixed
+	background: $main_bg
+	// background: url('../img/headbg.jpg')
+	// background-position: center
+	// background-size: cover
+	// background-repeat: no-repeat
+	// background-attachment: fixed
 	.textWrap
 		padding: 20px 25px 20px 25px
 		color: $main_white
-		background: $main_red
+		background: $main_bg_light
 		position: relative
 		overflow: hidden
 		margin-bottom: 30px
@@ -178,14 +179,16 @@ section
 			font-size: 2.4rem
 			text-align: center
 			text-transform: uppercase
+			color: $main_color
 		h2
+			color: $main_red
 			font-size: 1.8rem
 			text-transform: uppercase
 			text-align: center
 		hr
 			width: 60%
-			background-color: #fff
-			border: 1px solid $main_white
+			background-color: $main_bg
+			border: 1px solid $main_bg
 		img
 			width: 200px
 			display: block
@@ -197,7 +200,7 @@ section
 			top: 0
 			left: 1%
 			width: 2%
-			background: #fff
+			background: $main_bg
 			height: 0
 			transition: 2s
 		.rightM
@@ -205,12 +208,14 @@ section
 			bottom: 0
 			right: 1%
 			width: 2%
-			background: #fff
+			background: $main_bg
 			height: 0
 			transition: 2s
 	ul
+		padding: 0
 		list-style: none
 		li
+			text-align: center
 			background:  rgba($main_white,.8)
 			padding: 5px
 			text-transform: uppercase
@@ -225,11 +230,38 @@ section
 			color: $main_red
 	h4
 		text-align: center
+	.imgWrap, .imgWrapS
+		position: relative
+		.action-cont
+			position: absolute
+			top: 5%
+			left: 10%
+			img
+				width: 50%
 /* --- Header END ------------------------------------------------*/	
-
-
+.adwNew
+	text-align: center
+	.textWrap
+		background: $main_bg_light
+		padding: 5px 10px 5px 10px
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.4)
+		i
+			font-size: 40px
+			margin-right: 10px
+			color: $main_red
+		p
+			margin: 0
 /* --- firstAbout Start ------------------------------------------------*/
 .firstAbout
+	background: $main_white
+	img
+		background: $main_bg_light
+		border: 3px solid $main_bg
+		padding: 5px
 	ul
 		padding: 0
 		list-style: none
