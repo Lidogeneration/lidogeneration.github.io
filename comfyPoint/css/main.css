@@ -283,6 +283,7 @@ section {
 }
 
 .head .textWrap h1 {
+  font-weight: bold;
   font-size: 1.8rem;
   text-align: center;
   text-transform: uppercase;
@@ -290,6 +291,7 @@ section {
 }
 
 .head .textWrap h2 {
+  font-weight: bold;
   color: #db2d2e;
   font-size: 2.4rem;
   text-transform: uppercase;
@@ -335,14 +337,13 @@ section {
 .head ul {
   padding: 0;
   list-style: none;
+  margin-bottom: 2rem;
 }
 
 .head ul li {
   text-align: left;
   padding: 5px;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .head h3 {
@@ -355,7 +356,7 @@ section {
 
 .head h3 .smalltext {
   text-transform: none;
-  top: -20%;
+  top: -15%;
   left: 25%;
   font-size: 14px;
   position: absolute;
