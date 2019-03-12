@@ -160,9 +160,9 @@ section
 
 /* --- Header start------------------------------------------------*/	
 .head
-	padding-top: 75px
+	padding-top: 20px
 	min-height: 100vh
-	background: $main_bg
+	background: $main_white
 	// background: url('../img/headbg.jpg')
 	// background-position: center
 	// background-size: cover
@@ -170,19 +170,17 @@ section
 	// background-attachment: fixed
 	.textWrap
 		padding: 20px 25px 20px 25px
-		color: $main_white
-		background: $main_bg_light
 		position: relative
 		overflow: hidden
 		margin-bottom: 30px
 		h1
-			font-size: 2.4rem
+			font-size: 1.8rem
 			text-align: center
 			text-transform: uppercase
 			color: $main_color
 		h2
 			color: $main_red
-			font-size: 1.8rem
+			font-size: 2.4rem
 			text-transform: uppercase
 			text-align: center
 		hr
@@ -215,19 +213,27 @@ section
 		padding: 0
 		list-style: none
 		li
-			text-align: center
-			background:  rgba($main_white,.8)
+			text-align: left
 			padding: 5px
 			text-transform: uppercase
 			font-weight: bold
 			margin-bottom: 20px
-			border-bottom: 2px solid $main_color
 	h3
+		font-size: 1.4rem
 		text-align: center
 		text-transform: uppercase
 		font-weight: bold
+		position: relative
+		.smalltext
+			text-transform: none
+			top: -20%
+			left: 25%
+			font-size: 14px
+			position: absolute
+			color: $main_color
 		span
 			color: $main_red
+			font-size: 2rem
 	h4
 		text-align: center
 	.imgWrap, .imgWrapS
@@ -240,6 +246,7 @@ section
 				width: 50%
 /* --- Header END ------------------------------------------------*/	
 .adwNew
+	background: $main_bg
 	text-align: center
 	.textWrap
 		background: $main_bg_light

@@ -4,10 +4,7 @@
 }
 @media only screen and (max-height : 600px) 
 {
-  .head
-  {
-    padding-top: 75px;
-  }
+
 }
 
 
@@ -22,7 +19,10 @@
 }
 @media only screen and (max-width : 1450px)
 {
-
+  .head h3 .smalltext
+  {
+    left: 10%;
+  }
 }
 @media only screen and (max-width : 1280px)
 {
@@ -42,6 +42,10 @@
 
 @media only screen and (max-width : 992px)
 {
+  .head h3 .smalltext
+  {
+    left: 35%;
+  }
   .adwNew .textWrap
   {
     justify-content: start;
@@ -108,7 +112,10 @@
 }
 @media only screen and (max-width : 800px)
 {
-
+  .head h3 .smalltext
+  {
+    left: 30%;
+  }
 }
 @media only screen and (max-width : 960px)
 {
@@ -118,11 +125,11 @@
 {
   .head .textWrap h1
   {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .head .textWrap h2
   {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .delivery
   {
@@ -134,6 +141,15 @@
 }
 @media only screen and (max-width : 576px)
 {
+  .head ul li 
+  {
+    text-align: left;
+  }
+  .head h3 .smalltext
+  {
+    top: -5%;
+    left: 20%;
+  }
   .action-cont
   {
     top: 1%; 
@@ -167,6 +183,10 @@
 }
 @media only screen and (max-width : 400px)
 {
+  .head h3 .smalltext
+  {
+    left: 5%;
+  }
   #clockdiv
   {
     font-size: 20px;

@@ -95,12 +95,12 @@ const nameScrollEmail = document.getElementById('input_orderEmail');
 const nameScroll = document.getElementById('input_order');
 const customTextFormSpan = document.getElementById('customTextForm');
 
-  function setNameScroll(namescroll="-", customTextFormSpanF="Мы перезвоним!") {
+  function setNameScroll(namescroll, customTextFormSpanF) {
       nameScroll.value = namescroll;
       customTextFormSpan.textContent = customTextFormSpanF;
     };
 
-function setNameScrollEmail(namescrollEmail="-") {
+function setNameScrollEmail(namescrollEmail) {
     nameScrollEmail.value = namescrollEmail;
     };
 
@@ -125,13 +125,13 @@ function setNameScrollEmail(namescrollEmail="-") {
     setInterval( iterate, 7000 );
 
 
-let leftM = document.getElementById('leftMain');
-let rightM = document.getElementById('rightMain');
-function changeHeadText()
-{
-    leftM.style.height = 100+'%';
-    rightM.style.height = 100+'%';
-};
+// let leftM = document.getElementById('leftMain');
+// let rightM = document.getElementById('rightMain');
+// function changeHeadText()
+// {
+//     leftM.style.height = 100+'%';
+//     rightM.style.height = 100+'%';
+// };
 
 
 
@@ -139,7 +139,7 @@ let navBarMy = document.getElementById('nav');
 
 window.onload = function()
 {
-    changeHeadText();
+    // changeHeadText();
     if(window.innerWidth <= 1200)
     {
         AOS.init({
@@ -155,25 +155,25 @@ window.onload = function()
     }
 };
 
-window.onscroll = function () {
+// window.onscroll = function () {
     
-    if(document.documentElement.scrollTop > 0 || window.innerWidth <= 1200)
-    {
-        navBarMy.classList.add('fixed-nav');
-    }
-    else
-    {
-        navBarMy.classList.remove('fixed-nav');
-    }
-};
+//     if(document.documentElement.scrollTop > 0 || window.innerWidth <= 1200)
+//     {
+//         navBarMy.classList.add('fixed-nav');
+//     }
+//     else
+//     {
+//         navBarMy.classList.remove('fixed-nav');
+//     }
+// };
 
-window.onresize = function()
-{    
-    if(window.innerWidth <= 1200)
-    {
-        navBarMy.classList.add('fixed-nav');
-    }
-}
+// window.onresize = function()
+// {    
+//     if(window.innerWidth <= 1200)
+//     {
+//         navBarMy.classList.add('fixed-nav');
+//     }
+// }
 
 $('.sliderRew').slick({
     infinite: true,
@@ -213,44 +213,44 @@ $('.sliderRew').slick({
 });
 
 
-function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-      'total': t,
-      'days': days,
-      'hours': hours,
-      'minutes': minutes,
-      'seconds': seconds
-    };
-  }
+// function getTimeRemaining(endtime) {
+//     var t = Date.parse(endtime) - Date.parse(new Date());
+//     var seconds = Math.floor((t / 1000) % 60);
+//     var minutes = Math.floor((t / 1000 / 60) % 60);
+//     var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+//     var days = Math.floor(t / (1000 * 60 * 60 * 24));
+//     return {
+//       'total': t,
+//       'days': days,
+//       'hours': hours,
+//       'minutes': minutes,
+//       'seconds': seconds
+//     };
+//   }
   
-  function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector('.days');
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
+//   function initializeClock(id, endtime) {
+//     var clock = document.getElementById(id);
+//     var daysSpan = clock.querySelector('.days');
+//     var hoursSpan = clock.querySelector('.hours');
+//     var minutesSpan = clock.querySelector('.minutes');
+//     var secondsSpan = clock.querySelector('.seconds');
   
-    function updateClock() {
-      var t = getTimeRemaining(endtime);
+//     function updateClock() {
+//       var t = getTimeRemaining(endtime);
   
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+//       daysSpan.innerHTML = t.days;
+//       hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+//       minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+//       secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
   
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
-      }
-    }
+//       if (t.total <= 0) {
+//         clearInterval(timeinterval);
+//       }
+//     }
   
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-  }
-  var tl = new Date('2019/3/31 00:00:00');
-  var deadline = new Date(tl);
-  initializeClock('clockdiv', deadline);
+//     updateClock();
+//     var timeinterval = setInterval(updateClock, 1000);
+//   }
+//   var tl = new Date('2019/3/31 00:00:00');
+//   var deadline = new Date(tl);
+//   initializeClock('clockdiv', deadline);
