@@ -276,7 +276,7 @@ section
 		li
 			text-align: center
 			margin-bottom: 15px
-			font-size: 22px
+			font-size: 18px
 			padding: 10px
 			background: $main_bg_light
 			border-bottom: 2px solid $main_bg
@@ -550,9 +550,63 @@ section
 
 
 
+
+/* --- lastOffer START ------------------------------------------------*/	
+.lastOffer
+	h3
+		text-align: center
+		text-transform: uppercase
+	h4
+		font-size: 1.75rem
+		text-align: center
+		text-transform: uppercase
+		color: $main_red
+	.actionText
+		padding: 5px
+		background: $main_red
+		color: $main_white
+		h5
+			margin: 0
+			font-size: 16px
+		h3
+			font-size: 40px
+			font-stretch: ultra-condensed
+			margin: 0
+			margin-right: 5px
+	.actionWrapPrice
+		display: flex
+		justify-content: center 
+		flex-direction: row
+		align-items: center
+		padding: 20px 5px 5px 5px
+		h4
+			margin: 0
+		h5
+			margin: 0
+			margin-right: 10px
+			position: relative
+			span
+				position: absolute
+				top: -50%
+				left: 0
+				font-size: 11px
+	.imgWrap, .imgWrapS
+		position: relative
+		.action-cont
+			position: absolute
+			top: 5%
+			left: 10%
+			img
+				width: 45%
+/* --- lastOffer END ------------------------------------------------*/	
+
+
+
+
 /* --- contacts Start ------------------------------------------------*/
 .contact
-	background: $main_bg
+	padding: 20px
+	background: $main_bg_light
 	a
 		display: block
 		font-size: 20px
@@ -651,13 +705,20 @@ section
 		width: 100%
 		text-align: center
 		margin-bottom: 15px
+	.actionWrap
+		justify-content: center
+		.actionText
+			text-align: left
+			display: flex
+			align-items: center
 /* --- Form END ------------------------------------------------*/	
 
 
 /* --- Other START ------------------------------------------------*/	
 .zMain
 	z-index: 999
-
+.bgMainbg
+	background: $main_bg
 
 /*------- TIMER START --------------------*/
 #clockdiv
@@ -666,21 +727,17 @@ section
   display: inline-block
   font-weight: 100
   text-align: center
-  font-size: 30px
+  font-size: 26px
   > div
-    padding: 5px
-    -webkit-border-radius: 3px
-    border-radius: 3px
-    background: $main_red
+    padding: 0 5px 0 0
     display: inline-block
   div > span
-    padding: 15px
-    -webkit-border-radius: 3px
-    border-radius: 3px
+    padding: 0 5px 0 5px
     background: $main_white
     display: inline-block
 		color: $main_color
 		.smalltext
-			color: $main_white
-			padding-top: 5px
-			font-size: 16px
+			color: $main_color
+			font-size: 12px
+.wrapBord
+	border: 1px solid $main_red

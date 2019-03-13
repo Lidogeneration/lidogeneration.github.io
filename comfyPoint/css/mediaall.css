@@ -144,6 +144,18 @@
 }
 @media only screen and (max-width : 576px)
 {
+  .lastOffer h3
+  {
+    font-size: 1.4rem;
+  }
+  .lastOffer h4
+  {
+    font-size: 1.4rem;
+  }
+  .firstAbout ul li 
+  {
+    font-size: 16px;
+  }
   .head ul li 
   {
     text-align: left;
@@ -196,7 +208,7 @@
   }
   #clockdiv div > span
   {
-    padding: 15px;
+    padding: 7px;
   }
 
 }
