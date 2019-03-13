@@ -436,12 +436,11 @@ section {
 }
 
 .firstAbout ul li {
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 15px;
   font-size: 18px;
   padding: 10px;
-  background: #f8f8f8;
-  border-bottom: 2px solid #e6e6e6;
 }
 
 /* --- firstAbout END ------------------------------------------------*/
