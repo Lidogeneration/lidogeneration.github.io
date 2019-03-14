@@ -437,7 +437,7 @@ section {
 
 .firstAbout ul li {
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   margin-bottom: 15px;
   font-size: 18px;
   padding: 10px;
