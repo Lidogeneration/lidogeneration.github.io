@@ -126,6 +126,9 @@
 }
 @media only screen and (max-width : 768px)
 {
+  .reviews .sliderRewN .sliderRewContN img {
+    width: 70%;
+    }
   .head .textWrap h1
   {
     font-size: 1.3rem;
@@ -144,6 +147,14 @@
 }
 @media only screen and (max-width : 576px)
 {
+  .reviews .slick-prev
+  {
+    left: 5%;
+  }
+  .reviews .slick-next
+  {
+    right: 5%;
+  }
   .lastOffer h3
   {
     font-size: 1.4rem;

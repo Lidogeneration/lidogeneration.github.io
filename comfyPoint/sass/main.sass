@@ -423,63 +423,69 @@ section
 
 /* --- reviews Start ------------------------------------------------*/
 .reviews
-	.leftMain
-		padding: 20px 10px 20px 10px
-		margin-right: auto
-		margin-left: auto
-		width: 60%
-		font-size: 22px
-		border: 2px solid $main_bg
-		background: $main_bg_light
-		position: relative
-		&:before
-			position: absolute
-			content: ''
-			bottom: 25%
-			right: -80%
-			width: 80%
-			height: 5px
-			background: $main_bg
-		&:after
-			position: absolute
-			content: ''
-			top: 25%
-			right: -80%
-			width: 80%
-			height: 5px
-			background: $main_bg	
-	.rightMain
-		padding: 20px 10px 20px 10px
-		margin-right: auto
-		margin-left: auto
-		width: 60%
-		font-size: 22px
-		border: 2px solid $main_bg
-		background: $main_bg_light
-		position: relative
-		&:before
-			position: absolute
-			content: ''
-			bottom: 25%
-			left: -100%
-			width: 100%
-			height: 5px
-			background: $main_bg
-		&:after
-			position: absolute
-			content: ''
-			top: 25%
-			left: -100%
-			width: 100%
-			height: 5px
-			background: $main_bg	
+	background: $main_white
 	img
+		max-width: 100%
+		height: auto
 		display: block
 		margin-left: auto
 		margin-right: auto
-		width: 80%
-		border: 2px solid $main_bg
-		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.4)
+		box-shadow: 0 2px 3px 0 $main_color_light
+	h3
+		text-align: center
+		text-transform: uppercase
+	.sliderRew
+		padding: 15px
+		outline: none
+		border: 5px solid $main_white
+		&:focus
+			outline: none
+		.sliderRewCont
+			padding: 15px
+			outline: none
+			h4
+				margin-top: 10px
+			&:focus
+				outline: none
+	.slick-prev
+		z-index: 999
+		position: absolute
+		width: 30px
+		height: 30px
+		left: -5%
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-left: 4px solid $main_color
+			border-top: 4px solid $main_color
+			color: #000
+			transform: rotate(-45deg)
+	.slick-next
+		z-index: 999
+		position: absolute
+		width: 30px
+		height: 30px
+		right: -5%
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-right: 4px solid $main_color
+			border-top: 4px solid $main_color
+			color: #000
+			transform: rotate(45deg)
+
+ .sliderRewN
+	 .sliderRewContN
+		 img
+			 width: 90%
 /* --- reviews END ------------------------------------------------*/	
 
 /* --- reviewsMore start ------------------------------------------------*/	
