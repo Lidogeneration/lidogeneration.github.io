@@ -1,0 +1,552 @@
+$main_color: #111
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #cc2900
+$main_bg: #fafafa
+$main_bg_dark: #b3b3b3
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 30px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, 0)
+	.navbar-brand
+		padding: 0
+	img
+		width: 40px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_white
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_rgb
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.anim
+		span
+			color: $main_color
+	p
+		color: $main_color
+	background: rgba(255,255,255, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- headCont start------------------------------------------------*/	
+.FirstHead
+	min-height: 100vh
+	background: url('../img/headBG.jpg')
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	.textHeadWrap
+		color: $main_white
+		text-align: center
+		hr
+			background-color: $main_white
+			width: 80%
+		h1
+			text-transform: uppercase
+		h2
+			text-transform: uppercase
+		ul
+			background: rgba($main_color, .6)
+			padding: 10px 20px 10px 20px
+			border: 2px solid $main_rgb
+			margin-top: 10px
+			display: inline-block
+			list-style: none
+			text-align: left
+			box-shadow: 3px 3px 0px 0px rgba(255,255,255, .4)
+			li
+				text-transform: uppercase
+				margin-bottom: 10px
+				i
+					margin-right: 15px
+					color: $main_rgb
+/* --- headCont END ------------------------------------------------*/	
+
+/* --- priceSmall START ------------------------------------------------*/	
+.priceSmall
+	padding: 20px 0
+	background: $main_bg
+	color: $main_white
+	h3
+		color: $main_color
+		text-transform: uppercase
+		position: relative
+		i
+			color: $main_rgb
+		span
+			color: $main_rgb
+.openFormHor
+	width: 100%
+	display: block
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	input
+		font-size: 20px
+		margin: 20px
+		padding: 10px
+		text-align: center
+		border: none
+		border-bottom: 2px solid $main_rgb
+		border-left: 2px solid $main_rgb
+		outline: none
+		background: rgba(255,255,255, .9)
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+		transition: 0.3s
+		&:hover
+			transition: 0.3s
+			background: rgba(255,255,255, .2)
+	::placeholder
+			color: $main_color
+.buttonOpenForm
+	margin: 20px
+	font-size: 20px
+	text-transform: uppercase
+	border: 2px solid $main_rgb
+	padding: 10px 20px 10px 20px
+	transition: 0.5s
+	position: relative
+	cursor: pointer
+	span
+		transition: 0.5s
+		color: $main_color
+		mix-blend-mode: multiply
+	&:disabled
+		background: $main_bg_dark
+		cursor: default
+		&:hover
+			box-shadow: none
+			&:before
+				transform: scaleX(0)
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_bg_dark
+		transition: 0.5s
+		transform: scaleX(0)
+		transform-origin: left
+	&:hover
+		&:before
+			transform: scaleX(1)
+/* --- priceSmall END ------------------------------------------------*/		
+
+/* --- about Start ------------------------------------------------*/
+.about
+	hr
+		background-color: $main_rgb
+		border-bottom: 1px solid $main_rgb
+		width: 50%
+		display: inline-block
+	.textWrap
+		p
+			font-size: 18px
+	.imgWrap
+		box-shadow: 10px 10px 0px 0px $main_rgb
+/* --- about END ------------------------------------------------*/	
+
+
+/* --- product Start ------------------------------------------------*/
+.product
+	text-align: center
+	background: $main_bg
+	h3
+		text-transform: uppercase
+		text-align: center
+		display: inline-block
+		border-bottom: 2px solid $main_rgb
+		padding-bottom: 5px
+		margin: 15px
+	.prodWrap
+		box-shadow: 3px 3px 3px 0px rgba(0,0,0, .2)
+		text-align: center
+		padding: 10px
+		border: 2px solid $main_bg_dark
+		height: 100%
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 20px
+	.text-wrap
+		margin-top: 20px
+/* --- product END ------------------------------------------------*/	
+
+/* --- Delivery Start ------------------------------------------------*/	
+.delivery
+	width: 100%
+	min-height: 844px
+	background: url('../img/deliveryBg.png') no-repeat top center
+	h3
+		box-shadow: 3px 3px 3px 0px rgba(0,0,0, .2)
+		color: $main_rgb
+		border: 2px solid $main_rgb
+		padding: 10px 5px 10px 5px
+		text-align: center
+		background: $main_bg
+/* --- Delivery END ------------------------------------------------*/	
+
+
+
+
+
+/* --- advantage Start ------------------------------------------------*/	
+.advantage
+	background: url('../img/advbg01.jpg')
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	background-attachment: fixed
+	text-align: center
+	h3
+		color: $main_white
+		text-transform: uppercase
+		text-align: center
+		display: inline-block
+		border-bottom: 2px solid $main_rgb
+		padding-bottom: 5px
+		margin: 15px
+	.imgWrap
+		position: relative
+		border: 5px solid $main_white
+		img
+			width: 100%
+			display: block
+			margin-left: auto
+			margin-right: auto
+		&:before
+			position: absolute
+			content: ''
+			top: 5px
+			left: 5px
+			right: 5px
+			bottom: 5px
+			border: 5px solid $main_white
+	.adwFlex
+		display: flex
+		flex-wrap: wrap
+		align-content: space-around
+	.advWrap
+		background: #000
+		box-shadow: 10px 10px 0px 0px $main_rgb
+		p
+			color: $main_white
+			margin: 0
+			padding: 10px
+			font-size: 24px
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- steps start ------------------------------------------------*/	
+.steps
+	background: url('../img/stepsBg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-attachment: fixed
+	.textWrap
+		display: block
+		height: 100%
+		text-align: center
+		border: 2px solid $main_rgb
+		background: $main_bg
+		padding: 30px 10px 20px 10px
+		transition: 0.3s
+		&:hover
+			transition: 0.3s
+			transform: scale(1.03)
+			i
+				transition: 0.3s
+				margin-left: 10px
+			p
+				transition: 0.3s
+				background: $main_bg
+				color: $main_color_light
+				span
+					transition: 0.3s
+					color: $main_rgb
+		hr
+			background-color: $main_bg_dark
+			width: 80%
+			border: 1px solid $main_bg_dark
+		i
+			transition: 0.3s
+			color: $main_rgb
+		h4
+			text-transform: uppercase
+			font-size: 1.1rem
+		.icon
+			font-size: 36px
+			margin: 10px
+		p
+			transition: 0.3s
+			padding: 20px 10px 20px 10px
+			font-size: 20px
+			background: $main_bg
+			span
+				transition: 0.3s
+				text-transform: uppercase
+				color: $main_color
+/* --- steps END ------------------------------------------------*/	
+
+
+
+/* --- contacts START ------------------------------------------------*/
+.contacts
+	background: $main_bg_dark
+	color: $main_white
+	a
+		transition: 0.3s
+		color: $main_white
+		&:hover
+			transition: 0.3s
+			color: $main_rgb
+		i
+			margin-right: 15px
+			font-size: 30px
+	h4
+		margin-bottom: 5px
+	.borderRight
+		border-right: 2px solid $main_white
+	p
+		text-indent: 20px
+		margin: 0
+		a
+			color: $main_white
+/* --- contacts END ------------------------------------------------*/	
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainButton
+	margin: 20px
+	font-size: 20px
+	text-transform: uppercase
+	border: 2px solid $main_rgb
+	padding: 10px 20px 10px 20px
+	transition: 0.5s
+	position: relative
+	cursor: pointer
+	background: $main_bg
+	span
+		transition: 0.5s
+		color: $main_color
+		mix-blend-mode: multiply
+	&:disabled
+		background: $main_bg_dark
+		cursor: default
+		&:hover
+			box-shadow: none
+			&:before
+				transform: scaleX(0)
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_rgb
+		transition: 0.5s
+		transform: scaleX(0)
+		transform-origin: left
+	&:hover
+		span
+		&:before
+			transform: scaleX(1)
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/
+.openFormVer
+	text-align: center
+	display: block
+	margin-left: auto
+	margin-right: auto
+	width: 300px
+	max-width: 100%
+	padding: 20px 10px 20px 10px
+	border: 2px solid $main_white
+	h3
+		font-size: 1.6rem
+	input
+		text-align: center
+		padding: 5px
+		width: 90%
+		margin: 10px 0 10px 0
+		border: none
+		box-shadow: 0 0 5px rgba(0,0,0,.5)
+	.buttonOpenForm
+		margin: 20px
+		cursor: pointer
+		border: none
+		font-size: 20px
+		text-transform: uppercase
+		padding: 5px 30px
+		background: rgba(255,255,255, .4)
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+		position: relative
+		color: red
+		transition: 0.3s
+		span
+			transition: 0.3s
+			color: white
+			mix-blend-mode: screen
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: $main_bg
+			transform-origin: bottom
+			transform: scaleY(0)
+		&:hover
+			span
+				color: $main_color
+				mix-blend-mode: multiply
+			&:before
+				transform: scaleY(1)
+		&:disabled
+			background: $main_bg_dark
+			&:hover
+				&:before
+					transform: scaleY(0)	
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+

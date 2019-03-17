@@ -1,0 +1,117 @@
+@media only screen and (min-width : 1500px) 
+{
+
+}
+@media only screen and (max-height : 775px) 
+{
+  .FirstHead
+  {
+    padding-top: 75px;
+  }
+}
+
+
+
+@media only screen and (max-width : 1800px)
+{
+
+}
+@media only screen and (max-width : 1600px)
+{
+
+}
+@media only screen and (max-width : 1450px)
+{
+
+}
+@media only screen and (max-width : 1280px)
+{
+
+}
+@media only screen and (max-width : 1200px)
+{
+
+}
+@media only screen and (max-width : 1140px) 
+{
+
+}
+
+@media only screen and (max-width : 992px)
+{
+  .contacts .borderRight 
+  {
+    border: none;
+  }
+  .advantage .advWrap p 
+  {
+    font-size: 16px;
+  }
+  .advantage h3
+  {
+    font-size: 1.5rem;
+  }
+  .FirstHead .textHeadWrap h1 
+  {
+    font-size: 2rem;
+  }
+  .FirstHead .textHeadWrap h2 
+  {
+    font-size: 1.7rem;
+  }
+  .priceSmall h3 
+  {
+    font-size: 1.4rem;
+  }
+  .about h3
+  {
+    font-size: 1.4rem;
+  }
+  .about h4
+  {
+    font-size: 1.3rem;
+  }
+  .about .textWrap p
+  {
+    font-size: 16px;
+  }
+  .openFormHor input
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .delivery {
+    min-height: 895px;
+    background: url('../img/deliveryBgSmall.png') no-repeat top right;
+}
+}
+@media only screen and (max-width : 800px)
+{
+
+}
+
+@media only screen and (max-width : 768px)
+{
+  .delivery
+  {
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+  }
+
+}
+@media only screen and (max-width : 576px)
+{
+
+}
+@media only screen and (max-width : 450px)
+{
+
+
+}
+@media only screen and (max-width : 400px)
+{
+
+
+}
