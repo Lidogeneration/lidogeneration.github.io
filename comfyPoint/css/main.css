@@ -815,6 +815,10 @@ section {
 
 /* --- reviewsMore END ------------------------------------------------*/
 /* --- lastOffer START ------------------------------------------------*/
+.lastOffer b {
+  font-size: 1.7rem;
+}
+
 .lastOffer .zakazTxt {
   font-weight: bold;
   color: #db2d2e;
