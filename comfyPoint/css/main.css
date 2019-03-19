@@ -352,12 +352,13 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
+  display: inline-block;
 }
 
 .head h3 .smalltext {
   text-transform: none;
   top: -15%;
-  left: 25%;
+  left: 1%;
   font-size: 14px;
   position: absolute;
   color: #363636;
@@ -425,8 +426,6 @@ section {
 }
 
 .firstAbout img {
-  background: #f8f8f8;
-  border: 3px solid #e6e6e6;
   padding: 5px;
 }
 
@@ -633,7 +632,7 @@ section {
 /* --- delivery END ------------------------------------------------*/
 /* --- reviews Start ------------------------------------------------*/
 .reviews {
-  background: #fff;
+  background: #f8f8f8;
 }
 
 .reviews img {
@@ -816,13 +815,20 @@ section {
 
 /* --- reviewsMore END ------------------------------------------------*/
 /* --- lastOffer START ------------------------------------------------*/
+.lastOffer h5 {
+  color: #db2d2e;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
 .lastOffer h3 {
   text-align: center;
   text-transform: uppercase;
 }
 
 .lastOffer h4 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   color: #db2d2e;
@@ -868,6 +874,7 @@ section {
 }
 
 .lastOffer .actionWrapPrice h5 {
+  color: #363636;
   margin: 0;
   margin-right: 10px;
   position: relative;

@@ -225,10 +225,11 @@ section
 		text-transform: uppercase
 		font-weight: bold
 		position: relative
+		display: inline-block
 		.smalltext
 			text-transform: none
 			top: -15%
-			left: 25%
+			left: 1%
 			font-size: 14px
 			position: absolute
 			color: $main_color
@@ -267,8 +268,8 @@ section
 .firstAbout
 	background: $main_white
 	img
-		background: $main_bg_light
-		border: 3px solid $main_bg
+		// background: $main_bg_light
+		// border: 3px solid $main_bg
 		padding: 5px
 	ul
 		padding: 0
@@ -423,7 +424,7 @@ section
 
 /* --- reviews Start ------------------------------------------------*/
 .reviews
-	background: $main_white
+	background: $main_bg_light
 	img
 		max-width: 100%
 		height: auto
@@ -558,11 +559,16 @@ section
 
 /* --- lastOffer START ------------------------------------------------*/	
 .lastOffer
+	h5
+		color: $main_red
+		text-align: center
+		font-size: 1.4rem
+		text-transform: uppercase
 	h3
 		text-align: center
 		text-transform: uppercase
 	h4
-		font-size: 1.75rem
+		font-size: 2rem
 		text-align: center
 		text-transform: uppercase
 		color: $main_red
@@ -587,6 +593,7 @@ section
 		h4
 			margin: 0
 		h5
+			color: $main_color
 			margin: 0
 			margin-right: 10px
 			position: relative

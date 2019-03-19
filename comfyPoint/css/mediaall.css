@@ -19,17 +19,11 @@
 }
 @media only screen and (max-width : 1450px)
 {
-  .head h3 .smalltext
-  {
-    left: 20%;
-  }
+
 }
 @media only screen and (max-width : 1280px)
 {
-  .head h3 .smalltext
-  {
-    left: 15%;
-  }
+
 }
 @media only screen and (max-width : 1200px)
 {
@@ -45,10 +39,7 @@
 
 @media only screen and (max-width : 992px)
 {
-  .head h3 .smalltext
-  {
-    left: 35%;
-  }
+
   .adwNew .textWrap
   {
     justify-content: start;
@@ -115,10 +106,7 @@
 }
 @media only screen and (max-width : 800px)
 {
-  .head h3 .smalltext
-  {
-    left: 30%;
-  }
+
 }
 @media only screen and (max-width : 960px)
 {
@@ -161,7 +149,7 @@
   }
   .lastOffer h4
   {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .firstAbout ul li 
   {
@@ -174,7 +162,6 @@
   .head h3 .smalltext
   {
     top: -5%;
-    left: 21%;
   }
   .action-cont
   {
@@ -209,10 +196,7 @@
 }
 @media only screen and (max-width : 400px)
 {
-  .head h3 .smalltext
-  {
-    left: 13%;
-  }
+ 
   #clockdiv
   {
     font-size: 20px;
