@@ -815,7 +815,8 @@ section {
 
 /* --- reviewsMore END ------------------------------------------------*/
 /* --- lastOffer START ------------------------------------------------*/
-.lastOffer h5 {
+.lastOffer .zakazTxt {
+  font-weight: bold;
   color: #db2d2e;
   text-align: center;
   font-size: 1.4rem;
@@ -874,7 +875,10 @@ section {
 }
 
 .lastOffer .actionWrapPrice h5 {
-  color: #363636;
+  color: #db2d2e;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
   margin: 0;
   margin-right: 10px;
   position: relative;
