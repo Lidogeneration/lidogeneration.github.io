@@ -1,0 +1,129 @@
+@media only screen and (min-width : 1500px) 
+{
+
+}
+@media only screen and (max-height : 582px) 
+{
+  .first
+  {
+    padding-top: 75px;
+  }
+}
+
+
+
+@media only screen and (max-width : 1800px)
+{
+
+}
+@media only screen and (max-width : 1600px)
+{
+
+}
+@media only screen and (max-width : 1450px)
+{
+
+}
+@media only screen and (max-width : 1280px)
+{
+
+}
+@media only screen and (max-width : 1200px)
+{
+  .navbar{
+    transition: 0.5s;
+    background: rgba(255,255,255, .9);
+  }
+}
+@media only screen and (max-width : 1140px) 
+{
+
+}
+
+@media only screen and (max-width : 992px)
+{
+  .about-more h3 
+  {
+    font-size: 1.2rem;
+  }
+  .form-about h5 
+  {
+    font-size: 1.1rem;
+  }
+  .first .pricecont
+  {
+    padding: 10px 5px 15px 5px;
+    flex-wrap: wrap;
+  }
+  .about-more .pricecont
+  {
+    padding: 10px 5px 15px 5px;
+    flex-wrap: wrap;
+  }
+  .about-more  .pricecont .textCon
+  {
+    width: 95%;
+  }
+  .about-more  .pricecont .textCon h4
+  {
+    font-size: 1.2rem;
+  }
+  .first .pricecont .textCon
+  {
+    width: 95%;
+  }
+  .first .pricecont .textCon h4
+  {
+    font-size: 1.1rem;
+  }
+  .first .headerText 
+  {
+    width: 95%;
+  }
+  .first .headerText h1
+  {
+    font-size: 1.4rem;
+  }
+  .first .trigerText
+  {
+    width: 95%;
+  }
+  .first .trigerText h3
+  {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width : 800px)
+{
+
+}
+@media only screen and (max-width : 768px)
+{
+  .first .pricecont
+  {
+    width: 95%;
+  }
+  .form-about input
+  {
+    font-size: 16px;
+  }
+  .first
+  {
+    padding-top: 75px;
+  }
+
+}
+@media only screen and (max-width : 576px)
+{
+
+}
+@media only screen and (max-width : 450px)
+{
+
+
+}
+@media only screen and (max-width : 400px)
+{
+
+
+}

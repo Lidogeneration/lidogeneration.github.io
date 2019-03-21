@@ -1,0 +1,609 @@
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+  color: #111;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.done {
+  min-height: 100vh;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.navbar .dropdown .dropdown-toggle:after {
+  color: #111;
+}
+
+.navbar .dropdown .dropdown-toggle span {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #111;
+}
+
+.navbar .dropdown .dropdown-toggle:hover span {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #8FD14F;
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar img {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .anim {
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .anim span {
+  color: #111;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.navbar .anim:before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #8FD14F;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.navbar .anim:hover span {
+  color: #8FD14F;
+}
+
+.navbar .anim:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar p {
+  font-size: 24px;
+  color: #111;
+  margin: 0;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.navbar .navbar-toggler-icon {
+  background: url("../img/burger-light.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.navbar .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.navbar .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.active {
+  position: relative;
+  overflow: hidden;
+}
+
+.active span {
+  color: #8FD14F !important;
+}
+
+.active:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #111;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: animate 7s linear infinite;
+          animation: animate 7s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+.fixed-nav {
+  background: rgba(255, 255, 255, 0.9);
+  color: #55595c;
+  padding: .4rem .4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.fixed-nav .dropdown .dropdown-toggle:after {
+  color: #111;
+}
+
+.fixed-nav .dropdown .dropdown-toggle span {
+  color: #111;
+}
+
+.fixed-nav .anim span {
+  color: #111;
+}
+
+.fixed-nav p {
+  color: #111;
+}
+
+.fixed-nav .navbar-toggler-icon {
+  background: url("../img/burger-black.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.fixed-nav .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.fixed-nav .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fixed-nav .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #111;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* --- Navbar END ------------------------------------------------*/
+/* --- Header start------------------------------------------------*/
+.first {
+  min-height: 100vh;
+  background: url("../img/firstbg.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.first .headerText {
+  width: 66%;
+  margin: auto;
+  text-align: center;
+}
+
+.first .headerText h1 {
+  border: 2px solid #8FD14F;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  padding: 15px 10px;
+  color: #fff;
+  text-align: center;
+  background: rgba(17, 17, 17, 0.7);
+}
+
+.first .trigerText {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.first .trigerText h3 {
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background: rgba(128, 128, 128, 0.7);
+}
+
+.first .pricecont {
+  padding: 10px 5px 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+}
+
+.first .pricecont .textCon {
+  text-align: center;
+}
+
+.first .pricecont .textCon h4 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background: rgba(128, 128, 128, 0.7);
+  margin: 0;
+}
+
+/* --- Header END ------------------------------------------------*/
+/* --- About Start ------------------------------------------------*/
+.about {
+  padding: 20px;
+}
+
+.about img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+
+/* --- About END ------------------------------------------------*/
+/* --- aboutmore Start ------------------------------------------------*/
+.about-more {
+  text-align: center;
+}
+
+.about-more .pricecont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-more .pricecont .textCon {
+  text-align: center;
+}
+
+.about-more .pricecont .textCon h4 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.about-more h3 {
+  text-transform: uppercase;
+}
+
+.about-more .video-wrap {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.about-more .video-wrap a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about-more .video-wrap a span {
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  background: #db2d2e;
+  border-radius: 50%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #db2d2e;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about-more .video-wrap a span:after {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  content: '';
+  top: 25%;
+  left: 15%;
+  width: 50px;
+  height: 50px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+}
+
+.about-more .video-wrap a span:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about-more .video-wrap a span:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0);
+          box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0);
+}
+
+.about-more .video-wrap a span:hover:after {
+  left: 20%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-top: 7px solid #fff;
+  border-right: 7px solid #fff;
+}
+
+.about-more .video-wrap a span:hover:before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #fff;
+  top: -7px;
+  left: -7px;
+  right: -7px;
+  bottom: -7px;
+}
+
+/* --- aboutmore END ------------------------------------------------*/
+/* --- ProductAll Start ------------------------------------------------*/
+.prod {
+  background: #f8f8f8;
+}
+
+/* --- ProductAll END ------------------------------------------------*/
+/* --- dropshipping Start ------------------------------------------------*/
+/* --- dropshipping END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- advantage Start ------------------------------------------------*/
+/* --- advantage END ------------------------------------------------*/
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+/* --- Button Start ------------------------------------------------*/
+.firstButton {
+  background: #8FD14F;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.firstButton span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  mix-blend-mode: screen;
+  color: #fff;
+}
+
+.firstButton:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(230, 230, 230, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.firstButton:hover span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #111;
+  mix-blend-mode: multiply;
+}
+
+.firstButton:hover:before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* --- Button END ------------------------------------------------*/
+/* --- Form START ------------------------------------------------*/
+.form-about {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #8FD14F;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: #e6e6e6;
+  padding: 20px 10px;
+}
+
+.form-about h5 {
+  padding: 10px;
+  background: #8FD14F;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.form-about h5 span {
+  color: #fff;
+}
+
+.form-about input {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-about .firstButton {
+  border: none;
+}
+
+/* --- Form END ------------------------------------------------*/
+/* --- Other START ------------------------------------------------*/
+.bgLight {
+  border: 5px solid #8FD14F;
+  background: #f8f8f8;
+}
+/*# sourceMappingURL=main.css.map */

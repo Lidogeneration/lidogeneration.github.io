@@ -1,0 +1,415 @@
+$main_color: #111
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #8FD14F
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+$main_bg_text: #808080
+
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, .9)
+	.dropdown
+		.dropdown-toggle
+			&:after
+				color: $main_color
+			span
+				transition: 0.3s
+				color: $main_color
+			&:hover
+				span
+					transition: 0.3s
+					color: $main_rgb
+	.navbar-brand
+		padding: 0
+	img
+		width: 40px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_color
+			transition: 0.3s
+			transform-origin: left
+		&:before
+			transition: 0.3s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_rgb
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		color: $main_color
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.dropdown
+		.dropdown-toggle
+			&:after
+				color: $main_color
+			span
+				color: $main_color
+	.anim
+		span
+			color: $main_color
+	p
+		color: $main_color
+	background: rgba(255,255,255, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- Header start------------------------------------------------*/
+.first
+	min-height: 100vh
+	background: url('../img/firstbg.jpg')
+	background-size: cover
+	background-repeat: 
+	background-position: center center
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-content: space-around
+	.headerText
+		width: 66%
+		margin: auto
+		text-align: center
+		h1
+			border: 2px solid $main_rgb
+			display: inline-block
+			text-transform: uppercase
+			font-size: 1.9rem
+			padding: 15px 10px
+			color: $main_white
+			text-align: center
+			background: rgba($main_color, .7)
+	.trigerText
+		width: 80%
+		margin: auto
+		text-align: center
+		h3
+			font-weight: bold
+			display: inline-block
+			text-transform: uppercase
+			font-size: 1.8rem
+			padding: 10px
+			color: $main_white
+			text-align: center
+			background: rgba($main_bg_text, .7)
+	.pricecont
+		padding: 10px 5px 10px 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 2px solid $main_white
+		.textCon
+			text-align: center
+			h4
+				display: inline-block
+				text-transform: uppercase
+				padding: 10px
+				color: $main_white
+				text-align: center
+				background: rgba($main_bg_text, .7)
+				margin: 0
+/* --- Header END ------------------------------------------------*/	
+
+
+/* --- About Start ------------------------------------------------*/
+.about
+	padding: 20px
+	img
+		margin-left: auto
+		margin-right: auto
+		display: block
+		width: 100%
+/* --- About END ------------------------------------------------*/	
+
+
+/* --- aboutmore Start ------------------------------------------------*/
+.about-more
+	.pricecont
+		display: flex
+		justify-content: center
+		align-items: center
+		.textCon
+			text-align: center
+			h4
+				display: inline-block
+				text-transform: uppercase
+				padding: 10px
+				text-align: center
+				margin: 0
+	text-align: center
+	h3
+		text-transform: uppercase
+	.video-wrap
+		position: relative
+		margin-bottom: 15px
+		a
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			span
+				box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75)
+				background: #db2d2e
+				border-radius: 50%
+				display: block
+				width: 100px
+				height: 100px
+				border: 1px solid #db2d2e
+				position: relative
+				transition: 0.3s
+				&:after
+					transition: 0.3s
+					transform: rotate(45deg)
+					position: absolute
+					content: ''
+					top: 25%
+					left: 15%
+					width: 50px
+					height: 50px
+					border-top: 5px solid #fff
+					border-right: 5px solid #fff
+				&:before
+					position: absolute
+					content: ''
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					border: 2px solid #fff
+					border-radius: 50%
+					transition: 0.3s
+				&:hover
+					transition: 0.3s
+					box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0)
+					&:after
+						left: 20%
+						transition: 0.3s
+						border-top: 7px solid #fff
+						border-right: 7px solid #fff
+					&:before
+						transition: 0.3s
+						border: 2px solid #fff
+						top: -7px
+						left: -7px
+						right: -7px
+						bottom: -7px
+/* --- aboutmore END ------------------------------------------------*/	
+
+/* --- ProductAll Start ------------------------------------------------*/
+.prod
+	background: $main_bg_light
+/* --- ProductAll END ------------------------------------------------*/	
+
+
+/* --- dropshipping Start ------------------------------------------------*/	
+/* --- dropshipping END ------------------------------------------------*/	
+
+
+
+
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/	
+
+
+/* --- advantage Start ------------------------------------------------*/	
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.firstButton
+	background: $main_rgb
+	padding: 10px 20px
+	text-transform: uppercase
+	position: relative
+	span
+		transition: 0.5s
+		mix-blend-mode: screen
+		color: $main_white
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba($main_bg, .5)
+		transition: 0.3s
+		transform-origin: left
+		transform: scaleX(0)
+	&:hover
+		span
+			transition: 0.5s
+			color: $main_color
+			mix-blend-mode: multiply
+		&:before
+			transition: 0.3s
+			transform: scaleX(1)
+	
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+.form-about
+	margin-top: 10px
+	margin-bottom: 10px
+	border: 2px solid $main_rgb
+	width: 100%	
+	display: block
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	background: $main_bg
+	padding: 20px 10px
+	h5
+		padding: 10px	
+		background: $main_rgb
+		text-transform: uppercase
+		margin-bottom: 20px
+		span
+			color: $main_white
+	input
+		margin-bottom: 20px
+		padding: 10px 
+		font-size: 20px
+		text-align: center
+		display: block
+		margin-left: auto
+		margin-right: auto
+	.firstButton
+		border: none
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+
+.bgLight
+	border: 5px solid $main_rgb
+	background: $main_bg_light
