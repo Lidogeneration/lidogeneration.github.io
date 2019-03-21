@@ -176,7 +176,7 @@ window.onload = function()
 // }
 $('.aboutSlider').slick({
     arrows: false,
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

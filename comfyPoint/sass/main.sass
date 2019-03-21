@@ -48,7 +48,7 @@ section
 	.navbar-brand
 		padding: 0
 	img
-		width: 140px
+		width: 100px
 		margin: 0
 		padding: 0
 	.anim
@@ -160,7 +160,7 @@ section
 
 /* --- Header start------------------------------------------------*/	
 .head
-	padding-top: 20px
+	padding-top: 75px
 	min-height: 100vh
 	background: $main_white
 	// background: url('../img/headbg.jpg')
@@ -277,9 +277,15 @@ section
 		li
 			text-transform: uppercase
 			text-align: left
-			margin-bottom: 15px
 			font-size: 16px
 			padding: 10px
+	.slick-dots
+		bottom: -50px
+	.slick-dots
+		li
+			button
+				&:before
+					font-size: 14px
 /* --- firstAbout END ------------------------------------------------*/
 
 	
@@ -359,6 +365,42 @@ section
 						bottom: -7px
 /* --- About END ------------------------------------------------*/	
 
+
+/* --- doctorForm Start ------------------------------------------------*/	
+.doctorForm
+	background: $main_bg_light
+	padding-bottom: 0
+	padding-top: 20px
+	text-align: center
+/* --- doctorForm END ------------------------------------------------*/	
+
+/* --- spec Start ------------------------------------------------*/	
+.spec
+	padding-bottom: 0
+	padding-top: 20px
+	background: $main_bg_light
+	h3
+		text-transform: uppercase
+		color: $main_red
+		text-align: center
+		margin-bottom: 15px
+	.textWrap
+		background: $main_bg
+		padding: 15px
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4)
+		p
+			text-indent: 20px
+			margin: 0
+		h5
+			margin-top: 10px
+			margin-bottom: 10px
+			text-align: center
+			color: $main_red
+		h4
+			font-style: bold
+		h6
+			 font-style: italic
+/* --- spec END ------------------------------------------------*/	
 
 /* --- How Start ------------------------------------------------*/
 .how
@@ -729,6 +771,32 @@ section
 			text-align: left
 			display: flex
 			align-items: center
+
+.docOpenForm
+	display: block
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	padding: 20px 10px
+	background: $main_bg
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4)
+	h3
+		font-weight: bold
+		text-transform: uppercase
+	h4
+		text-transform: uppercase
+	input
+		padding: 5px 10px
+		text-align: center
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin-top: 10px
+		margin-bottom: 10px
+	textarea
+		text-align: center
+		width: 100%
+		height: 100px
 /* --- Form END ------------------------------------------------*/	
 
 
@@ -759,3 +827,7 @@ section
 			font-size: 12px
 .wrapBord
 	border: 1px solid $main_red
+
+.row-eq-height
+  display: flex
+  flex-wrap: wrap
