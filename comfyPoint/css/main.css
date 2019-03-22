@@ -570,6 +570,26 @@ section {
   text-align: center;
 }
 
+.doctorForm .textWrap {
+  text-align: left;
+  font-size: 18px;
+}
+
+.doctorForm .textWrap ul li {
+  font-size: 16px;
+}
+
+.doctorForm .textWrap h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.doctorForm .buttonHeader {
+  padding: 5px 15px 5px 15px;
+  width: 200px;
+}
+
 /* --- doctorForm END ------------------------------------------------*/
 /* --- spec Start ------------------------------------------------*/
 .spec {
