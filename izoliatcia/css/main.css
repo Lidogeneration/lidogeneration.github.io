@@ -502,6 +502,13 @@ section {
 /* --- aboutnext END ------------------------------------------------*/
 .aboutnext {
   background: #e6e6e6;
+  min-height: 100vh;
+}
+
+.aboutnext h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .aboutnext hr {
