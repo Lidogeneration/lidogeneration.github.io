@@ -294,9 +294,6 @@ section {
 /* --- Header start------------------------------------------------*/
 .first {
   min-height: 100vh;
-  background: url("../img/firstbg.jpg");
-  background-size: cover;
-  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,6 +304,64 @@ section {
           justify-content: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
+  position: relative;
+}
+
+.first .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  z-index: -1;
+}
+
+.first .slider .image {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  background-size: cover;
+  height: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.first .slider .bg01 {
+  background: url("../img/firstbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.first .slider .bg02 {
+  background: url("../img/dumohidBg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.first .slider .bg03 {
+  background: url("../img/first03.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.first .slider .activet {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  height: 100%;
+}
+
+.first .slider .deactive {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  height: 0;
 }
 
 .first .headerText {
@@ -501,6 +556,8 @@ section {
 /* --- aboutmore END ------------------------------------------------*/
 /* --- aboutnext END ------------------------------------------------*/
 .aboutnext {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: #e6e6e6;
   min-height: 100vh;
 }
@@ -523,7 +580,8 @@ section {
 .aboutnext p {
   text-indent: 10px;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .aboutnext p i {
@@ -553,14 +611,48 @@ section {
   list-style: none;
 }
 
+.prod ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
 .prod p {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.prod .pricecont {
+  padding: 10px 5px 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+}
+
+.prod .pricecont .textCon {
+  text-align: center;
+}
+
+.prod .pricecont .textCon h4 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background: rgba(128, 128, 128, 0.7);
+  margin: 0;
 }
 
 /* --- ProductAll END ------------------------------------------------*/
 /* --- Dumohid Start ------------------------------------------------*/
 .dumohid {
-  min-height: 70vh;
+  min-height: 80vh;
   background: url("../img/dumohidBg.jpg");
   background-size: cover;
   background-position: center center;

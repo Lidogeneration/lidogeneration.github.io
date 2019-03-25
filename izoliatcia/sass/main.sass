@@ -176,14 +176,49 @@ section
 /* --- Header start------------------------------------------------*/
 .first
 	min-height: 100vh
-	background: url('../img/firstbg.jpg')
-	background-size: cover
-	background-repeat: 
-	background-position: center center
 	display: flex
 	flex-wrap: wrap
 	justify-content: center
 	align-content: space-around
+	position: relative
+	.slider
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		min-height: 100vh
+		height: 100%
+		transition: all 3s
+		z-index: -1
+		.image
+			transition: all 3s
+			background-size: cover
+			height: 0
+			transform-origin: right
+		.bg01
+			background: url('../img/firstbg.jpg')
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			background-attachment: fixed
+		.bg02
+			background: url('../img/dumohidBg.jpg')
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			background-attachment: fixed
+		.bg03
+			background: url('../img/first03.jpg')
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			background-attachment: fixed
+		.activet
+			transition: all 3s
+			height: 100%
+		.deactive
+			transition: all 3s
+			height: 0
 	.headerText
 		width: 66%
 		margin: auto
@@ -316,6 +351,8 @@ section
 
 /* --- aboutnext END ------------------------------------------------*/	
 .aboutnext
+	padding-top: 20px
+	padding-bottom: 20px
 	background: $main_bg
 	min-height: 100vh
 	h3
@@ -332,7 +369,8 @@ section
 	p
 		text-indent: 10px
 		margin-bottom: 5px
-		font-size: 18px
+		font-size: 20px
+		font-weight: bold
 		i
 			color: $main_rgb
 			font-size: 26px
@@ -350,16 +388,35 @@ section
 	ul
 		padding: 0
 		list-style: none
+		li
+			display: inline-block
+			margin-right: 5px
 	p
-		font-size: 18px
-	
+		font-size: 20px
+		font-weight: bold
+	.pricecont
+		padding: 10px 5px 10px 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 2px solid $main_white
+		.textCon
+			text-align: center
+			h4
+				display: inline-block
+				text-transform: uppercase
+				padding: 10px
+				color: $main_white
+				text-align: center
+				background: rgba($main_bg_text, .7)
+				margin: 0	
 
 /* --- ProductAll END ------------------------------------------------*/	
 
 
 /* --- Dumohid Start ------------------------------------------------*/	
 .dumohid
-	min-height: 70vh
+	min-height: 80vh
 	background: url('../img/dumohidBg.jpg')
 	background-size: cover
 	background-position: center center

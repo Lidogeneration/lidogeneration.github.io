@@ -26,10 +26,25 @@
 }
 @media only screen and (max-width : 1280px)
 {
-
+  .aboutnext h3
+  {
+    font-size: 1.4rem;
+  }
 }
 @media only screen and (max-width : 1200px)
 {
+  .prod p
+  {
+    font-size: 16px
+  }
+  .prod h3,h4
+  {
+    font-size: 1.4rem;
+  }
+  .aboutnext p
+  {
+    font-size: 16px;
+  }
   .navbar{
     transition: 0.5s;
     background: rgba(255,255,255, .9);
@@ -42,13 +57,19 @@
 
 @media only screen and (max-width : 992px)
 {
-  .prod p
+
+  .prod .pricecont
   {
-    font-size: 16px
+    padding: 10px 5px 15px 5px;
+    flex-wrap: wrap;
   }
-  .prod h3,h4
+  .prod .pricecont .textCon
   {
-    font-size: 1.4rem;
+    width: 95%;
+  }
+  .prod .pricecont .textCon h4
+  {
+    font-size: 1.1rem;
   }
   .about-more h3 
   {
