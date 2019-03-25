@@ -186,8 +186,8 @@ $('.sliderRew').slick({
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
-    autoplaySpeed: 5000,
-    adaptiveHeight: true
+    autoplaySpeed: 3000,
+    arrows: false
   });
 
   $('.sliderRewN').slick({

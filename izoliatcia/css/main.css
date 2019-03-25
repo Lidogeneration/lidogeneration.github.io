@@ -499,14 +499,84 @@ section {
 }
 
 /* --- aboutmore END ------------------------------------------------*/
+/* --- aboutnext END ------------------------------------------------*/
+.aboutnext {
+  background: #e6e6e6;
+}
+
+.aboutnext hr {
+  padding: 0;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #8FD14F;
+}
+
+.aboutnext p {
+  text-indent: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.aboutnext p i {
+  color: #8FD14F;
+  font-size: 26px;
+  margin-right: 15px;
+}
+
+.aboutnext p span {
+  color: #8FD14F;
+  font-size: 22px;
+}
+
+.aboutnext .sliderRew {
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(17, 17, 17, 0.4);
+          box-shadow: 0px 0px 2px 2px rgba(17, 17, 17, 0.4);
+}
+
+/* --- aboutnext END ------------------------------------------------*/
 /* --- ProductAll Start ------------------------------------------------*/
 .prod {
   background: #f8f8f8;
 }
 
+.prod ul {
+  padding: 0;
+  list-style: none;
+}
+
+.prod p {
+  font-size: 18px;
+}
+
 /* --- ProductAll END ------------------------------------------------*/
-/* --- dropshipping Start ------------------------------------------------*/
-/* --- dropshipping END ------------------------------------------------*/
+/* --- Dumohid Start ------------------------------------------------*/
+.dumohid {
+  min-height: 70vh;
+  background: url("../img/dumohidBg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.dumohid .textWrap {
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(17, 17, 17, 0.4);
+          box-shadow: 0px 0px 2px 2px rgba(17, 17, 17, 0.4);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.dumohid .textWrap ul li {
+  text-transform: uppercase;
+}
+
+/* --- Dumohid END ------------------------------------------------*/
+.tmp {
+  min-height: 100vh;
+}
+
 /* --- action END ------------------------------------------------*/
 /* --- action END ------------------------------------------------*/
 /* --- advantage Start ------------------------------------------------*/
