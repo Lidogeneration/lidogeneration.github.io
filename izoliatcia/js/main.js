@@ -209,6 +209,25 @@ $('.sliderRew').slick({
     ]
   });
 
+  $('.sliderRewNRev').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    adaptiveHeight: true,
+    responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: true,
+            slidesToShow: 1
+          }
+        }
+    ]
+  });
+
 $(document).ready(function() {
 	$('.sliderRewN').magnificPopup({
 		delegate: 'a',

@@ -196,19 +196,19 @@ section
 			height: 0
 			transform-origin: right
 		.bg01
-			background: url('../img/firstbg.jpg')
+			background: url('../img/headbg01.jpg')
 			background-size: cover
 			background-position: center
 			background-repeat: no-repeat
 			background-attachment: fixed
 		.bg02
-			background: url('../img/dumohidBg.jpg')
+			background: url('../img/headbg02.jpg')
 			background-size: cover
 			background-position: center
 			background-repeat: no-repeat
 			background-attachment: fixed
 		.bg03
-			background: url('../img/first03.jpg')
+			background: url('../img/headbg03.jpg')
 			background-size: cover
 			background-position: center
 			background-repeat: no-repeat
@@ -384,7 +384,15 @@ section
 
 /* --- ProductAll Start ------------------------------------------------*/
 .prod
-	background: $main_bg_light
+	border-top: 2px solid $main_rgb
+	border-bottom: 2px solid $main_rgb
+	background: url('../img/prodbg.jpg')
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+	background-attachment: fixed
+	.sliderRew
+		box-shadow: 0px 0px 2px 2px rgba($main_color, .3)
 	ul
 		padding: 0
 		list-style: none
@@ -394,22 +402,22 @@ section
 	p
 		font-size: 20px
 		font-weight: bold
-	.pricecont
-		padding: 10px 5px 10px 5px
-		display: flex
-		justify-content: center
-		align-items: center
-		border: 2px solid $main_white
-		.textCon
+.pricecont
+	padding: 10px 5px 10px 5px
+	display: flex
+	justify-content: center
+	align-items: center
+	border: 2px solid $main_white
+	.textCon
+		text-align: center
+		h4
+			display: inline-block
+			text-transform: uppercase
+			padding: 10px
+			color: $main_white
 			text-align: center
-			h4
-				display: inline-block
-				text-transform: uppercase
-				padding: 10px
-				color: $main_white
-				text-align: center
-				background: rgba($main_bg_text, .7)
-				margin: 0	
+			background: rgba($main_bg_text, .7)
+			margin: 0	
 
 /* --- ProductAll END ------------------------------------------------*/	
 
@@ -433,22 +441,214 @@ section
 
 
 
-.tmp
-	min-height: 100vh
-/* --- action END ------------------------------------------------*/
-/* --- action END ------------------------------------------------*/	
 
 
 /* --- advantage Start ------------------------------------------------*/	
+.advantage
+	min-height: 70vh
+	padding: 50px 0 0 0 
+	background: url('../img/prodbg.jpg')
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+	background-attachment: fixed
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	flex-direction: column
+	.wraper
+		padding: 30px 0
+	.borderMain
+		border-right: 2px solid #fff
+	h3, h4
+		text-transform: uppercase
+		text-align: center
+		span
+			
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+		li
+			font-weight: bold
+			text-transform: uppercase
+			margin-bottom: 10px
+			padding: 10px
+			i
+				margin-right: 5px
+			&:nth-child(even)
+				background: $main_bg_light
+			&:nth-child(odd)
+				background: $main_bg
+	.borderYes
+		i
+			color: $main_rgb
+		ul
+			li
+				border: 1px solid $main_rgb
+	.borderNo
+		i
+			color: red
+		ul
+			li
+				border: 1px solid red
 /* --- advantage END ------------------------------------------------*/	
 
 
+
+/* --- sert Start ------------------------------------------------*/
+.sert
+	img
+		max-width: 100%
+		height: auto
+		display: block
+		margin-left: auto
+		margin-right: auto
+		box-shadow: 0 2px 3px 0 $main_color_light
+	h3
+		text-align: center
+		text-transform: uppercase
+	.sliderRew
+		padding: 15px
+		outline: none
+		border: 5px solid $main_white
+		&:focus
+			outline: none
+		.sliderRewCont
+			padding: 15px
+			outline: none
+			h4
+				margin-top: 10px
+			&:focus
+				outline: none
+	.slick-prev
+		z-index: 999
+		position: absolute
+		width: 30px
+		height: 30px
+		left: -5%
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-left: 4px solid $main_color
+			border-top: 4px solid $main_color
+			color: #000
+			transform: rotate(-45deg)
+	.slick-next
+		z-index: 999
+		position: absolute
+		width: 30px
+		height: 30px
+		right: -5%
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-right: 4px solid $main_color
+			border-top: 4px solid $main_color
+			color: #000
+			transform: rotate(45deg)
+ .sliderRewN
+	 .sliderRewContN
+		 padding: 10px
+/* --- sert END ------------------------------------------------*/	
+
+
+
 /* --- reviews Start ------------------------------------------------*/
+.reviews
+	background: $main_bg_light
+	h3
+		text-transform: uppercase
+		text-align: center
+	.sliderRewNRev
+		.sliderRewContN
+			padding: 15px
+			.revWrap
+				background: $main_white
+				border: 1px solid $main_rgb
+				padding: 5px
+				position: relative
+				img
+					display: block
+					margin-left: auto
+					margin-right: auto
+				h5
+					text-align: right
+					font-weight: bold
+					font-size: 1rem
+					font-style: italic
+				&:after
+	.slick-prev
+		z-index: 999
+		position: absolute
+		width: 30px
+		height: 30px
+		left: -5%
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-left: 4px solid $main_color
+			border-top: 4px solid $main_color
+			color: #000
+			transform: rotate(-45deg)
+	.slick-next
+		z-index: 999
+		position: absolute
+		width: 30px
+		height: 30px
+		right: -5%
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-right: 4px solid $main_color
+			border-top: 4px solid $main_color
+			color: #000
+			transform: rotate(45deg)
 /* --- reviews END ------------------------------------------------*/	
 
 
-
 /* --- contacts Start ------------------------------------------------*/
+.contacts
+	h3
+		text-transform: uppercase
+		text-align: center
+	ul
+		margin-right: auto
+		margin-left: auto
+		display: inline-block
+		padding: 0
+		list-style: none
+		li
+			font-size: 20px
+			i
+				font-size: 22px
+				margin-right: 10px
+				color: $main_rgb
+			.social
+				transition: 0.3s
+				font-size: 35px
+				&:hover
+					transition: 0.3s
+					color: $main_bg
+	iframe
+		width: 100%
+		height: 250px
 /* --- contacts END ------------------------------------------------*/
 
 

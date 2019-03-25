@@ -329,7 +329,7 @@ section {
 }
 
 .first .slider .bg01 {
-  background: url("../img/firstbg.jpg");
+  background: url("../img/headbg01.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@ section {
 }
 
 .first .slider .bg02 {
-  background: url("../img/dumohidBg.jpg");
+  background: url("../img/headbg02.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@ section {
 }
 
 .first .slider .bg03 {
-  background: url("../img/first03.jpg");
+  background: url("../img/headbg03.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -603,7 +603,18 @@ section {
 /* --- aboutnext END ------------------------------------------------*/
 /* --- ProductAll Start ------------------------------------------------*/
 .prod {
-  background: #f8f8f8;
+  border-top: 2px solid #8FD14F;
+  border-bottom: 2px solid #8FD14F;
+  background: url("../img/prodbg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.prod .sliderRew {
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(17, 17, 17, 0.3);
+          box-shadow: 0px 0px 2px 2px rgba(17, 17, 17, 0.3);
 }
 
 .prod ul {
@@ -621,7 +632,7 @@ section {
   font-weight: bold;
 }
 
-.prod .pricecont {
+.pricecont {
   padding: 10px 5px 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,11 +646,11 @@ section {
   border: 2px solid #fff;
 }
 
-.prod .pricecont .textCon {
+.pricecont .textCon {
   text-align: center;
 }
 
-.prod .pricecont .textCon h4 {
+.pricecont .textCon h4 {
   display: inline-block;
   text-transform: uppercase;
   padding: 10px;
@@ -672,17 +683,292 @@ section {
 }
 
 /* --- Dumohid END ------------------------------------------------*/
-.tmp {
-  min-height: 100vh;
+/* --- advantage Start ------------------------------------------------*/
+.advantage {
+  min-height: 70vh;
+  padding: 50px 0 0 0;
+  background: url("../img/prodbg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-/* --- action END ------------------------------------------------*/
-/* --- action END ------------------------------------------------*/
-/* --- advantage Start ------------------------------------------------*/
+.advantage .wraper {
+  padding: 30px 0;
+}
+
+.advantage .borderMain {
+  border-right: 2px solid #fff;
+}
+
+.advantage h3, .advantage h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage ul li {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.advantage ul li i {
+  margin-right: 5px;
+}
+
+.advantage ul li:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.advantage ul li:nth-child(odd) {
+  background: #e6e6e6;
+}
+
+.advantage .borderYes i {
+  color: #8FD14F;
+}
+
+.advantage .borderYes ul li {
+  border: 1px solid #8FD14F;
+}
+
+.advantage .borderNo i {
+  color: red;
+}
+
+.advantage .borderNo ul li {
+  border: 1px solid red;
+}
+
 /* --- advantage END ------------------------------------------------*/
+/* --- sert Start ------------------------------------------------*/
+.sert img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0 2px 3px 0 #55595c;
+          box-shadow: 0 2px 3px 0 #55595c;
+}
+
+.sert h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sert .sliderRew {
+  padding: 15px;
+  outline: none;
+  border: 5px solid #fff;
+}
+
+.sert .sliderRew:focus {
+  outline: none;
+}
+
+.sert .sliderRew .sliderRewCont {
+  padding: 15px;
+  outline: none;
+}
+
+.sert .sliderRew .sliderRewCont h4 {
+  margin-top: 10px;
+}
+
+.sert .sliderRew .sliderRewCont:focus {
+  outline: none;
+}
+
+.sert .slick-prev {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -5%;
+}
+
+.sert .slick-prev:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid #111;
+  border-top: 4px solid #111;
+  color: #000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sert .slick-next {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -5%;
+}
+
+.sert .slick-next:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #111;
+  border-top: 4px solid #111;
+  color: #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sert .sliderRewN .sliderRewContN {
+  padding: 10px;
+}
+
+/* --- sert END ------------------------------------------------*/
 /* --- reviews Start ------------------------------------------------*/
+.reviews {
+  background: #f8f8f8;
+}
+
+.reviews h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reviews .sliderRewNRev .sliderRewContN {
+  padding: 15px;
+}
+
+.reviews .sliderRewNRev .sliderRewContN .revWrap {
+  background: #fff;
+  border: 1px solid #8FD14F;
+  padding: 5px;
+  position: relative;
+}
+
+.reviews .sliderRewNRev .sliderRewContN .revWrap img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews .sliderRewNRev .sliderRewContN .revWrap h5 {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.reviews .slick-prev {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -5%;
+}
+
+.reviews .slick-prev:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid #111;
+  border-top: 4px solid #111;
+  color: #000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.reviews .slick-next {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -5%;
+}
+
+.reviews .slick-next:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #111;
+  border-top: 4px solid #111;
+  color: #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 /* --- reviews END ------------------------------------------------*/
 /* --- contacts Start ------------------------------------------------*/
+.contacts h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contacts ul {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts ul li {
+  font-size: 20px;
+}
+
+.contacts ul li i {
+  font-size: 22px;
+  margin-right: 10px;
+  color: #8FD14F;
+}
+
+.contacts ul li .social {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 35px;
+}
+
+.contacts ul li .social:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #e6e6e6;
+}
+
+.contacts iframe {
+  width: 100%;
+  height: 250px;
+}
+
 /* --- contacts END ------------------------------------------------*/
 /* --- Button Start ------------------------------------------------*/
 .firstButton {

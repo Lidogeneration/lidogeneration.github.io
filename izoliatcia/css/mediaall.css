@@ -57,7 +57,18 @@
 
 @media only screen and (max-width : 992px)
 {
-
+  .contacts h3
+  {
+    font-size: 1.4rem;
+  }
+  .advantage h3
+  {
+    font-size: 1.4rem;
+  }
+  .reviews h3 
+  {
+    font-size: 1.4rem;
+  }
   .prod .pricecont
   {
     padding: 10px 5px 15px 5px;
@@ -144,7 +155,22 @@
 }
 @media only screen and (max-width : 576px)
 {
-
+  .reviews .slick-prev
+  {
+    left: -2%;
+  }
+  .reviews .slick-next
+  {
+    right: -2%;
+  }
+  .sert .slick-prev
+  {
+    left: 5%;
+  }
+  .sert .slick-next
+  {
+    right: 5%;
+  }
 }
 @media only screen and (max-width : 450px)
 {
