@@ -39,6 +39,25 @@
 
 @media only screen and (max-width : 992px)
 {
+  .FirstHead .video-cont
+  {
+    display: none;
+  }
+  .FirstHead
+  {
+    background-position: right;
+  }
+  .newProd p {
+    font-size: 16px;
+  }
+  h4
+  {
+    font-size: 1.2rem;
+  }
+  h3
+  {
+    font-size: 1.4rem;
+  }
   .contacts .borderRight 
   {
     border: none;
@@ -49,15 +68,34 @@
   }
   .advantage h3
   {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .FirstHead .priceWrap h4 
+  {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  .FirstHead .textHeadWrap ul li
+  {
+    font-size: 14px;
   }
   .FirstHead .textHeadWrap h1 
   {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .FirstHead .textHeadWrap h2 
   {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+  }
+  .FirstHead .textHeadWrap 
+  {
+    background: none;
+    color: #fff;
+  }
+  .FirstHead .priceWrap
+  {
+    background: none;
+    color: #fff;
   }
   .priceSmall h3 
   {
@@ -69,7 +107,7 @@
   }
   .about h4
   {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .about .textWrap p
   {
