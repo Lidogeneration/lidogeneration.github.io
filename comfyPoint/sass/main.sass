@@ -160,7 +160,7 @@ section
 
 /* --- Header start------------------------------------------------*/	
 .head
-	padding-top: 75px
+	padding-top: 20px
 	min-height: 100vh
 	background: $main_white
 	// background: url('../img/headbg.jpg')
@@ -168,6 +168,31 @@ section
 	// background-size: cover
 	// background-repeat: no-repeat
 	// background-attachment: fixed
+	.timerWrap
+		display: block
+		margin-bottom: 10px
+		margin-left: auto
+		margin-right: auto
+		h5
+			font-size: 14px
+			margin: 0
+			margin-right: 10px
+			display: inline-block
+			margin-top: auto
+			margin-bottom: auto
+			color: red
+			text-transform: uppercase
+		#clockdiv
+			border: none
+			span
+				padding: 0px
+		.actionWrap
+			justify-content: center 
+			.actionText
+				display: flex
+				justify-content: center 
+				flex-direction: row
+				align-items: center
 	.textWrap
 		padding: 20px 25px 20px 25px
 		position: relative
@@ -214,8 +239,9 @@ section
 	ul
 		padding: 0
 		list-style: none
-		margin-bottom: 2rem
+		margin-bottom: 5px
 		li
+			margin: 0
 			text-align: left
 			padding: 5px
 			text-transform: uppercase
@@ -240,6 +266,9 @@ section
 		text-align: center
 	.imgWrap, .imgWrapS
 		position: relative
+		width: 80%
+		margin-left: auto
+		margin-right: auto
 		.action-cont
 			position: absolute
 			top: 5%

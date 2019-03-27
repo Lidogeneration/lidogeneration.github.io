@@ -270,9 +270,57 @@ section {
 /* --- Navbar END ------------------------------------------------*/
 /* --- Header start------------------------------------------------*/
 .head {
-  padding-top: 75px;
+  padding-top: 20px;
   min-height: 100vh;
   background: #fff;
+}
+
+.head .timerWrap {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.head .timerWrap h5 {
+  font-size: 14px;
+  margin: 0;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: red;
+  text-transform: uppercase;
+}
+
+.head .timerWrap #clockdiv {
+  border: none;
+}
+
+.head .timerWrap #clockdiv span {
+  padding: 0px;
+}
+
+.head .timerWrap .actionWrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.head .timerWrap .actionWrap .actionText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .head .textWrap {
@@ -337,10 +385,11 @@ section {
 .head ul {
   padding: 0;
   list-style: none;
-  margin-bottom: 2rem;
+  margin-bottom: 5px;
 }
 
 .head ul li {
+  margin: 0;
   text-align: left;
   padding: 5px;
   text-transform: uppercase;
@@ -375,6 +424,9 @@ section {
 
 .head .imgWrap, .head .imgWrapS {
   position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .head .imgWrap .action-cont, .head .imgWrapS .action-cont {
