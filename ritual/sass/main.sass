@@ -37,7 +37,9 @@ section
 .row-eq-height
 	display: flex
 	flex-wrap: wrap
-
+img
+	max-width: 100%
+	height: auto
 
 /* --- Navbar START ------------------------------------------------*/
 .navbar
@@ -239,6 +241,9 @@ section
 /* --- product Start ------------------------------------------------*/
 .product
 	background: $main_bg_light
+	h5
+		text-align: center
+		font-style: italic
 	.imgWrap
 		position: relative
 		&:before
@@ -268,11 +273,17 @@ section
 	.mainButton
 		&:before
 			border: 2px solid $main_rgb
+	.imgWrapOther
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
 /* --- product END ------------------------------------------------*/	
 
 
 /* --- advantage Start ------------------------------------------------*/
 .advantage
+	background: $main_bg_light
 	.advWrap
 		p
 			 font-style: italic

@@ -51,6 +51,11 @@ section {
       flex-wrap: wrap;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* --- Navbar START ------------------------------------------------*/
 .navbar {
   -webkit-transition: 0.5s;
@@ -389,6 +394,11 @@ section {
   background: #fafafa;
 }
 
+.product h5 {
+  text-align: center;
+  font-style: italic;
+}
+
 .product .imgWrap {
   position: relative;
 }
@@ -431,8 +441,18 @@ section {
   border: 2px solid #c6aa28;
 }
 
+.product .imgWrapOther img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* --- product END ------------------------------------------------*/
 /* --- advantage Start ------------------------------------------------*/
+.advantage {
+  background: #fafafa;
+}
+
 .advantage .advWrap p {
   font-style: italic;
 }

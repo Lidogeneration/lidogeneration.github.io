@@ -37,7 +37,10 @@
 
 @media only screen and (max-width : 992px)
 { 
-
+  .product h5 
+  {
+    font-size: 1.1rem;
+  }
 
   .first .headerWrap
   {
