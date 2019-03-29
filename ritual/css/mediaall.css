@@ -25,11 +25,19 @@
 }
 @media only screen and (max-width : 1140px) 
 {
-
+  .first .trigerWrap ul li 
+  {
+    display: block;
+  }
+  .first .trigerWrap .borderRight
+  {
+    border: none;
+  }
 }
 
 @media only screen and (max-width : 992px)
 { 
+
 
   .first .headerWrap
   {
@@ -57,14 +65,7 @@
 @media only screen and (max-width : 768px)
 {
 
-  .first .trigerWrap ul li 
-  {
-    display: block;
-  }
-  .first .trigerWrap .borderRight
-  {
-    border: none;
-  }
+
 }
 @media only screen and (max-width : 576px)
 {  
@@ -92,7 +93,7 @@
 {
   .product .imgWrap .prodName h2
   {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
 }

@@ -305,6 +305,18 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .first .headerWrap {
@@ -339,19 +351,21 @@ section {
 }
 
 .first .trigerWrap ul {
+  display: inline-block;
   text-transform: uppercase;
   list-style: none;
   padding: 0;
 }
 
 .first .trigerWrap ul li {
-  padding: 5px 10px;
+  text-align: center;
+  padding: 5px 10px 5px 5px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .first .trigerWrap .borderRight {
-  border-right: 3px solid #c6aa28;
+  border-right: 2px solid #c6aa28;
 }
 
 /* --- Header END ------------------------------------------------*/
@@ -365,6 +379,7 @@ section {
 }
 
 .about p {
+  text-indent: 20px;
   margin: 0;
 }
 
@@ -400,6 +415,7 @@ section {
 
 .product .imgWrap .prodName h2 {
   font-size: 3rem;
+  display: block;
 }
 
 .product .textWrap {
@@ -407,6 +423,7 @@ section {
 }
 
 .product .textWrap p {
+  text-indent: 20px;
   text-align: left;
 }
 
@@ -423,6 +440,7 @@ section {
 .advantage .advWrap i {
   font-size: 30px;
   margin-bottom: 10px;
+  color: #c6aa28;
 }
 
 .advantage .advWrap hr {
@@ -441,6 +459,17 @@ section {
 }
 
 .reviews .rewWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
   background: #fff;
   padding: 15px 15px 15px 30px;
   position: relative;

@@ -184,6 +184,10 @@ section
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: center center
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	justify-content: center
 	.headerWrap
 		box-shadow: 0px 0px 5px 1px rgba($main_rgb, .75)
 		text-align: center
@@ -205,15 +209,17 @@ section
 		text-shadow: 2px 2px 2px $main_color
 		color: $main_white
 		ul
+			display: inline-block
 			text-transform: uppercase
 			list-style: none
 			padding: 0
 			li
-				padding: 5px 10px
+				text-align: center
+				padding: 5px 10px 5px 5px
 				display: inline-block
-				font-size: 18px
+				font-size: 16px
 		.borderRight
-			border-right: 3px solid $main_rgb
+			border-right: 2px solid $main_rgb
 /* --- Header END ------------------------------------------------*/	
 
 
@@ -225,6 +231,7 @@ section
 		margin-right: auto
 		box-shadow: 3px 3px 1px 0 rgba($main_color, .4)
 	p
+		text-indent: 20px
 		margin: 0
 /* --- About END ------------------------------------------------*/	
 
@@ -252,9 +259,11 @@ section
 			background: rgba($main_color, .6)
 			h2
 				font-size: 3rem
+				display: block
 	.textWrap
 		text-align: center
 		p
+			text-indent: 20px
 			text-align: left
 	.mainButton
 		&:before
@@ -270,6 +279,7 @@ section
 		i
 			font-size: 30px
 			margin-bottom: 10px
+			color: $main_rgb
 		hr
 			width: 40%
 			margin: 10px auto 10px 0
@@ -282,6 +292,10 @@ section
 .reviews
 	background: $main_bg
 	.rewWrap
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
 		background: $main_white
 		padding: 15px 15px 15px 30px
 		position: relative
