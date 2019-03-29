@@ -39,7 +39,10 @@
 
 @media only screen and (max-width : 992px)
 {
-
+  .head h3 .smalltext
+  {
+    top: 0;
+  }
   .adwNew .textWrap
   {
     justify-content: start;
@@ -61,7 +64,6 @@
   .head .textWrap
   {
     padding: 5px 15px 5px 15px;
-    margin-bottom: 10px;
   }
   .head .textWrap hr
   {
@@ -170,10 +172,7 @@
   {
     text-align: left;
   }
-  .head h3 .smalltext
-  {
-    top: -5%;
-  }
+
   .action-cont
   {
     top: 1%; 
@@ -207,14 +206,5 @@
 }
 @media only screen and (max-width : 400px)
 {
- 
-  #clockdiv
-  {
-    font-size: 20px;
-  }
-  #clockdiv div > span
-  {
-    padding: 7px;
-  }
 
 }

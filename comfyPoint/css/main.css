@@ -268,6 +268,77 @@ section {
 }
 
 /* --- Navbar END ------------------------------------------------*/
+/* --- callBack start------------------------------------------------*/
+.callBack {
+  position: fixed;
+  bottom: 5%;
+  left: 2px;
+  border: 2px solid rgba(219, 45, 46, 0.5);
+  border-radius: 5px;
+  z-index: 999;
+  background: rgba(230, 230, 230, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.callBack a {
+  padding: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 26px;
+  color: rgba(219, 45, 46, 0.5);
+}
+
+.callBack a i {
+  -webkit-animation: phoneRotate 4s linear infinite;
+          animation: phoneRotate 4s linear infinite;
+}
+
+.callBack:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #db2d2e;
+  background: #e6e6e6;
+}
+
+.callBack:hover a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #db2d2e;
+}
+
+@-webkit-keyframes phoneRotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes phoneRotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+/* --- callBack END------------------------------------------------*/
 /* --- Header start------------------------------------------------*/
 .head {
   padding-top: 20px;
@@ -282,22 +353,31 @@ section {
   margin-right: auto;
 }
 
-.head .timerWrap h5 {
-  font-size: 14px;
+.head .timerWrap .actionText {
+  background: #db2d2e;
+  padding: 5px;
+}
+
+.head .timerWrap .actionText h5 {
+  font-weight: bold;
   margin: 0;
-  margin-right: 10px;
   display: inline-block;
-  margin-top: auto;
-  margin-bottom: auto;
-  color: red;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
   text-transform: uppercase;
 }
 
-.head .timerWrap #clockdiv {
-  border: none;
+.head .timerWrap .actionText h5 span {
+  font-size: 20px;
 }
 
-.head .timerWrap #clockdiv span {
+.head .timerWrap #clockdivS {
+  border: 2px solid #db2d2e;
+  padding-left: 5px;
+}
+
+.head .timerWrap #clockdivS span {
   padding: 0px;
 }
 
@@ -327,7 +407,6 @@ section {
   padding: 20px 25px 20px 25px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
 }
 
 .head .textWrap h1 {
@@ -396,6 +475,7 @@ section {
 }
 
 .head h3 {
+  margin-bottom: 0;
   font-size: 1.4rem;
   text-align: center;
   text-transform: uppercase;
@@ -622,6 +702,11 @@ section {
   text-align: center;
 }
 
+.doctorForm p {
+  margin-bottom: 5px;
+  text-indent: 20px;
+}
+
 .doctorForm .textWrap {
   text-align: left;
   font-size: 18px;
@@ -640,6 +725,16 @@ section {
 .doctorForm .buttonHeader {
   padding: 5px 15px 5px 15px;
   width: 200px;
+}
+
+.doctorForm h5 {
+  text-align: right;
+}
+
+.doctorForm h6 {
+  text-align: right;
+  font-style: italic;
+  margin-bottom: 15px;
 }
 
 /* --- doctorForm END ------------------------------------------------*/
@@ -945,6 +1040,15 @@ section {
 
 /* --- reviewsMore END ------------------------------------------------*/
 /* --- lastOffer START ------------------------------------------------*/
+.lastOffer .clock {
+  padding-left: 5px;
+}
+
+.lastOffer .clock span {
+  font-weight: bold;
+  font-size: 26px;
+}
+
 .lastOffer b {
   font-size: 1.7rem;
 }
@@ -976,8 +1080,15 @@ section {
 }
 
 .lastOffer .actionText h5 {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
   margin: 0;
   font-size: 16px;
+}
+
+.lastOffer .actionText h5 span {
+  font-size: 20px;
 }
 
 .lastOffer .actionText h3 {
@@ -1240,28 +1351,28 @@ section {
 }
 
 /*------- TIMER START --------------------*/
-#clockdiv {
+.clock {
   font-family: sans-serif;
   color: #fff;
   display: inline-block;
-  font-weight: 100;
+  font-weight: bold;
   text-align: center;
   font-size: 26px;
   color: #363636;
 }
 
-#clockdiv > div {
+.clock > div {
   padding: 0 5px 0 0;
   display: inline-block;
 }
 
-#clockdiv div > span {
+.clock div > span {
   padding: 0 5px 0 5px;
   background: #fff;
   display: inline-block;
 }
 
-#clockdiv .smalltext {
+.clock .smalltext {
   color: #363636;
   font-size: 12px;
 }

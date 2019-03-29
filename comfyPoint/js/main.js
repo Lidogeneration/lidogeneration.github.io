@@ -289,7 +289,7 @@ function getTimeRemaining(endtime) {
     var daysSpan = clock.querySelector('.days');
     var hoursSpan = clock.querySelector('.hours');
     var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
+    // var secondsSpan = clock.querySelector('.seconds');
   
     function updateClock() {
       var t = getTimeRemaining(endtime);
@@ -297,16 +297,20 @@ function getTimeRemaining(endtime) {
       daysSpan.innerHTML = t.days;
       hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
       minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-  
+    //   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
       if (t.total <= 0) {
+
         clearInterval(timeinterval);
+        var deadline = new Date(Date.parse(new Date()) + 260000 * 1000);
+        initializeClock('clockdivS', deadline);
+        initializeClock('clockdiv', deadline);
       }
     }
   
     updateClock();
     var timeinterval = setInterval(updateClock, 1000);
   }
-  var tl = new Date('2019/3/31 00:00:00');
+  var tl = new Date('2019/4/1 15:55:00');
   var deadline = new Date(tl);
+  initializeClock('clockdivS', deadline);
   initializeClock('clockdiv', deadline);
