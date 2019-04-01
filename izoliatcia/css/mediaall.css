@@ -57,6 +57,14 @@
 
 @media only screen and (max-width : 992px)
 {
+  .about-more h4
+  {
+    font-size: 1.2rem;
+  }
+  .aboutnext h3 
+  {
+    font-size: 1.2rem;
+  }
   .contacts h3
   {
     font-size: 1.4rem;
