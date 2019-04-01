@@ -147,6 +147,11 @@
 }
 @media only screen and (max-width : 768px)
 {
+
+  .prodAll .prodAllWrap .textWrap h4
+  {
+    font-size: 1.2rem;
+  }
   .first .pricecont
   {
     width: 95%;
@@ -163,6 +168,10 @@
 }
 @media only screen and (max-width : 576px)
 {
+  .prodAll .prodAllWrap .iHover
+  {
+    transform: translate(0) scale(1);
+  }
   .reviews .slick-prev
   {
     left: -2%;
@@ -178,6 +187,15 @@
   .sert .slick-next
   {
     right: 5%;
+  }
+  .prodAll .prodAllWrap .textWrap 
+  {
+    flex-basis: auto;
+    padding: 10px 5px;
+  }
+  .prodAll .prodAllWrap .imgWrap
+  {
+    flex-basis: auto
   }
 }
 @media only screen and (max-width : 450px)
