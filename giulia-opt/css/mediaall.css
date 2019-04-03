@@ -128,9 +128,22 @@
 {
 
 }
-
+@media only screen and (min-width : 768px)
+{
+  .moreMob
+  {
+    display: none;
+  }
+}
 @media only screen and (max-width : 768px)
 {
+  .reviews .sliderRewN .sliderRewContN img {
+    width: 70%;
+    }
+  .more
+  {
+    display: none;
+  }
   .delivery
   {
     display: flex;
@@ -141,7 +154,14 @@
 }
 @media only screen and (max-width : 576px)
 {
-
+  .reviews .slick-prev
+  {
+    left: 5%;
+  }
+  .reviews .slick-next
+  {
+    right: 5%;
+  }
 }
 @media only screen and (max-width : 450px)
 {

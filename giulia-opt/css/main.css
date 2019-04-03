@@ -34,6 +34,11 @@ button:focus {
   display: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 section {
   padding: 30px 0;
   overflow: hidden;
@@ -537,6 +542,229 @@ section {
 }
 
 /* --- about END ------------------------------------------------*/
+/* --- more Start ------------------------------------------------*/
+.more {
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.more ul {
+  width: 100%;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.more ul:hover li {
+  width: 8%;
+}
+
+.more ul li {
+  padding: 10px 5px;
+  list-style: none;
+  position: relative;
+  width: 10%;
+  height: 100%;
+  border-right: 2px solid #cc2900;
+  float: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  overflow: hidden;
+}
+
+.more ul li:nth-child(1) {
+  background: url("../img/slideall01.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li:nth-child(2) {
+  background: url("../img/slideall02.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li:nth-child(3) {
+  background: url("../img/slideall03.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li:nth-child(4) {
+  background: url("../img/slideall04.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li:nth-child(5) {
+  background: url("../img/slideall05.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li:nth-child(6) {
+  background: url("../img/slideall06.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li:nth-child(7) {
+  background: url("../img/slideall07.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li:nth-child(8) {
+  background: url("../img/slideall08.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li:nth-child(9) {
+  background: url("../img/slideall09.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li:nth-child(10) {
+  background: url("../img/slideall10.jpg");
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.more ul li .hText {
+  width: 100%;
+  height: 100%;
+}
+
+.more ul li .hText h5 {
+  font-size: 1.4rem;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  background: #fff;
+  padding: 10px 5px;
+}
+
+.more ul li .hText .botWrap {
+  position: absolute;
+  bottom: -10%;
+  left: 20%;
+}
+
+.more ul li .hText:hover .botWrap {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  bottom: 10%;
+}
+
+.more ul li:hover {
+  width: 28%;
+}
+
+.moreMob .hText {
+  padding: 10px 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border: 2px solid #cc2900;
+}
+
+.moreMob .hText h5 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 5px;
+}
+
+.moreMob .hText:nth-child(1) {
+  background: url("../img/slideall01.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+.moreMob .hText:nth-child(2) {
+  background: url("../img/slideall02.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+.moreMob .hText:nth-child(3) {
+  background: url("../img/slideall03.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+.moreMob .hText:nth-child(4) {
+  background: url("../img/slideall04.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+.moreMob .hText:nth-child(5) {
+  background: url("../img/slideall05.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+.moreMob .hText:nth-child(6) {
+  background: url("../img/slideall06.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+.moreMob .hText:nth-child(7) {
+  background: url("../img/slideall07.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+.moreMob .hText:nth-child(8) {
+  background: url("../img/slideall08.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+.moreMob .hText:nth-child(9) {
+  background: url("../img/slideall09.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+.moreMob .hText:nth-child(10) {
+  background: url("../img/slideall10.jpg");
+  background-size: 100% auto;
+  background-position: left top 20%;
+  background-repeat: no-repeat;
+}
+
+/* ---  more END ------------------------------------------------*/
 /* --- product Start ------------------------------------------------*/
 .newProd {
   background: #fafafa;
@@ -650,13 +878,6 @@ section {
 
 /* --- advantage END ------------------------------------------------*/
 /* --- steps start ------------------------------------------------*/
-.steps {
-  background: url("../img/stepsBg.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 .steps .textWrap {
   display: block;
   height: 100%;
@@ -732,6 +953,96 @@ section {
 }
 
 /* --- steps END ------------------------------------------------*/
+/* --- reviews Start ------------------------------------------------*/
+.reviews {
+  background: #fafafa;
+}
+
+.reviews img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviews .sliderRew {
+  padding: 15px;
+  outline: none;
+  border: 5px solid #fff;
+}
+
+.reviews .sliderRew:focus {
+  outline: none;
+}
+
+.reviews .sliderRew .sliderRewCont {
+  padding: 15px;
+  outline: none;
+}
+
+.reviews .sliderRew .sliderRewCont h4 {
+  margin-top: 10px;
+}
+
+.reviews .sliderRew .sliderRewCont:focus {
+  outline: none;
+}
+
+.reviews .slick-prev {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -5%;
+}
+
+.reviews .slick-prev:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid #111;
+  border-top: 4px solid #111;
+  color: #000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.reviews .slick-next {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -5%;
+}
+
+.reviews .slick-next:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #111;
+  border-top: 4px solid #111;
+  color: #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.reviews .sliderRewNSert .sliderRewContN img {
+  width: 90%;
+}
+
+/* --- reviews END ------------------------------------------------*/
 /* --- contacts START ------------------------------------------------*/
 .contacts {
   background: #b3b3b3;
