@@ -544,7 +544,6 @@ section {
 /* --- about END ------------------------------------------------*/
 /* --- more Start ------------------------------------------------*/
 .more {
-  padding: 0;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -665,7 +664,7 @@ section {
 
 .more ul li .hText .botWrap {
   position: absolute;
-  bottom: -10%;
+  bottom: -20%;
   left: 20%;
 }
 

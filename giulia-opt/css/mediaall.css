@@ -36,9 +36,19 @@
 {
 
 }
-
+@media only screen and (min-width : 992px)
+{
+  .moreMob
+  {
+    display: none;
+  }
+}
 @media only screen and (max-width : 992px)
 {
+  .more
+  {
+    display: none;
+  }
   .FirstHead .video-cont
   {
     display: none;
@@ -128,22 +138,13 @@
 {
 
 }
-@media only screen and (min-width : 768px)
-{
-  .moreMob
-  {
-    display: none;
-  }
-}
+
 @media only screen and (max-width : 768px)
 {
   .reviews .sliderRewN .sliderRewContN img {
     width: 70%;
     }
-  .more
-  {
-    display: none;
-  }
+
   .delivery
   {
     display: flex;
