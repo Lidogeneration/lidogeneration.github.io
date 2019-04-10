@@ -186,7 +186,7 @@ $('.sliderRew').slick({
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     arrows: false
   });
 
@@ -211,12 +211,12 @@ $('.sliderRew').slick({
 
   $('.sliderRewNRev').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
-    autoplaySpeed: 2000,
-    adaptiveHeight: true,
+    autoplaySpeed: 5000,
+    adaptiveHeight: false,
     responsive: [
         {
           breakpoint: 992,

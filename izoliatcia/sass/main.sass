@@ -1,14 +1,14 @@
 $main_color: #111
 $main_color_light: #55595c
 $main_white: #fff
-$main_rgb: #8FD14F
+$main_rgb: #ff5f00
 $main_bg: #e6e6e6
-$main_bg_light: #f8f8f8
+$main_bg_light: #6997D3
 $main_bg_text: #808080
+$bg_m: #000
 
 body
 	background: $main_white
-	font-family: 'Roboto', sans-serif
 	font-weight: normal
 	font-size: 16px
 	color: $main_color
@@ -43,14 +43,14 @@ section
 /* --- Navbar START ------------------------------------------------*/
 .navbar
 	transition: 0.5s
-	background: rgba(255,255,255, .9)
+	background: rgba($main_color, .9)
 	.dropdown
 		.dropdown-toggle
 			&:after
-				color: $main_color
+				color: $main_white
 			span
 				transition: 0.3s
-				color: $main_color
+				color: $main_white
 			&:hover
 				span
 					transition: 0.3s
@@ -66,7 +66,7 @@ section
 		position: relative
 		overflow: hidden
 		span
-			color: $main_color
+			color: $main_white
 			transition: 0.3s
 			transform-origin: left
 		&:before
@@ -87,7 +87,7 @@ section
 				transform: scaleX(1)
 	p
 		font-size: 24px
-		color: $main_color
+		color: $main_rgb
 		margin: 0
 		padding-right: 10px
 		display: inline-block
@@ -105,23 +105,23 @@ section
 			transition: 0.3s
 			outline: none
 			border: 1px solid #fff
-.active
-	position: relative
-	overflow: hidden
-	span
-		color: $main_rgb !important
-	&:before
-		transition: 0.5s
-		position: absolute
-		content: ''
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		border-bottom: 2px solid $main_color
-		transform-origin: right
-		transform: scaleX(0)
-		animation: animate 7s linear infinite
+	.active
+		position: relative
+		overflow: hidden
+		span
+			color: $main_rgb !important
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_color
+			transform-origin: right
+			transform: scaleX(0)
+			animation: animate 7s linear infinite
 @keyframes animate 
 	0%
 		transform-origin: right
@@ -139,15 +139,15 @@ section
 	.dropdown
 		.dropdown-toggle
 			&:after
-				color: $main_color
+				color: $main_white
 			span
-				color: $main_color
+				color: $main_white
 	.anim
 		span
-			color: $main_color
+			color: $main_white
 	p
-		color: $main_color
-	background: rgba(255,255,255, 0.9)
+		color: $main_rgb
+	background: rgba($main_color, .9)
 	color: $main_color_light	
 	padding: .4rem .4rem
 	transition: 0.5s
@@ -179,63 +179,63 @@ section
 	display: flex
 	flex-wrap: wrap
 	justify-content: center
-	align-content: space-around
+	align-items: center
 	position: relative
-	.slider
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-		min-height: 100vh
-		height: 100%
-		transition: all 3s
-		z-index: -1
-		.image
-			transition: all 3s
-			background-size: cover
-			height: 0
-			transform-origin: right
-		.bg01
-			background: url('../img/headbg01.jpg')
-			background-size: cover
-			background-position: center
-			background-repeat: no-repeat
-			background-attachment: fixed
-		.bg02
-			background: url('../img/headbg02.jpg')
-			background-size: cover
-			background-position: center
-			background-repeat: no-repeat
-			background-attachment: fixed
-		.bg03
-			background: url('../img/headbg03.jpg')
-			background-size: cover
-			background-position: center
-			background-repeat: no-repeat
-			background-attachment: fixed
-		.activet
-			transition: all 3s
-			height: 100%
-		.deactive
-			transition: all 3s
-			height: 0
+	.bg01
+		background: url('../img/headbg01.jpg')
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-attachment: fixed
+	.bg02
+		background: url('../img/headbg02.jpg')
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-attachment: fixed
+	.bg03
+		background: url('../img/headbg03.jpg')
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-attachment: fixed
 	.headerText
+		padding: 10px
 		width: 66%
-		margin: auto
 		text-align: center
+		z-index: 3
+		position: relative
+		.lineOne
+			width: 10px
+			height: 150%
+			background: $main_rgb
+			position: absolute
+			top: -25%
+			left: 5px
+		.lineTwo
+			width: 10px
+			height: 150%
+			background: $main_rgb
+			position: absolute
+			top: -25%
+			right: 5px
 		h1
-			border: 2px solid $main_rgb
 			display: inline-block
 			text-transform: uppercase
 			font-size: 1.9rem
 			padding: 15px 10px
 			color: $main_white
 			text-align: center
-			background: rgba($main_color, .7)
+		hr
+			width: 60%
+			margin: 0 auto
+			background-color: $main_rgb
+			border: 1px solid $main_rgb
 	.trigerText
 		width: 80%
 		margin: auto
 		text-align: center
+		z-index: 3
 		h3
 			font-weight: bold
 			display: inline-block
@@ -246,11 +246,11 @@ section
 			text-align: center
 			background: rgba($main_bg_text, .7)
 	.pricecont
+		z-index: 3
 		padding: 10px 5px 10px 5px
 		display: flex
 		justify-content: center
 		align-items: center
-		border: 2px solid $main_white
 		.textCon
 			text-align: center
 			h4
@@ -259,14 +259,27 @@ section
 				padding: 10px
 				color: $main_white
 				text-align: center
-				background: rgba($main_bg_text, .7)
 				margin: 0
+	.carousel
+		background: rgba($main_color, .6)
+		z-index: 1
+		width: 100%
+		min-height: 100vh
+		position: absolute
+		top: 0
+		left: 0
+		.carousel-item
+			width: 100%
+			min-height: 100vh
 /* --- Header END ------------------------------------------------*/	
 
 
 /* --- About Start ------------------------------------------------*/
 .about
 	padding: 20px
+	background: $main_bg
+	.row
+		background: $main_color
 	img
 		margin-left: auto
 		margin-right: auto
@@ -277,7 +290,13 @@ section
 
 /* --- prodAll Start ------------------------------------------------*/
 .prodAll
+	background: url('../img/dumohidBg.jpg')
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	background-attachment: fixed
 	.prodAllWrap
+		background: #000
 		box-shadow: 5px 5px 0 0 $main_rgb
 		border: 2px solid $main_rgb
 		display: flex
@@ -316,6 +335,7 @@ section
 					transition: 0.3s
 					color: $main_white
 		.textWrap
+			color: $main_white
 			margin: auto
 			flex-basis: 60%
 			padding: 5px
@@ -332,6 +352,7 @@ section
 
 /* --- aboutmore Start ------------------------------------------------*/
 .about-more
+	background: $main_bg
 	padding-bottom: 20px
 	.pricecont
 		display: flex
@@ -406,7 +427,10 @@ section
 		padding: 5px
 		margin-top: 10px
 		text-transform: uppercase
-		background: $main_rgb
+	hr
+		background-color: $main_rgb
+		width: 40%
+		border: 1px solid $main_rgb
 /* --- aboutmore END ------------------------------------------------*/	
 
 
@@ -447,39 +471,38 @@ section
 .prod
 	border-top: 2px solid $main_rgb
 	border-bottom: 2px solid $main_rgb
-	background: url('../img/prodbg.jpg')
-	background-position: center center
-	background-size: cover
-	background-repeat: no-repeat
-	background-attachment: fixed
+	background: $main_bg
 	.sliderRew
 		box-shadow: 0px 0px 2px 2px rgba($main_color, .3)
 	ul
 		padding: 0
 		list-style: none
 		li
+			font-size: 20px
 			display: inline-block
 			margin-right: 5px
 	p
 		font-size: 20px
 		font-weight: bold
-.pricecont
-	padding: 10px 5px 10px 5px
-	display: flex
-	justify-content: center
-	align-items: center
-	border: 2px solid $main_white
-	.textCon
-		text-align: center
-		h4
-			display: inline-block
-			text-transform: uppercase
-			padding: 10px
-			color: $main_white
+	hr
+		width: 60%
+		background-color: $main_rgb
+		border: 1px solid $main_rgb
+	.pricecont
+		padding: 10px 5px 10px 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		.textCon
 			text-align: center
-			background: rgba($main_bg_text, .7)
-			margin: 0	
-
+			h4
+				display: inline-block
+				text-transform: uppercase
+				padding: 10px
+				color: $main_white
+				text-align: center
+				margin: 0	
+				color: $main_color
 /* --- ProductAll END ------------------------------------------------*/	
 
 
@@ -506,9 +529,10 @@ section
 
 /* --- advantage Start ------------------------------------------------*/	
 .advantage
+	color: $main_white
 	min-height: 70vh
 	padding: 50px 0 0 0 
-	background: url('../img/prodbg.jpg')
+	background: url('../img/headbg01.jpg')
 	background-position: center center
 	background-size: cover
 	background-repeat: no-repeat
@@ -538,18 +562,18 @@ section
 			i
 				margin-right: 5px
 			&:nth-child(even)
-				background: $main_bg_light
+				background: $main_rgb
 			&:nth-child(odd)
-				background: $main_bg
+				background: $main_color
 	.borderYes
 		i
-			color: $main_rgb
+			color: $main_white
 		ul
 			li
 				border: 1px solid $main_rgb
 	.borderNo
 		i
-			color: red
+			color: $main_white
 		ul
 			li
 				border: 1px solid red
@@ -559,6 +583,7 @@ section
 
 /* --- sert Start ------------------------------------------------*/
 .sert
+	background: $main_bg
 	img
 		max-width: 100%
 		height: auto
@@ -625,22 +650,30 @@ section
 
 /* --- reviews Start ------------------------------------------------*/
 .reviews
-	background: $main_bg_light
+	background: $main_bg_text
 	h3
+		color: $main_white
 		text-transform: uppercase
 		text-align: center
+	.slick-list
+		.slick-track 
+    	height: 100%
 	.sliderRewNRev
+		height: 100%
+		display: flex
 		.sliderRewContN
 			padding: 15px
+			height: 100%
 			.revWrap
+				height: 100%
 				background: $main_white
-				border: 1px solid $main_rgb
-				padding: 5px
+				padding: 10px
 				position: relative
 				img
 					display: block
 					margin-left: auto
 					margin-right: auto
+					margin-bottom: 10px
 				h5
 					text-align: right
 					font-weight: bold
@@ -660,8 +693,8 @@ section
 			left: 0
 			width: 100%
 			height: 100%
-			border-left: 4px solid $main_color
-			border-top: 4px solid $main_color
+			border-left: 4px solid $main_white
+			border-top: 4px solid $main_white
 			color: #000
 			transform: rotate(-45deg)
 	.slick-next
@@ -677,8 +710,8 @@ section
 			left: 0
 			width: 100%
 			height: 100%
-			border-right: 4px solid $main_color
-			border-top: 4px solid $main_color
+			border-right: 4px solid $main_white
+			border-top: 4px solid $main_white
 			color: #000
 			transform: rotate(45deg)
 /* --- reviews END ------------------------------------------------*/	

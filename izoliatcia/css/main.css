@@ -1,6 +1,5 @@
 body {
   background: #fff;
-  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #111;
@@ -55,23 +54,23 @@ section {
 .navbar {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(17, 17, 17, 0.9);
 }
 
 .navbar .dropdown .dropdown-toggle:after {
-  color: #111;
+  color: #fff;
 }
 
 .navbar .dropdown .dropdown-toggle span {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #111;
+  color: #fff;
 }
 
 .navbar .dropdown .dropdown-toggle:hover span {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #8FD14F;
+  color: #ff5f00;
 }
 
 .navbar .navbar-brand {
@@ -91,7 +90,7 @@ section {
 }
 
 .navbar .anim span {
-  color: #111;
+  color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform-origin: left;
@@ -107,7 +106,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #8FD14F;
+  border-bottom: 2px solid #ff5f00;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transform: scaleX(0);
@@ -115,7 +114,7 @@ section {
 }
 
 .navbar .anim:hover span {
-  color: #8FD14F;
+  color: #ff5f00;
 }
 
 .navbar .anim:hover:before {
@@ -125,7 +124,7 @@ section {
 
 .navbar p {
   font-size: 24px;
-  color: #111;
+  color: #ff5f00;
   margin: 0;
   padding-right: 10px;
   display: inline-block;
@@ -155,16 +154,16 @@ section {
   border: 1px solid #fff;
 }
 
-.active {
+.navbar .active {
   position: relative;
   overflow: hidden;
 }
 
-.active span {
-  color: #8FD14F !important;
+.navbar .active span {
+  color: #ff5f00 !important;
 }
 
-.active:before {
+.navbar .active:before {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
@@ -237,7 +236,7 @@ section {
 }
 
 .fixed-nav {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(17, 17, 17, 0.9);
   color: #55595c;
   padding: .4rem .4rem;
   -webkit-transition: 0.5s;
@@ -247,19 +246,19 @@ section {
 }
 
 .fixed-nav .dropdown .dropdown-toggle:after {
-  color: #111;
+  color: #fff;
 }
 
 .fixed-nav .dropdown .dropdown-toggle span {
-  color: #111;
+  color: #fff;
 }
 
 .fixed-nav .anim span {
-  color: #111;
+  color: #fff;
 }
 
 .fixed-nav p {
-  color: #111;
+  color: #ff5f00;
 }
 
 .fixed-nav .navbar-toggler-icon {
@@ -302,33 +301,13 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
-.first .slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  z-index: -1;
-}
-
-.first .slider .image {
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  background-size: cover;
-  height: 0;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-}
-
-.first .slider .bg01 {
+.first .bg01 {
   background: url("../img/headbg01.jpg");
   background-size: cover;
   background-position: center;
@@ -336,7 +315,7 @@ section {
   background-attachment: fixed;
 }
 
-.first .slider .bg02 {
+.first .bg02 {
   background: url("../img/headbg02.jpg");
   background-size: cover;
   background-position: center;
@@ -344,7 +323,7 @@ section {
   background-attachment: fixed;
 }
 
-.first .slider .bg03 {
+.first .bg03 {
   background: url("../img/headbg03.jpg");
   background-size: cover;
   background-position: center;
@@ -352,39 +331,53 @@ section {
   background-attachment: fixed;
 }
 
-.first .slider .activet {
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  height: 100%;
-}
-
-.first .slider .deactive {
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  height: 0;
-}
-
 .first .headerText {
+  padding: 10px;
   width: 66%;
-  margin: auto;
   text-align: center;
+  z-index: 3;
+  position: relative;
+}
+
+.first .headerText .lineOne {
+  width: 10px;
+  height: 150%;
+  background: #ff5f00;
+  position: absolute;
+  top: -25%;
+  left: 5px;
+}
+
+.first .headerText .lineTwo {
+  width: 10px;
+  height: 150%;
+  background: #ff5f00;
+  position: absolute;
+  top: -25%;
+  right: 5px;
 }
 
 .first .headerText h1 {
-  border: 2px solid #8FD14F;
   display: inline-block;
   text-transform: uppercase;
   font-size: 1.9rem;
   padding: 15px 10px;
   color: #fff;
   text-align: center;
-  background: rgba(17, 17, 17, 0.7);
+}
+
+.first .headerText hr {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #ff5f00;
+  border: 1px solid #ff5f00;
 }
 
 .first .trigerText {
   width: 80%;
   margin: auto;
   text-align: center;
+  z-index: 3;
 }
 
 .first .trigerText h3 {
@@ -399,6 +392,7 @@ section {
 }
 
 .first .pricecont {
+  z-index: 3;
   padding: 10px 5px 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,7 +403,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #fff;
 }
 
 .first .pricecont .textCon {
@@ -422,14 +415,33 @@ section {
   padding: 10px;
   color: #fff;
   text-align: center;
-  background: rgba(128, 128, 128, 0.7);
   margin: 0;
+}
+
+.first .carousel {
+  background: rgba(17, 17, 17, 0.6);
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.first .carousel .carousel-item {
+  width: 100%;
+  min-height: 100vh;
 }
 
 /* --- Header END ------------------------------------------------*/
 /* --- About Start ------------------------------------------------*/
 .about {
   padding: 20px;
+  background: #e6e6e6;
+}
+
+.about .row {
+  background: #111;
 }
 
 .about img {
@@ -441,10 +453,19 @@ section {
 
 /* --- About END ------------------------------------------------*/
 /* --- prodAll Start ------------------------------------------------*/
+.prodAll {
+  background: url("../img/dumohidBg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .prodAll .prodAllWrap {
-  -webkit-box-shadow: 5px 5px 0 0 #8FD14F;
-          box-shadow: 5px 5px 0 0 #8FD14F;
-  border: 2px solid #8FD14F;
+  background: #000;
+  -webkit-box-shadow: 5px 5px 0 0 #ff5f00;
+          box-shadow: 5px 5px 0 0 #ff5f00;
+  border: 2px solid #ff5f00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,7 +517,7 @@ section {
 
 .prodAll .prodAllWrap:hover .iHover {
   right: 20px;
-  color: #8FD14F;
+  color: #ff5f00;
 }
 
 .prodAll .prodAllWrap:hover .textWrap h4 {
@@ -506,6 +527,7 @@ section {
 }
 
 .prodAll .prodAllWrap .textWrap {
+  color: #fff;
   margin: auto;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
@@ -529,6 +551,7 @@ section {
 /* --- prodAll Start ------------------------------------------------*/
 /* --- aboutmore Start ------------------------------------------------*/
 .about-more {
+  background: #e6e6e6;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -645,7 +668,12 @@ section {
   padding: 5px;
   margin-top: 10px;
   text-transform: uppercase;
-  background: #8FD14F;
+}
+
+.about-more hr {
+  background-color: #ff5f00;
+  width: 40%;
+  border: 1px solid #ff5f00;
 }
 
 /* --- aboutmore END ------------------------------------------------*/
@@ -669,7 +697,7 @@ section {
   width: 50%;
   margin-left: auto;
   margin-right: 0;
-  background-color: #8FD14F;
+  background-color: #ff5f00;
 }
 
 .aboutnext p {
@@ -680,13 +708,13 @@ section {
 }
 
 .aboutnext p i {
-  color: #8FD14F;
+  color: #ff5f00;
   font-size: 26px;
   margin-right: 15px;
 }
 
 .aboutnext p span {
-  color: #8FD14F;
+  color: #ff5f00;
   font-size: 22px;
 }
 
@@ -698,13 +726,9 @@ section {
 /* --- aboutnext END ------------------------------------------------*/
 /* --- ProductAll Start ------------------------------------------------*/
 .prod {
-  border-top: 2px solid #8FD14F;
-  border-bottom: 2px solid #8FD14F;
-  background: url("../img/prodbg.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  border-top: 2px solid #ff5f00;
+  border-bottom: 2px solid #ff5f00;
+  background: #e6e6e6;
 }
 
 .prod .sliderRew {
@@ -718,6 +742,7 @@ section {
 }
 
 .prod ul li {
+  font-size: 20px;
   display: inline-block;
   margin-right: 5px;
 }
@@ -727,7 +752,13 @@ section {
   font-weight: bold;
 }
 
-.pricecont {
+.prod hr {
+  width: 60%;
+  background-color: #ff5f00;
+  border: 1px solid #ff5f00;
+}
+
+.prod .pricecont {
   padding: 10px 5px 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,21 +769,20 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #fff;
 }
 
-.pricecont .textCon {
+.prod .pricecont .textCon {
   text-align: center;
 }
 
-.pricecont .textCon h4 {
+.prod .pricecont .textCon h4 {
   display: inline-block;
   text-transform: uppercase;
   padding: 10px;
   color: #fff;
   text-align: center;
-  background: rgba(128, 128, 128, 0.7);
   margin: 0;
+  color: #111;
 }
 
 /* --- ProductAll END ------------------------------------------------*/
@@ -780,9 +810,10 @@ section {
 /* --- Dumohid END ------------------------------------------------*/
 /* --- advantage Start ------------------------------------------------*/
 .advantage {
+  color: #fff;
   min-height: 70vh;
   padding: 50px 0 0 0;
-  background: url("../img/prodbg.jpg");
+  background: url("../img/headbg01.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -832,23 +863,23 @@ section {
 }
 
 .advantage ul li:nth-child(even) {
-  background: #f8f8f8;
+  background: #ff5f00;
 }
 
 .advantage ul li:nth-child(odd) {
-  background: #e6e6e6;
+  background: #111;
 }
 
 .advantage .borderYes i {
-  color: #8FD14F;
+  color: #fff;
 }
 
 .advantage .borderYes ul li {
-  border: 1px solid #8FD14F;
+  border: 1px solid #ff5f00;
 }
 
 .advantage .borderNo i {
-  color: red;
+  color: #fff;
 }
 
 .advantage .borderNo ul li {
@@ -857,6 +888,10 @@ section {
 
 /* --- advantage END ------------------------------------------------*/
 /* --- sert Start ------------------------------------------------*/
+.sert {
+  background: #e6e6e6;
+}
+
 .sert img {
   max-width: 100%;
   height: auto;
@@ -946,22 +981,35 @@ section {
 /* --- sert END ------------------------------------------------*/
 /* --- reviews Start ------------------------------------------------*/
 .reviews {
-  background: #f8f8f8;
+  background: #808080;
 }
 
 .reviews h3 {
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
 
+.reviews .slick-list .slick-track {
+  height: 100%;
+}
+
+.reviews .sliderRewNRev {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .reviews .sliderRewNRev .sliderRewContN {
   padding: 15px;
+  height: 100%;
 }
 
 .reviews .sliderRewNRev .sliderRewContN .revWrap {
+  height: 100%;
   background: #fff;
-  border: 1px solid #8FD14F;
-  padding: 5px;
+  padding: 10px;
   position: relative;
 }
 
@@ -969,6 +1017,7 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 
 .reviews .sliderRewNRev .sliderRewContN .revWrap h5 {
@@ -993,8 +1042,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  border-left: 4px solid #111;
-  border-top: 4px solid #111;
+  border-left: 4px solid #fff;
+  border-top: 4px solid #fff;
   color: #000;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -1015,8 +1064,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  border-right: 4px solid #111;
-  border-top: 4px solid #111;
+  border-right: 4px solid #fff;
+  border-top: 4px solid #fff;
   color: #000;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1044,7 +1093,7 @@ section {
 .contacts ul li i {
   font-size: 22px;
   margin-right: 10px;
-  color: #8FD14F;
+  color: #ff5f00;
 }
 
 .contacts ul li .social {
@@ -1067,7 +1116,7 @@ section {
 /* --- contacts END ------------------------------------------------*/
 /* --- Button Start ------------------------------------------------*/
 .firstButton {
-  background: #8FD14F;
+  background: #ff5f00;
   padding: 10px 20px;
   text-transform: uppercase;
   position: relative;
@@ -1115,7 +1164,7 @@ section {
 .form-about {
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px solid #8FD14F;
+  border: 2px solid #ff5f00;
   width: 100%;
   display: block;
   margin-left: auto;
@@ -1127,7 +1176,7 @@ section {
 
 .form-about h5 {
   padding: 10px;
-  background: #8FD14F;
+  background: #ff5f00;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -1153,7 +1202,7 @@ section {
 /* --- Form END ------------------------------------------------*/
 /* --- Other START ------------------------------------------------*/
 .bgLight {
-  border: 5px solid #8FD14F;
-  background: #f8f8f8;
+  border: 5px solid #ff5f00;
+  background: #6997D3;
 }
 /*# sourceMappingURL=main.css.map */
