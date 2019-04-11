@@ -1,0 +1,361 @@
+$main_color: #111
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #1d88ed
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+
+
+body
+	background: $main_white
+	font-family: "Muli", Arial, Tahoma, sans-serif;
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, 0)
+	.msgIcon
+		font-size: 26px
+		color: $main_white
+		display: inline
+		padding: 0
+		transition: 0.3s
+		&:hover
+			transition: 0.3s
+			color: $main_rgb
+	// .msgIcon
+  //   font-size: 30px
+  //   padding: 0
+  //   display: inline
+  //   transition: 0.3s
+  //   color: $main_color
+	// 	&:hover
+	// 		transition: 0.3s
+	// 		color: $main_rgb
+	.navbar-brand
+		padding: 0
+	img
+		width: 40px
+		margin: 0
+		padding: 0
+	.br_m
+		border-right: 2px solid $main_rgb
+		margin-right: 10px
+		padding-right: 10px
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_white
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_rgb
+			transform-origin: center
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.msgIcon
+		color: $main_color
+	.anim
+		span
+			color: $main_color
+	p
+		color: $main_rgb
+		padding-left: 10px
+	background: rgba(255,255,255, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- Header start------------------------------------------------*/	
+.headerCont
+	min-height: 100vh
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	justify-content: center
+	position: relative
+	z-index: 1
+	.bgMain
+		background: url('../img/headbg.jpg')
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+		z-index: -2
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		transform: scale(1)
+		transition: 10s
+	.lineOne
+		position: absolute
+		z-index: -1
+		bottom: 0
+		left: 5%
+		width: 50px
+		height: 0vh
+		background: rgba($main_rgb, .4)
+		transition: 2s
+	.lineTwo
+		position: absolute
+		z-index: -1
+		bottom: 0
+		left: 10%
+		width: 50px
+		height: 0vh
+		background: rgba($main_rgb, .4)
+		transition: 2s
+	.lineThree
+		position: absolute
+		z-index: -1
+		bottom: 4%
+		left: 0
+		width: 0
+		height: 50px
+		background: rgba($main_rgb, .4)
+		transition: 3s
+	.textWrap
+		z-index: 3
+		padding: 30px 10px
+		background: rgba($main_rgb, .6)
+		text-align: center
+		color: $main_white
+		h1
+			text-shadow: 2px 2px 2px rgba(0,0,0,1)
+			text-transform: uppercase
+			span
+				font-weight: bold
+				text-decoration: underline
+		h2
+			text-transform: uppercase
+			background: rgba($main_rgb, .5)
+			padding: 10px
+			margin-top: 20px
+			border: 2px solid $main_white
+	.orderFreeWrap
+		text-align: center
+		z-index: 3
+		color: $main_white
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		h4
+			text-transform: uppercase
+			text-shadow: 3px 3px 3px rgba(0,0,0,1)
+			margin: 0
+			margin-right: 10px
+/* --- Header END ------------------------------------------------*/	
+
+
+/* --- About Start ------------------------------------------------*/
+.about
+	min-height: 50vh
+	position: relative
+	.lineOne
+		position: absolute
+		z-index: -1
+		top: 0
+		left: 5%
+		width: 50px
+		height: 0
+		background: rgba($main_rgb, .4)
+		transition: 2s
+	.lineTwo
+		position: absolute
+		z-index: -1
+		top: 0
+		left: 10%
+		width: 50px
+		height: 0
+		background: rgba($main_rgb, .4)
+		transition: 2s
+/* --- About END ------------------------------------------------*/	
+
+
+/* --- product Start ------------------------------------------------*/
+/* --- product END ------------------------------------------------*/	
+
+/* --- ProductAll Start ------------------------------------------------*/
+/* --- ProductAll END ------------------------------------------------*/	
+
+
+/* --- dropshipping Start ------------------------------------------------*/	
+/* --- dropshipping END ------------------------------------------------*/	
+
+
+
+
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/	
+
+
+/* --- advantage Start ------------------------------------------------*/	
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainBtn
+	text-transform: uppercase
+	padding: 10px 30px
+	background: $main_rgb
+	transition: 0.3s
+	span
+		color: $main_white
+	position: relative
+	&:after
+		position: absolute
+		content: ''
+		top: -5px
+		left: -5px
+		right: -5px
+		bottom: -5px
+		border: 2px solid $main_white
+		transition: 0.5s
+		opacity: 0
+	&:hover
+		transition: 0.3s
+		background: rgba($main_rgb, .8)
+		&:after
+			top: 0px
+			left: 0px
+			right: 0px
+			bottom: 0px
+			opacity: 1
+			transition: 0.5s			
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+

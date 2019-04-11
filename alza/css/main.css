@@ -1,0 +1,515 @@
+body {
+  background: #fff;
+  font-family: "Muli", Arial, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+  color: #111;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.done {
+  min-height: 100vh;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0);
+}
+
+.navbar .msgIcon {
+  font-size: 26px;
+  color: #fff;
+  display: inline;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .msgIcon:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #1d88ed;
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar img {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .br_m {
+  border-right: 2px solid #1d88ed;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.navbar .anim {
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .anim span {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.navbar .anim:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #1d88ed;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.navbar .anim:hover span {
+  color: #1d88ed;
+}
+
+.navbar .anim:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar p {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.navbar .navbar-toggler-icon {
+  background: url("../img/burger-light.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.navbar .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.navbar .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.active {
+  position: relative;
+  overflow: hidden;
+}
+
+.active span {
+  color: #1d88ed !important;
+}
+
+.active:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #111;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: animate 7s linear infinite;
+          animation: animate 7s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+.fixed-nav {
+  background: rgba(255, 255, 255, 0.9);
+  color: #55595c;
+  padding: .4rem .4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.fixed-nav .msgIcon {
+  color: #111;
+}
+
+.fixed-nav .anim span {
+  color: #111;
+}
+
+.fixed-nav p {
+  color: #1d88ed;
+  padding-left: 10px;
+}
+
+.fixed-nav .navbar-toggler-icon {
+  background: url("../img/burger-black.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.fixed-nav .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.fixed-nav .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fixed-nav .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #111;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* --- Navbar END ------------------------------------------------*/
+/* --- Header start------------------------------------------------*/
+.headerCont {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.headerCont .bgMain {
+  background: url("../img/headbg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 10s;
+  transition: 10s;
+}
+
+.headerCont .lineOne {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 5%;
+  width: 50px;
+  height: 0vh;
+  background: rgba(29, 136, 237, 0.4);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.headerCont .lineTwo {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 10%;
+  width: 50px;
+  height: 0vh;
+  background: rgba(29, 136, 237, 0.4);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.headerCont .lineThree {
+  position: absolute;
+  z-index: -1;
+  bottom: 4%;
+  left: 0;
+  width: 0;
+  height: 50px;
+  background: rgba(29, 136, 237, 0.4);
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.headerCont .textWrap {
+  z-index: 3;
+  padding: 30px 10px;
+  background: rgba(29, 136, 237, 0.6);
+  text-align: center;
+  color: #fff;
+}
+
+.headerCont .textWrap h1 {
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+}
+
+.headerCont .textWrap h1 span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.headerCont .textWrap h2 {
+  text-transform: uppercase;
+  background: rgba(29, 136, 237, 0.5);
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid #fff;
+}
+
+.headerCont .orderFreeWrap {
+  text-align: center;
+  z-index: 3;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerCont .orderFreeWrap h4 {
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px black;
+  margin: 0;
+  margin-right: 10px;
+}
+
+/* --- Header END ------------------------------------------------*/
+/* --- About Start ------------------------------------------------*/
+.about {
+  min-height: 50vh;
+  position: relative;
+}
+
+.about .lineOne {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 5%;
+  width: 50px;
+  height: 0;
+  background: rgba(29, 136, 237, 0.4);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.about .lineTwo {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 10%;
+  width: 50px;
+  height: 0;
+  background: rgba(29, 136, 237, 0.4);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+/* --- About END ------------------------------------------------*/
+/* --- product Start ------------------------------------------------*/
+/* --- product END ------------------------------------------------*/
+/* --- ProductAll Start ------------------------------------------------*/
+/* --- ProductAll END ------------------------------------------------*/
+/* --- dropshipping Start ------------------------------------------------*/
+/* --- dropshipping END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- advantage Start ------------------------------------------------*/
+/* --- advantage END ------------------------------------------------*/
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+/* --- Button Start ------------------------------------------------*/
+.mainBtn {
+  text-transform: uppercase;
+  padding: 10px 30px;
+  background: #1d88ed;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.mainBtn span {
+  color: #fff;
+}
+
+.mainBtn:after {
+  position: absolute;
+  content: '';
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.mainBtn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: rgba(29, 136, 237, 0.8);
+}
+
+.mainBtn:hover:after {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* --- Button END ------------------------------------------------*/
+/* --- Form START ------------------------------------------------*/
+/* --- Form END ------------------------------------------------*/
+/* --- Other START ------------------------------------------------*/
+/*# sourceMappingURL=main.css.map */
