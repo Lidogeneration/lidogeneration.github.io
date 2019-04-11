@@ -151,13 +151,13 @@ const lineT = document.getElementById('lineTwo');
 const lineTh = document.getElementById('lineThree');
 const headC = document.getElementById('headerC');
 const aboutC = document.getElementById('aboutCont');
-const mainHeight = window.innerHeight;
-const headTop = headC.getBoundingClientRect().top;
-const aboutTop = aboutC.getBoundingClientRect().top - mainHeight;
+
 
 function changeHeadText()
 {
-
+    const mainHeight = window.innerHeight;
+    const headTop = headC.getBoundingClientRect().top;
+    const aboutTop = aboutC.getBoundingClientRect().top - mainHeight;
     // console.log(aboutTop);
     console.log(aboutTop);
     if( headTop >= -100 )
