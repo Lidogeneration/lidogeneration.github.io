@@ -151,9 +151,10 @@ const lineT = document.getElementById('lineTwo');
 const lineTh = document.getElementById('lineThree');
 const headC = document.getElementById('headerC');
 const aboutC = document.getElementById('aboutCont');
+const mainHeight = window.innerHeight;
 function changeHeadText()
 {
-    let mainHeight = window.innerHeight;
+    
     let headTop = headC.getBoundingClientRect().top;
     let aboutTop = aboutC.getBoundingClientRect().top - mainHeight;
     // console.log(aboutTop);
