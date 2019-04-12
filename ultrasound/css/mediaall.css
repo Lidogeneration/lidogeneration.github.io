@@ -4,10 +4,6 @@
 }
 @media only screen and (max-height : 775px) 
 {
-  .headCont
-  {
-    padding-top: 85px;
-  }
 }
 
 
@@ -55,7 +51,10 @@
   {
     font-size: 1.7rem;
   }
-
+  .headContT .triggersWrap h5
+  {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width : 800px)
 {
@@ -81,14 +80,17 @@
     font-size: 1.4rem;
   } */
 
-
+  .headContT .pWrap h4
+  {
+    font-size: 1.2rem;
+  }
  .headContT .container-fluid h1 
   {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .headContT .container-fluid h2 
   {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width : 450px)

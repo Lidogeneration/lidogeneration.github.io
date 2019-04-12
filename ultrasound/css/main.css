@@ -1,5 +1,5 @@
 body {
-  background: #55595c;
+  background: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -270,8 +270,9 @@ section {
 /* --- Navbar END ------------------------------------------------*/
 /* --- headCont start------------------------------------------------*/
 /* --- headCont END ------------------------------------------------*/
-/* --- About Start ------------------------------------------------*/
+/* --- headContT Start ------------------------------------------------*/
 .headContT {
+  padding-top: 75px;
   min-height: 100vh;
   background: url("../img/headBG.jpg");
   background-position: center;
@@ -398,7 +399,38 @@ section {
   color: red;
 }
 
-/* --- About END ------------------------------------------------*/
+/* --- headContT END ------------------------------------------------*/
+/* --- about Start ------------------------------------------------*/
+.about h3 {
+  text-transform: uppercase;
+  background: #0084c7;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+}
+
+.about .textwrap {
+  background: #0084c7;
+  padding: 10px;
+  color: #fff;
+}
+
+.about .textwrap p {
+  text-indent: 20px;
+  font-size: 20px;
+}
+
+.about .textwrap hr {
+  background-color: #fff;
+  width: 80%;
+  border: 1px solid #fff;
+}
+
+.about .img-wrap {
+  border: 5px solid #0084c7;
+}
+
+/* --- about END ------------------------------------------------*/
 /* --- product Start ------------------------------------------------*/
 /* --- product END ------------------------------------------------*/
 /* --- ProductAll Start ------------------------------------------------*/
@@ -442,6 +474,37 @@ section {
 
 .mainButton:hover:before {
   border: 3px solid #0084c7;
+}
+
+.mainButtonLight {
+  padding: 6px 16px 6px 16px;
+  border: 2px solid #0084c7;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  background: #0084c7;
+  position: relative;
+  color: #fff;
+}
+
+.mainButtonLight:before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #0084c7;
+}
+
+.mainButtonLight:hover {
+  color: #fff;
+}
+
+.mainButtonLight:hover:before {
+  border: 3px solid #fff;
 }
 
 /* --- Button END ------------------------------------------------*/
