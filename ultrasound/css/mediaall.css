@@ -30,30 +30,39 @@
 }
 @media only screen and (max-width : 1140px) 
 {
-
+  .advantage .advWrap hr
+  {
+    margin: 5px auto 5px 0px;
+  }
 }
 
 @media only screen and (max-width : 992px)
 {
-  /* .headCont .container-fluid h1 
+
+
+  h1 
   {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
-  .headCont .container-fluid h2 
+  h2 
   {
-    font-size: 1.7rem;
-  } */
-  .headContT .container-fluid h1 
-  {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
-  .headContT.container-fluid h2 
+  h3 
   {
-    font-size: 1.7rem;
+    font-size: 1.1rem;
   }
-  .headContT .triggersWrap h5
+  h4
+  {
+    font-size: 1.2rem;
+  }
+  h5
   {
     font-size: 1rem;
+  }
+  .about .textwrap p
+  {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width : 800px)
@@ -66,31 +75,37 @@
 }
 @media only screen and (max-width : 768px)
 {
-
+  .advantage .advWrap .numberWrap span
+  {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width : 600px)
+{
+  .advantage .advWrap .numberWrap
+  {
+    display: none;
+  }
+  .advantage .advWrap .imgWrap
+  {
+    width: 100%;
+  }
+  .advantage .advWrap .txtWrap
+  {
+    width: 100%;
+    text-align: center;
+  }
 
 }
 @media only screen and (max-width : 576px)
 {
-  /* .headCont .container-fluid h1 
+  .reviews .revWrap .imgWrap
   {
-    font-size: 1.7rem;
+    width: 100%;
   }
-  .headCont .container-fluid h2 
+  .reviews .revWrap .txtWrap
   {
-    font-size: 1.4rem;
-  } */
-
-  .headContT .pWrap h4
-  {
-    font-size: 1.2rem;
-  }
- .headContT .container-fluid h1 
-  {
-    font-size: 1.5rem;
-  }
-  .headContT .container-fluid h2 
-  {
-    font-size: 1.2rem;
+    width: 100%;
   }
 }
 @media only screen and (max-width : 450px)
