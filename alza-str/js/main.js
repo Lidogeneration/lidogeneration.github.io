@@ -122,24 +122,7 @@ function setNameScrollEmail(namescrollEmail ) {
     };
 
 
-    var divs = $(".slider div");
-    var i = 1;
-    
-    function iterate() {
-        if ( i >= divs.length) {
-            i = 0;
-          }
-      
-      $(".image").removeClass( "activet" );
-      $(".image").addClass("deactive");
-      $(divs[i]).removeClass( "deactive" );
-      $(divs[i]).addClass( "activet" );
-      
-      i++;
-    
-    }
-    
-    setInterval( iterate, 7000 );
+
 
 const navBarMy = document.getElementById('nav');   
 
@@ -158,8 +141,6 @@ function changeHeadText()
     const mainHeight = window.innerHeight;
     const headTop = headC.getBoundingClientRect().top;
     const aboutTop = aboutC.getBoundingClientRect().top - mainHeight;
-    // console.log(aboutTop);
-    console.log(aboutTop);
     if( headTop >= -100 )
     {
         bgM.style.transform = 'scale(1.2)';
@@ -229,34 +210,17 @@ window.onresize = function()
     }
 }
 
-$('.sliderRew').slick({
+$('.sliderAbout').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
-    autoplaySpeed: 5000,
-    adaptiveHeight: true
+    autoplaySpeed: 3000,
+    dots: true,
+    arrows: false
   });
 
-  $('.sliderRewN').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 2000,
-    adaptiveHeight: true,
-    responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: true,
-            slidesToShow: 1
-          }
-        }
-    ]
-  });
 
 $(document).ready(function() {
 	$('.sliderRewN').magnificPopup({
@@ -299,3 +263,27 @@ $(document).ready(function() {
 //         videoMain.pause();
 //       }
 // };
+
+$(document).ready(function() {
+	$('.zoom-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+});

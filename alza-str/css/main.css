@@ -3,7 +3,7 @@ body {
   font-family: "Muli", Arial, Tahoma, sans-serif;
   font-weight: normal;
   font-size: 16px;
-  color: #111;
+  color: #222;
   margin: 0;
   padding: 0;
   position: relative;
@@ -14,12 +14,12 @@ body {
 
 body a {
   text-decoration: none;
-  color: #111;
+  color: #222;
 }
 
 body a:hover {
   text-decoration: none;
-  color: #111;
+  color: #222;
 }
 
 button {
@@ -32,6 +32,11 @@ button:focus {
 
 .hidden {
   display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 section {
@@ -178,7 +183,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #111;
+  border-bottom: 2px solid #222;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transform: scaleX(0);
@@ -252,11 +257,11 @@ section {
 }
 
 .fixed-nav .msgIcon {
-  color: #111;
+  color: #222;
 }
 
 .fixed-nav .anim span {
-  color: #111;
+  color: #222;
 }
 
 .fixed-nav p {
@@ -285,7 +290,7 @@ section {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   outline: none;
-  border: 1px solid #111;
+  border: 1px solid #222;
 }
 
 .navbar-nav {
@@ -422,8 +427,17 @@ section {
 /* --- Header END ------------------------------------------------*/
 /* --- About Start ------------------------------------------------*/
 .about {
-  min-height: 50vh;
   position: relative;
+  text-align: center;
+}
+
+.about .textWRap {
+  background: #fff;
+}
+
+.about .textWRap p {
+  line-height: 1.5em;
+  font-weight: 300;
 }
 
 .about .lineOne {
@@ -450,20 +464,485 @@ section {
   transition: 2s;
 }
 
+.about .sliderAbout {
+  position: relative;
+}
+
+.about .sliderAbout:after {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #1d88ed;
+}
+
+.about .slick-dots li button:before {
+  content: '-';
+  font-size: 100px;
+  color: #1d88ed;
+}
+
 /* --- About END ------------------------------------------------*/
 /* --- product Start ------------------------------------------------*/
+.prod {
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.prod .buttonWrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.prod .buttonWrap h4 {
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.prod .buttonWrap .mainBtn {
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.prod .buttonWrap .mainBtn:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid #1d88ed;
+}
+
+.prod .imgWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.prod .imgWrap .imgCont {
+  width: 25%;
+  position: relative;
+  border: 3px solid rgba(29, 136, 237, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.prod .imgWrap .imgCont:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 3px solid #1d88ed;
+}
+
 /* --- product END ------------------------------------------------*/
 /* --- ProductAll Start ------------------------------------------------*/
+.prodAll {
+  text-align: center;
+  background: url("../img/prodall.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.prodAll .prodWrap {
+  background: #fff;
+  padding: 0 0 20px 0;
+  -webkit-box-shadow: 0px 2px 3px 0px #222;
+          box-shadow: 0px 2px 3px 0px #222;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.prodAll .prodWrap:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #e6e6e6;
+}
+
+.prodAll .prodWrap .hWrap {
+  background: #1d88ed;
+  padding: 10px;
+}
+
+.prodAll .prodWrap .hWrap h4 {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.prodAll .prodWrap .txtWrap ul {
+  padding: 10px;
+  list-style: none;
+}
+
+.prodAll .prodWrap .txtWrap ul li {
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.prodAll .prodWrap .txtWrap ul li:nth-child(even) {
+  background: rgba(29, 136, 237, 0.6);
+}
+
+.prodAll .btnWrap .mainBtn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.prodAll .btnWrap .mainBtn:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid #1d88ed;
+}
+
 /* --- ProductAll END ------------------------------------------------*/
-/* --- dropshipping Start ------------------------------------------------*/
-/* --- dropshipping END ------------------------------------------------*/
-/* --- action END ------------------------------------------------*/
-/* --- action END ------------------------------------------------*/
+/* --- steps Start ------------------------------------------------*/
+.steps {
+  text-align: center;
+}
+
+.steps .stepsCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.steps .stepsCont .stepsWrap {
+  width: 20%;
+  height: 250px;
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.steps .stepsCont .stepsWrap:hover .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.steps .stepsCont .stepsWrap:hover .back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.steps .stepsCont .stepsWrap .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: #1d88ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.steps .stepsCont .stepsWrap .front h2 {
+  font-size: 100px;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.steps .stepsCont .stepsWrap .front h2 i {
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.steps .stepsCont .stepsWrap .front hr {
+  background-color: #fff;
+  border: 1px solid #fff;
+  width: 60%;
+}
+
+.steps .stepsCont .stepsWrap .front h5 {
+  text-transform: uppercase;
+}
+
+.steps .stepsCont .stepsWrap .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1d88ed;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.steps .stepsCont .stepsWrap .back p {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* --- steps END ------------------------------------------------*/
 /* --- advantage Start ------------------------------------------------*/
+.adv {
+  padding-bottom: 0;
+  background: url("../img/work2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.adv ul {
+  padding: 12px;
+  color: #1d88ed;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.adv ul li {
+  text-transform: uppercase;
+  padding: 5px;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.adv ul li i {
+  position: absolute;
+  left: -25px;
+  top: 7px;
+  font-size: 22px;
+  color: #FFC60D;
+}
+
+.adv .buttonWrap {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.adv .buttonWrap h4 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.adv .buttonWrap .mainBtn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 /* --- advantage END ------------------------------------------------*/
 /* --- reviews Start ------------------------------------------------*/
+.rev {
+  text-align: center;
+}
+
+.rev .slick-dots li button:before {
+  content: '-';
+  font-size: 100px;
+  color: #1d88ed;
+}
+
+.rev .revWrap {
+  position: relative;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5px;
+}
+
+.rev .revWrap:focus {
+  outline: none;
+}
+
+.rev .revWrap .imgWrap {
+  width: 30%;
+}
+
+.rev .revWrap .imgWrap img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rev .revWrap .txtWrap {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rev .revWrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-top: 2px solid #1d88ed;
+  border-left: 2px solid #1d88ed;
+}
+
+.rev .revWrap:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border-bottom: 2px solid #1d88ed;
+  border-right: 2px solid #1d88ed;
+}
+
 /* --- reviews END ------------------------------------------------*/
 /* --- contacts Start ------------------------------------------------*/
+.contacts {
+  background: #e6e6e6;
+  text-align: center;
+}
+
+.contacts .txtWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts .txtWrap h4 {
+  color: #1d88ed;
+  text-transform: uppercase;
+}
+
+.contacts .txtWrap hr {
+  background-color: #1d88ed;
+  border: 1px solid #1d88ed;
+  width: 50%;
+}
+
+.contacts .txtWrap a {
+  margin-bottom: 10px;
+}
+
+.contacts .txtWrap a i {
+  color: #1d88ed;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contacts .txtWrap p {
+  margin: 0;
+}
+
+.contacts .txtWrap p i {
+  color: #1d88ed;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contacts .txtWrap .social i {
+  font-size: 30px;
+}
+
+.contacts iframe {
+  width: 100%;
+  height: 250px;
+}
+
 /* --- contacts END ------------------------------------------------*/
 /* --- Button Start ------------------------------------------------*/
 .mainBtn {
@@ -510,6 +989,54 @@ section {
 
 /* --- Button END ------------------------------------------------*/
 /* --- Form START ------------------------------------------------*/
+.formOpen {
+  padding: 10px;
+  max-width: 300px;
+  position: relative;
+  background: #1d88ed;
+  text-align: center;
+}
+
+.formOpen h3, .formOpen h4 {
+  color: #fff;
+}
+
+.formOpen hr {
+  background-color: #fff;
+}
+
+.formOpen .mainBtn {
+  border: 1px solid #fff;
+}
+
+.formOpen input {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /* --- Form END ------------------------------------------------*/
 /* --- Other START ------------------------------------------------*/
+.headerH {
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.headerH span {
+  mix-blend-mode: multiply;
+}
+
+.headerH:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 22px;
+  width: 100%;
+  height: 100%;
+  background: #1d88ed;
+}
 /*# sourceMappingURL=main.css.map */

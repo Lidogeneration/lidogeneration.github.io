@@ -1,10 +1,10 @@
-$main_color: #111
+$main_color: #222
 $main_color_light: #55595c
 $main_white: #fff
 $main_rgb: #1d88ed
 $main_bg: #e6e6e6
 $main_bg_light: #f8f8f8
-
+$main_rgbT: #FFC60D
 
 body
 	background: $main_white
@@ -29,7 +29,9 @@ button
 		outline: none
 .hidden
 	display: none
-
+img
+	max-width: 100%
+	height: auto
 section
 	padding: 50px 0
 	overflow: hidden
@@ -267,8 +269,13 @@ section
 
 /* --- About Start ------------------------------------------------*/
 .about
-	min-height: 50vh
 	position: relative
+	text-align: center
+	.textWRap
+		background: $main_white
+		p
+			line-height: 1.5em
+			font-weight: 300
 	.lineOne
 		position: absolute
 		z-index: -1
@@ -287,36 +294,306 @@ section
 		height: 0
 		background: rgba($main_rgb, .4)
 		transition: 2s
+	.sliderAbout
+		position: relative
+		&:after
+			position: absolute
+			content: ''
+			top: 5px
+			left: 5px
+			width: 100%
+			height: 100%
+			border: 3px solid $main_rgb
+	.slick-dots
+		li
+			button
+				&:before
+					content: '-'
+					font-size: 100px
+					color: $main_rgb
 /* --- About END ------------------------------------------------*/	
 
 
 /* --- product Start ------------------------------------------------*/
+.prod
+	text-align: center
+	background: $main_bg_light
+	.buttonWrap
+		justify-content: center
+		align-items: center
+		margin-top: 10px
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		h4
+			text-transform: uppercase
+			margin: 5px 0
+		.mainBtn
+			margin-left: 10px
+			margin-right: 10px
+			transition: 0.5s
+			&:after
+				transition: 0.5s
+				border: 2px solid $main_rgb
+	.imgWrap
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		.imgCont
+			width: 25%
+			position: relative
+			border: 3px solid rgba($main_rgb, 0)
+			transition: 0.3s
+			&:hover
+				transition: 0.5s
+				border: 3px solid rgba($main_rgb, 1)
 /* --- product END ------------------------------------------------*/	
 
 /* --- ProductAll Start ------------------------------------------------*/
+.prodAll
+	text-align: center
+	background: url('../img/prodall.jpg')
+	background-attachment: fixed
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	.prodWrap
+		background: $main_white
+		padding: 0 0 20px 0
+		box-shadow: 0px 2px 3px 0px $main_color
+		transition: 0.5s
+		&:hover
+			transition: 0.5s
+			background: $main_bg
+		.hWrap
+			background: $main_rgb
+			padding: 10px
+			h4
+				margin: 0
+				color: $main_white
+				font-weight: bold
+		.txtWrap
+			ul
+				padding: 10px
+				list-style: none
+				li
+					padding: 5px
+					text-transform: uppercase
+					&:nth-child(odd)
+					&:nth-child(even)
+						background: rgba($main_rgb, .6)
+	.btnWrap
+		.mainBtn
+			transition: 0.5s
+			&:after
+				transition: 0.5s
+				border: 2px solid $main_rgb
 /* --- ProductAll END ------------------------------------------------*/	
 
 
-/* --- dropshipping Start ------------------------------------------------*/	
-/* --- dropshipping END ------------------------------------------------*/	
+/* --- steps Start ------------------------------------------------*/	
+.steps
+	text-align: center
+	.stepsCont
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: space-around
+		.stepsWrap
+			width: 20%
+			height: 250px
+			position: relative
+			perspective: 1000px;
+			&:hover
+				.front
+					transform: rotateY(180deg)
+				.back
+					transform: rotateY(360deg)
+			.front
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%	
+				height: 100%
+				background: $main_white
+				transition: 1s
+				backface-visibility: hidden
+				background: $main_rgb
+				display: flex
+				flex-wrap: wrap
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				color: $main_white
+				h2
+					font-size: 100px
+					margin: 0
+					text-decoration: underline
+					i
+						font-size: 50px
+						margin-left: 10px
+				hr
+					background-color: $main_white
+					border: 1px solid $main_white
+					width: 60%	
+				h5
+					text-transform: uppercase
+			.back
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%	
+				height: 100%
+				background: $main_rgb
+				transform: rotateY(180deg)
+				transition: 1s
+				backface-visibility: hidden
+				display: flex
+				justify-content: center
+				align-items: center
+				color: $main_white
+				padding: 10px
+				p
+					text-transform: uppercase
+					font-weight: 600
+					margin: 0
+/* --- steps END ------------------------------------------------*/	
 
 
 
 
-/* --- action END ------------------------------------------------*/
-/* --- action END ------------------------------------------------*/	
 
 
 /* --- advantage Start ------------------------------------------------*/	
+.adv
+	padding-bottom: 0
+	background: url('../img/work2.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	ul
+		padding: 12px
+		color: $main_rgb
+		list-style: none
+		background: rgba($main_white, .8)
+		li
+			text-transform: uppercase
+			padding: 5px
+			position: relative
+			font-size: 18px
+			font-weight: bold
+			i
+				position: absolute
+				left: -25px
+				top: 7px
+				font-size: 22px
+				color: $main_rgbT
+	.buttonWrap
+		text-align: center
+		justify-content: center
+		align-items: center
+		margin-top: 10px
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		h4
+			color: $main_white
+			text-transform: uppercase
+			margin: 5px 0
+		.mainBtn
+			margin-left: 10px
+			margin-right: 10px
 /* --- advantage END ------------------------------------------------*/	
 
 
 /* --- reviews Start ------------------------------------------------*/
+.rev
+	text-align: center
+	.slick-dots
+		li
+			button
+				&:before
+					content: '-'
+					font-size: 100px
+					color: $main_rgb
+	.revWrap
+		position: relative
+		padding: 10px
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		margin: 5px
+		&:focus
+			outline: none
+		.imgWrap
+			width: 30%	
+			img
+				display: block
+				margin-left: auto
+				margin-right: auto
+		.txtWrap
+			width: 70%
+			display: flex
+			justify-content: center
+			align-items: center
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 50%
+			height: 50%
+			border-top: 2px solid $main_rgb
+			border-left: 2px solid $main_rgb
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 50%
+			height: 50%
+			border-bottom: 2px solid $main_rgb
+			border-right: 2px solid $main_rgb
 /* --- reviews END ------------------------------------------------*/	
 
 
 
 /* --- contacts Start ------------------------------------------------*/
+.contacts
+	background: $main_bg
+	text-align: center
+	.txtWrap
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		h4
+			color: $main_rgb
+			text-transform: uppercase
+		hr
+			background-color: $main_rgb
+			border: 1px solid $main_rgb
+			width: 50%
+		a
+			margin-bottom: 10px
+			i
+				color: $main_rgb
+				font-size: 20px
+				margin-right: 10px
+		p
+			margin: 0
+			i
+				color: $main_rgb
+				font-size: 20px
+				margin-right: 10px
+		.social
+			i
+				font-size: 30px
+	iframe
+		width: 100%	
+		height: 250px
 /* --- contacts END ------------------------------------------------*/
 
 
@@ -354,8 +631,40 @@ section
 
 
 /* --- Form START ------------------------------------------------*/	
+.formOpen
+	padding: 10px
+	max-width: 300px
+	position: relative
+	background: $main_rgb
+	text-align: center
+	h3, h4
+		color: $main_white
+	hr
+		background-color: $main_white
+	.mainBtn
+		border: 1px solid $main_white
+	input
+		width: 100%
+		margin-bottom: 20px
+		text-align: center
 /* --- Form END ------------------------------------------------*/	
 
 
 /* --- Other START ------------------------------------------------*/	
-
+.headerH
+	text-transform: uppercase
+	position: relative
+	display: inline-block
+	padding: 5px 10px
+	font-weight: bold
+	letter-spacing: 1px
+	span
+		mix-blend-mode: multiply
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		left: 22px
+		width: 100%
+		height: 100%
+		background: $main_rgb

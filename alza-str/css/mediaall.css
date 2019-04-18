@@ -62,7 +62,11 @@
   {
     font-size: 1rem;
   }
-
+  .steps .stepsCont .stepsWrap
+  {
+    width: 40%;
+    margin-bottom: 15px;
+  }
 
 }
 @media only screen and (max-width : 800px)
@@ -87,8 +91,22 @@
 }
 @media only screen and (max-width : 768px)
 {
- 
-
+  .rev .revWrap .imgWrap
+  {
+    width: 100%;
+  }
+  .rev .revWrap .txtWrap
+  {
+    width: 100%;
+  }
+  .prod .imgWrap .imgCont
+  {
+    width: 50%;
+  }
+  .adv .buttonWrap
+  {
+    margin-bottom: 20px;
+  }
 
 }
 @media only screen and (max-width : 576px)
@@ -106,6 +124,15 @@
   {
     height: 20px;
   }
+  .prod .imgWrap .imgCont
+  {
+    width: 100%;
+  }
+  .steps .stepsCont .stepsWrap
+  {
+    width: 60%;
+  }
+
 }
 @media only screen and (max-width : 450px)
 {
