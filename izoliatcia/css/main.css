@@ -293,6 +293,17 @@ section {
 /* --- Header start------------------------------------------------*/
 .first {
   min-height: 100vh;
+}
+
+.first .carousel-indicators {
+  padding: 0;
+  margin: 0;
+  bottom: 20px;
+}
+
+.first .txtWrap {
+  width: 100%;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,6 +375,10 @@ section {
   padding: 15px 10px;
   color: #fff;
   text-align: center;
+}
+
+.first .headerText h2 {
+  color: #fff;
 }
 
 .first .headerText hr {
@@ -727,7 +742,6 @@ section {
 /* --- ProductAll Start ------------------------------------------------*/
 .prod {
   border-top: 2px solid #ff5f00;
-  border-bottom: 2px solid #ff5f00;
   background: #fff;
 }
 
@@ -784,7 +798,172 @@ section {
   color: #111;
 }
 
+.prod .prodWrap .imgWrap {
+  margin-bottom: 10px;
+}
+
+.prod .prodWrap .txtWrap p {
+  text-align: center;
+}
+
 /* --- ProductAll END ------------------------------------------------*/
+/* --- adv Start ------------------------------------------------*/
+.adv {
+  text-align: center;
+}
+
+.adv h3, .adv h4 {
+  text-transform: uppercase;
+}
+
+.adv h4 {
+  text-decoration: underline;
+}
+
+.adv .stepsCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.adv .stepsCont .stepsWrap {
+  width: 20%;
+  height: 250px;
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.adv .stepsCont .stepsWrap:hover .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.adv .stepsCont .stepsWrap:hover .back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.adv .stepsCont .stepsWrap .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ff5f00;
+}
+
+.adv .stepsCont .stepsWrap .front h2 {
+  font-size: 100px;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.adv .stepsCont .stepsWrap .front h2 i {
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.adv .stepsCont .stepsWrap .front hr {
+  background-color: #ff5f00;
+  border: 1px solid #ff5f00;
+  width: 60%;
+}
+
+.adv .stepsCont .stepsWrap .front h5 {
+  text-shadow: 2px 2px 2px #111;
+  text-transform: uppercase;
+}
+
+.adv .stepsCont .stepsWrap .front1 {
+  background: url("../img/front1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.adv .stepsCont .stepsWrap .front2 {
+  background: url("../img/front2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.adv .stepsCont .stepsWrap .front3 {
+  background: url("../img/front3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.adv .stepsCont .stepsWrap .front4 {
+  background: url("../img/front4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.adv .stepsCont .stepsWrap .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ff5f00;
+  padding: 10px;
+}
+
+.adv .stepsCont .stepsWrap .back p {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* --- adv END ------------------------------------------------*/
 /* --- Dumohid Start ------------------------------------------------*/
 .dumohid {
   min-height: 80vh;

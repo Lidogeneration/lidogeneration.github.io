@@ -57,6 +57,26 @@
 
 @media only screen and (max-width : 992px)
 {
+  h1 
+  {
+    font-size: 1.4rem;
+  }
+  h2 
+  {
+    font-size: 1.3rem;
+  }
+  h3 
+  {
+    font-size: 1.1rem;
+  }
+  h4
+  {
+    font-size: 1.2rem;
+  }
+  h5
+  {
+    font-size: 1rem;
+  }
   .about-more h4
   {
     font-size: 1.2rem;
@@ -140,6 +160,11 @@
   {
     font-size: 1.5rem;
   }
+  .adv .stepsCont .stepsWrap
+  {
+    width: 40%;
+    margin-bottom: 15px;
+  }
 }
 @media only screen and (max-width : 800px)
 {
@@ -196,6 +221,10 @@
   .prodAll .prodAllWrap .imgWrap
   {
     flex-basis: auto
+  }
+  .adv .stepsCont .stepsWrap
+  {
+    width: 80%;
   }
 }
 @media only screen and (max-width : 450px)
