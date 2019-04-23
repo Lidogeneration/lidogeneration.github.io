@@ -26,10 +26,18 @@
 }
 @media only screen and (max-width : 1280px)
 {
-
+  .calc .stepsWrap .stepsCont
+  {
+    width: 23%;
+  }
+  .form-calc .selectWrap
+  {
+    width: 23%;
+  }
 }
 @media only screen and (max-width : 1200px)
 {
+
   .navbar{
     transition: 0.5s;
     background: rgba(255,255,255, .9);
@@ -42,6 +50,16 @@
 
 @media only screen and (max-width : 992px)
 {
+  .calc .stepsWrap .stepsCont
+  {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .form-calc .selectWrap
+  {
+    width: 33%;
+    margin-bottom: 20px;
+  }
   h1 
   {
     font-size: 1.4rem;
@@ -66,6 +84,11 @@
   {
     width: 40%;
     margin-bottom: 15px;
+  }
+  .headerCont .textWrap .triggerWrap ul li
+  {
+    font-size: 16px;
+
   }
 
 }
@@ -111,6 +134,14 @@
 }
 @media only screen and (max-width : 576px)
 {
+  .form-calc .selectWrap
+  {
+    width: 90%;
+  }
+  .calc .stepsWrap .stepsCont
+  {
+    width: 90%;
+  }
   .headerCont .lineOne, .about .lineOne
   {
     width: 20px;

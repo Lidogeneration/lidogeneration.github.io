@@ -66,7 +66,7 @@ section {
 .navbar .msgIcon {
   font-size: 26px;
   color: #fff;
-  display: inline;
+  display: inline-block;
   padding: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -388,12 +388,22 @@ section {
   text-decoration: underline;
 }
 
-.headerCont .textWrap h2 {
+.headerCont .textWrap .triggerWrap {
   text-transform: uppercase;
   background: rgba(29, 136, 237, 0.5);
   padding: 10px;
   margin-top: 20px;
   border: 2px solid #fff;
+}
+
+.headerCont .textWrap .triggerWrap ul {
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+}
+
+.headerCont .textWrap .triggerWrap ul li {
+  font-size: 18px;
 }
 
 .headerCont .orderFreeWrap {
@@ -433,11 +443,14 @@ section {
 
 .about .textWRap {
   background: #fff;
+  padding: 5px;
 }
 
 .about .textWRap p {
   line-height: 1.5em;
   font-weight: 300;
+  text-align: left;
+  text-indent: 20px;
 }
 
 .about .lineOne {
@@ -555,6 +568,60 @@ section {
 }
 
 /* --- product END ------------------------------------------------*/
+/* --- ProductAll Start ------------------------------------------------*/
+.calc h4 {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.calc hr {
+  background-color: #1d88ed;
+  width: 50%;
+}
+
+.calc .stepsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.calc .stepsWrap .stepsCont {
+  width: 300px;
+  border-bottom: 5px solid #1d88ed;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calc .stepsWrap .stepsCont i {
+  font-size: 25px;
+  color: #1d88ed;
+  text-shadow: 2px 2px 2px rgba(5, 5, 5, 0.5);
+}
+
+.calc .stepsWrap .stepsCont p {
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* --- ProductAll Start ------------------------------------------------*/
 /* --- ProductAll Start ------------------------------------------------*/
 .prodAll {
   text-align: center;
@@ -990,7 +1057,7 @@ section {
 /* --- Button END ------------------------------------------------*/
 /* --- Form START ------------------------------------------------*/
 .formOpen {
-  padding: 10px;
+  padding: 25px 10px;
   max-width: 300px;
   position: relative;
   background: #1d88ed;
@@ -1013,6 +1080,117 @@ section {
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.form-calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form-calc .mainBtn {
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.form-calc .mainBtn:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid #1d88ed;
+}
+
+.form-calc .selectWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.form-calc .selectWrap input {
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid #1d88ed;
+}
+
+.form-calc .selectWrap input:focus {
+  outline: 3px solid #1d88ed;
+}
+
+.form-calc .selectWrap label {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-calc .selectWrap label:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 120%;
+  top: -5px;
+  left: 10px;
+  border-top: 2px solid #1d88ed;
+  border-right: 2px solid #1d88ed;
+}
+
+.form-calc .selectWrap label:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 120%;
+  top: -10px;
+  left: 15px;
+  border-top: 2px solid #1d88ed;
+  border-right: 2px solid #1d88ed;
+}
+
+.form-calc .selectWrap select {
+  text-align: center;
+  padding: 5px;
+  width: 200px;
+  border: 2px solid #1d88ed;
+  font-weight: bold;
+}
+
+.form-calc .selectWrap select:focus {
+  outline: 3px solid #1d88ed;
+}
+
+.form-calc .selectWrap select option {
+  font-weight: bold;
+}
+
+.form-calc .selectWrap select option:focus {
+  outline: 3px solid #1d88ed;
+}
+
+.form-calc .formInput input {
+  width: 200px;
+  margin-bottom: 15px;
 }
 
 /* --- Form END ------------------------------------------------*/

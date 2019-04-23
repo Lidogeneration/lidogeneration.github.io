@@ -49,7 +49,7 @@ section
 	.msgIcon
 		font-size: 26px
 		color: $main_white
-		display: inline
+		display: inline-block
 		padding: 0
 		transition: 0.3s
 		&:hover
@@ -244,12 +244,18 @@ section
 			span
 				font-weight: bold
 				text-decoration: underline
-		h2
+		.triggerWrap
 			text-transform: uppercase
 			background: rgba($main_rgb, .5)
 			padding: 10px
 			margin-top: 20px
 			border: 2px solid $main_white
+			ul
+				text-align: left
+				display: inline-block
+				margin: 0
+				li
+					font-size: 18px
 	.orderFreeWrap
 		text-align: center
 		z-index: 3
@@ -273,9 +279,12 @@ section
 	text-align: center
 	.textWRap
 		background: $main_white
+		padding: 5px
 		p
 			line-height: 1.5em
 			font-weight: 300
+			text-align: left
+			text-indent: 20px
 	.lineOne
 		position: absolute
 		z-index: -1
@@ -348,6 +357,42 @@ section
 				transition: 0.5s
 				border: 3px solid rgba($main_rgb, 1)
 /* --- product END ------------------------------------------------*/	
+
+
+
+/* --- ProductAll Start ------------------------------------------------*/
+.calc
+	h4
+		font-style: italic
+		text-transform: uppercase
+	hr
+		background-color: $main_rgb
+		width: 50%
+	.stepsWrap
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: space-around
+		margin-bottom: 50px
+		.stepsCont
+			width: 300px
+			border-bottom: 5px solid $main_rgb
+			padding: 5px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			i
+				font-size: 25px
+				color: $main_rgb
+				text-shadow: 2px 2px 2px rgba(5,5,5,.5)
+			p
+				text-transform: uppercase
+				margin: 0
+				font-weight: bold
+/* --- ProductAll Start ------------------------------------------------*/
+
+
+
 
 /* --- ProductAll Start ------------------------------------------------*/
 .prodAll
@@ -632,7 +677,7 @@ section
 
 /* --- Form START ------------------------------------------------*/	
 .formOpen
-	padding: 10px
+	padding: 25px 10px
 	max-width: 300px
 	position: relative
 	background: $main_rgb
@@ -647,6 +692,71 @@ section
 		width: 100%
 		margin-bottom: 20px
 		text-align: center
+.form-calc
+	display: flex
+	flex-wrap: wrap
+	flex-direction: row
+	justify-content: space-around
+	.mainBtn
+		border: none
+		transition: 0.5s
+		padding: 10px 30px
+		cursor: pointer
+		&:after
+			transition: 0.5s
+			border: 2px solid $main_rgb
+	.selectWrap
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		width: 300px
+		align-items: center
+		justify-content: flex-start
+		input
+			width: 200px
+			padding: 5px
+			text-align: center
+			border: 2px solid $main_rgb
+			&:focus
+				outline: 3px solid $main_rgb 
+		label
+			position: relative
+			text-transform: uppercase
+			font-weight: bold
+			&:after
+				position: absolute
+				content: ''
+				width: 100%
+				height: 120%
+				top: -5px
+				left: 10px
+				border-top: 2px solid $main_rgb
+				border-right: 2px solid $main_rgb
+			&:before
+				position: absolute
+				content: ''
+				width: 100%
+				height: 120%
+				top: -10px
+				left: 15px
+				border-top: 2px solid $main_rgb
+				border-right: 2px solid $main_rgb
+		select
+			text-align: center
+			padding: 5px
+			width: 200px
+			border: 2px solid $main_rgb
+			font-weight: bold
+			&:focus
+				outline: 3px solid $main_rgb
+			option
+				font-weight: bold
+				&:focus
+					outline: 3px solid $main_rgb
+	.formInput
+		input
+			width: 200px
+			margin-bottom: 15px
 /* --- Form END ------------------------------------------------*/	
 
 
