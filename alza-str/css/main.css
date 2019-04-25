@@ -451,6 +451,7 @@ section {
   font-weight: 300;
   text-align: left;
   text-indent: 20px;
+  font-size: 18px;
 }
 
 .about .lineOne {
@@ -551,20 +552,35 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .prod .imgWrap .imgCont {
-  width: 25%;
+  width: 33%;
   position: relative;
   border: 3px solid rgba(29, 136, 237, 0);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  overflow: hidden;
+}
+
+.prod .imgWrap .imgCont a img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .prod .imgWrap .imgCont:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border: 3px solid #1d88ed;
+}
+
+.prod .imgWrap .imgCont:hover a img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* --- product END ------------------------------------------------*/

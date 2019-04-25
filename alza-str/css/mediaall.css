@@ -50,6 +50,10 @@
 
 @media only screen and (max-width : 992px)
 {
+  .about .textWRap p
+  {
+    font-size: 16px;
+  }
   .calc .stepsWrap .stepsCont
   {
     width: 45%;

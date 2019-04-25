@@ -285,6 +285,7 @@ section
 			font-weight: 300
 			text-align: left
 			text-indent: 20px
+			font-size: 18px
 	.lineOne
 		position: absolute
 		z-index: -1
@@ -348,14 +349,23 @@ section
 		display: flex
 		flex-wrap: wrap
 		flex-direction: row
+		justify-content: space-around
 		.imgCont
-			width: 25%
+			width: 33%
 			position: relative
 			border: 3px solid rgba($main_rgb, 0)
 			transition: 0.3s
+			overflow: hidden
+			a
+				img
+					transition: 0.5s
 			&:hover
 				transition: 0.5s
 				border: 3px solid rgba($main_rgb, 1)
+				a
+					img
+						transition: 0.5s
+						transform: scale(1.1)
 /* --- product END ------------------------------------------------*/	
 
 
