@@ -1,0 +1,583 @@
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+  color: #111;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.done {
+  min-height: 100vh;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0);
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar img {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .anim {
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .anim span {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.navbar .anim:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #71ac3c;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.navbar .anim:hover span {
+  color: #71ac3c;
+}
+
+.navbar .anim:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar p {
+  font-size: 24px;
+  text-shadow: 0px 0px 20px #fff;
+  color: #fff;
+  margin: 0;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.navbar .navbar-toggler-icon {
+  background: url("../img/burger-light.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.navbar .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.navbar .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.active {
+  position: relative;
+  overflow: hidden;
+}
+
+.active span {
+  color: #71ac3c !important;
+}
+
+.active:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #111;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: animate 7s linear infinite;
+          animation: animate 7s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+.fixed-nav {
+  background: rgba(255, 255, 255, 0.9);
+  color: #55595c;
+  padding: .4rem .4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.fixed-nav .anim span {
+  color: #111;
+}
+
+.fixed-nav p {
+  color: #111;
+}
+
+.fixed-nav .navbar-toggler-icon {
+  background: url("../img/burger-black.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.fixed-nav .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.fixed-nav .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fixed-nav .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #111;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* --- Navbar END ------------------------------------------------*/
+/* --- Header start------------------------------------------------*/
+.headerCont {
+  min-height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../img/headBg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.headerCont .headCont .headWrap {
+  -webkit-box-shadow: 0px 2px 3px 0px #222;
+          box-shadow: 0px 2px 3px 0px #222;
+  padding: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.headerCont .buttonCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* --- Header END ------------------------------------------------*/
+/* --- About Start ------------------------------------------------*/
+.about {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(50%, #71ac3c), to(white));
+  background: linear-gradient(180deg, white 0%, #71ac3c 50%, white 100%);
+}
+
+.about hr {
+  width: 60%;
+  border: 1px solid #111;
+}
+
+.about .cloudCont {
+  height: 100%;
+}
+
+.about .cloudCont p {
+  margin-bottom: 20px;
+}
+
+.about .cloudCont .cloudWrap {
+  -webkit-box-shadow: 0px 2px 3px 0px #222;
+          box-shadow: 0px 2px 3px 0px #222;
+  background: #fff;
+  padding: 20px;
+  padding-bottom: 0px;
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  position: relative;
+  border: 1px solid #111;
+}
+
+.about .cloudCont .cloudWrap:after {
+  position: absolute;
+  content: '';
+  bottom: -20px;
+  left: 60px;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(92deg) skewX(45deg);
+          transform: rotate(92deg) skewX(45deg);
+  background: #fff;
+  border-bottom: 1px solid #111;
+  border-right: 1px solid #111;
+  border-radius: 0 0 5px 0;
+}
+
+.about .cloudCont .cloudHead {
+  -webkit-box-shadow: 0px 2px 3px 0px #222;
+          box-shadow: 0px 2px 3px 0px #222;
+  border: 1px solid #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  background: #fff;
+  height: 25%;
+  padding: 20px;
+}
+
+.about .cloudCont .cloudHead p {
+  margin: 0;
+}
+
+.about .imgTxtCont {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 2px 3px 0px #222;
+          box-shadow: 0px 2px 3px 0px #222;
+  margin-bottom: 30px;
+}
+
+.about .imgTxtCont p {
+  margin: 0;
+}
+
+.about .leftBg {
+  background: url("../img/about01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+.about .leftBg h4, .about .leftBg p {
+  width: 100%;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.9);
+  padding: 5px;
+}
+
+.about .rightBg {
+  background: url("../img/about02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+.about .rightBg h4, .about .rightBg p {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+}
+
+.about .mainBtn {
+  background: #71ac3c;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+}
+
+.about .mainBtn:hover {
+  background: #fff;
+  color: #111;
+  border: 2px solid #71ac3c;
+}
+
+/* --- About END ------------------------------------------------*/
+/* --- whay Start ------------------------------------------------*/
+.whay {
+  text-align: center;
+}
+
+.whay hr {
+  width: 60%;
+  border: 1px solid #111;
+}
+
+.whay .txtWrap {
+  padding: 10px;
+}
+
+.whay .timerCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whay .timerCont .heaserWrap {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 5px;
+}
+
+.whay .timerCont .timerWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.whay .timerCont .timerWrap .wrapBord .wrap {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.whay .timerCont .timerWrap .wrapBord .wrap span {
+  color: #71ac3c;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.whay .timerCont .timerWrap .wrapBord .wrap .smalltext {
+  font-style: italic;
+}
+
+.whay .mainBtn {
+  background: #71ac3c;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+}
+
+.whay .mainBtn:hover {
+  background: #fff;
+  color: #111;
+  border: 2px solid #71ac3c;
+}
+
+/* --- whay END ------------------------------------------------*/
+/* --- ProductAll Start ------------------------------------------------*/
+/* --- ProductAll END ------------------------------------------------*/
+/* --- dropshipping Start ------------------------------------------------*/
+/* --- dropshipping END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- advantage Start ------------------------------------------------*/
+/* --- advantage END ------------------------------------------------*/
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+/* --- Button Start ------------------------------------------------*/
+.mainBtn {
+  background: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  padding: 10px 10px;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.mainBtn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #71ac3c;
+  background: #71ac3c;
+  color: #fff;
+}
+
+/* --- Button END ------------------------------------------------*/
+/* --- Form START ------------------------------------------------*/
+/* --- Form END ------------------------------------------------*/
+/* --- Other START ------------------------------------------------*/
+/*# sourceMappingURL=main.css.map */

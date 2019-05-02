@@ -1,0 +1,372 @@
+$main_color: #111
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #71ac3c
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+
+
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+img
+	max-width: 100%
+	height: auto
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, 0)
+	.navbar-brand
+		padding: 0
+	img
+		width: 40px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_white
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_rgb
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		text-shadow: 0px 0px 20px $main_white
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.anim
+		span
+			color: $main_color
+	p
+		color: $main_color
+	background: rgba(255,255,255, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- Header start------------------------------------------------*/
+.headerCont
+	min-height: 100vh
+	text-align: center
+	display: flex
+	flex-direction: column
+	background: url('../img/headBg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	background-attachment: fixed
+	.headCont
+		.headWrap
+			box-shadow: 0px 2px 3px 0px #222
+			padding: 10px
+			display: inline-block
+			background: rgba($main_white, .6)	
+	.buttonCont
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+/* --- Header END ------------------------------------------------*/	
+
+
+/* --- About Start ------------------------------------------------*/
+.about
+	text-align: center
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba($main_rgb,1) 50%, rgba(255,255,255,1) 100%)
+	hr
+		width: 60%
+		border: 1px solid $main_color
+	.cloudCont
+		height: 100%
+		p
+			margin-bottom: 20px
+		.cloudWrap
+			box-shadow: 0px 2px 3px 0px #222
+			background: $main_white
+			padding: 20px
+			padding-bottom: 0px
+			height: 75%
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 40px
+			border-radius: 15px
+			position: relative
+			border: 1px solid $main_color
+			&:after
+				position: absolute
+				content: ''
+				bottom: -20px
+				left: 60px
+				width: 40px
+				height: 40px
+				transform: rotate(92deg) skewX(45deg)
+				background: $main_white
+				border-bottom: 1px solid $main_color
+				border-right: 1px solid $main_color
+				border-radius: 0 0 5px 0
+		.cloudHead
+			box-shadow: 0px 2px 3px 0px #222
+			border: 1px solid $main_color
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 15px
+			background: $main_white
+			height: 25%
+			padding: 20px
+			p
+				margin: 0
+	.imgTxtCont
+		padding: 20px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		flex-direction: column
+		justify-content: space-between
+		box-shadow: 0px 2px 3px 0px #222
+		margin-bottom: 30px
+		p
+			margin: 0
+	.leftBg
+		background: url('../img/about01.jpg')
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		height: 100%
+		h4, p
+			width: 100%
+			color: $main_white
+			background: rgba($main_color, .9)
+			padding: 5px
+	.rightBg
+		background: url('../img/about02.jpg')
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		height: 100%
+		h4, p
+			width: 100%
+			background: rgba($main_white, .9)
+			padding: 5px
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+/* --- About END ------------------------------------------------*/	
+
+
+/* --- whay Start ------------------------------------------------*/
+.whay
+	text-align: center
+	hr
+		width: 60%
+		border: 1px solid $main_color
+	.imgWrap
+	.txtWrap
+		padding: 10px
+	.timerCont
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.heaserWrap
+			flex-grow: 1
+			padding: 5px
+		.timerWrap
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-grow: 2
+			.wrapBord
+				.wrap
+					display: inline-block
+					padding-right: 20px
+					span
+						color: $main_rgb
+						font-size: 22px
+						font-weight: bold
+					.smalltext
+						font-style: italic
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+/* --- whay END ------------------------------------------------*/	
+
+/* --- ProductAll Start ------------------------------------------------*/
+/* --- ProductAll END ------------------------------------------------*/	
+
+
+/* --- dropshipping Start ------------------------------------------------*/	
+/* --- dropshipping END ------------------------------------------------*/	
+
+
+
+
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/	
+
+
+/* --- advantage Start ------------------------------------------------*/	
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainBtn
+	background: rgba($main_white,.9)
+	text-transform: uppercase
+	padding: 10px 10px
+	border-radius: 15px
+	transition: 0.3s
+	border: 2px solid rgba($main_white,.9)
+	&:hover
+		transition: 0.3s
+		border: 2px solid $main_rgb
+		background: $main_rgb
+		color: $main_white
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+
