@@ -191,6 +191,34 @@ $('.sliderRew').slick({
     adaptiveHeight: true
   });
 
+  $('.logoSlider').slick({
+    pauseOnFocus: false,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+    adaptiveHeight: true,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+          }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
+  });
+
   $('.sliderRewN').slick({
     infinite: true,
     slidesToShow: 4,

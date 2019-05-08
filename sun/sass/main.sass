@@ -194,6 +194,7 @@ section
 		height: 100%
 		p
 			margin-bottom: 20px
+			font-size: 20px
 		.cloudWrap
 			box-shadow: 0px 2px 3px 0px #222
 			background: $main_white
@@ -243,6 +244,7 @@ section
 		margin-bottom: 30px
 		p
 			margin: 0
+			font-size: 20px
 	.leftBg
 		background: url('../img/about01.jpg')
 		background-repeat: no-repeat
@@ -321,16 +323,273 @@ section
 /* --- whay END ------------------------------------------------*/	
 
 /* --- ProductAll Start ------------------------------------------------*/
+.prod
+	text-align: center
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba($main_rgb,1) 50%, rgba(255,255,255,1) 100%)
+	hr
+		width: 60%
+		border: 1px solid $main_color
+	.prodCont
+		box-shadow: 0px 2px 3px 0px #222
+		.imgCont
+			position: relative
+			img
+				width: 100%
+			.logoCont
+				position: absolute
+				right: 0
+				top: 5%
+				width: 80%
+			.txtCont
+				position: absolute
+				bottom: 0
+				left: 0
+				background: rgba($main_white, .9)
+				padding: 10px
+	.logoSlider
+		background: $main_white
+		margin-bottom: 25px
+		border: 2px solid $main_rgb
+		.logosliderWrap
+			img
+				display: block
+				margin-left: auto
+				margin-right: auto
+				width: 80%
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+	.invCont
+		box-shadow: 0px 2px 3px 0px #222
+		border: 2px solid $main_color
+		background: $main_white
+		padding: 5px
+		padding-bottom: 10px
+		.imgWrap
+			background: $main_white
+			padding-bottom: 20px
+		.txtWrap
+			background: $main_white
+			h4
+				margin-bottom: 0
+			hr
+				margin-top: 0
+	.logoContInv
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		.logowrap
+			padding: 10px
 /* --- ProductAll END ------------------------------------------------*/	
 
 
-/* --- dropshipping Start ------------------------------------------------*/	
-/* --- dropshipping END ------------------------------------------------*/	
+/* --- ses Start ------------------------------------------------*/	
+.ses
+	padding-top: 10px
+	text-align: center
+	hr
+		margin-bottom: 30px
+		width: 60%
+		border: 1px solid $main_color
+	.sesCont
+		border: 1px solid $main_color
+		padding: 25px 5px
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		.txtWrap
+			h4
+				text-transform: uppercase
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+/* --- ses END ------------------------------------------------*/	
 
 
 
 
-/* --- action END ------------------------------------------------*/
+/* --- credit START ------------------------------------------------*/
+.credit
+	text-align: center
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba($main_rgb,1) 50%, rgba(255,255,255,1) 100%)
+	hr
+		margin-bottom: 30px
+		width: 60%
+		border: 1px solid $main_color
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+	.txtCont
+		.txtWrap
+			h4
+				text-transform: uppercase
+			ul
+				text-align: left
+				display: inline-block
+				li
+	.steps
+		h3
+			text-decoration: underline
+		.stepsCont
+			position: relative
+			.okWrap
+				z-index: 22
+				position: absolute
+				top: 0
+				left: 6px
+				border: 1px solid $main_color
+				width: 40px
+				height: 40px
+				display: flex
+				justify-content: center
+				align-items: center
+				background: $main_white
+				&:after
+					content: ''
+					position: absolute
+					width: 16px
+					height: 16px
+					bottom: -16px
+					right: -2px
+					background: none
+					border: 8px solid transparent
+					border-left: 8px solid $main_color
+					border-top: 8px solid $main_color
+				i
+					color: $main_rgb
+					font-size: 30px
+			.mainWrap
+				background: linear-gradient(90deg, rgba(173,214,137,1) 0%, rgba(255,255,255,1) 40%)
+				margin-left: 30px
+				display: flex
+				flex-direction: row
+				flex-wrap: nowrap
+				justify-content: space-between
+				align-items: center
+				border: 1px solid $main_color
+				padding: 5px
+				text-align: left
+				padding-left: 25px
+				position: relative
+				margin-bottom: 15px
+				.txtWrap
+					h4
+						margin-bottom: 5px
+						font-size: 1.3rem
+						font-weight: bold
+					p
+						font-style: italic
+						line-height: 1.2rem
+						margin: 0
+				.iconWrap
+					i
+						font-size: 30px
+						color: $main_rgb
+			.arrow
+				position: relative				
+				&:after
+					content: ''
+					position: absolute
+					bottom: -60px
+					right: 30px
+					width: 30px
+					height: 30px
+					border: 30px solid transparent
+					border-top: 30px solid $main_white
+				&:before
+					content: ''
+					position: absolute
+					bottom: -22px
+					right: 39px
+					width: 42px
+					height: 42px
+					border-left: 1px solid $main_color
+					border-bottom: 1px solid $main_color
+					transform: rotate(-45deg)
+			.arrowLeft
+				position: relative				
+				&:after
+					content: ''
+					position: absolute
+					bottom: -60px
+					left: 30px
+					width: 30px
+					height: 30px
+					border: 30px solid transparent
+					border-top: 30px solid $main_white
+				&:before
+					content: ''
+					position: absolute
+					bottom: -22px
+					left: 39px
+					width: 42px
+					height: 42px
+					border-left: 1px solid $main_color
+					border-bottom: 1px solid $main_color
+					transform: rotate(-45deg)
+			.bgstepsLeft
+				background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgba(173,214,137,1) 100%)
+			.stersLeft
+				margin-left: 5px
+				flex-wrap: nowrap
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				border: 1px solid $main_color
+				padding: 5px
+				text-align: left
+				position: relative
+				margin-bottom: 15px				
+				.iconWrap
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					h4
+						font-weight: bold
+						font-size: 1.1rem
+						color: $main_color
+						margin-bottom: 0
+					i
+						margin-left: 5px
+
+						margin-right: 5px
+						color: $main_color
+	.z7
+		z-index: 7
+	.z6
+		z-index: 6
+	.z5
+		z-index: 5
+	.z4
+		z-index: 4
+	.z3
+		z-index: 3
+	.z2
+		z-index: 2
+	.z1
+		z-index: 1
 /* --- action END ------------------------------------------------*/	
 
 
@@ -344,6 +603,30 @@ section
 
 
 /* --- contacts Start ------------------------------------------------*/
+.contacts
+	text-align: center
+	.textCont
+		text-align: left
+		display: inline-block
+		a
+			display: block
+			i
+				color: $main_rgb
+				font-size: 18px
+				margin-right: 5px
+		.fbinst
+			font-size: 30px
+	.formSteps
+		text-align: center
+		.mainBtn
+			background: $main_rgb
+			color: $main_white
+			border: 2px solid $main_white
+			padding: 10px 20px
+			&:hover
+				background: $main_white
+				color: $main_color
+				border: 2px solid $main_rgb
 /* --- contacts END ------------------------------------------------*/
 
 
@@ -364,7 +647,21 @@ section
 /* --- Button END ------------------------------------------------*/	
 
 
-/* --- Form START ------------------------------------------------*/	
+/* --- Form START ------------------------------------------------*/
+.formSteps
+	padding: 10px 10px
+	h4
+		border: 1px solid $main_color
+		padding: 10px
+		background: #E09072
+	input
+		font-size: 20px
+		padding: 10px 5px
+		display: block
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		margin-bottom: 10px
 /* --- Form END ------------------------------------------------*/	
 
 
