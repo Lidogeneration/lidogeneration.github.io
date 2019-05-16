@@ -425,8 +425,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .prod_cont .imgWrap {
@@ -454,7 +454,12 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin: 10px;
+}
+
+.prod_cont .txtWrap ul {
+  display: inline-block;
+  text-align: left;
 }
 
 /* --- product END ------------------------------------------------*/
