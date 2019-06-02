@@ -1,0 +1,259 @@
+@media only screen and (min-width : 1500px) 
+{
+
+}
+@media only screen and (max-width : 1800px)
+{
+
+}
+@media only screen and (max-width : 1600px)
+{
+
+}
+@media only screen and (max-width : 1450px)
+{
+  .reviews .revCont
+  {
+    width: 50%;
+  }
+}
+@media only screen and (max-width : 1280px)
+{
+  .product .prodCont .numberCont .numberWrap p
+  {
+    font-size: 6rem;
+  }
+  .firstScroll
+  {
+    background-size: cover;
+    background-position: top left;
+  }
+  .firstScroll .triggersCont .txtCont .txtWrap .txt .trWrap p
+  {
+    font-size: 26px;
+  }
+  .firstScroll .triggersCont .txtCont .txtWrap .number p
+  {
+    font-size: 70px;
+  }
+  .firstScroll .triggersCont .txtCont .txtWrap .txt .imgWrap img
+  {
+    width: 5rem;
+  }
+}
+@media only screen and (max-width : 1200px)
+{
+
+}
+@media only screen and (max-width : 1140px) 
+{
+  .firstScroll .navBarStatic .logoCont .imgWrap img
+  {
+    width: 6rem;
+  }
+}
+@media only screen and (max-width : 992px)
+{ 
+  .threeWhay__cont .txtWrap p
+  {
+    font-size: 16px;
+  }
+  .reviews .revCont
+  {
+    width: 90%;
+  }
+  .product
+  {
+    background-size: cover;
+  }
+  .myW100
+  {
+    display: none;
+  }
+  .about .txtWrap p
+  {
+    font-size: 16px;
+  }
+  .firstScroll .triggersCont .headerWrap
+  {
+    margin-bottom: 10px;
+  }
+  .firstScroll .triggersCont .txtCont .txtWrap
+  {
+    margin-bottom: 5px;
+  }
+  .firstScroll
+  {
+    background-size: cover;
+    background-position: center center;
+  }
+  .firstScroll .navBarStatic
+  {
+    display: none;
+  }
+  .firstScroll .triggersCont .txtCont .txtWrap .txt .trWrap p
+  {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .firstScroll .triggersCont .txtCont .txtWrap .number p
+  {
+    font-size: 50px;
+  }
+  .firstScroll .triggersCont .txtCont .txtWrap .txt .imgWrap img
+  {
+    width: 3rem;
+  }
+  .firstScroll .triggersCont
+  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+  }
+  h1 
+  {
+    font-size: 1.4rem;
+  }
+  h2 
+  {
+    font-size: 1.3rem;
+  }
+  h3 
+  {
+    font-size: 1.2rem;
+  }
+  h4
+  {
+    font-size: 1.1rem;
+  }
+  h5
+  {
+    font-size: 1rem;
+  }
+  .reviews .slick-prev
+  {
+    left: -33px;
+  }
+  .reviews .slick-next
+  {
+    right: -6px;
+  }
+}
+@media only screen and (max-width : 800px)
+{
+
+}
+@media only screen and (max-width : 960px)
+{
+
+}
+@media only screen and (max-width : 768px)
+{
+
+}
+@media only screen and (max-width : 576px)
+{
+  .portfolio .slick-prev
+  {
+    width: 25px;
+    height: 25px;
+    left: 7px;
+  }
+  .portfolio .slick-next
+  {
+    width: 25px;
+    height: 25px;
+    right: 7px;
+
+  }
+  .threeWhay__cont .txtWrap .imgWrap
+  {
+    -webkit-transform: translate(15%, -10%);
+            transform: translate(15%, -10%);
+  }
+  .threeWhay__cont .txtWrap .imgWrapR
+  {
+    -webkit-transform: translate(-15%, -10%);
+            transform: translate(-15%, -10%);
+  }
+  .reviews .revCont .revWrap .txtWrap
+  {
+    padding-top: 120px;
+  }
+  .product .whyCont .imgCont .faceWrap
+  {
+    width: 100%;
+  }
+  .product .whyCont .imgCont
+  {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .product .whyCont .imgCont .iconWrap
+  {
+    text-align: center;
+  }
+  .product .whyCont .imgCont .txtWrapIcon
+  {
+    text-align: center;
+  }
+  .product .whyCont .txtWrap:after
+  {
+    left: 70%;
+  }
+  .reviews .slick-prev
+  {
+    left: -12px;
+  }
+  .reviews .slick-next
+  {
+    right: -4px;
+  }
+  .reviews .slick-next:before, .reviews .slick-prev:before
+  {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width : 511px)
+{
+  .reviews .revCont .revWrap .txtWrap
+  {
+    padding-top: 75px;
+  }
+}
+@media only screen and (max-width : 450px)
+{
+  .reviews .revCont .revWrap .txtWrap
+  {
+    padding-top: 60px;
+  }
+
+}
+@media only screen and (max-width : 400px)
+{
+  .reviews .revCont .revWrap .imgWrap
+  {
+    top: 35px;
+  }
+  .threeWhay__cont .txtWrap
+  {
+    padding: 10px;
+    padding-right: 50px;
+  }
+  .threeWhay__cont .iconRightTxt
+  {
+    padding: 10px;
+    padding-left: 50px;
+
+  }
+}
