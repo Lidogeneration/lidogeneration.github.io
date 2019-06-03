@@ -51,9 +51,44 @@
   {
     width: 6rem;
   }
+  .container .formWrap .contForm .mapWRap
+  {
+    display: none;
+  }
+  .container .formWrap .contForm
+  {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .formWrap .contForm .inputWrap
+  {
+    width: 100%;
+  }
+  .container .formWrap .contForm .msgWrap
+  {
+    width: 100%;
+  }
+  .container .formWrap .contForm .btnWrap button
+  {
+    margin-left: auto;
+  }
 }
 @media only screen and (max-width : 992px)
 { 
+
+  .steps .stepWrap .txtWrap
+  {
+    margin-bottom: 10px;
+  }
+  .steps .stepWrap .numberWrapL
+  {
+    display: none;
+  }
+  .steps .stepWrap .numberWrap
+  {
+    display: none;
+  }
   .threeWhay__cont .txtWrap p
   {
     font-size: 16px;
@@ -140,14 +175,7 @@
   {
     font-size: 1rem;
   }
-  .reviews .slick-prev
-  {
-    left: -33px;
-  }
-  .reviews .slick-next
-  {
-    right: -6px;
-  }
+
 }
 @media only screen and (max-width : 800px)
 {
@@ -159,17 +187,20 @@
 }
 @media only screen and (max-width : 768px)
 {
-
+  .threeWhay
+  {
+   height: 100%;
+  }
 }
 @media only screen and (max-width : 576px)
 {
-  .portfolio .slick-prev
+ .slick-prev
   {
     width: 25px;
     height: 25px;
     left: 7px;
   }
-  .portfolio .slick-next
+ .slick-next
   {
     width: 25px;
     height: 25px;

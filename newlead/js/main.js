@@ -91,3 +91,26 @@ $('.revCont').slick({
           }
       ]
   });
+
+  $('.team__cont').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 5000,
+    dots: false,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true
+            }
+          }
+      ]
+  });
+
+
+
+

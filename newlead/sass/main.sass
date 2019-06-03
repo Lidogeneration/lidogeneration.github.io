@@ -264,6 +264,7 @@ section
 		margin-left: auto
 		margin-right: auto
 		.revWrap
+			padding: 20px
 			position: relative
 			outline: none
 			.imgWrap
@@ -293,12 +294,10 @@ section
 					margin-bottom: 10px
 				p
 					text-align: left
-	.slick-prev
-		left: -50px
-	.slick-next, .slick-prev
-		&:before
-			color: $main_blue
-			font-size: 50px
+ .slick-next
+    right: -25px
+ .slick-prev
+    left: -25px
 /* --- reviews END ------------------------------------------------*/	
 
 
@@ -306,13 +305,15 @@ section
 /* --- threeWhay Start ------------------------------------------------*/
 .threeWhay
 	text-align: center
-	background: url('../img/threeBg.png')
+	background: url('../img/2.jpg')
 	background-position: center center
 	background-repeat: no-repeat
 	background-size: 100% 100%
+	height: 1500px
 	h2
-		margin-bottom: 50px
+		margin-bottom: 100px
 		text-transform: uppercase
+		text-shadow: 2px 2px 2px $main_white
 	&__cont
 		position: relative
 		img
@@ -323,10 +324,10 @@ section
 			padding: 10px
 			padding-top: 50px
 			padding-right: 70px
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
+			// position: absolute
+			// top: 50%
+			// left: 50%
+			// transform: translate(-50%, -50%)
 			text-align: left
 			background: $main_white
 			p
@@ -454,45 +455,217 @@ section
 					margin-right: auto
 			&:focus
 				outline: none
-	.slick-prev
-		left: 20px
-		width: 50px
-		height: 50px
-		&:before
-			position: absolute
-			content: ''
-			width: 100%
-			height: 100%
-			top: 0
-			left: 0
-			border-top: 3px solid $main_color
-			border-right: 3px solid $main_color
-			transform: rotate(-135deg)
-	.slick-next
-		right: 20px
-		width: 50px
-		height: 50px
-		&:before
-			position: absolute
-			content: ''
-			width: 100%
-			height: 100%
-			top: 0
-			left: 0
-			border-top: 3px solid $main_color
-			border-right: 3px solid $main_color
-			transform: rotate(45deg)
+.slick-prev
+	left: 20px
+	width: 50px
+	height: 50px
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 3px solid $main_color
+		border-right: 3px solid $main_color
+		transform: rotate(-135deg)
+.slick-next
+	right: 20px
+	width: 50px
+	height: 50px
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 3px solid $main_color
+		border-right: 3px solid $main_color
+		transform: rotate(45deg)
 /* --- portfolio END ------------------------------------------------*/
 
 /* --- steps Start ------------------------------------------------*/
 .steps
-	padding: 50px 0
+	padding: 50px 0 50px 0
+	position: relative
+	background: url('../img/cloud.png')
+	background-repeat: no-repeat
+	background-position: bottom center
+	background-size: 100% auto
 	h2
 		text-align: center
 		text-transform: uppercase
+	.rokWrap
+		z-index: -1
+		width: 100%
+		position: absolute
+		height: 100%
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
+		.fireImg
+			width: 60%
+			height: 100%
+	.rokImg
+		display: block
+		margin-left: auto
+		margin-right: auto
+		width: 20%
+	.cloudWrap
+		position: absolute
+		bottom: 0
+		left: 0
+	.stepWrap
+		display: flex
+		position: relative
+		.numberWrap
+			position: absolute
+			align-self: center
+			left: -14px
+			span
+				left: -20px
+				box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75), 0px 0px 5px 1px rgba(0,0,0,0.75) 
+				padding: 10px
+				border: 5px solid #fdfdfd
+				border-radius: 50%
+				font-size: 40px
+				color: $main_white
+		.numberWrapL
+			position: absolute
+			align-self: center
+			right: -58px
+			span
+				box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75), 0px 0px 5px 1px rgba(0,0,0,0.75) 
+				padding: 10px
+				border: 5px solid #fdfdfd
+				border-radius: 50%
+				font-size: 40px
+				color: $main_white
+		.arrowWrap
+			align-self: center
+			img
+		.txtWrap
+			box-shadow: 0px 2px 3px 0px rgba($main_color, .3)
+			background: #fff
+			border-radius: 10px
+			h4
+				color: $main_blue
+			text-align: center
+			padding: 10px
 /* --- steps END ------------------------------------------------*/
 
+/* --- team Start ------------------------------------------------*/
+.team
+	padding: 50px 0
+	text-align: center
+	h2
+		text-transform: uppercase
+	&__cont
+		padding: 35px
+		.teamWrap
+			padding: 20px
+			outline: none
+			.txtWrap
+				margin-top: 150px
+				padding-top: 75px
+				position: relative
+				background: $main_white
+				border-radius: 10px
+				text-align: center
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				p
+					font-style: italic
+				.imgWrap
+					display: block
+					margin-left: auto
+					margin-right: auto
+					position: absolute
+					top: -150px
+					img
+						width: 214px !important
+						height: 214px !important
+						box-shadow: 0px 2px 3px 0px rgba($main_color, .3)
+						border: 5px solid $main_blue
+						border-radius: 50%
+						display: block
+						margin-left: auto
+						margin-right: auto
+						width: 50%
+/* --- team END ------------------------------------------------*/
+
+/* --- action Start ------------------------------------------------*/
+.action
+	padding: 30px 0
+	text-align: center
+	h2, h4
+		margin-bottom: 20px
+		text-transform: uppercase
+		text-align: center
+/* --- action END ------------------------------------------------*/	
+
 /* --- contacts Start ------------------------------------------------*/
+.contacts
+	background: url('../img/contBg.png')
+	background-repeat: no-repeat
+	background-position: bottom center
+	background-size: cover
+	padding: 100px 0 100px 0
+	.formWrap
+		position: relative
+		box-shadow: 0px 2px 3px 0px rgba($main_color, .3)
+		padding: 30px
+		background: url('../img/formBg.png')
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		color: $main_white
+		h3
+			padding: 10px
+			margin-bottom: 50px
+		.contForm
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			.txtWrap
+				padding: 10px
+				width: 100%
+			.inputWrap
+				padding: 10px
+				input
+					width: 100%
+					display: block
+					margin-bottom: 20px
+					padding: 10px
+					border: none
+					border-radius: 10px
+					border-top-right-radius: 0
+			.msgWrap
+				padding: 10px
+				textarea
+					width: 100%	
+					height: 100%
+					padding: 10px
+					border: none
+					border-radius: 10px
+					border-top-right-radius: 0
+			.mapWRap
+				position: absolute
+				top: -50px
+				right: -50px
+				height: 100%
+				width: 50%
+				iframe
+					width: 100%
+					height: 100%
+			.btnWrap
+				width: 100%
+				button
+					margin-left: 0 
 /* --- contacts END ------------------------------------------------*/
 
 

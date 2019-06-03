@@ -401,6 +401,7 @@ section {
 }
 
 .reviews .revCont .revWrap {
+  padding: 20px;
   position: relative;
   outline: none;
 }
@@ -451,28 +452,29 @@ section {
   text-align: left;
 }
 
-.reviews .slick-prev {
-  left: -50px;
+.reviews .slick-next {
+  right: -25px;
 }
 
-.reviews .slick-next:before, .reviews .slick-prev:before {
-  color: #0746c8;
-  font-size: 50px;
+.reviews .slick-prev {
+  left: -25px;
 }
 
 /* --- reviews END ------------------------------------------------*/
 /* --- threeWhay Start ------------------------------------------------*/
 .threeWhay {
   text-align: center;
-  background: url("../img/threeBg.png");
+  background: url("../img/2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  height: 1500px;
 }
 
 .threeWhay h2 {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-transform: uppercase;
+  text-shadow: 2px 2px 2px #fff;
 }
 
 .threeWhay__cont {
@@ -490,11 +492,6 @@ section {
   padding: 10px;
   padding-top: 50px;
   padding-right: 70px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   text-align: left;
   background: #fff;
 }
@@ -681,13 +678,13 @@ section {
   outline: none;
 }
 
-.portfolio .slick-prev {
+.slick-prev {
   left: 20px;
   width: 50px;
   height: 50px;
 }
 
-.portfolio .slick-prev:before {
+.slick-prev:before {
   position: absolute;
   content: '';
   width: 100%;
@@ -700,13 +697,13 @@ section {
           transform: rotate(-135deg);
 }
 
-.portfolio .slick-next {
+.slick-next {
   right: 20px;
   width: 50px;
   height: 50px;
 }
 
-.portfolio .slick-next:before {
+.slick-next:before {
   position: absolute;
   content: '';
   width: 100%;
@@ -722,7 +719,12 @@ section {
 /* --- portfolio END ------------------------------------------------*/
 /* --- steps Start ------------------------------------------------*/
 .steps {
-  padding: 50px 0;
+  padding: 50px 0 50px 0;
+  position: relative;
+  background: url("../img/cloud.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
 }
 
 .steps h2 {
@@ -730,8 +732,272 @@ section {
   text-transform: uppercase;
 }
 
+.steps .rokWrap {
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.steps .rokWrap img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.steps .rokWrap .fireImg {
+  width: 60%;
+  height: 100%;
+}
+
+.steps .rokImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.steps .cloudWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.steps .stepWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.steps .stepWrap .numberWrap {
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  left: -14px;
+}
+
+.steps .stepWrap .numberWrap span {
+  left: -20px;
+  -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75), 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75), 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  border: 5px solid #fdfdfd;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #fff;
+}
+
+.steps .stepWrap .numberWrapL {
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  right: -58px;
+}
+
+.steps .stepWrap .numberWrapL span {
+  -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75), 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75), 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  border: 5px solid #fdfdfd;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #fff;
+}
+
+.steps .stepWrap .arrowWrap {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.steps .stepWrap .txtWrap {
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(37, 38, 38, 0.3);
+          box-shadow: 0px 2px 3px 0px rgba(37, 38, 38, 0.3);
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.steps .stepWrap .txtWrap h4 {
+  color: #0746c8;
+}
+
 /* --- steps END ------------------------------------------------*/
+/* --- team Start ------------------------------------------------*/
+.team {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.team h2 {
+  text-transform: uppercase;
+}
+
+.team__cont {
+  padding: 35px;
+}
+
+.team__cont .teamWrap {
+  padding: 20px;
+  outline: none;
+}
+
+.team__cont .teamWrap .txtWrap {
+  margin-top: 150px;
+  padding-top: 75px;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__cont .teamWrap .txtWrap p {
+  font-style: italic;
+}
+
+.team__cont .teamWrap .txtWrap .imgWrap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: -150px;
+}
+
+.team__cont .teamWrap .txtWrap .imgWrap img {
+  width: 214px !important;
+  height: 214px !important;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(37, 38, 38, 0.3);
+          box-shadow: 0px 2px 3px 0px rgba(37, 38, 38, 0.3);
+  border: 5px solid #0746c8;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* --- team END ------------------------------------------------*/
+/* --- action Start ------------------------------------------------*/
+.action {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.action h2, .action h4 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* --- action END ------------------------------------------------*/
 /* --- contacts Start ------------------------------------------------*/
+.contacts {
+  background: url("../img/contBg.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  padding: 100px 0 100px 0;
+}
+
+.contacts .formWrap {
+  position: relative;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(37, 38, 38, 0.3);
+          box-shadow: 0px 2px 3px 0px rgba(37, 38, 38, 0.3);
+  padding: 30px;
+  background: url("../img/formBg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.contacts .formWrap h3 {
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.contacts .formWrap .contForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts .formWrap .contForm .txtWrap {
+  padding: 10px;
+  width: 100%;
+}
+
+.contacts .formWrap .contForm .inputWrap {
+  padding: 10px;
+}
+
+.contacts .formWrap .contForm .inputWrap input {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+}
+
+.contacts .formWrap .contForm .msgWrap {
+  padding: 10px;
+}
+
+.contacts .formWrap .contForm .msgWrap textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+}
+
+.contacts .formWrap .contForm .mapWRap {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  height: 100%;
+  width: 50%;
+}
+
+.contacts .formWrap .contForm .mapWRap iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts .formWrap .contForm .btnWrap {
+  width: 100%;
+}
+
+.contacts .formWrap .contForm .btnWrap button {
+  margin-left: 0;
+}
+
 /* --- contacts END ------------------------------------------------*/
 /* --- Button Start ------------------------------------------------*/
 .whiteBtn {
