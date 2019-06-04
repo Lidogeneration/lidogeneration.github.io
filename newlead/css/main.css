@@ -43,6 +43,80 @@ section {
 }
 
 /* --- Navbar START ------------------------------------------------*/
+.navbar {
+  padding-bottom: 20px;
+  background: url("../img/menuFixed.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #feda46;
+}
+
+.navbar .navbar-brand img {
+  width: 50px;
+}
+
+.navbar .nav-link-new {
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: #fff;
+}
+
+.navbar .whiteBtn {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.dropdown {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.dropdown .dropdown-menu {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.dropdown .dropdown-menu a {
+  color: #0746c8;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.hideNav {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+}
+
 /* --- Navbar END ------------------------------------------------*/
 /* --- firstScroll start------------------------------------------------*/
 .firstScroll {
@@ -983,6 +1057,7 @@ section {
   right: -50px;
   height: 100%;
   width: 50%;
+  border-radius: 10px;
 }
 
 .contacts .formWrap .contForm .mapWRap iframe {

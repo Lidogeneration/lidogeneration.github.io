@@ -28,11 +28,12 @@ $(document).ready(function () {
     });
 });
 
+
 const customTextFormEmail = document.getElementById('customTextFormEmail');
 const nameScrollEmail = document.getElementById('input_orderEmail');
 const nameScroll = document.getElementById('input_order');
 const customTextFormSpan = document.getElementById('customTextForm');
-
+const navBar = document.getElementById('navMy');
 function setNameScroll(namescroll, customTextFormSpanF) {
     nameScroll.value = namescroll;
     customTextFormSpan.textContent = customTextFormSpanF;
@@ -52,11 +53,23 @@ window.onload = function () {
             disable: false,
         });
     }
+    if(window.scrollY >100)
+    {
+        navBar.classList.remove('hideNav');
+    }
+    else {
+        navBar.classList.add('hideNav');
+    }
 };
 
 window.onscroll = function () {
-
-
+    if(window.scrollY >100)
+    {
+        navBar.classList.remove('hideNav');
+    }
+    else {
+        navBar.classList.add('hideNav');
+    }
 };
 
 window.onresize = function () {

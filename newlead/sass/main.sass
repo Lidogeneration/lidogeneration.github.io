@@ -33,6 +33,50 @@ section
 .done
 	min-height: 100vh
 /* --- Navbar START ------------------------------------------------*/
+.navbar
+	padding-bottom: 20px
+	background: url('../img/menuFixed.png')
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	transition: 0.5s
+	a
+		transition: 0.3s
+		&:hover
+			transition: 0.3s
+			color: $main_yellow
+	.navbar-brand
+		img
+			width: 50px	
+	.nav-link-new
+		color: $main_white
+		display: inline-block
+		padding: 5px
+		margin-right: 5px
+	ul
+		list-style: none
+		li
+			a
+				color: $main_white 
+	.whiteBtn
+		font-size: 14px
+		padding: 5px 10px
+.navbar-dark 
+	.navbar-nav 
+		.nav-link
+			color: $main_white
+.dropdown
+	transition: 0.5s
+	.dropdown-menu
+		transition: 0.5s
+		a
+			color: $main_blue
+	&:hover
+		.dropdown-menu
+			display: block
+.hideNav
+	transition: 0.5s
+	transform: translateY(-120%)
 /* --- Navbar END ------------------------------------------------*/
 
 
@@ -659,9 +703,11 @@ section
 				right: -50px
 				height: 100%
 				width: 50%
+				border-radius: 10px
 				iframe
 					width: 100%
 					height: 100%
+					
 			.btnWrap
 				width: 100%
 				button

@@ -77,6 +77,7 @@
 @media only screen and (max-width : 992px)
 { 
 
+
   .steps .stepWrap .txtWrap
   {
     margin-bottom: 10px;
@@ -175,7 +176,23 @@
   {
     font-size: 1rem;
   }
+  .navbar
+  {
+    background: url('../img/menuFixed.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 70px;
+  }
+  .navbar ul
+  {
+    background: #fff;
+    text-align: center;
+  }
+  .navbar ul a
+  {
+    color: #0746c8 !important;
 
+  }
 }
 @media only screen and (max-width : 800px)
 {
@@ -194,6 +211,7 @@
 }
 @media only screen and (max-width : 576px)
 {
+
  .slick-prev
   {
     width: 25px;

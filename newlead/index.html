@@ -17,8 +17,50 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- Navbar start	 -->
-<!-- Navbar end	 -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark hideNav" id="navMy">
+		<a class="navbar-brand d-none d-sm-inline" href="/"><img class="logo img-fluid" src="<?php bloginfo(template_url);?>/img/logo.png" alt=""> Лидогенерация</a>
+		<div class="mx-auto color-white d-lg-none">
+				<a class="nav-link-new" href="tel:+380503415952">+38 (050) 341 59 52</a>
+			</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="ml-auto color-white d-none d-lg-inline">
+						<a class="nav-link-new" href="tel:+380503415952">+38 (050) 341 59 52</a>
+					</div>
+			<ul class="navbar-nav ml-md-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle nav-link-new" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Наши услуги 
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item " href="#prod-link">Создание сайта</a>
+						<a class="dropdown-item " href="#prod-link">Landing Page</a>
+						<a class="dropdown-item " href="#prod-link">Контекстная реклама</a>
+						<a class="dropdown-item " href="#prod-link">Продвижение в Facebook</a>
+						<a class="dropdown-item " href="#prod-link">Продвижение в Instagram</a>
+						<a class="dropdown-item " href="#prod-link">Интернет-маркетинг</a>
+					</div>
+				</li>
+				<li>
+					<a class="nav-link-new nav-menu-link nav-item" href="#about-link">О нас</a>
+				</li>
+				<li>
+					<a class="nav-link-new nav-menu-link nav-item" href="#work-link">Наши работы</a>
+				</li>
+				<li>
+					<a class="nav-link-new nav-menu-link nav-item" href="#rev-link">Отзывы</a>
+				</li>
+				<li>
+					<a class="nav-link-new nav-menu-link nav-item" href="#cont-link">Контакты</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+<!-- Navbar end	 -->
 
 <!-- Header START	 -->
 <section class="firstScroll">
@@ -34,10 +76,10 @@
 		<div class="menuCont">
 			<ul>
 				<li><a href="#0" class="nav-link-new">Наши услуги</a></li>
-				<li><a href="#0" class="nav-link-new">О нас</a></li>
-				<li><a href="#0" class="nav-link-new">Наши работы</a></li>
-				<li><a href="#0" class="nav-link-new">Отзывы</a></li>
-				<li><a href="#0" class="nav-link-new">Контакты</a></li>
+				<li><a href="#about-link" class="nav-link-new">О нас</a></li>
+				<li><a href="#work-link" class="nav-link-new">Наши работы</a></li>
+				<li><a href="#rev-link" class="nav-link-new">Отзывы</a></li>
+				<li><a href="#cont-link" class="nav-link-new">Контакты</a></li>
 			</ul>
 		</div>
 		<div class="btnCont">
@@ -112,7 +154,7 @@
 </section>
 <!-- Heade end	 -->
 <!-- About Start	 -->
-<section class="about">
+<section class="about" id="about-link">
 	<div class="container-fluid">
 		<div class="row justify-content-between">
 			<div class="col-lg-6 p-0 align-self-center">
@@ -149,7 +191,7 @@
 </div>
 <!-- About end	 -->
 <!-- Product Start	 -->
-<section class="product">
+<section class="product" id="prod-link">
 <div class="container-fluid">
 	<h2>Наши услуги</h2>
 	<div class="row justify-content-center">
@@ -304,7 +346,7 @@
 </section>
 <!-- Product end	 -->
 <!-- reviews Start	 -->
-<section class="reviews">
+<section class="reviews" id="rev-link">
 	<h2>Отзывы о наших проектах:</h2>
 	<div class="revCont">
 
@@ -455,7 +497,7 @@
 						<img src="img/orderArrow.png" alt="Закажите у нас лендинг пейдж" class="img-fluid">
 					</div>
 		</div>
-		<div class="col-lg-6 mb-2 d-none d-lg-inline">
+		<div class="col-lg-6 mb-2 ">
 				<div class="arrowCont">
 						<img src="img/orderArrow.png" alt="Закажите у нас лендинг пейдж" class="img-fluid">
 					</div>
@@ -571,7 +613,7 @@
 <!-- How END	 -->
 
 <!-- portfolio Start	 -->
-<section class="portfolio">
+<section class="portfolio" id="work-link">
 	<h2>Портфолио:</h2>
 	<div class="portCont">
 
@@ -876,10 +918,8 @@
 
 
 <!-- contacts Start	 -->
-<section class="contacts">
+<section class="contacts" id="cont-link">
 
-<!-- 
-		<iframe src="https://snazzymaps.com/embed/160051" width="100%" height="600px" style="border:none;"></iframe> -->
 
 
 	<div class="container">
@@ -901,7 +941,7 @@
 						<button class="darkBtn"><span>Заказать</span></button>
 				</div>
 				<div class="mapWRap">
-						<iframe src="https://snazzymaps.com/embed/160051" style="border:none;"></iframe>
+						<iframe src="https://snazzymaps.com/embed/160206" style="border:none;"></iframe>
 				</div>
 			</form>
 		</div>
