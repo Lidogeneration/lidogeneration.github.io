@@ -8,10 +8,7 @@
 }
 @media only screen and (max-width : 1600px)
 {
-  h1 
-  {
-    font-size: 1.35rem;
-  }
+
 }
 @media only screen and (max-width : 1450px)
 {
@@ -42,6 +39,10 @@
   .firstScroll .triggersCont .txtCont .txtWrap .txt .imgWrap img
   {
     width: 5rem;
+  }
+  .firstScroll .triggersCont .headerWrap h1
+  {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width : 1200px)

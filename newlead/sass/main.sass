@@ -137,6 +137,7 @@ section
 		.headerWrap
 			margin-bottom: 30px
 			h1
+				line-height: 37px
 				color: $main_white
 				span
 					color: $main_yellow
@@ -145,7 +146,7 @@ section
 			.txtWrap
 				position: relative
 				z-index: 1
-				margin-bottom: 20px
+				margin-bottom: 10px
 				.txt
 					display: flex
 					margin-left: 10px
@@ -153,12 +154,12 @@ section
 					.imgWrap
 						align-self: center
 						img
-							width: 5.6rem
+							width: 4rem
 					.trWrap
 						p
 							line-height: 35px
 							color: $main_white
-							font-size: 24px
+							font-size: 20px
 							padding: 0
 							margin: 0
 				.number
@@ -168,7 +169,7 @@ section
 					transform: translate(-50%,-50%)
 					p
 						line-height: 70px
-						font-size: 86px
+						font-size: 70px
 						color: #cfd8dc
 						opacity: 0.5
 						padding: 0
@@ -324,6 +325,8 @@ section
 					a
 						img
 							transition: 0.5s
+						&:focus
+							outline: none
 					&:hover
 						img
 							transition: 0.5s
@@ -533,7 +536,7 @@ section
 
 /* --- steps Start ------------------------------------------------*/
 .steps
-	padding: 50px 0 50px 0
+	padding: 50px 0 200px 0
 	position: relative
 	background: url('../img/cloud.png')
 	background-repeat: no-repeat
@@ -624,6 +627,8 @@ section
 				flex-direction: column
 				justify-content: center
 				align-items: center
+				h4
+					color: $main_blue
 				p
 					font-style: italic
 				.imgWrap
