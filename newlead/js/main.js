@@ -82,6 +82,7 @@ $('.revCont').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    speed: 1000,
     dots: false,
     arrows: true
   });
@@ -91,6 +92,7 @@ $('.revCont').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    speed: 1000,
     dots: false,
     arrows: true,
     responsive: [
@@ -110,6 +112,7 @@ $('.revCont').slick({
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 5000,
+    speed: 1000,
     dots: false,
     arrows: true,
     responsive: [
@@ -127,3 +130,13 @@ $('.revCont').slick({
 
 
 
+  $(document).ready(function() {
+	$('.popupVideo').magnificPopup({
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
