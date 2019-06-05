@@ -81,7 +81,7 @@ $('.revCont').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     speed: 1000,
     dots: false,
     arrows: true
@@ -91,10 +91,11 @@ $('.revCont').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     speed: 1000,
     dots: false,
     arrows: true,
+    pauseOnFocus: false,
     responsive: [
         {
             breakpoint: 992,
@@ -110,11 +111,12 @@ $('.revCont').slick({
   $('.team__cont').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     speed: 1000,
     dots: false,
     arrows: true,
+    pauseOnFocus: false,
     responsive: [
         {
             breakpoint: 992,
