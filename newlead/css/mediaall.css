@@ -8,7 +8,10 @@
 }
 @media only screen and (max-width : 1600px)
 {
-
+  h1 
+  {
+    font-size: 1.35rem;
+  }
 }
 @media only screen and (max-width : 1450px)
 {
@@ -76,7 +79,15 @@
 }
 @media only screen and (max-width : 992px)
 { 
-
+  .firstScroll .triggersCont .headerWrap h1
+  {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .action .howOpenForm input
+  {
+    width: 100%;
+  }
 
   .steps .stepWrap .txtWrap
   {

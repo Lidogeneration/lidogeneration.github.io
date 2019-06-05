@@ -294,6 +294,10 @@ section {
   text-indent: 20px;
 }
 
+.about .txtWrap h4 {
+  text-align: center;
+}
+
 .about .btnWrap {
   text-align: center;
   margin-bottom: 20px;
@@ -978,6 +982,23 @@ section {
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.action .howOpenForm {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.action .howOpenForm h2 {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /* --- action END ------------------------------------------------*/
