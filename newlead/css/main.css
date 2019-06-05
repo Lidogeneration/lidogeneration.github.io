@@ -117,6 +117,32 @@ section {
           transform: translateY(-120%);
 }
 
+.navbar-toggler-icon {
+  background-image: url("../img/menu.png") !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  border: 1px solid rgba(37, 38, 38, 0);
+  border-color: rgba(37, 38, 38, 0) !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid rgba(37, 38, 38, 0);
+}
+
 /* --- Navbar END ------------------------------------------------*/
 /* --- firstScroll start------------------------------------------------*/
 .firstScroll {
@@ -1059,6 +1085,7 @@ section {
 }
 
 .contacts .formWrap .contForm .inputWrap input {
+  text-align: center;
   width: 100%;
   display: block;
   margin-bottom: 20px;
@@ -1066,6 +1093,14 @@ section {
   border: none;
   border-radius: 10px;
   border-top-right-radius: 0;
+  border: 2px solid #feda46;
+}
+
+.contacts .formWrap .contForm .inputWrap input:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 2px solid #0746c8;
 }
 
 .contacts .formWrap .contForm .msgWrap {
@@ -1073,12 +1108,21 @@ section {
 }
 
 .contacts .formWrap .contForm .msgWrap textarea {
+  text-align: center;
   width: 100%;
   height: 100%;
   padding: 10px;
   border: none;
   border-radius: 10px;
   border-top-right-radius: 0;
+  border: 2px solid #feda46;
+}
+
+.contacts .formWrap .contForm .msgWrap textarea:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 2px solid #0746c8;
 }
 
 .contacts .formWrap .contForm .mapWRap {

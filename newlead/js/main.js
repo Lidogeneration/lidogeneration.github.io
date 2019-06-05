@@ -1,3 +1,22 @@
+$(function(){ 
+    var navMain = $(".navbar-collapse"); // avoid dependency on #id
+    // "a:not([data-toggle])" - to avoid issues caused
+    // when you have dropdown inside navbar
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+        navMain.collapse('hide');
+    });
+});
+$(document).click(function(event) {
+    $(event.target).closest(".navbar").length || $(".navbar-collapse.show").length && $(".navbar-collapse.show").collapse("hide")
+  });
+
+
+
+
+
+
+
+
 $(function () {
     $('.nav-link-new').mPageScroll2id();
     $('.mpopup').magnificPopup();
