@@ -10,7 +10,7 @@ $main_bgL: #f9f9f9
 
 body
 	background: $main_bg
-	font-family: 'Roboto', sans-serif
+	font-family: 'Open Sans', sans-serif
 	font-weight: normal
 	font-size: 16px
 	color: $main_color
@@ -35,10 +35,13 @@ section
 	overflow: hidden
 .done
 	min-height: 100vh
+h1,h2,h3
+	font-family: 'Poppins', sans-serif
 /* --- Navbar START ------------------------------------------------*/
 .navbar
 	background: rgba($main_color, .0) !important
 	transition: 0.5s
+	box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.04)
 	a
 		transition: 0.3s
 		&:hover
@@ -52,11 +55,16 @@ section
 		display: inline-block
 		padding: 5px
 		margin-right: 5px
+		text-transform: uppercase
+		
 	ul
 		list-style: none
 		li
+			text-align: left
 			a
-				color: $main_white 
+				font-weight: bold
+				text-transform: uppercase
+				color: $main_color
 	.whiteBtn
 		font-size: 14px
 		padding: 5px 10px
@@ -100,7 +108,7 @@ section
 .store_firstScroll
   padding: 50px 0
   min-height: 100vh
-  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 100%), url('../img/storeBg.jpg') 
+  background: linear-gradient(rgba($main_blueL, 0.9) 100%, rgba($main_blueL, 0.9) 100%), url('../img/storeBg.jpg') 
   background-size: cover
   background-attachment: fixed
   background-repeat: no-repeat
@@ -112,14 +120,14 @@ section
     display: flex
     flex-direction: column
     padding: 30px 20px
-    background-image: linear-gradient(to right, rgba($main_white, .8), rgba($main_white, 0))
+    // background-image: linear-gradient(to right, rgba($main_white, .8), rgba($main_white, 0))
     .headerWrap
       h1
         text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
         text-transform: uppercase
         color: $main_white
         span
-          color: $main_blueL
+          // color: $main_blueL
           text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
     .txtWrap
       margin-bottom: 20px
@@ -127,8 +135,10 @@ section
         text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
         color: $main_white
         span
-          color: $main_blueL
           text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+.store_firstScroll
+	.storeBtnMain
+		background-color: rgba($main_white, .9)
 // ----------------------------------------------- store_firstScroll end
 
 // ----------------------------------------------- store_potfolio start
@@ -268,16 +278,16 @@ section
 					padding: 0 
 				hr
 					margin: 5px 0
-.slick-dots
-	.slick-active 
-		button
-			&:before
-				color: $main_blueL !important
-	li
-		button
-			&:before
-				font-size: 20px
-				color: $main_blueL
+	.slick-dots
+		.slick-active 
+			button
+				&:before
+					color: $main_blueL !important
+		li
+			button
+				&:before
+					font-size: 20px
+					color: $main_blueL
 // ----------------------------------------------- store_rev End
 
 
@@ -326,6 +336,8 @@ section
 			span
 				font-weight: bold
 				color: $main_blueL
+	.storeBtnMain
+		background: rgba($main_blueL, .7)
 // ----------------------------------------------- store_problem end
 
 // ----------------------------------------------- store_footer start
@@ -589,7 +601,7 @@ section
 	border: none
 .storeBtnMain
   display: block
-  background: $main_white
+  background: rgba($main_blueL, .7)
   padding: 10px
   width: 250px
   max-width: 100%

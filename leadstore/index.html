@@ -10,9 +10,11 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/storeMain.css">
 	<link rel="stylesheet" href="css/mediaall.css">
-	<link rel="stylesheet" href="css/mediaallSite.css">
+	<link rel="stylesheet" href="css/store_mediaall.css">
 	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -28,9 +30,7 @@
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<div class="ml-auto color-white d-none d-lg-inline">
-						<a class="nav-link-new" href="tel:+380503415952">+38 (050) 341 59 52</a>
-					</div>
+
 			<ul class="navbar-nav ml-md-auto">
 				<li>
 					<a class="nav-link-new nav-menu-link nav-item" href="#about-link">О нас</a>
@@ -45,6 +45,9 @@
 					<a class="nav-link-new nav-menu-link nav-item" href="#cont-link">Контакты</a>
 				</li>
 			</ul>
+			<div class="ml-5 mr-auto color-white d-none d-lg-inline">
+				<a class="nav-link-new" href="tel:+380503415952">+38 (050) 341 59 52</a>
+			</div>
 		</div>
 	</nav>
 	
@@ -56,9 +59,9 @@
 
 
 <section class="store_firstScroll">
-	<div class="container-fluid">
+	<div class="container-fluid text-center">
 		<div class="row">
-			<div class="col-lg-7">
+			<div class="col-12">
 					<div class="headerCont">
 							<div class="headerWrap">
 								<h1>Запусти свой интернет магазин <br><span>в один клик</span></h1>
@@ -67,11 +70,10 @@
 								<h2>Все что нужно для онлайн-торговли разработаем уже через <span>21 день</span></h2>
 							</div>
 							<div class="btnCont">
-									<a href="#0" class="storeBtnMain"><span>Запустить</span></a>
+									<a href="#0" class="storeBtnMain mx-auto"><span>Запустить</span></a>
 								</div>
 						</div>
 			</div>
-			<div class="col-lg-5"></div>
 		</div>
 	</div>
 </section>
@@ -223,7 +225,7 @@
 						<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
 						<input type="text" name="site" placeholder="Сайт" required>
 						<input name="order" type="hidden" value="Нравится этот сайт">
-						<button class="disbutt storeBtnMain mx-auto" disabled><span>отправить</span></button>
+						<button class="disbutt storeBtnMain mx-auto" disabled><span>Хочу такой же</span></button>
 				</form>
 			</div>
 		</div>
@@ -389,7 +391,7 @@
 				<form class="store_formProblem">
 						<input type="tel" class="phoneidcl" name="phone" placeholder="Введите ваш телефон" required>
 						<input name="order" type="hidden" value="Нестандартная задача">
-						<button class="disbutt storeBtnMain ml-auto" disabled><span>отправить</span></button>
+						<button class="disbutt storeBtnMain ml-auto" disabled><span>Обсудить</span></button>
 				</form>
 			</div>
 			<div class="col-lg-7 align-self-end col-10 pb-4 pb-lg-0">
@@ -425,7 +427,9 @@
 										<textarea name="message" placeholder="Комментарий ..."></textarea>
 									</div>
 									<div class="btnWrap text-center">
-											<button class="disbutt storeBtnMain mx-auto" disabled><span>отправить</span></button>
+											<button class="disbutt storeBtnMain mx-auto" disabled><span>Заказать
+												
+											</span></button>
 									</div>
 								</form>
 							</div>

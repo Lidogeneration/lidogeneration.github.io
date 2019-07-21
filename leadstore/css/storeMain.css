@@ -1,6 +1,6 @@
 body {
   background: #fafcfc;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #252626;
@@ -42,11 +42,17 @@ section {
   min-height: 100vh;
 }
 
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
 /* --- Navbar START ------------------------------------------------*/
 .navbar {
   background: rgba(37, 38, 38, 0) !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.04);
 }
 
 .navbar a {
@@ -69,14 +75,21 @@ section {
   display: inline-block;
   padding: 5px;
   margin-right: 5px;
+  text-transform: uppercase;
 }
 
 .navbar ul {
   list-style: none;
 }
 
+.navbar ul li {
+  text-align: left;
+}
+
 .navbar ul li a {
-  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #252626;
 }
 
 .navbar .whiteBtn {
@@ -144,8 +157,8 @@ section {
 .store_firstScroll {
   padding: 50px 0;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/storeBg.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6) 100%), url("../img/storeBg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(74, 196, 243, 0.9)), to(rgba(74, 196, 243, 0.9))), url("../img/storeBg.jpg");
+  background: linear-gradient(rgba(74, 196, 243, 0.9) 100%, rgba(74, 196, 243, 0.9) 100%), url("../img/storeBg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -171,8 +184,6 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 30px 20px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
 }
 
 .store_firstScroll .headerCont .headerWrap h1 {
@@ -182,7 +193,6 @@ section {
 }
 
 .store_firstScroll .headerCont .headerWrap h1 span {
-  color: #4ac4f3;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -196,8 +206,11 @@ section {
 }
 
 .store_firstScroll .headerCont .txtWrap h2 span {
-  color: #4ac4f3;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.store_firstScroll .storeBtnMain {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .store_potfolio {
@@ -398,11 +411,11 @@ section {
   margin: 5px 0;
 }
 
-.slick-dots .slick-active button:before {
+.store_rev .slick-dots .slick-active button:before {
   color: #4ac4f3 !important;
 }
 
-.slick-dots li button:before {
+.store_rev .slick-dots li button:before {
   font-size: 20px;
   color: #4ac4f3;
 }
@@ -457,6 +470,10 @@ section {
 .store_problem .txtWrap h2 span {
   font-weight: bold;
   color: #4ac4f3;
+}
+
+.store_problem .storeBtnMain {
+  background: rgba(74, 196, 243, 0.7);
 }
 
 .store_contacts {
@@ -856,7 +873,7 @@ section {
 
 .storeBtnMain {
   display: block;
-  background: #fff;
+  background: rgba(74, 196, 243, 0.7);
   padding: 10px;
   width: 250px;
   max-width: 100%;
