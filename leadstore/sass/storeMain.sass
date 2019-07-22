@@ -62,9 +62,13 @@ h1,h2,h3
 		li
 			text-align: left
 			a
+				transition: .3s
 				font-weight: bold
 				text-transform: uppercase
 				color: $main_color
+			.active
+				transition: .3s
+				color: $main_blueL !important
 	.whiteBtn
 		font-size: 14px
 		padding: 5px 10px
@@ -137,32 +141,72 @@ h1,h2,h3
         span
           text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
 .store_firstScroll
+	.headerWrap
+		h1
+			font-size: 4.5rem
 	.storeBtnMain
+		font-size: 22px
 		background-color: rgba($main_white, .9)
 // ----------------------------------------------- store_firstScroll end
 
 // ----------------------------------------------- store_potfolio start
 .store_potfolio
 	padding: 30px 0
-	.portWrap
-		position: relative
-		margin-bottom: 20px
-		border: 5px solid $main_blueL
-		box-shadow: 0 0 10px #cccccc
-		img
-			max-width: 100%
+	.slick-track
+		display: flex
+		.slick-slide
+			flex-direction: column
+			display: flex
 			height: auto
-		.txtWrap
-			position: absolute
-			top: 45%
-			left: 0
-			transform: translateY(-50%)
-			background: $main_blueL
-			width: 100%
-			padding: 10px
-			h2
-				padding: 0
-				margin: 0
+	.store_potfolio-slider
+		.portWrap
+			&:focus
+				outline: none
+			margin: 20px
+			position: relative
+			margin-bottom: 20px
+			z-index: 1
+			.imgWrap
+				img
+					display: block
+					margin-left: auto
+					margin-right: auto
+					max-width: 100%
+					height: auto
+			.txtWrap
+				ul
+					margin: 0
+				height: 100%
+				// position: absolute
+				// top: 45%
+				// left: 0
+				transform: translateY(-20%)
+				border: 5px solid $main_white
+				background: rgba($main_white,.7)
+				box-shadow: 0 0 10px #cccccc
+				width: 100%
+				padding: 10px
+				p
+					margin: 0
+					padding: 5px 10px 5px 10px
+					background: $main_blueL
+					color: $main_white
+					text-transform: uppercase
+					font-weight: bold
+					margin-bottom: 10px
+				h2
+					padding: 0
+					margin: 0
+	.slick-dots
+		.slick-active 
+			button
+				&:before
+					color: $main_blueL !important
+		li
+			button
+				&:before
+					font-size: 20px
+					color: $main_blueL
 // ----------------------------------------------- store_potfolio end
 
 
@@ -269,6 +313,7 @@ h1,h2,h3
 				box-shadow: 0 0 10px #cccccc
 				text-align: center
 				h4
+					font-size: 1.4rem
 					padding: 0
 					margin: 0
 				p
@@ -317,6 +362,18 @@ h1,h2,h3
 .store_problem
 	background: rgba($main_color, .5)
 	padding: 50px 0 0 0 
+	position: relative
+	.bgSymbol
+		position: absolute
+		right: 5%
+		bottom: 5%
+		span
+			opacity: .3
+			color: $main_blueL
+			font-size: 50rem
+			line-height: 0
+			font-weight: bold
+			text-transform: uppercase
 	.txtCont
 		h2
 			text-transform: uppercase

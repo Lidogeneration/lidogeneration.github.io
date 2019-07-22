@@ -246,12 +246,13 @@ $('.store_revCont').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     speed: 1000,
     dots: true,
     arrows: false,
     pauseOnFocus: false,
     pauseOnHover: false,
+    infinite: true,
     responsive: [
         {
             breakpoint: 992,
@@ -266,11 +267,42 @@ $('.store_revCont').slick({
 
   $('.logoCont').slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     speed: 1000,
     dots: false,
+    arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true
+            }
+          }
+      ]
+  });
+
+  
+  $('.store_potfolio-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1000,
+    dots: true,
     arrows: false,
     pauseOnFocus: false,
     pauseOnHover: false,

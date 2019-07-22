@@ -28,9 +28,13 @@
 }
 @media only screen and (max-width : 992px)
 {
+  .store_firstScroll .storeBtnMain
+  {
+    font-size: 16px;
+  }
   h1 
   {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
   h2 
   {
@@ -82,7 +86,18 @@
 }
 @media only screen and (max-width : 576px)
 {
-
+  .store_offSale .calc-programs
+  {
+    padding: 0;
+  }
+  .store_offSale .calc-programs .calc-radio label
+  {
+    padding: 0;
+  }
+  .store_offSale .calc-programs .calc-radio label span
+  {
+    font-size: 14px;
+  }
 
 }
 @media only screen and (max-width : 511px)

@@ -87,9 +87,17 @@ h1, h2, h3 {
 }
 
 .navbar ul li a {
+  -webkit-transition: .3s;
+  transition: .3s;
   font-weight: bold;
   text-transform: uppercase;
   color: #252626;
+}
+
+.navbar ul li .active {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #4ac4f3 !important;
 }
 
 .navbar .whiteBtn {
@@ -209,7 +217,12 @@ h1, h2, h3 {
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 }
 
+.store_firstScroll .headerWrap h1 {
+  font-size: 4.5rem;
+}
+
 .store_firstScroll .storeBtnMain {
+  font-size: 22px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -217,33 +230,80 @@ h1, h2, h3 {
   padding: 30px 0;
 }
 
-.store_potfolio .portWrap {
-  position: relative;
-  margin-bottom: 20px;
-  border: 5px solid #4ac4f3;
-  -webkit-box-shadow: 0 0 10px #cccccc;
-          box-shadow: 0 0 10px #cccccc;
+.store_potfolio .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.store_potfolio .portWrap img {
+.store_potfolio .slick-track .slick-slide {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+.store_potfolio .store_potfolio-slider .portWrap {
+  margin: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.store_potfolio .store_potfolio-slider .portWrap:focus {
+  outline: none;
+}
+
+.store_potfolio .store_potfolio-slider .portWrap .imgWrap img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
   height: auto;
 }
 
-.store_potfolio .portWrap .txtWrap {
-  position: absolute;
-  top: 45%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background: #4ac4f3;
+.store_potfolio .store_potfolio-slider .portWrap .txtWrap {
+  height: 100%;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  border: 5px solid #fff;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
   width: 100%;
   padding: 10px;
 }
 
-.store_potfolio .portWrap .txtWrap h2 {
+.store_potfolio .store_potfolio-slider .portWrap .txtWrap ul {
+  margin: 0;
+}
+
+.store_potfolio .store_potfolio-slider .portWrap .txtWrap p {
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+  background: #4ac4f3;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.store_potfolio .store_potfolio-slider .portWrap .txtWrap h2 {
   padding: 0;
   margin: 0;
+}
+
+.store_potfolio .slick-dots .slick-active button:before {
+  color: #4ac4f3 !important;
+}
+
+.store_potfolio .slick-dots li button:before {
+  font-size: 20px;
+  color: #4ac4f3;
 }
 
 .store_offSale {
@@ -396,6 +456,7 @@ h1, h2, h3 {
 }
 
 .store_rev .store_revCont .store_revWrap .txtWrap h4 {
+  font-size: 1.4rem;
   padding: 0;
   margin: 0;
 }
@@ -446,6 +507,22 @@ h1, h2, h3 {
 .store_problem {
   background: rgba(37, 38, 38, 0.5);
   padding: 50px 0 0 0;
+  position: relative;
+}
+
+.store_problem .bgSymbol {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.store_problem .bgSymbol span {
+  opacity: .3;
+  color: #4ac4f3;
+  font-size: 50rem;
+  line-height: 0;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .store_problem .txtCont h2 {
