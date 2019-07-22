@@ -88,11 +88,11 @@
 {
   .store_offSale .calc-programs
   {
-    padding: 0;
+    padding: 0 !important;
   }
   .store_offSale .calc-programs .calc-radio label
   {
-    padding: 0;
+    padding: 0 !important;
   }
   .store_offSale .calc-programs .calc-radio label span
   {

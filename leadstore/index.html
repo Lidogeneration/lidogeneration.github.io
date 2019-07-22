@@ -67,7 +67,7 @@
 								<h1>Запусти свой интернет магазин <br><span>в один клик</span></h1>
 							</div>
 							<div class="txtWrap">
-								<h2>Все что нужно для онлайн-торговли разработаем уже через <span>21 день</span></h2>
+								<h2>Все что нужно для онлайн - торговли разработаем уже через <span>21 день</span></h2>
 							</div>
 							<div class="btnCont">
 									<a href="#0" class="storeBtnMain mx-auto"><span>Запустить</span></a>
@@ -82,7 +82,7 @@
 	<div class="container-fluid">
 		<div class="headMainCont">
 			<h3>Наши кейсы</h3>
-			<p>Мы фокусируемся на цифрах и показателях, увеличении количества целевых обращений, используя при этом минимальный бюджет, и достигаем максимальных результатов.</p>
+			<!-- <p>Мы фокусируемся на цифрах и показателях, увеличении количества целевых обращений, используя при этом минимальный бюджет, и достигаем максимальных результатов.</p> -->
 		</div>
 		<!-- <div class="row">
 			<div class="col-lg-3 col-md-6 ">
@@ -249,72 +249,199 @@
 
 <section class="store_offSale">
 	<div class="container">
-			<div class="headMainCont mb-5">
+			<div class="headMainCont mb-0 mb-lg-5">
 					<h3>Получите скидку <span>25%</span></h3>
-					<h4>Ответив всего на <span>5</span> простых вопросов</h4>
+					<h4 class="mb-4">Ответив всего на <span>5</span> простых вопросов</h4>
+					<h5><span id="progressCount">1</span> из 5</h5>
+					<div class="progressBar" id="progres">
+						<div class="progressWrap" id="progressBg"></div>
+					</div>
 				</div>
 				<form class="store_offSaleForm">
 					<div class="row">
-						<div class="col-lg-6 align-self-center mb-3 mb-lg-0">
+						<div class="col-lg-6 align-self-center mb-3 mb-lg-0 order-2 order-lg-1">
 							<div class="offSaleWrap">
 								<h3>Пройдите тест до конца</h3>
 								<h5>и получите персональную скидку и подарок за экономию нашего времени</h5>
 								<h4>Итого ваша скидка:</h4>
-								<span>0%</span>
+								<span id="saleCount">0</span><span>%</span>
 							</div>
 						</div>
-						<div class="col-lg-6 align-self-center">
+						<div class="col-lg-6 align-self-center  order-1 order-lg-2">
+								<div class="mainCalcCont">
+								<div class="calcCont">
 								<div class="calc-programs">
+										<h3>Найдите себя?</h3>
 										<div class="calc-radio">
-												<input type="radio" value="other_prod" checked name="firstQv" id="other-prod">
-												<label for="other-prod">
+												<input type="radio" value="Мне надо еще вчера" checked name="Qv01" id="Qv01_1">
+												<label for="Qv01_1">
 												<span>Мне надо еще вчера</span>
 											</label>
 										</div>
 		
 										<div class="calc-radio">
-												<input type="radio" value="phones" name="firstQv" id="phones">
-												<label for="phones">
+												<input type="radio" value="В поисках лучшего предположения" name="Qv01" id="Qv01_2">
+												<label for="Qv01_2">
 													<span>В поисках лучшего предположения</span>
 												</label>
 											</div>
 		
 											<div class="calc-radio">
-													<input type="radio" value="smart_clock" name="firstQv" id="smart-clock">
-													<label for="smart-clock">
+													<input type="radio" value="Нужен редизайн старого сайта" name="Qv01" id="Qv01_3">
+													<label for="Qv01_3">
 														<span>Нужен редизайн старого сайта</span>
 													</label>
 												</div>
 												<div class="calc-radio">
-														<input type="radio" value="mining" name="firstQv" id="mining">
-														<label for="mining">													
+														<input type="radio" value="Тестирую новое направления" name="Qv01" id="Qv01_4">
+														<label for="Qv01_4">													
 															<span>Тестирую новое направления</span>
 														</label>
 													</div>
 													<div class="calc-radio">
-															<input type="radio" value="mining2" name="firstQv" id="mining2">
-															<label for="mining2">													
+															<input type="radio" value="Решили вывести бизнес в интернет" name="Qv01" id="Qv01_5">
+															<label for="Qv01_5">													
 																<span>Решили вывести бизнес в интернет</span>
 															</label>
 														</div>
 														<div class="calc-radio">
-																<input type="radio" value="mining3" name="firstQv" id="mining3">
-																<label for="mining3">													
+																<input type="radio" value="Я все знаю, расскажу как делать" name="Qv01" id="Qv01_6">
+																<label for="Qv01_6">													
 																	<span>Я все знаю, расскажу как делать</span>
 																</label>
 															</div>
 									</div>
 									<div class="btnWrap">
-											<a class="storeBtnMain mx-auto"><span>Далее</span></a>
+											<a class="storeBtnMain mx-auto mt-auto" onclick="quiz();"><span>Далее</span></a>
+											</div>
 									</div>
-								<!-- <div class="qvWrap">
-									<label><input type="radio" name="firstQv" onclick="onClickAnswer(this)" value="Информационный сайт"><p>Информационный сайт</p></label>
-									<label><input type="radio" name="firstQv" onclick="onClickAnswer(this)" value="Информационный сайт"><p>Информационный сайт</p></label>
-									<label><input type="radio" name="firstQv" onclick="onClickAnswer(this)" value="Информационный сайт"><p>Информационный сайт</p></label>
-									<label><input type="radio" name="firstQv" onclick="onClickAnswer(this)" value="Информационный сайт"><p>Информационный сайт</p></label>
-									<label><input type="radio" name="firstQv" onclick="onClickAnswer(this)" value="Информационный сайт"><p>Информационный сайт</p></label>
-									<label><input type="radio" name="firstQv" onclick="onClickAnswer(this)" value="Информационный сайт"><p>Информационный сайт</p></label>
-								</div> -->
+
+									<div class="calcCont hideCalc">
+											<h3>Тип Вашего бизнеса?</h3>
+											<div class="calc-programs">
+													<div class="calc-radio">
+															<input type="radio" value="Строительство/Недвижимость" checked name="Qv02" id="Qv02_1">
+															<label for="Qv02_1">
+															<span>Строительство/Недвижимость</span>
+														</label>
+													</div>
+					
+													<div class="calc-radio">
+															<input type="radio" value="Отдых/туризм" name="Qv02" id="Qv02_2">
+															<label for="Qv02_2">
+																<span>Отдых/туризм</span>
+															</label>
+														</div>
+					
+														<div class="calc-radio">
+																<input type="radio" value="Медицина" name="Qv02" id="Qv02_3">
+																<label for="Qv02_3">
+																	<span>Медицина</span>
+																</label>
+															</div>
+															<div class="calc-radio">
+																	<input type="radio" value="Юриспруденция" name="Qv02" id="Qv02_4">
+																	<label for="Qv02_4">													
+																		<span>Юриспруденция</span>
+																	</label>
+																</div>
+
+																<div class="calc-radio">
+																		<input type="radio" value="Другое" name="Qv02" id="Qv02_5">
+																		<label for="Qv02_5">													
+																			<span>Другое</span>
+																		</label>
+																	</div>
+
+												</div>
+												<div class="btnWrap">
+														<a class="storeBtnMain mx-auto mt-auto" onclick="quiz();"><span>Далее</span></a>
+														</div>
+												</div>
+
+												<div class="calcCont hideCalc">
+													<h3>Что Вы продаете?</h3>
+													<div class="calc-programs">
+															<div class="calc-radio">
+																	<input type="radio" value="Строительство/Недвижимость" checked name="Qv03" id="Qv03_1">
+																	<label for="Qv03_1">
+																	<span>Продукцию</span>
+																</label>
+															</div>
+							
+															<div class="calc-radio">
+																	<input type="radio" value="Отдых/туризм" name="Qv03" id="Qv03_2">
+																	<label for="Qv03_2">
+																		<span>Услуги</span>
+																	</label>
+																</div>
+		
+														</div>
+															<div class="btnWrap">
+																<a class="storeBtnMain mx-auto mt-auto" onclick="quiz();"><span>Далее</span></a>
+																</div>
+														</div>
+
+
+														<div class="calcCont hideCalc">
+																<h3>Какая правовая форма у Вашего бизнеса?</h3>
+																<div class="calc-programs">
+																		<div class="calc-radio">
+																				<input type="radio" value="Строительство/Недвижимость" checked name="Qv04" id="Qv04_1">
+																				<label for="Qv04_1">
+																				<span>ИП</span>
+																			</label>
+																		</div>
+										
+																		<div class="calc-radio">
+																				<input type="radio" value="Отдых/туризм" name="Qv04" id="Qv04_2">
+																				<label for="Qv04_2">
+																					<span>ООО</span>
+																				</label>
+																			</div>
+
+																			<div class="calc-radio">
+																					<input type="radio" value="Отдых/туризм" name="Qv04" id="Qv04_3">
+																					<label for="Qv04_3">
+																						<span>АО</span>
+																					</label>
+																				</div>
+
+																				<div class="calc-radio">
+																						<input type="radio" value="Отдых/туризм" name="Qv04" id="Qv04_4">
+																						<label for="Qv04_4">
+																							<span>Частное лицо</span>
+																						</label>
+																					</div>
+
+																					<div class="calc-radio">
+																							<input type="radio" value="Отдых/туризм" name="Qv04" id="Qv04_5">
+																							<label for="Qv04_5">
+																								<span> Другое</span>
+																							</label>
+																						</div>
+					
+																	</div>
+																		<div class="btnWrap">
+																			<a class="storeBtnMain mx-auto mt-auto" onclick="quiz();"><span>Далее</span></a>
+																			</div>
+																	</div>
+
+
+																	<div class="calcCont hideCalc">
+																			<h3 class="text-center">Чтобы получить скидку, заполните поля ниже</h3>
+																			<input type="text" name="name" placeholder="Имя" required>
+																			<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
+																					<div class="btnWrap">
+																							<button class="storeBtnMain mx-auto disbutt" disabled><span>Отправить</span></button>
+																						</div>
+																				</div>
+
+									
+									<div class="btnWrap">
+											<!-- <a class="storeBtnMain mx-auto mt-auto" onclick="quiz();"><span>Далее</span></a> -->
+									</div>
+								</div>
 						</div>
 					</div>
 				</form>
@@ -603,6 +730,7 @@
 	</div>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/qv.js"></script>
 </body>
 
 </html>

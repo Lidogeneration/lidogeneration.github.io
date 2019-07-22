@@ -215,6 +215,22 @@ h1,h2,h3
 .store_offSale
 	padding: 50px 0
 	background: $main_bgL
+	.progressBar
+		border: 2px solid $main_blueL
+		height: 30px
+		width: 80%
+		display: block
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		.progressWrap
+			position: absolute
+			top: 0
+			left: 0
+			width: 0%
+			height: 100%
+			background: $main_blueL
+			transition: .5s
 	.offSaleWrap
 		border: 2px solid $main_blueL
 		padding: 20px 10px
@@ -229,39 +245,76 @@ h1,h2,h3
 			font-size: 30px
 			font-weight: bold
 			color: $main_blueL
-	.calc-programs
-		margin-bottom: 20px
+	.mainCalcCont
+		overflow: hidden
+		padding-bottom: 20px
+		position: relative
+		min-height: 450px
+		height: 100%
 		display: flex
-		flex-wrap: wrap
-		justify-content: center
 		flex-direction: column
-		padding: 10px
-		.calc-radio
-			padding: 5px
-			label
-				cursor: pointer
-				padding: 5px
-				margin: 0
-				&:before
-					content: ''
-					display: inline-block
-					vertical-align: middle
-					width: 24px
-					height: 24px
-					background-color: #ffffff
-					border: 6px solid #fff
-					box-shadow: 0 5px 10px rgba(0,0,1, 0.4)
-					transition: 0.3s
-				span
-					display: inline-block
-					vertical-align: middle
-					margin-left: 5px
-	input[type="radio"]
-		display: none
-		&:checked
-			&+label::before
-					background-color: $main_blueL
-					border: 6px solid #fff
+		justify-content: flex-end
+		.calcCont
+			input
+				padding: 10px
+				width: 100%
+				margin-bottom: 20px
+				text-align: center
+				text-transform: uppercase
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%	
+			height: 100%
+			transition: .5s
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.calc-programs
+				margin-bottom: 20px
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+				flex-direction: column
+				padding: 10px
+				.calc-radio
+					padding: 5px
+					label
+						cursor: pointer
+						padding: 5px
+						margin: 0
+						&:before
+							content: ''
+							display: inline-block
+							vertical-align: middle
+							width: 24px
+							height: 24px
+							background-color: #ffffff
+							border: 6px solid #fff
+							box-shadow: 0 5px 10px rgba(0,0,1, 0.4)
+							transition: 0.3s
+						span
+							display: inline-block
+							vertical-align: middle
+							margin-left: 5px
+			input[type="radio"]
+				display: none
+				&:checked
+					&+label::before
+							background-color: $main_blueL
+							border: 6px solid #fff
+	.hideCalc
+		transition: .3s
+		transform: translateX(150%);
+	.storeBtnMain 
+		&:disabled
+			transition: 0.3s
+			background: $main_bgL
+			&:before
+				transition: 0.3s
+				transform: scaleX(1)
+				background: $main_bgL
 // ----------------------------------------------- store_offSale end
 
 // ----------------------------------------------- store_likeSiteForm Start
@@ -656,6 +709,7 @@ h1,h2,h3
 .storeBtnMain
 	cursor: pointer
 	border: none
+	transition: 0.3s
 .storeBtnMain
   display: block
   background: rgba($main_blueL, .7)
