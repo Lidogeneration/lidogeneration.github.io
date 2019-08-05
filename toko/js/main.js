@@ -183,11 +183,56 @@ $('.first_sliderCont').slick({
 $('.actionCont').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     speed: 3000,
     dots: true,
     arrows: false,
     pauseOnFocus: false,
     pauseOnhover: false
+});
+
+$('.prod_sliderCont').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1500,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '10px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+
+  $('.image-popup-no-margins').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    fixedContentPos: true,
+    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+    image: {
+        verticalFit: true
+    },
+    zoom: {
+        enabled: true,
+        duration: 300 // don't foget to change the duration also in CSS
+    }
 });
