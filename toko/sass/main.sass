@@ -1,0 +1,342 @@
+$main_color: #111
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #000080
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+
+
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, 0)
+	.navbar-brand
+		padding: 0
+	img
+		width: 40px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_white
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_rgb
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		text-shadow: 0px 0px 20px $main_white
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.anim
+		span
+			color: $main_color
+	p
+		color: $main_color
+	background: rgba(255,255,255, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- toko_firstScroll start------------------------------------------------*/	
+.mainBg01
+	background: url('../img/mainBg01.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	align-items: center
+.mainBg02
+	background: url('../img/mainBg02.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	align-items: center
+	justify-content: center
+	h1
+		text-transform: uppercase
+.toko_firstScroll
+	padding: 0
+	.sliderWrap
+		padding: 30px 50px
+		min-height: 100vh
+		display: flex
+		.headCont
+			h1,h2,h4
+				color: $main_white
+			h1
+				font-size: 72px
+			h2
+				font-size: 60px
+			h4
+				font-size: 50px
+			h2
+				text-transform: uppercase
+				color: $main_rgb
+	.slick-prev
+		z-index: 99
+		left: 10px
+		width: 35px
+		height: 35px
+		&:before
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			border-top: 5px solid $main_white
+			border-right: 5px solid $main_white
+			transform: rotate(-135deg)
+	.slick-next
+		right: 10px
+		width: 35px
+		height: 35px
+		&:before
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			border-top: 5px solid $main_white
+			border-right: 5px solid $main_white
+			transform: rotate(45deg)
+/* --- toko_firstScroll END ------------------------------------------------*/	
+
+
+/* --- toko_action Start ------------------------------------------------*/
+.toko_action
+	padding: 0
+	.actionCont
+		margin: 0
+	img
+		max-width: 100%
+		height: auto
+	.slick-dots
+		width: auto
+		bottom: 10px
+		z-index: 99
+		li
+			button
+				&:before
+					font-size: 30px
+					color: $main_rgb
+/* --- toko_action END ------------------------------------------------*/	
+
+
+
+/* --- About Start ------------------------------------------------*/
+.toko_about
+	padding: 0
+	.aboutCont
+		height: 500px
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		overflow: hidden
+		padding: 10px
+		position: relative
+		.btnWrap
+			position: absolute
+			bottom: 5px
+			h4
+				background: $main_rgb
+				padding: 10px
+				color: $main_white
+		.aboutWrap
+			padding: 10px
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 100%
+			background: $main_rgb
+			transition: .5s
+			transform: translateX(-150%)
+			ul
+				color: $main_white
+				font-size: 20px
+				margin: 0
+				li
+		&:hover
+			.aboutWrap
+				transform: translateX(0)
+/* --- About END ------------------------------------------------*/	
+
+
+/* --- product Start ------------------------------------------------*/
+/* --- product END ------------------------------------------------*/	
+
+/* --- ProductAll Start ------------------------------------------------*/
+/* --- ProductAll END ------------------------------------------------*/	
+
+
+/* --- dropshipping Start ------------------------------------------------*/	
+/* --- dropshipping END ------------------------------------------------*/	
+
+
+
+
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/	
+
+
+/* --- advantage Start ------------------------------------------------*/	
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainBtn
+	background: $main_rgb
+	text-transform: uppercase
+	color: $main_white
+	padding: 10px
+	display: block
+	margin-left: auto
+	margin-right: auto
+	width: 270px
+	max-width: 100%
+	text-align: center
+	transition: .3s
+	&:hover
+		background: rgba($main_rgb, .5)
+		color: $main_white
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+

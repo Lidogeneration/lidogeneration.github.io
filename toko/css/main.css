@@ -1,0 +1,496 @@
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+  color: #111;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.done {
+  min-height: 100vh;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0);
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar img {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .anim {
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .anim span {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.navbar .anim:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #000080;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.navbar .anim:hover span {
+  color: #000080;
+}
+
+.navbar .anim:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar p {
+  font-size: 24px;
+  text-shadow: 0px 0px 20px #fff;
+  color: #fff;
+  margin: 0;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.navbar .navbar-toggler-icon {
+  background: url("../img/burger-light.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.navbar .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.navbar .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.active {
+  position: relative;
+  overflow: hidden;
+}
+
+.active span {
+  color: #000080 !important;
+}
+
+.active:before {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #111;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: animate 7s linear infinite;
+          animation: animate 7s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+.fixed-nav {
+  background: rgba(255, 255, 255, 0.9);
+  color: #55595c;
+  padding: .4rem .4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.fixed-nav .anim span {
+  color: #111;
+}
+
+.fixed-nav p {
+  color: #111;
+}
+
+.fixed-nav .navbar-toggler-icon {
+  background: url("../img/burger-black.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+}
+
+.fixed-nav .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.fixed-nav .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fixed-nav .navbar-toggler:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #111;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+/* --- Navbar END ------------------------------------------------*/
+/* --- toko_firstScroll start------------------------------------------------*/
+.mainBg01 {
+  background: url("../img/mainBg01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainBg02 {
+  background: url("../img/mainBg02.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainBg02 h1 {
+  text-transform: uppercase;
+}
+
+.toko_firstScroll {
+  padding: 0;
+}
+
+.toko_firstScroll .sliderWrap {
+  padding: 30px 50px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toko_firstScroll .sliderWrap .headCont h1, .toko_firstScroll .sliderWrap .headCont h2, .toko_firstScroll .sliderWrap .headCont h4 {
+  color: #fff;
+}
+
+.toko_firstScroll .sliderWrap .headCont h1 {
+  font-size: 72px;
+}
+
+.toko_firstScroll .sliderWrap .headCont h2 {
+  font-size: 60px;
+}
+
+.toko_firstScroll .sliderWrap .headCont h4 {
+  font-size: 50px;
+}
+
+.toko_firstScroll .sliderWrap .headCont h2 {
+  text-transform: uppercase;
+  color: #000080;
+}
+
+.toko_firstScroll .slick-prev {
+  z-index: 99;
+  left: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.toko_firstScroll .slick-prev:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.toko_firstScroll .slick-next {
+  right: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.toko_firstScroll .slick-next:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* --- toko_firstScroll END ------------------------------------------------*/
+/* --- toko_action Start ------------------------------------------------*/
+.toko_action {
+  padding: 0;
+}
+
+.toko_action .actionCont {
+  margin: 0;
+}
+
+.toko_action img {
+  max-width: 100%;
+  height: auto;
+}
+
+.toko_action .slick-dots {
+  width: auto;
+  bottom: 10px;
+  z-index: 99;
+}
+
+.toko_action .slick-dots li button:before {
+  font-size: 30px;
+  color: #000080;
+}
+
+/* --- toko_action END ------------------------------------------------*/
+/* --- About Start ------------------------------------------------*/
+.toko_about {
+  padding: 0;
+}
+
+.toko_about .aboutCont {
+  height: 500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+
+.toko_about .aboutCont .btnWrap {
+  position: absolute;
+  bottom: 5px;
+}
+
+.toko_about .aboutCont .btnWrap h4 {
+  background: #000080;
+  padding: 10px;
+  color: #fff;
+}
+
+.toko_about .aboutCont .aboutWrap {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background: #000080;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+.toko_about .aboutCont .aboutWrap ul {
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+}
+
+.toko_about .aboutCont:hover .aboutWrap {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* --- About END ------------------------------------------------*/
+/* --- product Start ------------------------------------------------*/
+/* --- product END ------------------------------------------------*/
+/* --- ProductAll Start ------------------------------------------------*/
+/* --- ProductAll END ------------------------------------------------*/
+/* --- dropshipping Start ------------------------------------------------*/
+/* --- dropshipping END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/
+/* --- advantage Start ------------------------------------------------*/
+/* --- advantage END ------------------------------------------------*/
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+/* --- Button Start ------------------------------------------------*/
+.mainBtn {
+  background: #000080;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  max-width: 100%;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.mainBtn:hover {
+  background: rgba(0, 0, 128, 0.5);
+  color: #fff;
+}
+
+/* --- Button END ------------------------------------------------*/
+/* --- Form START ------------------------------------------------*/
+/* --- Form END ------------------------------------------------*/
+/* --- Other START ------------------------------------------------*/
+/*# sourceMappingURL=main.css.map */
