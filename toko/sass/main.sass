@@ -4,7 +4,7 @@ $main_white: #fff
 $main_rgb: #000080
 $main_bg: #e6e6e6
 $main_bg_light: #f8f8f8
-
+$main_red: #fb313b
 
 body
 	background: $main_white
@@ -197,14 +197,17 @@ section
 			h1,h2,h4
 				color: $main_white
 			h1
+				text-shadow: 1px 1px 10px rgba(0,0,0,.4)
 				font-size: 72px
 			h2
+				padding: 10px
+				text-align: center
+				text-transform: uppercase
+				background: rgba($main_rgb, .8)
 				font-size: 60px
 			h4
 				font-size: 50px
-			h2
-				text-transform: uppercase
-				color: $main_rgb
+				text-shadow: 1px 1px 10px rgba(0,0,0,.4)
 .slick-prev
 	z-index: 99
 	left: 10px
@@ -372,30 +375,150 @@ section
 			transform: rotate(45deg)
 /* --- product END ------------------------------------------------*/	
 
-/* --- ProductAll Start ------------------------------------------------*/
-/* --- ProductAll END ------------------------------------------------*/	
-
-
-/* --- dropshipping Start ------------------------------------------------*/	
-/* --- dropshipping END ------------------------------------------------*/	
-
-
-
-
-/* --- action END ------------------------------------------------*/
-/* --- action END ------------------------------------------------*/	
-
 
 /* --- advantage Start ------------------------------------------------*/	
+.toko_advantage
+	background:  linear-gradient(rgba($main_rgb, .5) 100%, rgba($main_rgb, .5) 100%),url('../img/advImg.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	.headerCont
+		text-align: center
+		margin-bottom: 30px
+		h2
+			text-shadow: 1px 1px 10px rgba(0,0,0,.4)
+			text-transform: uppercase
+			display: inline-block
+			color: $main_white
+	.advCont
+		height: 100%
+		display: flex
+		flex-direction: column
+		.headWrap
+			h4
+				font-weight: bold
+				background: rgba($main_white, .7)
+				padding: 10px
+				text-align: center
+				color: $main_rgb
+			hr
+				background-color: $main_rgb
+				border: 2px solid $main_rgb
+		.descWrap
+			p
+				text-align: center
+				font-size: 20px
+				color: $main_white
 /* --- advantage END ------------------------------------------------*/	
 
 
-/* --- reviews Start ------------------------------------------------*/
-/* --- reviews END ------------------------------------------------*/	
+
+
+/* --- toko_promo Start ------------------------------------------------*/
+.toko_promo
+	padding: 100px 0
+	background: linear-gradient(rgba($main_white, .7) 100%, rgba($main_white, .7) 100%),url('../img/map.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	hr
+		width: 80%
+		background-color: $main_rgb
+		border: 1px solid $main_rgb 
+	.headerCont
+		text-align: center
+		h2
+			text-transform: uppercase
+			font-weight: bold
+			span
+				color: $main_red
+	.telWrap
+		text-align: center
+		a
+			font-size: 30px
+			color: $main_rgb
+			font-weight: bold
+/* --- toko_promo END ------------------------------------------------*/	
+
+
+
+/* --- toko_form Start ------------------------------------------------*/
+.toko_form
+	padding-bottom: 0
+	.headerCont
+		text-align: center
+		margin-bottom: 30px
+		h2
+			padding: 10px 20px
+			background: rgba($main_rgb, .7)
+			margin: 0
+			text-shadow: 1px 1px 10px rgba(0,0,0,.4)
+			text-transform: uppercase
+			display: inline-block
+			color: $main_white
+	.toko_formHelp
+		.inputWrap
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			input
+				width: 300px
+				max-width: 100%
+				margin: 10px
+				padding: 10px
+				text-align: center
+				border: none
+				border-bottom: 2px solid $main_rgb
+				background: rgba($main_rgb, .1)
+			select
+				border: none
+				border-bottom: 2px solid $main_rgb
+				background: rgba($main_rgb, .1)
+				padding: 13px
+				text-align: center
+				width: 300px
+				max-width: 100%
+				margin: 10px
+/* --- toko_form END ------------------------------------------------*/
+
+
+
+/* --- toko_sert Start ------------------------------------------------*/
+.toko_sert
+	background: rgba($main_rgb, .1)
+	img
+		max-width: 100%
+		height: auto
+	.sertCont
+		.sertWrap
+			outline: none
+			padding: 20px
+	.slick-prev
+		&:before
+			border-top: 5px solid $main_rgb
+			border-right: 5px solid $main_rgb
+	.slick-next
+		&:before
+			border-top: 5px solid $main_rgb
+			border-right: 5px solid $main_rgb
+/* --- toko_sert END ------------------------------------------------*/	
 
 
 
 /* --- contacts Start ------------------------------------------------*/
+.toko_contacts
+	.contactCont
+		.contactWrap
+			padding-left: 20px
+			i
+				color: $main_rgb
+				margin-right: 10px
+	iframe
+		width: 100%
+		height: 250px
 /* --- contacts END ------------------------------------------------*/
 
 
