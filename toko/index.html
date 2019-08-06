@@ -16,12 +16,27 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+<div class="fixedBtn" id="fixedBtn">
+	<div class="arrowCont">
+		<a id="fixedArrow"><i class="fas fa-angle-double-left"></i></a>
+	</div>
+	<div class="btnCont" id="fixedBtnCont">
+		<a href="#0" class="mainBtn">Расчитать стоимость</a>
+		<a href="#0" class="mainBtn">Заказать консультацию</a>
+	</div>
+</div>
+
+
 <!-- Navbar start	 -->
 	<nav id="nav" class="navbar fixed-top navbar-expand-xl">
-		<a class="navbar-brand nav-link-new d-none d-sm-inline" href="/">
+		<a class="navbar-brand nav-link-new d-none d-md-inline" href="/">
 			<!-- <img class="img-fluid" src="img/logo.png"> -->
-			<p>Начало</p>
+			<p>Токо Меблі</p>
+			
 		</a>
+		<div class="dectCont">
+				<p>Часы работы: 08.00-20.00</p>
+		</div>
 		<div class="m-auto p-0 text-center d-xl-none">
 			<a class="anim nav-link nav-link-new p-0" href="tel:+380999999999"><span>+38 (099) 999-99-99</span></a>
 		</div>
@@ -167,11 +182,18 @@
 		<h4>ТОП Модели</h4>
 		<hr>
 	</div>
-	<div class="prod_sliderCont">
+	<div class="tabs">
+		<ul class="listTabs">
+			<li class="test"><a href="#tab-1">Все диваны</a></li>
+			<li class="test"><a href="#tab-2">Прямые</a></li>
+			<li class="test"><a href="#tab-3">Угловые</a></li>
+			<li class="test"><a href="#tab-4">Модульные</a></li>
+		</ul>
 
+	<div class="prod_sliderCont" id="tab-1">
 		<div class="prod_SliderWrap">
 			<div class="txtWrap">
-				<h3>Название Дивана</h3>
+				<h3>Название Дивана priam</h3>
 			</div>
 			<div class="imgWrap">
 				<a href="img/prod.png" class="image-popup-no-margins">
@@ -186,7 +208,7 @@
 
 		<div class="prod_SliderWrap">
 				<div class="txtWrap">
-					<h3>Название Дивана</h3>
+					<h3>Название Дивана priam</h3>
 				</div>
 				<div class="imgWrap">
 						<a href="img/prod.png" class="image-popup-no-margins">
@@ -201,7 +223,7 @@
 
 			<div class="prod_SliderWrap">
 					<div class="txtWrap">
-						<h3>Название Дивана</h3>
+						<h3>Название Дивана ugol</h3>
 					</div>
 					<div class="imgWrap">
 							<a href="img/prod.png" class="image-popup-no-margins">
@@ -216,7 +238,7 @@
 
 				<div class="prod_SliderWrap">
 						<div class="txtWrap">
-							<h3>Название Дивана</h3>
+							<h3>Название Дивана ugol</h3>
 						</div>
 						<div class="imgWrap">
 								<a href="img/prod.png" class="image-popup-no-margins">
@@ -231,7 +253,7 @@
 
 					<div class="prod_SliderWrap">
 							<div class="txtWrap">
-								<h3>Название Дивана</h3>
+								<h3>Название Дивана modul</h3>
 							</div>
 							<div class="imgWrap">
 									<a href="img/prod.png" class="image-popup-no-margins">
@@ -244,6 +266,165 @@
 							</div>
 						</div>
 	</div>
+	<div class="prod_sliderCont" id="tab-2">
+		<div class="prod_SliderWrap">
+			<div class="txtWrap">
+				<h3>Название Дивана priam</h3>
+			</div>
+			<div class="imgWrap">
+				<a href="img/prod.png" class="image-popup-no-margins">
+				<img src="img/prod.png" alt="">
+			</a>
+			</div>
+			<div class="btnWrap">
+					<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+					<a href="#0" class="mainBtn">Заказать</a>
+			</div>
+		</div>
+
+		<div class="prod_SliderWrap">
+			<div class="txtWrap">
+				<h3>Название Дивана priam</h3>
+			</div>
+			<div class="imgWrap">
+				<a href="img/prod.png" class="image-popup-no-margins">
+				<img src="img/prod.png" alt="">
+			</a>
+			</div>
+			<div class="btnWrap">
+					<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+					<a href="#0" class="mainBtn">Заказать</a>
+			</div>
+		</div>
+
+		<div class="prod_SliderWrap">
+			<div class="txtWrap">
+				<h3>Название Дивана priam</h3>
+			</div>
+			<div class="imgWrap">
+				<a href="img/prod.png" class="image-popup-no-margins">
+				<img src="img/prod.png" alt="">
+			</a>
+			</div>
+			<div class="btnWrap">
+					<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+					<a href="#0" class="mainBtn">Заказать</a>
+			</div>
+		</div>
+
+		<div class="prod_SliderWrap">
+				<div class="txtWrap">
+					<h3>Название Дивана priam</h3>
+				</div>
+				<div class="imgWrap">
+						<a href="img/prod.png" class="image-popup-no-margins">
+							<img src="img/prod.png" alt="">
+						</a>
+				</div>
+				<div class="btnWrap">
+						<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+						<a href="#0" class="mainBtn">Заказать</a>
+				</div>
+			</div>
+	</div>
+	<div class="prod_sliderCont" id="tab-3">
+		<div class="prod_SliderWrap">
+			<div class="txtWrap">
+				<h3>Название Дивана Угол</h3>
+			</div>
+			<div class="imgWrap">
+				<a href="img/prod.png" class="image-popup-no-margins">
+				<img src="img/prod.png" alt="">
+			</a>
+			</div>
+			<div class="btnWrap">
+					<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+					<a href="#0" class="mainBtn">Заказать</a>
+			</div>
+		</div>
+
+		<div class="prod_SliderWrap">
+			<div class="txtWrap">
+				<h3>Название Дивана Угол</h3>
+			</div>
+			<div class="imgWrap">
+				<a href="img/prod.png" class="image-popup-no-margins">
+				<img src="img/prod.png" alt="">
+			</a>
+			</div>
+			<div class="btnWrap">
+					<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+					<a href="#0" class="mainBtn">Заказать</a>
+			</div>
+		</div>
+
+		<div class="prod_SliderWrap">
+			<div class="txtWrap">
+				<h3>Название Дивана Угол</h3>
+			</div>
+			<div class="imgWrap">
+				<a href="img/prod.png" class="image-popup-no-margins">
+				<img src="img/prod.png" alt="">
+			</a>
+			</div>
+			<div class="btnWrap">
+					<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+					<a href="#0" class="mainBtn">Заказать</a>
+			</div>
+		</div>
+
+		<div class="prod_SliderWrap">
+				<div class="txtWrap">
+					<h3>Название Дивана Угол</h3>
+				</div>
+				<div class="imgWrap">
+						<a href="img/prod.png" class="image-popup-no-margins">
+							<img src="img/prod.png" alt="">
+						</a>
+				</div>
+				<div class="btnWrap">
+						<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+						<a href="#0" class="mainBtn">Заказать</a>
+				</div>
+			</div>
+	</div>
+	<div class="prod_sliderCont" id="tab-4">
+		<div class="prod_SliderWrap">
+			<div class="txtWrap">
+				<h3>Название Дивана модуль</h3>
+			</div>
+			<div class="imgWrap">
+				<a href="img/prod.png" class="image-popup-no-margins">
+				<img src="img/prod.png" alt="">
+			</a>
+			</div>
+			<div class="btnWrap">
+					<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+					<a href="#0" class="mainBtn">Заказать</a>
+			</div>
+		</div>
+
+		<div class="prod_SliderWrap">
+			<div class="txtWrap">
+				<h3>Название Дивана модуль</h3>
+			</div>
+			<div class="imgWrap">
+				<a href="img/prod.png" class="image-popup-no-margins">
+				<img src="img/prod.png" alt="">
+			</a>
+			</div>
+			<div class="btnWrap">
+					<a href="#0" class="mainBtn">Смотреть Видеообзор</a>
+					<a href="#0" class="mainBtn">Заказать</a>
+			</div>
+		</div>
+
+
+
+
+	</div>
+</div>
+
 	<div class="btnCont">
 
 	</div>

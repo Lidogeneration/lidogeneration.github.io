@@ -103,23 +103,23 @@ section
 			transition: 0.3s
 			outline: none
 			border: 1px solid #fff
-.active
-	position: relative
-	overflow: hidden
-	span
-		color: $main_rgb !important
-	&:before
-		transition: 0.5s
-		position: absolute
-		content: ''
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		border-bottom: 2px solid $main_color
-		transform-origin: right
-		transform: scaleX(0)
-		animation: animate 7s linear infinite
+	.active
+		position: relative
+		overflow: hidden
+		span
+			color: $main_rgb !important
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_color
+			transform-origin: right
+			transform: scaleX(0)
+			animation: animate 7s linear infinite
 @keyframes animate 
 	0%
 		transform-origin: right
@@ -193,6 +193,9 @@ section
 		padding: 30px 50px
 		min-height: 100vh
 		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
 		.headCont
 			h1,h2,h4
 				color: $main_white
@@ -301,6 +304,37 @@ section
 
 /* --- product Start ------------------------------------------------*/
 .toko_prod
+	.listTabs
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		list-style: none
+		padding: 0
+		margin: 0
+		margin-bottom: 20px
+		li
+			transition: .3s
+			cursor: pointer
+			border: 2px solid $main_rgb
+			padding: 10px
+			margin: 10px
+			width: 200px
+			max-width: 100%
+			&:hover
+				transition: .3s
+				background: rgba($main_rgb, .1)
+		.active
+			transition: .3s
+			background: $main_rgb
+			a
+				color: $main_white
+			&:hover
+				transition: .3s
+				background: $main_rgb
+				a
+					color: $main_white				
 	.headerCont
 		h3
 			margin-bottom: 20px
@@ -507,7 +541,6 @@ section
 /* --- toko_sert END ------------------------------------------------*/	
 
 
-
 /* --- contacts Start ------------------------------------------------*/
 .toko_contacts
 	.contactCont
@@ -547,4 +580,41 @@ section
 
 
 /* --- Other START ------------------------------------------------*/	
-
+.fixedBtn
+	position: fixed
+	top: 50%
+	right: 0
+	z-index: 999
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: 0.5s
+	transform: translateX(88%)
+	.arrowCont
+		a
+			cursor: pointer
+			i
+				transition: 0.5s
+				border: 1px solid rgba($main_white, .5)
+				padding: 5px
+				background: $main_rgb
+				font-size: 30px
+				color: $main_white
+				transform: rotate(0)
+				&:hover
+					transition: 0.5s
+					background: $main_white
+					color: $main_rgb
+	.btnCont
+		padding: 10px
+		.mainBtn
+			margin-bottom: 10px
+			width: 250px;
+.activFixedBtn
+	transition: 0.5s
+	transform: translateX(0) !important
+	.arrowCont
+		a
+			i
+				transition: 0.5s
+				transform: rotate(180deg) !important

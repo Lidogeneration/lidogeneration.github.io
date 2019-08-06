@@ -151,16 +151,16 @@ section {
   border: 1px solid #fff;
 }
 
-.active {
+.navbar .active {
   position: relative;
   overflow: hidden;
 }
 
-.active span {
+.navbar .active span {
   color: #000080 !important;
 }
 
-.active:before {
+.navbar .active:before {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
@@ -325,6 +325,13 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .toko_firstScroll .sliderWrap .headCont h1, .toko_firstScroll .sliderWrap .headCont h2, .toko_firstScroll .sliderWrap .headCont h4 {
@@ -475,6 +482,65 @@ section {
 /* --- product Start ------------------------------------------------*/
 .toko_prod {
   text-align: center;
+}
+
+.toko_prod .listTabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.toko_prod .listTabs li {
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  border: 2px solid #000080;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  max-width: 100%;
+}
+
+.toko_prod .listTabs li:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: rgba(0, 0, 128, 0.1);
+}
+
+.toko_prod .listTabs .active {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #000080;
+}
+
+.toko_prod .listTabs .active a {
+  color: #fff;
+}
+
+.toko_prod .listTabs .active:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #000080;
+}
+
+.toko_prod .listTabs .active:hover a {
+  color: #fff;
 }
 
 .toko_prod .headerCont h3 {
@@ -798,4 +864,69 @@ section {
 /* --- Form START ------------------------------------------------*/
 /* --- Form END ------------------------------------------------*/
 /* --- Other START ------------------------------------------------*/
+.fixedBtn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(88%);
+          transform: translateX(88%);
+}
+
+.fixedBtn .arrowCont a {
+  cursor: pointer;
+}
+
+.fixedBtn .arrowCont a i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  background: #000080;
+  font-size: 30px;
+  color: #fff;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.fixedBtn .arrowCont a i:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #fff;
+  color: #000080;
+}
+
+.fixedBtn .btnCont {
+  padding: 10px;
+}
+
+.fixedBtn .btnCont .mainBtn {
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.activFixedBtn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+
+.activFixedBtn .arrowCont a i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
+}
 /*# sourceMappingURL=main.css.map */

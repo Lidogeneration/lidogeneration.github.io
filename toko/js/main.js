@@ -267,3 +267,28 @@ $('.sertCont').slick({
         }
     ]
 });
+
+$('.tabs').tabslet({
+	mouseevent: 'click',
+	attribute: 'href',
+	animation: true
+});
+
+$(".test").click(function(e) {
+    $(".slick-slider").slick('refresh');
+});
+
+let fixedBtn = document.getElementById('fixedBtn');
+
+fixedBtn.onclick = () =>{
+    if(fixedBtn.classList.contains('activFixedBtn')){
+        fixedBtn.classList.remove('activFixedBtn');
+    }
+    else{
+        fixedBtn.classList.add('activFixedBtn');
+    }
+    
+};
+
+
+
