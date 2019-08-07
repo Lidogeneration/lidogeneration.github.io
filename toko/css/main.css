@@ -56,6 +56,8 @@ section {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background: rgba(255, 255, 255, 0);
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
 }
 
 .navbar .navbar-brand {
@@ -233,6 +235,8 @@ section {
 }
 
 .fixed-nav {
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
   background: rgba(255, 255, 255, 0.9);
   color: #55595c;
   padding: .4rem .4rem;
@@ -317,6 +321,58 @@ section {
 
 .toko_firstScroll {
   padding: 0;
+}
+
+.toko_firstScroll .helpNav {
+  background: rgba(0, 0, 128, 0.2);
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.toko_firstScroll .helpNav .logoCont, .toko_firstScroll .helpNav .timeCont, .toko_firstScroll .helpNav .adresCont, .toko_firstScroll .helpNav .telCont, .toko_firstScroll .helpNav .telWrap {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.toko_firstScroll .helpNav .logoCont h4, .toko_firstScroll .helpNav .timeCont h4, .toko_firstScroll .helpNav .adresCont h4, .toko_firstScroll .helpNav .telCont h4, .toko_firstScroll .helpNav .telWrap h4 {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.toko_firstScroll .helpNav .telCont .socialWrap i {
+  color: #fff;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.toko_firstScroll .helpNav .telCont .telWrap a {
+  color: #fff;
+  font-weight: bold;
 }
 
 .toko_firstScroll .sliderWrap {
@@ -677,6 +733,20 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 5px;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.toko_advantage .advCont .iconWrap {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.toko_advantage .advCont .iconWrap i {
+  font-size: 50px;
+  color: #fff;
 }
 
 .toko_advantage .advCont .headWrap h4 {
@@ -696,6 +766,12 @@ section {
   text-align: center;
   font-size: 20px;
   color: #fff;
+}
+
+.toko_advantage .advCont:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid #fff;
 }
 
 /* --- advantage END ------------------------------------------------*/
@@ -737,6 +813,14 @@ section {
   font-size: 30px;
   color: #000080;
   font-weight: bold;
+}
+
+.toko_promo .imgWrap img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* --- toko_promo END ------------------------------------------------*/
@@ -794,6 +878,11 @@ section {
   width: 300px;
   max-width: 100%;
   margin: 10px;
+}
+
+.toko_form .toko_formHelp .inputWrap .custom {
+  width: 620px;
+  max-width: 100%;
 }
 
 /* --- toko_form END ------------------------------------------------*/

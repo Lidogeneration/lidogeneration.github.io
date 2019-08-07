@@ -144,7 +144,7 @@ const ready = () =>
         AOS.init({
             disable: true,
         });
-        navBarMy.classList.add('fixed-nav');
+        
     }
     else
     {
@@ -152,7 +152,7 @@ const ready = () =>
             disable: false,
         });
     }
-    navBarInit();
+    
 };
 
 
