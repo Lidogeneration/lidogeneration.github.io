@@ -456,7 +456,91 @@ section
 			text-align: center
 /* --- openForm END ------------------------------------------------*/	
 
-
+/* --- advantageBig Start ------------------------------------------------*/
+.advantageBig
+	padding: 50px 30px
+	min-height: 100vh
+	background: url('../img/panoramaBg.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+.minH
+	min-height: 100vh
+	.advBCont
+		height: 100%
+		display: flex
+		justify-content: space-around
+		align-items: center
+		flex-direction: column
+		.advBWrap
+			background: $main_white
+			padding: 10px
+			position: relative
+			p
+				text-align: center
+				padding: 0
+				margin: 0
+			&:after
+				content: ''
+				position: absolute
+				top: 5px
+				left: -5%
+				width: 110%
+				height: 110%
+				border-bottom: 4px solid $main_rgb
+		.advUpL
+			&:after
+				border-right: 4px solid $main_rgb
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				right: -59%
+				width: 55%
+				height: 100%
+				border-bottom: 4px solid $main_rgb
+				transform: rotate(25deg)
+				transform-origin: left bottom
+		.advDownL
+			&:after
+				border-right: 4px solid $main_rgb
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				right: -59%
+				width: 55%
+				height: 100%
+				border-bottom: 4px solid $main_rgb
+				transform: rotate(-25deg)
+				transform-origin: left bottom
+		.advUpR
+			&:after
+				border-left: 4px solid $main_rgb
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: -59%
+				width: 55%
+				height: 100%
+				border-bottom: 4px solid $main_rgb
+				transform: rotate(-25deg)
+				transform-origin: right bottom
+		.advDownR
+			&:after
+				border-left: 4px solid $main_rgb
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: -59%
+				width: 55%
+				height: 100%
+				border-bottom: 4px solid $main_rgb
+				transform: rotate(25deg)
+				transform-origin: right bottom
+/* --- advantageBig End ------------------------------------------------*/
 
 
 /* --- advantage Start ------------------------------------------------*/

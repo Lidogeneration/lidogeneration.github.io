@@ -724,6 +724,131 @@ section {
 }
 
 /* --- openForm END ------------------------------------------------*/
+/* --- advantageBig Start ------------------------------------------------*/
+.advantageBig {
+  padding: 50px 30px;
+  min-height: 100vh;
+  background: url("../img/panoramaBg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.minH {
+  min-height: 100vh;
+}
+
+.minH .advBCont {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.minH .advBCont .advBWrap {
+  background: #fff;
+  padding: 10px;
+  position: relative;
+}
+
+.minH .advBCont .advBWrap p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.minH .advBCont .advBWrap:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  border-bottom: 4px solid #fb313b;
+}
+
+.minH .advBCont .advUpL:after {
+  border-right: 4px solid #fb313b;
+}
+
+.minH .advBCont .advUpL:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -59%;
+  width: 55%;
+  height: 100%;
+  border-bottom: 4px solid #fb313b;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+
+.minH .advBCont .advDownL:after {
+  border-right: 4px solid #fb313b;
+}
+
+.minH .advBCont .advDownL:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -59%;
+  width: 55%;
+  height: 100%;
+  border-bottom: 4px solid #fb313b;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+
+.minH .advBCont .advUpR:after {
+  border-left: 4px solid #fb313b;
+}
+
+.minH .advBCont .advUpR:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -59%;
+  width: 55%;
+  height: 100%;
+  border-bottom: 4px solid #fb313b;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+
+.minH .advBCont .advDownR:after {
+  border-left: 4px solid #fb313b;
+}
+
+.minH .advBCont .advDownR:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -59%;
+  width: 55%;
+  height: 100%;
+  border-bottom: 4px solid #fb313b;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+
+/* --- advantageBig End ------------------------------------------------*/
 /* --- advantage Start ------------------------------------------------*/
 .advantage {
   background: #e6e6e6;

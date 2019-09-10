@@ -81,8 +81,10 @@
 }
 @media only screen and (max-width : 768px)
 {
- 
-
+  .minH .advBCont .advUpL:before, .advDownL:before, .advUpR:before, .advDownR:before
+  {
+    display: none;
+  }
 
 }
 @media only screen and (max-width : 576px)
