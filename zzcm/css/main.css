@@ -412,6 +412,10 @@ section {
   color: #fff;
 }
 
+.firstScroll .triggerCont .triggerWrap p a {
+  color: #fff;
+}
+
 .firstScroll .triggerCont .triggerWrap:nth-child(1) {
   border-left: 2px solid #fb313b;
 }
@@ -426,7 +430,7 @@ section {
   background: #fff;
 }
 
-.firstScroll .triggerCont .triggerWrap:hover p {
+.firstScroll .triggerCont .triggerWrap:hover p a {
   color: #111;
 }
 
