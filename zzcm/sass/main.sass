@@ -51,7 +51,7 @@ section
 		justify-content: center
 		align-items: center
 	img
-		width: 40px
+		width: 130px
 		margin: 0
 		padding: 0
 	.anim
@@ -111,7 +111,11 @@ section
 			&:nth-child(2)
 				i
 					color: $ins_color
-					margin-right: 0					
+					margin-right: 10px				
+			&:nth-child(3)
+				i
+					color: $main_rgb
+					margin-right: 0			
 			
 .active
 	position: relative
@@ -298,6 +302,13 @@ section
 			display: flex
 			justify-content: center
 			align-items: center
+			img
+				width: 300px
+				display: block
+				margin-left: auto
+				margin-right: auto
+				max-width: 100%
+				height: auto
 			h3
 				text-transform: uppercase
 		.txtWRap
@@ -386,16 +397,17 @@ section
 			margin-bottom: 20px
 			flex-wrap: wrap
 			input
+				margin: 1px
 				text-align: center
 				font-weight: bold
 				padding: 10px
-				width: 250px
+				width: 220px
 				max-width: 100%
 				border: none
 				border-bottom: 2px solid $main_rgb
 				&:nth-child(1)
 					border-left: 2px solid $main_rgb
-				&:nth-child(3)
+				&:nth-child(4)
 					border-right: 2px solid $main_rgb
 		.navBtn
 			border: none
@@ -409,10 +421,13 @@ section
 .product
 	background: $main_bg_light
 	img
+		transition: .3s
 		max-width: 100%
 		height: auto
 	.imgWrap
 		position: relative
+		img
+			border: 2px solid $main_rgb
 		.bgCont
 			position: absolute
 			width: 100%
@@ -421,19 +436,34 @@ section
 			top: 10px
 			border: 2px solid $main_rgb
 			transition: .3s
-			&:hover
+		&:hover
+			img
 				transition: .3s
-				left: 2px
-				top: 2px
+				box-shadow: 0 0 10px rgba($main_color, .4)
 	.descriptionCont
+		padding: 10px
 		h3
 			text-transform: uppercase
 			text-align: center
 		p
 			text-indent: 20px
 			font-size: 14px
-		ul
-			font-size: 14px
+		.listCont
+			.listWrap
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				margin-bottom: 10px
+				.imgListWrap
+					margin-right: 10px
+					img
+						width: 50px
+				.txtWrap
+					p
+						padding: 10px
+						text-indent: 0
+						padding: 0
+						margin: 0
 /* --- product END ------------------------------------------------*/	
 
 
@@ -547,9 +577,13 @@ section
 .advantage
 	background: $main_bg
 	.advCon
+		height: 100%
+		background: rgba($main_color, .9)
 		position: relative
 		margin: 10px
 		transition: .5s
+		display: flex
+		flex-direction: column
 		&:after
 			transition: .5s
 			position: absolute
@@ -598,9 +632,10 @@ section
 				max-width: 100%
 				height: auto
 		.txtWrap
-			background: rgba($main_color, .9)
 			padding: 10px
 			p
+				text-align: center
+				margin: 0
 				color: $main_white
 /* --- advantage END ------------------------------------------------*/	
 
@@ -844,6 +879,12 @@ section
 	position: relative
 	box-shadow: 0px 0px 10px rgba($main_color, .5)
 	padding: 20px 10px
+	.logoWrap
+		img
+			max-width: 100%
+			height: auto
+			margin-left: auto
+			margin-right: auto
 	hr
 		background-color: $main_rgb
 		width: 60%

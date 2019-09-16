@@ -195,7 +195,7 @@ $('.sertCont').slick({
     slidesToShow: 4,
     slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     speed: 1000,
     dots: false,
     arrows: true,
