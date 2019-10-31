@@ -250,7 +250,7 @@ section {
 }
 
 .fixed-nav {
-  background: white;
+  background: #fff;
   color: #55595c;
   padding: 0;
   -webkit-transition: 0.5s;
@@ -413,6 +413,11 @@ section {
 
 /* --- ProductAll END ------------------------------------------------*/
 /* --- haveMade Start ------------------------------------------------*/
+.haveMade .haveCont {
+  text-align: left;
+  display: inline-block;
+}
+
 .haveMade .haveCont .imgWrap {
   margin-bottom: 10px;
 }
@@ -867,13 +872,20 @@ section {
   z-index: 999;
 }
 
+.callButton a {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
 .callButton a span {
   background: #ffc400;
   border-radius: 50%;
   display: block;
   border: #ffc400;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

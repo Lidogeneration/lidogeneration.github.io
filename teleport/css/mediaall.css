@@ -27,7 +27,10 @@
 }
 @media only screen and (max-width : 1200px)
 {
-
+  .fixed-nav
+  {
+    background: #ffc400;
+  }
 }
 @media only screen and (max-width : 1140px) 
 {
