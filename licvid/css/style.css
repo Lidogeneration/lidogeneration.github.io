@@ -1005,11 +1005,19 @@ header {
     padding-top: 20px;
     padding-bottom: 40px;
 }
+.mb-5
+{
+    margin-bottom: 30px;
+}
 .price-wrap
 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
     border: 2px solid #6195FF;
     padding: 5px;
-    margin-bottom: 10px;
 
 }
 
