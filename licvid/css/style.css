@@ -45,6 +45,7 @@ Table OF Contents
 /* -- typography -- */
 
 body {
+    width: 100vw !important;
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
     line-height: 1.6;
@@ -270,6 +271,20 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .navbar-brand {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-brand .nav-tel
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-brand .nav-tel a
+{
+    color: #fff;
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
@@ -288,8 +303,18 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 #nav.fixed-nav .navbar-brand .logo-alt {
     display: none;
 }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 415px) 
+{
+    .navbar-brand .logo-cont
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .navbar-brand .nav-tel a
+    {
+        color:#10161A;
+    }
     #nav.nav-transparent .navbar-brand .logo-alt {
         display: none !important;
     }
@@ -325,6 +350,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     background-color: #FFF !important;
     border-bottom: 1px solid #EEE;
 }
+#nav.fixed-nav .nav-tel a{
+    color:#10161A;
+}
 
 #nav.nav-transparent {
     background: transparent;
@@ -332,8 +360,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 
 /* -- default nav -- */
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .main-nav li {
         padding: 0px 15px;
     }
@@ -433,7 +460,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* -- mobile nav -- */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
     #nav {
         padding: 0px 0px;
     }
@@ -872,9 +899,8 @@ header {
 }
 .service:hover h4 {
     color: #fff;
-     */
-}
-
+    
+} */
 /*------------------------------------*\
 	Why choose us
 \*------------------------------------*/
@@ -1543,7 +1569,11 @@ header {
     color: #6195FF;
     margin-bottom: 20px;
 }
-
+.contact a
+{
+    color: rgb(134, 143, 155);
+    display: block;
+}
 .contact-form {
     text-align: center;
     margin-top: 40px;
