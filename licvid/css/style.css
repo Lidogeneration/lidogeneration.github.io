@@ -51,8 +51,13 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     color: #868F9B;
-}
 
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -86,22 +91,32 @@ a {
     text-decoration: none;
 
 }
-
+div
+{
+    overflow: hidden;
+}
 a:hover, a:focus {
     text-decoration: none;
 
 }
-
+footer
+{
+    overflow: hidden;
+}
+header
+{
+    overflow: hidden;
+}
 .main-color {
     color: #6195FF;
 }
 
 .row-eq-height {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-bottom: 10px; }
 
 .white-text {
@@ -270,17 +285,31 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 \*------------------------------------*/
 
 .navbar-brand {
-    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .navbar-brand .nav-tel
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .navbar-brand .nav-tel a
 {
@@ -288,7 +317,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
-    max-height: 50px;
+    max-height: 45px;
     display: block;
 }
 
@@ -403,10 +432,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         margin-left: 6px;
         float: right;
         -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
         transform: rotate(90deg);
         -webkit-transition: 0.2s transform;
+        -webkit-transition: 0.2s -webkit-transform;
+        transition: 0.2s -webkit-transform;
         transition: 0.2s transform;
+        transition: 0.2s transform, 0.2s -webkit-transform;
     }
     .dropdown {
         position: absolute;
@@ -417,7 +448,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         -webkit-box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
         box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
         -webkit-transform: translateY(15px) translateX(50%);
-        -ms-transform: translateY(15px) translateX(50%);
         transform: translateY(15px) translateX(50%);
         opacity: 0;
         visibility: hidden;
@@ -444,12 +474,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         opacity: 1;
         visibility: visible;
         -webkit-transform: translateY(0px) translateX(50%);
-        -ms-transform: translateY(0px) translateX(50%);
         transform: translateY(0px) translateX(50%);
     }
     .has-dropdown:hover>a:before {
         -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     .nav-collapse {
@@ -476,7 +504,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         max-width: 250px;
         width: 0%;
         -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
         transform: translateX(100%);
         margin: 0;
         overflow-y: auto;
@@ -486,7 +513,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     #nav.open .main-nav {
         -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
         transform: translateX(0%);
         width: 100%;
     }
@@ -527,7 +553,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     .has-dropdown.open-drop>a:after {
         -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
         transform: rotate(90deg);
     }
     .has-dropdown.open-drop>.dropdown {
@@ -556,7 +581,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .nav-collapse span {
     display: block;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position: absolute;
     top: 50%;
@@ -578,13 +602,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .nav-collapse span:before {
     -webkit-transform: translate(0%, 10px);
-    -ms-transform: translate(0%, 10px);
     transform: translate(0%, 10px);
 }
 
 .nav-collapse span:after {
     -webkit-transform: translate(0%, -14px);
-    -ms-transform: translate(0%, -14px);
     transform: translate(0%, -14px);
 }
 
@@ -594,13 +616,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 #nav.open .nav-collapse span:before {
     -webkit-transform: translateY(0px) rotate(-135deg);
-    -ms-transform: translateY(0px) rotate(-135deg);
     transform: translateY(0px) rotate(-135deg);
 }
 
 #nav.open .nav-collapse span:after {
     -webkit-transform: translateY(-4px) rotate(135deg);
-    -ms-transform: translateY(-4px) rotate(135deg);
     transform: translateY(-4px) rotate(135deg);
 }
 
@@ -623,7 +643,6 @@ header {
     right: 0px;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
 }
@@ -633,6 +652,12 @@ header {
 }
 .home-content h1 {
   text-transform: uppercase;
+}
+.home-content
+{
+    padding: 20px 0;
+    height: 100%;
+    max-width: 100%;
 }
 .home-content button {
   margin-top: 20px;
@@ -752,13 +777,11 @@ header {
     top: 50%;
     text-align: center;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 .work .work-content h3 {
     -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
     color: #FFF;
@@ -771,7 +794,6 @@ header {
 
 .work:hover .work-content h3 {
     -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
     transform: translateY(0%);
     opacity: 1;
     -webkit-transition-delay: 0.1s;
@@ -782,7 +804,6 @@ header {
     display: block;
     text-transform: uppercase;
     -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
     color: #6195FF;
@@ -795,7 +816,6 @@ header {
 
 .work:hover .work-content span {
     -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
     transform: translateY(0%);
     opacity: 1;
     -webkit-transition-delay: 0s;
@@ -832,14 +852,20 @@ header {
     padding: 30px 0;
 }
 .how .img-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
   
 }
 .how img {
    max-width: 100%;
-   align-self: center;
+   -ms-flex-item-align: center;
+       align-self: center;
    width: 255px;
 }
 /*------------------------------------*\
@@ -850,7 +876,7 @@ header {
 }
 .service {
     position: relative;
-    padding: 40px 20px 0px 70px;
+    padding: 55px 10px 10px 10px;
     margin: 15px 0px;
     border: 1px solid #EEE;
     height: 100%;
@@ -858,8 +884,11 @@ header {
 }
 
 .service i {
+    top: 10px;
     position: absolute;
-    left: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     text-align: center;
     font-size: 32px;
     color: #6195FF;
@@ -1002,7 +1031,6 @@ header {
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
   position: absolute;
@@ -1038,9 +1066,15 @@ header {
 .price-wrap
 {
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 100%;
     border: 2px solid #6195FF;
     padding: 5px;
@@ -1655,9 +1689,14 @@ header {
   		padding: 8px 22px;
   		font-size:14px;
 	}
-
+    .home-content
+    {
+        height: 100%;
+        max-width: 100%;
+    }
   .home-content h1 {
-		font-size:36px;
+      max-width: 100%;
+		font-size:34px;
 	}
 
   .header-wrapper h2 {
@@ -1757,7 +1796,6 @@ header {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     background: #6195FF;
     color: #FFF;
@@ -1834,7 +1872,6 @@ header {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
 .preloader span {
@@ -1845,7 +1882,6 @@ header {
     -webkit-animation: 1s preload ease-in-out infinite;
             animation: preload 1s ease-in-out infinite;
     -webkit-transform: scale(0);
-        -ms-transform: scale(0);
             transform: scale(0);
     border-radius:50%;
 }
@@ -1908,6 +1944,7 @@ header {
     color: #fff;
     padding: 10px;
     text-transform: uppercase;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     border: 1px solid #6195FF;
     padding: 10px;
@@ -1917,6 +1954,7 @@ header {
 {
     background: #fff;
     color: #6195FF;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     border: 1px solid #6195FF;
 }
@@ -1929,6 +1967,7 @@ header {
     color: #fff;
     padding: 10px;
     text-transform: uppercase;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     border: 1px solid #6195FF;
     width: 280px;
@@ -1938,6 +1977,7 @@ header {
 {
     background: #fff;
     color: #6195FF;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     border: 1px solid #6195FF;
 }
@@ -1950,10 +1990,12 @@ header {
     width: 280px;
     margin: auto;
     text-transform: uppercase;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     border: 1px solid #fff;
 }
 .button-header:hover{
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     background: #6195FF;
     color: #fff;
