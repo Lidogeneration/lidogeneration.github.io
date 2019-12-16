@@ -111,18 +111,19 @@ window.onresize = function()
 
 function ready()
 {
+    AOS.init();
     if(window.innerWidth <= 1200)
     {
-        AOS.init({
-            disable: true,
-        });
+        // AOS.init({
+        //     disable: true,
+        // });
         navBarMy.classList.add('fixed-nav');
     }
     else
     {
-        AOS.init({
-            disable: false,
-        });
+        // AOS.init({
+        //     disable: false,
+        // });
     }
     navBarInit();
 };
