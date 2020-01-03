@@ -89,15 +89,13 @@ const customTextFormSpan = document.getElementById('customTextForm');
       customTextFormSpan.textContent = customTextFormSpanF;
     };
 
-
-
-
-
+const videoCont = document.getElementById('videoCond');
 const navBarMy = document.getElementById('nav');   
+const videoSrc = document.getElementById('videoSrc');   
 
 window.onload = function()
 {
-
+ 
 };
 
 window.onscroll = function () {
@@ -106,23 +104,27 @@ window.onscroll = function () {
 
 window.onresize = function()
 {    
+    videoCenter();
     navBarInit();
 }
 
 function ready()
 {
+    
+    videoCenter();
+    AOS.init();
     if(window.innerWidth <= 1200)
     {
-        AOS.init({
-            disable: true,
-        });
-        navBarMy.classList.add('fixed-nav');
+        // AOS.init({
+        //     disable: true,
+        // });
+        //navBarMy.classList.add('fixed-nav');
     }
     else
     {
-        AOS.init({
-            disable: false,
-        });
+        // AOS.init({
+        //     disable: false,
+        // });
     }
     navBarInit();
 };
@@ -132,17 +134,29 @@ document.addEventListener("DOMContentLoaded", ready);
 
 
 function navBarInit(){
+    if(navBarMy){
+        if(document.documentElement.scrollTop > 0 || window.innerWidth <= 1200)
+        {
+            navBarMy.classList.add('fixed-nav');
+        }
+        else
+        {
+            navBarMy.classList.remove('fixed-nav');
+        }
+    }
 
-    if(document.documentElement.scrollTop > 0 || window.innerWidth <= 1200)
-    {
-        navBarMy.classList.add('fixed-nav');
-    }
-    else
-    {
-        navBarMy.classList.remove('fixed-nav');
-    }
 };
 
 particlesJS.load('particles-js', 'js/particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
+
+
+function videoCenter(){
+    console.log(videoSrc.offsetWidth);
+    videoCont.style.left ='-'+ ((videoSrc.offsetWidth-window.innerWidth)/2) + 'px';
+    if(window.innerWidth <= 992){
+       // videoCont.style.left ='-'+ ((1920-window.innerWidth)/4) + 'px';
+    }
+    
+}

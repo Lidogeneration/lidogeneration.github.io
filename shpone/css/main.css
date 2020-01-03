@@ -299,10 +299,10 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/mainBg.png");
+  background: url("../img/mainBg2.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 .firstScroll__title {
@@ -343,6 +343,28 @@ section {
 
 /* --- Header END ------------------------------------------------*/
 /* --- About Start ------------------------------------------------*/
+.firstVideo {
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background: #000;
+}
+
+.firstVideo .videoCont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.firstVideo .videoCont video {
+  display: block;
+  margin: auto;
+  height: 100vh;
+}
+
 /* --- About END ------------------------------------------------*/
 /* --- product Start ------------------------------------------------*/
 /* --- product END ------------------------------------------------*/
