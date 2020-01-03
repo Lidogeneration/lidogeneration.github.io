@@ -91,7 +91,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #1B99C1;
+  border-bottom: 2px solid #fac710;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transform: scaleX(0);
@@ -99,7 +99,7 @@ section {
 }
 
 .navbar .anim:hover span {
-  color: #1B99C1;
+  color: #fac710;
 }
 
 .navbar .anim:hover:before {
@@ -146,7 +146,7 @@ section {
 }
 
 .active span {
-  color: #1B99C1 !important;
+  color: #fac710 !important;
 }
 
 .active:before {
@@ -357,12 +357,39 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 .firstVideo .videoCont video {
   display: block;
   margin: auto;
   height: 100vh;
+}
+
+.firstVideo__title {
+  padding: 10px;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.firstVideo__title h1 {
+  text-align: center;
+  padding: 0;
+  color: #fac710;
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
 }
 
 /* --- About END ------------------------------------------------*/
@@ -387,7 +414,7 @@ section {
 /* --- Other START ------------------------------------------------*/
 .slick-dots li button:before {
   font-size: 15px;
-  color: #1B99C1 !important;
+  color: #fac710 !important;
 }
 
 .slick-prev {
@@ -404,8 +431,8 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  border-top: 5px solid #1B99C1;
-  border-right: 5px solid #1B99C1;
+  border-top: 5px solid #fac710;
+  border-right: 5px solid #fac710;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
@@ -423,8 +450,8 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  border-top: 5px solid #1B99C1;
-  border-right: 5px solid #1B99C1;
+  border-top: 5px solid #fac710;
+  border-right: 5px solid #fac710;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -454,10 +481,10 @@ section {
 }
 
 .callButton a span {
-  background: #1B99C1;
+  background: #fac710;
   border-radius: 50%;
   display: block;
-  border: #1B99C1;
+  border: #fac710;
   width: 60px;
   height: 60px;
   display: -webkit-box;
@@ -473,14 +500,14 @@ section {
 }
 
 .callButton a span:after {
-  background: #1B99C1;
+  background: #fac710;
   content: '';
   position: absolute;
   top: 0px;
   left: 0px;
   bottom: 0px;
   right: 0px;
-  border: 2px solid #1B99C1;
+  border: 2px solid #fac710;
   border-radius: 50%;
   -webkit-animation-name: borderAfter;
           animation-name: borderAfter;
@@ -494,14 +521,14 @@ section {
 }
 
 .callButton a span:before {
-  background: #1B99C1;
+  background: #fac710;
   content: '';
   position: absolute;
   top: 0px;
   left: 0px;
   bottom: 0px;
   right: 0px;
-  border: 2px solid #1B99C1;
+  border: 2px solid #fac710;
   border-radius: 50%;
   -webkit-animation-name: borderAfter;
           animation-name: borderAfter;
@@ -583,8 +610,8 @@ section {
 
 @-webkit-keyframes borderAfter {
   20%, 100% {
-    background: #1B99C1;
-    border: 2px solid #1B99C1;
+    background: #fac710;
+    border: 2px solid #fac710;
     top: -20px;
     left: -20px;
     bottom: -20px;
@@ -595,8 +622,8 @@ section {
 
 @keyframes borderAfter {
   20%, 100% {
-    background: #1B99C1;
-    border: 2px solid #1B99C1;
+    background: #fac710;
+    border: 2px solid #fac710;
     top: -20px;
     left: -20px;
     bottom: -20px;

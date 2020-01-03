@@ -91,11 +91,11 @@ const customTextFormSpan = document.getElementById('customTextForm');
 
 const videoCont = document.getElementById('videoCond');
 const navBarMy = document.getElementById('nav');   
-const videoSrc = document.getElementById('videoSrc');   
+  
 
 window.onload = function()
 {
- 
+    videoCenter();
 };
 
 window.onscroll = function () {
@@ -110,8 +110,7 @@ window.onresize = function()
 
 function ready()
 {
-    
-    videoCenter();
+    setTimeout(headerShow,6000);
     AOS.init();
     if(window.innerWidth <= 1200)
     {
@@ -151,12 +150,15 @@ particlesJS.load('particles-js', 'js/particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
 
+const videoSrc = document.getElementById('videoSrc'); 
 
 function videoCenter(){
     console.log(videoSrc.offsetWidth);
     videoCont.style.left ='-'+ ((videoSrc.offsetWidth-window.innerWidth)/2) + 'px';
-    if(window.innerWidth <= 992){
-       // videoCont.style.left ='-'+ ((1920-window.innerWidth)/4) + 'px';
-    }
+
     
+}
+const headerF = document.getElementById('mainHeader');
+function headerShow(){
+    headerF.style.opacity = 1;
 }

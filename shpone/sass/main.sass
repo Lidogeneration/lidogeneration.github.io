@@ -1,7 +1,7 @@
 $main_color: #010036
 $main_color_light: #55595c
 $main_white: #fff
-$main_rgb: #1B99C1
+$main_rgb: rgb(250, 199, 16)
 $main_bg: #e6e6e6
 $main_bg_light: #f8f8f8
 $main_red: red;
@@ -231,10 +231,26 @@ section
 		left: 0
 		width: 100%
 		height: 100%
+		z-index: -1
 		video
 			display: block
 			margin: auto
 			height: 100vh
+	&__title
+		padding: 10px
+		min-height: 100vh
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		h1
+			text-align: center
+			padding: 0
+			color: $main_rgb
+			margin: 0
+			text-transform: uppercase
+			transition: 1s
+			opacity: 0
 /* --- About END ------------------------------------------------*/	
 
 
