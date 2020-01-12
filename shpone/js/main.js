@@ -159,6 +159,78 @@ function videoCenter(){
     
 }
 const headerF = document.getElementById('mainHeader');
+const headerM = document.getElementById('mobileHeader');
 function headerShow(){
     headerF.style.opacity = 1;
+    headerM.style.opacity = 1;
 }
+
+
+$('.where__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    dots: false,
+    arrows: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+            }
+        }
+    ]
+});
+
+$('.certificate__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    dots: false,
+    arrows: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+            }
+        }
+    ]
+});
+
+$('.insta__slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    dots: false,
+    arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+            }
+        }
+    ]
+});
