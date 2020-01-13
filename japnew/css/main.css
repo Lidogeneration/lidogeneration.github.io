@@ -187,8 +187,8 @@
 .banner {
   position: relative;
   min-height: calc( 100vh - 67px );
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../public/images/banner.jpg") center no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../public/images/banner.jpg") center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/banner.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("../images/banner.jpg") center no-repeat;
   background-size: cover;
   padding-top: 67px; }
   .banner .banner-inner {
@@ -1529,23 +1529,23 @@
 
 @font-face {
   font-family: 'Lato';
-  src: local("Lato Light"), local("Lato-Light"), url("../../public/fonts/latolight.woff2") format("woff2"), url("../../public/fonts/latolight.woff") format("woff"), url("../../public/fonts/latolight.ttf") format("truetype");
+  src: local("Lato Light"), local("Lato-Light"), url("../fonts/latolight.woff2") format("woff2"), url("../fonts/latolight.woff") format("woff"), url("../fonts/latolight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: 'Lato';
-  src: local("Lato Medium"), local("Lato-Medium"), url("../../public/fonts/latomedium.woff2") format("woff2"), url("../../public/fonts/latomedium.woff") format("woff"), url("../../public/fonts/latomedium.ttf") format("truetype");
+  src: local("Lato Medium"), local("Lato-Medium"), url("../fonts/latomedium.woff2") format("woff2"), url("../fonts/latomedium.woff") format("woff"), url("../fonts/latomedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: 'Lato';
-  src: local("Lato Semibold"), local("Lato-Semibold"), url("../../public/fonts/latosemibold.woff2") format("woff2"), url("../../public/fonts/latosemibold.woff") format("woff"), url("../../public/fonts/latosemibold.ttf") format("truetype");
+  src: local("Lato Semibold"), local("Lato-Semibold"), url("../fonts/latosemibold.woff2") format("woff2"), url("../fonts/latosemibold.woff") format("woff"), url("../fonts/latosemibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: 'icomoon';
-  src: url("../../public/fonts/icomoon.eot?31g4lx");
-  src: url("../../public/fonts/icomoon.eot?31g4lx#iefix") format("embedded-opentype"), url("../../public/fonts/icomoon.ttf?31g4lx") format("truetype"), url("../../public/fonts/icomoon.woff?31g4lx") format("woff"), url("../../public/fonts/icomoon.svg?31g4lx#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?31g4lx");
+  src: url("../fonts/icomoon.eot?31g4lx#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?31g4lx") format("truetype"), url("../fonts/icomoon.woff?31g4lx") format("woff"), url("../fonts/icomoon.svg?31g4lx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
