@@ -552,7 +552,13 @@ h1, h2, h3, h4 {
 /* --- advntage END ------------------------------------------------*/
 /* --- where Start ------------------------------------------------*/
 .where {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+.where__txt h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .where__slider {
