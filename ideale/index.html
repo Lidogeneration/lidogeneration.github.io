@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+	<meta name="description" CONTENT="<?php bloginfo('description');?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<?php bloginfo('name'); ?><?php wp_title(); ?>" />
+  <meta property="og:description" content="<?php bloginfo('description');?>" />
+  <meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.png">
+  <meta property="og:url" content="ideale" />
+  <meta property="og:site_name" content="ideale" />
+	<link rel="shortcut icon" href="<?php bloginfo(template_url);?>/img/logo.png" />
+
+	
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- menuBtn start -->
+<div class="menuBtn menuBtnHide" id="menuBtn">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+<!-- menuBtn end -->
+
+<!-- navMobile start -->
+<nav class="navMobile navMobileHide" id="navMobile">
+	<div class="navMobile__title">
+		<h4><span>М</span>еню</h4>
+	</div>
+	<!-- /.navMobile__title -->
+	<div class="navMobile__list mb-auto">
+		<ul>
+			<li><a href="#como-link" class="nav-link-new">О нас</a></li>
+			<li><a href="#los-link" class="nav-link-new">Услуги</a></li>
+			<li><a href="#des-link" class="nav-link-new">Врачи</a></li>
+			<li><a href="#fre-link" class="nav-link-new">Отзывы</a></li>
+			<li><a href="#cont-link" class="nav-link-new">Контакты</a></li>
+		</ul>
+	</div>
+	<hr>
+	<!-- /.navMobile__list -->
+	<div class="navMobile__contacts">
+		<a href="tel:+380501500501"><i class="fas fa-map-marked-alt mr-2"></i>Г.Киев Дмитриевская 69</a>
+		<a href="tel:+380501500501" class="mb-3"><i class="fas fa-phone mr-2"></i>+38 (050) 150 05 01</a>
+	</div>
+	<!-- /.navMobile__contacts -->
+	<div class="navMobile__social">
+		<a href="#" target="_blank" class="mr-4"><i class="fab fa-facebook-square"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+	</div>
+	<!-- /.navMobile__social -->
+</nav>
+<!-- navMobile end -->
+
+<!-- firstScroll start -->
+<section class="firstScroll">
+	<nav class="firstScroll__navBar">
+		<div class="firstScroll__navBar-logo">
+			<a href="/">
+				<img src="img/Logo.png" alt="Ideale">
+			</a>
+		</div>
+		<!-- /.firstScroll__navBar-logo -->
+		<div class="firstScroll__navBar-list">
+			<ul>
+				<li><a href="#" class="nav-link-new">О нас</a></li>
+				<li><a href="#" class="nav-link-new">Услуги</a></li>
+				<li><a href="#" class="nav-link-new">Врачи</a></li>
+				<li><a href="#" class="nav-link-new">Отзывы</a></li>
+				<li><a href="#" class="nav-link-new">Контакты</a></li>
+			</ul>
+		</div>
+		<!-- /.firstScroll__navBar-list -->
+		<div class="firstScroll__navBar-phone">
+			<a href="tel:+380501500501" class="firstScroll__navBar-phone-num">+38 (050) 150 05 01</a>
+			<a href="tel:+380501500501" class="firstScroll__navBar-phone-adr">Г.Киев Дмитриевская 69</a>
+			<a href="#mpopup-form" class="mpopup firstScroll__navBar-phone-btn" onclick="setNameScroll('Получить консультацию - шапка','Мы перезвоним');">Получить консультацию</a>
+		</div>
+		<!-- /.firstScroll__navBar-phone -->
+	</nav>
+	<!-- /.firstScroll__navBar -->
+	<div class="firstScroll__title">
+		<h1>Бесболезненное лечение зубов и десен</h1>
+		<h2>Иплантация с гарантией до 3 лет</h2>
+	</div>
+	<!-- /.firstScroll__title -->
+	<div class="firstScroll__form">
+		<form class="order-main firstScroll__form-cont">
+			<div class="firstScroll__form-cont-title">
+				<h3>Записаться на <span>бесплатную</span> диагностику</h3>
+			</div>
+			<!-- /.firstScroll__form-cont-title -->
+			<div class="firstScroll__form-cont-input">
+				<input type="text" name="name" placeholder="Имя*" required>
+				<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон*" required>
+				<button class="disbutt mainBtn" disabled><span>Отправить</span></button>				
+			</div>
+			<!-- /.firstScroll__form-cont-input -->
+		</form>
+	</div>
+	<!-- /.firstScroll__form -->
+</section>
+<!-- firstScroll end -->
+
+
+<!-- about start -->
+<section class="about">
+	<div class="mainTitle">
+		<h2>IDEALE</h2>
+		<h3>Клиника “Ideale” - это</h3>
+	</div>
+	<!-- /.mainTitle -->
+	<div class="about__leftSq"></div>
+	<!-- /.about__leftSq -->
+	<div class="about__rightSq"></div>
+	<!-- /.about__rightSq -->
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-lg-5 mb-4">
+				<div class="about__wrap">
+					<div class="about__wrap-img">
+						<img src="img/about01.png" alt="Ideake">
+					</div>
+					<!-- /.about__wrap-img -->
+					<div class="about__wrap-txt">
+						<h4>11 лет</h4>
+						<p>За 11 лет мы успешной практики нашей компании благодарны более 4000 постоянных клиентов</p>
+					</div>
+					<!-- /.about__wrap-txt -->
+				</div>
+				<!-- /.about__wrap -->
+			</div>
+			<!-- /.col-lg-5 -->
+			<div class="col-lg-5 mb-4">
+				<div class="about__wrap">
+					<div class="about__wrap-img">
+						<img src="img/about02.png" alt="Ideake">
+					</div>
+					<!-- /.about__wrap-img -->
+					<div class="about__wrap-txt">
+						<h4>Уникальное европейское оборудование</h4>
+						<p>Используем только сертифицированое оборудование высшего класса, для имплантации и лечения зубов и десен</p>
+					</div>
+					<!-- /.about__wrap-txt -->
+				</div>
+				<!-- /.about__wrap -->
+			</div>
+			<!-- /.col-lg-5 -->
+			<div class="col-lg-5 mb-4">
+				<div class="about__wrap">
+					<div class="about__wrap-img">
+						<img src="img/about03.png" alt="Ideake">
+					</div>
+					<!-- /.about__wrap-img -->
+					<div class="about__wrap-txt">
+						<h4>Полный комплекс услуг</h4>
+						<p>Вам не нужно ходить по разным клиникам, Мы предлагаем полный комплекс мероприятий по восстановлению и лечению полости рта</p>
+					</div>
+					<!-- /.about__wrap-txt -->
+				</div>
+				<!-- /.about__wrap -->
+			</div>
+			<!-- /.col-lg-5 -->
+			<div class="col-lg-5 mb-4">
+				<div class="about__wrap">
+					<div class="about__wrap-img">
+						<img src="img/about04.png" alt="Ideake">
+					</div>
+					<!-- /.about__wrap-img -->
+					<div class="about__wrap-txt">
+						<h4>Гарантии до 3 лет</h4>
+						<p>Предоставляем гарантии на имплантацию и лечению зубов. Проводим бесплатное восстановление в случае форс-мажора</p>
+					</div>
+					<!-- /.about__wrap-txt -->
+				</div>
+				<!-- /.about__wrap -->
+			</div>
+			<!-- /.col-lg-5 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+</section>
+<!-- about end -->
+
+<!-- implant  start -->
+<section class="implant">
+	<div class="mainTitle">
+		<h2>Европейские</h2>
+		<h3>Имплантанты зубов от европейских производителей</h3>
+	</div>
+	<!-- /.mainTitle -->	
+	<div class="implant__slider">
+		<div class="implant__slider-cont">
+			<div class="implant__slider-cont-img">
+				<img src="img/im01.png" alt="Имплантанты зубов">
+			</div>
+			<!-- /.implant__slider-cont-img -->
+			<div class="implant__slider-cont-title">
+				<h4>Bicon</h4>
+			</div>
+			<!-- /.implant__slider-cont-title -->
+		</div>
+		<!-- /.implant__slider-cont -->
+		<div class="implant__slider-cont">
+			<div class="implant__slider-cont-img">
+				<img src="img/im02.png" alt="Имплантанты зубов">
+			</div>
+			<!-- /.implant__slider-cont-img -->
+			<div class="implant__slider-cont-title">
+				<h4>Ankylos</h4>
+			</div>
+			<!-- /.implant__slider-cont-title -->
+		</div>
+		<!-- /.implant__slider-cont -->
+		<div class="implant__slider-cont">
+			<div class="implant__slider-cont-img">
+				<img src="img/im03.png" alt="Имплантанты зубов">
+			</div>
+			<!-- /.implant__slider-cont-img -->
+			<div class="implant__slider-cont-title">
+				<h4>Mega Gen</h4>
+			</div>
+			<!-- /.implant__slider-cont-title -->
+		</div>
+		<!-- /.implant__slider-cont -->
+		<div class="implant__slider-cont">
+			<div class="implant__slider-cont-img">
+				<img src="img/im04.png" alt="Имплантанты зубов">
+			</div>
+			<!-- /.implant__slider-cont-img -->
+			<div class="implant__slider-cont-title">
+				<h4>K3 pro</h4>
+			</div>
+			<!-- /.implant__slider-cont-title -->
+		</div>
+		<!-- /.implant__slider-cont -->
+		<div class="implant__slider-cont">
+			<div class="implant__slider-cont-img">
+				<img src="img/im05.png" alt="Имплантанты зубов">
+			</div>
+			<!-- /.implant__slider-cont-img -->
+			<div class="implant__slider-cont-title">
+				<h4>Inno</h4>
+			</div>
+			<!-- /.implant__slider-cont-title -->
+		</div>
+		<!-- /.implant__slider-cont -->
+		<div class="implant__slider-cont">
+			<div class="implant__slider-cont-img">
+				<img src="img/im06.png" alt="Имплантанты зубов">
+			</div>
+			<!-- /.implant__slider-cont-img -->
+			<div class="implant__slider-cont-title">
+				<h4>Shtraumann</h4>
+			</div>
+			<!-- /.implant__slider-cont-title -->
+		</div>
+		<!-- /.implant__slider-cont -->
+	</div>
+	<!-- /.implant__slider -->
+	<div class="mainTitle">
+		<h2>Bicon</h2>
+	</div>
+	<!-- /.mainTitle -->	
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-lg-5">
+				<div class="implant__desc">
+					<h2>Американские импланты Bicon</h2>
+					<p>Американские импланты Bicon представлены на международном рынке с 1985 года и неизменно популярны среди стоматологов и их пациентов. Главной отличительной особенностью имплантов является конусное соединение с абатментом — формирователем десны, на который устанавливается коронка. Такое соединение, в отличие от винтового (применяемого в большинстве других систем), позволяет обеспечить более надежную фиксацию и герметичность конструкции, что увеличивает срок ее службы, ускоряет приживление и существенно снижает риск осложнений.</p>
+				</div>
+				<!-- /.implant__desc -->
+			</div>
+			<!-- /.col-lg-5 -->
+			<div class="col-lg-5">
+				<div class="implant__order">
+					<h3>Запишитесь на консультацию и получите 
+						БЕСПЛАТНУЮ диагностику вашей полости рта</h3>
+						<h4>Специалисты ответят на все вопросы</h4>
+						<hr>
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Запишитесь на консультацию и получите БЕСПЛАТНУЮ диагностику вашей полости рта','Мы перезвоним');">Записаться</a>
+				</div>
+				<!-- /.implant__order -->
+			</div>
+			<!-- /.col-lg-5 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+</section>
+<!-- implant  end -->
+
+<!-- prod start -->
+<section class="prod">
+	<div class="mainTitle">
+		<h2>Услуги</h2>
+		<h3>Наши услуги</h3>
+	</div>
+	<!-- /.mainTitle -->
+	<div class="container-fluid">
+		<div class="row p-0 m-0 mb-4">
+			<div class="col-lg-6 p-0 m-0">
+				<div class="prod__img">
+					<img src="img/pr01.png" alt="">
+				</div>
+				<!-- /.prod__img -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6 p-0 m-0 align-self-center">
+				<div class="prod__desc">
+					<div class="prod__desc-txt">
+						<h4>Диагностика</h4>
+						<ul>
+							<li>Ортопантомограмма</li>
+							<li>Радиовизиография зубов</li>
+							<li>Диагностика окклюзии T-Scan</li>
+							<li>Лечение десен</li>
+						</ul>
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Диагностика','Мы перезвоним');">Записаться на прием</a>						
+					</div>
+					<!-- /.prod__desc-txt -->
+					<div class="prod__desc-icon">
+						<img src="img/pr01i.png" alt="">
+					</div>
+					<!-- /.prod__desc-icon -->
+				</div>
+				<!-- /.prod__desc -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row -->
+		<div class="row p-0 m-0 mb-4">
+			<div class="col-lg-6 p-0 m-0 order-lg-2">
+				<div class="prod__img">
+					<img src="img/pr02.png" alt="">
+				</div>
+				<!-- /.prod__img -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6 p-0 m-0 align-self-center order-lg-1">
+				<div class="prod__desc flex-row-reverse">
+					<div class="prod__desc-txt">
+						<h4>Лечение зубов</h4>
+						<ul>
+							<li>Лечение кариеса</li>
+							<li>Лечение зубных каналов (эндодонтия)</li>
+						</ul>
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Лечение зубов','Мы перезвоним');">Записаться на прием</a>						
+					</div>
+					<!-- /.prod__desc-txt -->
+					<div class="prod__desc-icon">
+						<img src="img/pr02i.png" alt="">
+					</div>
+					<!-- /.prod__desc-icon -->
+				</div>
+				<!-- /.prod__desc -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row rev-->
+		<div class="row p-0 m-0 mb-4">
+			<div class="col-lg-6 p-0 m-0">
+				<div class="prod__img">
+					<img src="img/pr03.png" alt="">
+				</div>
+				<!-- /.prod__img -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6 p-0 m-0 align-self-center">
+				<div class="prod__desc">
+					<div class="prod__desc-txt">
+						<h4>Лечение десен</h4>
+						<ul>
+							<li>Вектор-терапия</li>
+							<li>Лоскутные операции</li>
+							<li>Закрытый кюретаж</li>
+							<li>Открытый кюретаж</li>
+							<li>Пластика десен</li>
+						</ul>
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Лечение десен','Мы перезвоним');">Записаться на прием</a>						
+					</div>
+					<!-- /.prod__desc-txt -->
+					<div class="prod__desc-icon">
+						<img src="img/pr03i.png" alt="">
+					</div>
+					<!-- /.prod__desc-icon -->
+				</div>
+				<!-- /.prod__desc -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row -->
+		<div class="row p-0 m-0 mb-4">
+			<div class="col-lg-6 p-0 m-0 order-lg-2">
+				<div class="prod__img">
+					<img src="img/pr04.png" alt="">
+				</div>
+				<!-- /.prod__img -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6 p-0 m-0 align-self-center order-lg-1">
+				<div class="prod__desc flex-row-reverse">
+					<div class="prod__desc-txt">
+						<h4>Лечение под микроскопом</h4>
+						<ul>
+							<li>Высокохудожественная реставрация</li>
+							<li>Первичное лечение корневых каналов</li>
+							<li>Перелечивание корневых каналов</li>
+						</ul>
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Лечение под микроскопом','Мы перезвоним');">Записаться на прием</a>						
+					</div>
+					<!-- /.prod__desc-txt -->
+					<div class="prod__desc-icon">
+						<img src="img/pr04i.png" alt="">
+					</div>
+					<!-- /.prod__desc-icon -->
+				</div>
+				<!-- /.prod__desc -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row rev-->
+		<div class="row p-0 m-0 mb-4">
+			<div class="col-lg-6 p-0 m-0">
+				<div class="prod__img">
+					<img src="img/pr05.png" alt="">
+				</div>
+				<!-- /.prod__img -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6 p-0 m-0 align-self-center">
+				<div class="prod__desc">
+					<div class="prod__desc-txt">
+						<h4>Протезирование зубов</h4>
+						<ul>
+							<li>Металлокерамическая коронка</li>
+							<li>Виниры</li>
+							<li>Керамическая коронка (безметаловая)</li>
+							<li>Протезирование на имплантантах</li>
+							<li>Съемные и частично съемные протезы</li>
+						</ul>
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Протезирование зубов','Мы перезвоним');">Записаться на прием</a>						
+					</div>
+					<!-- /.prod__desc-txt -->
+					<div class="prod__desc-icon">
+						<img src="img/pr05i.png" alt="">
+					</div>
+					<!-- /.prod__desc-icon -->
+				</div>
+				<!-- /.prod__desc -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row -->
+		<div class="row p-0 m-0 mb-4">
+			<div class="col-lg-6 p-0 m-0 order-lg-2">
+				<div class="prod__img">
+					<img src="img/pr06.png" alt="">
+				</div>
+				<!-- /.prod__img -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6 p-0 m-0 align-self-center order-lg-1">
+				<div class="prod__desc flex-row-reverse">
+					<div class="prod__desc-txt">
+						<h4>Хирургическая стоматология</h4>
+						<ul>
+							<li>Удаление зуба мудрости</li>
+							<li>Синус-лифтинг</li>
+							<li>Удаление зуба</li>
+							<li>НРТ — направленная регенерация тканей</li>
+							<li>Костная пластика</li>
+							<li>Френулопластика</li>
+						</ul>
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Хирургическая стоматология','Мы перезвоним');">Записаться на прием</a>	
+					</div>
+					<!-- /.prod__desc-txt -->
+					<div class="prod__desc-icon">
+						<img src="img/pr06i.png" alt="">
+					</div>
+					<!-- /.prod__desc-icon -->
+				</div>
+				<!-- /.prod__desc -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row rev-->
+		<div class="row p-0 m-0 mb-4">
+			<div class="col-lg-6 p-0 m-0">
+				<div class="prod__img">
+					<img src="img/pr07.png" alt="">
+				</div>
+				<!-- /.prod__img -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6 p-0 m-0 align-self-center">
+				<div class="prod__desc">
+					<div class="prod__desc-txt">
+						<h4>Имплантация зубов</h4>
+						<ul>
+							<li>Имплантация зубов без костной пластики</li>
+							<li>Костная пластика</li>
+							<li>Синус-лифтинг</li>
+						</ul>
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Имплантация зубов','Мы перезвоним');">Записаться на прием</a>						
+					</div>
+					<!-- /.prod__desc-txt -->
+					<div class="prod__desc-icon">
+						<img src="img/pr07i.png" alt="">
+					</div>
+					<!-- /.prod__desc-icon -->
+				</div>
+				<!-- /.prod__desc -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row -->
+		<div class="row p-0 m-0 mb-4">
+			<div class="col-lg-6 p-0 m-0 order-lg-2">
+				<div class="prod__img">
+					<img src="img/pr08.png" alt="">
+				</div>
+				<!-- /.prod__img -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6 p-0 m-0 align-self-center order-lg-1">
+				<div class="prod__desc flex-row-reverse">
+					<div class="prod__desc-txt">
+						<h4>Детская стоматология</h4>
+						<ul>
+							<li>Лечение зубов во сне, Седация</li>
+							<li>Лечение кариеса молочных зубов у детей</li>
+							<li>Фторирование зубов у детей</li>
+							<li>Удаление молочных зубов</li>
+						</ul>
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Детская стоматология','Мы перезвоним');">Записаться на прием</a>	
+					</div>
+					<!-- /.prod__desc-txt -->
+					<div class="prod__desc-icon">
+						<img src="img/pr08i.png" alt="">
+					</div>
+					<!-- /.prod__desc-icon -->
+				</div>
+				<!-- /.prod__desc -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row rev-->
+	</div>
+	<!-- /.container-fluid -->	
+</section>
+<!-- prod end -->
+
+<!-- formOffer start -->
+<section class="formOffer">
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 align-self-center">
+				<div class="formOffer__title">
+					<h2>Хотите получить полный прайс-лист на все услуги?</h2>
+					<h4>Заполните форму и мы отправим Вам полный прайс-лист на почту в течении 1 дня</h4>
+				</div>
+				<!-- /.formOffer__title -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-5 align-self-center">
+				<form class="openForm">
+					<h4>Заполните поля ниже для получения полного прайс-листа со всеми услугами на почту</h4>
+					<input type="text" name="name" placeholder="Имя*" required>
+					<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон*" required>
+					<input type="email" name="email" placeholder="Email*" required>
+					<button class="disbutt mainBtn" disabled><span>Записаться</span></button>
+					<input name="order" type="hidden" value="Заполните поля ниже для получения полного прайс-листа со всеми услугами на почту">
+					<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+					<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+					<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+					<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+					<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+				</form>
+			</div>
+			<!-- /.col-lg-5 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+</section>
+<!-- formOffer end -->
+
+<!-- after start -->
+<section class="after">
+	<div class="mainTitle">
+		<h2>Результаты</h2>
+		<h3>Посмотрите результаты нашей работы</h3>
+	</div>
+	<!-- /.mainTitle -->
+	<div class="after__slider">
+		<div class="after__slider-cont">
+			<div class="after__slider-cont-img">
+				<img src="img/after01.png" alt="">
+			</div>
+			<!-- /.after__slider-cont-img -->
+			<div class="after__slider-cont-desc">
+				<h3>Ирина Васильева</h3>
+				<hr>
+				<p>Лечение зубов и десен<br>2010 год</p>
+			</div>
+			<!-- /.after__slider-cont-desc -->
+			<div class="after__slider-cont-img">
+				<img src="img/after02.png" alt="">
+			</div>
+			<!-- /.after__slider-cont-img -->
+		</div>
+		<!-- /.after__slider-cont -->
+		<div class="after__slider-cont">
+			<div class="after__slider-cont-img">
+				<img src="img/after01.png" alt="">
+			</div>
+			<!-- /.after__slider-cont-img -->
+			<div class="after__slider-cont-desc">
+				<h3>Ирина Васильева</h3>
+				<hr>
+				<p>Лечение зубов и десен<br>2010 год</p>
+			</div>
+			<!-- /.after__slider-cont-desc -->
+			<div class="after__slider-cont-img">
+				<img src="img/after02.png" alt="">
+			</div>
+			<!-- /.after__slider-cont-img -->
+		</div>
+		<!-- /.after__slider-cont -->
+		<div class="after__slider-cont">
+			<div class="after__slider-cont-img">
+				<img src="img/after01.png" alt="">
+			</div>
+			<!-- /.after__slider-cont-img -->
+			<div class="after__slider-cont-desc">
+				<h3>Ирина Васильева</h3>
+				<hr>
+				<p>Лечение зубов и десен<br>2010 год</p>
+			</div>
+			<!-- /.after__slider-cont-desc -->
+			<div class="after__slider-cont-img">
+				<img src="img/after02.png" alt="">
+			</div>
+			<!-- /.after__slider-cont-img -->
+		</div>
+		<!-- /.after__slider-cont -->
+	</div>
+	<!-- /.after__slider -->
+</section>
+<!-- after end -->
+
+<!-- personal start -->
+<section class="personal">
+	<div class="mainTitle">
+		<h2>Специалисты </h2>
+		<h3>Специалисты клиники “Ideale”</h3>
+	</div>
+	<!-- /.mainTitle -->	
+	<div class="container">
+		<div class="personal__slider">
+			<div class="personal__slider-cont">
+				<div class="personal__slider-cont-wrap">
+					<div class="personal__slider-cont-wrap-img">
+						<img src="img/reps01.png" alt="">
+					</div>
+					<!-- /.personal__slider-cont-wrap-img -->
+					<div class="personal__slider-cont-wrap-title">
+						<h3>Лукашук Ярослав Петрович</h3>
+					</div>
+					<!-- /.personal__slider-cont-wrap-title -->
+					<div class="personal__slider-cont-wrap-desc">
+						<p>Стаж работы 15 лет</p>
+						<hr>
+						<p>Врач стоматолог-ортопед, врач стоматолог- хирург, врач стоматолог-имплантолог</p>
+					</div>
+					<!-- /.personal__slider-cont-wrap-desc -->
+				</div>
+				<!-- /.personal__slider-cont-wrap -->
+				<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Лукашук Ярослав Петрович','Мы перезвоним');">Записаться на прием</a>	
+			</div>
+			<!-- /.personal__slider-cont -->
+			<div class="personal__slider-cont">
+				<div class="personal__slider-cont-wrap">
+					<div class="personal__slider-cont-wrap-img">
+						<img src="img/reps02.png" alt="">
+					</div>
+					<!-- /.personal__slider-cont-wrap-img -->
+					<div class="personal__slider-cont-wrap-title">
+						<h3>Свиридова Виктория Юрьевна</h3>
+					</div>
+					<!-- /.personal__slider-cont-wrap-title -->
+					<div class="personal__slider-cont-wrap-desc">
+						<p>Стаж работы 15 лет</p>
+						<hr>
+						<p>Терапевтическая стоматология, детская стоматология</p>
+					</div>
+					<!-- /.personal__slider-cont-wrap-desc -->
+				</div>
+				<!-- /.personal__slider-cont-wrap -->
+				<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Свиридова Виктория Юрьевна','Мы перезвоним');">Записаться на прием</a>	
+			</div>
+			<!-- /.personal__slider-cont -->
+			<div class="personal__slider-cont">
+				<div class="personal__slider-cont-wrap">
+					<div class="personal__slider-cont-wrap-img">
+						<img src="img/reps03.png" alt="">
+					</div>
+					<!-- /.personal__slider-cont-wrap-img -->
+					<div class="personal__slider-cont-wrap-title">
+						<h3>Юдин Олег Вячеславович</h3>
+					</div>
+					<!-- /.personal__slider-cont-wrap-title -->
+					<div class="personal__slider-cont-wrap-desc">
+						<p>Стаж работы 12 лет</p>
+						<hr>
+						<p>Главный врач, врач стоматолог-эндодонтист</p>
+					</div>
+					<!-- /.personal__slider-cont-wrap-desc -->
+				</div>
+				<!-- /.personal__slider-cont-wrap -->
+				<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Юдин Олег Вячеславович','Мы перезвоним');">Записаться на прием</a>	
+			</div>
+			<!-- /.personal__slider-cont -->
+		</div>
+		<!-- /.personal__slider -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- personal end -->
+
+
+<!-- photo start -->
+<section class="photo">
+	<div class="photo__bgTitle">
+		<h2>Фотографии</h2>
+	</div>
+	<!-- /.photo__bgtitle -->
+	<div class="mainTitle">
+		<h3>Фотографии нашей клиники</h3>
+	</div>
+	<!-- /.mainTitle -->
+	<div class="photo__slider">
+		<div class="photo__slider-cont">
+			<div class="photo__slider-cont-img">
+				<img src="img/ph01.png" alt="Ideale">
+			</div>
+			<!-- /.photo__slider-cont-img -->
+		</div>
+		<!-- /.photo__slider-cont -->
+		<div class="photo__slider-cont">
+			<div class="photo__slider-cont-img">
+				<img src="img/ph01.png" alt="Ideale">
+			</div>
+			<!-- /.photo__slider-cont-img -->
+		</div>
+		<!-- /.photo__slider-cont -->
+		<div class="photo__slider-cont">
+			<div class="photo__slider-cont-img">
+				<img src="img/ph01.png" alt="Ideale">
+			</div>
+			<!-- /.photo__slider-cont-img -->
+		</div>
+		<!-- /.photo__slider-cont -->
+	</div>
+	<!-- /.photo__slider -->		
+</section>
+<!-- photo end -->
+
+<!-- sert start -->
+<section class="sert">
+	<div class="mainTitle">
+		<h2>Сертификаты</h2>
+		<h3>Сертификаты</h3>
+	</div>
+	<!-- /.mainTitle -->
+	<div class="container">
+		<div class="sert__slider">
+			<div class="sert__slider-cont">
+				<div class="sert__slider-cont-img">
+					<img src="img/sert01.png" alt="Сертификаты">
+				</div>
+				<!-- /.sert__slider-cont-img -->
+			</div>
+			<!-- /.sert__slider-cont -->
+			<div class="sert__slider-cont">
+				<div class="sert__slider-cont-img">
+					<img src="img/sert01.png" alt="Сертификаты">
+				</div>
+				<!-- /.sert__slider-cont-img -->
+			</div>
+			<!-- /.sert__slider-cont -->
+			<div class="sert__slider-cont">
+				<div class="sert__slider-cont-img">
+					<img src="img/sert01.png" alt="Сертификаты">
+				</div>
+				<!-- /.sert__slider-cont-img -->
+			</div>
+			<!-- /.sert__slider-cont -->
+			<div class="sert__slider-cont">
+				<div class="sert__slider-cont-img">
+					<img src="img/sert01.png" alt="Сертификаты">
+				</div>
+				<!-- /.sert__slider-cont-img -->
+			</div>
+			<!-- /.sert__slider-cont -->
+		</div>
+		<!-- /.sert__slider -->	
+	</div>
+	<!-- /.container -->
+</section>
+<!-- sert end -->
+
+<!-- formOfferT start -->
+<section class="formOfferT">
+	<div class="formOfferT__bgTitle">
+		<h2>Контакты</h2>
+	</div>
+	<!-- /.photo__bgtitle -->
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 align-self-center">
+				<div class="formOffer__title">
+					<h2>Хотите записаться на приём к врачу без очереди?</h2>
+				</div>
+				<!-- /.formOffer__title -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-5 align-self-center">
+				<form class="openForm">
+					<h4>Заполните форму и запишитесь на БЕСПЛАТНЫЙ приём в удобное для Вас время</h4>
+					<input type="text" name="name" placeholder="Имя*" required>
+					<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон*" required>
+					<button class="disbutt mainBtn" disabled><span>Записаться</span></button>
+					<input name="order" type="hidden" value="Заполните форму и запишитесь на БЕСПЛАТНЫЙ приём в удобное для Вас время">
+					<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+					<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+					<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+					<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+					<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+				</form>
+			</div>
+			<!-- /.col-lg-5 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+</section>
+<!-- formOfferT end -->
+
+<!-- contacts start -->
+<section class="contacts">
+	<div class="container-fluid p-0 m-0">
+		<div class="row p-0 m-0">
+			<div class="col-lg-5 p-0 m-0">
+				<h3>Контакты</h3>
+				<div class="contacts-cont">
+					<div class="contacts-cont-line"></div>
+					<div class="contacts-cont-list">
+						<div class="contacts-cont-list-item">
+							<a href="#" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a>
+						</div>
+						<!-- /.contacts-cont-list-item -->
+						<div class="contacts-cont-list-item">
+							<a href="#" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+						</div>
+						<!-- /.contacts-cont-list-item -->
+						<div class="contacts-cont-list-item">
+							<a href="#" target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
+						</div>
+						<!-- /.contacts-cont-list-item -->
+						<div class="contacts-cont-list-item">
+							<img src="img/Logo.png" alt="Ideale">
+						</div>
+						<!-- /.contacts-cont-list-item -->
+					</div>
+					<!-- /.contacts-cont-list -->
+					<div class="contacts-cont-list">
+						<div class="contacts-cont-list-item">
+							<h4>Телефоны:</h4>
+							<a href="tel:+33333333333">+38 (063) 844 23 11</a>
+							<a href="tel:+33333333333">+38 (063) 844 23 11</a>
+						</div>
+						<!-- /.contacts-cont-list-item -->
+						<div class="contacts-cont-list-item">
+							<h4>Почта:</h4>
+							<a href="mailto:ideale@info.com.ua">ideale@info.com.ua</a>
+						</div>
+						<!-- /.contacts-cont-list-item -->
+						<div class="contacts-cont-list-item">
+							<h4>Адрес:</h4>
+							<a href="tel:+33333333333">Киев, Дмитревская 65а</a>
+						</div>
+						<!-- /.contacts-cont-list-item -->
+						<div class="contacts-cont-list-item">
+							<h4>Время работы:</h4>
+							<a href="tel:+33333333333">Пн - Пт 09:00 - 18:00</a>
+							<a href="tel:+33333333333">Сб - Вс 09:00 - 16:00</a>
+						</div>
+						<!-- /.contacts-cont-list-item -->
+					</div>
+					<!-- /.contacts-cont-list -->
+				</div>
+				<!-- /.contacts-cont -->
+			</div>
+			<!-- /.col-lg-5 -->
+			<div class="col-lg-7 p-0 m-0">
+				<div class="contacts__iframe">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72582857963!2d30.39260962468786!3d50.402170238066674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1581375845421!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				<!-- /.contacts__iframe -->
+			</div>
+			<!-- /.col-lg-7 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+</section>
+<!-- contacts end -->
+<div class="devgen p-1 text-center">
+	<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>
+</div>
+<div class="hidden">
+	<form class="openForm d-block mx-auto order-main" id="mpopup-form">
+			<img src="img/Logo.png" alt="Ideale">
+			<h3>Заполните форму</h3>
+			<h4><span id="customTextForm">Мы перезвоним</span></h4>
+			<input type="text" name="name" placeholder="ИМЯ" required>
+			<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
+			<button class="disbutt mainBtn" disabled><span>отправить</span></button>
+			<input name="order" type="hidden" id="input_order">
+			<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+			<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+			<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+			<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+		</form>
+</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
+
