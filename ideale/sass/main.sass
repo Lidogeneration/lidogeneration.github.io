@@ -383,20 +383,47 @@ section
 	.mainTitle
 		padding: 10px
 	&__slider
-		margin: 5px 50px
+		display: flex
+		padding: 0
+		margin: 0
+		list-style: none
+		@media(max-width: 992px)
+			flex-wrap: wrap
+			justify-content: center
 		&-cont
+			transition: .3s
 			padding: 30px
 			flex-direction: column
+			@media(max-width: 992px)
+				padding: 5px 10px 0 10px !important
+				flex-basis: 30%
+			@media(max-width: 450px)
+				flex-basis: 45%
 			&-img
 				border: 5px solid $main_rgb
 				margin-bottom: 10px
+				transition: .3s
 				img
 					width: 100%
 					height: auto
+				&:hover
+					transition: .3s
+					border: 5px solid $main_white
 			&-title
 				padding: 10px
 				h4
 					font-size: 18px
+				@media(max-width: 992px)
+					padding: 5px 5px 0 5px !important
+					h4
+						font-size: 16px
+		.active
+			transition: .3s
+			transform: scale(1.1)
+			.implant__slider-cont-img
+				transition: .3s
+				border: 5px solid $main_white
+				box-shadow: 0px 0px 2px 2px $main_color
 		@media(max-width: 1440px)
 			&-cont
 				padding: 10px

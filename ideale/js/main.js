@@ -168,42 +168,42 @@ $(document).ready(function() {
 	});
 });
 
-$('.implant__slider').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 7000,
-    speed: 1000,
-    dots: false,
-    arrows: true,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    infinite: true,
-    accessibility: false,
-    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
-    responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 4,
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 400,
-            settings: {
-                slidesToShow: 1,
-            }
-        },
-    ]
+// $('.implant__slider').slick({
+//     slidesToShow: 6,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 7000,
+//     speed: 1000,
+//     dots: false,
+//     arrows: true,
+//     pauseOnFocus: false,
+//     pauseOnHover: false,
+//     infinite: true,
+//     accessibility: false,
+//     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
+//     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
+//     responsive: [
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 slidesToShow: 4,
+//             }
+//         },
+//         {
+//             breakpoint: 600,
+//             settings: {
+//                 slidesToShow: 2,
+//             }
+//         },
+//         {
+//             breakpoint: 400,
+//             settings: {
+//                 slidesToShow: 1,
+//             }
+//         },
+//     ]
     
-});
+// });
 
 $('.after__slider').slick({
     slidesToShow: 1,
@@ -270,3 +270,6 @@ $('.personal__slider, .sert__slider').slick({
         }
     ]
 });
+
+
+$('.tabs').tabslet();
