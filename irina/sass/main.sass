@@ -193,7 +193,7 @@ section
 
 /* --- first Start ------------------------------------------------*/
 .first
-	min-height: 100vh
+	min-height: 70vh
 	display: flex
 	flex-direction: column
 	justify-content: center
@@ -215,7 +215,10 @@ section
 	&__subtitle
 		h3
 			font-size: 22px
+	@media(max-width: 1280px)
+		min-height: 50vh
 	@media(max-width: 992px)
+		min-height: 100vh
 		background-position: top left
 		padding-bottom: 50px
 		&__title
@@ -545,6 +548,163 @@ section
 				display: block
 /* --- author end ------------------------------------------------*/	
 
+/* --- messager Start ------------------------------------------------*/
+.messager
+	padding-top: 0
+	margin-top: -20px
+	&__bg
+		background: linear-gradient(64.73deg, rgba(61, 184, 162, 0.91) 13.25%, #0FA287 72.78%)
+		border-radius: 200em
+	&__form
+		padding: 50px 5px
+		&-desc
+			padding: 10px 0
+			h3
+				padding: 0
+				margin: 0 0 10px 0
+				color: $main_white
+				font-weight: 300
+				font-size: 32px
+			p
+				padding: 0
+				margin: 0 0 10px 0
+				color: $main_white
+				font-weight: 300
+			h4
+				font-size: 16px
+				color: $main_white
+				font-weight: bold
+		&-inputR
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			input
+				display: none
+			label
+				font-weight: 300
+				color: $main_white
+				margin: 5px
+				padding-left: 25px
+				position: relative
+				transition: .3s
+				cursor: pointer
+				&:after
+					content: ''
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					left: 0
+					width: 20px
+					height: 20px
+					background: $main_white
+					border-radius: 50%
+					border: 4px solid $main_white
+					transition: .3s
+				&:hover
+					transition: .3s
+					&:after
+						transition: .3s
+						background: rgba($main_white,.7)
+			input[type="radio"]:checked
+				+ label
+						&:after
+							transition: .3s
+							background: $main_bg
+		&-input
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+			input
+				background: none
+				border: none
+				border-bottom: 1px solid $main_white
+				padding: 10px
+				margin: 10px
+				width: 200px
+				max-width: 100%
+				color: $main_white
+				transition: .3s
+				&:focus
+					outline: none
+			::placeholder
+				color: $main_white	
+			.mainBtn
+				display: inline
+				width: 240px
+				max-width: 100%
+				margin: 10px
+				&:hover
+					border: 2px solid $main_white
+					background: $main_white
+					color: $main_rgb
+	@media(max-width: 992px)
+		&__bg
+			border-radius: 25px		
+		&__form
+			&-desc
+				h3
+					font-size: 26px
+			&-inputR
+				display: flex
+				flex-wrap: wrap
+				label
+					flex-basis: 40%
+			&-input
+				input
+					width: 100%
+				.mainBtn
+					display: block
+					margin-left: auto
+					margin-right: auto
+	@media(max-width: 480px)
+		&__form
+			&-inputR
+				justify-content: center
+				label
+					flex-basis: 50%
+/* --- messager end ------------------------------------------------*/
+
+/* --- spcial Start ------------------------------------------------*/
+.social
+	background: $main_bg
+	padding: 20px 5px 10px 5px
+	display: flex
+	justify-content: center
+	align-items: center
+	&__wrap
+		a
+			i
+				font-size: 30px
+				color: $main_white
+				transition: .3s
+				&:hover
+					transition: .3s
+					color: $main_rgb
+/* --- spcial end ------------------------------------------------*/
+
+.devgen
+	background: $main_bg
+	a
+		color: $main_white
+		transition: .3s
+
+/* --- ready Start ------------------------------------------------*/
+.ready
+	padding-top: 0
+	h2
+		text-align: center
+		font-weight: bold
+		margin-bottom: 20px
+	.mainBtn
+		width: 300px
+		max-width: 100%
+		font-size: 18px
+		background: #FFA800
+		border: 2px solid #FFA800
+/* --- ready end ------------------------------------------------*/
+
+
 /* --- buttons Start ------------------------------------------------*/
 .mainBtn
 	border-radius: 25px
@@ -617,10 +777,10 @@ section
 		color: $main_white
 		margin-bottom: 20px
 	h3
-		font-size: 20px
+		font-size: 22px
 		font-weight: bold
 	h4
-		font-size: 16px
+		font-size: 18px
 		font-weight: 500
 	input
 		background: none
@@ -650,26 +810,6 @@ section
 
 .mfp-close-btn-in .mfp-close
 	color: $main_white !important
-.mainTitle
-	h2
-		font-size: 100px
-		font-weight: 900
-		color: rgba($main_rgb, .2)
-		text-transform: uppercase
-		padding: 0
-		margin: 0 0 10px 0
-	h3
-		font-family: StudioScriptC
-		font-size: 45px
-		text-align: center
-		color: $main_rgb
-	@media(max-width: 992px)
-		h2
-			margin: 0 0 10px 0 !important
-			text-align: center
-			font-size: 45px
-		h3
-			font-size: 30px
 
 
 .slick-dots
@@ -738,5 +878,3 @@ section
 		height: auto
 		display: flex
 
-.devgen
-	background: $main_white

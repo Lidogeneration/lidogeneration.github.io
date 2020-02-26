@@ -360,7 +360,7 @@ section {
 /* --- Navbar END ------------------------------------------------*/
 /* --- first Start ------------------------------------------------*/
 .first {
-  min-height: 100vh;
+  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,8 +400,15 @@ section {
   font-size: 22px;
 }
 
+@media (max-width: 1280px) {
+  .first {
+    min-height: 50vh;
+  }
+}
+
 @media (max-width: 992px) {
   .first {
+    min-height: 100vh;
     background-position: top left;
     padding-bottom: 50px;
   }
@@ -881,6 +888,265 @@ section {
 }
 
 /* --- author end ------------------------------------------------*/
+/* --- messager Start ------------------------------------------------*/
+.messager {
+  padding-top: 0;
+  margin-top: -20px;
+}
+
+.messager__bg {
+  background: linear-gradient(64.73deg, rgba(61, 184, 162, 0.91) 13.25%, #0FA287 72.78%);
+  border-radius: 200em;
+}
+
+.messager__form {
+  padding: 50px 5px;
+}
+
+.messager__form-desc {
+  padding: 10px 0;
+}
+
+.messager__form-desc h3 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  color: #fff;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.messager__form-desc p {
+  padding: 0;
+  margin: 0 0 10px 0;
+  color: #fff;
+  font-weight: 300;
+}
+
+.messager__form-desc h4 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.messager__form-inputR {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.messager__form-inputR input {
+  display: none;
+}
+
+.messager__form-inputR label {
+  font-weight: 300;
+  color: #fff;
+  margin: 5px;
+  padding-left: 25px;
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.messager__form-inputR label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.messager__form-inputR label:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.messager__form-inputR label:hover:after {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.messager__form-inputR input[type="radio"]:checked + label:after {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #6BD9C5;
+}
+
+.messager__form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.messager__form-input input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  max-width: 100%;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.messager__form-input input:focus {
+  outline: none;
+}
+
+.messager__form-input ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.messager__form-input :-ms-input-placeholder {
+  color: #fff;
+}
+
+.messager__form-input ::-ms-input-placeholder {
+  color: #fff;
+}
+
+.messager__form-input ::placeholder {
+  color: #fff;
+}
+
+.messager__form-input .mainBtn {
+  display: inline;
+  width: 240px;
+  max-width: 100%;
+  margin: 10px;
+}
+
+.messager__form-input .mainBtn:hover {
+  border: 2px solid #fff;
+  background: #fff;
+  color: #9845C2;
+}
+
+@media (max-width: 992px) {
+  .messager__bg {
+    border-radius: 25px;
+  }
+  .messager__form-desc h3 {
+    font-size: 26px;
+  }
+  .messager__form-inputR {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .messager__form-inputR label {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .messager__form-input input {
+    width: 100%;
+  }
+  .messager__form-input .mainBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .messager__form-inputR {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .messager__form-inputR label {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+/* --- messager end ------------------------------------------------*/
+/* --- spcial Start ------------------------------------------------*/
+.social {
+  background: #6BD9C5;
+  padding: 20px 5px 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__wrap a i {
+  font-size: 30px;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.social__wrap a i:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #9845C2;
+}
+
+/* --- spcial end ------------------------------------------------*/
+.devgen {
+  background: #6BD9C5;
+}
+
+.devgen a {
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/* --- ready Start ------------------------------------------------*/
+.ready {
+  padding-top: 0;
+}
+
+.ready h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ready .mainBtn {
+  width: 300px;
+  max-width: 100%;
+  font-size: 18px;
+  background: #FFA800;
+  border: 2px solid #FFA800;
+}
+
+/* --- ready end ------------------------------------------------*/
 /* --- buttons Start ------------------------------------------------*/
 .mainBtn {
   border-radius: 25px;
@@ -989,12 +1255,12 @@ section {
 }
 
 .openForm h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .openForm h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -1043,33 +1309,6 @@ section {
 /* --- Other START ------------------------------------------------*/
 .mfp-close-btn-in .mfp-close {
   color: #fff !important;
-}
-
-.mainTitle h2 {
-  font-size: 100px;
-  font-weight: 900;
-  color: rgba(152, 69, 194, 0.2);
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0 0 10px 0;
-}
-
-.mainTitle h3 {
-  font-family: StudioScriptC;
-  font-size: 45px;
-  text-align: center;
-  color: #9845C2;
-}
-
-@media (max-width: 992px) {
-  .mainTitle h2 {
-    margin: 0 0 10px 0 !important;
-    text-align: center;
-    font-size: 45px;
-  }
-  .mainTitle h3 {
-    font-size: 30px;
-  }
 }
 
 .slick-dots li button:before {
@@ -1182,9 +1421,5 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.devgen {
-  background: #fff;
 }
 /*# sourceMappingURL=main.css.map */
