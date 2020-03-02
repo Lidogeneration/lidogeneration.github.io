@@ -203,3 +203,19 @@ $('.sert__slider').slick({
         }
     ]
 });
+
+$('.about__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    speed: 1000,
+    dots: false,
+    arrows: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    vertical: true,
+    verticalSwiping: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-up"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-down"></i></button>',
+});

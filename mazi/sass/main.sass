@@ -355,6 +355,96 @@ section
 /* --- about Start ------------------------------------------------*/
 .about
 	position: relative
+	&__slider
+		@media(max-width: 992px)
+			display: none
+		.prod__wrap
+			padding: 5px
+			outline: none
+			margin: 10px 20px
+			box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.14)
+			&-img
+				margin-left: auto
+				margin-right: auto
+				width: 30%
+				margin-bottom: 5px	
+			&-name
+				margin-bottom: 5px
+				h4
+					font-size: 18px
+			&-price
+				margin-bottom: 5px
+				p
+					font-size: 18px
+			&-btn
+				margin-bottom: 5px
+				.mainBtn
+					padding: 5px
+	.slick-prev
+		left: 50%
+		transform: translateX(-50%)
+		top: -40px
+		bottom: inherit
+		width: 40px
+		height: 40px
+		z-index: 99
+		background: $main_rgb
+		transition: .3s
+		border-radius: 0
+		&:hover
+			transition: .3s
+			i
+				transition: .3s
+				background: $main_rgbS
+				color: $main_white
+		&:before
+			display: none
+		i
+			border-radius: 0
+			transition: .3s
+			color: $main_white
+			font-size: 22px
+			background: $main_rgb
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+	.slick-next
+		border-radius: 0
+		top: inherit
+		bottom: -40px
+		left: 50%
+		transform: translateX(-50%)
+		width: 40px
+		height: 40px
+		z-index: 99
+		background: $main_rgb
+		transition: .3s
+		&:hover
+			transition: .3s
+			i
+				transition: .3s
+				background: $main_rgbS
+				color: $main_white
+		&:before
+			display: none
+		i
+			border-radius: 0
+			transition: .3s
+			color: $main_white
+			font-size: 22px
+			background: $main_rgb
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+	.mainTitle
+		text-align: left
+		&:after
+			left: 0
+			transform: translateX(0)
 	&__leftBg
 		position: absolute
 		left: 0
@@ -370,17 +460,18 @@ section
 		img
 			max-width: 100%
 	&__desc
-		padding: 10px
+		padding: 10px 10px 10px 0
 		background: rgba($main_white, .7)
 		h3
-			text-align: center
 			text-transform: uppercase
 			margin-bottom: 20px
 			font-size: 24px
 			font-weight: 300
+			color: $main_rgb
 		p
 			font-weight: 300
 /* --- about end ------------------------------------------------*/
+
 
 /* --- prod Start ------------------------------------------------*/
 .prod
@@ -485,6 +576,13 @@ section
 			top: 55%
 			right: 20%
 			left: inherit		
+	.slick-track
+		display: flex
+	.slick-slide
+		height: auto
+		display: flex
+
+
 /* --- patent end ------------------------------------------------*/
 
 /* --- adv Start ------------------------------------------------*/
@@ -779,9 +877,3 @@ section
 		display: flex
 		justify-content: center
 		align-items: center
-.slick-track
-	display: flex
-	.slick-slide
-		height: auto
-		display: flex
-
