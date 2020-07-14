@@ -161,7 +161,7 @@ section
 						left: 0
 						width: 100%
 						height: 100%
-						border-bottom: 2px solid $main_rgb
+						border-bottom: 2px solid $main_lightBg
 						transform: translateY(50%)
 						opacity: 0
 					&:hover
@@ -1005,6 +1005,70 @@ section
 				margin-bottom: 20px
 /* --- tools end ------------------------------------------------*/
 
+/* --- rooms Start ------------------------------------------------*/
+.rooms
+	position: relative
+	&__leftI
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+	&__rightI
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+	&__wrap
+		background: $main_lightBg
+		padding: 10px 20px
+		position: relative
+		&:after
+			position: absolute
+			content: ''
+			bottom: -20px
+			left: -20px
+			width: 15%
+			height: 30%
+			border: solid $main_black
+			border-width: 0 0 2px 2px
+		&:before
+			position: absolute
+			content: ''
+			bottom: -20px
+			right: -20px
+			width: 30%
+			height: 10%
+			border: solid $main_black
+			border-width: 0 2px 2px 0
+		&-subtitle
+			text-align: center
+			margin-top: 20px
+			h3
+				padding: 0
+				margin: 0
+				font-size: 16px
+		&-slider
+			padding: 0 30px
+			&-cont
+				img
+					width: 100%
+					height: auto
+	@media(max-width: 992px)
+		&__wrap
+			padding: 5px
+			&-slider
+				padding: 0
+				margin-bottom: 50px
+		.slick-prev, .slick-next
+			bottom: -15px
+			svg
+				font-size: 40px
+		.slick-prev
+			left: 50px
+		.slick-next
+			right: 50px
+/* --- rooms end ------------------------------------------------*/
+
 /* --- button start Start ------------------------------------------------*/
 .mainBtnD
 	cursor: pointer
@@ -1138,35 +1202,37 @@ section
 
 /* --- slick style Start ------------------------------------------------*/
 .slick-prev
-	bottom: -28px
-	left: 30%
+	bottom: 50%
+	left: -7px
 	top: inherit
 	z-index: 99
 	transition: .3s
+	transform: translateY(-50%)
 	&:before
 		content: ''
 	svg
 		color: $main_color
-		font-size: 30px
+		font-size: 50px
 		transition: .3s
 	&:hover
 		svg
-			color: $main_rgb
+			color: #BBBBBB
 .slick-next
-	bottom: -28px
-	right: 30%
+	bottom: 50%
+	right: 0
 	top: inherit
 	z-index: 99
 	transition: .3s
+	transform: translateY(-50%)
 	&:before
 		content: ''
 	svg
 		color: $main_color
-		font-size: 30px
+		font-size: 50px
 		transition: .3s
 	&:hover
 		svg
-			color: $main_rgb
+			color: #BBBBBB
 .slick-dots
 	li
 		button
@@ -1175,7 +1241,7 @@ section
 	.slick-active	
 		button
 			&:before
-				color: $main_rgb !important
+				color: $main_black !important
 /* --- slick style end ------------------------------------------------*/
 
 

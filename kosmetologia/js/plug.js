@@ -42,19 +42,19 @@ AOS.init();
 // 	});
 // });
 
-// $('.revolution__slider').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 7000,
-//   speed: 1000,
-//   dots: true,
-//   arrows: true,
-//   pauseOnFocus: false,
-//   pauseOnHover: false,
-//   infinite: true,
-//   accessibility: false,
-//   prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-caret-left"></i></button>',
-//   nextArrow: '<button type="button" class="slick-next"><i class="fas fa-caret-right"></i></button>',
-// });
+$('.rooms__wrap-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 7000,
+  speed: 1000,
+  dots: false,
+  arrows: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  infinite: true,
+  accessibility: false,
+  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+});
 
