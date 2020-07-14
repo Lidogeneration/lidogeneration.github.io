@@ -980,6 +980,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
 }
 
 .about__adv-wrap-left {
@@ -1012,7 +1013,7 @@ section {
 
 .about__adv-wrap-left-line {
   position: absolute;
-  top: 85%;
+  top: 100%;
   left: 40%;
   width: 380px;
   height: 2px;
