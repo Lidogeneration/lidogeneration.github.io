@@ -1778,6 +1778,151 @@ section {
 }
 
 /* --- rooms end ------------------------------------------------*/
+/* --- contacts Start ------------------------------------------------*/
+.contacts {
+  position: relative;
+  background: #000;
+  z-index: 1;
+}
+
+.contacts__imgL {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contacts__imgR {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts__wrap-desc {
+  z-index: 1;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  background: #707070;
+  padding: 10px 20px;
+  border: solid #DCDCDC;
+  border-width: 1px 0 1px 1px;
+  position: relative;
+}
+
+.contacts__wrap-desc:before {
+  right: -64px;
+  top: -1px;
+  width: 132px;
+  height: 100%;
+  position: absolute;
+  content: '';
+  background: #707070;
+  -webkit-transform: skew(-18deg, 0deg);
+          transform: skew(-18deg, 0deg);
+  border: solid #DCDCDC;
+  border-width: 1px 1px 0 0;
+}
+
+.contacts__wrap-desc .globalTitle h2 {
+  color: #fff;
+}
+
+.contacts__wrap-desc .globalTitle h2:after {
+  background: #fff;
+}
+
+.contacts__wrap-desc h4 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.contacts__wrap-desc a {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+}
+
+.contacts__wrap-desc a svg {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.contacts__wrap-desc p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.contacts__wrap-desc-social a {
+  display: inline;
+}
+
+.contacts__wrap-desc-social a svg {
+  font-size: 30px;
+}
+
+.contacts__wrap-map {
+  z-index: 0;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  width: 100%;
+  position: relative;
+}
+
+.contacts__wrap-map:after {
+  position: absolute;
+  content: '';
+  left: 45px;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background: #000;
+  -webkit-transform: skew(-18deg, 0deg);
+          transform: skew(-18deg, 0deg);
+}
+
+.contacts__wrap-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .contacts__wrap-desc {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .contacts__wrap-desc:before {
+    display: none;
+  }
+  .contacts__wrap-map {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .contacts__wrap-map:after {
+    display: none;
+  }
+  .contacts__wrap-map iframe {
+    height: 300px;
+  }
+}
+
+/* --- contacts end ------------------------------------------------*/
 /* --- button start Start ------------------------------------------------*/
 .mainBtnD {
   cursor: pointer;
