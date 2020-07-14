@@ -1,5 +1,6 @@
 $("a[rel='m_PageScroll2id']").mPageScroll2id({
-  highlightClass: "active"
+  highlightClass: "active",
+  offset: 200
 });
 
 $('.mpopup').magnificPopup();

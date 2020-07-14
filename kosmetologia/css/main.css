@@ -1315,6 +1315,18 @@ section {
 }
 
 /* --- products end ------------------------------------------------*/
+/* --- openFormVert Start ------------------------------------------------*/
+.openFormVert__header {
+  text-align: center;
+}
+
+.openFormVert__header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* --- openFormVert end ------------------------------------------------*/
 /* --- button start Start ------------------------------------------------*/
 .mainBtnD {
   cursor: pointer;
@@ -1428,6 +1440,36 @@ section {
 .openForm .mainBtn {
   margin-left: auto;
   margin-right: auto;
+}
+
+.openFormV {
+  padding: 10px;
+  text-align: center;
+}
+
+.openFormV input {
+  padding: 10px;
+  width: 200px;
+  position: relative;
+  border: none;
+  border: 1px solid #000;
+  background: #F3F3F3;
+  text-align: center;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.openFormV .mainBtn {
+  width: 200px;
+}
+
+@media (max-width: 992px) {
+  .openFormV input {
+    width: 100%;
+  }
+  .openFormV .mainBtn {
+    width: 100%;
+  }
 }
 
 /* --- forms end ------------------------------------------------*/
