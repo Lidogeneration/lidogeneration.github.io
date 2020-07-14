@@ -618,13 +618,88 @@ section
 				iframe
 					width: 100%
 					height: 100%
+	&__adv
+		margin-top: 20px
+		&-wrap
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+			&-left
+				flex-basis: 40%
+				display: flex
+				align-items: center
+				position: relative
+				&-txt
+					p
+						padding: 0
+						margin: 0
+						font-size: 24px
+						font-weight: bold
+				&-img
+					margin-right: 20px
+					img
+						max-width: 100%
+						height: auto
+				&-line
+					position: absolute
+					top: 85%
+					left: 40%
+					width: 380px
+					height: 2px
+					background: $main_black
+					&:after
+						position: absolute
+						content: ''
+						right: -7px
+						bottom: -30px
+						height: 100px
+						width: 2px
+						background: $main_black
+						transform: skew(-18deg, 0deg)
+			&-right
+				padding: 10px
+				flex-basis: 40%
+				background: $main_white
+				position: relative
+				z-index: 1
+				&:after
+					position: absolute
+					content: ''
+					z-index: -1
+					left: -50px
+					top: 0
+					width: 100px
+					height: 100%
+					background: $main_white
+					transform: skew(-18deg, 0deg)
+				p
+					margin: 0
+					padding: 0
 	@media(max-width: 1200px)
 		&__cont
 			&-left
 				flex-basis: 45%
 			&-right
 				flex-basis: 45%
+		&__adv
+			&-wrap
+				&-left
+					&-line
+						width: 310px
 	@media(max-width: 992px)
+		&__adv
+			&-wrap
+				&-left
+					padding: 10px
+					background: $main_white
+					flex-basis: 100%
+					&-line
+						display: none
+				&-right
+					flex-basis: 100%
+					&:after
+						display: none
 		&__imgL, &__imgR
 			display: none
 		&__cont
