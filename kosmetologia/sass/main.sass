@@ -677,6 +677,34 @@ section
 				p
 					margin: 0
 					padding: 0
+	&__cont-slider
+		display: block
+	&__personal
+		img
+			width: 100%
+			height: auto
+		&-mainSlid
+			margin-bottom: 20px
+			&-cont
+				display: flex !important
+				justify-content: space-between
+				align-items: center
+				&-desc
+					flex-basis: 40%
+				&-img
+					flex-basis: 40%
+		&-subSlid
+			padding: 10px 40px
+			&-cont
+				cursor: pointer
+				padding: 10px
+				margin: 10px
+	.slick-current
+		box-shadow: 3px 8px 6px rgba(0, 0, 0, 0.25)
+	.slick-prev, .slick-next
+		bottom: 40%
+		svg
+			font-size: 30px
 	@media(max-width: 1200px)
 		&__cont
 			&-left
@@ -710,6 +738,20 @@ section
 				flex-basis: 100%
 			&-right
 				flex-basis: 100%
+		&__personal
+			&-mainSlid
+				&-cont
+					&-img
+						display: none
+					&-desc
+						flex-basis: 100%
+			&-subSlid
+				padding: 5px
+				&-cont
+			.slick-prev
+				left: -15px
+			.slick-next
+				right: -15px
 /* --- about end ------------------------------------------------*/
 
 /* --- products Start ------------------------------------------------*/
@@ -1022,6 +1064,13 @@ section
 		background: $main_lightBg
 		padding: 10px 20px
 		position: relative
+		&-sert
+			padding: 0 30px
+			&-cont
+				padding: 10px
+				img
+					width: 100%
+					height: auto
 		&:after
 			position: absolute
 			content: ''
