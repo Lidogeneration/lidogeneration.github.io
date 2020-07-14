@@ -1,0 +1,509 @@
+body
+    background: #CBCDAE
+
+a
+    font-family: 'Libre Franklin', sans-serif
+    &:hover
+        text-decoration: none 
+    
+p
+    font-family: 'Libre Franklin', sans-serif
+    
+.header
+    height: 60px
+    z-index: 2
+    background-color: rgba(59, 57, 45, 0.8)
+    .logo
+        height: 100%
+        z-index: -1
+        display: flex
+        align-items: center
+        .logo-wrap
+            display: inline-flex
+            .logo-fire
+                border: 1px solid rgba(59, 24, 54, 1)
+            .logo-img
+                margin-left: 5px
+    
+.border-btm
+    border-bottom: 1px solid #8E8E8E
+    
+.border-btm-transparent
+    border-bottom: 1px solid rgba(111, 128, 144, 0.0)
+      
+.scrolDown
+    background-color: #2B2B23
+    
+.backgroundTransparent
+    background-color: transparent
+         
+.mCont
+    width: 100%
+    display: flex
+    align-items: center
+    
+.navbar
+    padding: 0
+    width: 100%
+    z-index: 2
+    border-bottom: 1px solid transparent
+        
+.navbar-nav 
+    flex-direction: row
+    margin-left: auto
+    .num-tel
+        display: flex
+        flex-direction: column
+        padding-right: 20px;
+        a
+            color: #fff
+            text-shadow: 1px 1px 1px #D5D5D5
+    .nav-item-zp
+        position: fixed
+        top: 12px
+        left: 250px
+        right: 0
+        p
+            color: #fff
+            margin: 0
+            padding-top: 3px
+            padding-bottom: 2px
+            color: #fff
+            text-shadow: 1px 1px 1px #D5D5D5
+            font-size: 19px
+            
+//     height: 100%
+            
+//             margin-top: auto
+   //         margin-bottom: auto
+                
+.ham
+    right: 0 
+    top: 0
+    position: fixed
+    z-index: 2
+    
+.tr0
+    transition: .1s
+    transform: scaleY(0)
+    transform-origin: top
+    
+.tr1
+    transition: .3s
+    transform: scaleY(1)
+    transform-origin: top
+    
+.color-ham-first
+    stroke: #fff
+    
+.color-ham-last
+    stroke: #f0f0f0
+    
+
+    
+//end header
+
+// first scroll
+    
+.FirstScroll
+    padding-top: 60px
+    width: 100%
+    height: 100%
+    min-height: 100vh
+    position: relative
+    display: flex
+    align-items: center
+    background: url("../image/pamyatnik-poster.png")
+    background-repeat: no-repeat
+    background-size: cover
+    h1
+        text-align: center
+        font-size: 35px
+        font-weight: 700
+        color: #fff
+        line-height: 1.1
+        text-transform: uppercase
+        text-shadow: 1px 1px 1px #FEFEFE, 0 0 1em #a6a7aa
+        border-top: 1px solid #fff
+        border-bottom: 1px solid #fff
+        padding: 20px
+    h2
+        text-align: left
+        font-size: 22px
+        font-weight: 700
+        color: #fff
+        line-height: 1.1
+        text-transform: uppercase
+        text-shadow: 1px 1px 1px #FEFEFE, 0 0 1em #a6a7aa
+        border-bottom: 1px solid #fff
+        padding: 20px
+    p
+        color: #FEFEFE
+        font-size: 22px
+        font-weight: 400
+        text-shadow: 1px 1px 2px #a6a7aa, 1em 2em 5em #5C5F61
+        line-height: 1.4
+    .row
+        height: 100%
+    .trigger
+        margin-top: 5px
+        .stock
+            padding-left: 24px
+            display: inline
+            width: 100%
+            p
+                text-align: left
+            .akcia
+                width: 100%
+                .row
+                    width: 100%
+                    .col-md-6
+                        justify-content: center
+                        p
+                            color: #FF1818
+                            text-shadow: 0px 0px 1px #FF1818
+        div
+            display: flex
+            i
+                font-size: 22px
+                padding-top: 4px
+                color: #fff
+                padding-left: 5px
+            p
+                margin: 0
+                margin-bottom: 10px
+                padding-left: 15px
+            
+        
+.about-us-title-div
+    width: 100%
+    padding-bottom: 20px
+    h2
+        text-align: center
+        margin: auto
+        color: #fff
+        background: rgba(0,0,0,0.5)
+        width: 120px
+        padding-bottom: 5px
+        border-radius: 3px
+        
+.first-scroll-offer
+    padding-bottom: 20px
+    
+        
+.carousel-centered
+    text-align: left
+    .carousel-col
+        padding-bottom: 50px
+        
+.carousel-col-btm
+    text-align: center
+    
+
+    
+    
+            
+// end first scroll
+
+// two scroll 
+
+.TwoScroll
+    height: 100vh
+    height: 100%
+    background: #f0f0f0
+    padding-top: 100px
+    padding-bottom: 100px
+    margin: auto
+    h1
+        color: #515769
+    .container
+        padding: 0
+        
+.two-scr
+    background-color: #fff
+    padding-bottom: 50px
+    padding-left: 20px
+    padding-right: 20px
+    margin: auto
+    
+.our_work
+    text-align: center
+    max-width: 250px
+    margin-top: 50px
+    padding: 0
+    padding-bottom: 10px
+    transition: .7s
+    box-shadow: 1px 1px 1px #B1B2B3, 0.5em 0.5em 0.5em #5C5F61
+    img
+        height: 280px
+        width: 100%
+        margin-bottom: 10px
+    &:hover
+        transition: .7s
+        box-shadow: 2px 2px 1px #E4E9ED, 1em 2em 1em #5C5F61        
+    a
+        color: #4E5967
+        font-weight: 400
+        &:hover
+            transition: .7s
+            text-shadow: 1px 1px 1px #2E2E31
+        
+.our-work-title
+    text-align: center
+    padding: 5px
+    h1
+        margin-top: 15px
+    
+.font-size30
+    font-size: 30px
+    
+
+
+// end two scroll
+
+// About Us
+
+.about-us
+    padding-top: 50px
+    padding-bottom: 50px
+    min-height: 100vh
+    height: 100%
+    display: flex
+    align-items: center
+    h1
+        text-align: center
+        font-size: 75px
+        font-weight: 900
+        animation-name: example
+        animation-duration: 5s
+        animation-iteration-count: infinite
+    .col
+        background-color: rgba(0,0,0,0.5)
+        
+
+// End About Us
+
+
+// FOOTER
+
+.list_
+    list-style: none
+    li
+        display: flex
+        p
+            font-size: 18px
+            padding: 10px
+            text-shadow: 0px 0px 1px #302391
+        i
+            font-size: 25px
+            padding: 10px
+        .fa-viber
+            color: #7B58EA
+        .fa-telegram
+            color: #269EDA
+        
+.footer
+    .footer-list-link
+        color: #5C8288
+
+.footer
+    .footer-list-link
+        &:hover
+            color: #615C88
+        
+.footer
+    .col-sm-7
+        h2
+            padding-bottom: 20px
+        .list_
+            padding-left: 0
+        h4
+            text-shadow: 0px 0px 1px #302391
+            
+        
+        
+// about us
+
+.descr-about-us
+    height: 100%
+    display: flex
+    align-items: center
+    p
+        text-align: center
+        padding: 10px
+        color: #fff
+        text-shadow: 1px 1px 1px #FEFEFE, 0 0 1em #a6a7aa
+    
+
+// end about us
+
+// delivery
+
+.delivery
+    display: flex
+    align-items: center
+    min-height: 100vh
+    background: #fff
+    .container-fluid
+        .button-buy
+            text-align: center
+            margin-top: 50px
+            a
+                border: 1px solid transparent
+                background: #943CC6
+                padding: 15px 30px
+                color: #fff
+                &:hover
+                    border-color: #943CC6
+                    background: #fff
+                    color: #943CC6
+        .delivery-title-div
+            text-align: center
+            padding-bottom: 50px
+    .col
+        text-align: center
+        div
+            p
+                padding-top: 10px
+            
+                
+
+// end delivery
+
+// advantages
+
+            
+.advantages  
+    min-height: 100vh
+    height: 100%
+    .container-fluid
+        text-align: center
+        margin-top: 30px
+        .adv-title
+            margin: auto
+            width: 280px
+            background: #fff
+            transform: skewX(160deg)
+            border: 2px solid #000
+            h2
+                color: #000
+                transform: skewX(-160deg)
+        .cont-columns
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            h2
+                color: #000
+                text-align: center
+            .col-common
+                height: 70%
+                border: 2px solid #000
+                background-color: #fff 
+                transform: skewX(160deg)
+                padding-top: 30px
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7)
+            .col2
+                right: 100px 
+                width: 600px
+                margin-left: 10px
+                display: flex
+                align-items: center
+                padding: 50px
+                p
+                    text-align: center
+                    color: #000
+                    transform: skewX(-160deg)
+            .col1
+                width: 500px
+                margin-right: 10px
+                .adv-col-all
+                    text-align: center
+                    transform: skewX(-160deg)
+                    h2
+                        padding-bottom: 20px
+                        i
+                            margin-right: 20px
+                
+            
+.advantages-desc
+    overflow: hidden
+            
+
+// end advantages
+
+// reviews
+
+.reviews
+    background-color: #FAFAFA
+    
+
+// end reviews
+
+// FEEDBACK
+
+.hidden
+    display: none
+    text-align: center
+    
+.formFb
+    padding: 20px 20px
+    background: rgba(250, 250, 250, .4)
+    max-width: 320px
+    margin: auto
+    position: relative
+    text-align: center
+    border: 2px solid #943CC6
+    border-radius: 3px
+    input
+        width: 100%
+    .input-name
+        margin-top: 35px
+        margin-bottom: 20px
+    .input-phone
+        margin-bottom: 20px
+    button
+        border-radius: 3px
+        padding: 5px 10px
+        
+        
+.btn-disabled
+    border: 2px solid rgba(253, 83, 83, .8)
+    background: rgba(250, 250, 250, .7)
+    &:hover
+        cursor: default
+    
+.btn-enabled
+    background: rgba(250, 250, 250, 1)
+    border: 2px solid rgba(148, 60, 198, .8)
+    &:hover
+        cursor: pointer
+        
+// END FEEDBACK
+        
+    
+        
+        
+        
+
+
+
+        
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+        
+
+
+        
+
+
+    

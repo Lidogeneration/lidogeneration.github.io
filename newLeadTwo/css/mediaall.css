@@ -1,0 +1,115 @@
+@media only screen and (min-width : 1500px) 
+{
+
+}
+@media only screen and (max-width : 1800px)
+{
+
+}
+@media only screen and (max-width : 1600px)
+{
+
+}
+@media only screen and (max-width : 1450px)
+{
+
+}
+@media only screen and (max-width : 1280px)
+{
+
+}
+@media only screen and (max-width : 1200px)
+{
+
+}
+@media only screen and (max-width : 1140px) 
+{
+
+}
+@media only screen and (max-width : 992px)
+{ 
+  .team .teamCont .teamWrap .imgWrap img
+  {
+    width: 70%;
+  }
+
+  .firstScroll .headerCont
+  {
+    text-align: center;
+  }
+  .firstScroll .buttonCont .txtWrap
+  {
+    text-align: center;
+  }
+  h1 
+  {
+    font-size: 1.4rem;
+  }
+  h2 
+  {
+    font-size: 1.3rem;
+  }
+  h3 
+  {
+    font-size: 1.2rem;
+  }
+  h4
+  {
+    font-size: 1.1rem !important;
+  }
+  h5
+  {
+    font-size: 1rem;
+  }
+
+}
+@media only screen and (max-width : 800px)
+{
+
+}
+@media only screen and (max-width : 960px)
+{
+
+}
+@media only screen and (max-width : 768px)
+{
+
+}
+@media only screen and (max-width : 576px)
+{
+  .team .slick-prev
+  {
+    width: 25px;
+    height: 25px;
+    left: 7px;
+  }
+  .team .slick-next
+  {
+    width: 25px;
+    height: 25px;
+    right: 7px;
+  }
+  .slick-prev
+  {
+    width: 25px;
+    height: 25px;
+    left: 7px;
+  }
+ .slick-next
+  {
+    width: 25px;
+    height: 25px;
+    right: 7px;
+
+  }
+}
+@media only screen and (max-width : 511px)
+{
+@media only screen and (max-width : 450px)
+{
+
+}
+@media only screen and (max-width : 400px)
+{
+
+}

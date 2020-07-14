@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+	<meta name="description" CONTENT="<?php bloginfo('description');?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<?php bloginfo('name'); ?><?php wp_title(); ?>" />
+  <meta property="og:description" content="<?php bloginfo('description');?>" />
+  <meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.png">
+  <meta property="og:url" content="ideale" />
+  <meta property="og:site_name" content="ideale" />
+	<link rel="shortcut icon" href="<?php bloginfo(template_url);?>/img/logo.png" />
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+</head>
+
+<body>
+
+<!-- menuBtn start -->
+<!-- <div class="menuBtn menuBtnHide" id="menuBtn">
+	<span></span>
+	<span></span>
+	<span></span>
+</div> -->
+<!-- menuBtn end -->
+
+<!-- navMobile start -->
+<nav class="navMobile navMobileHide" id="navMobile">
+	<div class="navMobile__title">
+		<img src="img/logo.png" alt="">
+		<h4><span>М</span>еню</h4>
+	</div>
+	<!-- /.navMobile__title -->
+	<div class="navMobile__list mb-auto">
+		<ul>
+			<li><a href="#about-link" class="nav-link-new">Про нас</a></li>
+			<li><a href="#how-link" class="nav-link-new">Як ми працюємо</a></li>
+			<li><a href="#adv-link" class="nav-link-new">Переваги</a></li>
+			<li><a href="#cont-link" class="nav-link-new">Контакти</a></li>
+		</ul>
+	</div>
+	<hr>
+	<!-- /.navMobile__list -->
+	<div class="navMobile__contacts">
+		<a href="tel:+380991281212"><i class="fas fa-map-marked-alt mr-2"></i>ул. Независимой Украины
+			72 б </a>
+		<a href="tel:+380991281212" class="mb-1"><i class="fas fa-phone mr-2"></i>+38 (099) 128-12-12</a>
+		<a href="tel:+380631281212"><i class="fas fa-phone mr-2"></i>+38 (063) 128-12-12</a>
+	</div>
+	<!-- /.navMobile__contacts -->
+	<div class="navMobile__social">
+		<a href="#" target="_blank" class="mr-4"><i class="fab fa-facebook-square"></i></a>
+		<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+	</div>
+	<!-- /.navMobile__social -->
+</nav>
+<!-- navMobile end -->
+
+<!-- first start -->
+<section class="first">
+	<div class="container">
+		<div class="first__logo">
+			<img src="img/logo.png" alt="Ирина Бойко">
+		</div>
+		<!-- /.first__logo -->
+		<div class="first__title">
+			<h1>Шикарная женщина.<br>
+				Путь к себе</h1>
+		</div>
+		<!-- /.first__title -->
+		<div class="first__subtitle">
+			<h3>Бесплатный онлайн вебинар 7 марта<br>
+				в 19:00 по времени Киева<br>
+				Участи онлайн из любой точки мира</h3>
+		</div>
+		<!-- /.first__subtitle -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- first end -->
+
+<!-- openform start -->
+<section class="aboutForm order-main">
+	<div class="container">
+		<form class="openFormGor">
+			<h3>Запишитесь на <span>бесплатный</span> онлайн<br>вебинар</h3>
+			<input type="text" name="name" placeholder="Имя" required>
+			<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
+			<button class="disbutt mainBtn" disabled><span>Записаться</span></button>
+			<input name="order" type="hidden" value="Запишитесь на бесплатный онлайн вебинар">
+		</form>
+	</div>
+	<!-- /.container -->
+</section>
+<!-- openform end -->
+
+<!-- about start -->
+<section class="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<div class="about__img">
+					<a href="https://www.youtube.com/watch?v=JHwF6E5V8V4" class="popup-youtube"><img src="img/about.png" alt="Тридцатидневный тренинг шикарная женщина."></a>
+				</div>
+				<!-- /.about__img -->
+			</div>
+			<!-- /.col-lg-7 -->
+			<div class="col-lg-5">
+				<div class="about__text">
+					<div class="about__text-title">
+						<h3>Тридцатидневный тренинг<br>
+							шикарная женщина.<br>
+							Путь к себе!</h3>
+					</div>
+					<!-- /.about__text-title -->
+					<div class="about__text-list">
+						<ul>
+							<li>Остановись и осознай происходящее</li>
+							<li>Обрети внутренюю гармонию</li>
+							<li>Обрети любовь и счастье </li>
+						</ul>
+					</div>
+					<!-- /.about__text-list -->
+					<div class="about__text-btn">
+						<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Тридцатидневный тренинг. Хочу участвовать','Мы перезвоним');">Хочу участвовать</a>
+					</div>
+					<!-- /.about__text-btn -->
+				</div>
+				<!-- /.about__text -->
+			</div>
+			<!-- /.col-lg-5 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- about end -->
+
+<!-- steps start -->
+<section class="steps">
+	<div class="container">
+		<div class="steps__title">
+			<h2>Шикарная женщина. Путь к себе</h2>
+			<h3>Авторский онлайн тренинг от Ирины Бойко</h3>
+		</div>
+		<!-- /.steps__title -->
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="steps__wrap">
+					<div class="steps__wrap-number">
+						<span>1</span>
+					</div>
+					<!-- /.steps__wrap-number -->
+					<div class="steps__wrap-desc">
+						<p>Занятие проходят в онлайн трансляции тридцать дней. Преимущества онлайн тренинга и онлайн обучения нет территориальных ограничений. Вы можете учиться на любимом курсе из любого уголка планеты.</p>
+					</div>
+					<!-- /.steps__wrap-desc -->
+				</div>
+				<!-- /.steps__wrap -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<div class="steps__wrap whiteBg">
+					<div class="steps__wrap-number">
+						<span>2</span>
+					</div>
+					<!-- /.steps__wrap-number -->
+					<div class="steps__wrap-desc">
+						<p>Вы обучаетесь, когда удобно и где удобно. Хоть на любимом диване, хоть в дороге. Утром, днем или поздно вечером.</p>
+					</div>
+					<!-- /.steps__wrap-desc -->
+				</div>
+				<!-- /.steps__wrap -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<div class="steps__wrap whiteBg">
+					<div class="steps__wrap-number">
+						<span>3</span>
+					</div>
+					<!-- /.steps__wrap-number -->
+					<div class="steps__wrap-desc">
+						<p>Вы всегда находитесь на связи через закрытую группу телеграмм, где можете задать вопрос на прямую ведущей тренинга Ирине Бойко и получить ответ!</p>
+					</div>
+					<!-- /.steps__wrap-desc -->
+				</div>
+				<!-- /.steps__wrap -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<div class="steps__wrap ">
+					<div class="steps__wrap-number">
+						<span>4</span>
+					</div>
+					<!-- /.steps__wrap-number -->
+					<div class="steps__wrap-desc">
+						<p>Большой плюс в том, что материалы онлайн - курсов доступны в записи. Даже, если было прямое включение с лектором и вы не смогли его посмотреть, это видео можно будет послушать позже.</p>
+					</div>
+					<!-- /.steps__wrap-desc -->
+				</div>
+				<!-- /.steps__wrap -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row -->
+		<div class="steps__title">
+			<h2>Отзывы участников онлайн тренинга</h2>
+		</div>
+		<!-- /.steps__title -->
+		<div class="row">
+			<div class="col-lg-4 mb-4">
+				<div class="steps__reviews">
+					<img src="img/rev01.png" alt="Отзывы участников онлайн тренинга">
+				</div>
+				<!-- /.steps__reviews -->
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4 mb-4">
+				<div class="steps__reviews">
+					<img src="img/rev02.png" alt="Отзывы участников онлайн тренинга">
+				</div>
+				<!-- /.steps__reviews -->
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4 mb-4">
+				<div class="steps__reviews">
+					<img src="img/rev03.png" alt="Отзывы участников онлайн тренинга">
+				</div>
+				<!-- /.steps__reviews -->
+			</div>
+			<!-- /.col-lg-4 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- steps end -->
+
+<!-- need start -->
+<section class="need">
+	<div class="need__bg"></div>
+	<!-- /.need__bg -->
+	<div class="container">
+		<div class="col-lg-8">
+			<div class="need__desc">
+				<div class="need__desc-title">
+					<h3>После <span>бесплатного</span> онлайн вебинара<br>
+						Вы научитесь:</h3>
+				</div>
+				<!-- /.need__desc-title -->
+				<div class="need__desc-list">
+					<ul>
+						<li>- Легко и быстро, психологически и физически расслабляться,</li>
+						<li>- В нужный момент активизировать мышление,</li>
+						<li>- Упреждать и контролировать стрессовые ситуации,</li>
+						<li>- Улучшить свое здоровье (как физическое, так и психическое),</li>
+						<li>- Пробудить интуицию,</li>
+						<li>- Пробудить и развить творческие способности</li>
+					</ul>
+				</div>
+				<!-- /.need__desc-list -->
+				<div class="need__desc-btn">
+					<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('После бесплатного - Хочу участвовать','Мы перезвоним');">Хочу участвовать</a>					
+				</div>
+				<!-- /.need__desc-btn -->
+			</div>
+			<!-- /.need__desc -->
+		</div>
+		<!-- /.col-lg-6 -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- need end -->
+
+
+<!-- video start -->
+<section class="video">
+	<div class="container">
+		<div class="video__title">
+			<h2>Полезные видео</h2>
+			<h3>Чтобы мы познакомились поближе</h3>
+		</div>
+		<!-- /.video__title -->
+		<div class="row">
+			<div class="col-lg-4 mb-4">
+				<div class="video__wrap">
+					<div class="video__wrap-img">
+						<img src="img/video01.png" alt="Полезные видео">
+						<div class="video__wrap-img-btn">
+							<a href="#" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+						</div>
+						<!-- /.video__wrap-img-btn -->
+						<div class="video__wrap-img-desc">
+							<p>Утренняя Медитация Солнечная энергия</p>
+							<span>YouTube</span>
+						</div>
+						<!-- /.video__wrap-img-desc -->
+					</div>
+					<!-- /.video__wrap-img -->
+				</div>
+				<!-- /.video__wrap -->
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4 mb-4">
+				<div class="video__wrap">
+					<div class="video__wrap-img">
+						<img src="img/video02.png" alt="Полезные видео">
+						<div class="video__wrap-img-btn">
+							<a href="#" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+						</div>
+						<!-- /.video__wrap-img-btn -->
+						<div class="video__wrap-img-desc">
+							<p>Медитация на исполнение желания</p>
+							<span>YouTube</span>
+						</div>
+						<!-- /.video__wrap-img-desc -->
+					</div>
+					<!-- /.video__wrap-img -->
+				</div>
+				<!-- /.video__wrap -->
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4 mb-4">
+				<div class="video__wrap">
+					<div class="video__wrap-img">
+						<img src="img/video03.png" alt="Полезные видео">
+						<div class="video__wrap-img-btn">
+							<a href="#" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+						</div>
+						<!-- /.video__wrap-img-btn -->
+						<div class="video__wrap-img-desc">
+							<p>Медитация расслабления</p>
+							<span>YouTube</span>
+						</div>
+						<!-- /.video__wrap-img-desc -->
+					</div>
+					<!-- /.video__wrap-img -->
+				</div>
+				<!-- /.video__wrap -->
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4 mb-4">
+				<div class="video__wrap">
+					<div class="video__wrap-img">
+						<img src="img/video04.png" alt="Полезные видео">
+						<div class="video__wrap-img-btn">
+							<a href="#" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+						</div>
+						<!-- /.video__wrap-img-btn -->
+						<div class="video__wrap-img-desc">
+							<p>Аффирмации для исцеления</p>
+							<span>YouTube</span>
+						</div>
+						<!-- /.video__wrap-img-desc -->
+					</div>
+					<!-- /.video__wrap-img -->
+				</div>
+				<!-- /.video__wrap -->
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4 mb-4">
+				<div class="video__wrap">
+					<div class="video__wrap-img">
+						<img src="img/video05.png" alt="Полезные видео">
+						<div class="video__wrap-img-btn">
+							<a href="#" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+						</div>
+						<!-- /.video__wrap-img-btn -->
+						<div class="video__wrap-img-desc">
+							<p>Аффирмации на богатство и изобилие жизни</p>
+							<span>YouTube</span>
+						</div>
+						<!-- /.video__wrap-img-desc -->
+					</div>
+					<!-- /.video__wrap-img -->
+				</div>
+				<!-- /.video__wrap -->
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4 mb-4">
+				<div class="video__wrap">
+					<div class="video__wrap-img">
+						<img src="img/video06.png" alt="Полезные видео">
+						<div class="video__wrap-img-btn">
+							<a href="#" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+						</div>
+						<!-- /.video__wrap-img-btn -->
+						<div class="video__wrap-img-desc">
+							<p>Хоопонопоно</p>
+							<span>YouTube</span>
+						</div>
+						<!-- /.video__wrap-img-desc -->
+					</div>
+					<!-- /.video__wrap-img -->
+				</div>
+				<!-- /.video__wrap -->
+			</div>
+			<!-- /.col-lg-4 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- video end -->
+
+
+<!-- author start -->
+<section class="author">
+	<div class="container position-relative">
+		<div class="author__title">
+			<h2>Автор тренинга Шикарная женщина. Путь к себе!</h2>
+		</div>
+		<!-- /.author__title -->
+		<div class="author__desc">
+			<p>Будем знакомы ближе! </p>
+			<p class="mb-3">Я Бойко Ирина Дмитриевна родилась 12 декабря 1980 г. в городе Киеве
+				Мать четверых детей. Имею три высших образования. Два экономических и журналист
+				и теле-радио ведущая. Также множество дипломов из разных направлений. </p>
+			<p><span>Мои Увеличения:</span></p>
+			<p class="mb-3">Визаж, этикет, парикмахер, фотопластика, дефиле, актёрское мастерство , работа в кадре,  риторика и тд. (люблю учится) Лидерские программы , психология, тамалогия , и тд .</p>
+			<p><span>Места работы:</span></p>
+			<p class="mb-3">Я работала в компании Юмоил (Продажа нефти)
+				Работала вице-президентом в Royal Club (сфера услуг доставки)</p>
+			<p><span>Свои собственные направления в бизнесе:</span></p>
+			<p class="mb-3">Я создатель инфо платформы To-be, на данном этапе она продана.
+				Time for Kids это мой действующий Благотворительный фонд. Также имела сеть магазинов одежды и создала продукцию для Spa салона.</p>
+			<p><span>Мои социальные направления:</span></p>
+			<p class="mb-3">Я построила Детский дом в городе Ладыжин  для 65 детей (для детей с ДЦП)
+				По сей день провожу благотворительные акции.</p>
+			<p class="mb-3"><span>Изучаю:</span> психосоматику (Вероятные причины заболеваний и пути к выздоровлению организма человека.) продолжаю по сей день в Академии у Юрия Тархова (практикующий хирург)</p>
+			<p class="mb-3"><span>Обучаюсь:</span> Новой Немецкой медицине у профессора НОЙФЕЛЬДА ( он ученик профессора Хамера). С 2001 года Обучаюсь нетрадиционной медицине и продолжаю учится по сей день.</p>
+			<p class="mb-3"><span>Практикую:</span> ретрит, аскетизм ,тактильное виденье , ясновидение , осознанное сновидение ,регрессивный гипноз практикую уже несколько лет , цифровые коды Гробового. Активный образ жизни!</p>
+			<p>Свою работу я очень люблю !</p>
+			<div class="author__desc-img">
+				<img src="img/author.png" alt="Ирина Бойко">
+			</div>
+			<!-- /.author__desc-img -->
+		</div>
+		<!-- /.author__desc -->
+		<div class="author__name">
+			<h3>Ирина Бойко</h3>
+			<h4>психолог, гипнолог</h4>
+		</div>
+		<!-- /.author__name -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- author end -->
+
+
+<!-- messager start -->
+<section class="messager">
+	<div class="container messager__bg">
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<!-- /.col-lg-1 -->
+			<div class="col-lg-8">
+				<form class="messager__form">
+					<div class="messager__form-desc">
+						<h3>Регестрируйтесь на Вебинар и перезагрузите свое мышление</h3>
+						<p>Оставьте свою почту и номер телефона, выберите удобный мессенджер и мы вышлем ссылку на вебинар, предупредим о начале вебинара и после вебинара вышлем запись вебинара</p>
+						<h4>Выберете удобный для мессенджер:</h4>
+					</div>
+					<!-- /.messager__from-desc -->
+					<div class="messager__form-inputR">
+						<input type="radio" id="fb" name="msg" value="fb" checked>
+						<label for="fb">Facebook massanger</label>
+						<input type="radio" id="wu" name="msg" value="wu">
+						<label for="wu">WhatsUp</label>
+						<input type="radio" id="vb" name="msg" value="vb">
+						<label for="vb">Viber</label>
+						<input type="radio" id="tl" name="msg" value="tl">
+						<label for="tl">Telegramm</label>
+					</div>
+					<!-- /.messager__form-inputR -->
+					<div class="messager__form-input">
+						<input type="email" name="email" placeholder="Email" required>
+						<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
+						<button class="disbutt mainBtn" disabled><span>Записаться</span></button>
+						<input name="order" type="hidden" value="Регестрируйтесь на Вебинар и перезагрузите
+						свое мышление">
+					</div>
+					<!-- /.messager__form-input -->
+				</form>
+				<!-- /.messager__form -->
+			</div>
+			<!-- /.col-lg-10 -->
+			<div class="col-lg-2"></div>
+			<!-- /.col-lg-1 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- messager end -->
+
+<!-- ready start -->
+<section class="ready">
+	<div class="container">
+		<h2>Уже готовы кардинально изменить свою жизнь к лучшему? </h2>
+		<div class="ready__btn">
+			<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Уже готовы кардинально изменить свою жизнь к лучшему?','Мы перезвоним');">Принять участие в тренинге</a>		
+		</div>
+		<!-- /.ready__btn -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- ready end -->
+
+<!-- social start -->
+<section class="social">
+	<div class="social__wrap">
+		<a href="#" target="_blank" class="mr-2"><i class="fab fa-facebook-square"></i></a>
+		<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>		
+	</div>
+	<!-- /.social__wrap -->
+</section>
+<!-- social end -->
+
+<div class="devgen p-1 text-center">
+	<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>
+</div>
+<div class="hidden">
+
+	<form class="openForm d-block mx-auto order-main" id="mpopup-form">
+			<img src="img/logo.png" alt="Ideale">
+			<h3>Заполните форму</h3>
+			<h4><span id="customTextForm">Мы перезвоним</span></h4>
+			<input type="text" name="name" placeholder="Имя" required>
+			<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
+			<button class="disbutt mainBtn" disabled><span>Отправить</span></button>
+			<input name="order" type="hidden" id="input_order">
+			<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+			<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+			<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+			<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+		</form>
+</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
+

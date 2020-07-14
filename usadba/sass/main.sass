@@ -1,0 +1,893 @@
+$main_color: #000
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #DB9C66
+$main_bg: #1F1F1F
+$main_bg_light: #2F2F2F
+$main_red: #C60C38
+$header_font: 'Oranienbaum'
+
+
+body
+	background: $main_white
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+h1, h2, h3, h4, h5
+	font-family: $header_font;
+
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+/* --- menuBtn Start ------------------------------------------------*/
+.menuBtn
+	position: fixed
+	top: 20px
+	right: 20px
+	width: 30px
+	height: 29px
+	z-index: 55
+	display: none
+	justify-content: space-around
+	align-items: center
+	flex-direction: column
+	span
+		transition: .3s
+		transform: rotate(0) translate(0)
+.menuBtnHide
+	span
+		transition: .3s
+		transform: rotate(0) translate(0)
+		display: block
+		width: 100%
+		height: 3px
+		background: $main_rgb
+.menuBtnShow
+	span
+		transition: .3s
+		display: block
+		width: 100%
+		height: 3px
+		background: $main_rgb
+		&:nth-child(1)
+			transform: rotate(45deg)
+		&:nth-child(2)
+			display: none
+		&:nth-child(3)
+			transform: rotate(-45deg) translate(10px, -10px)
+/* --- menuBtn end ------------------------------------------------*/
+
+/* --- Navbar START ------------------------------------------------*/
+.navMobile
+	background: $main_bg
+	padding: 20px 10px
+	min-height: 100vh
+	position: fixed
+	width: 200px
+	right: 0
+	z-index: 50
+	transition: .3s
+	hr
+		background-color: $main_bg_light
+	&__title
+		text-align: center
+		h4
+			margin: 0
+			font-size: 15px
+			text-transform: uppercase
+			color: $main_white
+	&__list
+		margin: 0
+		padding: 0
+		list-style: none
+		ul
+			padding: 0
+			margin: 0
+			list-style: none
+			li
+				margin-bottom: 10px
+				a
+					color: $main_white
+					font-size: 14px
+					text-transform: uppercase
+					font-weight: 300
+					position: relative
+					padding-bottom: 10px
+					&:after
+						transition: .3s
+						position: absolute
+						content: ''
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						border-bottom: 2px solid $main_rgb
+						transform: translateY(50%)
+						opacity: 0
+					&:hover
+						&:after
+							transition: .3s
+							transform: translateY(0)
+							opacity: 1
+				.active
+					&:after
+						transition: .3s
+						transform: translateY(0)
+						opacity: 1
+	&__contacts
+		display: flex
+		flex-direction: column
+		p, a
+			font-size: 14px
+			color: $main_white
+			font-weight: 300
+		a
+			transition: .3s
+			&:hover
+				transition: .3s
+				color: $main_rgb
+	&__social
+		width: 100%
+		display: flex
+		justify-content: space-around
+		a
+			font-size: 30px
+			i
+				color: $main_white
+.navMobileShow
+	transition: .3s
+	transform: translateY(0) !important
+.navMobileHide
+	transition: .3s
+	transform: translateY(-200%) !important
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+
+/* --- Header start------------------------------------------------*/	
+.firstScroll
+	background: linear-gradient(rgba(21, 5, 5, 0.7) 100%, rgba(21, 5, 5, 0.7) 100%), url('../img/firstBg.png')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 15px 0 0 0
+	min-height: 100vh
+	display: flex
+	justify-content: center
+	flex-direction: column
+	align-items: center
+	&__address
+		width: 100%
+		display: flex
+		justify-content: space-around
+		align-items: center
+		margin-bottom: 30px
+		@media (max-width : 992px)
+			display: none
+		&-cont
+			display: flex
+			justify-content: center
+			align-items: center
+			&-img
+				margin-right: 15px
+				img
+					max-width: 100%
+					height: auto
+			&-txt
+				a
+					font-weight: 300
+					color: $main_white
+					transition: .3s
+					&:hover
+						transition: .3s
+						color: $main_rgb
+	&__nav
+		width: 100%
+		display: flex
+		justify-content: space-around
+		align-items: center
+		@media (max-width : 992px)
+			justify-content: center
+			&-list
+				display: none
+		&-logo
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			img
+				max-width: 100%
+				height: auto
+			p
+				padding: 0
+				margin: 0
+				font-size: 12px
+				color: $main_white
+				text-align: center
+				font-family: $header_font
+		&-list
+			ul
+				padding: 0
+				margin: 0
+				list-style: none
+				li
+					display: inline
+					margin-right: 80px
+					overflow: hidden
+					@media (max-width : 1150px)
+						margin-right: 50px
+					&:last-child
+						margin-right: 0
+					a
+						text-transform: uppercase
+						color: $main_white
+						transition: .3s
+						position: relative
+						padding-bottom: 10px
+						&:after
+							transition: .3s
+							position: absolute
+							content: ''
+							top: 0
+							left: 0
+							width: 100%
+							height: 100%
+							border-bottom: 2px solid $main_rgb
+							transform: translateY(50%)
+							opacity: 0
+						&:hover
+							&:after
+								transition: .3s
+								transform: translateY(0)
+								opacity: 1
+	&__title
+		margin-top: auto
+		margin-bottom: auto
+		text-align: center
+		position: relative
+		padding-left: 60px
+		padding-right: 60px
+		h2
+			font-size: 30px
+			text-transform: uppercase
+			color: $main_white
+		h1
+			font-size: 70px
+			text-transform: uppercase
+			color: $main_rgb
+		h3
+			font-size: 20px
+			text-transform: uppercase
+			color: $main_white
+		&-starLeft
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+		&-starRight
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+		@media (max-width : 992px)
+			padding: 10px
+			h2, h3
+				font-size: 15px !important
+			h1
+				font-size: 35px !important
+			&-starLeft, &-starRight
+				display: none
+	&__btn
+		margin-bottom: auto
+		&-title
+			text-align: center
+			margin-bottom: 70px
+			h3
+				font-size: 16px
+				color: $main_white
+				text-transform: uppercase
+		&-cont
+			text-align: center
+/* --- Header END ------------------------------------------------*/	
+
+
+/* --- About Start ------------------------------------------------*/
+.about
+	position: relative
+	padding-bottom: 100px
+	&-cont
+		z-index: 1
+	&__bgSlider
+		position: absolute
+		top: 30px
+		left: 50px
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8)
+		width: 100%
+		height: 100%
+		background: url('../img/aabout.png')
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba($main_color, .5)
+		&:before
+			z-index: -2
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 40px
+			left: 60px
+			border: 10px solid rgba($main_rgb, .5)
+	&__slider
+		&-cont
+			outline: none
+			img
+				width: 100%
+	&__title
+		h2
+			font-size: 36px
+			text-transform: uppercase
+	&__txt
+		p
+			font-weight: 300px
+/* --- About END ------------------------------------------------*/	
+
+
+/* --- whay Start ------------------------------------------------*/
+.whay
+	padding-bottom: 0
+	background: $main_bg
+	&__title
+		margin-bottom: 30px
+		h2
+			font-size: 36px
+			text-transform: uppercase
+			text-align: center
+			color: $main_white
+	&__cont
+		position: relative
+		margin-bottom: 70px	
+		z-index: 1
+		&-img
+			img
+				width: 100%
+				height: auto
+		&-txt
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			background: rgba($main_color, .75)
+			padding: 30px
+			opacity: 0
+			transition: .3s
+			p
+				text-align: center
+				color: $main_white
+		&:hover
+			.whay__cont-txt
+				opacity: 1
+				transition: .3s
+		&:before
+			z-index: -1
+			content: ''
+			position: absolute
+			top: 30px
+			left: -40px	
+			width: 100%
+			height: 100%
+			border: 10px solid rgba($main_rgb, .5)
+/* --- whay END ------------------------------------------------*/	
+
+/* --- ProductAll Start ------------------------------------------------*/
+.reservation
+	padding-bottom: 100px
+	@media (max-width : 992px)
+		padding-bottom: 30px
+	&__cont
+		z-index: 1
+		margin-left: 20px
+		margin-right: 20px
+		@media (max-width : 992px)
+			margin-left: 27px
+			margin-right: 27px
+			margin-bottom: 100px
+	&__bgSlider
+		position: absolute
+		top: 30px
+		left: -50px
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8)
+		width: 100%
+		height: 100%
+		background: url('../img/aabout.png')
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba($main_color, .5)
+		&:before
+			z-index: -2
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 40px
+			left: -60px
+			border: 10px solid rgba($main_rgb, .5)
+	&__slider
+		&-cont
+			outline: none
+			img
+				width: 100%
+	&__title
+		text-align: center
+		margin-bottom: 30px
+		h2
+			font-size: 36px
+			text-transform: uppercase
+/* --- ProductAll END ------------------------------------------------*/	
+
+
+/* --- reservSub Start ------------------------------------------------*/	
+.reservSub
+	&__title
+		margin-bottom: 30px
+		text-align: center
+		h2
+			font-size: 26px
+	&__cont
+		position: relative
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5)
+		height: 100%
+		&-txt
+			height: 100%
+			text-align: center
+			padding: 20px 10px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-direction: column
+			background: rgba($main_color, .4)
+			h3
+				color: $main_white
+				text-transform: uppercase
+				font-size: 36px
+			p
+				font-size: 18px
+				color: $main_white
+			a
+				margin-top: 40px
+/* --- reservSub END ------------------------------------------------*/	
+
+
+
+
+/* --- gallery END ------------------------------------------------*/
+.gallery
+	background: $main_color
+	&__title
+		text-align: center
+		margin-bottom: 30px
+		h2
+			color: $main_white
+			text-transform: uppercase
+			font-size: 36px
+	&__slider
+		&-cont
+			margin-top: 50px
+			margin-bottom: 50px	
+			outline: none
+			a
+				outline: none
+				img
+					max-width: 100%
+					height: auto
+					transition: .3s
+					width: 100%
+					@media (max-width : 992px)
+						width: auto
+						display: block
+						margin-left: auto
+						margin-right: auto
+	.slick-current
+		z-index: 99
+		a
+			img
+				transition: .3s
+				transform: scale(1.15)
+/* --- gallery END ------------------------------------------------*/	
+
+
+/* --- map Start ------------------------------------------------*/
+.map
+	padding: 0
+	&__cont
+		display: flex
+		flex-wrap: wrap
+		&-frame
+			flex-basis: 65%
+			iframe
+				width: 100%
+				height: 100%
+			@media( max-width : 992px)
+				flex-basis: 100%
+				iframe
+					height: 300px
+		&-info
+			flex-basis: 35%
+			text-align: center
+			&-txt
+				text-align: left
+				display: inline-block
+				padding: 50px	20px
+				h2
+					font-size: 36px
+					text-transform: uppercase
+					margin-bottom: 30px
+				ul
+					list-style: none
+					padding-left: 50px
+					li
+						position: relative
+						font-size: 18px
+						margin-bottom: 20px
+						a
+							display: block
+						img
+							position: absolute
+							left: -40px
+							top: 50%
+							transform: translateY(-50%)
+			@media( max-width : 992px)
+				flex-basis: 100%
+			&-social
+				background: $main_color
+				padding: 30px 10px	
+				display: flex
+				justify-content: space-around
+				align-items: center
+				a
+					margin: 5px
+					color: $main_white
+					font-size: 30px
+					transition: .3s
+					&:hover
+						transition: .3s
+						color: $main_rgb
+/* --- map END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/
+.reviews
+	&__title
+		text-align: center
+		margin-bottom: 30px
+		h2
+			font-size: 36px
+			text-transform: uppercase
+	&__slider
+		&-cont
+			position: relative
+			outline: none
+			padding: 50px 30px 30px 30px
+			&-icon
+				position: absolute
+				top: 30px
+				left: 60px
+				img
+					box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2)
+			&-txt
+				box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4)
+				height: 100%
+				text-align: center
+				padding: 20px 10px
+				background: $main_bg
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				&-img
+					margin-bottom: 20px
+					img
+						display: block
+						margin-left: auto
+						margin-right: auto
+						max-width: 100%
+						height: auto
+				p
+					color: $main_white
+					font-size: 14px
+					font-style: italic
+					margin-bottom: 20px
+				h3
+					color: $main_rgb
+					font-style: 16px
+				h4
+					color: $main_white
+					font-style: 16px
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+.contacts
+	padding: 0
+	&__cont
+		display: flex
+		flex-wrap: wrap
+		&-form
+			flex-basis: 50%
+			@media( max-width : 992px)
+				flex-basis: 100%
+		&-info
+			flex-basis: 50%
+			text-align: center
+			@media( max-width : 992px)
+				flex-basis: 100%
+			&-social
+				background: $main_rgb
+				padding: 30px 10px	
+				display: flex
+				justify-content: space-around
+				align-items: center
+				a
+					margin: 5px
+					color: $main_white
+					font-size: 30px
+					transition: .3s
+			&-txt
+				text-align: left
+				display: inline-block
+				padding: 50px	20px 20px 20px
+				h2
+					font-size: 36px
+					text-transform: uppercase
+					margin-bottom: 30px
+				ul
+					list-style: none
+					padding-left: 50px
+					li
+						position: relative
+						font-size: 18px
+						margin-bottom: 20px
+						a
+							display: block
+						img
+							position: absolute
+							left: -40px
+							top: 50%
+							transform: translateY(-50%)
+			&-logo
+				background: $main_bg
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-wrap: wrap
+				padding: 10px
+				&-img
+					margin: 0 5px
+					img
+						max-width: 100%
+						height: auto
+				&-txt
+					margin: 0 5px 
+					p
+						font-family: $header_font
+						font-size: 12px
+						color: $main_white
+						margin: 0
+						padding: 0
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainBtn
+	cursor: pointer
+	display: block
+	text-align: center
+	color: $main_white
+	padding: 15px
+	width: 245px
+	max-width: 100%
+	border: 3px solid $main_rgb
+	font-size: 18px
+	text-transform: uppercase
+	transition: .3s
+	margin-left: auto
+	margin-right: auto
+	&:hover
+		color: $main_white
+		transition: .3s
+		background: $main_rgb
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+.openDark
+	padding: 30px 30px
+	width: 100%
+	height: 100%
+	background: $main_bg
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	h3
+		font-style: 36px
+		color: $main_white
+		margin-bottom: 30px
+	.mainBtn
+		margin-right: 0
+		background: transparent
+		&:hover
+			background: $main_rgb	
+	input
+		width: 100%
+		background: none
+		border: none
+		border: 2px solid transparent
+		border-bottom: 2px solid $main_white
+		margin-bottom: 30px
+		color: $main_white
+		padding: 10px
+		transition: .3s
+		&:focus
+			outline: none
+			border: 2px solid $main_white
+	::placeholder
+		color: $main_white
+	textarea
+		background: transparent
+		border: 2px solid transparent
+		border-bottom: 2px solid $main_white
+		margin-bottom: 20px
+		color: $main_white
+		padding: 10px
+		&:focus
+			outline: none
+			border: 2px solid $main_white
+.openLight
+	padding: 10px
+	h4
+		text-align: center
+		font-size: 18px
+	h5
+		font-size: 16px
+		text-align: center
+	input
+		width: 100%
+		padding: 10px
+		border: 2px solid transparent
+		border-bottom: 2px solid $main_color
+		margin-bottom: 20px
+		transition: .3s
+		&:focus
+			outline: none
+			border: 2px solid $main_rgb
+	.mainBtn
+		background: $main_white
+		color: $main_color
+.formOpen
+	position: relative
+	padding: 30px 20px
+	width: 600px
+	max-width: 100%
+	background: $main_color
+	.mfp-close
+		color: $main_white
+	h3
+		color: $main_white
+		font-size: 36px
+		text-align: center
+	h4
+		color: $main_white
+		font-size: 30px
+		text-align: center
+	input
+		width: 100%
+		background: none
+		border: none
+		border: 2px solid transparent
+		border-bottom: 2px solid $main_white
+		margin-bottom: 30px
+		color: $main_white
+		padding: 10px
+		transition: .3s
+		&:focus
+			outline: none
+			border: 2px solid $main_white
+	::placeholder
+		color: $main_white
+	.mainBtn
+		background: $main_color
+		&:hover
+			background: $main_rgb
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+
+.slick-dots
+	li
+		button
+			&:before
+				font-size: 15px
+				color: $main_rgb !important
+.slick-prev
+	left: -35px
+	width: 40px
+	height: 40px
+	z-index: 99
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 5px solid $main_rgb
+		border-right: 5px solid $main_rgb
+		transform: rotate(-135deg)
+.slick-next
+	right: -35px
+	width: 40px
+	height: 40px
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 5px solid $main_rgb
+		border-right: 5px solid $main_rgb
+		transform: rotate(45deg)
+
+.slick-track
+	display: flex
+	.slick-slide
+		height: auto
+		display: flex
+		flex-direction: column

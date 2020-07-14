@@ -1,0 +1,191 @@
+@media only screen and (max-width: 1048px){
+    .my-header .name-city p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .my-header .my-nav-menu .navbar-nav {
+        padding-left: 5px;
+    }
+    .my-header .my-nav-menu button {
+        margin-left: 5px;
+    }
+    .about-us .container-fluid .video-cont video {
+        display: none;
+    }
+    .product .container .row .col-md-12 .row {
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .about-us .container-fluid .row .col .title-about-us {
+        padding-top: 10px
+    }
+}
+
+@media only screen and (min-width: 992px) /* !!!!! */
+{
+    .my-header ul .navigations{
+        display: flex;
+        align-items: center;
+    }
+    .my-header ul .num-tel a{
+        padding: 0;
+        display: none;
+    }
+    .my-header .my-nav-menu {
+        background: transparent;
+    }
+    .my-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(72,32,119,0.7);
+    }
+}
+
+@media only screen and (max-width: 991px)
+{
+    .my-header .name-city p {
+        display: inline;
+    }
+    .f-scroll {
+        display: none;
+    }
+    .f-scroll-2 {
+        min-height: 100vh;
+        height: 100%;
+        padding-top: 100px;
+    }
+    .my-header .name-city div {
+        display: none;
+    }
+    .my-header .logotip {
+        display: flex;
+    }
+    .my-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: rgba(72,32,119,0.7);
+        display: flex;
+        transition: .3s;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+    .my-header .my-nav-menu {
+        background-color: rgba(72,32,119,0.7);
+    }
+    .my-header ul {
+        display: block;
+    }
+    .my-header .my-nav-menu {
+        padding-bottom: 2px;
+    }
+}
+
+@media only screen and (max-width: 343px){
+     .my-header .name-city p{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 344px) {
+    .my-header .my-nav-menu .navbar-nav .name-city-in-nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 493px)
+{
+    .f-scroll-2 .container-fluid .row .col-md-12 .h2 {
+        font-size: 30px;
+    }
+    .style-p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .our_work {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1054px) {
+    .about-us h1 {
+        font-size: 70px;
+    }
+    .adv-collection div h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+     .about-us h1 {
+        font-size: 70px;
+    }
+}
+
+
+@media only screen and (max-width: 872px) {
+    .about-us h1 {
+        font-size: 50px;
+    }
+    .adv-collection div h2 {
+        font-size: 22px;
+    }
+    .delivery .col img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about-us h1 {
+        font-size: 45px;
+    }
+    .delivery .container-fluid .delivery-title-div {
+        margin-top: 50px;
+    }
+    .arrow-down {
+        display: none;
+    }
+    .arrow-up {
+        display: none;
+    }
+    .product .container .row .col-md-12 .row .col-md-2 {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 689px) {
+    .about-us h1 {
+        font-size: 40px;
+    }
+    .adv-collection div h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .about-us h1 {
+        font-size: 30px;
+    }
+    .adv-collection div h2 {
+        font-size: 18px;
+    }
+}
+
+/* about us -------------------- */
+
+
+/* and about us ---------------- */
+
+
+

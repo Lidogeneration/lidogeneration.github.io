@@ -1,0 +1,236 @@
+
+
+$(function(){
+
+
+	///////////////////////////
+	// On Scroll
+	// $(window).on('scroll', function() {
+	// 	var wScroll = $(this).scrollTop();
+	// 	// Fixed nav
+	// 	wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
+
+	// 	// Back To Top Appear
+	// 	wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+	// });
+    $(function(){ 
+        var navMain = $(".navbar-collapse"); // avoid dependency on #id
+        // "a:not([data-toggle])" - to avoid issues caused
+        // when you have dropdown inside navbar
+        navMain.on("click", "a:not([data-toggle])", null, function () {
+            navMain.collapse('hide');
+        });
+    });
+    $(document).click(function(event) {
+        $(event.target).closest(".navbar").length || $(".navbar-collapse.show").length && $(".navbar-collapse.show").collapse("hide")
+      });
+
+
+  
+$('.nav-link-new').mPageScroll2id();
+$('.mpopup').magnificPopup();
+
+
+$('.phoneidcl').inputmask('+38(999) 999-99-99',{ "oncomplete": function(){ 
+    $(".disbutt").prop("disabled", false);
+}, "onincomplete": function(){ $(".disbutt").prop("disabled", true); } });
+
+
+
+});
+
+$(function() {
+    var header = $("#myHeaderId");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 500) {
+            header.removeClass("scrollfirs").addClass("scroll");
+        } else {
+            header.removeClass("scroll").addClass("scrollfirs");
+        }
+    });
+});
+
+jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+                delay: 5,
+                time: 2000
+        });
+});
+
+
+$(document).ready(function(){
+    $('.order-main').submit(function(e){
+        e.preventDefault();
+        $.magnificPopup.close(); 
+        $(".disbutt").prop("disabled", true);
+        $.ajax({
+            type:'POST',
+            url:'/wp-content/themes/led/tele_order.php',
+            data: $(this).serialize()
+        }).done(function(){
+                $.magnificPopup.close(); 
+            setTimeout(function(){
+                window.location = 'done';
+            },1);
+        });
+        });
+    });
+
+
+
+const nameScroll = document.getElementById('input_order');
+const customTextFormSpan = document.getElementById('customTextForm');
+
+  function setNameScroll(namescroll, customTextFormSpanF) {
+      
+      nameScroll.value = namescroll;
+      customTextFormSpan.textContent = customTextFormSpanF;
+    };
+
+const videoCont = document.getElementById('videoCond');
+const navBarMy = document.getElementById('nav');   
+  
+
+window.onload = function()
+{
+    videoCenter();
+};
+
+window.onscroll = function () {
+    navBarInit();
+};
+
+window.onresize = function()
+{    
+    videoCenter();
+    navBarInit();
+}
+
+function ready()
+{
+    setTimeout(headerShow,6000);
+    AOS.init();
+    if(window.innerWidth <= 1200)
+    {
+        // AOS.init({
+        //     disable: true,
+        // });
+        //navBarMy.classList.add('fixed-nav');
+    }
+    else
+    {
+        // AOS.init({
+        //     disable: false,
+        // });
+    }
+    navBarInit();
+};
+
+
+document.addEventListener("DOMContentLoaded", ready);
+
+
+function navBarInit(){
+    if(navBarMy){
+        if(document.documentElement.scrollTop > 0 || window.innerWidth <= 1200)
+        {
+            navBarMy.classList.add('fixed-nav');
+        }
+        else
+        {
+            navBarMy.classList.remove('fixed-nav');
+        }
+    }
+
+};
+
+particlesJS.load('particles-js', 'js/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});
+
+const videoSrc = document.getElementById('videoSrc'); 
+
+function videoCenter(){
+    console.log(videoSrc.offsetWidth);
+    videoCont.style.left ='-'+ ((videoSrc.offsetWidth-window.innerWidth)/2) + 'px';
+
+    
+}
+const headerF = document.getElementById('mainHeader');
+const headerM = document.getElementById('mobileHeader');
+function headerShow(){
+    headerF.style.opacity = 1;
+    headerM.style.opacity = 1;
+}
+
+
+$('.where__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    dots: false,
+    arrows: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+            }
+        }
+    ]
+});
+
+$('.certificate__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    dots: false,
+    arrows: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+            }
+        }
+    ]
+});
+
+$('.insta__slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    dots: false,
+    arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+            }
+        }
+    ]
+});

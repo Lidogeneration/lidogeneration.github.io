@@ -1,0 +1,640 @@
+$main_color: #111
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #436280
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+
+
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transform: translateY(-150%)
+	transition: 0.5s
+	background: rgba(255,255,255, 0)
+	.navbar-brand
+		padding: 0
+	img
+		width: 100px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_white
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_rgb
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		text-shadow: 0px 0px 20px $main_white
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	transform: translateY(0)
+	.anim
+		span
+			color: $main_color
+	p
+		color: $main_color
+	background: rgba(255,255,255, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+
+/* --- firstScroll start------------------------------------------------*/	
+.firstScroll
+	padding: 10px 0 10px 0
+	min-height: 100vh
+	background: linear-gradient(rgba($main_white, .5) 100%, rgba($main_white, .5) 100%), url('../img/mainBg.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	.logoCont
+		margin-bottom: 20px
+		min-height: 120px
+		width: 90%
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		.logoWrap
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			img
+				max-width: 100%
+				height: auto
+		.telWrap
+			margin-left: auto
+			padding: 10px
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+		.btnWrap
+			padding: 10px
+	.staticNav
+		overflow: hidden
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 10px
+		ul
+			overflow: hidden
+			padding: 10px
+			border-top: 2px solid $main_color
+			border-bottom: 2px solid $main_color
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 90%
+			list-style: none
+			li
+				margin: 10px 20px 10px 20px
+				text-transform: uppercase
+				font-weight: bold
+				transition: .3s
+				position: relative
+				cursor: pointer
+				&:after
+					position: absolute
+					content: ''
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 2px
+					background: $main_rgb
+					transform: translateY(1200%)
+					transition: .3s
+				&:hover
+					&:after
+						transform: translateY(0)
+						transition: .3s
+	.titleCont
+		padding: 10px
+		.titleWrap
+			margin-bottom: 20px
+			h1
+				text-align: center
+				font-weight: 700
+				text-transform: uppercase
+				font-size: 50px
+		.listWrap
+			padding: 10px
+			width: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			ul
+				padding-left: 20px
+				list-style: none
+				li
+					padding: 5px
+					position: relative
+					border-bottom: 2px solid $main_rgb
+					text-transform: uppercase
+					font-weight: 500
+					font-size: 20px
+					i
+						font-size: 24px
+						position: absolute
+						top: 50%
+						left: -15px
+						transform: translateY(-50%)	
+/* --- firstScroll END ------------------------------------------------*/	
+
+
+/* --- works Start ------------------------------------------------*/
+.works
+	.advCont
+		border: 2px solid $main_color
+		background: $main_bg
+		box-shadow: 10px 10px 0 0 $main_rgb
+		height: 100%
+		.imgWrap
+			img
+				max-width: 100%	
+				height: auto
+				width: 100%
+		.txtWrap
+			padding: 10px
+			background: $main_bg
+			p
+				font-size: 20px
+				text-transform: uppercase
+				text-align: center
+				font-weight: 500
+				padding: 0
+				margin: 0
+	.sliderWorks
+		padding: 20px
+		.sliderWrap
+			display: flex
+			justify-content: space-around
+			box-shadow: 0px 0px 10px 1px rgba($main_color, .2)
+			border-right: 5px solid $main_rgb
+			border-left: 5px solid $main_rgb
+			background: $main_rgb
+			margin: 20px
+			.titleWrap
+				text-align: center
+				padding: 10px
+				background: $main_rgb
+				h3
+					text-transform: uppercase
+					color: $main_white
+					margin: 0
+					padding: 0
+			.imgWrap
+				img
+					width: 100%
+					max-width: 100%
+					height: auto
+			.txtWrap
+				padding: 10px
+				background: $main_rgb
+				p
+					color: $main_white
+					margin: 0
+					padding: 0			
+/* --- works END ------------------------------------------------*/	
+
+
+/* --- product Start ------------------------------------------------*/
+.prod
+	padding: 50px 10px
+	background: $main_bg
+	.totleMainCont
+		h2
+			background: $main_bg
+	.subTitleMainCont
+		padding: 10px
+		margin-bottom: 20px
+		border-top: 2px solid $main_color
+		border-bottom: 2px solid $main_color
+		h3
+			margin: 0
+			padding: 0
+			text-align: center
+			font-weight: 700
+			text-transform: uppercase
+	.prodCont
+		padding: 10px
+		box-shadow: 0px 0px 10px 1px rgba($main_color, .2)
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		align-items: center
+		margin: 10px
+		background: $main_white
+		.titleWrap
+			padding: 15px
+			background: $main_bg
+			h4
+				margin: 0
+				padding: 0
+		.imgWrap
+			img
+				width: 100%
+				max-width: 100%
+				height: auto
+		.btnWrap
+			padding: 15px		
+/* --- product END ------------------------------------------------*/	
+
+/* --- maket Start ------------------------------------------------*/
+.maket
+	background: url('../img/maketBg.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	display: flex
+	justify-content: flex-end
+/* --- maket END ------------------------------------------------*/	
+
+
+/* --- videoWork Start ------------------------------------------------*/	
+.videoWork
+	position: relative
+	background: $main_bg
+	.totleMainCont
+		h2
+			background: $main_bg
+	.videoCont
+		box-shadow: 0px 0px 10px 1px rgba($main_color, .3)
+		border: 5px solid $main_rgb
+	.bgS
+		position: absolute
+		right: 10px
+		bottom: 10px
+		i
+			font-size: 500px	
+			opacity: .2
+/* --- videoWork END ------------------------------------------------*/	
+
+
+
+/* --- reviews Start ------------------------------------------------*/
+.reviews
+	.rewSlider
+		padding: 20px
+		.revWrap
+			position: relative
+			color: $main_white
+			background: $main_rgb
+			margin: 20px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			flex-wrap: nowrap
+			.bgS
+				position: absolute
+				top: 10px	
+				left: 10px	
+				i
+					font-size: 30px
+			.imgWrap
+				border: 2px solid $main_white
+				box-shadow: 0px 0px 10px 1px rgba($main_color, .4)
+			.txtCont
+				padding: 10px
+				.titleWrap
+					background: $main_white
+					color: $main_color
+					padding: 10px 5px
+					h5
+						padding: 0
+						margin: 0
+
+
+/* --- reviews END ------------------------------------------------*/	
+
+/* --- sert END ------------------------------------------------*/
+.sert
+	text-align: center
+	padding: 50px
+	background: $main_bg_light
+	.totleMainCont
+		h2
+			background: $main_bg_light
+	.sertCont
+		outline: none
+		padding: 10px
+		margin: 20px
+		.sertWrap
+			padding: 30px
+			outline: none
+			a
+				outline: none
+			img
+				max-width: 100%
+				height: auto
+/* --- sert END ------------------------------------------------*/		
+
+
+/* --- contacts start ------------------------------------------------*/
+.contacts
+	background: $main_bg
+	.contactCont
+		display: inline-block
+		text-align: left
+		color: $main_color
+		hr
+			border: 1px solid $main_rgb
+			background-color: $main_rgb
+			width: 40%
+			margin-left: 0
+			margin-right: auto
+		.contactWrap
+			padding-left: 20px
+
+			a
+				margin-left: 20px
+				display: block
+				color: $main_color
+				i
+					color: $main_rgb
+					font-size: 20px
+					margin-right: 5px
+		.socIcon
+			a
+				display: inline
+				i
+					font-size: 40px
+				&:nth-child(1)
+					i
+						color: 	#3b5998
+				&:nth-child(2)
+					i
+						color: #833AB4
+	iframe
+		width: 100%
+/* --- contacts END ------------------------------------------------*/
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainBtn
+	background: rgba($main_bg, .5)
+	transition: .3s
+	text-transform: uppercase
+	font-weight: 500
+	text-align: center
+	border: 2px solid $main_color
+	padding: 10px
+	width: 250px
+	display: block
+	max-width: 100%
+	margin-left: auto
+	margin-right: auto
+	&:hover
+		background: $main_white
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+.formOpen
+	border: 1px solid $main_rgb
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	background: $main_white
+	margin: 10px
+	padding: 40px 10px
+	text-align: center
+	min-height: 400px
+	h3
+		font-weight: bold
+		text-transform: uppercase
+		margin-bottom: 20px
+	h4
+		background: $main_rgb
+		color: $main_white
+		padding: 10px
+		margin-bottom: 20px
+	h5
+		margin-bottom: 20px
+	input
+		width: 300px
+		margin-bottom: 20px
+		padding: 10px
+		text-transform: uppercase
+		text-align: center
+		border: 1px solid $main_rgb
+	.mainBtn
+		width: 300px
+		color: $main_color
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+
+
+.totleMainCont
+	text-align: center
+	margin-bottom: 50px
+	padding: 10px
+	h2
+		font-weight: 500
+		text-transform: uppercase
+		margin: 0
+		display: inline-block
+		background: $main_white
+		position: relative
+		padding: 10px
+		&:before
+			content: ''
+			z-index: 1
+			position: absolute
+			width: 50%
+			height: 15px
+			top: -25%
+			left: 50%
+			transform: translateX(-50%)
+			border-top: 5px solid rgba($main_color, .5)
+			border-right: 5px solid rgba($main_color, .5)
+			border-left: 5px solid rgba($main_color, .5)
+		&:after
+			content: ''
+			z-index: 1
+			position: absolute
+			width: 50%
+			height: 15px
+			bottom: -25%
+			left: 50%
+			transform: translateX(-50%)
+			border-bottom: 5px solid rgba($main_color, .5)
+			border-right: 5px solid rgba($main_color, .5)
+			border-left: 5px solid rgba($main_color, .5)
+
+
+
+.slick-dots
+	li
+		button
+			&:before
+				font-size: 15px
+				color: $main_rgb !important
+.slick-prev
+	left: 10px
+	width: 40px
+	height: 40px
+	z-index: 99
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 5px solid $main_rgb
+		border-right: 5px solid $main_rgb
+		transform: rotate(-135deg)
+.slick-next
+	right: 10px
+	width: 40px
+	height: 40px
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 5px solid $main_rgb
+		border-right: 5px solid $main_rgb
+		transform: rotate(45deg)
+
+.slick-track
+	display: flex
+	.slick-slide
+		height: auto
+		display: flex
+		flex-direction: column

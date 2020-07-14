@@ -1,0 +1,193 @@
+$main_color: #545454
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #0a1992
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+
+
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.firstscroll
+	padding: 0
+	display: flex
+	flex-direction: column
+	.myNavBar
+		padding: 5px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		align-items: center
+		.logoWrap
+			width: 20%
+			img
+				display: block
+				margin-left: auto
+				margin-right: auto
+				max-width: 100%
+				height: auto
+		.txtWrap
+			width: 60%
+			text-align: center
+			h3
+				padding: 0
+				margin: 0
+		.btnCont
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			width: 20%
+			.btnWrap
+				margin: 20px
+	.mainCont
+		.sliderWrap
+			position: relative
+			.listWrap
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				left: 10%
+				p
+					font-size: 40px
+					font-weight: bold
+					color: $main_white
+				ul
+					li
+						font-size: 30px
+						color: $main_white
+			img
+				display: block
+				max-width: 100%
+				height: auto
+/* --- Header END ------------------------------------------------*/	
+
+
+/* --- About Start ------------------------------------------------*/
+.tmp
+	min-height: 100vh
+	background: $main_color
+/* --- About END ------------------------------------------------*/	
+
+
+/* --- product Start ------------------------------------------------*/
+/* --- product END ------------------------------------------------*/	
+
+/* --- ProductAll Start ------------------------------------------------*/
+/* --- ProductAll END ------------------------------------------------*/	
+
+
+/* --- dropshipping Start ------------------------------------------------*/	
+/* --- dropshipping END ------------------------------------------------*/	
+
+
+
+
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/	
+
+
+/* --- advantage Start ------------------------------------------------*/	
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainBytn
+	text-align: center
+	max-width: 100%
+	display: block
+	padding: 10px
+	text-transform: uppercase
+	border: none
+	background: $main_color
+	color: $main_white
+	border-radius: 5px
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+.slick-dotted.slick-slider
+	margin: 0
+.slick-dots
+	bottom: 10px
+	li
+		button
+			&:before
+				font-size: 15px
+				color: $main_white !important
+.slick-prev
+	left: 20px
+	width: 40px
+	height: 40px
+	z-index: 99
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 5px solid $main_white
+		border-right: 5px solid $main_white
+		transform: rotate(-135deg)
+.slick-next
+	right: 20px
+	width: 40px
+	height: 40px
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 5px solid $main_white
+		border-right: 5px solid $main_white
+		transform: rotate(45deg)

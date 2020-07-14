@@ -1,0 +1,825 @@
+$main_color: #373737
+$main_color_light: #333
+$main_white: #fff
+$main_bg: #1BA7B9
+$main_bg_light: #09c7e0
+$main_bg_light1: rgba(27, 167, 185, .1)
+$main_bg_light2: rgba(27, 167, 185, .2)
+$main_bg_light4: rgba(27, 167, 185, .4)
+$main_bg_light8: rgba(27, 167, 185, .8)
+$main_bg_grey_light: #F6F6F6
+$main_bg_grey: #8c8c8c
+$main_red: #A60E02
+$main_yellow: #F9F871
+
+body
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	background: $main_color_light
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+section
+	padding: 50px 0
+	overflow: hidden
+.hidden
+	display: none
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, .9)
+	.navbar-brand
+		padding: 0
+	img
+		width: 80px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			transition: 0.5s
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: $main_bg
+			transform-origin: bottom
+			transform: scaleY(0)
+		&:hover
+			span
+				color: $main_white
+				mix-blend-mode: screen
+			&:before
+				transform: scaleY(1)
+	p
+		color: $main_color
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none!important
+.active
+	position: relative
+	overflow: hidden
+	span
+	&:after
+		border-bottom: 2px solid $main_color
+		transition: 0.5s
+		position: absolute
+		content: ''
+		background: rgba(255,255,255, 0)
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	background: rgba(255,255,255, 0.9)
+	color: $main_color
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+.navbar-nav
+	text-align: center
+/* --- Navbar END ------------------------------------------------*/
+
+
+/* --- Header start------------------------------------------------*/	
+.headerCont
+	overflow: hidden
+	padding: 30px 0 
+	min-height: 77vh
+	background: url('../img/headerbg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-attachment: fixed
+	h1
+		font-size: 2rem
+
+	h1, h3
+		text-transform: uppercase
+		span
+			color: $main_white
+	.container-fluid
+		margin-top: 40px
+	.text-wrap
+		padding: 10px
+		position: relative
+		border: 2px solid $main_bg
+		background: $main_bg_light2
+		&:before
+			background: $main_bg_light1
+			box-shadow: 0 0 15px $main_bg_light1
+			content: ''
+			position: absolute
+			top: 7%
+			left: 5%
+			width: 100%
+			height: 100%
+		ul
+			list-style: none
+			li
+				background: rgba(27, 167, 185, .2)
+				padding: 5px 5px 5px 10px
+				font-size: 20px
+				margin-bottom: 20px
+				margin-top: 5px
+				border-bottom: 2px solid $main_bg_light
+				border-left: 2px solid $main_bg_light
+				transition: 0.3s
+	.img-wrap
+		img
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+/* --- Header END ------------------------------------------------*/	
+
+
+
+
+/* --- priceSmall Start ------------------------------------------------*/	
+.priceSmall
+	padding: 20px 0
+	background-image: radial-gradient(circle, #09c7e0, #10bfd6, #15b7cc, #18afc3, #1ba7b9);
+	color: $main_white
+	border-top: 2px solid $main_bg
+	border-bottom: 2px solid $main_bg
+	h3
+		text-transform: uppercase
+		position: relative
+		i
+			color: $main_yellow
+		span
+			color: $main_yellow
+/* --- priceSmall END ------------------------------------------------*/	
+
+
+
+/* --- About Start ------------------------------------------------*/	
+.about
+	min-height: 50vh
+	background: url('../img/about.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-attachment: fixed
+	.img-wrap
+		border: 2px solid $main_bg
+	.text-wrap
+		overflow: hidden
+		padding: 15px
+		background: $main_bg_light8
+		color: $main_white
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+		p
+			text-indent: 25px
+		span
+			color: $main_yellow
+		hr
+			background-color: $main_white
+		ul
+			margin: 10px
+			background: linear-gradient(90deg, rgba(27,167,185,1) 0%, rgba(9,199,224,1) 91%)
+			padding: 10px
+			list-style: none
+			transition: 0.5s
+			li
+				padding: 5px
+				transition: 0.5s
+				&:hover
+					background: $main_bg
+					i
+						transition: 0.5s
+						color: $main_red
+				i
+					transition: 0.5s
+					margin-right: 10px
+					color: $main_yellow
+				
+/* --- About END ------------------------------------------------*/		
+
+
+
+/* --- product Start ------------------------------------------------*/	
+.productHit
+	background: url('../img/prodbg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-attachment: fixed
+	border-top: 1px solid $main_bg
+	.prod-wrap
+		border: 1px solid $main_bg
+	.rowMain
+		border: 2px solid $main_bg
+		padding: 30px 0 30px 0
+		margin: 10px
+		background: $main_bg_light8
+		h3
+			text-align: center
+			padding: 5px 30px
+			text-transform: uppercase
+			background: $main_bg_light
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+			position: relative
+			span
+				mix-blend-mode: screen
+				color: $main_yellow
+			&:before
+				position: absolute
+				content: ''
+				top: 10%
+				left: 0
+				width: 100%
+				height: 80%
+				background: $main_bg
+				transform: scaleX(0)
+				transform-origin: left
+				transition: 0.5s
+				animation: animTest 10s linear infinite
+			// &:hover
+			// 	&:before
+			// 		transition: 0.5s
+			// 		transform: scaleX(1)
+		.prod-wrap
+			padding: 0
+			box-shadow: 0 0 10px rgba(0, 0, 0, .8)
+			margin-bottom: 30px
+			.img-wrap
+				background: $main_bg
+				overflow: hidden
+				transition: 0.3s
+				img
+					transition: 0.3s
+				&:hover
+					img
+						transform: scale(1.2)
+			.text-wrap
+				background: $main_bg
+				padding: 10px 0 20px 0
+				text-align: center
+				h4
+					color: $main_white
+					text-transform: uppercase
+					margin: 0
+					padding: 10px 10px 20px 10px
+
+@keyframes animTest
+	0%
+		transform-origin: left
+		transform: scaleX(0)
+	49%
+		transform-origin: left
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.openformScroll
+	padding: 50px 10px
+	min-height: 100vh
+	background: url('../img/openScrollbg.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	background-attachment: fixed
+	margin: 20px 0 20px 0
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+	h2
+		box-shadow: 10px 10px 0px 0px $main_white
+		background: rgba(255,255,255, .3)
+		text-transform: uppercase
+		padding: 30px 20px 30px 20px
+		display: inline-block
+		color: $main_white
+		border: 2px solid $main_white
+		span
+			color: $main_yellow
+/* --- product END ------------------------------------------------*/	
+
+
+/* --- advantage START ------------------------------------------------*/	
+.advantage
+	background: #fff
+	border-top: 1px solid $main_bg
+	border-bottom: 1px solid $main_bg
+	.textWrap
+		background: $main_bg_light
+		height: 100%
+		border: 2px solid $main_bg
+		transition: 0.5s
+		&:hover
+			transition: 0.5s
+			box-shadow: 0 0 15px $main_bg_light8
+			h4
+				transition: 0.3s
+				color: $main_yellow
+		h4
+			transition: 0.3s
+			background: $main_bg
+			color: $main_white
+			padding: 10px 5px 10px 5px
+			margin: 0
+			text-transform: uppercase
+		p
+			color: $main_white
+			background: $main_bg_light
+			margin: 0
+			padding: 10px 5px 10px 5px
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- steps start ------------------------------------------------*/	
+.steps
+	background: url('../img/stepsBg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-attachment: fixed
+	.textWrap
+		display: block
+		height: 100%
+		text-align: center
+		border: 2px solid $main_bg
+		background: url('../img/stepsL.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		padding: 30px 10px 20px 10px
+		transition: 0.3s
+		box-shadow: 0 0 5px rgba(0,0,0,.5)
+		&:hover
+			transition: 0.3s
+			transform: scale(1.03)
+			i
+				transition: 0.3s
+				margin-left: 10px
+			p
+				transition: 0.3s
+				background: $main_bg
+				color: $main_white
+				span
+					transition: 0.3s
+					color: $main_yellow
+		hr
+			background-color: $main_bg
+		i
+			transition: 0.3s
+			color: $main_bg
+		h4
+			text-transform: uppercase
+			font-size: 1.1rem
+		.icon
+			font-size: 36px
+			margin: 10px
+		p
+			transition: 0.3s
+			padding: 20px 10px 20px 10px
+			font-size: 20px
+			background: $main_bg_light2
+			span
+				transition: 0.3s
+				text-transform: uppercase
+				color: $main_bg
+/* --- steps END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/	
+.reviews
+	background: url('../img/headerbg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-attachment: fixed
+	.slick-prev
+		z-index: 999
+		left: 5%
+		position: absolute
+		width: 30px
+		height: 30px
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-left: 3px solid $main_red
+			border-top: 3px solid $main_red
+			color: #000
+			transform: rotate(-45deg)
+	.slick-next
+		z-index: 999
+		right: 5%
+		position: absolute
+		width: 30px
+		height: 30px
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-right: 3px solid $main_red
+			border-top: 3px solid $main_red
+			color: #000
+			transform: rotate(45deg)
+	.slickWrap
+		position: relative
+		margin-top: 20px
+		.slickCont
+			&:focus
+				outline: none
+			img
+				width: 300px
+				display: block
+				margin-left: auto
+				margin-right: auto
+/* --- reviews END ------------------------------------------------*/	
+
+
+/* --- together start ------------------------------------------------*/
+.together
+	background: $main_white
+	img
+		max-width: 100%
+		height: auto
+		display: block
+		margin-left: auto
+		margin-right: auto
+	.wrapper
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.3)
+		display: block
+		height: 100%
+		background: $main_bg_light
+		transition: 0.5s
+		h5
+			transition: 0.5s
+		&:hover
+			transition: 0.5s
+			background: $main_bg
+			h5
+				transition: 0.5s
+				color: $main_yellow
+			.logoCont, .imgCont
+				border: 2px solid $main_bg
+		.logoCont
+			border: 2px solid $main_bg_light
+			padding: 20px
+			img
+				width: 70%
+				border: 2px solid $main_bg_light
+		.imgCont
+			border: 2px solid $main_bg_light
+			overflow: hidden
+			img
+				transition: 0.5s
+				&:hover
+					transition: 0.5s
+					transform: scale(1.1)
+		.textCont
+			padding: 10px
+			color: $main_white
+/* --- together END ------------------------------------------------*/	
+
+
+
+
+
+
+/* --- contacts START ------------------------------------------------*/
+.contacts
+	background-image: linear-gradient(to right bottom, #1ba7b9, #18afc3, #15b7cc, #10bfd6, #09c7e0)
+	color: $main_white
+	a
+		transition: 0.3s
+		color: $main_white
+		&:hover
+			transition: 0.3s
+			color: $main_red
+		i
+			margin-right: 15px
+			font-size: 30px
+	h4
+		margin-bottom: 5px
+	.borderRight
+		border-right: 2px solid $main_white
+	p
+		text-indent: 20px
+		margin: 0
+		a
+			color: $main_white
+/* --- contacts END ------------------------------------------------*/	
+
+
+/* --- Form Start ------------------------------------------------*/	
+.openFormVer
+	text-align: center
+	display: block
+	margin-left: auto
+	margin-right: auto
+	width: 300px
+	max-width: 100%
+	padding: 20px 10px 20px 10px
+	border: 2px solid $main_white
+	h3
+		font-size: 1.6rem
+	input
+		text-align: center
+		padding: 5px
+		width: 90%
+		margin: 10px 0 10px 0
+		border: none
+		box-shadow: 0 0 5px rgba(0,0,0,.5)
+	.buttonOpenForm
+		margin: 20px
+		cursor: pointer
+		border: none
+		font-size: 20px
+		text-transform: uppercase
+		padding: 5px 30px
+		background: rgba(255,255,255, .4)
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+		position: relative
+		color: red
+		transition: 0.3s
+		span
+			transition: 0.3s
+			color: white
+			mix-blend-mode: screen
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: $main_bg
+			transform-origin: bottom
+			transform: scaleY(0)
+		&:hover
+			&:before
+				transform: scaleY(1)
+.openFormHor
+	width: 100%
+	display: block
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	input
+		font-size: 20px
+		margin: 20px
+		padding: 10px
+		text-align: center
+		border: none
+		border-bottom: 2px solid $main_red
+		border-left: 2px solid $main_red
+		outline: none
+		background: rgba(255,255,255, .4)
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+		transition: 0.3s
+		&:hover
+			transition: 0.3s
+			background: rgba(255,255,255, .2)
+	::placeholder
+			color: $main_white
+	.buttonOpenForm
+		margin: 20px
+		cursor: pointer
+		border: none
+		font-size: 20px
+		text-transform: uppercase
+		padding: 10px 30px
+		background: rgba(255,255,255, .4)
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+		position: relative
+		color: red
+		transition: 0.3s
+		span
+			transition: 0.3s
+			color: white
+			mix-blend-mode: screen
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: $main_bg
+			transform-origin: bottom
+			transform: scaleY(0)
+		&:hover
+			&:before
+				transform: scaleY(1)
+.scrollForm
+	text-align: center
+	padding: 20px 10px 20px 10px
+	max-width: 300px
+	border: 2px solid $main_white
+	box-shadow: 10px 10px 0px 0px $main_white
+	background: rgba(255,255,255, .5)
+	h3
+		color: $main_white
+	input
+		color: $main_white
+		font-size: 20px
+		text-align: center
+		width: 90%
+		margin: 10px 0 10px 0
+		border: none
+		border-bottom: 1px solid $main_white
+		background: rgba(0,0,0, .3)
+		padding: 10px 5px 10px 5px
+	::placeholder
+		color: $main_yellow
+	.buttonOpenForm
+		margin: 20px
+		cursor: pointer
+		border: none
+		font-size: 20px
+		text-transform: uppercase
+		padding: 10px 30px
+		background: $main_bg_light4
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+		position: relative
+		color: red
+		transition: 0.3s
+		span
+			transition: 0.3s
+			color: white
+			mix-blend-mode: screen
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: $main_bg
+			transform-origin: bottom
+			transform: scaleY(0)
+		&:hover
+			&:before
+				transform: scaleY(1)
+		&:disabled
+			background: $main_bg_grey
+			&:hover
+				&:before
+					transform: scaleY(0)
+/* --- Form END ------------------------------------------------*/		
+
+
+	
+/* --- Button START ------------------------------------------------*/		
+.buttonMain
+	margin: 20px
+	cursor: pointer
+	border: none
+	font-size: 20px
+	text-transform: uppercase
+	padding: 10px 30px
+	background: rgba(255,255,255, .4)
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+	position: relative
+	color: red
+	transition: 0.3s
+	span
+		transition: 0.3s
+		color: white
+		mix-blend-mode: screen
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_bg
+		transform-origin: bottom
+		transform: scaleY(0)
+	&:hover
+		&:before
+			transform: scaleY(1)
+
+.buttonMainDark
+	margin: 20px
+	cursor: pointer
+	border: none
+	font-size: 20px
+	text-transform: uppercase
+	padding: 10px 30px
+	background: $main_bg_light
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+	position: relative
+	color: red
+	transition: 0.3s
+	span
+		transition: 0.3s
+		color: white
+		mix-blend-mode: screen
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_bg
+		transform-origin: bottom
+		transform: scaleY(0)
+	&:hover
+		&:before
+			transform: scaleY(1)				
+/* --- Button End ------------------------------------------------*/		
+
+
+
+
+
+
+/* --- Global START ------------------------------------------------*/	
+.beforeAnim
+	&:before
+		top: 20%!important
+		left: 5%!important
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+.myH2
+	font-size: 1.8rem
+	text-align: center
+	text-transform: uppercase
+	display: inline-block
+	padding: 5px
+	position: relative
+	background: $main_bg_light1
+	border: 2px solid $main_bg
+	transition: 1s
+	&:before
+		background: $main_bg_light2
+		box-shadow: 0 0 15px $main_bg_light2
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		transition: 0.5s

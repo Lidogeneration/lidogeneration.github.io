@@ -1,0 +1,690 @@
+$main_color: #010036
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: rgb(250, 199, 16)
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+$main_red: red;
+$mont: 'Montserrat', sans-serif
+$marck: 'Marck Script', cursive
+
+body
+	background: #000
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+	
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+h1, h2, h3, h4
+	font-family: $mont
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(0,0,0,0 )
+	.navbar-brand
+		padding: 0
+	img
+		width: 40px
+		margin: 0
+		padding: 0
+	.anim
+		position: relative
+		overflow: hidden
+		span
+			font-family: $mont
+			font-weight: 600
+			background: linear-gradient(267.1deg, #FFFFFF 2.09%, rgba(162, 162, 162, 0.885417) 27.48%, rgba(255, 255, 255, 0.9) 52.35%, #A2A2A2 77.74%, #FFFFFF 99.57%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			transition: 0.5s
+			transform-origin: center
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 2px
+			background: linear-gradient(267.1deg, #FFFFFF 2.09%, rgba(162, 162, 162, 0.885417) 27.48%, rgba(255, 255, 255, 0.9) 52.35%, #A2A2A2 77.74%, #FFFFFF 99.57%)
+			transform-origin: center
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		text-shadow: 0px 0px 20px $main_white
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.anim
+		span
+			color: $main_white
+	p
+		color: $main_white
+	background: rgba(0,0,0, 1)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	width: 100%
+	
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+
+/* --- on desc start------------------------------------------------*/	
+.firstScroll
+	min-height: 100vh
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	background: #000
+	&__snow
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+	&__bg
+		position: absolute
+		top: 70px
+		bottom: 0
+		left: 0
+		width: 100%
+		background: url('../img/mainBg2.png')
+		background-position: top center
+		background-repeat: no-repeat
+		background-size: auto 100%
+	&__title
+		margin-top: 50px
+		z-index: 2
+		&-sub
+			h2
+				text-align: center
+				background: linear-gradient(266.32deg, #FFFFFF 2.09%, rgba(162, 162, 162, 0.885417) 27.48%, rgba(255, 255, 255, 0.9) 52.35%, #A2A2A2 77.74%, #FFFFFF 99.57%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				font-size: 40px
+				font-weight: 300
+				font-family: $mont
+		&-main
+			padding: 10px
+			h1
+				transition: 1s
+				opacity: 0
+				text-align: center
+				text-transform: uppercase
+				font-size: 75px
+				font-weight: 900
+				text-shadow: 4px 4px 20px rgba(194, 189, 71, 0.1)
+				background: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+		&-small
+			h3
+				background: linear-gradient(259.99deg, #FFFFFF 2.09%, rgba(162, 162, 162, 0.885417) 27.48%, rgba(255, 255, 255, 0.9) 52.35%, #A2A2A2 77.74%, #FFFFFF 99.57%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				font-family: $marck
+				font-size: 25px
+				text-align: right
+/* --- on desc END ------------------------------------------------*/	
+
+
+/* --- mobile Start ------------------------------------------------*/
+.firstVideo
+	padding: 0
+	position: relative
+	z-index: 1
+	min-height: 100vh
+	background: #000
+	.videoCont
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		video
+			display: block
+			margin: auto
+			height: 100vh
+	&__title
+		padding: 10px
+		min-height: 100vh
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		h1
+			padding: 0
+			margin: 0
+			transition: 1s
+			opacity: 0
+			text-align: center
+			text-transform: uppercase
+			font-size: 52px
+			font-weight: 900
+			text-shadow: 4px 4px 20px rgba(194, 189, 71, 0.1)
+			background: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+/* --- mobile END ------------------------------------------------*/	
+
+/* --- about Start ------------------------------------------------*/
+.about
+	&__img
+		img
+			max-width: 100%
+			height: auto
+			display: block
+			margin-left: auto
+			margin-right: auto
+	&__txt
+		text-align: center
+		padding: 10px
+		p
+			font-family: $mont
+			color: $main_white
+			padding: 0
+			margin: 0
+/* --- about END ------------------------------------------------*/	
+
+
+/* --- product Start ------------------------------------------------*/
+.product
+	&__img
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
+			max-width: 100%
+			height: auto
+	&__desc
+		&-title
+			padding: 10px
+			h3
+				background: linear-gradient(266.47deg, #FFFFFF 2.09%, rgba(162, 162, 162, 0.885417) 27.48%, rgba(255, 255, 255, 0.9) 52.35%, #A2A2A2 77.74%, #FFFFFF 99.57%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				font-size: 26px
+				font-weight: 600
+		&-txt
+			padding: 10px
+			p
+				padding: 0
+				margin: 0
+				color: $main_white
+		&-btn
+			padding: 10px
+	&__spec
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		padding: 10px
+		border: 3px solid
+		border-image-source: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%)
+		border-image-slice: 1
+		position: relative
+		&:after
+			position: absolute
+			content: ''
+			top: 5px
+			left: 5px
+			right: 5px
+			bottom: 5px
+			border: 3px solid
+			border-image-source: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%)
+			border-image-slice: 1
+		&-cont
+			flex-basis: 35%
+			padding: 30px 20px
+			h4
+				padding: 0
+				margin: 0 0 10px 0
+				font-size: 20px
+				font-weight: 200
+				background: linear-gradient(266.47deg, #FFFFFF 2.09%, rgba(162, 162, 162, 0.885417) 27.48%, rgba(255, 255, 255, 0.9) 52.35%, #A2A2A2 77.74%, #FFFFFF 99.57%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+			p
+				padding: 0
+				margin: 0
+				color: $main_white
+				text-align: right
+				font-weight: 300
+				font-size: 16px
+/* --- product END ------------------------------------------------*/	
+
+/* --- advntage Start ------------------------------------------------*/
+.advantage
+	&__img
+		min-height: 50vh
+		img
+			z-index: -1
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+	&__desc
+		padding: 10px
+		background: #000
+		&-txt
+			p
+				margin: 0
+				padding: 0
+				color: $main_white
+/* --- advntage END ------------------------------------------------*/	
+
+
+/* --- where Start ------------------------------------------------*/	
+.where
+	padding-bottom: 50px
+	&__txt
+		h2
+			text-align: center
+			color: $main_white
+			text-transform: uppercase
+	&__slider
+		padding: 10px
+		@media( max-width : 992px)
+			margin-left: 35px
+			margin-right: 35px
+		&-cont
+			outline: none
+			padding: 20px
+			&-wrap
+				img
+					display: block
+					margin-left: auto
+					margin-right: auto
+					max-width: 100%
+					height: auto
+/* --- where END ------------------------------------------------*/	
+
+
+
+
+/* --- certificate END ------------------------------------------------*/
+.certificate
+	padding-bottom: 100px
+	&__slider
+		@media( max-width : 992px)
+			margin-left: 35px
+			margin-right: 35px
+		&-cont
+			&-wrap
+				img
+					display: block
+					margin-left: auto
+					margin-right: auto
+					max-width: 100%
+					height: auto
+/* --- certificate END ------------------------------------------------*/	
+
+
+/* --- insta Start ------------------------------------------------*/	
+.insta
+	&__slider
+		&-cont
+			outline: none
+			&-wrap
+				img
+					width: 100%
+/* --- insta END ------------------------------------------------*/	
+
+
+/* --- contacts Start ------------------------------------------------*/
+.contacts
+	&__cont
+		&-img
+			img
+				max-width: 100%
+				height: auto
+		&-txt
+			padding: 10px
+			p
+				color: $main_white
+				font-size: 12px
+				font-weight: 300
+		&-icon
+			padding-top: 30px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			i
+				font-size: 50px
+				background: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+			&-tel
+				display: flex
+				justify-content: center
+				align-items: center
+				i
+					margin-right: 10px
+				a
+					color: $main_white
+					&:hover
+						color: $main_white
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainBtn
+	background: #000
+	cursor: pointer
+	border: 3px solid
+	border-image: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%) 1
+	display: block
+	width: 250px
+	padding: 15px
+	text-align: center
+	color: $main_white
+	transition: .3s
+	&:hover
+		color: $main_rgb
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/
+.openForm
+	position: relative
+	z-index: 1
+	background: #000
+	display: block
+	margin: auto
+	width: 600px
+	max-width: 100%
+	padding: 40px 20px
+	border: 3px solid
+	border-image-source: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%)
+	border-image-slice: 1
+	position: relative
+	h3, h4
+		color: $main_white
+		margin-bottom: 20px
+		text-align: center
+	&:after
+		z-index: -1
+		position: absolute
+		content: ''
+		top: 5px
+		left: 5px
+		right: 5px
+		bottom: 5px
+		border: 3px solid
+		border-image-source: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%)
+		border-image-slice: 1	
+	input
+		padding: 10px
+		color: $main_white
+		width: 100%
+		margin-bottom: 20px
+		background: #000
+		border: transparent
+		border-bottom: 3px solid
+		border-image-source: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%)
+		border-image-slice: 1
+		&:focus
+			outline: none
+	::placeholder
+		color: $main_white
+	.mainBtn
+		margin-left: auto
+		margin-right: auto
+	.mfp-close
+		color: $main_white
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+
+.line
+	background: #000
+	position: relative
+	height: 100px
+	transform: rotate(-7.9deg) 
+	overflow: hidden
+	span
+		background: linear-gradient(90deg, rgba(87, 51, 16, 0.02) -0.61%, rgba(87, 51, 16, 0.02) 7.18%, rgba(208, 178, 128, 0.02) 37.82%, rgba(212, 179, 122, 0.02) 66.91%, rgba(87, 51, 16, 0.02) 92.89%, rgba(87, 51, 16, 0.02) 99.12%)
+		position: absolute
+		width: 100%
+		height: 100%
+		scaleX(1.2)
+.mainTitle
+	margin-bottom: 20px
+	h2
+		background: linear-gradient(90deg, #573310 0.16%, #573310 0.72%, #5B3715 5.09%, #754A24 10.84%, #835B31 17.35%, #AF8549 24.39%, #CDA158 27.6%, #CFA053 29.96%, #D2C061 50.63%, #CDA158 66.87%, #CDA158 68.71%, #A67D44 72.18%, #926432 77.76%, #7C4F21 82.88%, #683E0D 87.33%, #512F00 90.63%, #512F00 100.18%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		text-align: center
+		font-size: 36px
+
+
+
+
+.slick-dots
+	li
+		button
+			&:before
+				font-size: 15px
+				color: $main_rgb !important
+.slick-prev
+	left: -35px
+	width: 40px
+	height: 40px
+	z-index: 99
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 5px solid $main_rgb
+		border-right: 5px solid $main_rgb
+		transform: rotate(-135deg)
+.slick-next
+	right: -35px
+	width: 40px
+	height: 40px
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 5px solid $main_rgb
+		border-right: 5px solid $main_rgb
+		transform: rotate(45deg)
+
+.slick-track
+	display: flex
+	.slick-slide
+		height: auto
+		display: flex
+		flex-direction: column
+
+
+.callButton
+	position: fixed
+	bottom: 20px
+	right: 20px
+	z-index: 999
+	a
+		span
+			background: $main_rgb
+			border-radius: 50%
+			display: block
+			border: $main_rgb
+			width: 60px
+			height: 60px
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			&:after
+				background: $main_rgb
+				content: ''
+				position: absolute
+				top: 0px
+				left: 0px
+				bottom: 0px
+				right: 0px
+				border: 2px solid $main_rgb
+				border-radius: 50%
+				animation-name: borderAfter
+				animation-duration: 5s
+				animation-iteration-count: infinite
+				animation-timing-function: ease-in-out
+				opacity: 0.8
+			&:before
+				background: $main_rgb
+				content: ''
+				position: absolute
+				top: 0px
+				left: 0px
+				bottom: 0px
+				right: 0px
+				border: 2px solid $main_rgb
+				border-radius: 50%
+				animation-name: borderAfter
+				animation-duration: 5s
+				animation-delay: 0.3s
+				animation-iteration-count: infinite
+				animation-timing-function: ease-in-out
+				opacity: 0.8
+			i
+				color: $main_white
+				font-size: 35px
+				transition: 0.5s
+				animation-name: phoneRotate
+				animation-duration: 5s
+				animation-iteration-count: infinite
+		&:hover
+			span
+				i
+					transition: 0.5s
+					color: $main_white
+					
+@keyframes phoneRotate 
+	0%
+		transform: rotate(0deg)
+	25%
+		transform: rotate(20deg)
+	50%
+		transform: rotate(0deg)
+	75%
+		transform: rotate(-20deg)
+	100%
+		transform: rotate(0deg)
+@keyframes borderAfter 
+	20%, 100%
+		background: $main_rgb
+		border: 2px solid $main_rgb
+		top: -20px
+		left: -20px
+		bottom: -20px
+		right: -20px
+		opacity: 0	

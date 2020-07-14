@@ -1,0 +1,568 @@
+$main_color: #111
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #0084c7
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+
+
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 30px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+img
+	max-width: 100%
+	height: auto
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, 0)
+	.navbar-brand
+		padding: 0
+	img
+		width: 40px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_white
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_rgb
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		text-shadow: 0px 0px 20px $main_white
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.anim
+		span
+			color: $main_color
+	p
+		color: $main_color
+	background: rgba(255,255,255, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+
+/* --- headContT Start ------------------------------------------------*/
+.headContT
+	padding-top: 75px
+	min-height: 100vh
+	background: url('../img/headBG.jpg')
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	display: flex
+	flex-direction: column
+	text-align: center
+	.textHwrap
+		border: 1px solid $main_white
+		margin-bottom: 30px
+		background: $main_rgb
+		color: $main_white
+		padding: 10px 20px 10px 20px
+		text-transform: uppercase
+		text-align: center
+		position: relative
+		h1
+			margin: 0
+		h2
+			margin: 0
+		span
+			mix-blend-mode: screen
+		&:before
+			box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75)
+			background: $main_white
+			position: absolute
+			content: ''
+			top: -5%
+			left: -2%
+			width: 2%
+			height: 110%
+		hr
+			width: 50%
+			background-color: $main_white
+	.triggersWrap
+		border-bottom: 2px solid $main_white
+		color: $main_white
+		padding: 10px
+		background: $main_rgb
+		height: 100%
+		text-align: center
+		display: flex
+		justify-content: center
+		align-items: center
+		h5
+			margin: 0
+	.pWrap
+		position: relative
+		padding: 20px
+		background: rgba(0, 132, 199, .7)
+		color: $main_white
+		hr
+			width: 50%
+			background-color: $main_white
+		p
+			font-size: 17px
+			padding: 0
+			margin: 0
+		h4
+			text-shadow: 3px 3px 0px #005781
+			color: $main_white
+			text-align: center
+		h5
+			text-align: center
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: 5px
+			right: 5px
+			bottom: 5px
+			border: 1px solid $main_white
+	.img-wrap
+		position: relative
+		img
+			box-shadow: 3px 3px 3px 0px rgba(255,255,255,.2)
+		a
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%) scale(1)
+			i
+				transition: 0.3s
+				color: #cc181e
+				font-size: 70px
+			&:hover
+				i
+					transition: 0.3s
+					color: red
+	.buttonWrap
+		h4
+			color: $main_white
+			text-shadow: 3px 3px 3px black
+/* --- headContT END ------------------------------------------------*/	
+
+
+/* --- about Start ------------------------------------------------*/
+.about
+	h3
+		text-transform: uppercase
+		background: $main_rgb
+		color: $main_white
+		display: inline-block
+		padding: 10px 20px 10px 20px
+	.textwrap
+		background: $main_rgb
+		padding: 10px
+		color: $main_white
+		p
+			text-indent: 20px
+			font-size: 20px
+		hr
+			background-color: $main_white
+			width: 80%
+			border: 1px solid $main_white
+	.img-wrap
+		border: 5px solid $main_rgb
+/* --- about END ------------------------------------------------*/	
+
+/* --- doctorForm Start ------------------------------------------------*/	
+.doctorForm
+	padding-bottom: 0
+	padding-top: 20px
+	text-align: center
+	background: url('../img/docBg.jpg')
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	p
+		margin-bottom: 5px
+		text-indent: 20px
+	.textWrap	
+		text-align: left
+		font-size: 18px
+		ul
+			li
+				font-size: 16px
+		h3
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 20px
+	.buttonHeader
+		padding: 5px 15px 5px 15px
+		width: 200px
+	h5
+		text-align: right
+	h6
+		text-align: right
+		font-style: italic
+		margin-bottom: 15px
+/* --- doctorForm END ------------------------------------------------*/	
+
+
+/* --- advantage Start ------------------------------------------------*/	
+.advantage
+	h3
+		text-transform: uppercase
+		background: $main_rgb
+		color: $main_white
+		display: inline-block
+		padding: 10px 20px 10px 20px
+		margin-bottom: 20px
+	.advWrap
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		border: 1px solid $main_rgb
+		background: $main_rgb
+		color: $main_white
+		position: relative
+		hr
+			background-color: $main_white
+			border: 1px solid $main_white
+			width: 90%	
+			margin-left: 0
+		.imgWrap
+			width: 30%
+		.txtWrap
+			width: 60%
+			padding: 10px
+			align-self: center
+			h4
+				text-transform: uppercase
+			p
+				padding: 0
+				margin: 0
+		.numberWrap
+			text-align: right
+			align-self: center
+			width: 10%
+			padding-right: 10px
+			span
+				font-size: 90px
+/* --- advantage END ------------------------------------------------*/	
+
+
+
+/* --- ProductAll Start ------------------------------------------------*/
+.prodAll
+	background: url('../img/prodBg.jpg')
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	color: $main_white
+	h3
+		text-transform: uppercase
+		background: $main_rgb
+		color: $main_white
+		display: inline-block
+		padding: 10px 20px 10px 20px
+		margin-bottom: 20px
+	.tdWrap
+		ul
+			padding: 0
+			list-style: none
+			li
+				padding: 10px 5px
+				&:nth-child(even)
+					background: rgba($main_rgb, .5)
+				&:nth-child(odd)
+					background: $main_rgb
+			.headerLi
+				font-weight: bold
+				text-align: center
+				padding: 10px
+				text-transform: uppercase
+				border: 1px solid #fff
+/* --- ProductAll END ------------------------------------------------*/	
+
+
+/* --- dropshipping Start ------------------------------------------------*/	
+/* --- dropshipping END ------------------------------------------------*/	
+
+
+
+
+/* --- action END ------------------------------------------------*/
+/* --- action END ------------------------------------------------*/	
+
+
+
+
+/* --- reviews Start ------------------------------------------------*/
+.reviews
+	h3
+		text-transform: uppercase
+		background: $main_rgb
+		color: $main_white
+		display: inline-block
+		padding: 10px 20px 10px 20px
+		margin-bottom: 20px
+	.revWrap
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		border: 2px solid $main_rgb
+		padding: 10px	
+		.imgWrap
+			width: 30%
+		.txtWrap
+			width: 70%
+			padding: 10px
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+.contacts
+	background: $main_rgb
+	.textWrap
+		background: rgba(255,255,255, .7)
+		padding: 10px
+		a
+			display: block
+		i
+			font-size: 20px
+			margin-right: 10px
+			color: $main_rgb
+		.fbinst
+			font-size: 30px
+	iframe
+		width: 100%
+		height: 300px
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainButton
+	padding: 6px 16px 6px 16px
+	border: 2px solid $main_white
+	display: inline-block
+	text-align: center
+	text-transform: uppercase
+	background: $main_white
+	position: relative
+	&:before
+		transition: 0.3s
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		border: 3px solid $main_white
+	&:hover
+		color: $main_rgb
+		&:before
+			border: 3px solid $main_rgb
+.mainButtonLight
+	padding: 6px 16px 6px 16px
+	border: 2px solid $main_rgb
+	display: inline-block
+	text-align: center
+	text-transform: uppercase
+	background: $main_rgb
+	position: relative
+	color: $main_white
+	&:before
+		transition: 0.3s
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		border: 3px solid $main_rgb
+	&:hover
+		color: $main_white
+		&:before
+			border: 3px solid $main_white
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+.docOpenForm
+	display: block
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	padding: 20px 10px
+	background: $main_rgb
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4)
+	h3
+		color: $main_white
+		font-weight: bold
+		text-transform: uppercase
+	h4
+		color: $main_white
+		text-transform: uppercase
+	input
+		padding: 5px 10px
+		text-align: center
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin-top: 10px
+		margin-bottom: 10px
+	textarea
+		text-align: center
+		width: 100%
+		height: 100px
+.formOpen
+	position: relative
+	box-shadow: 0 2px 3px 0 $main_color_light
+	text-align: center
+	padding: 20px 15px 20px 15px
+	width: 300px
+	max-width: 100%
+	background: $main_bg
+	input
+		padding: 10px 5px 10px 5px
+		width: 100%
+		text-align: center
+		margin-bottom: 15px
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+
+.mfp-fade
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: all 0.15s ease-out
+    -moz-transition: all 0.15s ease-out
+    transition: all 0.15s ease-out
+    &.mfp-ready
+      opacity: 0.8
+    &.mfp-removing
+      opacity: 0
+  &.mfp-wrap
+    .mfp-content
+      opacity: 0
+      -webkit-transition: all 0.15s ease-out
+      -moz-transition: all 0.15s ease-out
+      transition: all 0.15s ease-out
+    &.mfp-ready .mfp-content
+      opacity: 1
+    &.mfp-removing .mfp-content
+      opacity: 0

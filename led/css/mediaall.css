@@ -1,0 +1,131 @@
+@media only screen and (min-width : 1500px) 
+{
+
+}
+@media only screen and (max-height : 530px) 
+{
+  .headerCont
+  {
+    padding-top: 75px;
+  }
+}
+
+
+
+@media only screen and (max-width : 1800px)
+{
+
+}
+@media only screen and (max-width : 1600px)
+{
+
+}
+@media only screen and (max-width : 1450px)
+{
+
+}
+@media only screen and (max-width : 1280px)
+{
+
+}
+@media only screen and (max-width : 1200px)
+{
+  .navbar{
+    transition: 0.5s;
+    background: rgba(255,255,255, .9);
+  }
+}
+@media only screen and (max-width : 1140px) 
+{
+
+}
+
+@media only screen and (max-width : 992px)
+{
+  .headerCont .container-fluid h1 
+  {
+    font-size: 2rem;
+  }
+  .dropshipping .textWrap:before {
+    position: absolute;
+    content: '';
+    left: 25%;
+    bottom: -250%;
+    width: 10px;
+    height: 250%;
+    border-left: 10px solid #fff;
+    top: 100%;
+  }
+  
+  .dropshipping .textWrap:after {
+    position: absolute;
+    content: '';
+    right: 25%;
+    bottom: -250%;
+    width: 10px;
+    height: 250%;
+    border-right: 10px solid #fff;
+  }
+
+}
+@media only screen and (max-width : 800px)
+{
+
+}
+@media only screen and (max-width : 960px)
+{
+  .advantage p
+  {
+    padding: 10px 2px 10px 2px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width : 768px)
+{
+  .imgMain
+  {
+    display: none;
+  }
+
+}
+@media only screen and (max-width : 576px)
+{
+  .reviews .slick-prev
+  {
+    left: 5%;
+  }
+  .reviews .slick-next
+  {
+    right: 5%;
+  }
+  .dropshipping .textWrap{
+    padding: 10px 5px 20px 5px;
+  }
+  .dropshipping h3
+  {
+    font-size: 1.5rem;
+  }
+  .coutNumm .textWrap 
+  {
+    font-size: 14px;
+  }
+  .headerCont .container-fluid h1 
+  {
+    padding: 10px !important;
+    font-size: 1.8rem;
+  }
+  .headerCont .contWrap .container-fluid ul li
+  {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width : 450px)
+{
+
+
+}
+@media only screen and (max-width : 400px)
+{
+
+
+}

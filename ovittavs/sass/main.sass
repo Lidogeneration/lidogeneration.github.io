@@ -1,0 +1,683 @@
+$main_color: #676767
+$main_color_light: #55595c
+$main_white: #fff
+$main_black: #000
+$main_rgb: #fb313b
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+
+
+body
+	background: $main_color_light
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, 0)
+	.navbar-brand
+		padding: 0
+	img
+		width: 120px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_white
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_rgb
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		text-shadow: 0px 0px 20px $main_white
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.anim
+		span
+			color: $main_white
+	p
+		color: $main_white
+	background: rgba($main_black, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- Header start------------------------------------------------*/	
+.vs__firstScroll
+	min-height: 100vh
+	background: linear-gradient(rgba($main_black, .5) 100%, rgba($main_black, .5) 100%), url('../img/bgM.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	.titleCont
+		margin-top: auto
+		margin-bottom: 20px
+		.titleWrap
+			padding: 30px	
+			color: $main_white
+			border: 2px solid $main_white
+			position: relative
+			background: rgba($main_black, .4)
+			text-align: center
+			h1
+				margin: 0 0 10px 0
+				padding: 0
+				font-size: 4rem
+				text-transform: uppercase
+				font-weight: 700
+			h2
+				margin: 0 0 10px 0
+				padding: 0
+				font-size: 3rem
+				text-transform: uppercase
+				span
+					color: $main_rgb
+			ul
+				display: inline-block
+				margin: 0
+				text-align: left
+				list-style: none
+				li
+					position: relative
+					font-size: 1.5rem
+					i
+						position: absolute
+						left: -20px
+						top: 50%
+						transform: translateY(-50%)
+						color: $main_rgb
+			&:after
+				position: absolute
+				content: ''
+				top: -15px	
+				left: -15px	
+				width: 100%
+				height: 100%
+				border: 2px solid $main_white
+			&:before
+				position: absolute
+				content: ''
+				top: 15px	
+				left: 15px	
+				width: 100%
+				height: 100%
+				border: 2px solid $main_white
+	.btnCont
+		text-align: center
+		margin-top: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		.txtWRap
+			padding: 10px
+			h4
+				color: $main_white
+				margin: 5px
+				padding: 0
+		.btnWrap
+/* --- Header END ------------------------------------------------*/	
+
+
+/* --- vs__youCan Start ------------------------------------------------*/
+.vs__youCan
+	background: $main_white
+	position: relative
+	.bgIcon
+		position: absolute
+		right: 10%
+		top: 70%
+		transform: translateY(-50%)
+		i
+			opacity: .1
+			line-height: 0
+			font-size: 500px
+	.triggerCont
+		display: flex
+		align-items: center
+		.numberWrap
+			height: 100%
+			padding: 10px
+			border-right: 2px solid $main_rgb
+			span
+				color: $main_white
+				padding: 10px
+				background: $main_rgb
+				font-size: 70px
+		.triggerWrap
+			.titleWrap
+				padding: 10px
+				border-bottom: 2px solid $main_rgb	
+				h4
+					margin: 0
+					padding: 0
+					text-transform: uppercase
+			.txtWrap
+				padding: 10px
+				p
+					font-weight: 600
+					margin: 0
+					padding: 0
+					text-transform: uppercase	
+/* --- vs__youCan END ------------------------------------------------*/	
+
+
+/* --- about Start ------------------------------------------------*/
+.vs__about
+	background: $main_bg_light
+	.imgWrap
+		padding: 30px
+		background: linear-gradient(rgba($main_bg_light, .9) 100%, rgba($main_bg_light, .9) 100%), url('../img/aboutMain.jpg')
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		img
+			box-shadow: 0 0 10px rgba($main_color, 1)
+			max-width: 100%
+			height: auto
+	.txtCont
+		padding: 10px
+		h3
+			text-transform: uppercase
+			margin: 0
+			padding: 0
+		p
+			margin: 0 0 20px 0
+			padding: 0
+			font-style: italic
+			font-size: 18px
+/* --- about end ------------------------------------------------*/
+
+/* --- Product Start ------------------------------------------------*/
+/* --- Product END ------------------------------------------------*/	
+
+
+/* --- dropshipping Start ------------------------------------------------*/
+.vs__product
+	background: $main_white
+	.listWrap
+		margin-bottom: 30px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		.listFilter
+			border-bottom: 2px solid $main_white
+			padding: 5px
+			margin: 5px 10px 10px 10px
+			text-align: center
+			cursor: pointer
+			transition: .3s
+			span
+				text-transform: uppercase
+				font-weight: bold
+			&:hover
+				color: rgba($main_rgb, .5)
+				transition: .3s
+				border-bottom: 2px solid $main_bg
+	.mixitup-control-active
+		color: $main_rgb
+		border-bottom: 2px solid $main_color !important
+		&:hover
+			color: $main_rgb !important
+			border-bottom: 2px solid $main_color !important
+	.lessonCont
+		text-align: center
+		margin-bottom: 40px
+		h4, p
+			margin: 0
+			padding: 0
+		.lessonWrap
+			border: 2px solid $main_bg
+			padding: 10px
+			background: $main_bg_light
+			.imgWrap
+				background: $main_white
+				padding: 10px
+				img
+					max-width: 100%
+					height: auto
+					display: block
+					margin-left: auto
+					margin-right: auto
+			.titleWrap
+				padding: 10px
+				background: $main_bg
+			.descrWrap
+				background: $main_white
+				padding: 10px
+				p
+					font-size: 18px
+					font-style: italic
+			.priceWrap
+				background: $main_white
+				p
+					font-size: 30px
+					text-transform: uppercase
+					font-weight: bold
+			.btnWrap
+				background: $main_bg
+				padding: 10px
+/* --- dropshipping END ------------------------------------------------*/	
+
+
+/* --- vs__top Start ------------------------------------------------*/
+.vs__top
+	background: $main_bg
+	.descTitle
+		text-align: center
+		margin-bottom: 30px
+		font-style: italic
+/* --- vs__top end ------------------------------------------------*/
+
+/* --- openForm Start ------------------------------------------------*/
+.vs__openForm
+	background: linear-gradient(rgba($main_black, .6) 100%, rgba($main_black, .6) 100%), url('../img/bg02.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	text-align: center
+	.titleCont
+		background: $main_white
+		padding: 10px
+		h3
+			background: $main_rgb
+			color: $main_white
+			text-align: center
+			padding: 10px
+			margin: 0 0 10px 0
+		h4
+			margin: 0
+		ul
+			text-align: left
+			display: inline-block
+			background: $main_white
+			list-style: none
+			margin: 0
+			padding: 20px 10px
+			li
+				font-weight: 600
+				text-transform: uppercase
+				margin-bottom: 20px
+				img
+					width: 50px
+					max-width: 100%
+					height: auto
+					margin-right: 20px
+				&:last-child
+					margin: 0
+/* --- openForm END ------------------------------------------------*/	
+
+
+
+
+/* --- vs__reviews Start ------------------------------------------------*/
+.vs__reviews
+	background: $main_white
+	.videoWrap
+		iframe
+			width: 100%
+			height: 315px
+/* --- vs__reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+.vs__contacts
+	padding: 0
+	.contactsCont
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding: 50px 20px
+		background: $main_rgb
+		color: $main_white
+		.txtWrap
+			a
+				display: block
+				font-size: 20px
+				color: $main_white
+				i
+					margin-right: 10px
+		.txtWrapIcon
+			a
+				color: $main_white
+				i
+					font-size: 50px
+					margin-right: 10px
+	.formCont
+		padding: 50px 10px
+		height: 100%
+		background: url('../img/contBg.jpg')
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+.contactsForm
+	position: relative
+	background: rgba($main_black,.9)
+	padding: 20px
+	display: block
+	margin: auto
+	width: 400px
+	max-width: 100%
+	text-align: center
+	.mfp-close
+		color: $main_white
+	h2
+		color: $main_white
+	h3
+		color: $main_white
+		span
+			font-weight: bold
+			color: $main_rgb
+	input, textarea
+		width: 100%
+		color: $main_white
+		margin-bottom: 20px
+		padding: 10px
+		text-align: center
+		font-weight: bold
+		text-transform: uppercase
+		border: 1px solid #e5e5e5
+		background-color: rgba(255, 255, 255, 0.1)
+		&:focus
+			outline: 2px solid #e5e5e5
+		&::placeholder
+			color: $main_white
+	textarea
+		height: 100px
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.vs__mainBtn
+	border: none
+	margin-right: auto
+	margin-left: auto
+	text-align: center
+	display: block
+	background: $main_rgb
+	color: $main_white
+	padding: 10px
+	text-transform: uppercase
+	font-weight: bold
+	width: 300px
+	max-width: 100%
+	transition: .3s
+	&:hover
+		transition: .3s
+		background: $main_white
+		color: $main_rgb
+
+.callButton
+	position: fixed
+	bottom: 20px
+	right: 20px
+	z-index: 999
+	a
+		span
+			background: $main_rgb
+			border-radius: 50%
+			display: block
+			border: $main_rgb
+			width: 60px
+			height: 60px
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			&:after
+				background: $main_rgb
+				content: ''
+				position: absolute
+				top: 0px
+				left: 0px
+				bottom: 0px
+				right: 0px
+				border: 2px solid $main_rgb
+				border-radius: 50%
+				animation-name: borderAfter
+				animation-duration: 5s
+				animation-iteration-count: infinite
+				animation-timing-function: ease-in-out
+				opacity: 0.8
+			&:before
+				background: $main_rgb
+				content: ''
+				position: absolute
+				top: 0px
+				left: 0px
+				bottom: 0px
+				right: 0px
+				border: 2px solid $main_rgb
+				border-radius: 50%
+				animation-name: borderAfter
+				animation-duration: 5s
+				animation-delay: 0.3s
+				animation-iteration-count: infinite
+				animation-timing-function: ease-in-out
+				opacity: 0.8
+			i
+				color: $main_white
+				font-size: 35px
+				transition: 0.5s
+				animation-name: phoneRotate
+				animation-duration: 5s
+				animation-iteration-count: infinite
+		&:hover
+			span
+				i
+					transition: 0.5s
+					color: $main_color
+@keyframes phoneRotate 
+	0%
+		transform: rotate(0deg)
+	25%
+		transform: rotate(20deg)
+	50%
+		transform: rotate(0deg)
+	75%
+		transform: rotate(-20deg)
+	100%
+		transform: rotate(0deg)
+@keyframes borderAfter 
+	20%, 100%
+		background: $main_rgb
+		border: 2px solid $main_rgb
+		top: -20px
+		left: -20px
+		bottom: -20px
+		right: -20px
+		opacity: 0		
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+.vs__formOpen
+	width: 500px
+	max-width: 100%
+	text-align: center
+	background: $main_white
+	position: relative
+	box-shadow: 0px 0px 10px rgba($main_color, .5)
+	padding: 20px 10px
+	background: $main_bg
+	hr
+		background-color: $main_rgb
+		width: 60%
+		border: 1px solid $main_rgb
+	&:after
+		position: absolute
+		content: ''
+		top: -6px
+		left: -6px
+		width: 50%
+		height: 50%
+		border-top: 3px solid $main_rgb
+		border-left: 3px solid $main_rgb
+	&:before
+		position: absolute
+		content: ''
+		bottom: -6px
+		right: -6px
+		width: 50%
+		height: 50%
+		border-bottom: 3px solid $main_rgb
+		border-right: 3px solid $main_rgb
+	input
+		width: 100%
+		padding: 10px
+		text-align: center
+		margin-bottom: 20px
+		position: relative
+	.navBtn
+		border: none
+		background: $main_white
+		color: $main_color
+		width: 350px
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+.vs__mainTitle
+	text-align: center
+	margin-bottom: 20px
+	h2
+		padding: 10px
+		margin: 0
+		position: relative
+		display: inline-block
+		font-weight: 900
+		font-size: 50px
+		text-align: center
+		&:after
+			position: absolute
+			content: ''
+			top: 0
+			left: 5%
+			width: 100%
+			height: 100%
+			border-bottom: 3px solid $main_rgb

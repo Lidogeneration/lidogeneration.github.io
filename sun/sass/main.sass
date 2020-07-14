@@ -1,0 +1,816 @@
+$main_color: #111
+$main_color_light: #55595c
+$main_white: #fff
+$main_rgb: #71ac3c
+$main_bg: #e6e6e6
+$main_bg_light: #f8f8f8
+
+
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+img
+	max-width: 100%
+	height: auto
+section
+	padding: 50px 0
+	overflow: hidden
+.done
+	min-height: 100vh
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+
+
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: rgba(255,255,255, 0)
+	.navbar-brand
+		padding: 0
+	img
+		width: 40px
+		margin: 0
+		padding: 0
+	.anim
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: $main_white
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_rgb
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_rgb
+			&:before
+				transform: scaleX(1)
+	p
+		font-size: 24px
+		text-shadow: 0px 0px 20px $main_white
+		color: $main_white
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid #fff
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_rgb !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	.anim
+		span
+			color: $main_color
+	p
+		color: $main_color
+	background: rgba(255,255,255, 0.9)
+	color: $main_color_light	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 1px solid $main_color
+.navbar-nav
+	text-align: center
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- Header start------------------------------------------------*/
+.bgMain
+	background: url('../img/headBg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	background-attachment: fixed
+.domhoz
+	background: url('../img/domhoz.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	background-attachment: fixed
+.headerCont
+	min-height: 100vh
+	text-align: center
+	display: flex
+	flex-direction: column
+	.headCont
+		.headWrap
+			box-shadow: 0px 2px 3px 0px #222
+			padding: 10px
+			display: inline-block
+			background: rgba($main_white, .8)
+			ul
+				margin: 0
+				padding: 0
+				list-style: none
+				li
+					text-transform: uppercase
+					font-weight: bold
+					font-size: 18px
+	.buttonCont
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+/* --- Header END ------------------------------------------------*/	
+
+
+/* --- About Start ------------------------------------------------*/
+.about
+	text-align: center
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba($main_rgb,1) 50%, rgba(255,255,255,1) 100%)
+	hr
+		width: 60%
+		border: 1px solid $main_color
+	.cloudCont
+		height: 100%
+		p
+			margin-bottom: 20px
+			font-size: 20px
+		.cloudWrap
+			box-shadow: 0px 2px 3px 0px #222
+			background: $main_white
+			padding: 20px
+			padding-bottom: 0px
+			height: 75%
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 40px
+			border-radius: 15px
+			position: relative
+			border: 1px solid $main_color
+			&:after
+				position: absolute
+				content: ''
+				bottom: -20px
+				left: 60px
+				width: 40px
+				height: 40px
+				transform: rotate(92deg) skewX(45deg)
+				background: $main_white
+				border-bottom: 1px solid $main_color
+				border-right: 1px solid $main_color
+				border-radius: 0 0 5px 0
+		.cloudHead
+			box-shadow: 0px 2px 3px 0px #222
+			border: 1px solid $main_color
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 15px
+			background: $main_white
+			height: 25%
+			padding: 20px
+			p
+				margin: 0
+	.imgTxtCont
+		padding: 20px
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		flex-direction: column
+		justify-content: space-between
+		box-shadow: 0px 2px 3px 0px #222
+		margin-bottom: 30px
+		p
+			margin: 0
+			font-size: 20px
+	.leftBg
+		background: url('../img/about01.jpg')
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		height: 100%
+		h4, p
+			width: 100%
+			color: $main_white
+			background: rgba($main_color, .9)
+			padding: 5px
+	.rightBg
+		background: url('../img/about02.jpg')
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		height: 100%
+		h4, p
+			width: 100%
+			background: rgba($main_white, .9)
+			padding: 5px
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+/* --- About END ------------------------------------------------*/	
+
+
+/* --- whay Start ------------------------------------------------*/
+.whay
+	text-align: center
+	hr
+		width: 60%
+		border: 1px solid $main_color
+	.imgWrap
+	.txtWrap
+		padding: 10px
+	.timerCont
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.heaserWrap
+			flex-grow: 1
+			padding: 5px
+		.timerWrap
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-grow: 2
+			.wrapBord
+				.wrap
+					display: inline-block
+					padding-right: 20px
+					span
+						color: $main_rgb
+						font-size: 22px
+						font-weight: bold
+					.smalltext
+						font-style: italic
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+/* --- whay END ------------------------------------------------*/	
+
+/* --- ProductAll Start ------------------------------------------------*/
+.prod
+	text-align: center
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba($main_rgb,1) 50%, rgba(255,255,255,1) 100%)
+	hr
+		width: 60%
+		border: 1px solid $main_color
+	.prodCont
+		box-shadow: 0px 2px 3px 0px #222
+		.imgCont
+			position: relative
+			img
+				width: 100%
+			.logoCont
+				position: absolute
+				right: 0
+				top: 5%
+				width: 80%
+			.txtCont
+				position: absolute
+				bottom: 0
+				left: 0
+				background: rgba($main_white, .9)
+				padding: 10px
+	.logoSlider
+		background: $main_white
+		margin-bottom: 25px
+		border: 2px solid $main_rgb
+		.logosliderWrap
+			img
+				display: block
+				margin-left: auto
+				margin-right: auto
+				width: 80%
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+	.invCont
+		box-shadow: 0px 2px 3px 0px #222
+		border: 2px solid $main_color
+		background: $main_white
+		padding: 5px
+		padding-bottom: 10px
+		.imgWrap
+			background: $main_white
+			padding-bottom: 20px
+		.txtWrap
+			background: $main_white
+			h4
+				margin-bottom: 0
+			hr
+				margin-top: 0
+	.logoContInv
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		.logowrap
+			padding: 10px
+/* --- ProductAll END ------------------------------------------------*/	
+
+
+/* --- ses Start ------------------------------------------------*/	
+.ses
+	padding-top: 10px
+	text-align: center
+	hr
+		margin-bottom: 30px
+		width: 60%
+		border: 1px solid $main_color
+	.sesCont
+		border: 1px solid $main_color
+		padding: 25px 5px
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		.txtWrap
+			h4
+				text-transform: uppercase
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+/* --- ses END ------------------------------------------------*/	
+
+
+
+
+/* --- credit START ------------------------------------------------*/
+.credit
+	text-align: center
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba($main_rgb,1) 50%, rgba(255,255,255,1) 100%)
+	hr
+		margin-bottom: 30px
+		width: 60%
+		border: 1px solid $main_color
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+	.txtCont
+		.txtWrap
+			h4
+				text-transform: uppercase
+			ul
+				text-align: left
+				display: inline-block
+				li
+	.steps
+		h3
+			text-decoration: underline
+		.stepsCont
+			position: relative
+			.okWrap
+				z-index: 22
+				position: absolute
+				top: 0
+				left: 6px
+				border: 1px solid $main_color
+				width: 40px
+				height: 40px
+				display: flex
+				justify-content: center
+				align-items: center
+				background: $main_white
+				&:after
+					content: ''
+					position: absolute
+					width: 16px
+					height: 16px
+					bottom: -16px
+					right: -2px
+					background: none
+					border: 8px solid transparent
+					border-left: 8px solid $main_color
+					border-top: 8px solid $main_color
+				i
+					color: $main_rgb
+					font-size: 30px
+			.mainWrap
+				background: linear-gradient(90deg, rgba(173,214,137,1) 0%, rgba(255,255,255,1) 40%)
+				margin-left: 30px
+				display: flex
+				flex-direction: row
+				flex-wrap: nowrap
+				justify-content: space-between
+				align-items: center
+				border: 1px solid $main_color
+				padding: 5px
+				text-align: left
+				padding-left: 25px
+				position: relative
+				margin-bottom: 15px
+				.txtWrap
+					h4
+						margin-bottom: 5px
+						font-size: 1.3rem
+						font-weight: bold
+					p
+						font-style: italic
+						line-height: 1.2rem
+						margin: 0
+				.iconWrap
+					i
+						font-size: 30px
+						color: $main_rgb
+			.arrow
+				position: relative				
+				&:after
+					content: ''
+					position: absolute
+					bottom: -60px
+					right: 30px
+					width: 30px
+					height: 30px
+					border: 30px solid transparent
+					border-top: 30px solid $main_white
+				&:before
+					content: ''
+					position: absolute
+					bottom: -22px
+					right: 39px
+					width: 42px
+					height: 42px
+					border-left: 1px solid $main_color
+					border-bottom: 1px solid $main_color
+					transform: rotate(-45deg)
+			.arrowLeft
+				position: relative				
+				&:after
+					content: ''
+					position: absolute
+					bottom: -60px
+					left: 30px
+					width: 30px
+					height: 30px
+					border: 30px solid transparent
+					border-top: 30px solid $main_white
+				&:before
+					content: ''
+					position: absolute
+					bottom: -22px
+					left: 39px
+					width: 42px
+					height: 42px
+					border-left: 1px solid $main_color
+					border-bottom: 1px solid $main_color
+					transform: rotate(-45deg)
+			.bgstepsLeft
+				background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgba(173,214,137,1) 100%)
+			.stersLeft
+				margin-left: 5px
+				flex-wrap: nowrap
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				border: 1px solid $main_color
+				padding: 5px
+				text-align: left
+				position: relative
+				margin-bottom: 15px				
+				.iconWrap
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					h4
+						font-weight: bold
+						font-size: 1.1rem
+						color: $main_color
+						margin-bottom: 0
+					i
+						margin-left: 5px
+
+						margin-right: 5px
+						color: $main_color
+	.z7
+		z-index: 7
+	.z6
+		z-index: 6
+	.z5
+		z-index: 5
+	.z4
+		z-index: 4
+	.z3
+		z-index: 3
+	.z2
+		z-index: 2
+	.z1
+		z-index: 1
+/* --- action END ------------------------------------------------*/	
+
+
+/* --- advantage Start ------------------------------------------------*/	
+/* --- advantage END ------------------------------------------------*/	
+
+
+/* --- reviews Start ------------------------------------------------*/
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- contacts Start ------------------------------------------------*/
+.contacts
+	text-align: center
+	.textCont
+		text-align: left
+		display: inline-block
+		a
+			display: block
+			i
+				color: $main_rgb
+				font-size: 18px
+				margin-right: 5px
+		.fbinst
+			font-size: 30px
+	.formSteps
+		text-align: center
+		.mainBtn
+			background: $main_rgb
+			color: $main_white
+			border: 2px solid $main_white
+			padding: 10px 20px
+			&:hover
+				background: $main_white
+				color: $main_color
+				border: 2px solid $main_rgb
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.mainBtn
+	background: rgba($main_white,.9)
+	text-transform: uppercase
+	padding: 10px 10px
+	border-radius: 15px
+	transition: 0.3s
+	border: 2px solid rgba($main_white,.9)
+	&:hover
+		transition: 0.3s
+		border: 2px solid $main_rgb
+		background: $main_rgb
+		color: $main_white
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/
+.formSteps
+	padding: 10px 10px
+	h4
+		border: 1px solid $main_color
+		padding: 10px
+		background: #FFD500
+	input
+		font-size: 20px
+		padding: 10px 5px
+		display: block
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		margin-bottom: 10px
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- DOM START!!!!!!!!!!!!!!!!!! ------------------------------------------------*/	
+/* --- what START ------------------------------------------------*/	
+.what
+	text-align: center
+	background: linear-gradient(180deg, rgba(173,214,137,1) 0%, rgba(255,255,255,1) 40%)
+	hr
+		margin-bottom: 30px
+		width: 60%
+		border: 1px solid $main_color
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+	.whatCont
+		border: 1px solid $main_color
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		height: 100%
+		background: rgba($main_white, .4)
+		box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+		transition: 0.5s
+		&:hover
+			transition: 0.5s
+			background: $main_rgb
+			.arrowWrap
+				i
+					transition: 1s
+					color: $main_white
+		.whatTxt
+			align-self: center
+			padding: 10px
+			width: 50%
+			p
+				margin: 0
+				padding: 0
+				line-height: 1.2rem
+		.arrowWrap
+			align-self: center
+			padding: 5px
+			width: 10%
+			i
+				transition: 1s
+				color: $main_rgb
+				font-size: 30px
+		.whatImg
+			width: 45%
+			align-self: center
+			border-right: 1px solid $main_color 
+		
+/* --- what END ------------------------------------------------*/
+/* --- prodReady Start ------------------------------------------------*/
+.prodReady
+	text-align: center
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba($main_rgb,1) 50%, rgba(255,255,255,1) 100%)
+	hr
+		margin-bottom: 30px
+		width: 60%
+		border: 1px solid $main_color
+	.mainBtn
+		background: $main_rgb
+		color: $main_white
+		border: 2px solid $main_white
+		padding: 10px 20px
+		&:hover
+			background: $main_white
+			color: $main_color
+			border: 2px solid $main_rgb
+	.prodReadyCont
+		box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5)
+		border: 2px solid $main_white
+		background: $main_white
+		padding-bottom: 25px
+		.txtWrap
+			padding: 10px
+			p
+				margin: 0
+				padding: 0
+				font-weight: bold
+				text-transform: uppercase
+		.imgWrap
+			margin-bottom: 20px
+			position: relative
+			&:hover
+				.overlay, .moreBtn
+					opacity: 1
+					transition: 0.3s
+			.overlay
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background: rgba($main_color,.4)
+				transition: 0.3s
+				opacity: 0
+			.moreBtn
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				transition: 0.3s
+				opacity: 0
+	.calcOrder
+		margin-bottom: 30px
+		padding: 10px 10px
+		margin-top: 30px
+		background: url('../img/calcorder.jpg')
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		min-height: 300px
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		align-items: center
+		flex-wrap: wrap
+		.txtWrap
+			flex-grow: 1
+			flex-basis: 50%
+			border: 1px solid $main_color
+			padding: 10px
+			background: rgba($main_white,.8)
+		.formWrap
+			flex-grow: 1
+			flex-basis: 50%
+		.mainBtn
+			min-width: 260px
+/* --- prodReady END ------------------------------------------------*/

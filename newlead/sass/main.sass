@@ -1,0 +1,893 @@
+$main_color: #252626
+$main_white: #fff
+$main_blue: #0746c8
+$main_yellow: #feda46
+$main_bg: #fafcfc
+
+
+body
+	background: $main_bg
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+section
+	overflow: hidden
+.done
+	min-height: 100vh
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	padding-bottom: 20px
+	background: url('../img/menuFixed.png')
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	transition: 0.5s
+	a
+		transition: 0.3s
+		&:hover
+			transition: 0.3s
+			color: $main_yellow
+	.navbar-brand
+		img
+			width: 50px	
+	.nav-link-new
+		color: $main_white
+		display: inline-block
+		padding: 5px
+		margin-right: 5px
+	ul
+		list-style: none
+		li
+			a
+				color: $main_white 
+	.whiteBtn
+		font-size: 14px
+		padding: 5px 10px
+.navbar-dark 
+	.navbar-nav 
+		.nav-link
+			color: $main_white
+.dropdown
+	transition: 0.5s
+	.dropdown-menu
+		transition: 0.5s
+		a
+			color: $main_blue
+	&:hover
+		.dropdown-menu
+			display: block
+.hideNav
+	transition: 0.5s
+	transform: translateY(-120%)
+.navbar-toggler-icon
+	background-image: url('../img/menu.png') !important
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	width: 2em
+	height: 2em
+	&:focus
+		outline: none
+.navbar-toggler
+	border: 1px solid rgba($main_color, 0)
+	border-color: rgba($main_color, 0) !important
+	transition: 0.3s
+	&:focus
+		transition: 0.3s
+		outline: none
+		border: 1px solid rgba($main_color, 0)
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- firstScroll start------------------------------------------------*/
+.firstScroll
+	padding-top: 10px
+	min-height: 100vh
+	background: url('../img/firstBg.jpg')
+	background-position: top center
+	background-repeat: no-repeat	
+	background-size: 100% 100%
+	.navBarStatic
+		padding: 10px 10px 10px 10px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.logoCont
+			display: flex
+			justify-content: center
+			align-items: center
+			.imgWrap
+				img
+					width: 10rem
+			.txtWrap
+				p
+					padding: 10px
+					text-transform: uppercase
+					color: white
+					font-weight: bold
+					margin: 0
+					font-size: 1.2rem
+		.menuCont
+			margin-left: auto
+			ul
+				list-style: none
+				margin: 0
+				padding: 0
+				li
+					display: inline
+					a
+						transition: 0.3s
+						text-transform: uppercase
+						color: white
+						padding-right: 20px
+					&:hover
+						a
+							color: $main_yellow
+							transition: 0.3s
+							transform: scale(1.1)
+	.pcImgWrap
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
+	.triggersCont
+		.headerWrap
+			margin-bottom: 30px
+			h1
+				line-height: 37px
+				color: $main_white
+				span
+					color: $main_yellow
+		.txtCont
+			margin-left: 20px
+			.txtWrap
+				position: relative
+				z-index: 1
+				margin-bottom: 10px
+				.txt
+					display: flex
+					margin-left: 10px
+					z-index: 3
+					.imgWrap
+						align-self: center
+						img
+							width: 4rem
+					.trWrap
+						p
+							line-height: 35px
+							color: $main_white
+							font-size: 20px
+							padding: 0
+							margin: 0
+				.number
+					z-index: -1
+					position: absolute
+					top: 50%
+					transform: translate(-50%,-50%)
+					p
+						line-height: 70px
+						font-size: 70px
+						color: #cfd8dc
+						opacity: 0.5
+						padding: 0
+						margin: 0
+/* --- firstScroll END ------------------------------------------------*/	
+
+
+/* --- About Start ------------------------------------------------*/
+.about
+	padding: 0 0 30px 0
+	.txtWrap
+		padding: 20px
+		h2
+			color: $main_blue
+			text-transform: uppercase
+			text-align: center
+			margin-bottom: 20px
+		p
+			font-size: 20px
+			text-transform: uppercase
+			text-indent: 20px
+		h4
+			text-align: center
+	.btnWrap
+		text-align: center
+		margin-bottom: 20px
+	.imgWrap
+		a
+			cursor: pointer
+			img
+				display: block
+				margin-left: auto
+				transition: 0.5s
+			&:hover
+				img
+					transition: 0.5s
+					transform: scale(1.03)
+
+/* --- About END ------------------------------------------------*/	
+
+
+/* --- product Start ------------------------------------------------*/
+.product
+	padding-bottom: 50px
+	background: url('../img/prodBg.jpg')
+	background-position: center center
+	background-repeat: no-repeat	
+	background-size: 100% 100%
+	h2
+		text-transform: uppercase
+		text-align: center
+		margin-top: 20px
+		margin-bottom: 20px
+	.prodCont
+		background: $main_white
+		height: 100%
+		padding: 40px
+		.numberCont
+			display: flex
+			margin-bottom: 20px
+			.imgWrap
+				width: 50%
+			.numberWrap
+				align-self: center
+				width: 50%
+				p
+					line-height: 10px
+					margin: 0
+					padding: 0
+					font-size: 8rem
+					color: #cfd8dc
+					opacity: 0.4
+		.txtCont
+			h4
+				font-weight: bold
+				margin-bottom: 20px
+	.whyCont
+		background: rgba($main_white, .9)
+		padding: 20px
+		border-radius: 10px
+		box-shadow: 0px 5px 18px 0px rgba(1, 1, 1, .75)
+		.txtWrap
+			background: $main_white
+			box-shadow: 0px 10px 50px 0px rgba(67, 89, 106, .7)
+			border-radius: 10px
+			padding: 10px
+			margin-bottom: 20px
+			position: relative
+			&:after
+				position: absolute
+				content: ''
+				border: 20px solid transparent
+				border-left: 20px solid $main_white
+				border-top: 20px solid $main_white
+				bottom: -30px
+				left: 30%
+			h4
+				color: $main_blue
+		.imgCont
+			display: flex
+			.faceWrap
+				width: 70%
+				align-self: center
+				img
+					display: block
+					margin-left: auto
+					margin-right: auto
+			.iconWrap
+				text-align: right
+				a
+					&:hover
+						img
+							transition: 0.5s
+							transform: scale(1.1)
+					img
+						transition: 0.5s
+						width: 20%
+			.txtWrapIcon
+				text-align: right
+				color: $main_blue
+			.iconCont
+				align-self: center
+/* --- product END ------------------------------------------------*/	
+
+/* --- reviews Start ------------------------------------------------*/
+.reviews
+	text-align: center
+	padding: 50px 0
+	margin-bottom: 20px
+	background: url('../img/revBg.png')
+	background-repeat: no-repeat
+	background-position: 150px bottom
+	h2
+		text-transform: uppercase
+	.revCont
+		padding: 10px
+		width: 30%
+		display: block
+		margin-left: auto
+		margin-right: auto
+		.revWrap
+			padding: 20px
+			position: relative
+			outline: none
+			.imgWrap
+				top: 0
+				left: 15%
+				position: absolute
+				display: flex
+				justify-content: center
+				align-items: center
+				.imgPlay
+					a
+						img
+							transition: 0.5s
+						&:focus
+							outline: none
+					&:hover
+						img
+							transition: 0.5s
+							transform: scale(1.1)
+			.txtWrap
+				margin: 10px
+				margin-top: 120px
+				box-shadow: 0px 2px 3px 0px rgba($main_color, .3)
+				border-radius: 10px
+				background: $main_white
+				padding: 120px 10px 20px 10px
+				h4
+					font-weight: bold
+					margin-bottom: 10px
+				p
+					text-align: left
+ .slick-next
+    right: -25px
+ .slick-prev
+    left: -25px
+/* --- reviews END ------------------------------------------------*/	
+
+
+
+/* --- threeWhay Start ------------------------------------------------*/
+.threeWhay
+	text-align: center
+	background: url('../img/2.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	height: 1500px
+	h2
+		margin-bottom: 100px
+		text-transform: uppercase
+		text-shadow: 2px 2px 2px $main_white
+	&__cont
+		position: relative
+		img
+			display: block
+		.txtWrap
+			box-shadow: 0px 2px 3px 0px rgba($main_color, .5)
+			border-radius: 10px
+			padding: 10px
+			padding-top: 50px
+			padding-right: 70px
+			// position: absolute
+			// top: 50%
+			// left: 50%
+			// transform: translate(-50%, -50%)
+			text-align: left
+			background: $main_white
+			p
+				font-size: 20px
+				position: relative
+				color: #546e7a
+				padding: 0
+				margin: 0
+			.imgWrap
+				position: absolute
+				top: 0
+				right: 0
+				transform: translate(25%,-40%)
+				img
+					display: block
+					margin-left: auto
+					width: 50%
+			.imgWrapR
+				position: absolute
+				top: 0
+				right: 0
+				transform: translate(-25%,-55%)
+				img
+					display: block
+					margin-right: auto
+					width: 50%
+		.iconRightTxt
+			padding-right: 20px
+			padding-left: 70px
+/* --- threeWhay END ------------------------------------------------*/	
+
+
+
+
+/* --- order Start ------------------------------------------------*/
+.order
+	padding: 50px 0
+	h2
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 20px
+	.txtCont
+		border-radius: 10px
+		padding: 20px
+		height: 100%
+		background: $main_white
+		box-shadow: 0px 2px 3px 0px rgba($main_color, .3)
+		p
+			padding: 0
+			margin: 0
+			color: #546e7a
+	.arrowCont
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
+			width: 20%
+	.btnWrap
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-content: center
+		.btnCont
+			align-self: center
+		.arrow
+			img
+				width: 50%
+/* --- order END ------------------------------------------------*/	
+
+
+/* --- how Start ------------------------------------------------*/	
+.how
+	padding: 50px 0
+	h2
+		margin-bottom: 50px
+		text-align: center
+		text-transform: uppercase
+	.txtCont
+		box-shadow: 0px 2px 3px 0px rgba($main_color, .3)
+		height: 100%
+		padding: 20px
+		background: $main_white
+		.numberWrap
+			position: relative
+			p
+				color: #cfd8dc
+				margin: 0
+				padding: 0
+				text-align: right
+				font-size: 70px
+			.imgWrap
+				position: absolute
+				top: -70%
+				left: -5%
+				img
+					width: 60%
+		.txtWrap
+			h4
+				font-weight: bold
+				margin-bottom: 20px
+/* --- how END ------------------------------------------------*/
+
+
+/* --- portfolio Start ------------------------------------------------*/
+.portfolio
+	padding: 50px 0
+	img
+		max-width: 100%
+		height: auto
+	h2
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 20px
+	.portCont
+		.portWrap
+			.imgWrap
+				width: 80%
+				display: block
+				margin-left: auto
+				margin-right: auto
+				img
+					display: block
+					margin-left: auto
+					margin-right: auto
+			&:focus
+				outline: none
+.slick-prev
+	left: 20px
+	width: 50px
+	height: 50px
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 3px solid $main_color
+		border-right: 3px solid $main_color
+		transform: rotate(-135deg)
+.slick-next
+	right: 20px
+	width: 50px
+	height: 50px
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-top: 3px solid $main_color
+		border-right: 3px solid $main_color
+		transform: rotate(45deg)
+/* --- portfolio END ------------------------------------------------*/
+
+/* --- steps Start ------------------------------------------------*/
+.steps
+	padding: 50px 0 200px 0
+	position: relative
+	background: url('../img/cloud.png')
+	background-repeat: no-repeat
+	background-position: bottom center
+	background-size: 100% auto
+	h2
+		text-align: center
+		text-transform: uppercase
+	.rokWrap
+		z-index: -1
+		width: 100%
+		position: absolute
+		height: 100%
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
+		.fireImg
+			width: 60%
+			height: 100%
+	.rokImg
+		display: block
+		margin-left: auto
+		margin-right: auto
+		width: 20%
+	.cloudWrap
+		position: absolute
+		bottom: 0
+		left: 0
+	.stepWrap
+		display: flex
+		position: relative
+		.numberWrap
+			position: absolute
+			align-self: center
+			left: -14px
+			span
+				left: -20px
+				box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75), 0px 0px 5px 1px rgba(0,0,0,0.75) 
+				padding: 10px
+				border: 5px solid #fdfdfd
+				border-radius: 50%
+				font-size: 40px
+				color: $main_white
+		.numberWrapL
+			position: absolute
+			align-self: center
+			right: -58px
+			span
+				box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75), 0px 0px 5px 1px rgba(0,0,0,0.75) 
+				padding: 10px
+				border: 5px solid #fdfdfd
+				border-radius: 50%
+				font-size: 40px
+				color: $main_white
+		.arrowWrap
+			align-self: center
+			img
+		.txtWrap
+			box-shadow: 0px 2px 3px 0px rgba($main_color, .3)
+			background: #fff
+			border-radius: 10px
+			h4
+				color: $main_blue
+			text-align: center
+			padding: 10px
+/* --- steps END ------------------------------------------------*/
+
+/* --- team Start ------------------------------------------------*/
+.team
+	padding: 50px 0
+	text-align: center
+	h2
+		text-transform: uppercase
+	&__cont
+		padding: 35px
+		.teamWrap
+			padding: 20px
+			outline: none
+			.txtWrap
+				margin-top: 150px
+				padding-top: 75px
+				position: relative
+				background: $main_white
+				border-radius: 10px
+				text-align: center
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				h4
+					color: $main_blue
+				p
+					font-style: italic
+				.imgWrap
+					display: block
+					margin-left: auto
+					margin-right: auto
+					position: absolute
+					top: -150px
+					img
+						width: 214px !important
+						height: 214px !important
+						box-shadow: 0px 2px 3px 0px rgba($main_color, .3)
+						border: 5px solid $main_blue
+						border-radius: 50%
+						display: block
+						margin-left: auto
+						margin-right: auto
+						width: 50%
+/* --- team END ------------------------------------------------*/
+
+/* --- action Start ------------------------------------------------*/
+.action
+	padding: 30px 0
+	text-align: center
+	h2, h4
+		margin-bottom: 20px
+		text-transform: uppercase
+		text-align: center
+	.howOpenForm
+		box-shadow: none
+		background: none
+		flex-direction: row
+		flex-wrap: wrap
+		h2
+			width: 100%	
+			margin-bottom: 20px
+/* --- action END ------------------------------------------------*/	
+
+/* --- contacts Start ------------------------------------------------*/
+.contacts
+	background: url('../img/contBg.png')
+	background-repeat: no-repeat
+	background-position: bottom center
+	background-size: cover
+	padding: 100px 0 100px 0
+	.formWrap
+		position: relative
+		box-shadow: 0px 2px 3px 0px rgba($main_color, .3)
+		padding: 30px
+		background: url('../img/formBg.png')
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		color: $main_white
+		h3
+			padding: 10px
+			margin-bottom: 50px
+		.contForm
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			.txtWrap
+				padding: 10px
+				width: 100%
+			.inputWrap
+				padding: 10px
+				input
+					text-align: center
+					width: 100%
+					display: block
+					margin-bottom: 20px
+					padding: 10px
+					border: none
+					border-radius: 10px
+					border-top-right-radius: 0
+					border: 2px solid $main_yellow
+					&:focus
+						transition: 0.3s
+						outline: none
+						border: 2px solid $main_blue
+			.msgWrap
+				padding: 10px
+				textarea
+					text-align: center
+					width: 100%	
+					height: 100%
+					padding: 10px
+					border: none
+					border-radius: 10px
+					border-top-right-radius: 0
+					border: 2px solid $main_yellow
+					&:focus
+						transition: 0.3s
+						outline: none
+						border: 2px solid $main_blue
+			.mapWRap
+				position: absolute
+				top: -50px
+				right: -50px
+				height: 100%
+				width: 50%
+				border-radius: 10px
+				iframe
+					width: 100%
+					height: 100%
+					
+			.btnWrap
+				width: 100%
+				button
+					margin-left: 0 
+/* --- contacts END ------------------------------------------------*/
+
+
+
+/* --- Button Start ------------------------------------------------*/
+.whiteBtn
+	border: 1px solid $main_white
+	border-radius: 15px
+	border-top-right-radius: 0px
+	padding: 10px 20px
+	background: #fff
+	text-transform: uppercase
+	font-weight: bold
+	transition: 0.7s
+	position: relative
+	span
+		transition: 0.3s
+		color: $main_blue
+		mix-blend-mode: hard-light
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_yellow
+		border-radius: 15px
+		border-top-right-radius: 0px
+		transition: 0.5s
+		transform: scaleX(0)
+		transform-origin: left
+		opacity: 0
+	&:hover
+		border: 1px solid $main_yellow
+		transition: 0.7s
+		border-radius: 0
+		border-top-right-radius: 15px
+		color: $main_blue
+		&:before
+			opacity: 1
+			transition: 0.5s
+			border-radius: 0
+			border-top-right-radius: 15px
+			transform: scaleX(1)
+
+.darkBtn
+	border: none
+	display: block
+	margin-left: auto
+	margin-right: auto
+	width: 250px
+	max-width: 100%
+	border-radius: 15px
+	border-top-right-radius: 0px
+	padding: 15px 30px
+	background: $main_blue
+	text-transform: uppercase
+	font-weight: bold
+	transition: 0.7s
+	position: relative
+	span
+		transition: 0.3s
+		color: $main_white
+		mix-blend-mode: hard-light
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $main_yellow
+		border-radius: 15px
+		border-top-right-radius: 0px
+		transition: 0.5s
+		transform: scaleX(0)
+		transform-origin: left
+		opacity: 0
+	&:hover
+		transition: 0.7s
+		border-radius: 0
+		border-top-right-radius: 15px
+		color: $main_blue
+		&:before
+			opacity: 1
+			transition: 0.5s
+			border-radius: 0
+			border-top-right-radius: 15px
+			transform: scaleX(1)
+	&:focus
+		outline: none
+/* --- Button END ------------------------------------------------*/	
+
+
+/* --- Form START ------------------------------------------------*/	
+.howOpenForm
+	height: 100%
+	background: rgba($main_white, .9)
+	padding: 20px
+	border-radius: 10px
+	box-shadow: 0px 5px 18px 0px rgba(1, 1, 1, .75)
+	text-align: center
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	h2
+		margin-top: 5px
+		color: $main_blue
+		margin-bottom: 10px
+	input
+		transition: 0.3s
+		font-size: 20px
+		text-transform: uppercase
+		margin-left: auto
+		margin-right: auto
+		display: block
+		width: 400px
+		max-width: 100%
+		text-align: center
+		padding: 10px
+		border: 2px solid $main_yellow
+		border-radius: 10px
+		border-top-right-radius: 0
+		margin-bottom: 10px
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: 2px solid $main_blue
+/* --- Form END ------------------------------------------------*/	
+
+
+/* --- Other START ------------------------------------------------*/	
+.myW100
+	width: 100%

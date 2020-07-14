@@ -1,0 +1,670 @@
+$main_color: #111111
+$main_white: #fff
+$main_bg: #9E9E9E
+$main_bg_light: #F5F5F5
+$main_orange: #ffba00
+$main_red: #FF0000
+
+
+
+
+body
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	font-size: 16px
+	background: $main_white
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	box-sizing: border-box
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+
+.hidden
+	display: none
+
+section
+	overflow: hidden
+/* --- Navbar START ------------------------------------------------*/
+.navbar
+	transition: 0.5s
+	background: $main_bg_light
+	.navbar-brand
+		padding: 0
+	img
+		width: 130px
+		margin: 0
+		padding: 0
+	.anim
+		padding: 0
+		text-transform: uppercase
+		position: relative
+		overflow: hidden
+		span
+			color: #000
+			transition: 0.5s
+			transform-origin: left
+		&:before
+			transition: 0.5s
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-bottom: 2px solid $main_color
+			transform-origin: right
+			transform: scaleX(0)
+		&:hover
+			span
+				color: $main_color
+			&:before
+				transform: scaleX(1)
+	p
+		color: $main_color
+		margin: 0
+		padding-right: 10px
+		display: inline-block
+	.navbar-toggler-icon
+		background: url('../img/burger-light.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		outline: none
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		outline: none
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: none
+.active
+	position: relative
+	overflow: hidden
+	span
+		color: $main_color !important
+	&:before
+		transition: 0.5s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-bottom: 2px solid $main_color
+		transform-origin: right
+		transform: scaleX(0)
+		animation: animate 7s linear infinite
+@keyframes animate 
+	0%
+		transform-origin: right
+		transform: scaleX(0)
+	50%
+		transform-origin: right
+		transform: scaleX(1)
+	51%
+		transform-origin: right
+		transform: scaleX(1)
+	100%
+		transform-origin: right
+		transform: scaleX(0)
+.fixed-nav
+	background: $main_bg_light
+	color: $main_color	
+	padding: .4rem .4rem
+	transition: 0.5s
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+	.navbar-toggler-icon
+		background: url('../img/burger-black.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		width: 2em
+		height: 2em
+		outline: none
+		&:focus
+			outline: none
+	.navbar-toggler
+		transition: 0.3s
+		outline: none
+		&:focus
+			transition: 0.3s
+			outline: none
+			border: none
+.navbar-nav
+	text-align: center
+	margin-right: 10px
+	.nav-item
+		margin-bottom: 5px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+	
+/* --- Navbar END ------------------------------------------------*/
+
+
+
+/* --- headerCont START ------------------------------------------------*/
+.headerCont
+	overflow: hidden
+	padding: 75px 0 30px 0
+	position: relative
+	min-height: 100vh
+	background: url('../img/vedibg.jpg')
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+	z-index: 0
+	.videoCont
+		overflow: hidden
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		min-height: 100%
+		height: 100%
+		z-index: -1
+		video
+			min-width: 100%
+			height: auto
+			min-height: 100vh
+	.overlayCont
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		min-height: 100%
+		height: 100%
+		background: rgba(0,0,0, .5)
+		z-index: -1
+	.container-fluid
+		h1,h2
+			text-transform: uppercase
+			text-align: center
+			color: $main_white
+		hr
+			width: 20%
+			background-color: $main_white
+		h3
+			border-radius: 15px
+			background: rgba(255,255,255, .3)
+			text-align: center
+			color: $main_white
+			padding: 10px
+			margin-bottom: 10px
+		.textWrap
+			margin-top: 15px
+			border-radius: 15px
+			background: rgba(255,255,255, .3)
+			ul
+				list-style: none
+				padding: 10px
+				li
+					color: $main_white
+					padding: 10px
+					font-size: 18px
+/* --- headerCont END ------------------------------------------------*/
+
+
+/* --- About START ------------------------------------------------*/
+.about
+	overflow: hidden
+	padding: 50px 0
+	h2
+		text-transform: uppercase
+	iframe
+		width: 100%
+		height: auto
+		min-height: 300px
+	p
+		font-size: 18px
+/* --- About END ------------------------------------------------*/
+
+
+
+
+/* --- product START ------------------------------------------------*/	
+.product
+	padding: 50px 0
+	background: url('../img/prodbg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	background-attachment: fixed
+	h2
+		text-transform: uppercase
+		text-align: center
+	hr
+		width: 50%
+		background-color: $main_orange
+	h3
+		border-radius: 33px
+		padding: 20px
+		background: $main_bg_light
+		text-align: center
+		span
+			color: $main_red
+	.prodWrap
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+		background: $main_white
+		position: relative
+		border: 2px solid $main_bg
+		height: 100%
+		.hitProd
+			position: absolute
+			left: 20%
+			top: 1%
+			img
+				width: 100px
+		h4
+			text-align: center
+			background: $main_bg_light
+			padding: 10px
+			margin: 0
+		p
+			margin: 0
+			padding: 10px
+		img
+			max-width: 100%
+			height: auto
+			display: block
+			margin-left: auto
+			margin-right: auto
+/* --- product END ------------------------------------------------*/
+
+/* --- tableArt START ------------------------------------------------*/
+.tableArt
+	padding: 50px 0
+	h2
+		text-transform: uppercase
+		text-align: center
+	hr
+		width: 50%
+		background-color: $main_orange	
+	.textWrap
+		border-radius: 15px
+		background: $main_bg_light
+		padding: 5px
+		margin-bottom: 15px
+		h4
+			background: $main_bg
+			padding: 15px 10px 15px 10px
+			border-radius: 15px
+			margin-bottom: 20px
+			font-size: 1.2rem
+		ul
+			padding: 0
+			list-style: none
+			li
+/* --- tableArt END ------------------------------------------------*/
+
+/* --- Catalog Start ------------------------------------------------*/
+.catalog
+	background: url('../img/prodbg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	background-attachment: fixed
+	padding: 50px 0
+	h2
+		text-transform: uppercase
+		text-align: center
+	hr
+		width: 50%
+		background-color: $main_orange
+	p
+		font-size: 20px
+	.bgLight
+		padding: 10px
+		hr
+			width: 100%
+			background: none
+			border-top: 1px solid rgba(0,0,0,.1)
+/* --- Catalog END ------------------------------------------------*/
+
+
+/* --- advantage Start ------------------------------------------------*/
+.advantage
+	padding: 50px 0
+	h2
+		text-transform: uppercase
+		text-align: center
+	hr
+		width: 50%
+		background-color: $main_orange
+	img
+		display: block
+		margin-left: auto
+		margin-right: auto
+		max-width: 100%
+		height: auto
+/* --- advantage END ------------------------------------------------*/
+
+
+/* --- OpenForm START ------------------------------------------------*/
+.openform
+	padding: 50px 0
+	background: url('../img/formBg.jpeg')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-attachment: fixed
+/* --- OpenForm END ------------------------------------------------*/
+
+/* --- contacts START ------------------------------------------------*/
+.contacts
+	padding: 50px 0 0 0
+	background: $main_bg_light
+	text-align: center
+	h2
+		text-transform: uppercase
+		text-align: center
+	hr
+		width: 50%
+		background-color: $main_orange
+	p
+		padding: 10px
+		font-size: 20px
+	.buttonHead
+		font-size: 16px
+	.tel
+		font-size: 20px
+	a
+		display: block
+		font-size: 30px
+		i
+			transition: 0.3s
+			color: #3b5998
+			&:hover
+				transition: 0.3s
+				color: #8b9dc3
+	.map
+		padding: 0
+		margin: 15px 0 0 0 
+		iframe
+			width: 100%
+			height: 300px
+	.dev
+		padding: 5px
+		a
+			font-size: 16px
+			transition: 0.3s
+			&:hover
+				transition: 0.3s
+				color: $main_bg
+/* --- contacts END ------------------------------------------------*/
+
+
+/* --- BUttons Start ------------------------------------------------*/
+.button-nav
+	background: $main_white
+	text-transform: uppercase
+	border: 2px solid $main_color
+	padding: 5px 20px 5px 20px
+	border-radius: 33px
+	position: relative
+	span
+		transition: 0.3s
+	&:before
+		transition: 0.3s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-radius: 255px
+		background: $main_orange
+		transform: scaleX(0)
+		border: 2px solid $main_white
+		transform-origin: bottom
+	&:hover
+		&:before
+			transition: 0.3s
+			transform: scaleX(1)
+		span
+			transition: 0.3s
+			color: $main_color
+			mix-blend-mode: multiply
+
+
+.buttonHead
+	outline: none
+	border: none
+	background: $main_orange
+	text-transform: uppercase
+	padding: 10px 20px 10px 20px
+	border-radius: 33px
+	position: relative
+	display: block
+	width: 250px
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+	&:focus
+		outline: none
+	&:disabled
+		background: $main_bg
+	span
+		color: $main_white
+		transition: 0.3s
+	&:before
+		transition: 0.3s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-radius: 255px
+		background: #000000
+		opacity: 0.3
+		transform: scaleX(0)
+		border: 2px solid $main_white
+		transform-origin: bottom
+	&:hover
+		&:before
+			transition: 0.3s
+			transform: scaleX(1)
+		span
+			transition: 0.3s
+			mix-blend-mode: screen
+
+
+.buttonAdw
+	display: inline-block
+	margin-top: auto
+	background: $main_orange
+	text-transform: uppercase
+	padding: 10px 20px 10px 20px
+	border-radius: 33px
+	position: relative
+	text-align: center
+	span
+		color: $main_white
+		transition: 0.3s
+	&:before
+		transition: 0.3s
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border-radius: 255px
+		background: #000000
+		opacity: 0.3
+		transform: scaleX(0)
+		border: 2px solid $main_white
+		transform-origin: bottom
+	&:hover
+		&:before
+			transition: 0.3s
+			transform: scaleX(1)
+		span
+			transition: 0.3s
+			mix-blend-mode: screen	
+/* --- BUttons END ------------------------------------------------*/
+
+/* --- Form START ------------------------------------------------*/
+.footer-form-hidden
+	position: relative
+	padding: 20px
+	text-align: center
+	width: 700px
+	max-width: 100%
+	display: block
+	margin-left: auto
+	margin-right: auto
+	border: 2px solid $main_orange
+	border-radius: 33px
+	background: rgba(255,255,255, .9)
+	input
+		width: 250px
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin-top: 20px
+		margin-bottom: 20px
+		text-align: center
+		border-radius: 33px
+		border: 1px solid $main_bg
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+		padding: 10px
+		outline: none
+	button
+	 &:focus
+		 outline: none
+
+
+
+.mainForm
+	padding: 20px
+	text-align: center
+	width: 700px
+	max-width: 100%
+	display: block
+	margin-left: auto
+	margin-right: auto
+	border: 2px solid $main_orange
+	border-radius: 33px
+	background: rgba(255,255,255, .9)
+	input
+		width: 250px
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin-top: 20px
+		margin-bottom: 20px
+		text-align: center
+		border-radius: 33px
+		border: 1px solid $main_bg
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+		padding: 10px
+		outline: none
+/* --- Form END ------------------------------------------------*/
+
+
+/* --- Other START ------------------------------------------------*/	
+.row-eq-height
+	display: flex
+	flex-wrap: wrap
+.colorOrange
+	color: $main_orange
+.bgLight
+	background: $main_bg_light
+
+
+
+.popupDiag
+  width: 450px
+  background: white
+  padding: 20px 30px
+  text-align: left
+  max-width: 100%
+  margin: 40px auto
+  position: relative
+.my-mfp-zoom-in
+  .zoom-anim-dialog
+    opacity: 0
+    -webkit-transition: all 0.2s ease-in-out
+    -moz-transition: all 0.2s ease-in-out
+    -o-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    transform: scale(0.8)
+  &.mfp-ready .zoom-anim-dialog
+    opacity: 1
+    -webkit-transform: scale(1)
+    -moz-transform: scale(1)
+    -ms-transform: scale(1)
+    -o-transform: scale(1)
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    transform: scale(0.8)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: opacity 0.3s ease-out
+    -moz-transition: opacity 0.3s ease-out
+    -o-transition: opacity 0.3s ease-out
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.8
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+
+.my-mfp-slide-bottom
+  .zoom-anim-dialog
+    opacity: 0
+    -webkit-transition: all 0.2s ease-out
+    -moz-transition: all 0.2s ease-out
+    -o-transition: all 0.2s ease-out
+    transition: all 0.2s ease-out
+    -webkit-transform: translateY(-20px) perspective(600px) rotateX(10deg)
+    -moz-transform: translateY(-20px) perspective(600px) rotateX(10deg)
+    -ms-transform: translateY(-20px) perspective(600px) rotateX(10deg)
+    -o-transform: translateY(-20px) perspective(600px) rotateX(10deg)
+    transform: translateY(-20px) perspective(600px) rotateX(10deg)
+  &.mfp-ready .zoom-anim-dialog
+    opacity: 1
+    -webkit-transform: translateY(0) perspective(600px) rotateX(0)
+    -moz-transform: translateY(0) perspective(600px) rotateX(0)
+    -ms-transform: translateY(0) perspective(600px) rotateX(0)
+    -o-transform: translateY(0) perspective(600px) rotateX(0)
+    transform: translateY(0) perspective(600px) rotateX(0)
+  &.mfp-removing .zoom-anim-dialog
+    opacity: 0
+    -webkit-transform: translateY(-10px) perspective(600px) rotateX(10deg)
+    -moz-transform: translateY(-10px) perspective(600px) rotateX(10deg)
+    -ms-transform: translateY(-10px) perspective(600px) rotateX(10deg)
+    -o-transform: translateY(-10px) perspective(600px) rotateX(10deg)
+    transform: translateY(-10px) perspective(600px) rotateX(10deg)
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: opacity 0.3s ease-out
+    -moz-transition: opacity 0.3s ease-out
+    -o-transition: opacity 0.3s ease-out
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.8
+  &.mfp-removing.mfp-bg
+    opacity: 0
+

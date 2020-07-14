@@ -1,0 +1,239 @@
+@media only screen and (min-width : 1500px) 
+{
+
+}
+@media only screen and (max-height : 582px) 
+{
+  .first
+  {
+    padding-top: 75px;
+  }
+}
+
+
+
+@media only screen and (max-width : 1800px)
+{
+
+}
+@media only screen and (max-width : 1600px)
+{
+
+}
+@media only screen and (max-width : 1450px)
+{
+
+}
+@media only screen and (max-width : 1280px)
+{
+  .aboutnext h3
+  {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width : 1200px)
+{
+  .prod p
+  {
+    font-size: 16px
+  }
+  .prod h3,h4
+  {
+    font-size: 1.4rem;
+  }
+  .aboutnext p
+  {
+    font-size: 16px;
+  }
+  .navbar{
+    transition: 0.5s;
+    background: rgba(255,255,255, .9);
+  }
+}
+@media only screen and (max-width : 1140px) 
+{
+
+}
+
+@media only screen and (max-width : 992px)
+{
+  h1 
+  {
+    font-size: 1.4rem;
+  }
+  h2 
+  {
+    font-size: 1.3rem;
+  }
+  h3 
+  {
+    font-size: 1.1rem;
+  }
+  h4
+  {
+    font-size: 1.2rem;
+  }
+  h5
+  {
+    font-size: 1rem;
+  }
+  .about-more h4
+  {
+    font-size: 1.2rem;
+  }
+  .aboutnext h3 
+  {
+    font-size: 1.2rem;
+  }
+  .contacts h3
+  {
+    font-size: 1.4rem;
+  }
+  .advantage h3
+  {
+    font-size: 1.4rem;
+  }
+  .reviews h3 
+  {
+    font-size: 1.4rem;
+  }
+  .prod .pricecont
+  {
+    padding: 10px 5px 15px 5px;
+    flex-wrap: wrap;
+  }
+  .prod .pricecont .textCon
+  {
+    width: 95%;
+  }
+  .prod .pricecont .textCon h4
+  {
+    font-size: 1.1rem;
+  }
+  .about-more h3 
+  {
+    font-size: 1.2rem;
+  }
+  .form-about h5 
+  {
+    font-size: 1.1rem;
+  }
+  .first .pricecont
+  {
+    padding: 10px 5px 15px 5px;
+    flex-wrap: wrap;
+  }
+  .about-more .pricecont
+  {
+    padding: 10px 5px 15px 5px;
+    flex-wrap: wrap;
+  }
+  .about-more  .pricecont .textCon
+  {
+    width: 95%;
+  }
+  .about-more  .pricecont .textCon h4
+  {
+    font-size: 1.2rem;
+  }
+  .first .pricecont .textCon
+  {
+    width: 95%;
+  }
+  .first .pricecont .textCon h4
+  {
+    font-size: 1.1rem;
+  }
+  .first .headerText 
+  {
+    width: 95%;
+  }
+  .first .headerText h1
+  {
+    font-size: 1.4rem;
+  }
+  .first .trigerText
+  {
+    width: 95%;
+  }
+  .first .trigerText h3
+  {
+    font-size: 1.5rem;
+  }
+  .adv .stepsCont .stepsWrap
+  {
+    width: 40%;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width : 800px)
+{
+
+}
+@media only screen and (max-width : 768px)
+{
+
+  .prodAll .prodAllWrap .textWrap h4
+  {
+    font-size: 1.2rem;
+  }
+  .first .pricecont
+  {
+    width: 95%;
+  }
+  .form-about input
+  {
+    font-size: 16px;
+  }
+  .first
+  {
+    padding-top: 75px;
+  }
+
+}
+@media only screen and (max-width : 576px)
+{
+  .prodAll .prodAllWrap .iHover
+  {
+    transform: translate(0) scale(1);
+  }
+  .reviews .slick-prev
+  {
+    left: -2%;
+  }
+  .reviews .slick-next
+  {
+    right: -2%;
+  }
+  .sert .slick-prev
+  {
+    left: 5%;
+  }
+  .sert .slick-next
+  {
+    right: 5%;
+  }
+  .prodAll .prodAllWrap .textWrap 
+  {
+    flex-basis: auto;
+    padding: 10px 5px;
+  }
+  .prodAll .prodAllWrap .imgWrap
+  {
+    flex-basis: auto
+  }
+  .adv .stepsCont .stepsWrap
+  {
+    width: 80%;
+  }
+}
+@media only screen and (max-width : 450px)
+{
+
+
+}
+@media only screen and (max-width : 400px)
+{
+
+
+}

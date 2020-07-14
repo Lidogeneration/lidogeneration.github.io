@@ -1,0 +1,107 @@
+header {
+  background: linear-gradient(to bottom right, #A96033, #CA7D3D); }
+
+.red-color {
+  color: #E01526; }
+
+.title-scroll {
+  padding-top: 80px; }
+  .title-scroll .col-img .d-img {
+    position: relative; }
+    .title-scroll .col-img .d-img img {
+      border-radius: 3px;
+      position: relative;
+      width: 100%;
+      z-index: 1; }
+    .title-scroll .col-img .d-img:before {
+      position: absolute;
+      content: "";
+      background: transparent;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border: 2px solid white;
+      border-radius: 3px;
+      z-index: 2;
+      box-shadow: 0px 5px 7px 2px rgba(0, 0, 0, 0.75); }
+
+.feature_area {
+  padding: 30px 0; }
+  .feature_area .col-video .alazea-video-area {
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.sertificat {
+  padding: 30px 0; }
+  .sertificat .my-sertificat {
+    border-radius: 3px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(154, 147, 140, 0.5); }
+    .sertificat .my-sertificat .d-rev {
+      padding: 30px 0; }
+      .sertificat .my-sertificat .d-rev div img {
+        margin-left: auto;
+        margin-right: auto; }
+
+.equipment {
+  padding: 30px 0; }
+  .equipment img {
+    max-width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75); }
+  .equipment .im_g {
+    max-width: 400px; }
+
+.advantages {
+  padding: 30px 0; }
+  .advantages .d-title {
+    padding: 20px 0; }
+  .advantages .col-adv-p {
+    padding-bottom: 15px; }
+    .advantages .col-adv-p p {
+      font-size: 22px;
+      text-align: center;
+      margin: 20px;
+      border-bottom: 1px dotted red; }
+  .advantages img {
+    border-bottom: 1px solid #9D9D9D; }
+  .advantages .col-contact {
+    padding-top: 50px; }
+
+.office {
+  padding: 30px 0; }
+  .office .d-title {
+    padding: 20px 0; }
+  .office img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75); }
+  .office .d-img img {
+    height: auto; }
+
+.reviews {
+  padding: 30px 0; }
+  .reviews img {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.contactdata {
+  padding: 30px 0; }
+
+.googlemap {
+  height: 50vh;
+  width: 100%;
+  max-width: 600px; }
+  .googlemap iframe {
+    height: 100%;
+    width: 100%; }
+
+.hidden {
+  display: none; }
+
+.cursor_pointer {
+  cursor: pointer; }
+  .cursor_pointer:hover {
+    cursor: pointer; }
+
+/*# sourceMappingURL=my_style.css.map */
