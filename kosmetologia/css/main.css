@@ -81,6 +81,10 @@ section {
   font-weight: bold;
 }
 
+.navMenuFix__tel a {
+  display: block;
+}
+
 .menuBtn {
   position: fixed;
   top: 20px;
@@ -380,6 +384,7 @@ section {
 .navMain__tel a {
   color: #707070;
   font-weight: bold;
+  display: block;
 }
 
 .navMain__list {
@@ -506,7 +511,7 @@ section {
   width: 100%;
 }
 
-@media (max-width: 1410px) {
+@media (max-width: 1480px) {
   .navMain__list {
     width: 30%;
   }

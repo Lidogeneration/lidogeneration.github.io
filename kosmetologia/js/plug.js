@@ -54,6 +54,7 @@ $('.rooms__wrap-slider').slick({
   pauseOnHover: false,
   infinite: true,
   accessibility: false,
+  adaptiveHeight: true,
   prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
   nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
 });
@@ -63,6 +64,7 @@ $('.about__personal-mainSlid').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+  adaptiveHeight: true,
   asNavFor: '.about__personal-subSlid'
 });
 
