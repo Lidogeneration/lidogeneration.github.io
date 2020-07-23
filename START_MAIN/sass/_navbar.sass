@@ -6,18 +6,35 @@
 	width: 100%
 	display: flex
 	align-items: center
-	background: $main_white
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	background: $main_color
 	padding: 5px 10px
 	z-index: 99
 	@media(min-width: 992px)
 		display: none
+	&__logo
+		a
+			font-weight: bold
+			font-size: 16px
+			color: $main_white
+			font-size: 24px
+			font-weight: 300
+			transition: .3s
+			text-transform: uppercase
+			span
+				font-weight: 900
 	&__tel
 		margin-left: 10px
 		font-weight: bold
+		a
+			color: $main_white
+	@media(max-width: 420px)
+		&__logo
+			display: none
+		&__tel
+			padding: 7px 5px
 .menuBtn
 	position: fixed
-	top: 20px
+	top: 10px
 	right: 20px
 	width: 30px
 	height: 29px
@@ -26,7 +43,6 @@
 	justify-content: space-around
 	align-items: center
 	flex-direction: column
-	background: $main_white
 	border-radius: 2px
 	span
 		transition: .3s
@@ -38,7 +54,7 @@
 		display: block
 		width: 100%
 		height: 3px
-		background: $main_color
+		background: $main_white
 .menuBtnShow
 	background: none
 	span
@@ -77,11 +93,13 @@
 		h4
 			color: $main_white
 			margin: 0
-			font-weight: bold
+			font-weight: 300
 			font-size: 32px
 			margin-bottom: 20px
+			text-transform: uppercase
 			span
-				color: $main_rgb
+				font-weight: bold
+				color: $main_white
 		h5
 			color: $main_white
 			text-align: left
@@ -143,7 +161,7 @@
 		padding: 20px 30px
 		display: flex
 		flex-direction: column
-		background: $main_lightBg
+		background: $main_bgL
 		p, a
 			font-size: 16px
 			color: $main_color
@@ -165,16 +183,15 @@
 
 /* --- navMain Start ------------------------------------------------*/
 .navMain
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 	display: flex
 	justify-content: space-around
 	align-items: center
-	padding: 10px 10px
+	padding: 5px 10px
 	position: fixed
 	top: 0
 	left: 0
 	width: 100%
-	background: $main_white
+	background: $main_color
 	z-index: 99
 	&__logo
 		margin-left: 50px
@@ -184,17 +201,18 @@
 		a
 			font-weight: bold
 			font-size: 16px
-			color: $main_black
-			img
-				width: 100%
-				height: auto
-	&__tel
-		margin-right: auto
-		margin-left: 20px
-		a
-			color: $main_bgElem
-			font-weight: bold
+			color: $main_white
+			font-size: 24px
+			font-weight: 300
+			transition: .3s
+			text-transform: uppercase
+			span
+				font-weight: 900
+			&:hover
+				color: $main_white
+				transition: .3s
 	&__list
+		margin-left: auto
 		margin-right: auto
 		width: 50%
 		ul
@@ -213,61 +231,36 @@
 				&:last-child
 					margin-right: 5px
 				a
+					font-size: 15px
+					text-transform: uppercase
 					transition: .3s
-					font-weight: 400
+					color: $main_white
 					&:hover
 						transition: .3s
-						font-weight: 900
-	&__arrow
-		height: 20px
-		display: flex
-		justify-content: center
-		align-items: center
-		margin-right: 20px
-		&-cont
-			transition: .3s
-			position: relative
-			width: 65px
-			height: 2px
-			background: $main_bgElem
-			animation-name: arrowMove
-			animation-duration: 2s
-			animation-iteration-count: infinite
-			transition-timing-function: ease
-			&:after, &:before
-				position: absolute
-				content: ''
-				background: $main_bgElem
-				width: 20%
-				right: -3px
-				height: 2px
-			&:after
-				top: -4px
-				transform: rotate(45deg)
-			&:before
-				top: 4px
-				transform: rotate(-45deg)
+						color: $main_rgbL
 	&__btn
 		a
-			border-left: 5px solid $main_lightBg
+			font-size: 15px
+			text-align: center
+			color: $main_white
+			display: block
 			margin-right: 50px
-			padding: 10px
+			margin-bottom: 5px
 			transition: .3s
-			position: relative
-			&:before
-				z-index: -1
-				position: absolute
-				content: ''
-				transition: .3s
-				top: 0
-				left: 0
-				width: 0%
-				height: 100%
-				background: $main_lightBg
 			&:hover
-				&:before
-					transition: .3s
-					width: 100%
+				transition: .3s
+				color: $main_rgb
+		&-btnNav
+			font-size: 15px
+			border: 2px solid $main_rgb
+			margin-right: 50px
+			padding: 5px 10px
+			transition: .3s
+			color: $main_white
+			text-transform: uppercase
+			&:hover
+				transition: .3s
+				color: $main_rgb
 	@media(max-width: 1410px)
 		&__list
 			width: 30%

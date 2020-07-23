@@ -41,10 +41,10 @@
 
 body {
   background: #fff;
-  font-family: 'MontserratRegular', sans-serif;
-  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  color: #262626;
+  color: #424242;
   margin: 0;
   padding: 0;
   position: relative;
@@ -53,12 +53,12 @@ body {
 
 body a {
   text-decoration: none;
-  color: #262626;
+  color: #424242;
 }
 
 body a:hover {
   text-decoration: none;
-  color: #262626;
+  color: #424242;
 }
 
 button {
@@ -97,14 +97,14 @@ section {
 }
 
 .slick-prev svg {
-  color: #262626;
+  color: #424242;
   font-size: 30px;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .slick-prev:hover svg {
-  color: #44DBBD;
+  color: #FFCA63;
 }
 
 .slick-next {
@@ -121,14 +121,14 @@ section {
 }
 
 .slick-next svg {
-  color: #262626;
+  color: #424242;
   font-size: 30px;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .slick-next:hover svg {
-  color: #44DBBD;
+  color: #FFCA63;
 }
 
 .slick-dots li button:before {
@@ -136,7 +136,7 @@ section {
 }
 
 .slick-dots .slick-active button:before {
-  color: #44DBBD !important;
+  color: #FFCA63 !important;
 }
 
 /* --- slick style end ------------------------------------------------*/
@@ -152,9 +152,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fff;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #424242;
   padding: 5px 10px;
   z-index: 99;
 }
@@ -165,14 +163,42 @@ section {
   }
 }
 
+.navMenuFix__logo a {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-transform: uppercase;
+}
+
+.navMenuFix__logo a span {
+  font-weight: 900;
+}
+
 .navMenuFix__tel {
   margin-left: 10px;
   font-weight: bold;
 }
 
+.navMenuFix__tel a {
+  color: #fff;
+}
+
+@media (max-width: 420px) {
+  .navMenuFix__logo {
+    display: none;
+  }
+  .navMenuFix__tel {
+    padding: 7px 5px;
+  }
+}
+
 .menuBtn {
   position: fixed;
-  top: 20px;
+  top: 10px;
   right: 20px;
   width: 30px;
   height: 29px;
@@ -187,7 +213,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fff;
   border-radius: 2px;
 }
 
@@ -206,7 +231,7 @@ section {
   display: block;
   width: 100%;
   height: 3px;
-  background: #262626;
+  background: #fff;
 }
 
 .menuBtnShow {
@@ -239,7 +264,7 @@ section {
 /* --- menuBtn end ------------------------------------------------*/
 /* --- Navbar START ------------------------------------------------*/
 .navMobile {
-  background: #262626;
+  background: #424242;
   padding: 20px 0 0 0;
   min-height: 100vh;
   position: fixed;
@@ -270,13 +295,15 @@ section {
 .navMobile__title h4 {
   color: #fff;
   margin: 0;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 32px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .navMobile__title h4 span {
-  color: #44DBBD;
+  font-weight: bold;
+  color: #fff;
 }
 
 .navMobile__title h5 {
@@ -327,7 +354,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #44DBBD;
+  border-bottom: 2px solid #FFCA63;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   opacity: 0;
@@ -377,16 +404,16 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #F3F3F3;
+  background: #F8F9FA;
 }
 
 .navMobile__contacts p, .navMobile__contacts a {
   font-size: 16px;
-  color: #262626;
+  color: #424242;
 }
 
 .navMobile__contacts p i, .navMobile__contacts a i {
-  color: #262626;
+  color: #424242;
 }
 
 .navMobile__contacts a {
@@ -398,7 +425,7 @@ section {
 .navMobile__contacts a:hover {
   -webkit-transition: .3s;
   transition: .3s;
-  color: #262626;
+  color: #424242;
 }
 
 .navMobileShow {
@@ -418,8 +445,6 @@ section {
 /* --- Navbar END ------------------------------------------------*/
 /* --- navMain Start ------------------------------------------------*/
 .navMain {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,12 +453,12 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 10px;
+  padding: 5px 10px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: #424242;
   z-index: 99;
 }
 
@@ -453,25 +478,26 @@ section {
 .navMain__logo a {
   font-weight: bold;
   font-size: 16px;
-  color: #000;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-transform: uppercase;
 }
 
-.navMain__logo a img {
-  width: 100%;
-  height: auto;
+.navMain__logo a span {
+  font-weight: 900;
 }
 
-.navMain__tel {
-  margin-right: auto;
-  margin-left: 20px;
-}
-
-.navMain__tel a {
-  color: #707070;
-  font-weight: bold;
+.navMain__logo a:hover {
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .navMain__list {
+  margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
@@ -504,95 +530,51 @@ section {
 }
 
 .navMain__list ul li a {
+  font-size: 15px;
+  text-transform: uppercase;
   -webkit-transition: .3s;
   transition: .3s;
-  font-weight: 400;
+  color: #fff;
 }
 
 .navMain__list ul li a:hover {
   -webkit-transition: .3s;
   transition: .3s;
-  font-weight: 900;
-}
-
-.navMain__arrow {
-  height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 20px;
-}
-
-.navMain__arrow-cont {
-  -webkit-transition: .3s;
-  transition: .3s;
-  position: relative;
-  width: 65px;
-  height: 2px;
-  background: #707070;
-  -webkit-animation-name: arrowMove;
-          animation-name: arrowMove;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-}
-
-.navMain__arrow-cont:after, .navMain__arrow-cont:before {
-  position: absolute;
-  content: '';
-  background: #707070;
-  width: 20%;
-  right: -3px;
-  height: 2px;
-}
-
-.navMain__arrow-cont:after {
-  top: -4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.navMain__arrow-cont:before {
-  top: 4px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  color: #FFCA63;
 }
 
 .navMain__btn a {
-  border-left: 5px solid #F3F3F3;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  display: block;
   margin-right: 50px;
-  padding: 10px;
+  margin-bottom: 5px;
   -webkit-transition: .3s;
   transition: .3s;
-  position: relative;
 }
 
-.navMain__btn a:before {
-  z-index: -1;
-  position: absolute;
-  content: '';
+.navMain__btn a:hover {
   -webkit-transition: .3s;
   transition: .3s;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background: #F3F3F3;
+  color: #FFCA63;
 }
 
-.navMain__btn a:hover:before {
+.navMain__btn-btnNav {
+  font-size: 15px;
+  border: 2px solid #FFCA63;
+  margin-right: 50px;
+  padding: 5px 10px;
   -webkit-transition: .3s;
   transition: .3s;
-  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navMain__btn-btnNav:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #FFCA63;
 }
 
 @media (max-width: 1410px) {
@@ -627,8 +609,8 @@ section {
   text-align: center;
   -webkit-transition: .3s;
   transition: .3s;
-  border: 1px dashed #707070;
-  color: #262626;
+  border: 1px dashed #8D8D8D;
+  color: #424242;
   margin: 5px;
   transition: .3s;
 }
@@ -636,7 +618,7 @@ section {
 .mainBtnD:hover {
   -webkit-transition: .3s;
   transition: .3s;
-  border: 1px solid #707070;
+  border: 1px solid #8D8D8D;
 }
 
 .mainBtn {
@@ -650,7 +632,7 @@ section {
   text-align: center;
   -webkit-transition: .3s;
   transition: .3s;
-  color: #262626;
+  color: #424242;
   margin: 5px;
   transition: .3s;
   position: relative;
@@ -665,7 +647,7 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  border: solid #000;
+  border: solid #424242;
   border-width: 0 0 1px 1px;
   -webkit-transition: .3s;
   transition: .3s;
@@ -678,7 +660,7 @@ section {
   height: 100%;
   top: 0;
   right: 0;
-  border: solid #000;
+  border: solid #424242;
   border-width: 1px 1px 0 0;
   -webkit-transition: .3s;
   transition: .3s;
@@ -711,11 +693,11 @@ section {
 
 .openForm h2 {
   font-size: 40px;
-  color: #262626;
+  color: #424242;
 }
 
 .openForm h2 span {
-  color: #44DBBD;
+  color: #FFCA63;
 }
 
 .openForm input {
