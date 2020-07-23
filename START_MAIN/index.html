@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+	<meta name="description" CONTENT="<?php bloginfo('description');?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="<?php bloginfo('name'); ?><?php wp_title(); ?>" />
+	<meta property="og:description" content="<?php bloginfo('description');?>" />
+	<meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.png">
+	<meta property="og:url" content="<?php site_url(); ?>" />
+	<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+	<link rel="shortcut icon" href="<?php bloginfo(template_url);?>/img/logo.png" />
+
+	<link rel="stylesheet" href="libs/aos/aos.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	<!-- menuBtn start -->
+	<div class="navMenuFix">
+		<div class="navMenuFix__logo">
+			<a href="/"><img src="img/logo.png" alt=""></a>
+		</div>
+		<!-- /.navMenuFix__logo -->
+		<div class="navMenuFix__tel">
+			<a href="tel:">+99 (999) 999 99 99</a>
+		</div>
+		<!-- /.navMenuFix -->
+	</div>
+	<!-- /.navMenuFix -->
+	<div class="menuBtn menuBtnHide" id="menuBtn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<!-- menuBtn end -->
+
+	<!-- navMobile start -->
+	<nav class="navMobile navMobileHide" id="navMobile">
+		<div class="navMobile__title">
+			<h4>Royal Medical<br>Cosmetology</h4>
+		</div>
+		<!-- /.navMobile__title -->
+		<div class="navMobile__list my-auto">
+			<ul>
+				<li><a href="/">Главная</a></li>
+				<li><a href="#prod-link">Услуги</a></li>
+				<li><a href="#cont-link">Контакты</a></li>
+			</ul>
+			<div class="navMobile__list-social">
+				<a href="#" target="_blank" class="mr-4"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+			<!-- /.navMobile__list-social -->
+		</div>
+		<!-- /.navMobile__list -->
+		<div class="navMobile__contacts">
+			<a href="tel:" class="mb-2">+99 (999) 999 99 99</a>
+			<a href="#mpopup-form" class="mpopup"
+				onclick="setNameScroll('Записаться Онлайн - > мобильное меню','Мы перезвоним');">Записаться Онлайн</a>
+		</div>
+		<!-- /.navMobile__contacts -->
+	</nav>
+	<!-- navMobile end -->
+
+	<!-- navMain start -->
+	<nav class="navMain">
+		<div class="navMain__logo">
+			<a href="/" class="mr-2"><img src="img/logo.png" alt="Royal medical cosmetology"></a>
+			<a href="/">Royal Medical<br>Cosmetology</a>
+		</div>
+		<!-- /.navMain__logo -->
+		<div class="navMain__tel">
+			<a href="tel:">099-999-99-99</a>
+		</div>
+		<!-- /.navMain__tel -->
+		<div class="navMain__list">
+			<ul>
+				<li><a href="/">Главная</a></li>
+				<li><a href="#prod-link" rel="m_PageScroll2id">Услуги</a></li>
+				<li><a href="#cont-link" rel="m_PageScroll2id">Контакты</a></li>
+			</ul>
+		</div>
+		<!-- /.navMain__list -->
+		<div class="navMain__arrow">
+			<div class="navMain__arrow-cont"></div>
+			<!-- /.navMain__arrow-cont -->
+		</div>
+		<!-- /.navMain__arrow -->
+		<div class="navMain__btn">
+			<a href="#mpopup-form" class="mpopup"
+				onclick="setNameScroll('Записаться Онлайн - > шапка сайта','Мы перезвоним');">Записаться Онлайн</a>
+		</div>
+		<!-- /.navMain__btn -->
+	</nav>
+	<!-- /.navMain -->
+	<!-- navMain end -->
+	
+	<div class="devgen p-1 text-center">
+		<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by
+			GenerationLeadStudio</a>
+	</div>
+
+
+
+	<div class="hidden">
+		<form class="openForm d-block mx-auto order-main" id="mpopup-form">
+			<!-- <h2><span>de</span>Toos</h2> -->
+			<h3>Заполните форму</h3>
+			<h4><span id="customTextForm">Мы перезвоним</span></h4>
+			<input type="text" name="name" placeholder="ИМЯ" required>
+			<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
+			<button class="disbutt mainBtn" disabled><span>отправить</span></button>
+			<input name="order" type="hidden" id="input_order">
+			<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+			<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+			<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+			<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+		</form>
+	</div>
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/jquery.inputmask.bundle.min.js"></script>
+	<script src="libs/psti/jquery.malihu.PageScroll2id.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/fontawesome/js/all.min.js"></script>
+	<script src="libs/aos/aos.js"></script>
+	<script src="js/plug.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
