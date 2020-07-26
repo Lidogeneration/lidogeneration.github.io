@@ -20,44 +20,24 @@
 
 .mainBtn
 	cursor: pointer
-	display: inline-block
+	display: block
+	margin-left: auto
+	margin-right: auto
 	max-width: 100%
 	padding: 10px
 	font-size: 16px
-	text-transform: uppercase
 	color: $main_white
 	text-align: center
 	transition: .3s
-	color: $main_color
+	color: $main_rgb
 	margin: 5px
 	transition: .3s
 	position: relative
-	border: none
+	border: 1px solid $main_rgb
 	background: none
-	&:after
-		position: absolute
-		content: ''
-		width: 80%
-		height: 100%
-		top: 0
-		left: 0
-		border: solid $main_color
-		border-width: 0 0 1px 1px
-		transition: .3s
-	&:before
-		position: absolute
-		content: ''
-		width: 80%
-		height: 100%
-		top: 0
-		right: 0
-		border: solid $main_color
-		border-width: 1px 1px 0 0
-		transition: .3s
+	font-weight: bold
 	&:hover
 		transition: .3s
-		&:after
-			width: 100%
-		&:before
-			width: 100%
+		color: $main_rgbL
+		border: 1px solid $main_rgbL
 /* --- button start end ------------------------------------------------*/
