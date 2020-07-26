@@ -1138,6 +1138,58 @@ section {
   }
 }
 
+.vForm__title {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vForm__title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FD7E14;
+  padding: 0;
+  margin: 0;
+}
+
+.vForm__form-input {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.vForm__form-input input {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #FD7E14;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background: none;
+  font-weight: bold;
+}
+
+.vForm .mainBtn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .vForm__form-input input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+}
+
 /* --- button start Start ------------------------------------------------*/
 .mainBtnD {
   cursor: pointer;
@@ -1187,7 +1239,8 @@ section {
 .mainBtn:hover {
   -webkit-transition: .3s;
   transition: .3s;
-  color: #FFCA63;
+  color: #fff;
+  background: #FFCA63;
   border: 1px solid #FFCA63;
 }
 

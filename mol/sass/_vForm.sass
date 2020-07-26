@@ -1,0 +1,37 @@
+.vForm
+  &__title
+    padding: 5px 
+    text-align: center
+    margin-bottom: 20px
+    h2
+      font-size: 24px
+      font-weight: bold
+      color: $main_rgb
+      padding: 0
+      margin: 0
+  &__form
+    &-input
+      padding: 10px
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      margin-bottom: 15px
+      input
+        text-align: center
+        padding: 10px
+        border: 1px solid $main_rgb
+        flex-basis: 30%
+        background: none
+        font-weight: bold
+  .mainBtn
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 300px
+    max-width: 100%
+  @media(max-width: 992px)
+    &__form
+      &-input
+        input
+          flex-basis: 100%
+          margin-bottom: 15px

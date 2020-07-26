@@ -211,6 +211,25 @@
 </section>
 <!-- about end -->
 
+<!-- vForm start -->
+<section class="vForm">
+	<div class="vForm__title">
+		<h2>Заполните форму и получите прайс на наши услуги</h2>
+	</div>
+	<!-- /.vForm__title -->
+	<form class="vForm__form order-main">
+		<div class="vForm__form-input">
+			<input type="text" name="name" placeholder="Имя" required>
+			<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
+			<input type="email" class="phoneidcl" name="email" placeholder="Email" required>
+			<input name="order" type="hidden" id="Заполните форму и получите прайс на наши услуги">
+		</div>
+		<!-- /.vForm__form-input -->
+		<button class="disbutt mainBtn" disabled><span>Получить прайс</span></button>
+	</form>
+</section>
+<!-- vForm end -->
+
 <div class="devgen p-1 text-center">
 	<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>
 </div>
@@ -222,7 +241,7 @@
 		<h4><span id="customTextForm">Мы перезвоним</span></h4>
 		<input type="text" name="name" placeholder="ИМЯ" required>
 		<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
-		<button class="disbutt mainBtn" disabled><span>отправить</span></button>
+		<button class="disbutt mainBtn" disabled><span>Отправить</span></button>
 		<input name="order" type="hidden" id="input_order">
 		<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
 		<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
