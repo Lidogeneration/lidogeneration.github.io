@@ -1064,6 +1064,11 @@ section {
   margin: 0;
 }
 
+.about__content-right-wrap-text p span {
+  font-weight: bold;
+  color: #FD7E14;
+}
+
 .about__content-right img {
   width: 100%;
 }
@@ -1329,6 +1334,10 @@ section {
   .works .slick-next {
     right: 20px;
   }
+}
+
+.prod {
+  padding-top: 0;
 }
 
 .prod__wrap {
