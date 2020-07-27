@@ -41,19 +41,35 @@ AOS.init();
 // 	});
 // });
 
-// $('.revolution__slider').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 7000,
-//   speed: 1000,
-//   dots: true,
-//   arrows: true,
-//   pauseOnFocus: false,
-//   pauseOnHover: false,
-//   infinite: true,
-//   accessibility: false,
-//   prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-caret-left"></i></button>',
-//   nextArrow: '<button type="button" class="slick-next"><i class="fas fa-caret-right"></i></button>',
-// });
+$('.works__slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  centerPadding: '300px',
+  autoplay: true,
+  autoplaySpeed: 7000,
+  speed: 1000,
+  dots: true,
+  arrows: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  infinite: true,
+  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></i></button>',
+  responsive: [
+    {
+      breakpoint: 1250,
+      settings: {
+        centerPadding: '200px',
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        centerPadding: '0',
+        arrows: false,
+      }
+    },
+  ]
+});
 

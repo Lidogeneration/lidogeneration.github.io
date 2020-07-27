@@ -1190,6 +1190,147 @@ section {
   }
 }
 
+.works {
+  padding-top: 0;
+}
+
+.works__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.works__header h2 {
+  font-size: 30px;
+  color: #FD7E14;
+  font-weight: bold;
+}
+
+.works__slider-cont {
+  position: relative;
+}
+
+.works__slider-cont img {
+  width: 100%;
+}
+
+.works__slider-cont:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(66, 66, 66, 0.7);
+}
+
+.works .slick-current:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(66, 66, 66, 0);
+}
+
+.works .slick-prev, .works .slick-next {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.works .slick-prev:after, .works .slick-next:after {
+  content: '';
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  border: 2px solid #FD7E14;
+  top: -13px;
+  left: -13px;
+  border-radius: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.works .slick-prev:before, .works .slick-next:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.works .slick-prev svg, .works .slick-next svg {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: 2px solid #FD7E14;
+  color: #fff;
+  border-radius: 100%;
+  background: #FD7E14;
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.works .slick-prev:hover:after, .works .slick-next:hover:after {
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: 2px solid #FFCA63;
+}
+
+.works .slick-prev:hover svg, .works .slick-next:hover svg {
+  border: 2px solid #FFCA63;
+  background: #FFCA63;
+}
+
+.works .slick-prev {
+  top: 50%;
+  left: 275px;
+}
+
+.works .slick-next {
+  right: 275px;
+  top: 50%;
+  bottom: inherit;
+}
+
+.works .slick-dots {
+  bottom: inherit;
+  top: 0;
+}
+
+.works .slick-dots li button:before {
+  font-size: 20px;
+}
+
+.works__btn .mainBtn {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1250px) {
+  .works .slick-prev {
+    left: 175px;
+  }
+  .works .slick-next {
+    right: 175px;
+  }
+}
+
+@media (max-width: 992px) {
+  .works .slick-prev {
+    left: 20px;
+  }
+  .works .slick-next {
+    right: 20px;
+  }
+}
+
 /* --- button start Start ------------------------------------------------*/
 .mainBtnD {
   cursor: pointer;
