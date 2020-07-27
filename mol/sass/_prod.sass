@@ -1,0 +1,32 @@
+.prod
+  &__wrap
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    &-cont
+      flex-basis: 28%
+      &-title
+        text-align: center
+        padding: 20px 10px
+        background: $main_white
+        p
+          font-size: 20px
+          font-weight: bold
+          margin: 0
+          margin: 0
+          color: $main_rgb
+      &-img
+        img
+          width: 100%
+          height: auto
+  @media(max-width: 1120px)
+    &__wrap
+      &-cont
+        &-title
+          p
+            font-size: 16px
+  @media(max-width: 1120px)
+    &__wrap
+      &-cont
+        margin-bottom: 20px
+        flex-basis: 70%
