@@ -1634,6 +1634,34 @@ section {
   }
 }
 
+.qv__form {
+  position: relative;
+  height: 450px;
+}
+
+.qv__form-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .qv__form-cont-input-radio input {
   padding: 10px;
   width: 100%;
@@ -1675,6 +1703,13 @@ section {
 .qv__form-cont-input-radio input[type="radio"]:checked + label::before {
   background-color: #FD7E14;
   border: 6px solid #fff;
+}
+
+.qv__form-hide {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
 }
 
 /* --- button start Start ------------------------------------------------*/
