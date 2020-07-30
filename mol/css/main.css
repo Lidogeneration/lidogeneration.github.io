@@ -1710,12 +1710,22 @@ section {
   margin-bottom: 20px;
 }
 
+.qv__form-cont-btn {
+  padding: 5px;
+  max-width: 100%;
+}
+
 .qv__form-cont-btn .mainBtn {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 300px;
   max-width: 100%;
+  color: #FD7E14;
+}
+
+.qv__form-cont-btn .mainBtn:hover {
+  color: #fff;
 }
 
 .qv__form-cont-input-radio input {
@@ -1817,7 +1827,6 @@ section {
   max-width: 100%;
   padding: 10px;
   font-size: 16px;
-  color: #fff;
   text-align: center;
   -webkit-transition: .3s;
   transition: .3s;
