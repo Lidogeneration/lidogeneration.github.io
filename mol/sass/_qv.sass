@@ -1,0 +1,36 @@
+.qv
+  &__title
+  &__form
+    &-cont
+      &-input
+        &-radio
+          input
+            padding: 10px
+            width: 100%
+            margin-bottom: 20px
+            text-align: center
+            text-transform: uppercase
+          label
+            cursor: pointer
+            padding: 5px
+            margin: 0
+            &:before
+              content: ''
+              display: inline-block
+              vertical-align: middle
+              width: 24px
+              height: 24px
+              background-color: #ffffff
+              border: 6px solid #fff
+              box-shadow: 0 5px 10px rgba(0,0,1, 0.4)
+              transition: 0.3s
+            span
+              display: inline-block
+              vertical-align: middle
+              margin-left: 5px
+          input[type="radio"]
+            display: none
+            &:checked
+              &+label::before
+                background-color: $main_rgb
+                border: 6px solid #fff

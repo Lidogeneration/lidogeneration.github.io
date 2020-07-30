@@ -1634,6 +1634,49 @@ section {
   }
 }
 
+.qv__form-cont-input-radio input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.qv__form-cont-input-radio label {
+  cursor: pointer;
+  padding: 5px;
+  margin: 0;
+}
+
+.qv__form-cont-input-radio label:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 6px solid #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.4);
+          box-shadow: 0 5px 10px rgba(0, 0, 1, 0.4);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.qv__form-cont-input-radio label span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.qv__form-cont-input-radio input[type="radio"] {
+  display: none;
+}
+
+.qv__form-cont-input-radio input[type="radio"]:checked + label::before {
+  background-color: #FD7E14;
+  border: 6px solid #fff;
+}
+
 /* --- button start Start ------------------------------------------------*/
 .mainBtnD {
   cursor: pointer;
