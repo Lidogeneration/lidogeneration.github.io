@@ -3,6 +3,7 @@
   background-position: bottom right
   background-repeat: no-repeat
   background-size: 30% auto
+  padding-top: 0
   &__title
     text-align: center
     h2
@@ -30,6 +31,7 @@
       justify-content: center
       align-items: center
       &-title
+        text-align: center
         margin-bottom: 20px
         h4
           font-weight: bold
@@ -89,5 +91,16 @@
     &-hide
       opacity: 0
       transition: .3s
-      transform: translateX(150%) scaleY(0)
-      transform-origin: top
+      transform: scale(0)
+  @media(max-width: 520px)
+    &__form
+      padding: 5px 
+      height: 420px
+      &-cont
+        &-title
+          h4
+            font-size: 20px
+        &-input
+          &-radio
+            label
+              font-size: 16px
