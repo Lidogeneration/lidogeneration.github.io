@@ -59,7 +59,7 @@
 			<li><a href="#cont-link" rel="m_PageScroll2id">Контакты</a></li>
 		</ul>
 		<div class="navMobile__list-social">
-			<a href="#" target="_blank" class="mr-4"><i class="fab fa-facebook-square"></i></a>
+			<a href="https://www.facebook.com/Master.Finish.Igor/" target="_blank" class="mr-4"><i class="fab fa-facebook-square"></i></a>
 			<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
 		</div>
 		<!-- /.navMobile__list-social -->
@@ -178,7 +178,7 @@
 <!-- partners end -->
 
 <!-- about start -->
-<section class="about">
+<section class="about" id="about-link">
 	<div class="about__title">
 		<h3>О нас</h3>
 	</div>
@@ -219,6 +219,11 @@
 			<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
 			<input type="email" class="phoneidcl" name="email" placeholder="Email" required>
 			<input name="order" type="hidden" id="Заполните форму и получите прайс на наши услуги">
+			<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+			<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+			<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+			<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">	
 		</div>
 		<!-- /.vForm__form-input -->
 		<button class="disbutt mainBtn" disabled><span>Получить прайс</span></button>
@@ -356,7 +361,7 @@
 <!-- prod end -->
 
 <!-- partners start -->
-<section class="partners">
+<section class="partners" id="tools-link">
 	<div class="partners__title">
 		<h3>Мы используем профессиональные смеси и краски.<br>Подбираем индивидуально под заказчика</h3>
 	</div>
@@ -765,6 +770,142 @@
 </section>
 <!-- qv end -->
 
+<!-- saleForm start -->
+<section class="saleForm">
+	<div class="saleForm__container">
+		<div class="saleForm__container-title">
+			<h2>Заполните форму и получите скидку 25%</h2>
+		</div>
+		<!-- /.saleForm__conteiner-title -->
+		<div class="saleForm__container-formWrap">
+			<form>
+				<input type="text" name="name" placeholder="Имя" required>
+				<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
+				<button class="disbutt mainBtn" disabled><span>Отправить</span></button>
+				<input name="order" type="hidden" value="Заполните форму и получите скидку 25%">
+				<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+				<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+				<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+				<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+				<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">				
+			</form>
+		</div>
+		<!-- /.saleForm__conteiner-formWrap -->
+	</div>
+	<!-- /.saleForm__conteiner -->
+</section>
+<!-- saleForm end -->
+
+<!-- rev start -->
+<section class="works" id="rev-link">
+	<div class="works__header">
+		<h2>Примеры наших работ</h2>
+	</div>
+	<!-- /.works__header -->
+	<div class="works__slider">
+		<div class="works__slider-cont">
+			<img src="img/ex1.jpg" alt="Примеры наших работ">
+			<div class="works__slider-cont-rev">
+				<h4>Виктория</h4>
+				<p>Хочу оставить свой отзыв о ребятах,  которые сделали мне ремонт. Мне нужно было покрасить потолки и поклеить обои. Ребята справились с этими задачами на ура. Спасибо им большое. Быстро и качественно сделано!</p>
+			</div>
+			<!-- /.works__slider-cont-rev -->
+		</div>
+		<!-- /.works__slider-cont -->
+		<div class="works__slider-cont">
+			<img src="img/ex10.jpg" alt="Примеры наших работ">
+			<div class="works__slider-cont-rev">
+				<h4>Олег</h4>
+				<p>Ребята, приехали  на второй день после моего звонка, в течении пару часов произвели просчет моей квартиры, на следующий день предоставили мне смету на работу, цены приятно удивили и это первый плюс. Огромное спасибо Игорю,  за проделанную работу и профессионализм.
+				</p>
+			</div>
+			<!-- /.works__slider-cont-rev -->
+		</div>
+		<!-- /.works__slider-cont -->
+		<div class="works__slider-cont">
+			<img src="img/ex3.jpg" alt="Примеры наших работ">
+			<div class="works__slider-cont-rev">
+				<h4>Игорь</h4>
+				<p>Все было сделано на отлично! По срокам уложились с запасом. Весь мусор после себя убрали. Недостающие материалы докупили сами. Всем очень доволен. РЕКОМЕНДУЮ!</p>
+			</div>
+			<!-- /.works__slider-cont-rev -->
+		</div>
+		<!-- /.works__slider-cont -->
+		<div class="works__slider-cont">
+			<img src="img/ex16.jpg" alt="Примеры наших работ">
+			<div class="works__slider-cont-rev">
+				<h4>Артем</h4>
+				<p>Остался доволен сотрудничеством: все предварительные расчеты подтвердились при личной встрече, к выполнению работ приступили сразу же, сроки выдержали, качество хорошее!</p>
+			</div>
+			<!-- /.works__slider-cont-rev -->
+		</div>
+		<!-- /.works__slider-cont -->
+	</div>
+	<!-- /.works__slider -->
+	<div class="works__btn">
+		<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Примеры наших работ','Мы перезвоним');">Хочу так же</a>		
+	</div>
+	<!-- /.works__btn -->
+</section>
+<!-- rev end -->
+
+<!-- sert start -->
+<section class="sert">
+	<div class="sert__title">
+		<h2>Наши сертификаты</h2>
+	</div>
+	<!-- /.sert__title -->
+	<div class="sert__slider">
+		<div class="sert__slider-cont">
+			<img src="img/cert.jpg" alt="Наши сертификаты">
+		</div>
+		<!-- /.sert__slider-cont -->
+	</div>
+	<!-- /.sert__slider -->
+</section>
+<!-- sert end -->
+
+<section class="contacts" id="cont-link">
+	<div class="contacts__map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.917857820793!2d30.23743621573384!3d50.51709517948463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b33d19825ee6b%3A0x7f64f2f41efc4c42!2z0LLRg9C70LjRhtGPINCh0L7QsdC-0YDQvdCwLCA5OSwg0IbRgNC_0ZbQvdGMLCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA4MjAw!5e0!3m2!1suk!2sua!4v1596142386305!5m2!1suk!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+	<!-- /.contacts__map -->
+	<div class="contacts__wrap">
+		<div class="contacts__wrap-txt">
+			<div class="contacts__wrap-txt-title">
+				<h4>Контакты</h4>
+			</div>
+			<!-- /.contacts__wrap-txt-title -->
+			<div class="contacts__wrap-txt-number">
+				<h5>Телефон:</h5>
+				<a href="tel:+380675084505">+380 (67) 508-45-05</a>
+				<h5>Почта:</h5>
+				<a href="mailto:master.finish.office@gmail.com">master.finish.office@gmail.com</a>
+				<h5>Адрес:</h5>
+				<a href="tel:+380675084505">г. Ирпень,<br>ул. Соборная 99, оф. 87.</a>
+			</div>
+			<!-- /.contacts__wrap-txt-number -->
+		</div>
+		<!-- /.contacts__wrap-txt -->
+		<div class="contacts__wrap-form">
+			<form class="order-main">
+				<h3>Остались вопросы?</h3>
+				<input type="text" name="name" placeholder="ИМЯ" required>
+				<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
+				<textarea name="msg" rows="5" placeholder="Сообщение"></textarea>
+				<button class="disbutt mainBtn" disabled><span>Отправить</span></button>
+				<input name="order" type="hidden" value="Остались вопросы?">
+				<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+				<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+				<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+				<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+				<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+			</form>
+		</div>
+		<!-- /.contacts__wrap-form -->
+	</div>
+	<!-- /.contacts__wrap -->
+</section>
 
 <div class="devgen p-1 text-center">
 	<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>

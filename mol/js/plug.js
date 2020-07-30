@@ -73,3 +73,25 @@ $('.works__slider').slick({
   ]
 });
 
+$('.sert__slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 7000,
+  speed: 1000,
+  dots: false,
+  arrows: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  infinite: true,
+  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+});

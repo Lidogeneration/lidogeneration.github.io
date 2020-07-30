@@ -1,0 +1,60 @@
+.saleForm
+  background: linear-gradient(rgba($main_white, .4) 100%, rgba($main_white, .4) 100%), url('../img/openBg.png')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  &__container
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    &-title
+      flex-basis: 30%
+      h2
+        font-size: 36px
+        font-weight: bold
+        color: $main_rgb
+    &-formWrap
+      background: rgba($main_white, .9)
+      flex-basis: 40%
+      padding: 50px 20px
+      form
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        input
+          flex-basis: 45%
+          background: none
+          border: 1px solid $main_rgb
+          padding: 10px
+          text-align: center
+          margin: 5px 5px 20px 5px
+        button
+          flex-basis: 100%
+          margin: 5px
+          width: 100%
+  @media(max-width: 1410px)
+    &__container
+      &-title
+        flex-basis: 35%
+      &-formWrap
+        flex-basis: 45%
+        form
+          input
+            margin: 0 2px 20px 2px
+  @media(max-width: 1145px)
+    &__container
+      &-title
+        padding: 0 10px
+        flex-basis: 100%
+        text-align: center
+        h2
+          font-size: 24px
+      &-formWrap
+        flex-basis: 90%
+        form
+          input
+            margin: 0 2px 20px 2px
+            flex-basis: 100%
+      
