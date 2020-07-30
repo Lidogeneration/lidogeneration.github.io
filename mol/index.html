@@ -501,8 +501,8 @@
 <!-- qv start -->
 <section class="qv">
 	<div class="qv__title">
-		<h2>Узнайте, сколько стоит Ваш ремонт пройдя тест за 20 секунд</h2>
-		<h3>Шаг <span id="qvCount">1</span> из 5</h3>
+		<h2 id="stepsTitle">Узнайте, сколько стоит Ваш ремонт пройдя тест за 20 секунд</h2>
+		<h3 id="stepsCont">Шаг <span id="qvCount">1</span> из 5</h3>
 	</div>
 	<!-- /.qv__title -->
 	<form class="order-main qv__form">
@@ -551,7 +551,7 @@
 			<!-- /.qv__form-cont-input -->
 			<div class="qv__form-cont-btn">
 				<p>*выберите один из вариантов</p>
-				<a class="mainBtn">Продолжить</a>	
+				<a class="mainBtn"  onclick="qvClick();">Продолжить</a>	
 			</div>
 			<!-- /.qv__form-cont-btn -->
 		</div>
@@ -587,7 +587,7 @@
 			<!-- /.qv__form-cont-input -->
 			<div class="qv__form-cont-btn">
 				<p>*выберите один из вариантов</p>
-				<a class="mainBtn">Продолжить</a>	
+				<a class="mainBtn" onclick="qvClick();">Продолжить</a>	
 			</div>
 			<!-- /.qv__form-cont-btn -->
 		</div>
@@ -630,7 +630,7 @@
 			<!-- /.qv__form-cont-input -->
 			<div class="qv__form-cont-btn">
 				<p>*выберите один из вариантов</p>
-				<a class="mainBtn">Продолжить</a>	
+				<a class="mainBtn" onclick="qvClick();">Продолжить</a>	
 			</div>
 			<!-- /.qv__form-cont-btn -->
 		</div>
@@ -659,7 +659,7 @@
 			<!-- /.qv__form-cont-input -->
 			<div class="qv__form-cont-btn">
 				<p>*выберите один из вариантов</p>
-				<a class="mainBtn">Продолжить</a>	
+				<a class="mainBtn" onclick="qvClick();">Продолжить</a>	
 			</div>
 			<!-- /.qv__form-cont-btn -->
 		</div>
@@ -695,23 +695,23 @@
 			<!-- /.qv__form-cont-input -->
 			<div class="qv__form-cont-btn">
 				<p>*выберите один из вариантов</p>
-				<a class="mainBtn">Продолжить</a>	
+				<a class="mainBtn" onclick="qvClick();">Продолжить</a>	
 			</div>
 			<!-- /.qv__form-cont-btn -->
 		</div>
 		<!-- /.qv__form-cont -->
 		<div class="qv__form-cont qv__form-hide">
-			<div class="qv__form-cont-title">
-				<h4>Оставьте свои имя и телефон и мы свяжемся с вами в ближайшее время</h4>
+			<div class="qv__form-cont-title text-center">
+				<h4>Оставьте свои имя и телефон<br>и мы свяжемся с вами в ближайшее время</h4>
 			</div>
 			<!-- /.qv__form-cont-title -->
-			<div class="qv__form-cont-input">
+			<div class="qv__form-cont-inputTel">
 				<input type="text" name="name" placeholder="Имя" required>
 				<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>				
 			</div>
 			<!-- /.qv__form-cont-input -->
 			<div class="qv__form-cont-btn">
-				<p>*выберите один из вариантов</p>
+				<p>*ВНИМАНИЕ! Активировать скидку Вы можете на замере в течение 7 дней </p>
 				<button class="disbutt mainBtn" disabled><span>Отправить</span></button>
 			</div>
 			<!-- /.qv__form-cont-btn -->
@@ -753,7 +753,7 @@
 <script src="libs/aos/aos.js"></script>
 <script src="js/plug.js"></script>
 <script src="js/main.js"></script>
-
+<script src="js/qv.js"></script>
 </body>
 
 </html>

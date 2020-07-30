@@ -1634,9 +1634,33 @@ section {
   }
 }
 
+.qv {
+  background: url("../img/qv_bg.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 30% auto;
+}
+
+.qv__title {
+  text-align: center;
+}
+
+.qv__title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #FD7E14;
+}
+
+.qv__title h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5081FF;
+}
+
 .qv__form {
   position: relative;
-  height: 450px;
+  height: 490px;
 }
 
 .qv__form-cont {
@@ -1647,6 +1671,7 @@ section {
   height: 100%;
   -webkit-transition: .5s;
   transition: .5s;
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1662,6 +1687,35 @@ section {
           align-items: center;
 }
 
+.qv__form-cont-title {
+  margin-bottom: 20px;
+}
+
+.qv__form-cont-title h4 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.qv__form-cont-inputTel input {
+  width: 300px;
+  max-width: 100%;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #FD7E14;
+  display: block;
+  background: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.qv__form-cont-btn .mainBtn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  max-width: 100%;
+}
+
 .qv__form-cont-input-radio input {
   padding: 10px;
   width: 100%;
@@ -1673,15 +1727,17 @@ section {
 .qv__form-cont-input-radio label {
   cursor: pointer;
   padding: 5px;
-  margin: 0;
+  margin: 0 0 5px 0;
+  font-weight: 500;
+  font-size: 26px;
 }
 
 .qv__form-cont-input-radio label:before {
   content: '';
   display: inline-block;
   vertical-align: middle;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   background-color: #ffffff;
   border: 6px solid #fff;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.4);
@@ -1706,10 +1762,13 @@ section {
 }
 
 .qv__form-hide {
+  opacity: 0;
   -webkit-transition: .3s;
   transition: .3s;
-  -webkit-transform: translateX(150%);
-          transform: translateX(150%);
+  -webkit-transform: translateX(150%) scaleY(0);
+          transform: translateX(150%) scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 /* --- button start Start ------------------------------------------------*/
