@@ -394,6 +394,11 @@ section
 			height: 20%
 			border: solid $main_black
 			border-width: 0 2px 2px 0
+		&-leftMs
+			background: url('../img/frImgMs.png')
+			background-position: right center
+			background-repeat: no-repeat
+			background-size: auto 100%
 		&-leftEp
 			background: url('../img/frImgEp.png')
 			background-position: right center
@@ -404,7 +409,7 @@ section
 			background-position: right center
 			background-repeat: no-repeat
 			background-size: auto 100%
-		&-left, &-leftEp
+		&-left, &-leftEp, &-leftMs
 			width: 100%
 			padding: 60px 20px
 			&-title
@@ -471,7 +476,7 @@ section
 				height: auto
 	@media(max-width: 1200px)
 		&__cont
-			&-left, &-leftEp
+			&-left, &-leftEp, &-leftMs
 				padding: 30px 15px
 				&-title
 					h1
@@ -493,7 +498,7 @@ section
 			padding: 0 10px 0 10px
 			flex-direction: column
 			position: relative
-			&-left, &-leftEp
+			&-left, &-leftEp, &-leftMs
 				background: #BBBBBB
 				padding: 10px
 				&-title
@@ -638,6 +643,16 @@ section
 				flex-basis: 50%
 				&-txt
 					padding: 10px
+					&-crown
+						margin-top: 20px !important
+						font-weight: bold
+						padding-left: 50px !important
+						position: relative
+						img
+							position: absolute
+							top: 50%
+							transform: translateY(-50%)
+							left: 10px
 					ul
 						list-style: none
 						padding: 0
