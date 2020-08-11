@@ -1,0 +1,23 @@
+.firstScroll
+  min-height: 100vh
+  padding: 30px
+  background: linear-gradient(rgba($main_black, .5) 100%, rgba($main_black, .5) 100%), url('../img/fBg.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  justify-content: center
+  align-items: center
+  &__title
+    h1, h2
+      color: $main_white
+      font-weight: bold
+      text-align: center
+    hr
+      border: 1px solid $main_white
+  @media(max-width: 992px)
+    &__title
+      h1
+        font-size: 28px
+      h2
+        font-size: 24px
