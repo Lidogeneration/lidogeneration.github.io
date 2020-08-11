@@ -147,7 +147,7 @@ section {
   background: rgba(22, 101, 193, 0.6);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 992px) {
   .navBar__logo {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -155,6 +155,10 @@ section {
     margin: 0 0 10px 0;
   }
   .navBar__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navBar__list ul li {
     margin-left: auto;
     margin-right: auto;
   }
