@@ -94,6 +94,10 @@ section {
   padding: 5px;
   -webkit-box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .navBar__logo {
@@ -192,5 +196,50 @@ section {
   .firstScroll__title h2 {
     font-size: 24px;
   }
+}
+
+.news {
+  padding: 30px 0;
+}
+
+.news__title {
+  text-align: center;
+  padding: 5px;
+}
+
+.news__wrap img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.news__wrap h4 {
+  text-align: center;
+}
+
+.other__wrap {
+  padding-top: 60px;
+}
+
+.other__wrap-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.other__wrap iframe {
+  width: 100%;
+  height: 60vh;
+}
+
+.other__wrap img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
