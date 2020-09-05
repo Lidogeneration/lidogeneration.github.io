@@ -34,4 +34,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+
+    //settings show mobile
+    const mSearch = document.querySelector('#mSearch'),
+        settingsBtn = document.querySelector('#settingsBtn'),
+        settingsm = document.querySelector('#settingsm');
+        const settingsShow = () => {
+            settingsm.classList.add('settings-show');
+        };
+        const settingsHide = () => {
+            settingsm.classList.remove('settings-show');
+        };
+        mSearch.addEventListener('click', () => {
+            if(settingsm.classList.contains('settings-show')){
+                settingsHide();
+            } else {
+                settingsShow();
+            }
+        });
+        settingsBtn.addEventListener('click', e => {
+            e.preventDefault();
+            settingsHide();
+        });
 });

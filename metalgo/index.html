@@ -134,6 +134,7 @@
 		<!-- /.header__nav-cont -->
 	</nav>
 </header>
+
 <section class="offer">
 	<div class="offer__cont global-cont">
 		<div class="offer__cont-title">
@@ -141,11 +142,608 @@
 		</div>
 		<!-- /.offer__cont-title -->
 		<div class="offer__cont-input">
-			<input type="text" placeholder="Начните вводить наименование или параметры металла, который хотите найти">
+			<label for="offer-find"><img src="img/lupa.svg" alt=""></label>
+			<input type="text" placeholder="Начните вводить наименование или параметры металла, который хотите найти" id="offer-find">
 		</div>
 		<!-- /.offer__cont-input -->
 	</div>
 	<!-- /.offer__cont -->
+</section>
+
+<section class="mainsearch">
+	<div class="mainsearch-mobile" id="mSearch">
+		<img src="img/arrow.svg" alt="Параметры поиска">
+		<p>Параметры поиска</p>
+	</div>
+	<!-- /.mainsearch-mobile -->
+	<div class="mainsearch-cont global-cont">
+		<div class="mainsearch-cont-settings" id="settingsm">
+			<div class="mainsearch-cont-settings-title">
+				<h3>Параметры поиска</h3>
+			</div>
+			<!-- /.mainsearch-cont-settings-title -->
+			<form class="mainsearch-cont-settings-wrap">
+				<div class="mainsearch-cont-settings-wrap-item">
+					<select name="category" id="category">
+						<option value="Категонии" disabled selected>Категонии</option>
+						<option value="opt01">opt01</option>
+						<option value="opt02">opt02</option>
+						<option value="opt03">opt03</option>
+					</select>
+				</div>
+				<!-- /.mainsearch-cont-settings-wrap-item -->
+				<div class="mainsearch-cont-settings-wrap-item">
+					<div class="mainsearch-cont-settings-wrap-item-desc">
+						<h4>Размер</h4>
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+					<div class="mainsearch-cont-settings-wrap-item-inputd">
+						<input type="number" placeholder="Минимальный"><input type="number" placeholder="Максимальный">
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-input -->
+				</div>
+				<!-- /.mainsearch-cont-settings-wrap-item -->
+				<div class="mainsearch-cont-settings-wrap-item">
+					<div class="mainsearch-cont-settings-wrap-item-desc">
+						<h4>Марка</h4>
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+					<div class="mainsearch-cont-settings-wrap-item-input">
+						<input type="text" placeholder="Начните вводить марку">
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-input -->
+				</div>
+				<!-- /.mainsearch-cont-settings-wrap-item -->
+				<div class="mainsearch-cont-settings-wrap-item">
+					<div class="mainsearch-cont-settings-wrap-item-desc">
+						<h4>Цена</h4>
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+					<div class="mainsearch-cont-settings-wrap-item-inputd">
+						<input type="number" placeholder="Минимальный"><input type="number" placeholder="Максимальный">
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-input -->
+				</div>
+				<!-- /.mainsearch-cont-settings-wrap-item -->
+				<div class="mainsearch-cont-settings-wrap-item">
+					<div class="mainsearch-cont-settings-wrap-item-desc">
+						<h4>Остаток</h4>
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+					<div class="mainsearch-cont-settings-wrap-item-inputd">
+						<input type="number" placeholder="Минимальный"><input type="number" placeholder="Максимальный">
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-input -->
+				</div>
+				<!-- /.mainsearch-cont-settings-wrap-item -->
+				<div class="mainsearch-cont-settings-wrap-item">
+					<div class="mainsearch-cont-settings-wrap-item-desc">
+						<h4>Город</h4>
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+					<div class="mainsearch-cont-settings-wrap-item-input">
+						<input type="text" placeholder="Начните вводить город">
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-input -->
+				</div>
+				<!-- /.mainsearch-cont-settings-wrap-item -->
+				<div class="mainsearch-cont-settings-wrap-item">
+					<div class="mainsearch-cont-settings-wrap-item-desc">
+						<h4>Поставщик</h4>
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-desc -->
+					<div class="mainsearch-cont-settings-wrap-item-input">
+						<input type="text" placeholder="Начните вводить имя поставщика">
+					</div>
+					<!-- /.mainsearch-cont-settings-wrap-item-input -->
+				</div>
+				<!-- /.mainsearch-cont-settings-wrap-item -->
+			</form>
+			<!-- /.mainsearch-cont-settings-wrap -->
+			<div class="mainsearch-cont-settings-btn">
+				<button class="mainBtn" id="settingsBtn">
+					Применить
+				</button>
+			</div>
+			<!-- /.mainsearch-cont-settings-btn -->
+		</div>
+		<!-- /.mainsearch-cont-settings -->
+		<div class="mainsearch-cont-result">
+			<div class="mainsearch-cont-result-filter">
+				<select name="category" id="category">
+					<option value="hightLevel" selected>Сперва с самым высоким рейтингом</option>
+					<option value="opt01">opt01</option>
+					<option value="opt02">opt02</option>
+					<option value="opt03">opt03</option>
+				</select>
+			</div>
+			<!-- /.mainsearch-cont-result-filter -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-item">
+				<div class="mainsearch-cont-result-item-desc">
+					<h4>наименование</h4>
+					<p>Арматура</p>
+					<h4>размер</h4>
+					<p>8</p>
+					<h4>марка</h4>
+					<p>A400</p>
+					<h4>остаток</h4>
+					<p>100 Тонн</p>
+				</div>
+				<!-- /.mainsearch-cont-result-item-desc -->
+				<div class="mainsearch-cont-result-item-place">
+					<h4>город</h4>
+					<p>Москва</p>
+					<h4>поставщик</h4>
+					<p>ООО "Северсталь"</p>
+					<h4>рейтинг поставщика</h4>
+					<div class="mainsearch-cont-result-item-place-stars">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+						<img src="img/StarW.svg" alt="">
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-stars -->
+					<div class="mainsearch-cont-result-item-place-date">
+						<p>Размещено: 10.08.2020</p>
+						<p>Обновлено: 01.09.2020</p>
+					</div>
+					<!-- /.mainsearch-cont-result-item-place-date -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-place -->
+				<div class="mainsearch-cont-result-item-count">
+					<div class="mainsearch-cont-result-item-count-price">
+						<p>цена</p>
+						<h4>116000</h4>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-price -->
+					<div class="mainsearch-cont-result-item-count-btn">
+						<button class="mainBtn">
+							Смотреть
+						</button>
+					</div>
+					<!-- /.mainsearch-cont-result-item-count-btn -->
+				</div>
+				<!-- /.mainsearch-cont-result-item-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-item -->
+			<div class="mainsearch-cont-result-pagination">
+				<div class="mainsearch-cont-result-pagination-number">
+					<div class="mainsearch-cont-result-pagination-number-list">
+						<ul>
+							<li class="pagination-current">1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+					</div>
+					<!-- /.mainsearch-cont-result-pagination-number-list -->
+					<div class="mainsearch-cont-result-pagination-number-decore">
+						<span>...</span>
+						<p>100</p>
+						<img src="img/right-arrow.svg" alt="right">
+					</div>
+					<!-- /.mainsearch-cont-result-pagination-number-decore -->
+				</div>
+				<!-- /.mainsearch-cont-result-pagination-number -->
+				<div class="mainsearch-cont-result-pagination-count">
+					<p>Показывать по:</p>
+					<select name="numberShow" id="numberShow">
+						<option value="10" selected>10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+					</select>
+				</div>
+				<!-- /.mainsearch-cont-result-pagination-number-count -->
+			</div>
+			<!-- /.mainsearch-cont-result-pagination -->
+		</div>
+		<!-- /.mainsearch-cont-result -->
+		<div class="mainsearch-cont-banner">
+			<div class="mainsearch-cont-banner-wrap">
+				<img src="img/banner-right.svg" alt="bn">
+			</div>
+			<!-- /.mainsearch-cont-banner-wrap -->
+			<div class="mainsearch-cont-banner-wrap">
+				<img src="img/banner-right.svg" alt="bn">
+			</div>
+			<!-- /.mainsearch-cont-banner-wrap -->
+		</div>
+		<!-- /.mainsearch-cont-banner -->
+	</div>
+	<!-- /.mainsearch-cont -->
 </section>
 
 	<script src="libs/jquery-3.4.1.min.js"></script>
