@@ -25,8 +25,8 @@
 </head>
 
 <body>
-
 <header class="header">
+	<div class="overlay" id="overlay"></div>
 	<nav class="header__nav">
 		<div class="header__nav-title">
 			<h3>Лучшие скидки и акции на тысячи товаров</h3>
@@ -134,25 +134,19 @@
 		<!-- /.header__nav-cont -->
 	</nav>
 </header>
-
-
-
-	<div class="hidden">
-		<form class="openForm d-block mx-auto order-main" id="mpopup-form">
-			<!-- <h2><span>de</span>Toos</h2> -->
-			<h3>Заполните форму</h3>
-			<h4><span id="customTextForm">Мы перезвоним</span></h4>
-			<input type="text" name="name" placeholder="ИМЯ" required>
-			<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
-			<button class="disbutt mainBtn" disabled><span>отправить</span></button>
-			<input name="order" type="hidden" id="input_order">
-			<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
-			<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
-			<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
-			<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
-			<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
-		</form>
+<section class="offer">
+	<div class="offer__cont global-cont">
+		<div class="offer__cont-title">
+			<h3>Предложения поставщиков</h3>
+		</div>
+		<!-- /.offer__cont-title -->
+		<div class="offer__cont-input">
+			<input type="text" placeholder="Начните вводить наименование или параметры металла, который хотите найти">
+		</div>
+		<!-- /.offer__cont-input -->
 	</div>
+	<!-- /.offer__cont -->
+</section>
 
 	<script src="libs/jquery-3.4.1.min.js"></script>
 	<script src="libs/jquery.inputmask.bundle.min.js"></script>

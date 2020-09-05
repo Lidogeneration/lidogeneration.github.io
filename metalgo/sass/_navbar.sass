@@ -102,6 +102,9 @@
 							p
 								font-size: 14px
 	@media(max-width: 992px)
+		.open-menu
+			transform: translateX(0)
+			transition: 0
 		&__nav
 			overflow: hidden
 			&-mobile
@@ -141,6 +144,7 @@
 				flex-direction: column
 				justify-content: space-around
 				&-logo
+					text-align: center
 				&-list
 					position: relative
 					margin-bottom: 20px

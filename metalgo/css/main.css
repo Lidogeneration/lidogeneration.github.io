@@ -87,17 +87,20 @@ button:focus {
   outline: none;
 }
 
-.hidden {
-  display: none;
-}
-
 section {
-  padding: 50px 0;
   overflow: hidden;
 }
 
-.done {
-  min-height: 100vh;
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(66, 66, 66, 0.7);
+  z-index: 99;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
 }
 
 .global-cont {
@@ -312,6 +315,12 @@ section {
 }
 
 @media (max-width: 992px) {
+  .header .open-menu {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: 0;
+    transition: 0;
+  }
   .header__nav {
     overflow: hidden;
   }
@@ -372,6 +381,9 @@ section {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .header__nav-cont-logo {
+    text-align: center;
   }
   .header__nav-cont-list {
     position: relative;
