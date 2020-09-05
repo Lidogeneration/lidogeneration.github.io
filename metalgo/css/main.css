@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url("fonts/Roboto-Bold.woff2") format("woff2");
-  src: url("fonts/Roboto-Bold.woff") format("woff");
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2");
+  src: url("/fonts/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("fonts/Roboto-Regular.woff2") format("woff2");
-  src: url("fonts/Roboto-Regular.woff") format("woff");
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2");
+  src: url("/fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("fonts/Roboto-Black.woff2") format("woff2");
-  src: url("fonts/Roboto-Black.woff") format("woff");
+  src: url("/fonts/Roboto-Black.woff2") format("woff2");
+  src: url("/fonts/Roboto-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("fonts/Roboto-Thin.woff2") format("woff2");
-  src: url("fonts/Roboto-Thin.woff") format("woff");
+  src: url("/fonts/Roboto-Thin.woff2") format("woff2");
+  src: url("/fonts/Roboto-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("fonts/Roboto-Medium.woff2") format("woff2");
-  src: url("fonts/Roboto-Medium.woff") format("woff");
+  src: url("/fonts/Roboto-Medium.woff2") format("woff2");
+  src: url("/fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url("fonts/Roboto-Light.woff2") format("woff2");
-  src: url("fonts/Roboto-Light.woff") format("woff");
+  src: url("/fonts/Roboto-Light.woff2") format("woff2");
+  src: url("/fonts/Roboto-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -301,6 +301,9 @@ section {
 @media (max-width: 1280px) {
   .header__nav-cont-list ul li {
     margin: 0;
+  }
+  .header__nav-cont-list ul li a {
+    padding: 10px;
   }
   .header__nav-cont-calc {
     width: 30%;
@@ -1011,6 +1014,159 @@ section {
   }
   .mainsearch-cont-result-item-count-btn .mainBtn {
     padding: 5px;
+  }
+}
+
+.footer {
+  padding: 50px 0 0 0;
+  background: #000;
+}
+
+.footer__cont-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.footer__cont-list-logo {
+  position: relative;
+}
+
+.footer__cont-list-logo:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #edb021;
+}
+
+.footer__cont-list-wrap {
+  padding: 10px 20px;
+}
+
+.footer__cont-list-wrap ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__cont-list-wrap ul li {
+  display: inline;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.footer__cont-list-wrap ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer__cont-list-wrap ul li a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #edb021;
+}
+
+.footer__cont-social {
+  text-align: center;
+  margin: 30px;
+}
+
+.footer__cont-social a {
+  margin-right: 10px;
+}
+
+.footer__cont-social a:last-child {
+  margin-right: 45px;
+}
+
+.footer__bankIcon {
+  background: #edb021;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer__bankIcon a {
+  margin: 5px;
+}
+
+.footer__copyright {
+  padding: 5px;
+  background: #ffffff;
+}
+
+.footer__copyright ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__copyright ul li {
+  margin: 5px;
+}
+
+.footer__copyright ul li a {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .footer__cont-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer__cont-list-wrap {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0;
+  }
+  .footer__cont-list-wrap ul {
+    text-align: center;
+  }
+  .footer__cont-list-wrap ul li {
+    display: block;
+  }
+  .footer__cont-list-logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer__cont-list-logo:after {
+    display: none;
+  }
+  .footer__cont-social a:last-child {
+    margin-right: 0;
   }
 }
 
