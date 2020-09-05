@@ -950,6 +950,9 @@ section {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .mainsearch-cont-result-filter {
+    display: none;
+  }
   .mainsearch-cont-banner {
     display: none;
   }
