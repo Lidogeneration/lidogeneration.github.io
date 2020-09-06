@@ -721,6 +721,11 @@ section {
 
 .mainsearch-cont-result .product-hit {
   position: relative;
+  border: 1px solid #edb021;
+}
+
+.mainsearch-cont-result .product-hit .mainsearch-cont-result-item-count:after {
+  background: #edb021;
 }
 
 .mainsearch-cont-result .product-hit .product-hit-img {
