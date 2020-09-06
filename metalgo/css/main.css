@@ -719,6 +719,16 @@ section {
   padding: 5px;
 }
 
+.mainsearch-cont-result .product-hit {
+  position: relative;
+}
+
+.mainsearch-cont-result .product-hit .product-hit-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .mainsearch-cont-result-item {
   border: 1px solid rgba(66, 66, 66, 0.5);
   padding: 10px;
@@ -961,6 +971,11 @@ section {
 @media (max-width: 500px) {
   .mainsearch-cont-result {
     padding: 5px;
+  }
+  .mainsearch-cont-result .product-hit .product-hit-img img {
+    max-width: 100%;
+    width: 30px;
+    height: auto;
   }
   .mainsearch-cont-result-item-desc h4 {
     margin-bottom: 5px;
