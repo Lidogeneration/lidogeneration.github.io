@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+	<meta name="description" CONTENT="<?php bloginfo('description');?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="<?php bloginfo('name'); ?><?php wp_title(); ?>" />
+	<meta property="og:description" content="<?php bloginfo('description');?>" />
+	<meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.png">
+	<meta property="og:url" content="<?php site_url(); ?>" />
+	<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+	<link rel="shortcut icon" href="<?php bloginfo(template_url);?>/img/logo.png" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="libs/aos/aos.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	<!-- menuBtn start -->
+	<div class="navMenuFix">
+		<div class="navMenuFix__logo">
+			<a href="/"><img src="img/logo.svg" alt=""></a>
+		</div>
+		<!-- /.navMenuFix__logo -->
+		<div class="navMenuFix__tel">
+			<a href="tel:+380976172908">+380 (67) 508-45-05</a>
+		</div>
+		<!-- /.navMenuFix -->
+	</div>
+	<!-- /.navMenuFix -->
+	<div class="menuBtn menuBtnHide" id="menuBtn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<!-- menuBtn end -->
+
+	<!-- navMobile start -->
+	<nav class="navMobile navMobileHide" id="navMobile">
+		<div class="navMobile__title">
+			<a href="/"><img src="img/logo.svg" alt=""></a>
+		</div>
+		<!-- /.navMobile__title -->
+		<div class="navMobile__list my-auto">
+			<ul>
+				<li><a href="tel:+380976172908"> г. Киев </a></li>
+				<li><a href="tel:+380976172908" class="mb-2">+38097 617 29 08</a></li>
+				<!-- <li><a href="#rev-link" rel="m_PageScroll2id">Отзывы</a></li>
+				<li><a href="#cont-link" rel="m_PageScroll2id">Контакты</a></li> -->
+			</ul>
+			<!-- <div class="navMobile__list-social">
+				<a href="#" target="_blank" class="mr-4"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div> -->
+			<!-- /.navMobile__list-social -->
+		</div>
+		<!-- /.navMobile__list -->
+		<div class="navMobile__contacts">
+			<!-- <a href="tel:+380976172908" class="mb-2">+38097 617 29 08</a> -->
+			<a href="#mpopup-form" class="mpopup"
+				onclick="setNameScroll('Заказать звонок - > мобильное меню','Мы перезвоним');">Заказать звонок</a>
+		</div>
+		<!-- /.navMobile__contacts -->
+	</nav>
+	<!-- navMobile end -->
+
+	<!-- navMain start -->
+	<nav class="navMain">
+		<div class="navMain__logo">
+			<a href="/"><img src="img/logo.svg" alt=""></a>
+		</div>
+		<!-- /.navMain__logo -->
+		<div class="navMain__list">
+			<ul>
+				<li><a href="tel:+380976172908"> г. Киев </a></li>
+				<li><a href="tel:+380976172908" class="mb-2">+38097 617 29 08</a></li>
+				<!-- <li><a href="#rev-link" rel="m_PageScroll2id">Отзывы</a></li>
+				<li><a href="#cont-link" rel="m_PageScroll2id">Контакты</a></li> -->
+			</ul>
+		</div>
+		<!-- /.navMain__list -->
+		<div class="navMain__btn">
+			<!-- <a href="tel:+380976172908">+38097 617 29 08</a> -->
+			<a href="#mpopup-form" class="mpopup navMain__btn-btnNav"
+				onclick="setNameScroll('Заказать звонок - > шапка сайта','Мы перезвоним');">Заказать звонок</a>
+		</div>
+		<!-- /.navMain__btn -->
+	</nav>
+	<!-- /.navMain -->
+	<!-- navMain end -->
+
+	<section class="firstScroll">
+		<div class="firstScroll__title">
+			<h1>Автоподбор</h1>
+			<h2>от эксперта</h2>
+		</div>
+		<!-- /.firstScroll__cont -->
+		<div class="firstScroll__subtitle">
+			<h3>Подберём авто с пробегом с выгодой для вас</h3>
+		</div>
+		<!-- /.firstScroll__subtitle -->
+		<div class="firstScroll__btn">
+			<a href="#mpopup-form" class="mpopup mainBtnN"
+			onclick="setNameScroll('заказать бесплатную консультацию - > первый скролл','Мы перезвоним');">заказать бесплатную консультацию</a>
+		</div>
+		<!-- /.firstScroll__btn -->
+		<div class="firstScroll__arrow">
+			<a href="#about-link" rel="m_PageScroll2id"><i class="fas fa-long-arrow-alt-down"></i></a>
+		</div>
+		<!-- /.firstScroll__arrow -->
+	</section>
+
+	<section class="about" id="about-link">
+		<div class="about__cont">
+			<div class="about__cont-title">
+				<h2>Вам необходимы наши услуги, если:</h2>
+			</div>
+			<!-- /.about__cont-title -->
+			<div class="about__cont-list">
+				<ul>
+					<li><img src="img/check.svg" alt="услуги">- нет достаточно знаний для самостоятельной проверки состояния авто;</li>
+					<li><img src="img/check.svg" alt="услуги">- не располагаете свободным временем;</li>
+					<li><img src="img/check.svg" alt="услуги">- не желаете быть обманутыми недобросовестными продавцами;</li>
+					<li><img src="img/check.svg" alt="услуги">- ищете свое первое авто.
+					</li>
+				</ul>
+			</div>
+			<!-- /.about__cont-list -->
+		</div>
+		<!-- /.about__cont -->
+	</section>
+
+	<section class="about-more">
+		<div class="about__cont-title">
+			<h2>Мы предлагаем</h2>
+		</div>
+		<!-- /.about__cont-title -->
+		<div class="about-more__cont">
+			<div class="about-more__cont-items">
+				<div class="about-more__cont-items-desc">
+					<p>Услуга автоподбора от эксперта состоит из целого комплекса мероприятий. Мы готовы предложить различные варианты действий:</p>
+					<p>Если вы еще не уверены, какой автомобиль брать, то профессионалы уточнят ваши потребности и пожелания, после чего помогут с поиском и выбором оптимальной модели;</p>
+					<p>Если вы уже определились, какой автомобиль и где хотите купить, то наш эксперт тщательно проверит именно эту машину, после чего подробно вас проконсультирует и даст рекомендации (стоит ли брать это авто, какие нюансы следует знать перед его покупкой).</p>
+				</div>
+				<!-- /.about-more__cont-items-desc -->
+				<div class="about-more__cont-items-img">
+					<img src="img/autoright.png" alt="Услуга">
+				</div>
+				<!-- /.about-more__cont-items-img -->
+			</div>
+			<!-- /.about-more__cont-items -->
+			<div class="about-more__cont-items">
+				<div class="about-more__cont-items-img">
+					<img src="img/autoleft.png" alt="Услуга">
+				</div>
+				<!-- /.about-more__cont-items-img -->
+				<div class="about-more__cont-items-desc">
+					<p>Услуга автоподбора от эксперта состоит из целого комплекса мероприятий. Мы готовы предложить различные варианты действий:</p>
+					<p>Если вы еще не уверены, какой автомобиль брать, то профессионалы уточнят ваши потребности и пожелания, после чего помогут с поиском и выбором оптимальной модели;</p>
+					<p>Если вы уже определились, какой автомобиль и где хотите купить, то наш эксперт тщательно проверит именно эту машину, после чего подробно вас проконсультирует и даст рекомендации (стоит ли брать это авто, какие нюансы следует знать перед его покупкой).</p>
+				</div>
+				<!-- /.about-more__cont-items-desc -->
+			</div>
+			<!-- /.about-more__cont-items -->
+		</div>
+		<!-- /.about-more__cont -->
+		<div class="firstScroll__btn">
+			<a href="#mpopup-form" class="mpopup mainBtnN"
+			onclick="setNameScroll('заказать подбор автомобиля - > Мы предлагаем','Мы перезвоним');">заказать подбор автомобиля</a>
+		</div>
+		<!-- /.firstScroll__btn -->
+	</section>
+
+	<section class="advantage">
+		<div class="advantage__cont">
+			<div class="advantage__cont-box">
+				<img src="img/box01.jpg" alt="box">
+			</div>
+			<!-- /.advantage__cont-box -->
+			<div class="advantage__cont-box">
+				<h3>Авто-Подбор от эксперта</h3>
+				<p>
+					Почему для нашего клиента подбор авто с пробегом бесплатно!
+					Продавцы б/у автомобилей часто завышают стоимость изначально и при этом скрывают недостаки авто!
+					Мы находим эти скрытые недостаки и благодаря этому приходим к коструктивному диалогу по снижению цены, в практике это от 300$ до 1500$
+					</p>
+				<img src="img/box02.png" alt="box">
+			</div>
+			<!-- /.advantage__cont-box -->
+		</div>
+		<!-- /.advantage__cont -->
+		<div class="advantage__desc">
+			<div class="about__cont-title">
+				<h2>Мы предлагаем</h2>
+			</div>
+			<!-- /.about__cont-title -->
+			<div class="advantage__desc-wrap">
+				<div class="advantage__desc-wrap-items">
+					<ul>
+						<li><img src="img/boxLeft.svg" alt="box">Заключаем договор.
+							Экономим Ваши нервы, время и деньги</li>
+						<li><img src="img/boxLeft.svg" alt="box">В течение часа мы договариваемся об осмотре Вашего варианта авто</li>
+						<li><img src="img/boxLeft.svg" alt="box">Проводим полную диагностику на официальной СТО</li>
+						<li><img src="img/boxLeft.svg" alt="box">Видео- и фотоотчёты по каждому осмотру</li>
+					</ul>
+				</div>
+				<!-- /.advantage__desc-wrap-items -->
+				<div class="advantage__desc-wrap-items">
+					<img src="img/mainAdv.png" alt="">
+				</div>
+				<!-- /.advantage__desc-wrap-items -->
+				<div class="advantage__desc-wrap-items">
+					<ul>
+						<li><img src="img/boxright.svg" alt="box">Проверяем автомобиль на участие в ДТП и аресты по официальным базам Полиции</li>
+						<li><img src="img/boxright.svg" alt="box">Торгуемся, преследуя Ваши интересы</li>
+						<li><img src="img/boxright.svg" alt="box">Поможем переоформить авто без очередей и головной боли</li>
+						<li><img src="img/boxright.svg" alt="box">90 дней гарантии
+							На рекомендованный нами автомобиль мы даём 90 дней гарантии согласно договора.</li>
+					</ul>
+				</div>
+				<!-- /.advantage__desc-wrap-items -->
+			</div>
+			<!-- /.advantage__desc-wrap -->
+		</div>
+		<!-- /.advantage__desc -->
+	</section>
+
+	<section class="prod">
+		<div class="prod-cont">
+			<div class="prod-cont-items">
+				<img src="img/pr01.png" alt="">
+				<h4>выездная диагностика</h4>
+				<ul>
+					<li>- Осмотр одного автомобиля</li>
+					<li>- Визуальный осмотр</li>
+					<li>- Компьютерная диагностика</li>
+					<li>- Диагностика лакокрасочного покрытия</li>
+					<li>- Тест драйв</li>
+					<li>- Проверка соответствия пробега</li>
+					<li>- Детальные видео-и фотоотчеты</li>
+				</ul>
+				<a href="#mpopup-form" class="mpopup mainBtnN"
+				onclick="setNameScroll('выездная диагностика - > бесплатная консультация','Мы перезвоним');">бесплатная консультация</a>
+			</div>
+			<!-- /.prod-cont-items -->
+			<div class="prod-cont-items">
+				<img src="img/pr02.png" alt="">
+				<h4>Автоподбдр под ключ</h4>
+				<ul>
+					<li>- Проверка лучшего предложения</li>
+					<li>- Проверка на аресты и залог</li>
+					<li>- Проверка экспертом</li>
+					<li>- Проверка на СТО</li>
+					<li>- Торг с продавцом</li>
+					<li>- Оформление документов</li>
+					<li>- Детальные видео-и фотоотчеты</li>
+				</ul>
+				<a href="#mpopup-form" class="mpopup mainBtnN"
+				onclick="setNameScroll('Автоподбдр под ключ - > бесплатная консультация','Мы перезвоним');">бесплатная консультация</a>
+			</div>
+			<!-- /.prod-cont-items -->
+			<div class="prod-cont-items">
+				<img src="img/pr03.png" alt="">
+				<h4>подбор б/у авто в корее </h4>
+				<ul>
+					<li>- Доставка и оформление корейских б/у автомобилей с закрытых аукционов</li>
+					<li>- Работаем без посредников</li>
+					<li>- Официальное представительство в Южной Корее</li>
+					<li>- Широкий диапазон цен</li>
+				</ul>
+				<a href="#mpopup-form" class="mpopup mainBtnN"
+				onclick="setNameScroll('подбор б/у авто в корее - > бесплатная консультация','Мы перезвоним');">бесплатная консультация</a>
+			</div>
+			<!-- /.prod-cont-items -->
+		</div>
+		<!-- /.prod-cont -->
+	</section>
+
+	<section class="work">
+		<div class="about__cont-title">
+			<h2>Наши кейсы</h2>
+		</div>
+		<!-- /.about__cont-title -->
+		<div class="work__slider">
+			<div class="work__slider-cont">
+				<div class="work__slider-cont-img">
+					<img src="img/work01.jpg" alt="">
+				</div>
+				<!-- /.work__slider-cont-img -->
+				<div class="work__slider-cont-desc">
+					<p>В рамках услуги "Подбор под ключ" для Владимира, был найден и куплен отличный Ford Kuga 2017г.в., АКПП, дизель 2.0 полный привод, с оригинальным пробегом 44000 км, за 19 400$</p>
+					<ul>
+						<li><img src="img/ok.svg" alt="ok">1 владелец</li>
+						<li><img src="img/ok.svg" alt="ok">По кузову - окрашен задний бампер</li>
+						<li><img src="img/ok.svg" alt="ok">По технике - без нареканий, компьютерная диагностика ошибок не выявила, установлен автозапуск и система открывания багажника "Hands free", плановое обслуживание тормозной системы</li>
+						<li><img src="img/ok.svg" alt="ok">Салон - отличное состояние</li>
+						<li><img src="img/ok.svg" alt="ok">Цена авто – 19 400$</li>
+						<li><img src="img/ok.svg" alt="ok">Срок поиска - 8 дней</li>
+						<li><img src="img/ok.svg" alt="ok">Торг - 600$</li>
+						<li><img src="img/ok.svg" alt="ok">Стоимость услуги – 300$</li>
+						<li><img src="img/ok.svg" alt="ok">Автомобиль рекомендован и куплен клиентом</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.work__slider-cont -->
+			<div class="work__slider-cont">
+				<div class="work__slider-cont-img">
+					<img src="img/work01.jpg" alt="">
+				</div>
+				<!-- /.work__slider-cont-img -->
+				<div class="work__slider-cont-desc">
+					<p>В рамках услуги "Подбор под ключ" для Владимира, был найден и куплен отличный Ford Kuga 2017г.в., АКПП, дизель 2.0 полный привод, с оригинальным пробегом 44000 км, за 19 400$</p>
+					<ul>
+						<li><img src="img/ok.svg" alt="ok">1 владелец</li>
+						<li><img src="img/ok.svg" alt="ok">По кузову - окрашен задний бампер</li>
+						<li><img src="img/ok.svg" alt="ok">По технике - без нареканий, компьютерная диагностика ошибок не выявила, установлен автозапуск и система открывания багажника "Hands free", плановое обслуживание тормозной системы</li>
+						<li><img src="img/ok.svg" alt="ok">Салон - отличное состояние</li>
+						<li><img src="img/ok.svg" alt="ok">Цена авто – 19 400$</li>
+						<li><img src="img/ok.svg" alt="ok">Срок поиска - 8 дней</li>
+						<li><img src="img/ok.svg" alt="ok">Торг - 600$</li>
+						<li><img src="img/ok.svg" alt="ok">Стоимость услуги – 300$</li>
+						<li><img src="img/ok.svg" alt="ok">Автомобиль рекомендован и куплен клиентом</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.work__slider-cont -->
+		</div>
+		<!-- /.work__slider -->
+	</section>
+
+	<section class="how">
+		<div class="how__title">
+			<h2>Как это работает</h2>
+		</div>
+		<!-- /.how__title -->
+		<div class="how__cont">
+			<div class="how__cont-item">
+				<img src="img/how01.png" alt="1">
+				<h4>Оставь заявку</h4>
+				<p>Оставьте заявку на сайте и менеджер перезвонит в короткие сроки для уточнения деталей и пожеланий.</p>
+			</div>
+			<!-- /.how__cont-item -->
+			<div class="how__cont-item">
+				<img src="img/how02.png" alt="1">
+				<h4>Выбирай лучшее</h4>
+				<p>Мы займемся подбором и диагностикой лучших вариантов.</p>
+			</div>
+			<!-- /.how__cont-item -->
+			<div class="how__cont-item">
+				<img src="img/how03.png" alt="1">
+				<h4>Покупай автомобиль</h4>
+				<p>Мы сопроводим вас на сделке и предоставим помощь в переоформлении документов.</p>
+			</div>
+			<!-- /.how__cont-item -->
+		</div>
+		<!-- /.how__cont -->
+	</section>
+
+	<section class="fast">
+		<div class="about__cont-title">
+			<h2>Бесплатная консультация</h2>
+		</div>
+		<!-- /.about__cont-title -->
+		<div class="fast__cont">
+			<div class="fast__cont-items">
+				<img src="img/fast.png" alt="">
+			</div>
+			<!-- /.fast__cont-items -->
+			<div class="fast__cont-items">
+				<h4>Пришлите нам ссылку на желаемый автомобиль с любого сайта</h4>
+				<a href="#mpopup-form" class="mpopup mainBtnN"
+				onclick="setNameScroll('заказать бесплатную консультацию - > Бесплатная консультация','Мы перезвоним');">заказать бесплатную консультацию</a>
+			</div>
+			<!-- /.fast__cont-items -->
+		</div>
+		<!-- /.fast__cont -->
+	</section>
+
+	<section class="reviews">
+		<div class="about__cont-title">
+			<h2>Отзывы</h2>
+		</div>
+		<!-- /.about__cont-title -->	
+		<div class="reviews__cont">
+			<div class="reviews__cont-items">
+				<div class="reviews__cont-items-img">
+					<img src="img/rev01.png" alt="r">
+				</div>
+				<!-- /.reviews__cont-items-img -->
+				<div class="reviews__cont-items-desc">
+					<h4>Алексей</h4>
+					<p>Обращался за помощью к “Автоподбор от эксперта” в подборе авто. Команда экспертов работает быстро и профессионально. Помогают и сопровождают в оформлении. Пока не был выбран лучший вариант, было проверено много машин. Однозначно рекомендую.</p>
+				</div>
+				<!-- /.reviews__cont-items-desc -->
+			</div>
+			<!-- /.reviews__cont-items -->
+			<div class="reviews__cont-items">
+				<div class="reviews__cont-items-img">
+					<img src="img/rev02.png" alt="r">
+				</div>
+				<!-- /.reviews__cont-items-img -->
+				<div class="reviews__cont-items-desc">
+					<h4>Артём</h4>
+					<p>Воспользовался услугой единоразового осмотра Nissan Note. Ребята очень быстро откликнулись, через час после того, как мы созвонились, мне уже предоставили информацию по проверки машиы по базам страховой и ГАИ, а уже через 2 часа приступитли к осмотру машины (Я был в Одессе, машина в Киеве, специалист осмотрел ее удаленно.).</p>
+				</div>
+				<!-- /.reviews__cont-items-desc -->
+			</div>
+			<!-- /.reviews__cont-items -->
+			<div class="reviews__cont-items">
+				<div class="reviews__cont-items-img">
+					<img src="img/rev03.png" alt="r">
+				</div>
+				<!-- /.reviews__cont-items-img -->
+				<div class="reviews__cont-items-desc">
+					<h4>Яна </h4>
+					<p>Пыталась сама искать свой первый автомобиль, несмотря на то, что ничего в этом не понимаю, после двух недель поиска поняла, что это не будет легко. К моему счастью, узнала, что бывают сервисы по подбору авто, “Автоподбор от эксперта” мне порекомендовала коллега. Бюджет для авто был минимален, поэтому ребятам пришлось пересмотреть много вариантов. Я регулярно получала подробные отчеты с фото проверок и объективные выводы. Ребята присутствовали при проверке на СТО и помогли с переоформлением. Не представляю, как бы я сама купила хорошую машину.</p>
+				</div>
+				<!-- /.reviews__cont-items-desc -->
+			</div>
+			<!-- /.reviews__cont-items -->
+			<div class="reviews__cont-items">
+				<div class="reviews__cont-items-img">
+					<img src="img/rev04.png" alt="r">
+				</div>
+				<!-- /.reviews__cont-items-img -->
+				<div class="reviews__cont-items-desc">
+					<h4>Дмитрий</h4>
+					<p>Обратился к ребятам за помощью месяц назад, долго решался, но сейчас, оглядываясь сквозь выполненный заказ, ни о чем не жалею) все просто отлично) подробные отчеты по каждой машине, аргументированные за и против каждого варианта, фото, видео, информации более чем достаточно чтобы принять окончательное решение. 
+						А сколько времени было сэкономлено!
+						Очень рекомендую!</p>
+				</div>
+				<!-- /.reviews__cont-items-desc -->
+			</div>
+			<!-- /.reviews__cont-items -->
+		</div>
+		<!-- /.reviews__cont -->
+	</section>
+
+	<section class="contacts">
+		<div class="contacts__cont">
+			<div class="contacts__cont-wrap">
+				<h4>контакты</h4>
+				<a href="tel:+380976172908">+38 097 617 2908</a>
+				<a href="mail:email@gmail.com">email@gmail.com</a>
+				<p>г. Киев </p>
+				<p>ул. Ломоносова 12/6</p>
+			</div>
+			<!-- /.contacts__cont-wrap -->
+		</div>
+		<!-- /.contacts__cont -->
+	</section>
+
+	<footer class="footer">
+		<div class="footer__cont">
+			<div class="footer__cont-logo">
+				<img src="img/logo.svg" alt="l">
+			</div>
+			<!-- /.footer__cont-logo -->
+			<p>г.Киев</p>
+			<a href="tel:+380976172908">+38 097 617 2908</a>
+		</div>
+		<!-- /.footer__cont -->
+	</footer>
+
+	<div class="devgen p-1 text-center">
+		<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>
+	</div>
+
+
+
+	<div class="hidden">
+		<form class="openForm d-block mx-auto order-main" id="mpopup-form">
+			<!-- <h2><span>de</span>Toos</h2> -->
+			<h3>Заполните форму</h3>
+			<h4><span id="customTextForm">Мы перезвоним</span></h4>
+			<input type="text" name="name" placeholder="ИМЯ" required>
+			<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
+			<button class="disbutt mainBtn" disabled><span>отправить</span></button>
+			<input name="order" type="hidden" id="input_order">
+			<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+			<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+			<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+			<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+		</form>
+	</div>
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/jquery.inputmask.bundle.min.js"></script>
+	<script src="libs/psti/jquery.malihu.PageScroll2id.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/fontawesome/js/all.min.js"></script>
+	<script src="libs/aos/aos.js"></script>
+	<script src="js/plug.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

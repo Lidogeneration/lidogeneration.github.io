@@ -1,0 +1,22 @@
+.how
+  text-align: center
+  &__title
+    margin-bottom: 20px
+    h2
+      font-style: italic
+      font-weight: 500
+      font-size: 36px
+  &__cont
+    display: flex
+    justify-content: space-around
+    &-item
+      width: 345px
+      max-width: 100%
+  @media(max-width: 992px)
+    &__title
+      font-size: 30px
+    &__cont
+      flex-direction: column
+      align-items: center
+      &-item
+        margin-bottom: 10px

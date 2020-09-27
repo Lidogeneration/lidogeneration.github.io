@@ -1,0 +1,29 @@
+.reviews
+  .about__cont-title
+    margin-bottom: 20px
+  &__cont
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    &-items
+      flex-basis: 40%
+      display: flex
+      margin-bottom: 50px
+      &-img
+        margin-right: 10px
+      &-desc
+        h4
+          font-size: 16px
+        p
+          font-size: 14px
+  @media(max-width: 992px)
+    &__cont
+      flex-direction: column
+      padding: 10px
+      &-items
+        flex-direction: column
+        &-img
+          img
+            display: block
+            margin-left: auto
+            margin-right: auto

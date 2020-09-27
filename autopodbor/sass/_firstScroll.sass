@@ -1,0 +1,98 @@
+.firstScroll
+  min-height: 100vh
+  background: url('../img/fBG.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  flex-direction: column
+  justify-content: center
+  position: relative
+  &__title
+    margin-top: auto
+    margin-bottom: auto
+    width: 664px
+    text-align: right
+    margin-left: 170px
+    h1
+      font-weight: 900
+      font-size: 96px
+      text-transform: uppercase
+      color: $main_rgb
+    h2
+      text-transform: uppercase
+      font-size: 72px
+      font-weight: 900
+      color: rgba($main_white, 0.2)
+      -webkit-text-stroke: 1px $main_white
+      -webkit-text-fill-color: rgba($main_white, 0.2)
+  &__subtitle
+    margin-top: auto
+    margin-bottom: auto
+    margin-left: 70px
+    width: 495px
+    h3
+      color: $main_color2
+      font-size: 36px
+      font-weight: 500
+      font-style: italic
+  &__btn
+    .mainBtnN
+      padding: 15px
+      font-size: 18px
+      text-transform: uppercase
+      color: $main_color2
+      display: block
+      text-align: center
+      width: 665px
+      max-width: 100%
+      margin-left: auto
+      margin-right: auto
+  &__arrow
+    position: absolute
+    bottom: 10px
+    right: 10px
+    a
+      cursor: pointer
+      width: 70px
+      height: 70px
+      display: block
+      border: 1px solid $main_rgb
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 100%
+      svg
+        font-size: 40px
+        color: $main_rgb
+  @media(max-width: 992px)
+    &__title
+      width: 100%
+      text-align: center
+      margin: auto
+      h1
+        font-size: 40px
+      h2
+        font-size: 30px
+    &__subtitle
+        width: 100%
+        margin: auto
+        h3
+          text-align: center
+          font-size: 24px
+    &__btn
+      padding: 10px 10px 10px 10px
+      .mainBtnN
+        padding: 10px
+    &__arrow
+      right: inherit
+      left: 50%
+      transform: translateX(-50%)
+      a
+        width: 40px
+        height: 40px
+        svg
+          font-size: 30px
+
+
+  

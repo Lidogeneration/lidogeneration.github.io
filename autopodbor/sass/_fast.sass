@@ -1,0 +1,52 @@
+.fast
+  background: url('../img/nout.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  .about__cont-title
+    margin-bottom: 20px
+    h2
+      color: $main_rgb
+  &__cont
+    display: flex
+    justify-content: center
+    &-items
+      flex-basis: 45%
+      position: relative
+      img
+        transform: translateX(75px)
+        width: 100%
+        height: auto
+        display: block
+      &:nth-child(2)
+        display: flex
+        justify-content: center
+        flex-direction: column
+        h4
+          color: $main_white
+          margin-top: auto
+          margin-bottom: auto
+          font-weight: bold
+          font-size: 24px
+          text-transform: uppercase
+        a
+          text-align: center
+  @media(max-width: 992px)
+    &__cont
+      flex-direction: column
+      &-items
+        text-align: center
+        flex-basis: 100%
+        img
+          transform: translateX(0)
+          width: 80%
+          display: block
+          margin-left: auto
+          margin-right: auto
+        h4
+          margin-bottom: 20px !important
+          font-size: 20px !important
+        a
+          display: block
+          margin-left: auto
+          margin-right: auto

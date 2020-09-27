@@ -1,0 +1,122 @@
+.advantage
+  background: url('../img/bga.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 0
+  &__cont
+    display: flex
+    justify-content: center
+    position: relative
+    z-index: 1
+    margin-bottom: 20px
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 50%
+      background: $main_white
+      z-index: -1
+    &-box
+      max-width: 100%
+      width: 559px
+      margin: 20px
+      background: $main_color
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      img
+        width: 100%
+        height: auto
+      &:nth-child(2)
+        padding: 20px
+      h3
+        text-align: center
+        color: $main_rgb2
+        font-weight: 500
+        font-size: 36px
+        font-style: italic
+        position: relative
+        margin-bottom: 20px
+        &:after
+          content: ''
+          position: absolute
+          bottom: -10px
+          width: 70%
+          left: 15%
+          height: 1px
+          background: $main_rgb
+      p
+        font-size: 16px
+        width: 60%
+        color: $main_white
+  &__desc
+    .about__cont-title
+      h2
+        color: $main_color2
+    &-wrap
+      display: flex
+      justify-content: center
+      &-items
+        flex-basis: 25%
+        ul
+          padding: 0
+          margin: 0
+          height: 100%
+          list-style: none
+          display: flex
+          justify-content: space-around
+          flex-direction: column
+          li
+            position: relative
+            width: 70%
+            color: $main_rgb
+        &:nth-child(1)
+          ul
+            padding-left: 60px  
+            li
+              img
+                position: absolute
+                left: -60px
+                top: 50%
+                transform: translateY(-50%)
+        &:nth-child(2)
+          flex-basis: 25%
+          img
+            max-width: 100%
+        &:nth-child(3)
+          ul
+            padding-right: 60px  
+            li
+              width: 100%
+              text-align: right
+              img
+                position: absolute
+                right: -60px
+                top: 50%
+                transform: translateY(-50%)
+  @media(max-width: 992px)
+    &__cont
+      flex-wrap: wrap
+      &:after
+        display: none
+      p
+        width: 100%
+      h3
+        font-size: 24px
+    &__desc
+      &-wrap
+        flex-direction: column
+        &-items
+          flex-basis: 100%
+          padding: 10px
+          img
+            display: block
+            margin-left: auto
+            margin-right: auto
+          ul
+            li
+              padding: 10px

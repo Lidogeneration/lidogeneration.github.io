@@ -1,0 +1,53 @@
+.work
+  background: url('../img/work.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  .about__cont-title
+    margin-bottom: 20px
+    h2
+      color: $main_rgb
+  &__slider
+    padding: 0 100px
+    &-cont
+      display: flex !important
+      &-img
+        flex-basis: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+          max-width: 100%
+          height: auto
+      &-desc
+        flex-basis: 50%
+        padding: 0 10px
+        p
+          color: $main_white
+        ul
+          list-style: none
+          padding-left: -50px
+          li
+            position: relative
+            color: $main_white
+            margin-bottom: 10px
+            img
+              position: absolute
+              left: -40px
+              top: 5px
+  @media(max-width: 992px)
+    &__slider
+      padding: 0 20px
+      &-cont
+        flex-direction: column
+        &-img
+          margin-bottom: 10px
+        &-desc
+          padding: 0
+          p
+            font-size: 14px
+          ul
+            li
+              font-size: 14px
+              margin-bottom: 5px
+

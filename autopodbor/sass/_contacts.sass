@@ -1,0 +1,30 @@
+.contacts
+  min-height: 60vh
+  background: url('../img/map.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  align-items: center
+  &__cont
+    margin-left: 100px
+    &-wrap
+      background: url('../img/contBg.png')
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: cover
+      padding: 100px 100px 100px 60px
+      display: flex
+      flex-direction: column
+      h4,a,p
+        color: $main_rgb
+      h4
+        text-transform: uppercase
+        margin-bottom: 20px
+  @media(max-width: 992px)
+    justify-content: center
+    &__cont
+      margin: 0
+      &-wrap
+        padding: 50px 30px
+      
