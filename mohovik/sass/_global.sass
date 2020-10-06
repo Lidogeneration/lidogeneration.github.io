@@ -1,0 +1,98 @@
+*
+	box-sizing: border-box	
+body
+	background: $main_bg3
+	font-family: 'IBM Plex Mono', monospace
+	font-weight: 400
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	z-index: 1
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+
+.done
+	min-height: 100vh
+
+.globalCont
+	width: 95%
+	display: block
+	margin-left: auto
+	margin-right: auto
+	padding: 10px
+	@media(max-width: 992px)
+		width: 100%
+
+.bllurCont
+	overflow: hidden
+	position: relative
+	z-index: 2
+	margin-top: -100px
+	height: 200px
+	&__wrap
+		top: 10%
+		left: -15%
+		position: absolute
+		height: 80%
+		width: 130%
+		background: $main_white
+		filter: blur(20px)
+	
+/* --- slick style Start ------------------------------------------------*/
+.slick-prev
+	bottom: -28px
+	left: 30%
+	top: inherit
+	z-index: 99
+	transition: .3s
+	&:before
+		content: ''
+	svg
+		color: $main_color
+		font-size: 30px
+		transition: .3s
+	&:hover
+		svg
+			color: $main_rgb
+.slick-next
+	bottom: -28px
+	right: 30%
+	top: inherit
+	z-index: 99
+	transition: .3s
+	&:before
+		content: ''
+	svg
+		color: $main_color
+		font-size: 30px
+		transition: .3s
+	&:hover
+		svg
+			color: $main_rgb
+.slick-dots
+	li
+		button
+			&:before
+				font-size: 15px
+	.slick-active	
+		button
+			&:before
+				color: $main_rgb !important
+/* --- slick style end ------------------------------------------------*/	

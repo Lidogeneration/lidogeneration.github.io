@@ -1,0 +1,73 @@
+.firstscroll
+  padding: 0
+  min-height: 90vh
+  background: url('../img/mbg.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  position: relative
+  .globalCont 
+    display: flex
+    justify-content: center
+    flex-direction: column
+    min-height: 90vh
+  &__subTitle
+    margin-top: auto
+    width: 100%
+    p
+      display: block
+      width: 600px
+      margin: 0 0 0 auto
+      padding: 0
+      color: $main_white
+      font-weight: 700
+      font-size: 18px
+  &__title
+    margin-top: auto
+    margin-left: 10%
+    h1
+      width: 800px
+      color: $main_white
+      font-family: $roboto
+      font-size: 72px
+      font-weight: 600
+  &__afterTitle
+    margin-top: auto
+    width: 100% 
+    z-index: 3
+    h2
+      text-align: right
+      font-family: $roboto
+      color: $main_color
+      font-size: 48px
+      font-weight: 800
+      z-index: 3
+  @media(max-width: 992px)
+    background: url('../img/mbgM.jpg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    min-height: 100vh
+    .globalCont 
+      min-height: 100vh
+    &__subTitle
+      display: none
+      order: 3
+    &__title
+      order: 2
+      margin-bottom: auto
+      margin-top: auto
+      h1
+        text-align: right
+        width: 100%
+        font-size: 24px
+        font-weight: 600
+    &__afterTitle
+      margin-bottom: auto
+      margin-top: auto
+      order: 1
+      h2
+        color: $main_white
+        text-align: left
+        font-size: 20px
+        font-weight: 800

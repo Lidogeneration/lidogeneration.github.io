@@ -1,0 +1,136 @@
+.whay
+  overflow: visible
+  background: url('../img/whayBg.png')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 0  
+  &__title
+    position: relative
+    z-index: 1
+    h2
+      text-align: center
+      margin: 0
+      padding: 0
+      margin-top: -50px
+    &-cont
+      overflow: hidden
+      position: relative
+      top: -50px
+      height: 100px
+      &-bgFilter
+        top: 10%
+        left: -15%
+        position: absolute
+        height: 80%
+        width: 130%
+        background: $main_white
+        filter: blur(10px)
+        
+  &__cont
+    overflow: hidden
+    display: flex
+    justify-content: space-between
+    &-desc
+      flex-basis: 35%
+      display: flex
+      flex-direction: column
+      p
+        margin: 0
+        padding: 0
+        span
+          text-transform: uppercase
+          color: $main_rgb
+        &:nth-child(2)
+          color: $main_rgb
+          margin-bottom: auto
+      a
+        display: block
+        margin-top: auto
+      .mainBtnC
+        margin-top: 10px
+    &-img
+      flex-basis: 65%
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        max-width: 100%
+      span
+        cursor: pointer
+        width: 30px
+        height: 30px
+        position: absolute
+        border-radius: 100%
+        background: $main_white
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: .3s
+        svg
+          transition: .3s
+          color: $main_rgb
+        &:after
+          content: ''
+          position: absolute
+          top: -20%
+          left: -20%
+          width: 140%
+          height: 140%
+          border-radius: 100%
+          border: 1px solid $main_white
+        &:before
+          content: ''
+          position: absolute
+          top: -40%
+          left: -40%
+          width: 180%
+          height: 180%
+          border-radius: 100%
+          border: 1px solid $main_white
+        &:hover
+          transition: .3s
+          background: $main_rgb
+          svg
+            transition: .3s
+            color: $main_white
+        p
+          z-index: 33
+          padding: 10px
+          border-radius: 15px
+          position: absolute
+          top: -100px
+          right: -150px
+          width: 300px
+          background: $main_white
+          transition: .3s
+          transform: scale(0)
+          font-size: 14px
+          line-height: 1.2;
+        &:nth-child(2)
+          left: 20%
+          top: 50%
+        &:nth-child(3)
+          left: 37%
+          top: 67%
+        &:nth-child(4)
+          left: 45%
+          top: 33%
+        &:nth-child(5)
+          right: 10%
+          top: 57%
+          p
+            top: -100px
+            right: -100px
+        .showToltip
+          transition: .3s
+          transform: scale(1)
+  @media(max-width: 992px)
+    &__cont
+      &-desc
+        flex-basis: 100%
+      &-img
+        display: none
+
+

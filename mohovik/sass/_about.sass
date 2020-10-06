@@ -1,0 +1,42 @@
+.about
+  padding-top: 0
+  z-index: 4
+  &__cont
+    display: flex
+    justify-content: space-between
+    overflow: hidden
+    &-items
+      flex-basis: 32%
+      box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25), inset 0px 0px 5px 2px rgba(255,255,255,1)
+      background: $main_bg2
+      padding: 10px
+      position: relative
+      transition: .3s
+      &-title
+        padding: 0 0 10px 0
+        h4
+          text-align: center
+          margin: 0
+          padding: 0
+          font-size: 36px
+          font-weight: 800
+      &-img
+        margin-bottom: 20px
+        img
+          max-width: 100%
+          height: auto
+      &-desc
+        margin-bottom: 20px
+        p
+          margin: 0
+          padding: 0  
+      &-btn
+        position: absolute
+        right: 0
+        bottom: 0
+      &:hover
+        transition: .3s
+        box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25)
+        transform: scale(1.01)
+  @media(max-width: 992px)
+    display: none

@@ -1,0 +1,184 @@
+.navbar
+	padding: 0
+	position: fixed
+	width: 100%
+	left: 0
+	z-index: 1137
+	background: $main_white
+	transition: .3s
+	.globalCont
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__list
+		width: 100%
+		ul
+			display: flex
+			justify-content: center
+			align-items: center
+			list-style: none
+			margin: 0
+			padding: 0
+			li
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					font-size: 20px
+					font-weight: 600
+					padding: 5px 30px
+					transition: .3s
+					svg
+						margin-left: 5px
+						transition: .3s
+					&:hover
+						transition: .3s
+						color: $main_rgb
+			li[data-rol="dropdown"]
+				position: relative
+				ul
+					width: 220px
+					background: $main_white
+					position: absolute
+					flex-direction: column
+					transform: scaleY(0)
+					transform-origin: top
+					transition: .3s
+					li
+						a
+							font-size: 16px
+				&:hover
+					ul
+						transition: .3s
+						transform: scaleY(1)
+	&__phone
+		display: flex
+		align-items: center
+		a
+			text-align: center
+			margin: 5px
+			display: block
+			width: 200px
+			font-weight: 700
+	&__mobileBtn
+		display: none
+	.showMenuList
+		transform: translateY(0)
+	@media(max-width: 1600px)
+		&__list
+			width: auto
+			ul
+				li
+					a
+						padding: 5px 10px
+						font-size: 18px
+		&__phone
+			a
+				width: auto
+				font-size: 16px
+	@media(max-width: 1200px)
+		&__logo
+			img
+				width: 100px
+		&__list
+			width: auto
+			ul
+				li
+					a
+						margin: 5px 5px
+						font-size: 16px
+		&__phone
+			a
+				font-size: 14px
+				width: auto
+	@media(max-width: 992px)
+		position: fixed
+		width: 100%
+		left: 0
+		background: none
+		&__logo
+			img
+				width: 80px
+		&__list
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100vh
+			background: $main_color
+			transform: translateY(-200%)
+			transition: .3s
+			ul
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				height: 100%
+				a
+					color: $main_white
+				li[data-rol="dropdown"]
+					position: relative
+					display: flex
+					flex-direction: column
+					height: auto
+					justify-content: center
+					align-items: center
+					a
+					ul
+						display: none
+						position: relative
+						width: auto
+						background: none
+						flex-direction: column
+						transform: scaleY(0)
+						transform-origin: top
+						transition: .3s
+						li
+							a
+								font-size: 16px
+					&:hover
+						ul
+							display: block
+		&__phone
+			&-btn
+				display: none
+			&-number
+				a
+					font-weight: 900
+					font-size: 14px
+		&__mobileBtn
+			display: block
+			position: relative
+			width: 40px
+			height: 25px
+			span
+				position: absolute
+				left: 0
+				width: 100%
+				height: 4px
+				background: $main_color
+				transition: .3s
+				&:nth-child(1)
+					top: 0
+				&:nth-child(2)
+					top: 50%	
+					transform: translateY(-50%)
+				&:nth-child(3)
+					left: inherit
+					right: 0
+					width: 70%
+					bottom: 0
+		.mobileBtnIn
+			span
+				transition: .3s
+				background: $main_white
+				&:nth-child(1)
+					transform: rotate(45deg)
+					top: 13px
+				&:nth-child(2)
+					transform: rotate(-45deg)
+				&:nth-child(3)
+					display: none
+
+.navbarwhite
+	transition: .3s
+	background: $main_white
