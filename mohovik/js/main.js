@@ -3,22 +3,24 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const nameScroll = document.getElementById('input_order');
-    const customTextFormSpan = document.getElementById('customTextForm');
-    
-    function setNameScroll(namescroll, customTextFormSpanF) {
-        nameScroll.value = namescroll;
-        customTextFormSpan.textContent = customTextFormSpanF;
-    }
+    const loadInit = () => {
+        if(navBar) {
+            if(document.documentElement.scrollTop > 1) {
+                navBar.classList.add('navbarwhite');
+            }
+            else {
+                navBar.classList.remove('navbarwhite');
+            }
+        }
+    };
+
+
     
     window.addEventListener('scroll', () => {
-        console.log(document.documentElement.scrollTop);
-        if(document.documentElement.scrollTop > 1) {
-            navBar.classList.add('navbarwhite');
-        }
-        else {
-            navBar.classList.remove('navbarwhite');
-        }
+        loadInit();
+    });
+    window.addEventListener('load', () => {
+        loadInit();
     });
 
     if(window.innerWidth <= 992)
@@ -61,3 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+const nameScroll = document.getElementById('input_order');
+const customTextFormSpan = document.getElementById('customTextForm');
+
+function setNameScroll(namescroll, customTextFormSpanF) {
+    nameScroll.value = namescroll;
+    customTextFormSpan.textContent = customTextFormSpanF;
+}

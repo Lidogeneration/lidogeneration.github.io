@@ -1,0 +1,22 @@
+.exp
+  overflow: visible
+  padding-top: 0
+  &__cont
+    display: flex
+    justify-content: space-between
+    &-items
+      img
+        width: 100%
+      &:nth-child(1)
+        flex-basis: 58%
+      &:nth-child(2)
+        flex-basis: 40%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+  @media(max-width: 992px)
+    &__cont
+      flex-direction: column
+      &-items
+        img 
+          margin-bottom: 20px
