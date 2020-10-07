@@ -20,3 +20,56 @@
 		margin-left: auto
 		margin-right: auto
 /* --- forms end ------------------------------------------------*/
+
+.openFormGor
+	display: flex
+	justify-content: center
+	align-items: center
+	input
+		width: 250px
+		max-width: 100%
+		font-size: 15px
+		border: 2px solid $main_white
+		padding: 5px 10px
+		margin: 5px
+		background: rgba($main_white, .3)
+		color: $main_white
+	::placeholder
+		color: $main_white
+	.mainBtnN
+		width: 250px
+		max-width: 100%
+		margin: 5px
+	@media(max-width: 992px)
+		flex-direction: column
+		input
+			text-align: center
+		.mainBtnN
+			display: block
+			margin-left: auto
+			margin-right: auto
+
+.openFormVert
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	text-align: center
+	h4
+		margin-bottom: 40px
+	input, textarea
+		text-align: center
+		width: 250px
+		max-width: 100%
+		font-size: 15px
+		border: 2px solid $main_white
+		padding: 5px 10px
+		margin: 5px
+		background: rgba($main_white, .3)
+		color: $main_white
+	::placeholder
+		color: $main_white
+	.mainBtnN
+		width: 250px
+		max-width: 100%
+		margin: 5px
