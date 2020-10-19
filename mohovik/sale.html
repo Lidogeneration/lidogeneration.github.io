@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+	<meta name="description" CONTENT="<?php bloginfo('description');?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="<?php bloginfo('name'); ?><?php wp_title(); ?>" />
+	<meta property="og:description" content="<?php bloginfo('description');?>" />
+	<meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.png">
+	<meta property="og:url" content="<?php site_url(); ?>" />
+	<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+	<link rel="shortcut icon" href="<?php bloginfo(template_url);?>/img/logo.png" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="libs/aos/aos.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	
+	<nav class="navbar" data-rol="navBar">
+		<div class="globalCont">
+			<div class="navbar__logo">
+				<img src="img/logo.png" alt="Logo">
+			</div>
+			<!-- /.navbar__logo -->
+			<div class="navbar__list" data-rol="navList">
+				<ul>
+					<li data-rol="navLiHide"><a href="/" rel="m_PageScroll2id">Главная</a></li>
+					<li data-rol="navLiHide"><a href="#about-link" rel="m_PageScroll2id">О нас</a></li>
+					<li data-rol="dropdown">
+						<a >
+							Услуги
+							<i class="fas fa-caret-down"></i>
+
+						</a>
+						<ul>
+							<li><a href="#0">Ремонт техники</a></li>
+							<li><a href="#0">Продажа техники</a></li>
+							<li><a href="#0">Склад запчастей</a></li>
+						</ul>
+					</li>
+					<li data-rol="navLiHide"><a href="/" rel="m_PageScroll2id">Партнёры </a></li>
+					<li data-rol="navLiHide"><a href="/" rel="m_PageScroll2id">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar__list -->
+			<div class="navbar__phone">
+				<div class="navbar__phone-btn">
+					<a href="#mpopup-form" class="mpopup mainBtnQv" onclick="setNameScroll('Заказать звонок - > шапка сайта','Введите данные и мы свяжемся с Вами в течение 30 минут');">Заказать звонок</a>
+				</div>
+				<!-- /.navbar__phone-btn -->
+				<div class="navbar__phone-number">
+					<a href="tel:+380673104442">+38(067)-310-44-42</a>
+				</div>
+				<!-- /.navbar__phone-number -->
+			</div>
+			<!-- /.navbar__phone -->
+			<div class="navbar__mobileBtn" data-rol="navBtn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- /.navbar__mobileBtn -->
+		</div>
+		<!-- /.globalCont -->
+  </nav>
+  
+  <section class="firstscroll sale">
+		<div class="globalCont">
+			<div class="firstscroll__title">
+				<h1>Продажа техники</h1>
+			</div>
+			<div class="firstscroll__afterTitle">
+				<h2>Техника, которая приносит доход </h2>
+			</div>
+      <!-- /.afterTitle -->
+      <div class="firstscroll__btn">
+        <a href="#mpopup-form" class="mainBtnC mpopup"  onclick="setNameScroll('Ремонт техники - > Первый скролл','Введите данные и мы свяжемся с Вами в течение 30 минут');">Бесплатная консультация</a>
+      </div>
+      <!-- /.firstscroll__btn -->
+		</div>
+  </section>
+  <div class="bllurImg repair-bllurImg">
+		<div class="bllurImg__wrap">
+			<img src="img/prLogoSale.png" alt="">
+		</div>
+		<!-- /.bllurImg__wrap -->
+	</div>
+	<!-- /.bllurCont -->
+
+<section class="saleAbout">
+  <div class="globalCont">
+    <div class="saleAbout__cont">
+      <div class="saleAbout__cont-bank">
+        <img src="img/bank.png" alt="">
+      </div>
+      <!-- /.saleAbout__cont-bank -->
+      <div class="saleAbout__cont-prec">
+        <p>Компания «Маховик» совместно с 
+          «Ощадбанк» предлагают для своих 
+          клиентов специальные условия по 
+          финансированию в рамках
+          государственных программ от </p>
+          <span><b>0,1%</b> годовых</span>
+      </div>
+      <!-- /.saleAbout__cont-prec -->
+      <div class="saleAbout__cont-desc">
+        <h3>Фронтальные погрузчики компании “Маховик”</h3>
+        <p>Выбор спецтехники и карьерной техники - непростая задача. Ведь такая техника должна работать и приносить прибыль многие годы. Сегодня, при огромном ассортименте предложений это особенно сложное задание, которое решить под силу только опыту использования и наблюдений.
+          Компания “Маховик”, которая имеет более 15 лет опыта работы с такой техникой и выполняя обслуживание и ремонт спецтехники поможет Вам в выборе покупки, учитывая назначение, условия эксплуатации и возлагаемые надежды на Ваших будущих железных помощников.</p>
+          <p><span>В ангарах нашей компании Вас дожидается только лучшая, надёжная техника проверенных годами производителей.  </span></p>
+          <a href="#mpopup-form" class="mainBtnC mpopup"  onclick="setNameScroll('Ощадбанк','Введите данные и мы свяжемся с Вами в течение 30 минут');">Бесплатная консультация</a>
+      </div>
+      <!-- /.saleAbout__cont-desc -->
+    </div>
+    <!-- /.saleAbout__cont -->
+  </div>
+</section>
+
+
+<section class="tech">
+  <div class="whay__title">
+    <div class="whay__title-cont">
+      <div class="whay__title-cont-bgFilter"></div>
+      <!-- /.bgFilter -->
+    </div>
+    <!-- /.contww -->
+    <h2 data-aos="fade-down" data-aos-duration="1500">Техника  которая зарабатывает</h2>
+  </div>
+  <!-- /.whay__title -->
+  <div class="globalCont">
+
+    <div class="tech__cont">
+      <div class="tech__cont-items">
+        <div class="tech__cont-items-title">
+          <h4>HD968</h4>
+          <h5>Фронтальный погрузчик</h5>
+        </div>
+        <!-- /.tech__cont-items-title -->
+        <div class="tech__cont-items-img">
+          <span class="whay__cont-img-btn">
+            <i class="fas fa-plus"></i>
+          </span>
+          <img src="img/tech01.png" alt="title">
+        </div>
+        <!-- /.tech__cont-items-img -->
+        <div class="tech__cont-items-desc">
+          <div class="tech__cont-items-desc-line">
+            <p>Объем ковша.................3,25/3,5 м</p>
+            <p>Грузоподъемность.................6000кг</p>
+            <p>Высота выгрузки................ 3160 мм</p>
+            <p>Рабочий вес................... 19000 кг</p>
+            <p>Двигатель...........Weichai WD12G240E21</p>
+          </div>
+          <!-- /.tech__cont-items-desc-line -->
+        </div>
+        <!-- /.tech__cont-items-desc -->
+      </div>
+      <div class="tech__cont-items">
+        <div class="tech__cont-items-title">
+          <h4>HD956</h4>
+          <h5>Фронтальный погрузчик</h5>
+        </div>
+        <!-- /.tech__cont-items-title -->
+        <div class="tech__cont-items-img">
+          <span class="whay__cont-img-btn">
+            <i class="fas fa-plus"></i>
+          </span>
+          <img src="img/tech02.png" alt="title">
+        </div>
+        <!-- /.tech__cont-items-img -->
+        <div class="tech__cont-items-desc">
+          <div class="tech__cont-items-desc-line">
+            <p>Объем ковша.......................3,0 м</p>
+            <p>Грузоподъемность................5000 кг</p>
+            <p>Высота выгрузки.................3098 мм</p>
+            <p>Рабочий вес....................17000 кг</p>
+            <p>Двигатель...........Weichai WP10G220E21</p>
+          </div>
+          <!-- /.tech__cont-items-desc-line -->
+        </div>
+        <!-- /.tech__cont-items-desc -->
+      </div>
+      <div class="tech__cont-items">
+        <div class="tech__cont-items-title">
+          <h4>HD946</h4>
+          <h5>Фронтальный погрузчик</h5>
+        </div>
+        <!-- /.tech__cont-items-title -->
+        <div class="tech__cont-items-img">
+          <span class="whay__cont-img-btn">
+            <i class="fas fa-plus"></i>
+          </span>
+          <img src="img/tech03.png" alt="title">
+        </div>
+        <!-- /.tech__cont-items-img -->
+        <div class="tech__cont-items-desc">
+          <div class="tech__cont-items-desc-line">
+            <p>Объем ковша.......................2,3 м</p>
+            <p>Грузоподъемность................4000 кг</p>
+            <p>Высота выгрузки.................2950 мм</p>
+            <p>Рабочий вес....................12700 кг</p>
+            <p>Двигатель............Weichai WP6G220E20</p>
+          </div>
+          <!-- /.tech__cont-items-desc-line -->
+        </div>
+        <!-- /.tech__cont-items-desc -->
+      </div>
+      <div class="tech__cont-items">
+        <div class="tech__cont-items-title">
+          <h4>HD936</h4>
+          <h5>Фронтальный погрузчик</h5>
+        </div>
+        <!-- /.tech__cont-items-title -->
+        <div class="tech__cont-items-img">
+          <span class="whay__cont-img-btn">
+            <i class="fas fa-plus"></i>
+          </span>
+          <img src="img/tech04.png" alt="title">
+        </div>
+        <!-- /.tech__cont-items-img -->
+        <div class="tech__cont-items-desc">
+          <div class="tech__cont-items-desc-line">
+            <p>Объем ковша.......................1,7 м</p>
+            <p>Грузоподъемность................3000 кг</p>
+            <p>Высота выгрузки.................3200 мм</p>
+            <p>Рабочий вес.....................9500 кг</p>
+            <p>Двигатель............Weichai WP6G125E22</p>
+          </div>
+          <!-- /.tech__cont-items-desc-line -->
+        </div>
+        <!-- /.tech__cont-items-desc -->
+      </div>
+      <div class="tech__cont-items">
+        <div class="tech__cont-items-title">
+          <h4>HD928</h4>
+          <h5>Фронтальный погрузчик</h5>
+        </div>
+        <!-- /.tech__cont-items-title -->
+        <div class="tech__cont-items-img">
+          <span class="whay__cont-img-btn">
+            <i class="fas fa-plus"></i>
+          </span>
+          <img src="img/tech05.png" alt="title">
+        </div>
+        <!-- /.tech__cont-items-img -->
+        <div class="tech__cont-items-desc">
+          <div class="tech__cont-items-desc-line">
+            <p>Объем ковша.......................1,5 м</p>
+            <p>Грузоподъемность................2800 кг</p>
+            <p>Высота выгрузки.................3500 мм</p>
+            <p>Рабочий вес.....................6500 кг</p>
+            <p>Двигатель...........Cummins 4BT3.9-C100</p>
+          </div>
+          <!-- /.tech__cont-items-desc-line -->
+        </div>
+        <!-- /.tech__cont-items-desc -->
+      </div>
+      <div class="tech__cont-items">
+        <div class="tech__cont-items-title">
+          <h4>HD918C</h4>
+          <h5>Фронтальный погрузчик</h5>
+        </div>
+        <!-- /.tech__cont-items-title -->
+        <div class="tech__cont-items-img">
+          <span class="whay__cont-img-btn">
+            <i class="fas fa-plus"></i>
+          </span>
+          <img src="img/tech06.png" alt="title">
+        </div>
+        <!-- /.tech__cont-items-img -->
+        <div class="tech__cont-items-desc">
+          <div class="tech__cont-items-desc-line">
+            <p>Объем ковша........................1,03</p>
+            <p>Грузоподъемность................1800 кг</p>
+            <p>Выс выгрузки..........3200/3700/4500 мм</p>
+            <p>Рабочий вес.....................4500 кг</p>
+            <p>Двигатель................Weichai ZHBG41</p>
+          </div>
+          <!-- /.tech__cont-items-desc-line -->
+        </div>
+        <!-- /.tech__cont-items-desc -->
+      </div>
+    </div>
+    <!-- /.tech__cont -->
+    <div class="tech__btn">
+      <a href="#mpopup-form" class="mainBtnC mpopup"  onclick="setNameScroll('Техника которая зарабатывает','Введите данные и мы свяжемся с Вами в течение 30 минут');">Бесплатная консультация</a>
+    </div>
+    <!-- /.tech__btn -->
+    <div class="tech__more">
+      <div class="tech__more-title">
+        <h3>Ещё техника </h3>
+      </div>
+      <!-- /.tech__more-title -->
+      <div class="tech__more-cont">
+        <div class="tech__more-cont-slider">
+          <div class="tech__more-cont-slider-wrap">
+            <img src="img/techMore.png" alt="">
+          </div>
+          <!-- /.tech__more-cont-slider-wrap -->
+          <div class="tech__more-cont-slider-wrap">
+            <img src="img/techMore.png" alt="">
+          </div>
+          <!-- /.tech__more-cont-slider-wrap -->
+        </div>
+        <!-- /.tech__more-cont-slider -->
+        
+      </div>
+      <!-- /.tech__more-cont -->
+    </div>
+    <!-- /.tech__more -->
+  </div>
+</section>
+
+<section class="workTech">
+  <div class="whay__title">
+    <div class="whay__title-cont">
+      <div class="whay__title-cont-bgFilter"></div>
+      <!-- /.bgFilter -->
+    </div>
+    <!-- /.contww -->
+    <h2 data-aos="fade-down" data-aos-duration="1500">Наша техника в работе</h2>
+  </div>
+  <!-- /.whay__title -->
+  <div class="globalCont">
+    <div class="workTech__video">
+      <iframe src="https://www.youtube.com/embed/AUB5qpUIAfQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- /.workTech__video -->
+  </div>
+</section>
+
+
+<section class="reviews">
+  <div class="globalCont">
+    <div class="reviews__title">
+      <h3>Отзывы наших клиентов</h3>
+    </div>
+    <!-- /.reviews__titile -->
+    <div class="reviews__cont">
+      <div class="reviews__cont-items">
+        <a href="https://www.instagram.com/mahovyk/?igshid=a4r49tq891np" target="_blank">
+          <img src="img/rev01.png" alt="">
+        </a>
+      </div>
+      <!-- /.reviews__cont-items -->
+      <div class="reviews__cont-items">
+        <a href="https://www.instagram.com/mahovyk/?igshid=a4r49tq891np" target="_blank">
+          <img src="img/rev02.png" alt="">
+        </a>
+      </div>
+      <!-- /.reviews__cont-items -->
+      <div class="reviews__cont-items">
+        <a href="https://www.instagram.com/mahovyk/?igshid=a4r49tq891np" target="_blank">
+          <img src="img/rev03.png" alt="">
+        </a>
+      </div>
+      <!-- /.reviews__cont-items -->
+    </div>
+    <!-- /.reviews__cont -->
+  </div>
+</section>
+<section class="whay" id="about-link">
+  <div class="whay__title">
+    <div class="whay__title-cont">
+      <div class="whay__title-cont-bgFilter"></div>
+      <img src="img/prot.png" alt="">
+      <!-- /.bgFilter -->
+    </div>
+    <!-- /.contww -->
+    <h2 data-aos="fade-down" data-aos-duration="1500">Почему мы?</h2>
+  </div>
+  <!-- /.whay__title -->
+  <div class="globalCont">
+    <div class="whay__cont">
+      <div class="whay__cont-desc" data-aos="fade-right" data-aos-duration="1500">
+        <p>  Благодарность клиентов для нас в приоритете! Поэтому наши специалисты по ремонту применяют все свои знания и опыт, прикладывая максимум усилий для быстрого и качественного ремонта спецтехники. Именно поэтому сервис "Маховик" тщательно продумал и организовал работу внутри компании так, чтобы не приходилось долго ждать рабочий агрегат. Наш более чем <span>15 лет</span> опыт в сфере ремонта и обслуживания спецтехники <span>гарантирует</span> качество и небольшие сроки работы.</p>
+        <p>Накопленный опыт, правильная оценка проблемы и применение современного оборудования - всё это помогает нашим клиентам экономить время, деньги и поддерживать долгосрочное сотрудничество.</p>
+        <a href="#mpopup-form" class="mainBtnC mpopup"  onclick="setNameScroll('Почему мы - > Бесплатная консультация','Введите данные и мы свяжемся с Вами в течение 30 минут');">Бесплатная консультация</a>
+      </div>
+      <!-- /.whay__cont-desc -->
+      <div class="whay__cont-img" data-rol="btnToltipCont" data-aos="fade-left" data-aos-duration="1500">
+        <img src="img/whayI.png" alt="">
+        <span class="whay__cont-img-btn" data-rol="btnToltip"><i class="fas fa-plus"></i>
+          <p>Компания “Маховик” имеет мощный ресурс, позволяющий быстро и качественно выполнять свои обязятельства</p>
+        </span>
+        <span class="whay__cont-img-btn" data-rol="btnToltip"><i class="fas fa-plus"></i>
+          <p>Компания “Маховик” выбирает путь долгосрочного сотрудничества. Лучший бизнес - довольный клиент</p>
+        </span>
+        <span class="whay__cont-img-btn" data-rol="btnToltip"><i class="fas fa-plus"></i>
+          <p>Компанией “Маховик” управляют опытные специалисты, имеющие огромный опыт в ремонте спецтехники</p>
+        </span>
+        <span class="whay__cont-img-btn" data-rol="btnToltip"><i class="fas fa-plus"></i>
+          <p>В компаниии “Маховик” достаточно ресурсов, чтобы Вам не приходилось ждать своей очереди. Унас Вы всегда - первые.</p>
+        </span>
+      </div>
+      <!-- /.whay__cont-img -->
+    </div>
+    <!-- /.whay__cont -->
+  </div>
+  <!-- /.globalCont -->
+
+</section>
+
+<section class="contacts">
+  <div class="whay__title">
+    <div class="whay__title-cont">
+      <div class="whay__title-cont-bgFilter"></div>
+      <!-- /.bgFilter -->
+    </div>
+    <!-- /.contww -->
+  </div>
+  <!-- /.whay__title -->
+  <div class="contacts__cont">
+    <h4>Наши контакты</h4>
+    <a href="tel:+380673238385">+38 (067) 323-83-85 (Viber)</a>
+    <a href="tel:+380673104442">+38 (067) 310-44-42 (Viber)</a>
+    <a href="tel:+380671965440">+38 (067) 196-54-40 (Viber)</a>
+    <a href="tel:+380443343308">+38 (044) 334-33-08</a>
+    <a href="mailto:azmahovyk1@gmail.com">azmahovyk1@gmail.com</a>
+    <p>Украина, Киевская область г. Бровары, ул. Янченко, 2.</p>
+    <div class="contacts__cont-social">
+      <a href="https://www.facebook.com/azmahovyk/" target="_blank"><img src="img/fb.png" alt="fb"></a>
+      <a href="https://www.instagram.com/mahovyk/?igshid=a4r49tq891np" target="_blank"><img src="img/in.png" alt="in"></a>
+      <a href="https://www.youtube.com/channel/UCMyZ-p7QSmYOCpxm-FCBSgA?view_as=subscriber" target="_blank"><img src="img/yb.png" alt="yb"></a>
+    </div>
+    <!-- /.contacts__cont-social -->
+    <div class="contacts__cont-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.3113086665066!2d30.746581715732905!3d50.49116357948098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4dbca999e7db1%3A0x9101bc8c8af1c55a!2z0LLRg9C70LjRhtGPINCU0LzQuNGC0YDQsCDQr9C90YfQtdC90LrQsCwgMiwg0JHRgNC-0LLQsNGA0LgsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDc0MDA!5e0!3m2!1suk!2sua!4v1602096643786!5m2!1suk!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- /.contacts__cont-map -->
+    <a href="#mpopup-form" class="mpopup mainBtnC" onclick="setNameScroll('Заказать звонок - > Контакты','Введите данные и мы свяжемся с Вами в течение 30 минут');">Заказать звонок</a>
+  </div>
+  <!-- /.contacts__cont -->
+</section>
+
+<section class="videoCont">
+  <iframe src="https://www.youtube.com/embed/XBPjVzSoepo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<div class="devgen p-1 text-center">
+  <a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>
+</div>
+
+
+
+<div class="hidden">
+  <form class="openForm order-main" id="mpopup-form">
+    <h4><span id="customTextForm">Мы перезвоним</span></h4>
+    <input type="text" name="name" placeholder="ИМЯ" required>
+    <input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
+    <button class="disbutt mainBtnC" disabled><span>Заказать звонок</span></button>
+    <input name="order" type="hidden" id="input_order">
+    <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+    <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+    <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+    <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+    <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+  </form>
+</div>
+
+<script src="libs/jquery-3.4.1.min.js"></script>
+<script src="libs/jquery.inputmask.bundle.min.js"></script>
+<script src="libs/psti/jquery.malihu.PageScroll2id.min.js"></script>
+<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/fontawesome/js/all.min.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="js/plug.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

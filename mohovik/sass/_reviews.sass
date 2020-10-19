@@ -1,0 +1,20 @@
+.reviews
+  &__title
+    margin-bottom: 20px
+    h3
+      color: $main_rgb
+      text-align: center
+  &__cont
+    display: flex
+    justify-content: space-between
+    &-items
+      padding: 10px
+      img
+        max-width: 100%
+  @media(max-width: 992px)
+    &__cont
+      flex-direction: column
+      &-items
+        img
+          width: 100%
+          height: auto

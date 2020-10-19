@@ -50,34 +50,33 @@ forGalleryThree.forEach(key => {
   forGalleryThreeItems.push({src: key.src});
 });
 
-console.log(forGalleryOneItems);
-console.log(forGalleryTwoItems);
-console.log(forGalleryThreeItems);
 
-// Example with single object
 $('#galleryOne').magnificPopup({
   items: forGalleryOneItems,
   gallery: {
     enabled: true
   },
-  type: 'image' // this is default type
+  type: 'image' 
 });
-// Example with single object
+
 $('#galleryTwo').magnificPopup({
   items: forGalleryTwoItems,
   gallery: {
     enabled: true
   },
-  type: 'image' // this is default t
+  type: 'image' 
 });
-// Example with single object
+
 $('#galleryThree').magnificPopup({
   items: forGalleryThreeItems,
   gallery: {
     enabled: true
   },
-  type: 'image' // this is default type
+  type: 'image' 
 });
+
+
+
 // $(document).ready(function() {
 // 	$('.popup-youtube').magnificPopup({
 // 		type: 'iframe',
@@ -88,19 +87,53 @@ $('#galleryThree').magnificPopup({
 // 	});
 // });
 
-// $('.revolution__slider').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 7000,
-//   speed: 1000,
-//   dots: true,
-//   arrows: true,
-//   pauseOnFocus: false,
-//   pauseOnHover: false,
-//   infinite: true,
-//   accessibility: false,
-//   prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-caret-left"></i></button>',
-//   nextArrow: '<button type="button" class="slick-next"><i class="fas fa-caret-right"></i></button>',
-// });
+$('.stepsRepair__cont-items-slider-wrap').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 7000,
+  speed: 1000,
+  dots: false,
+  arrows: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  infinite: true,
+  accessibility: false,
+  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false
+      }
+    }
+  ]
+});
+
+$('.tech__more-cont-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 7000,
+  speed: 1000,
+  dots: false,
+  arrows: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  infinite: true,
+  accessibility: false,
+  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false
+      }
+    }
+  ]
+});
+
+
 

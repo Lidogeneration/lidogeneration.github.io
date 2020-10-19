@@ -1,0 +1,71 @@
+.saleAbout
+  margin-top: -130px
+  background-image: url('../img/saleAbout.png')
+  background-position: top center
+  background-repeat: no-repeat
+  background-image: 
+  background-size: cover
+  min-height: 850px
+  &__cont
+    display: flex
+    justify-content: center
+    &-bank
+      width: 220px
+    &-prec
+      padding: 10px
+      width: 600px
+      margin-right: auto
+      p
+        font-weight: bold
+        width: 80%
+      span
+        font-size: 24px
+        font-weight: bold
+        display: block
+        text-align: right
+        b
+          font-size: 30px
+          color: $main_rgb
+    &-desc
+      padding: 5px
+      width: 500px
+      background: rgba($main_white, .4)
+      box-shadow: 0px 0px 15px 0px rgba($main_white ,1)
+      h3
+        text-align: center
+      p
+        font-weight: bold
+        span
+          color: $main_rgb
+      a
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: center
+        align-items: center
+  @media(max-width: 1280px)
+    margin-top: -90px
+    &__cont
+      &-bank
+      &-prec
+        width: 400px
+      &-desc
+        width: 400px
+  @media(max-width: 992px)
+    margin-top: 0
+    &__cont
+      flex-wrap: wrap
+      &-bank
+        width: 30%
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+          max-width: 100%
+      &-prec
+        width: 70%
+        p
+          width: 100%
+      &-desc
+        background: rgba($main_white, .9)
+        width: 100%
