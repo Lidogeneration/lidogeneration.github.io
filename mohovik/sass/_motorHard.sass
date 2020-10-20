@@ -1,0 +1,170 @@
+.motorHard
+  overflow: visible
+  padding-top: 0
+  background: url('../img/motorHardBg.png')
+  background-position: top center
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  .whay__title
+    margin-bottom: 20px
+    h2
+      color: $main_rgb
+  &__cont
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 20px
+    &-items
+      width: 30%
+      margin-bottom: 40px
+      background: rgba($main_white, .6)
+      padding: 5px
+      &-title
+        h4
+          text-align: center
+      &-img
+        position: relative
+        cursor: pointer
+        img
+          transition: .3s
+          filter: grayscale(100%)
+          max-width: 100%
+          height: auto
+          display: block
+          margin-left: auto
+          margin-right: auto
+        span
+          transition: .3s
+          z-index: 1
+          cursor: pointer
+          width: 30px
+          height: 30px
+          position: absolute
+          border-radius: 100%
+          background: $main_white
+          display: none
+          justify-content: center
+          align-items: center
+          transition: .3s
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          svg
+            transition: .3s
+            color: $main_rgb
+          &:after
+            content: ''
+            position: absolute
+            top: -20%
+            left: -20%
+            width: 140%
+            height: 140%
+            border-radius: 100%
+            border: 1px solid $main_white
+          &:before
+            content: ''
+            position: absolute
+            top: -40%
+            left: -40%
+            width: 180%
+            height: 180%
+            border-radius: 100%
+            border: 1px solid $main_white
+          &:hover
+            transition: .3s
+            background: $main_rgb
+            svg
+              transition: .3s
+              color: $main_white
+        &:hover
+          img
+            transition: .3s
+            filter: grayscale(0)
+          span
+            display: flex
+    &-itemsBig
+      width: 100%
+      background: rgba($main_white, .6)
+      padding: 5px
+      &-desc
+        text-align: center
+      &-imgCont
+        position: relative
+        display: flex
+        justify-content: space-around
+        &-wrap
+          position: relative
+          cursor: pointer
+          img
+            transition: .3s
+            filter: grayscale(100%)
+            max-width: 100%
+            height: auto
+            display: block
+            margin-left: auto
+            margin-right: auto
+          span
+            transition: .3s
+            z-index: 1
+            cursor: pointer
+            width: 30px
+            height: 30px
+            position: absolute
+            border-radius: 100%
+            background: $main_white
+            display: none
+            justify-content: center
+            align-items: center
+            transition: .3s
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            svg
+              transition: .3s
+              color: $main_rgb
+            &:after
+              content: ''
+              position: absolute
+              top: -20%
+              left: -20%
+              width: 140%
+              height: 140%
+              border-radius: 100%
+              border: 1px solid $main_white
+            &:before
+              content: ''
+              position: absolute
+              top: -40%
+              left: -40%
+              width: 180%
+              height: 180%
+              border-radius: 100%
+              border: 1px solid $main_white
+            &:hover
+              transition: .3s
+              background: $main_rgb
+              svg
+                transition: .3s
+                color: $main_white
+          &:hover
+            img
+              transition: .3s
+              filter: grayscale(0)
+            span
+              display: flex
+  @media(max-width: 992px)
+    &__cont
+      &-items
+        width: 100%
+      &-itemsBig
+        &-imgCont
+          flex-wrap: wrap
+          &-wrap
+            width: 100%
+
+.motorVideo
+  padding-bottom: 0
+  &__cont
+    iframe
+      width: 100%
+      height: 70vh
