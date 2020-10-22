@@ -76,8 +76,8 @@ section {
   height: 60%;
   width: 130%;
   background: #fff;
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+  -webkit-filter: blur(11px);
+          filter: blur(11px);
 }
 
 .bllurImg {
