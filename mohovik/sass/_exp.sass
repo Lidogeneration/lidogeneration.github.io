@@ -1,6 +1,10 @@
 .exp
   overflow: visible
   padding-top: 0
+  background: $main_white
+  .whay__title
+    h2
+      margin-top: -100px
   &__cont
     display: flex
     justify-content: space-between
@@ -68,6 +72,10 @@
         flex-direction: column
         justify-content: space-between
   @media(max-width: 992px)
+    padding-bottom: 0
+    .whay__title
+      h2
+        margin-top: -100px
     &__cont
       flex-direction: column
       &-items

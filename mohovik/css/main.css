@@ -229,10 +229,11 @@ section {
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 5px 30px;
   -webkit-transition: .3s;
   transition: .3s;
+  color: #6C6C6C;
 }
 
 .navbar__list ul li a svg {
@@ -416,7 +417,7 @@ section {
     display: none;
   }
   .navbar__phone-number a {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 14px;
   }
   .navbar__mobileBtn {
@@ -476,8 +477,8 @@ section {
 .firstscroll {
   padding: 0;
   min-height: 90vh;
-  background: url("../img/mb.png");
-  background-position: top 69px left;
+  background: url("../img/newmbg.png");
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -508,7 +509,7 @@ section {
   margin: 0 0 0 auto;
   padding: 0;
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
 }
 
@@ -518,11 +519,11 @@ section {
 }
 
 .firstscroll__title h1 {
-  width: 800px;
+  width: 600px;
   color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 72px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Spartan', sans-serif;
 }
 
 .firstscroll__afterTitle {
@@ -533,23 +534,23 @@ section {
 
 .firstscroll__afterTitle h2 {
   text-align: right;
-  font-family: "Roboto", sans-serif;
   color: #151515;
-  font-size: 48px;
-  font-weight: 800;
+  font-size: 46px;
+  font-weight: 600;
   z-index: 3;
+  font-family: 'Spartan', sans-serif;
 }
 
 @media (max-width: 992px) {
   .firstscroll {
-    background: url("../img/mbgM.jpg");
+    background: url("../img/newmbgM.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 415px;
   }
   .firstscroll .globalCont {
-    min-height: 100vh;
+    min-height: 415px;
   }
   .firstscroll__subTitle {
     display: none;
@@ -611,12 +612,16 @@ section {
   width: 480px;
   max-width: 100%;
   margin: 0;
+  margin-top: auto;
 }
 
 .repair .globalCont .firstscroll__title h1 {
+  font-family: 'Spartan', sans-serif;
   color: #151515;
   width: 100%;
   line-height: 1;
+  margin-bottom: 60px;
+  font-size: 72px;
 }
 
 .repair .globalCont .firstscroll__afterTitle {
@@ -626,19 +631,22 @@ section {
 }
 
 .repair .globalCont .firstscroll__afterTitle h2 {
+  font-family: 'Spartan', sans-serif;
   color: #E73336;
   font-size: 36px;
   text-align: left;
+  margin-bottom: 100px;
 }
 
 .repair .globalCont .firstscroll__btn {
   margin: 0;
+  margin-bottom: auto;
 }
 
 @media (max-width: 992px) {
   .repair {
     background: url("../img/repairBgMobile.jpg");
-    background-position: center center;
+    background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -660,6 +668,7 @@ section {
     margin-top: auto;
   }
   .repair .globalCont .firstscroll__title h1 {
+    font-family: 'Spartan', sans-serif;
     text-align: center;
     width: 100%;
     font-size: 34px;
@@ -667,8 +676,11 @@ section {
   }
   .repair .globalCont .firstscroll__afterTitle {
     width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
   }
   .repair .globalCont .firstscroll__afterTitle h2 {
+    font-family: 'Spartan', sans-serif;
     width: 100%;
     text-align: center;
     font-size: 26px;
@@ -677,24 +689,13 @@ section {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    margin: auto auto 0 auto;
+    margin: auto;
+    margin-top: 0;
   }
 }
 
 .repair-bllurImg {
-  margin-top: -200px;
-}
-
-@media (max-width: 1280px) {
-  .repair-bllurImg {
-    margin-top: -150px;
-  }
-}
-
-@media (max-width: 992px) {
-  .repair-bllurImg {
-    margin-top: -50px;
-  }
+  margin: 0;
 }
 
 .sale {
@@ -723,28 +724,35 @@ section {
   width: 480px;
   max-width: 100%;
   margin: 0;
+  margin-top: auto;
 }
 
 .sale .globalCont .firstscroll__title h1 {
+  font-family: 'Spartan', sans-serif;
   color: #151515;
   width: 100%;
   line-height: 1;
+  margin-bottom: 60px;
+  font-size: 72px;
 }
 
 .sale .globalCont .firstscroll__afterTitle {
-  width: 450px;
+  width: 480px;
   margin: 0;
   margin-bottom: 20px;
 }
 
 .sale .globalCont .firstscroll__afterTitle h2 {
+  font-family: 'Spartan', sans-serif;
   color: #E73336;
   font-size: 36px;
   text-align: left;
+  margin-bottom: 100px;
 }
 
 .sale .globalCont .firstscroll__btn {
   margin: 0;
+  margin-bottom: auto;
 }
 
 @media (max-width: 992px) {
@@ -754,6 +762,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    padding-bottom: 0;
   }
   .sale .globalCont {
     min-height: 100vh;
@@ -772,6 +781,7 @@ section {
     margin-top: auto;
   }
   .sale .globalCont .firstscroll__title h1 {
+    font-family: 'Spartan', sans-serif;
     text-align: center;
     width: 100%;
     font-size: 34px;
@@ -779,19 +789,22 @@ section {
   }
   .sale .globalCont .firstscroll__afterTitle {
     width: 100%;
-    margin-top: auto;
+    margin: 0 auto;
+    margin-bottom: 0;
   }
   .sale .globalCont .firstscroll__afterTitle h2 {
-    color: #fff;
+    font-family: 'Spartan', sans-serif;
     width: 100%;
     text-align: center;
     font-size: 26px;
+    color: #fff;
   }
   .sale .globalCont .firstscroll__btn {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 0;
   }
 }
 
@@ -813,6 +826,7 @@ section {
   padding-top: 0;
   z-index: 4;
   padding-bottom: 20px;
+  background: #f1f1f1;
 }
 
 .about__cont {
@@ -843,11 +857,12 @@ section {
 }
 
 .about__cont-items-title h4 {
+  font-family: 'Spartan', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .about__cont-items-img {
@@ -868,6 +883,7 @@ section {
 }
 
 .about__cont-items-desc p {
+  font-weight: 500;
   margin: 0;
   padding: 0;
 }
@@ -905,8 +921,9 @@ section {
   background: url("../img/whayBg.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .whay__title {
@@ -1125,7 +1142,15 @@ section {
 }
 
 @media (max-width: 992px) {
+  .whay__title h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
+  }
   .whay__cont-desc {
+    text-align: center;
+    max-width: 100%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1148,8 +1173,8 @@ section {
   background: url("../img/prGb.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -150px;
+  background-size: 100% 100%;
+  padding-top: 0;
 }
 
 .prod__row {
@@ -1188,9 +1213,6 @@ section {
 }
 
 @media (max-width: 992px) {
-  .prod {
-    margin-top: -30px;
-  }
   .prod__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1205,6 +1227,11 @@ section {
 .exp {
   overflow: visible;
   padding-top: 0;
+  background: #fff;
+}
+
+.exp .whay__title h2 {
+  margin-top: -100px;
 }
 
 .exp__cont {
@@ -1326,6 +1353,12 @@ section {
 }
 
 @media (max-width: 992px) {
+  .exp {
+    padding-bottom: 0;
+  }
+  .exp .whay__title h2 {
+    margin-top: -100px;
+  }
   .exp__cont {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1338,11 +1371,11 @@ section {
 }
 
 .contacts {
-  padding-top: 0;
+  padding-top: 50px;
   overflow: visible;
   min-height: 80vh;
-  background: url("../img/mapBg.png");
-  background-position: center center;
+  background: url("../img/mapBgrep.png");
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1366,7 +1399,6 @@ section {
 
 .contacts__cont a {
   display: block;
-  font-size: 24px;
 }
 
 .contacts__cont p {
@@ -1392,7 +1424,7 @@ section {
 
 .contacts__cont-map iframe {
   width: 100%;
-  height: 375px;
+  height: 250px;
 }
 
 .contacts__cont .mainBtnQv {
@@ -1402,6 +1434,12 @@ section {
 }
 
 @media (max-width: 992px) {
+  .contacts {
+    background: url("../img/mapBgrep.png");
+    background-position: top left -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .contacts__cont a, .contacts__cont p {
     font-size: 18px;
   }
@@ -1419,11 +1457,10 @@ section {
 
 .about_repair {
   background: url("../img/aboutRepair.png");
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-top: 0;
-  margin-top: -50px;
 }
 
 .about_repair-cont {
@@ -1453,13 +1490,14 @@ section {
 }
 
 .about_repair-cont-items-desc h3 {
+  font-weight: 500;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .about_repair-cont-items-desc p {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .about_repair-cont-items-desc p span {
@@ -1504,22 +1542,25 @@ section {
 
 .about_motor {
   background: url("../img/aboutBg.png");
-  margin-top: -150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-@media (max-width: 1400px) {
-  .about_motor {
-    margin-top: -90px;
-  }
+.about_motor .motor-items-text {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
 @media (max-width: 992px) {
   .about_motor {
     margin-top: 0;
+    background-size: cover;
   }
 }
 
 .stepsRepair {
+  background: #fff;
   padding-top: 0;
   background: url("../img/stepsBg.png");
   background-position: top center;
@@ -1611,6 +1652,11 @@ section {
   }
 }
 
+.reviews {
+  -webkit-box-shadow: inset 0px 21px 21px 11px white;
+          box-shadow: inset 0px 21px 21px 11px white;
+}
+
 .reviews__title {
   margin-bottom: 20px;
 }
@@ -1651,11 +1697,10 @@ section {
 }
 
 .saleAbout {
-  margin-top: -130px;
   background-image: url("../img/saleAbout.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   min-height: 850px;
 }
 
@@ -1679,14 +1724,13 @@ section {
 }
 
 .saleAbout__cont-prec p {
-  font-weight: bold;
+  font-weight: 500;
   width: 80%;
 }
 
 .saleAbout__cont-prec span {
   font-size: 24px;
   font-weight: bold;
-  display: block;
   text-align: right;
 }
 
@@ -1698,9 +1742,6 @@ section {
 .saleAbout__cont-desc {
   padding: 5px;
   width: 500px;
-  background: rgba(255, 255, 255, 0.4);
-  -webkit-box-shadow: 0px 0px 15px 0px white;
-          box-shadow: 0px 0px 15px 0px white;
 }
 
 .saleAbout__cont-desc h3 {
@@ -1708,7 +1749,7 @@ section {
 }
 
 .saleAbout__cont-desc p {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .saleAbout__cont-desc p span {
@@ -1730,9 +1771,6 @@ section {
 }
 
 @media (max-width: 1280px) {
-  .saleAbout {
-    margin-top: -90px;
-  }
   .saleAbout__cont-prec {
     width: 400px;
   }
@@ -1744,6 +1782,7 @@ section {
 @media (max-width: 992px) {
   .saleAbout {
     margin-top: 0;
+    background-size: cover;
   }
   .saleAbout__cont {
     -ms-flex-wrap: wrap;
@@ -1760,6 +1799,10 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .saleAbout__cont-bank img {
     max-width: 100%;
@@ -1782,10 +1825,15 @@ section {
   background: url("../img/techBg.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.tech .whay__title {
+  margin-bottom: 20px;
 }
 
 .tech .whay__title h2 {
+  margin-top: 0;
   color: #E73336;
 }
 
@@ -1965,8 +2013,15 @@ section {
 }
 
 @media (max-width: 992px) {
+  .tech {
+    background-size: cover;
+  }
   .tech__cont-items {
     width: 100%;
+  }
+  .tech__cont-items-img img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
   }
   .tech__cont-items-title {
     width: 100%;
@@ -1982,6 +2037,7 @@ section {
   overflow: visible;
   padding-top: 0;
   padding-bottom: 0;
+  background: #fff;
 }
 
 .workTech .whay__title {
@@ -1989,6 +2045,7 @@ section {
 }
 
 .workTech .whay__title h2 {
+  margin: 0;
   color: #E73336;
 }
 
@@ -2011,6 +2068,7 @@ section {
 }
 
 .motorHard .whay__title h2 {
+  margin: 0;
   color: #E73336;
 }
 
@@ -2245,8 +2303,15 @@ section {
 }
 
 @media (max-width: 992px) {
+  .motorHard {
+    background-size: cover;
+  }
   .motorHard__cont-items {
     width: 100%;
+  }
+  .motorHard__cont-items-img img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
   }
   .motorHard__cont-itemsBig-imgCont {
     -ms-flex-wrap: wrap;
@@ -2255,9 +2320,14 @@ section {
   .motorHard__cont-itemsBig-imgCont-wrap {
     width: 100%;
   }
+  .motorHard__cont-itemsBig-imgCont-wrap img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
 }
 
 .motorVideo {
+  background: #fff;
   padding-bottom: 0;
 }
 
@@ -2297,8 +2367,8 @@ section {
   border-radius: 51px;
   text-align: center;
   color: #E5E5E5;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
   -webkit-transition: .3s;
   transition: .3s;
 }

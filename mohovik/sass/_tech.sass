@@ -4,9 +4,11 @@
   background: url('../img/techBg.png')
   background-position: center center
   background-repeat: no-repeat
-  background-size: cover
+  background-size: 100% 100%
   .whay__title
+    margin-bottom: 20px
     h2
+      margin-top: 0
       color: $main_rgb
   &__cont
     flex-wrap: wrap
@@ -109,9 +111,13 @@
         .slick-next
           right: -50px
   @media(max-width: 992px)
+    background-size: cover
     &__cont
       &-items
         width: 100%
+        &-img
+          img
+            filter: grayscale(0)
         &-title
           width: 100%
         &-desc
@@ -125,9 +131,11 @@
   overflow: visible
   padding-top: 0
   padding-bottom: 0
+  background: $main_white
   .whay__title
     margin-bottom: 20px
     h2
+      margin: 0
       color: $main_rgb
   &__video
     iframe
