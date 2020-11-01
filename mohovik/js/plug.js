@@ -74,18 +74,135 @@ $('#galleryThree').magnificPopup({
   },
   type: 'image' 
 });
+// --------------------
+const motorGorGallery01 = document.querySelectorAll('#motorGorGallery01 img');
+let formotorGorGallery01 = [];
+motorGorGallery01.forEach(key => {
+  formotorGorGallery01.push({src: key.src});
+});
+
+$('#motorGallery01').magnificPopup({
+  items: formotorGorGallery01,
+  gallery: {
+    enabled: true
+  },
+  type: 'image' 
+});
+
+const motorGorGallery02 = document.querySelectorAll('#motorGorGallery02 img');
+let formotorGorGallery02 = [];
+motorGorGallery02.forEach(key => {
+  formotorGorGallery02.push({src: key.src});
+});
+
+$('#motorGallery02').magnificPopup({
+  items: formotorGorGallery02,
+  gallery: {
+    enabled: true
+  },
+  type: 'image' 
+});
+
+const motorGorGallery03 = document.querySelectorAll('#motorGorGallery03 img');
+let formotorGorGallery03 = [];
+motorGorGallery03.forEach(key => {
+  formotorGorGallery03.push({src: key.src});
+});
+
+$('#motorGallery03').magnificPopup({
+  items: formotorGorGallery03,
+  gallery: {
+    enabled: true
+  },
+  type: 'image' 
+});
+
+const motorGorGallery04 = document.querySelectorAll('#motorGorGallery04 img');
+let formotorGorGallery04 = [];
+motorGorGallery04.forEach(key => {
+  formotorGorGallery04.push({src: key.src});
+});
+
+$('#motorGallery04').magnificPopup({
+  items: formotorGorGallery04,
+  gallery: {
+    enabled: true
+  },
+  type: 'image' 
+});
+
+const motorGorGallery05 = document.querySelectorAll('#motorGorGallery05 img');
+let formotorGorGallery05 = [];
+motorGorGallery05.forEach(key => {
+  formotorGorGallery05.push({src: key.src});
+});
+
+$('#motorGallery05').magnificPopup({
+  items: formotorGorGallery05,
+  gallery: {
+    enabled: true
+  },
+  type: 'image' 
+});
+
+const motorGorGallery06 = document.querySelectorAll('#motorGorGallery06 img');
+let formotorGorGallery06 = [];
+motorGorGallery06.forEach(key => {
+  formotorGorGallery06.push({src: key.src});
+});
+
+$('#motorGallery06').magnificPopup({
+  items: formotorGorGallery06,
+  gallery: {
+    enabled: true
+  },
+  type: 'image' 
+});
+
+const motorGorGallery07 = document.querySelectorAll('#motorGorGallery07 img');
+let formotorGorGallery07 = [];
+motorGorGallery07.forEach(key => {
+  formotorGorGallery07.push({src: key.src});
+});
+
+$('#motorGallery07').magnificPopup({
+  items: formotorGorGallery07,
+  gallery: {
+    enabled: true
+  },
+  type: 'image' 
+});
+
+const motorGorGallery08 = document.querySelectorAll('#motorGorGallery08 img');
+let formotorGorGallery08 = [];
+motorGorGallery08.forEach(key => {
+  formotorGorGallery08.push({src: key.src});
+});
+
+$('#motorGallery08').magnificPopup({
+  items: formotorGorGallery08,
+  gallery: {
+    enabled: true
+  },
+  type: 'image' 
+});
+
+$(document).ready(function() {
+	$('.popup-youtube').magnificPopup({
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
+});
 
 
-
-// $(document).ready(function() {
-// 	$('.popup-youtube').magnificPopup({
-// 		type: 'iframe',
-// 		mainClass: 'mfp-fade',
-// 		removalDelay: 160,
-// 		preloader: false,
-// 		fixedContentPos: false
-// 	});
-// });
+$(document).ready(function() {
+  $('.iframe-pdf').magnificPopup({
+      type: 'iframe'
+  });
+});
 
 $('.stepsRepair__cont-items-slider-wrap').slick({
   slidesToShow: 1,

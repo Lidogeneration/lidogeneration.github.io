@@ -1,9 +1,9 @@
 .whay
   overflow: visible
   background: url('../img/whayBg.png')
-  background-position: center center
+  background-position: bottom center
   background-repeat: no-repeat
-  background-size: 100% 100%
+  background-size: cover
   padding-top: 0  
   padding-bottom: 0
   &__title
@@ -151,9 +151,12 @@
 
 
 .repairExp
-  img
-    max-width: 100%
-    height: auto
+  .exp__cont-items
+    a
+      img
+        filter: grayscale(0)
+        max-width: 100%
+        height: auto
   .whay__title
     h3
       text-align: center
