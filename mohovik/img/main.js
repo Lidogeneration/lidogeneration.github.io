@@ -32,26 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    const btnToltip = document.querySelectorAll('[data-rol="btnToltip"]'),
-        btnToltipCont = document.querySelector('[data-rol="btnToltipCont"]');
+    const btnToltip = document.querySelectorAll('[data-rol="btnToltip"]');
     if(btnToltip) {
-        btnToltipCont.addEventListener('click', e => {
-            if(e.target.nodeName != 'SPAN'){
+        btnToltip.forEach(key => {
+            key.addEventListener('click', e => {
                 btnToltip.forEach(key => {
-                    key.lastElementChild.classList.remove('showToltip');
+                    let tiltipP = key.querySelector('p');
+                    tiltipP.classList.remove('showToltip');
                 });
-            }
-            if (e.target.nodeName == 'SPAN' && !e.target.lastElementChild.classList.contains('showToltip')) {
-                btnToltip.forEach(key => {
-                    key.lastElementChild.classList.remove('showToltip');
-                });
-                e.target.lastElementChild.classList.add('showToltip');
-            } else if(e.target.nodeName == 'SPAN' && e.target.lastElementChild.classList.contains('showToltip')) {
-                e.target.lastElementChild.classList.remove('showToltip');
-            }
+                let tiltipP = e.target.querySelector('p');
+                tiltipP.classList.add('showToltip');
+            });
         });
     }
-
     const navBtn = document.querySelector('[data-rol="navBtn"]'),
     navList = document.querySelector('[data-rol="navList"]'),
     navLiHide = document.querySelectorAll('[data-rol="navLiHide"]'),
