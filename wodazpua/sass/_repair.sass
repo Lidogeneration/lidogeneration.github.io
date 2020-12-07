@@ -1,0 +1,115 @@
+.repair
+  background: url('../img/repairBg.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  padding-bottom: 0
+  &__cont
+    &-title
+      h2
+        color: $main_white
+        font-weight: bold
+        text-align: center
+        font-size: 40px
+        margin-bottom: 20px
+        span
+          color: $main_rgb
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: space-between
+      &-img
+        img
+          display: block
+          margin-left: auto
+          margin-right: auto
+      &-desc
+        &-title
+          h4
+            color: $main_white
+        &-text
+          ul
+            list-style: none
+            padding: 0
+            margin: 0
+            li
+              display: flex
+              align-items: center
+              color: $main_white
+              margin-bottom: 30px
+              span
+                width: 45px
+                height: 45px
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 100%
+                border: 2px solid $main_rgb
+                margin-right: 10px
+              &:nth-child(1)
+                span
+                  position: relative
+                  &:after
+                    content: ''
+                    position: absolute
+                    width: 2px
+                    height: 50px
+                    background: $main_rgb
+                    bottom: -42px
+                    left: 110%
+                    transform: rotate(-45deg)
+              &:nth-child(2)
+                span
+                  position: relative
+                  &:after
+                    content: ''
+                    position: absolute
+                    width: 2px
+                    height: 50px
+                    background: $main_rgb
+                    bottom: -42px
+                    right: 110%
+                    transform: rotate(45deg)
+              &:nth-child(3)
+                span
+                  position: relative
+                  &:after
+                    content: ''
+                    position: absolute
+                    width: 2px
+                    height: 50px
+                    background: $main_rgb
+                    bottom: -42px
+                    left: 110%
+                    transform: rotate(-45deg)
+              &:nth-child(2), &:nth-child(4)
+                margin-left: 50px
+  @media(max-width: 992px)
+    .globalCont
+      padding-bottom: 0
+    &__cont
+      &-title
+        h2
+          font-size: 30px
+      &-wrap
+        flex-direction: column-reverse
+        &-img
+          img
+            width: 60%
+        &-desc
+          margin-bottom: 20px
+          &-title
+            text-align: center
+          &-text
+            ul
+              li
+                margin-left: 0 !important
+                display: flex
+                flex-direction: column
+                text-align: center
+                span
+                  margin-right: 0 !important
+                  &:after
+                    display: none
+          &-btn
+            text-align: center

@@ -1,0 +1,98 @@
+.about
+  &__cont
+    &-title
+      margin-bottom: 40px
+      h2
+        font-weight: bold
+        text-align: center
+        font-size: 40px
+        margin-bottom: 20px
+        span
+          color: $main_rgb
+    &-desc
+      display: flex
+      margin-bottom: 20px
+      align-items: center
+      &-img
+        width: 50%  
+        position: relative
+        z-index: 1
+        img
+          max-width: 100%
+          height: auto
+        &-dots
+          z-index: -1
+          position: absolute
+          left: -40px
+          top: -40px
+        &-label
+          position: absolute
+          bottom: -10px
+          right: 150px
+          span
+            background: $main_rgb
+            color: $main_white
+            padding: 10px
+            display: block
+            text-align: center
+            font-weight: bold
+      &-text
+        width: 50%
+        padding: 10px
+    &-gallery
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      &-item
+        width: 24%
+        margin-bottom: 20px
+        z-index: 1
+        a
+          display: block
+          position: relative
+          &:after
+            z-index: 1
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            left: 0
+            top: 0
+            background: rgba($main_color, .7)
+            transition: .3s
+            transform: scale(0)
+          svg
+            z-index: 2
+            font-size: 30px
+            color: $main_white
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%) scale(0)
+            transition: .3s
+          &:hover
+            &:after
+              transform: scale(1)
+              transition: .3s
+            svg
+              transform: translate(-50%, -50%) scale(1)
+              transition: .3s
+        img
+          max-width: 100%
+          height: auto
+  @media(max-width: 992px)
+    &__cont
+      &-title
+        h2
+          font-size: 30px
+      &-desc
+        flex-direction: column
+        &-img
+          width: 100%
+          margin-bottom: 20px
+        &-text
+          width: 100%
+      &-gallery
+        &-item
+          width: 49%

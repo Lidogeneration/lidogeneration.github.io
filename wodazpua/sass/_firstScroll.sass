@@ -1,0 +1,56 @@
+.firstScroll
+  min-height: 100vh
+  background: url('../img/fBg.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  justify-content: center
+  align-items: center
+  &__cont
+    display: flex
+    &-title
+      display: flex
+      flex-direction: column
+      justify-content: center
+      z-index: 1
+      h1, h2
+        text-transform: uppercase
+        color: $main_white
+        font-weight: bold
+        font-size: 40px
+        margin-bottom: 10px
+      img
+        max-width: 100%
+        height: auto
+        z-index: -1
+        margin-top: -50px
+        margin-bottom: 20px
+    &-img
+      img
+        max-width: 100%
+        height: auto
+  @media(max-width: 992px)
+    padding-top: 60px
+    padding-bottom: 10px
+    &__cont
+      flex-direction: column
+      &-title
+        h1,h2 
+          font-size: 30px
+        h1
+          margin-bottom: 20px
+        h2
+          text-align: center
+        &-form
+          .verForm
+            flex-direction: column
+            input
+              width: 100%
+              padding: 5px 10px
+            .mainBtn
+              width: 100%
+              padding: 5px 20px
+
+
+
