@@ -1083,6 +1083,17 @@ section {
   padding: 0;
 }
 
+.delivery__cont-city-text p a {
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.delivery__cont-city-text p a:hover {
+  color: #00B76A;
+}
+
 @media (max-width: 1200px) {
   .delivery__cont-wrap-item {
     width: 30%;
