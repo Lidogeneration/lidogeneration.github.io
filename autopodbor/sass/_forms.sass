@@ -23,10 +23,14 @@
 
 .openFormGor
 	display: flex
-	justify-content: center
+	justify-content: space-between
 	align-items: center
+	width: 750px
+	margin: 0 auto
+	flex-wrap: wrap
 	input
-		width: 250px
+		text-align: center
+		width: 350px
 		max-width: 100%
 		font-size: 15px
 		border: 2px solid $main_white
@@ -37,11 +41,17 @@
 	::placeholder
 		color: $main_white
 	.mainBtnN
-		width: 250px
+		width: 300px
 		max-width: 100%
 		margin: 5px
+		text-align: center
+	span
+		font-size: 36px
+		font-style: italic
+		color: $main_white
 	@media(max-width: 992px)
 		flex-direction: column
+		width: 100%
 		input
 			text-align: center
 		.mainBtnN

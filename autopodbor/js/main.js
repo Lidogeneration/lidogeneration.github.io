@@ -81,3 +81,15 @@ document.addEventListener('click',function(event){
     }
 });
 
+const callButton = document.querySelector('#callButton');
+callButton.addEventListener('click', () => {
+    callButton.classList.toggle('callBtnOn');
+});
+
+// <script>
+//             setTimeout(function() {
+//     $.magnificPopup.open({
+// 		  items: {src: '#popup'},type: 'inline'
+//     });
+//   }, 15000);
+//         </script>

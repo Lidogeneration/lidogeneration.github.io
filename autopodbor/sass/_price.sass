@@ -1,0 +1,67 @@
+.price
+  padding-bottom: 0
+  &__cont
+    margin-bottom: 20px
+    &-title
+      margin-bottom: 20px
+      h2
+        text-align: center
+        font-style: italic
+        color: $main_rgb2
+    &-wrap
+      display: flex
+      justify-content: space-around
+      &-list
+        ul
+          list-style: none
+          li
+            font-size: 18px
+            position: relative
+            margin-bottom: 10px
+            img
+              position: absolute
+              top: 50%
+              transform: translateY(-50%)
+              left: -30px
+      &-number
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &-list
+          ul
+            list-style: none
+            li
+              text-transform: uppercase
+              font-weight: bold
+              font-size: 14px
+              position: relative
+              margin-bottom: 10px
+              img
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -30px       
+        &-img
+          margin-left: auto
+          img
+            max-width: 100%
+            height: auto
+        .mainBtnN
+          margin-right: 0
+          text-align: center
+          width: 580px
+          max-width: 100%
+  @media(max-width: 992px)
+    &__cont
+      &-wrap
+        padding: 5px
+        flex-direction: column
+        &-list
+          ul
+            li
+              font-size: 16px
+        &-number
+          align-items: center
+          &-img
+            margin: 0 auto
+            margin-bottom: 20px

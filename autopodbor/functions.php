@@ -10,61 +10,30 @@ add_action( 'wp_enqueue_scripts', 'generationlead_styles' );
 add_action( 'wp_enqueue_scripts', 'main_js' );
 
 function main_js() {
-wp_enqueue_script( 'all', get_template_directory_uri().'/js/libs.min.js', array('jquery'),null,true );
-wp_enqueue_script( 'main', get_template_directory_uri().'/js/main.js', array('jquery'),'10',true );
+	wp_enqueue_script( 'jqueryMy', get_template_directory_uri().'/libs/jquery-3.4.1.min.js', array('jquery'),null,true );
+	wp_enqueue_script( 'inputMask', get_template_directory_uri().'/libs/jquery.inputmask.bundle.min.js', array('jquery'),null,true );
+	wp_enqueue_script( 'psti', get_template_directory_uri().'/libs/psti/jquery.malihu.PageScroll2id.min.js', array('jquery'),null,true );
+	wp_enqueue_script( 'mpopup', get_template_directory_uri().'/libs/magnific-popup/jquery.magnific-popup.min.js', array('jquery'),null,true );
+	wp_enqueue_script( 'slick', get_template_directory_uri().'/libs/slick/slick.min.js', array('jquery'),null,true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri().'/libs/bootstrap/bootstrap.min.js', array('jquery'),null,true );
+	wp_enqueue_script( 'fontawesome', get_template_directory_uri().'/libs/fontawesome/js/all.min.js', array('jquery'),null,true );
+	wp_enqueue_script( 'aos', get_template_directory_uri().'/libs/aos/aos.js', array('jquery'),'1',true );
+	wp_enqueue_script( 'plug', get_template_directory_uri().'/js/plug.js', array('jquery'),'2',true );
+	wp_enqueue_script( 'main', get_template_directory_uri().'/js/main.js', array('jquery'),'1',true );
+
 }
 
 function generationlead_styles() {
-  wp_enqueue_style( 'main', get_stylesheet_uri() );
-  wp_enqueue_style( 'style-libs', get_template_directory_uri() .'/css/libs.min.css',array(),'1');
-	wp_enqueue_style( 'style-main', get_template_directory_uri() .'/css/main.css',array(),'10');
-  wp_enqueue_style( 'mediaall', get_template_directory_uri() .'/css/mediaall.css',array(),'6');
-  wp_enqueue_style( 'font-awes', get_template_directory_uri() .'/libs/fontawesome/css/all.min.css',array(),'1');
-
-  
+	wp_enqueue_style( 'main', get_stylesheet_uri() );
+	wp_enqueue_style( 'aos', get_template_directory_uri() .'/libs/aos/aos.css',array(),'1');
+	wp_enqueue_style( 'slick', get_template_directory_uri() .'/libs/slick/slick.css',array(),'1');
+  wp_enqueue_style( 'slick-theme', get_template_directory_uri() .'/libs/slick/slick-theme.css',array(),'1');
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() .'/libs/bootstrap/bootstrap.min.css',array(),'1');
+	wp_enqueue_style( 'mpopup', get_template_directory_uri() .'/libs/magnific-popup/magnific-popup.css',array(),'1');
+  wp_enqueue_style( 'fontawesome', get_template_directory_uri() .'/libs/fontawesome/css/all.min.css',array(),'1');
+  wp_enqueue_style( 'main-custom', get_template_directory_uri() .'/css/main.css',array(),'1');
 }
 
 
 add_theme_support( 'post-thumbnails' );
 
-add_action( 'init', 'register_post_types' );
-function register_post_types(){
-	register_post_type('table', array(
-		'label'  => null,
-		'labels' => array(
-			'name'               => 'Акция', // основное название для типа записи
-			'singular_name'      => 'Акция', // название для одной записи этого типа
-			'add_new'            => 'Добавить новую акцию', // для добавления новой записи
-			'add_new_item'       => 'Добавление новой акции', // заголовка у вновь создаваемой записи в админ-панели.
-			'edit_item'          => 'Редактирование акции', // для редактирования типа записи
-			'new_item'           => 'Новая запись', // текст новой записи
-			'view_item'          => 'Смотреть запись', // для просмотра записи этого типа.
-			'search_items'       => 'Искать в записи', // для поиска по этим типам записи
-			'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
-			'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
-			'parent_item_colon'  => '', // для родителей (у древовидных типов)
-			'menu_name'          => 'Акция', // название меню
-		),
-		'description'         => 'Акция',
-		'public'              => true,
-		'publicly_queryable'  => true, // зависит от public
-		'exclude_from_search' => true, // зависит от public
-		'show_ui'             => true, // зависит от public
-		'show_in_menu'        => true, // показывать ли в меню адмнки
-		'show_in_admin_bar'   => true, // по умолчанию значение show_in_menu
-		'show_in_nav_menus'   => true, // зависит от public
-		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
-		'rest_base'           => null, // $post_type. C WP 4.7
-		'menu_position'       => 4,
-		'menu_icon'           => 'dashicons-media-spreadsheet', 
-		//'capability_type'   => 'post',
-		//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
-		//'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
-		'hierarchical'        => false,
-		'supports'            => array('title','editor'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
-		'taxonomies'          => array(),
-		'has_archive'         => false,
-		'rewrite'             => true,
-		'query_var'           => true,
-	) );
-}

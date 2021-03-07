@@ -1,0 +1,118 @@
+.callButton
+  position: fixed
+  bottom: 20px
+  right: 20px
+  z-index: 999
+  cursor: pointer
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &_tel, &_viber, &_call
+    width: 50px
+    height: 50px
+    background: $main_white
+    border-radius: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 10%
+    transform: translateX(200%)
+    svg
+      font-size: 28px
+      color: $main_white
+  &_tel
+    background: #0088cc
+    transition: .9s
+  &_viber
+    background: #8f5db7
+    transition: .7s
+  &_call
+    background: $main_rgb2
+    transition: .5s
+  &_main
+    span
+      background: $main_rgb
+      border-radius: 50%
+      display: block
+      border: $main_rgb
+      width: 60px
+      height: 60px
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      &:after
+        background: $main_rgb
+        content: ''
+        position: absolute
+        top: 0px
+        left: 0px
+        bottom: 0px
+        right: 0px
+        border: 2px solid $main_rgb
+        border-radius: 50%
+        animation-name: borderAfter
+        animation-duration: 5s
+        animation-iteration-count: infinite
+        animation-timing-function: ease-in-out
+        opacity: 0.8
+      &:before
+        background: $main_rgb
+        content: ''
+        position: absolute
+        top: 0px
+        left: 0px
+        bottom: 0px
+        right: 0px
+        border: 2px solid $main_rgb
+        border-radius: 50%
+        animation-name: borderAfter
+        animation-duration: 5s
+        animation-delay: 0.3s
+        animation-iteration-count: infinite
+        animation-timing-function: ease-in-out
+        opacity: 0.8
+      svg
+        color: $main_rgb2
+        font-size: 30px
+        transition: 0.5s
+        animation-name: phoneRotate
+        animation-duration: 5s
+        animation-iteration-count: infinite
+      .fa-times
+        display: none
+    &:hover
+      span
+        svg
+          transition: 0.5s
+          color: $main_white
+.callBtnOn
+  .callButton_call, .callButton_viber, .callButton_tel
+    transform: translateX(0)
+  .callButton_main
+    .fa-times
+      font-size: 36px
+      display: block
+    .fa-comment-alt
+      display: none
+@keyframes phoneRotate 
+	0%
+		transform: rotate(0deg)
+	25%
+		transform: rotate(20deg)
+	50%
+		transform: rotate(0deg)
+	75%
+		transform: rotate(-20deg)
+	100%
+		transform: rotate(0deg)
+@keyframes borderAfter 
+	20%, 100%
+		background: $main_rgb2
+		border: 2px solid $main_rgb2
+		top: -20px
+		left: -20px
+		bottom: -20px
+		right: -20px
+		opacity: 0

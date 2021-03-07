@@ -1,0 +1,37 @@
+.carsale
+  background: url('../img/carsale.png')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  &__cont
+    min-height: 480px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    h4, h3
+      margin-top: auto
+      margin-bottom: auto
+      color: $main_white
+    h3
+      font-weight: 900
+      font-size: 72px
+      font-style: italic
+    h4
+      font-style: italic
+      font-weight: 500
+      font-size: 36px 
+    &-btn
+      margin-top: auto
+      margin-bottom: auto
+  @media(max-width: 992px)
+    &__cont
+      text-align: center
+      h3
+        font-size: 44px
+      h4
+        font-size: 30px
+      &-btn
+        a
+          margin: auto
+      

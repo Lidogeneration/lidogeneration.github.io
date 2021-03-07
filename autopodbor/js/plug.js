@@ -56,4 +56,18 @@ $('.work__slider').slick({
   prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
   nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
 });
+$('.advantage__cont-box-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  speed: 1000,
+  dots: false,
+  arrows: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  infinite: true,
+  accessibility: false,
+});
+
 

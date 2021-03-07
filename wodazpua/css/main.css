@@ -1679,6 +1679,11 @@ section {
   color: #00B76A;
 }
 
+.contacts__cont-list {
+  width: 250px;
+  max-width: 100%;
+}
+
 .contacts__cont-list h4 {
   color: #fff;
 }

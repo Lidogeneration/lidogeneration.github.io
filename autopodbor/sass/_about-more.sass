@@ -19,6 +19,30 @@
       margin-left: auto
       margin-right: auto
       display: block
+  &__numbers
+    width: 95%
+    display: block
+    margin-left: auto
+    margin-right: auto
+    padding: 10px
+    &-cont
+      display: flex
+      &-items
+        padding: 10px
+        flex-basis: 30%
+        text-align: center
+        height: 150px
+        background: $main_rgb2 
+        display: flex
+        justify-content: space-around
+        flex-direction: column
+        h4
+          color: $main_white
+          font-size: 20px
+          text-transform: uppercase
+        span
+          color: $main_rgb
+          font-size: 18px
   @media(max-width: 992px)
     &__cont
       &-items
@@ -34,3 +58,10 @@
             width: 100%
         &:nth-child(2)
           flex-direction: column-reverse
+    &__numbers
+      &-cont
+        flex-direction: column
+        &-items
+          flex-basis: 100%
+          height: auto
+          margin-bottom: 20px

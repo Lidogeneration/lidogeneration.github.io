@@ -27,6 +27,18 @@
 </head>
 
 <body>
+	<div class="callButton" id="callButton">
+		<a href="tg://resolve?domain=avtoexpert1" class="callButton_tel"><i class="fab fa-telegram-plane"></i></a>
+		<a href="viber://chat?number=+380976172908" class="callButton_viber"><i class="fab fa-viber"></i></a>
+		<a href="#mpopup-form" class="mpopup callButton_call" onclick="setNameScroll('Заказать звонок - > трубка','Мы перезвоним');"><i class="fas fa-phone"></i></a>
+		<a class="callButton_main">
+			<span>
+				<i class="fas fa-comment-alt"></i>
+				<i class="fas fa-times"></i>
+			</span>
+		</a>
+	</div>
+	
 	<!-- menuBtn start -->
 	<div class="navMenuFix">
 		<div class="navMenuFix__logo">
@@ -59,10 +71,10 @@
 				<!-- <li><a href="#rev-link" rel="m_PageScroll2id">Отзывы</a></li>
 				<li><a href="#cont-link" rel="m_PageScroll2id">Контакты</a></li> -->
 			</ul>
-			<!-- <div class="navMobile__list-social">
+			<div class="navMobile__list-social">
 				<a href="#" target="_blank" class="mr-4"><i class="fab fa-facebook-square"></i></a>
 				<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-			</div> -->
+			</div>
 			<!-- /.navMobile__list-social -->
 		</div>
 		<!-- /.navMobile__list -->
@@ -87,6 +99,13 @@
 				<li><a href="tel:+380976172908" class="mb-2">+38097 617 29 08</a></li>
 				<!-- <li><a href="#rev-link" rel="m_PageScroll2id">Отзывы</a></li>
 				<li><a href="#cont-link" rel="m_PageScroll2id">Контакты</a></li> -->
+				<li>			
+					<div class="navMobile__list-social">
+						<a href="https://www.facebook.com/%D0%90%D0%B2%D1%82%D0%BE-%D0%9F%D0%BE%D0%B4%D0%B1%D0%BE%D1%80-%D0%BE%D1%82-%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D0%B0-110578774120119/" target="_blank" class="mr-3"><i class="fab fa-facebook-square"></i></a>
+						<a href="https://www.instagram.com/autopodbor_ot_experta/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</div>
+					<!-- /.navMobile__list-social -->
+				</li>
 			</ul>
 		</div>
 		<!-- /.navMain__list -->
@@ -107,14 +126,17 @@
 		</div>
 		<!-- /.firstScroll__cont -->
 		<div class="firstScroll__subtitle">
-			<h3>Подберём авто с пробегом с выгодой для вас</h3>
+			<h3>Осмотр авто в Киеве в течении часа от 700 грн.</h3>
 		</div>
 		<!-- /.firstScroll__subtitle -->
 		<div class="firstScroll__btn">
 			<form class="openFormGor order-main">
 				<input type="text" name="name" placeholder="ИМЯ" required>
 				<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
-				<button class="disbutt mainBtnN" disabled><span>получить консультацию</span></button>
+				<button class="disbutt mainBtnN" disabled>получить консультацию</button>
+				<span>или</span>
+				<a href="#mpopup-form" class="mpopup mainBtnN"
+				onclick="setNameScroll('Позвонить    097 617 29 08  - > первый скролл','Мы перезвоним');">Позвонить    097 617 29 08 </a>
 				<input name="order" type="hidden" value="заказать бесплатную консультацию - > первый скролл">
 				<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
 				<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
@@ -126,10 +148,132 @@
 			onclick="setNameScroll('заказать бесплатную консультацию - > первый скролл','Мы перезвоним');">заказать бесплатную консультацию</a> -->
 		</div>
 		<!-- /.firstScroll__btn -->
-		<div class="firstScroll__arrow">
+		<!-- <div class="firstScroll__arrow">
 			<a href="#about-link" rel="m_PageScroll2id"><i class="fas fa-long-arrow-alt-down"></i></a>
-		</div>
+		</div> -->
 		<!-- /.firstScroll__arrow -->
+	</section>
+
+	<section class="credit">
+		<div class="credit__cont">
+			<div class="credit__cont-title">
+				<h2>Поможем оформить кредит на авто с пробегом</h2>
+			</div>
+			<!-- /.credit__cont-title -->
+			<div class="credit__cont-main">
+				<div class="credit__cont-main-img">
+					<img src="img/creditL.png" alt="Поможем оформить кредит">
+				</div>
+				<!-- /.credit__cont-main-img -->
+				<div class="credit__cont-main-txt">
+					<h3><span>Мы находим проверяем добавляем $7 000 </spa><img src="img/creditPrice.png" alt="находим"></h3>
+					<img src="img/creditArrow.png" alt="находим">
+				</div>
+				<!-- /.credit__cont-main-txt -->
+				<div class="credit__cont-main-img">
+					<img src="img/creditR.png" alt="Поможем оформить кредит">
+				</div>
+				<!-- /.credit__cont-main-img -->
+			</div>
+			<!-- /.credit__cont-main -->
+			<div class="credit__cont-title mb-5">
+				<h2>Покупай автомобиль с пробегом в кредит с Автоподбором от эксперта</h2>
+			</div>
+			<!-- /.credit__cont-title -->
+			<div class="credit__cont-desc">
+				<div class="credit__cont-desc-item">
+					<div class="credit__cont-desc-item-title">
+						<h4>Поиск</h4>
+					</div>
+					<!-- /.credit__cont-desc-item-title -->
+					<div class="credit__cont-desc-item-text">
+						<p>
+							Вы рассказываете нам чего хотите, а мы сами ищем авто, общаемся с продавцами, договариваемся о просмотрах
+						</p>
+					</div>
+					<!-- /.credit__cont-desc-item-text -->
+				</div>
+				<!-- /.credit__cont-desc-item -->
+				<div class="credit__cont-desc-item">
+					<div class="credit__cont-desc-item-title">
+						<h4>Просмотр</h4>
+					</div>
+					<!-- /.credit__cont-desc-item-title -->
+					<div class="credit__cont-desc-item-text">
+							<p>Специалисты Автоподбора от эксперта едут на просмотр, проверяют авто и оценивают его техническое состояние.</p>
+					</div>
+					<!-- /.credit__cont-desc-item-text -->
+				</div>
+				<!-- /.credit__cont-desc-item -->
+				<div class="credit__cont-desc-item">
+					<div class="credit__cont-desc-item-title">
+						<h4>Варианты</h4>
+					</div>
+					<!-- /.credit__cont-desc-item-title -->
+					<div class="credit__cont-desc-item-text">
+							<p>Когда мы находим варианты под ваш бюджет, то предлагаем их вам. Вместе с более интересными предложениями. </p>
+					</div>
+					<!-- /.credit__cont-desc-item-text -->
+				</div>
+				<!-- /.credit__cont-desc-item -->
+				<div class="credit__cont-desc-item">
+					<div class="credit__cont-desc-item-title">
+						<h4>Финансирование</h4>
+					</div>
+					<!-- /.credit__cont-desc-item-title -->
+					<div class="credit__cont-desc-item-text">
+							<p>И даем вам деньги на покупку самого лучшего автомобиля из всех предложенных</p>
+					</div>
+					<!-- /.credit__cont-desc-item-text -->
+				</div>
+				<!-- /.credit__cont-desc-item -->
+				<div class="credit__cont-desc-item">
+					<div class="credit__cont-desc-item-title">
+						<h4>Безопасность</h4>
+					</div>
+					<!-- /.credit__cont-desc-item-title -->
+					<div class="credit__cont-desc-item-text">
+							<p>Чтобы небыло сюрпризов, предварительно проверяем машину и продавца во всех необходимых реестрах
+							</p>
+					</div>
+					<!-- /.credit__cont-desc-item-text -->
+				</div>
+				<!-- /.credit__cont-desc-item -->
+				<div class="credit__cont-desc-item">
+					<div class="credit__cont-desc-item-title">
+						<h4>Покупка</h4>
+					</div>
+					<!-- /.credit__cont-desc-item-title -->
+					<div class="credit__cont-desc-item-text">
+							<p>Проводим сделку и рассчитываемся с продавцом. Передаем вам автомобиль в технически исправном состоянии
+							</p>
+					</div>
+					<!-- /.credit__cont-desc-item-text -->
+				</div>
+				<!-- /.credit__cont-desc-item -->
+			</div>
+			<!-- /.credit__cont-desc -->
+			<div class="credit__cont-subTitle">
+				<h3>Выбирайте автомобиль на популярных сайтах <img src="img/creditLogo.png" alt=""></h3>
+				<h3>Наши автоэксперты проконсультируют по выбору автомобиля с пробегом <span>бесплатно</span></h3>
+			</div>
+			<!-- /.credit__cont-subTitle -->
+			<div class="credit__cont-form">
+				<form class="order-main openFormVert">
+					<input type="text" name="name" placeholder="ИМЯ" required>
+					<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
+					<button class="disbutt mainBtnN" disabled><span>заказать бесплатную консультацию</span></button>
+					<input name="order" type="hidden" value="Поможем оформить кредит на авто с пробегом">
+					<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+					<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+					<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+					<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+					<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+				</form>
+			</div>
+			<!-- /.credit__cont-form -->
+		</div>
+		<!-- /.credit__cont -->
 	</section>
 
 	<section class="about" id="about-link">
@@ -148,6 +292,24 @@
 				</ul>
 			</div>
 			<!-- /.about__cont-list -->
+			<div class="about__cont-btn">
+				<h4>15 практических рекомендаций автоподбора от эксперта!</h4>
+				<div class="about__cont-btn-form">
+					<form class="order-main openFormVert">
+						<input type="text" name="name" placeholder="ИМЯ" required>
+						<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
+						<button class="disbutt mainBtnN" disabled><span>отправить</span></button>
+						<input name="order" type="hidden" value="Пришлите нам ссылку на желаемый автомобиль с любого сайта">
+						<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+						<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+						<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+						<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+						<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+					</form>
+				</div>
+				<!-- /.about__cont-btn-form -->
+			</div>
+			<!-- /.about__cont-btn -->
 		</div>
 		<!-- /.about__cont -->
 	</section>
@@ -171,7 +333,33 @@
 				<!-- /.about-more__cont-items-img -->
 			</div>
 			<!-- /.about-more__cont-items -->
-			<div class="about-more__cont-items">
+			<div class="about-more__numbers  d-none">
+				<div class="about-more__numbers-cont">
+					<div class="about-more__numbers-cont-items">
+						<h4>опыт работы</h4>
+						<span>12 лет</span>
+					</div>
+					<!-- /.about-more__numbers-cont-items -->
+					<div class="about-more__numbers-cont-items">
+						<h4>подобрали автомобилей</h4>
+						<span>1844</span>
+					</div>
+					<!-- /.about-more__numbers-cont-items -->
+					<div class="about-more__numbers-cont-items">
+						<h4>скорость работы</h4>
+						<span>В течение часа мы договорваемся о осмотре вашего варианта авто</span>
+					</div>
+					<!-- /.about-more__numbers-cont-items -->
+					<div class="about-more__numbers-cont-items">
+						<h4>штат экспертов</h4>
+						<span>9</span>
+					</div>
+					<!-- /.about-more__numbers-cont-items -->
+				</div>
+				<!-- /.about-more__numbers-cont -->
+			</div>
+			<!-- /.about-more__numbers -->
+			<div class="about-more__cont-items d-none">
 				<div class="about-more__cont-items-img">
 					<img src="img/autoleft.png" alt="Услуга">
 				</div>
@@ -193,10 +381,125 @@
 		<!-- /.firstScroll__btn -->
 	</section>
 
+<section class="carsale">
+	<div class="carsale__cont">
+		<h4></h4>
+		<h3>Ещё не продал своё авто?</h3>
+		<h4>Предложи его нам! Может мы как раз его ищем?</h4>
+		<div class="carsale__cont-btn">
+			<a href="#mpopup-form" class="mpopup mainBtnN"
+			onclick="setNameScroll('Предложить свой автомобиль','Мы перезвоним');">Предложить свой автомобиль</a>
+		</div>
+		<!-- /.carsale__cont-btn -->
+	</div>
+	<!-- /.carsale__cont -->
+</section>
+
+<section class="price">
+	<div class="price__cont">
+		<div class="price__cont-title">
+			<h2>Осмотр атомобиля</h2>
+		</div>
+		<!-- /.price__cont-title -->
+		<div class="price__cont-wrap">
+			<div class="price__cont-wrap-list">
+				<ul>
+					<li><img src="img/check.png" alt="check">Договариваемся с продавцом о месте и времени встречи</li>
+					<li><img src="img/check.png" alt="check">Выезд автоэксперта к автомобилю</li>
+					<li><img src="img/check.png" alt="check">Проверка документов</li>
+					<li><img src="img/check.png" alt="check">Проверка кузова и лакокрасочного покрытия</li>
+					<li><img src="img/check.png" alt="check">Визуальный осмотр оптики и стёкол</li>
+					<li><img src="img/check.png" alt="check">Осмотр салона на наличие дефектов</li>
+					<li><img src="img/check.png" alt="check">Осмотр подкапотного пространства</li>
+					<li><img src="img/check.png" alt="check">Определение косвенных показателей пробега</li>
+					<li><img src="img/check.png" alt="check">Проверка сервисной документации</li>
+					<li><img src="img/check.png" alt="check">Видео, фото отчёт</li>
+					<li><img src="img/check.png" alt="check">Заключение эксперта</li>
+				</ul>
+			</div>
+			<!-- /.price__cont-wrap-list -->
+			<div class="price__cont-wrap-number">
+				<div class="price__cont-wrap-number-img">
+					<img src="img/price700.png" alt="700">
+				</div>
+				<!-- /.price__cont-wrap-number-img -->
+				<a href="#mpopup-form" class="mpopup mainBtnN"
+				onclick="setNameScroll('получить бесплатную консультацию 700 грн','И получите бесплатную консультацию');">получить бесплатную консультацию</a>
+			</div>
+			<!-- /.price__cont-wrap-number -->
+		</div>
+		<!-- /.price__cont-wrap -->
+	</div>
+	<!-- /.price__cont -->
+	<div class="price__cont">
+		<div class="price__cont-title">
+			<h2>Расширенный осмотр атомобиля </h2>
+		</div>
+		<!-- /.price__cont-title -->
+		<div class="price__cont-wrap">
+			<div class="price__cont-wrap-list">
+				<ul>
+					<li><img src="img/check.png" alt="check">Договариваемся с продавцом о месте и времени встречи</li>
+					<li><img src="img/check.png" alt="check">Выезд автоэксперта к автомобилю</li>
+					<li><img src="img/check.png" alt="check">Проверка документов</li>
+					<li><img src="img/check.png" alt="check">Проверка кузова и лакокрасочного покрытия</li>
+					<li><img src="img/check.png" alt="check">Визуальный осмотр оптики и стёкол</li>
+					<li><img src="img/check.png" alt="check">Осмотр салона на наличие дефектов</li>
+					<li><img src="img/check.png" alt="check">Осмотр подкапотного пространства</li>
+					<li><img src="img/check.png" alt="check">Определение косвенных показателей пробега</li>
+					<li><img src="img/check.png" alt="check">Проверка сервисной документации</li>
+					<li><img src="img/check.png" alt="check">Видео, фото отчёт</li>
+					<li><img src="img/check.png" alt="check">Заключение эксперта</li>
+				</ul>
+			</div>
+			<!-- /.price__cont-wrap-list -->
+			<div class="price__cont-wrap-number">
+				<div class="price__cont-wrap-number-img">
+					<img src="img/price1400.png" alt="700">
+				</div>
+				<!-- /.price__cont-wrap-number-img -->
+				<div class="price__cont-wrap-number-list">
+					<ul>
+						<li><img src="img/plus.png" alt="check">Тест-драйв</li>
+						<li><img src="img/plus.png" alt="check">компьютерная диагностика </li>
+						<li><img src="img/plus.png" alt="check">определение реального пробега</li>
+						<li><img src="img/plus.png" alt="check">осмотр ходовой на СТО</li>
+					</ul>
+				</div>
+				<!-- /.price__cont-wrap-number-list -->
+				<a href="#mpopup-form" class="mpopup mainBtnN"
+				onclick="setNameScroll('получить бесплатную консультацию 1400 грн','И получите бесплатную консультацию');">получить бесплатную консультацию</a>
+			</div>
+			<!-- /.price__cont-wrap-number -->
+		</div>
+		<!-- /.price__cont-wrap -->
+	</div>
+	<!-- /.price__cont -->
+</section>
+
 	<section class="advantage">
 		<div class="advantage__cont">
-			<div class="advantage__cont-box">
-				<img src="img/box01.jpg" alt="box">
+			<div class="advantage__cont-box d-block">
+				<div class="advantage__cont-box-slider">
+					<div class="advantage__cont-box-slider-wrap">
+						<img src="img/new02.png" alt="box">
+					</div>
+					<!-- /.advantage__cont-box-slider-wrap -->
+					<div class="advantage__cont-box-slider-wrap">
+						<img src="img/new02.png" alt="box">
+					</div>
+					<!-- /.advantage__cont-box-slider-wrap -->
+					<div class="advantage__cont-box-slider-wrap">
+						<img src="img/new02.png" alt="box">
+					</div>
+					<!-- /.advantage__cont-box-slider-wrap -->
+					<div class="advantage__cont-box-slider-wrap">
+						<img src="img/new02.png" alt="box">
+					</div>
+					<!-- /.advantage__cont-box-slider-wrap -->
+				</div>
+				<!-- /.advantage__cont-box-slider -->
+
 			</div>
 			<!-- /.advantage__cont-box -->
 			<div class="advantage__cont-box">
@@ -296,6 +599,24 @@
 			<!-- /.prod-cont-items -->
 		</div>
 		<!-- /.prod-cont -->
+	</section>
+
+	<section class="videoReviews">
+	<div class="videoReviews__title">
+		<h2>Отзывы наших клиентов</h2>
+	</div>
+	<!-- /.videoReviews__title -->
+	<div class="videoReviews__cont">
+		<div class="videoReviews__cont-items">
+			<iframe src="https://www.youtube.com/embed/87lv64O1p3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<!-- /.videoReviews__cont-items -->
+		<div class="videoReviews__cont-items">
+			<iframe src="https://www.youtube.com/embed/QWsE99Xc0r0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<!-- /.videoReviews__cont-items -->
+	</div>
+	<!-- /.videoReviews__cont -->
 	</section>
 
 	<section class="work">
