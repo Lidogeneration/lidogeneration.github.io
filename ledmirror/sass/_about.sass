@@ -1,0 +1,28 @@
+.about
+  margin-top: -100px
+  padding-top: 0
+  .container
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2)
+    background: $main_white
+  .about-wrap
+    display: flex
+    &:not(:last-child)
+      border-right: 1px solid #eaeaea
+    .about__container
+      width: 100%
+      text-align: center
+      padding: 50px 0
+      &-img
+        margin-bottom: 20px
+        svg
+          color: $main_rgb2
+          font-size: 40px
+      &-text
+        p
+          font-weight: bold
+          font-size: 20px
+          margin: 0
+          padding: 0
+  @media(max-width: 992px)
+    margin-top: 0
+    padding-top: 30px

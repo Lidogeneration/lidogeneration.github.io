@@ -219,7 +219,7 @@ section {
 }
 
 .callButton_call {
-  background: #253E77;
+  background: #007bff;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -372,8 +372,8 @@ section {
 
 @-webkit-keyframes borderAfter {
   20%, 100% {
-    background: #253E77;
-    border: 2px solid #253E77;
+    background: #007bff;
+    border: 2px solid #007bff;
     top: -20px;
     left: -20px;
     bottom: -20px;
@@ -384,8 +384,8 @@ section {
 
 @keyframes borderAfter {
   20%, 100% {
-    background: #253E77;
-    border: 2px solid #253E77;
+    background: #007bff;
+    border: 2px solid #007bff;
     top: -20px;
     left: -20px;
     bottom: -20px;
@@ -666,7 +666,7 @@ section {
 .firstScroll__slider {
   position: absolute;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   z-index: -99;
 }
 
@@ -693,6 +693,56 @@ section {
   color: #fff;
   font-weight: bold;
   text-align: center;
+}
+
+.about {
+  margin-top: -100px;
+  padding-top: 0;
+}
+
+.about .container {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.about .about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .about-wrap:not(:last-child) {
+  border-right: 1px solid #eaeaea;
+}
+
+.about .about-wrap .about__container {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.about .about-wrap .about__container-img {
+  margin-bottom: 20px;
+}
+
+.about .about-wrap .about__container-img svg {
+  color: #007bff;
+  font-size: 40px;
+}
+
+.about .about-wrap .about__container-text p {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .about {
+    margin-top: 0;
+    padding-top: 30px;
+  }
 }
 
 .mainBtn {
