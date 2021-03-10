@@ -1,6 +1,6 @@
 .navBar
   padding: 0
-  background: rgba($main_rgb2, 0.3)
+  background: $main_white
   position: fixed
   width: 100%
   left: 0
@@ -19,10 +19,9 @@
       img
         max-width: 100%
         height: auto
-        margin-right: 10px
-        margin-bottom: 20px
+        margin-right: 20px
       p
-        color: $main_white
+        color: $main_color
         padding: 0
         margin: 0
     &-list
@@ -41,7 +40,7 @@
           a
             transition: .3s
             font-weight: bold
-            color: $main_white
+            color: $main_color
             text-transform: uppercase
             &:hover
               transition: .3s
@@ -54,14 +53,14 @@
       flex-direction: column
       svg
         font-size: 26px
-        color: $main_white
+        color: $main_color
         left: -12px
         position: absolute
         top: 50%
         transform: translateY(-50%)
       a
         font-weight: bold
-        color: $main_white
+        color: $main_color
         margin: 0
         padding: 0
         display: block
@@ -96,7 +95,7 @@
         left: 0
         width: 100%
         height: 100vh
-        background: rgba($main_rgb2, 1)
+        background: $main_white
         transition: .3s
         ul
           flex-direction: column
@@ -117,7 +116,7 @@
           left: 0
           width: 100%
           height: 4px
-          background: $main_white
+          background: $main_color
           transition: .3s
           &:nth-child(1)
             top: 20%
@@ -133,7 +132,7 @@
 		.mobileBtnIn
 			span
 				transition: .3s
-				background: $main_white
+				background: $main_color
 				&:nth-child(1)
 					transform: rotate(45deg)
 					top: 25px
@@ -147,4 +146,4 @@
         width: 75%
 .navbarwhite
   z-index: 99
-  background: rgba($main_rgb2, 1)
+  background: $main_white
