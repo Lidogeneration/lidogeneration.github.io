@@ -1,0 +1,48 @@
+.aboutProd
+  padding-bottom: 50px
+  &__text
+    &-header
+      text-transform: uppercase
+      font-weight: bold
+      text-align: center
+      h3
+        color: $main_color2
+    &-list
+      ul
+        li
+          font-size: 18px
+          span
+            color: $main_rgb2
+            text-transform: uppercase
+    &-order
+      padding: 10px
+      h4
+        text-align: center
+        color: $main_color2
+  &__slider
+    position: relative
+    &:after
+      z-index: -1
+      position: absolute
+      top: -30px
+      left: -30px
+      content: ''
+      width: 100%
+      height: 100%
+      background: url('../img/pattern3.png')
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: cover
+    &:before
+      z-index: -1
+      position: absolute
+      bottom: -30px
+      right: -30px
+      content: ''
+      width: 100%
+      height: 100%
+      border: 3px solid $main_rgb
+    &-wrap
+      img
+        width: 100%
+        height: auto

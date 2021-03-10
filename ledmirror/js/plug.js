@@ -40,7 +40,7 @@ $(document).ready(function(){
 // 	});
 // });
 
-$('.firstScroll__slider').slick({
+$('.firstScroll__slider, .aboutProd__slider, .product__wrap-img-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
