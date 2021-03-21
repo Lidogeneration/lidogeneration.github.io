@@ -1,0 +1,54 @@
+.product
+  background: url('../img/prodBg.png')
+  background-position: top center
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  padding-top: 160px
+  padding-bottom: 0
+  &__title
+    margin-bottom: 20px
+    padding: 5px
+    text-align: center
+    h3
+      padding: 10px
+      display: inline-block
+      background: $main_rgb
+      text-transform: uppercase
+      color: $main_color
+      font-weight: bold
+      font-weight: 400
+  &__wrap
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2)
+    background: rgba($main_white, .8)
+    padding-bottom: 20px
+    padding-top: 40px
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    text-align: center
+    &-img
+      &-slider
+        &-wrap
+          img
+            max-width: 100%
+            width: 100%
+            height: auto
+    &-title
+      padding: 5px
+      text-align: center
+      h3
+        color: $main_color2
+    &-desc
+      padding: 5px 10px
+  .slick-dots
+    bottom: inherit
+    top: -24px
+  .slick-dotted.slick-slider
+    margin-bottom: 0
+  @media(max-width: 992px)
+    background: url('../img/prodbgMobile.png')
+    background-position: top center
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    

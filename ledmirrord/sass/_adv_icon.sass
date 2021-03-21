@@ -1,0 +1,33 @@
+.adv_icon
+  padding: 0
+  &-wrap
+    display: flex
+    justify-content: space-between
+  &-cont
+    text-align: center
+    width: 32%
+    background: $main_bg3
+    padding: 10px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-bottom: 20px
+    &-icon
+      img
+        display: block
+        margin-left: auto
+        margin-right: auto
+    &-title
+      h3
+        color: $main_white
+    &-text
+      p
+        color: $main_white
+        padding: 0
+        font-size: 14px
+  @media(max-width: 992px)
+    &-wrap
+      flex-direction: column
+    &-cont
+      width: 100%
+

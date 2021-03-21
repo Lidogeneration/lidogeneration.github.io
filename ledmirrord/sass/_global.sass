@@ -1,0 +1,88 @@
+*
+	box-sizing: border-box	
+body
+	background: $main_white
+	font-family: 'Montserrat', sans-serif
+	font-weight: 400
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 30px 0
+	overflow: hidden
+
+.done
+	min-height: 100vh
+
+.globalCont
+	display: block
+	margin-left: auto
+	margin-right: auto
+	width: 1200px
+	max-width: 100%
+	@media(max-width: 1200px)
+		width: 1000px
+	@media(max-width: 992px)
+		width: 100%
+		padding: 10px
+
+.container
+	@media(min-width: 1280px)
+		max-width: 1440px
+/* --- slick style Start ------------------------------------------------*/
+.slick-prev
+	bottom: -28px
+	left: 30%
+	top: inherit
+	z-index: 99
+	transition: .3s
+	&:before
+		content: ''
+	svg
+		color: $main_color
+		font-size: 30px
+		transition: .3s
+	&:hover
+		svg
+			color: $main_rgb
+.slick-next
+	bottom: -28px
+	right: 30%
+	top: inherit
+	z-index: 99
+	transition: .3s
+	&:before
+		content: ''
+	svg
+		color: $main_color
+		font-size: 30px
+		transition: .3s
+	&:hover
+		svg
+			color: $main_rgb
+.slick-dots
+	li
+		button
+			&:before
+				font-size: 15px
+	.slick-active	
+		button
+			&:before
+				color: $main_rgb !important
+/* --- slick style end ------------------------------------------------*/	

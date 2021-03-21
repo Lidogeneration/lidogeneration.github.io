@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+	<meta name="description" CONTENT="<?php bloginfo('description');?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="<?php bloginfo('name'); ?><?php wp_title(); ?>" />
+	<meta property="og:description" content="<?php bloginfo('description');?>" />
+	<meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.png">
+	<meta property="og:url" content="<?php site_url(); ?>" />
+	<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+	<link rel="shortcut icon" href="<?php bloginfo(template_url);?>/img/logo.png" />
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="callButton" id="callButton">
+		<a href="tg://resolve?domain=alviontnt" class="callButton_tel"><i class="fab fa-telegram-plane"></i></a>
+		<a href="viber://chat?number=+380978794870" class="callButton_viber"><i class="fab fa-viber"></i></a>
+		<a href="#mpopup-form" class="mpopup callButton_call"
+			onclick="setNameScroll('Заказать звонок - > трубка','Мы перезвоним');"><i class="fas fa-phone"></i></a>
+		<a class="callButton_main">
+			<span>
+				<i class="fas fa-comment-alt"></i>
+				<i class="fas fa-times"></i>
+			</span>
+		</a>
+	</div>
+
+	<nav class="navBar" data-rol="navBar">
+		<div class="globalCont">
+			<div class="navBar__cont">
+				<div class="navBar__cont-logo">
+					<img src="img/logoMenu.png" alt="Led mirror">
+				</div>
+				<!-- /.navBar__cont-logo -->
+				<div class="navBar__cont-list" data-rol="navList">
+					<ul>
+						<li><a href="#link" rel="m_PageScroll2id" data-rol="navLiHide">Обзоры</a></li>
+						<li><a href="#link" rel="m_PageScroll2id" data-rol="navLiHide">Характеристики</a></li>
+						<li><a href="#link" rel="m_PageScroll2id" data-rol="navLiHide">Каталог</a></li>
+						<li><a href="#link" rel="m_PageScroll2id" data-rol="navLiHide">Как заказать</a></li>
+						<li><a href="#link" rel="m_PageScroll2id" data-rol="navLiHide">Наши работы</a></li>
+					</ul>
+				</div>
+				<!-- /.navBar__cont-list -->
+				<div class="navBar__cont-phone">
+					<i class="fas fa-phone-alt"></i>
+					<a href="tel:+38">+38 333 333 33 33</a>
+					<a href="tel:+38">+38 333 333 33 33</a>
+				</div>
+				<!-- /.navBar__cont-phone -->
+				<div class="navBar__cont-mobileBtn" data-rol="navBtn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- /.navbar__mobileBtn -->
+			</div>
+			<!-- /.navBar__cont -->
+		</div>
+		<!-- /.globalCont -->
+	</nav>
+
+	<section class="firstScroll">
+		<div class="container">
+			<div class="firstScroll__title">
+				<h1>ЗЕРКАЛО С ПОДСВЕТКОЙ "LED MIRROR"</h1>
+			</div>
+			<!-- /.firstScroll__title -->
+			<div class="firstScroll__main mb-4">
+				<div class="firstScroll__main-img">
+					<img src="img/mImg.jpg" alt="LED MIRROR">
+				</div>
+				<!-- /.firstScroll__main-img -->
+				<div class="firstScroll__main-action">
+					<div class="firstScroll__main-action-title">
+						<h4>Для новых покупателей</h4>
+						<h3>Скидка 30%</h3>
+					</div>
+					<!-- /.firstScroll__main-action-title -->
+					<div class="firstScroll__main-action-timer">
+						<!-- /.firstScroll__main-action-timer-title -->
+						<div class="firstScroll__main-action-timer-cont">
+							<div class="firstScroll__main-action-timer-cont-timerWrap">
+								<div class="firstScroll__main-action-timer-cont-timerWrap-actionText">
+									<h5>предложение действует</h5>
+								</div>
+								<div id="clockdivS" class="wrapBord clock firstScroll__main-action-timer-cont-timerWrap-clock">
+									<div class="wrap">
+										<span class="days" id="days"></span>
+										<div class="smalltext">Дни</div>
+									</div>
+									<div class="wrap">
+										<span class="hours"></span>
+										<div class="smalltext">Часы</div>
+									</div>
+									<div class="wrap">
+										<span class="minutes"></span>
+										<div class="smalltext">Минуты</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.firstScroll__main-action-timer-cont -->
+					</div>
+					<!-- /.firstScroll__main-action-timer -->
+					<div class="firstScroll__main-action-price">
+						<div class="firstScroll__main-action-price-old">
+							<p>2080₴</p>
+							<h5>Обычная цена:</h5>
+						</div>
+						<!-- /.firstScroll__main-action-price-old -->
+						<div class="firstScroll__main-action-price-new">
+							<p>1580₴</p>
+							<h5>Цена по акции:</h5>
+						</div>
+						<!-- /.firstScroll__main-action-price-new -->
+					</div>
+					<!-- /.firstScroll__main-action-price -->
+					<div class="firstScroll__main-action-button">
+						<h5>Успейте заказать в акционный период</h5>
+						<a href="#mpopup-form" class="mpopup mainBtn"
+							onclick="setNameScroll('Заказал Акцию','Мы перезвоним');">выбрать зеркало</a>
+					</div>
+					<!-- /.firstScroll__main-action-button -->
+					<span class="d-none" id="timerId">2021/03/31 10:17:03</span>
+				</div>
+				<!-- /.firstScroll__main-action -->
+			</div>
+			<!-- /.container -->
+			<div class="container">
+				<div class="firstScroll__columnIcon">
+					<div class="firstScroll__columnIcon-container">
+						<div class="firstScroll__columnIcon-container-icon">
+							<img src="img/pattern3.png" alt="">
+						</div>
+						<!-- /.firstScroll__columnIcon-container-icon -->
+						<div class="firstScroll__columnIcon-container-text">
+							<p>оплата<br>при получении</p>
+						</div>
+						<!-- /.firstScroll__columnIcon-container-text -->
+					</div>
+					<!-- /.firstScroll__columnIcon-container -->
+					<div class="firstScroll__columnIcon-container">
+						<div class="firstScroll__columnIcon-container-icon">
+							<img src="img/pattern4.png" alt="">
+						</div>
+						<!-- /.firstScroll__columnIcon-container-icon -->
+						<div class="firstScroll__columnIcon-container-text">
+							<p>сделаем любой<br>размер под заказ</p>
+						</div>
+						<!-- /.firstScroll__columnIcon-container-text -->
+					</div>
+					<!-- /.firstScroll__columnIcon-container -->
+					<div class="firstScroll__columnIcon-container">
+						<div class="firstScroll__columnIcon-container-icon">
+							<img src="img/pattern5.png" alt="">
+						</div>
+						<!-- /.firstScroll__columnIcon-container-icon -->
+						<div class="firstScroll__columnIcon-container-text">
+							<p>Гарантия<br>12 месяцев</p>
+						</div>
+						<!-- /.firstScroll__columnIcon-container-text -->
+					</div>
+					<!-- /.firstScroll__columnIcon-container -->
+				</div>
+				<!-- /.firstScroll__columnIcon -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.firstScroll__main -->
+		<div class="firstScroll__bottomImg">
+			<img src="img/firstBottom.png" alt="">
+		</div>
+		<!-- /.firstScroll__bottomImg -->
+
+	</section>
+
+
+	<section class="aboutProd">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-lg-6 mb-lg-0 mb-5">
+					<div class="aboutProd__slider">
+						<div class="aboutProd__slider-wrap">
+							<img src="img/aboutProd01.png" alt="Hello">
+						</div>
+						<!-- /.aboutProd__slider-wrap -->
+						<div class="aboutProd__slider-wrap">
+							<img src="img/aboutProd01.png" alt="Hello">
+						</div>
+						<!-- /.aboutProd__slider-wrap -->
+						<div class="aboutProd__slider-wrap">
+							<img src="img/aboutProd01.png" alt="Hello">
+						</div>
+						<!-- /.aboutProd__slider-wrap -->
+						<div class="aboutProd__slider-wrap">
+							<img src="img/aboutProd01.png" alt="Hello">
+						</div>
+						<!-- /.aboutProd__slider-wrap -->
+					</div>
+					<!-- /.aboutProd__slider -->
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6 mb-lg-0 mb-5">
+					<div class="aboutProd__text">
+						<div class="aboutProd__text-list">
+							<ul>
+								<li>зеркала “led mirror” идеально подойдут под любой интерьер</li>
+								<li>ультратонкие зеркала - 2,5 см</li>
+								<li>Зеркальное полотно бельгийского производства - agc mirox</li>
+								<li>светодиоды класса люкс.</li>
+								<li>срок работы до 45 лет</li>
+								<li>100% устойчивости к влаге!</li>
+							</ul>
+						</div>
+						<!-- /.aboutProd__text-list -->
+					</div>
+					<!-- /.aboutProd__text -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+
+	<section class="aboutProd about2Prod">
+		<div class="about2Prod__topImg">
+			<img src="img/about2top.jpg" alt="">
+		</div>
+		<!-- /.about2Prod__topImg -->
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-lg-6 mb-lg-0 mb-5 d-none d-lg-block">
+					<div class="aboutProd__img">
+						<img src="img/about2img.png" alt="check">
+					</div>
+					<!-- /.aboutProd__img -->
+				</div>
+				<!-- /.col-lg-6 -->
+				<div class="col-lg-6 mb-lg-0 mb-5">
+					<div class="aboutProd__text">
+						<div class="aboutProd__text-title">
+							<h3>ПОЛНЫЕ ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h3>
+						</div>
+						<!-- /.aboutProd__text-title -->
+						<div class="aboutProd__text-list">
+							<ul>
+								<li>ЛЕНТА: 9,6 ВАТТ/МЕТР ЛЕНТЫ;</li>
+								<li>ТРАНСФОРМАТОР: 220V/12V;</li>
+								<li>КОРПУС ЗЕРКАЛА: ПВХ (ПЛАСТИК);</li>
+								<li>ПРОВОД ДЛЯ ПОДКЛЮЧЕНИЯ:ДЛИННА - 100СМ;</li>
+								<li>МОНТАЖ: ПЕТЛИ И КРЮЧКИ В КОМПЛЕКТЕ;</li>
+								<li>ПОДСВЕТКИ: НЕЙТРАЛЬНЫЙ БЕЛЫЙ;</li>
+								<li>ГАРАНТИЯ - 1 ГОД;</li>
+								<li>ОСТАВЬТЕ ЗАЯВКУ И МЫ ПРОКОНСУЛЬТИРУЕМ ВАС!</li>
+							</ul>
+						</div>
+						<!-- /.aboutProd__text-list -->
+						<div class="aboutProd__text-btn">
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Технические характеристики','Мы перезвоним');">оставить заявку</a>
+						</div>
+						<!-- /.aboutProd__text-btn -->
+					</div>
+					<!-- /.aboutProd__text -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+		<div class="about2Prod__topImg">
+			<img src="img/about2bottom.png" alt="">
+		</div>
+		<!-- /.about2Prod__topImg -->
+	</section>
+
+	<div class="adv_icon">
+		<div class="container">
+			<div class="adv_icon-wrap">
+				<div class="adv_icon-cont">
+					<div class="adv_icon-cont-icon">
+						<img src="img/advIcon01.png" alt="">
+					</div>
+					<!-- /.adv_icon-cont-icon -->
+					<div class="adv_icon-cont-title">
+						<h3>Надёжная доставка</h3>
+					</div>
+					<!-- /.adv_icon-cont-title -->
+					<div class="adv_icon-cont-text">
+						<p>Супер прочная упаковка зеркала перед отправкой.
+							Если зеркало повредилось при транспортировке,
+							мы гарантируем его бесплатную замену.</p>
+					</div>
+					<!-- /.adv_icon-cont-text -->
+				</div>
+				<!-- /.adv_icon-cont -->
+				<div class="adv_icon-cont">
+					<div class="adv_icon-cont-icon">
+						<img src="img/advIcon02.png" alt="">
+					</div>
+					<!-- /.adv_icon-cont-icon -->
+					<div class="adv_icon-cont-title">
+						<h3>Безопасная оплата</h3>
+					</div>
+					<!-- /.adv_icon-cont-title -->
+					<div class="adv_icon-cont-text">
+						<p>Вы оплачиваете по факту получения зеркала на руки.
+							У Вас есть увидеть глазами то,
+							за что платите перед покупкой.</p>
+					</div>
+					<!-- /.adv_icon-cont-text -->
+				</div>
+				<!-- /.adv_icon-cont -->
+				<div class="adv_icon-cont">
+					<div class="adv_icon-cont-icon">
+						<img src="img/advIcon03.png" alt="">
+					</div>
+					<!-- /.adv_icon-cont-icon -->
+					<div class="adv_icon-cont-title">
+						<h3>Обмен, возврат и гарантии</h3>
+					</div>
+					<!-- /.adv_icon-cont-title -->
+					<div class="adv_icon-cont-text">
+						<p>Мы всегда проверяем товар перед отправкой
+							и гарантируем, что Вы будете в восторге от зеркала.
+							Обмен и возврат в течении 14 дней!</p>
+					</div>
+					<!-- /.adv_icon-cont-text -->
+				</div>
+				<!-- /.adv_icon-cont -->
+			</div>
+			<!-- /.adv_icon-wrap -->
+			<div class="adv_icon-btn">
+				<a href="#mpopup-form" class="mpopup mainBtn"
+					onclick="setNameScroll('После технических характеристик','Мы перезвоним');">Задать вопрос</a>
+			</div>
+			<!-- /.adv_icon-btn -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.adv_icon -->
+
+	<section class="product">
+		<div class="product__title">
+			<h3>модели топ продаж всегда в наличии</h3>
+		</div>
+		<!-- /.product__title -->
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 mb-4">
+					<div class="product__wrap">
+						<div class="product__wrap-img">
+							<div class="product__wrap-img-slider">
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+							</div>
+							<!-- /.product__wrap-img-slider -->
+						</div>
+						<!-- /.product__wrap-img -->
+						<div class="product__wrap-title">
+							<h3>Модель Оливия</h3>
+						</div>
+						<!-- /.product__wrap-title -->
+						<div class="product__wrap-desc">
+							<p>Стоимость по акции минус <b>30%</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
+							<p>Вам расскажет наш менеджер</p>
+						</div>
+						<!-- /.product__wrap-desc -->
+						<div class="product__wrap-btn">
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Оставить заявку</a>
+						</div>
+						<!-- /.product__wrap-btn -->
+					</div>
+					<!-- /.product-wrap -->
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4 mb-4">
+					<div class="product__wrap">
+						<div class="product__wrap-img">
+							<div class="product__wrap-img-slider">
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+							</div>
+							<!-- /.product__wrap-img-slider -->
+						</div>
+						<!-- /.product__wrap-img -->
+						<div class="product__wrap-title">
+							<h3>Модель Оливия</h3>
+						</div>
+						<!-- /.product__wrap-title -->
+						<div class="product__wrap-desc">
+							<p>Стоимость по акции минус <b>30%</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
+							<p>Вам расскажет наш менеджер </p>
+						</div>
+						<!-- /.product__wrap-desc -->
+						<div class="product__wrap-btn">
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Оставить заявку</a>
+						</div>
+						<!-- /.product__wrap-btn -->
+					</div>
+					<!-- /.product-wrap -->
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4 mb-4">
+					<div class="product__wrap">
+						<div class="product__wrap-img">
+							<div class="product__wrap-img-slider">
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+							</div>
+							<!-- /.product__wrap-img-slider -->
+						</div>
+						<!-- /.product__wrap-img -->
+						<div class="product__wrap-title">
+							<h3>Модель Оливия</h3>
+						</div>
+						<!-- /.product__wrap-title -->
+						<div class="product__wrap-desc">
+							<p>Стоимость по акции минус <b>30%</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
+							<p>Вам расскажет наш менеджер</p>
+						</div>
+						<!-- /.product__wrap-desc -->
+						<div class="product__wrap-btn">
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Оставить заявку</a>
+						</div>
+						<!-- /.product__wrap-btn -->
+					</div>
+					<!-- /.product-wrap -->
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4 mb-4">
+					<div class="product__wrap">
+						<div class="product__wrap-img">
+							<div class="product__wrap-img-slider">
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+							</div>
+							<!-- /.product__wrap-img-slider -->
+						</div>
+						<!-- /.product__wrap-img -->
+						<div class="product__wrap-title">
+							<h3>Модель Оливия</h3>
+						</div>
+						<!-- /.product__wrap-title -->
+						<div class="product__wrap-desc">
+							<p>Стоимость по акции минус <b>30%</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
+							<p>Вам расскажет наш менеджер </p>
+						</div>
+						<!-- /.product__wrap-desc -->
+						<div class="product__wrap-btn">
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Оставить заявку</a>
+						</div>
+						<!-- /.product__wrap-btn -->
+					</div>
+					<!-- /.product-wrap -->
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4 mb-4">
+					<div class="product__wrap">
+						<div class="product__wrap-img">
+							<div class="product__wrap-img-slider">
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+							</div>
+							<!-- /.product__wrap-img-slider -->
+						</div>
+						<!-- /.product__wrap-img -->
+						<div class="product__wrap-title">
+							<h3>Модель Оливия</h3>
+						</div>
+						<!-- /.product__wrap-title -->
+						<div class="product__wrap-desc">
+							<p>Стоимость по акции минус <b>30%</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
+							<p>Вам расскажет наш менеджер</p>
+						</div>
+						<!-- /.product__wrap-desc -->
+						<div class="product__wrap-btn">
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Оставить заявку</a>
+						</div>
+						<!-- /.product__wrap-btn -->
+					</div>
+					<!-- /.product-wrap -->
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4 mb-4">
+					<div class="product__wrap">
+						<div class="product__wrap-img">
+							<div class="product__wrap-img-slider">
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+								<div class="product__wrap-img-slider-wrap">
+									<img src="img/prod01.png" alt="1">
+								</div>
+								<!-- /.product__wrap-img-slider-wrap -->
+							</div>
+							<!-- /.product__wrap-img-slider -->
+						</div>
+						<!-- /.product__wrap-img -->
+						<div class="product__wrap-title">
+							<h3>Модель Оливия</h3>
+						</div>
+						<!-- /.product__wrap-title -->
+						<div class="product__wrap-desc">
+							<p>Стоимость по акции минус <b>30%</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
+							<p>Вам расскажет наш менеджер</p>
+						</div>
+						<!-- /.product__wrap-desc -->
+						<div class="product__wrap-btn">
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Оставить заявку</a>
+						</div>
+						<!-- /.product__wrap-btn -->
+					</div>
+					<!-- /.product-wrap -->
+				</div>
+				<!-- /.col-lg-4 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+		<div class="about2Prod__topImg">
+			<img src="img/about2bottom.png" alt="">
+		</div>
+		<!-- /.about2Prod__topImg -->
+	</section>
+
+	<section class="prodInfo">
+		<div class="container">
+			<div class="prodInfo__titleWhite">
+				<h3>У нас огромный выбор современных дизайнов и возможность изготовления индивидуального дизайна по Вашему
+					проекту - Вы можете предоставить макет с рисунком который Вам нравиться, и мы сделаем для Вас индивидуальное
+					зеркало любых размеров, форм и комплектации за 5-7 дней!</h3>
+			</div>
+			<!-- /.prodInfo__titleWhite -->
+			<div class="row prodInfo__wrap">
+				<div class="col-lg-4">
+					<div class="prodInfo__wrap-cont">
+						<div class="prodInfo__wrap-cont-img">
+							<img src="img/prodinfo01.jpg" alt="1">
+						</div>
+						<!-- /.prodInfo__wrap-cont-img -->
+						<div class="prodInfo__wrap-cont-title">
+							<h3>Зеркало “ленс”</h3>
+						</div>
+						<!-- /.prodInfo__wrap-cont-title -->
+						<div class="prodInfo__wrap-cont-text">
+							<p>Увеличительная линза</p>
+							<p>Сочетание чёткого стиля и долговечности</p>
+							<p>Комплектуется сенсорной или механической кнопкой</p>
+						</div>
+						<!-- /.prodInfo__wrap-cont-text -->
+					</div>
+					<!-- /.prodInfo__wrap-cont -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-4">
+					<div class="prodInfo__wrap-cont">
+						<div class="prodInfo__wrap-cont-img">
+							<img src="img/prodinfo01.jpg" alt="1">
+						</div>
+						<!-- /.prodInfo__wrap-cont-img -->
+						<div class="prodInfo__wrap-cont-title">
+							<h3>Зеркало “ленс”</h3>
+						</div>
+						<!-- /.prodInfo__wrap-cont-title -->
+						<div class="prodInfo__wrap-cont-text">
+							<p>Увеличительная линза</p>
+							<p>Сочетание чёткого стиля и долговечности</p>
+							<p>Комплектуется сенсорной или механической кнопкой</p>
+						</div>
+						<!-- /.prodInfo__wrap-cont-text -->
+					</div>
+					<!-- /.prodInfo__wrap-cont -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-4">
+					<div class="prodInfo__wrap-cont">
+						<div class="prodInfo__wrap-cont-img">
+							<img src="img/prodinfo01.jpg" alt="1">
+						</div>
+						<!-- /.prodInfo__wrap-cont-img -->
+						<div class="prodInfo__wrap-cont-title">
+							<h3>Зеркало “ленс”</h3>
+						</div>
+						<!-- /.prodInfo__wrap-cont-title -->
+						<div class="prodInfo__wrap-cont-text">
+							<p>Увеличительная линза</p>
+							<p>Сочетание чёткого стиля и долговечности</p>
+							<p>Комплектуется сенсорной или механической кнопкой</p>
+						</div>
+						<!-- /.prodInfo__wrap-cont-text -->
+					</div>
+					<!-- /.prodInfo__wrap-cont -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-4">
+					<div class="prodInfo__wrap-cont">
+						<div class="prodInfo__wrap-cont-img">
+							<img src="img/prodinfo01.jpg" alt="1">
+						</div>
+						<!-- /.prodInfo__wrap-cont-img -->
+						<div class="prodInfo__wrap-cont-title">
+							<h3>Зеркало “ленс”</h3>
+						</div>
+						<!-- /.prodInfo__wrap-cont-title -->
+						<div class="prodInfo__wrap-cont-text">
+							<p>Увеличительная линза</p>
+							<p>Сочетание чёткого стиля и долговечности</p>
+							<p>Комплектуется сенсорной или механической кнопкой</p>
+						</div>
+						<!-- /.prodInfo__wrap-cont-text -->
+					</div>
+					<!-- /.prodInfo__wrap-cont -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-4">
+					<div class="prodInfo__wrap-cont">
+						<div class="prodInfo__wrap-cont-img">
+							<img src="img/prodinfo01.jpg" alt="1">
+						</div>
+						<!-- /.prodInfo__wrap-cont-img -->
+						<div class="prodInfo__wrap-cont-title">
+							<h3>Зеркало “ленс”</h3>
+						</div>
+						<!-- /.prodInfo__wrap-cont-title -->
+						<div class="prodInfo__wrap-cont-text">
+							<p>Увеличительная линза</p>
+							<p>Сочетание чёткого стиля и долговечности</p>
+							<p>Комплектуется сенсорной или механической кнопкой</p>
+						</div>
+						<!-- /.prodInfo__wrap-cont-text -->
+					</div>
+					<!-- /.prodInfo__wrap-cont -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-lg-4">
+					<div class="prodInfo__wrap-cont">
+						<div class="prodInfo__wrap-cont-img">
+							<img src="img/prodinfo01.jpg" alt="1">
+						</div>
+						<!-- /.prodInfo__wrap-cont-img -->
+						<div class="prodInfo__wrap-cont-title">
+							<h3>Зеркало “ленс”</h3>
+						</div>
+						<!-- /.prodInfo__wrap-cont-title -->
+						<div class="prodInfo__wrap-cont-text">
+							<p>Увеличительная линза</p>
+							<p>Сочетание чёткого стиля и долговечности</p>
+							<p>Комплектуется сенсорной или механической кнопкой</p>
+						</div>
+						<!-- /.prodInfo__wrap-cont-text -->
+					</div>
+					<!-- /.prodInfo__wrap-cont -->
+				</div>
+				<!-- /.col-lg-3 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+
+	<section class="formOpen">
+		<div class="about2Prod__topImg">
+			<img src="img/about2top.jpg" alt="">
+		</div>
+		<!-- /.about2Prod__topImg -->
+		<div class="formOpen__wrap">
+			<div class="formOpen__wrap-title">
+				<h4>заполни форму и получи полній каталог LED зеркал</h4>
+			</div>
+			<!-- /.formOpen__wrap-title -->
+			<div class="container">
+				<form class="formOpen__wrap-form">
+					<input type="text" name="name" placeholder="Имя" required>
+					<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
+					<input type="email" class="phoneidcl" name="email" placeholder="email" required>
+					<button class="disbutt mainBtn" disabled><span>Получить</span></button>
+					<input name="order" type="hidden" value="получи полный каталог">
+					<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+					<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+					<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+					<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+					<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+				</form>
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.formOpen__wrap -->
+	</section>
+
+	<div class="devgen p-1 text-center">
+		<a href="https://generationleadstudio.com/" target="_blank"> <i class="far fa-copyright"></i> Developed by
+			GenerationLeadStudio</a>
+	</div>
+
+	<div class="hidden">
+		<form class="openForm d-block mx-auto order-main" id="mpopup-form">
+			<!-- <h2><span>de</span>Toos</h2> -->
+			<h3>Заполните форму</h3>
+			<h4><span id="customTextForm">Мы перезвоним</span></h4>
+			<input type="text" name="name" placeholder="Имя" required>
+			<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
+			<button class="disbutt mainBtn" disabled><span>отправить</span></button>
+			<input name="order" type="hidden" id="input_order">
+			<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+			<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+			<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+			<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+		</form>
+	</div>
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/jquery.inputmask.bundle.min.js"></script>
+	<script src="libs/psti/jquery.malihu.PageScroll2id.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/fontawesome/js/all.min.js"></script>
+	<script src="js/plug.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
