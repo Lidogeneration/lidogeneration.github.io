@@ -28,7 +28,8 @@
 	<div class="callButton" id="callButton">
 		<a href="tg://resolve?domain=alviontnt" class="callButton_tel"><i class="fab fa-telegram-plane"></i></a>
 		<a href="viber://chat?number=+380978794870" class="callButton_viber"><i class="fab fa-viber"></i></a>
-		<a href="#mpopup-form" class="mpopup callButton_call" onclick="setNameScroll('Заказать звонок - > трубка','Мы перезвоним');"><i class="fas fa-phone"></i></a>
+		<a href="#mpopup-form" class="mpopup callButton_call"
+			onclick="setNameScroll('Заказать звонок - > трубка','Мы перезвоним');"><i class="fas fa-phone"></i></a>
 		<a class="callButton_main">
 			<span>
 				<i class="fas fa-comment-alt"></i>
@@ -73,20 +74,118 @@
 	</nav>
 
 	<section class="firstScroll">
-		<div class="firstScroll__title">
-			<h1>ЗЕРКАЛО С ПОДСВЕТКОЙ "LED MIRROR"</h1>
-		</div>
-		<!-- /.firstScroll__title -->
-		<div class="firstScroll__main">
-			<div class="container">
+		<div class="container">
+			<div class="firstScroll__title">
+				<h1>ЗЕРКАЛО С ПОДСВЕТКОЙ "LED MIRROR"</h1>
+			</div>
+			<!-- /.firstScroll__title -->
+			<div class="firstScroll__main mb-4">
 				<div class="firstScroll__main-img">
 					<img src="img/mImg.jpg" alt="LED MIRROR">
 				</div>
 				<!-- /.firstScroll__main-img -->
+				<div class="firstScroll__main-action">
+					<div class="firstScroll__main-action-title">
+						<h4>Для новых покупателей</h4>
+						<h3>Скидка 30%</h3>
+					</div>
+					<!-- /.firstScroll__main-action-title -->
+					<div class="firstScroll__main-action-timer">
+						<!-- /.firstScroll__main-action-timer-title -->
+						<div class="firstScroll__main-action-timer-cont">
+							<div class="firstScroll__main-action-timer-cont-timerWrap">
+								<div class="firstScroll__main-action-timer-cont-timerWrap-actionText">
+									<h5>предложение действует</h5>
+								</div>
+								<div id="clockdivS" class="wrapBord clock firstScroll__main-action-timer-cont-timerWrap-clock">
+									<div class="wrap">
+										<span class="days" id="days"></span>
+										<div class="smalltext">Дни</div>
+									</div>
+									<div class="wrap">
+										<span class="hours"></span>
+										<div class="smalltext">Часы</div>
+									</div>
+									<div class="wrap">
+										<span class="minutes"></span>
+										<div class="smalltext">Минуты</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.firstScroll__main-action-timer-cont -->
+					</div>
+					<!-- /.firstScroll__main-action-timer -->
+					<div class="firstScroll__main-action-price">
+						<div class="firstScroll__main-action-price-old">
+							<p>2080₴</p>
+							<h5>Обычная цена:</h5>
+						</div>
+						<!-- /.firstScroll__main-action-price-old -->
+						<div class="firstScroll__main-action-price-new">
+							<p>1580₴</p>
+							<h5>Цена по акции:</h5>
+						</div>
+						<!-- /.firstScroll__main-action-price-new -->
+					</div>
+					<!-- /.firstScroll__main-action-price -->
+					<div class="firstScroll__main-action-button">
+						<h5>Успейте заказать в акционный период</h5>
+						<a href="#mpopup-form" class="mpopup mainBtn"
+							onclick="setNameScroll('Заказал Акцию','Мы перезвоним');">выбрать зеркало</a>
+					</div>
+					<!-- /.firstScroll__main-action-button -->
+					<span class="d-none" id="timerId">2021/03/31 10:17:03</span>
+				</div>
+				<!-- /.firstScroll__main-action -->
+			</div>
+			<!-- /.container -->
+			<div class="container">
+				<div class="firstScroll__columnIcon">
+					<div class="firstScroll__columnIcon-container">
+						<div class="firstScroll__columnIcon-container-icon">
+							<img src="img/pattern3.png" alt="">
+						</div>
+						<!-- /.firstScroll__columnIcon-container-icon -->
+						<div class="firstScroll__columnIcon-container-text">
+							<p>оплата<br>при получении</p>
+						</div>
+						<!-- /.firstScroll__columnIcon-container-text -->
+					</div>
+					<!-- /.firstScroll__columnIcon-container -->
+					<div class="firstScroll__columnIcon-container">
+						<div class="firstScroll__columnIcon-container-icon">
+							<img src="img/pattern4.png" alt="">
+						</div>
+						<!-- /.firstScroll__columnIcon-container-icon -->
+						<div class="firstScroll__columnIcon-container-text">
+							<p>сделаем любой<br>размер под заказ</p>
+						</div>
+						<!-- /.firstScroll__columnIcon-container-text -->
+					</div>
+					<!-- /.firstScroll__columnIcon-container -->
+					<div class="firstScroll__columnIcon-container">
+						<div class="firstScroll__columnIcon-container-icon">
+							<img src="img/pattern5.png" alt="">
+						</div>
+						<!-- /.firstScroll__columnIcon-container-icon -->
+						<div class="firstScroll__columnIcon-container-text">
+							<p>Гарантия<br>12 месяцев</p>
+						</div>
+						<!-- /.firstScroll__columnIcon-container-text -->
+					</div>
+					<!-- /.firstScroll__columnIcon-container -->
+				</div>
+				<!-- /.firstScroll__columnIcon -->
 			</div>
 			<!-- /.container -->
 		</div>
 		<!-- /.firstScroll__main -->
+		<div class="firstScroll__bottomImg">
+			<img src="img/firstBottom.png" alt="">
+		</div>
+		<!-- /.firstScroll__bottomImg -->
+		
 	</section>
 
 
@@ -183,7 +282,8 @@
 						<!-- /.aboutProd__text-list -->
 						<div class="aboutProd__text-order">
 							<h4>Оставьте заявку и мы проконсультируем Вас!</h4>
-							<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Заказал Акцию','Мы перезвоним');">Оставить заявку</a>
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Заказал Акцию','Мы перезвоним');">Оставить заявку</a>
 						</div>
 						<!-- /.aboutProd__text-order -->
 					</div>
@@ -234,12 +334,13 @@
 						<!-- /.product__wrap-title -->
 						<div class="product__wrap-desc">
 							<p>Стоимость по акции минус <b>30%</b></p>
-							<p><b>ВАША ЭКОНОМИЯ  675 грн.</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
 							<p>Подробнее об условиях акции Вам расскажет наш менеджер, жми получить консультацию</p>
 						</div>
 						<!-- /.product__wrap-desc -->
 						<div class="product__wrap-btn">
-							<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
 						</div>
 						<!-- /.product__wrap-btn -->
 					</div>
@@ -276,12 +377,14 @@
 						<!-- /.product__wrap-title -->
 						<div class="product__wrap-desc">
 							<p>Стоимость по акции минус <b>30%</b></p>
-							<p><b>ВАША ЭКОНОМИЯ  675 грн.</b></p>
-							<p>Подробнее об условиях акции Вам расскажет наш менеджер, жми получить консультацию Lorem ipsum dolor sit amet.</p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
+							<p>Подробнее об условиях акции Вам расскажет наш менеджер, жми получить консультацию Lorem ipsum dolor sit
+								amet.</p>
 						</div>
 						<!-- /.product__wrap-desc -->
 						<div class="product__wrap-btn">
-							<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
 						</div>
 						<!-- /.product__wrap-btn -->
 					</div>
@@ -318,12 +421,13 @@
 						<!-- /.product__wrap-title -->
 						<div class="product__wrap-desc">
 							<p>Стоимость по акции минус <b>30%</b></p>
-							<p><b>ВАША ЭКОНОМИЯ  675 грн.</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
 							<p>Подробнее об условиях акции Вам расскажет наш менеджер, жми получить консультацию</p>
 						</div>
 						<!-- /.product__wrap-desc -->
 						<div class="product__wrap-btn">
-							<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
 						</div>
 						<!-- /.product__wrap-btn -->
 					</div>
@@ -360,12 +464,14 @@
 						<!-- /.product__wrap-title -->
 						<div class="product__wrap-desc">
 							<p>Стоимость по акции минус <b>30%</b></p>
-							<p><b>ВАША ЭКОНОМИЯ  675 грн.</b></p>
-							<p>Подробнее об условиях акции Вам расскажет наш менеджер, жми получить консультацию Lorem ipsum dolor sit amet.</p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
+							<p>Подробнее об условиях акции Вам расскажет наш менеджер, жми получить консультацию Lorem ipsum dolor sit
+								amet.</p>
 						</div>
 						<!-- /.product__wrap-desc -->
 						<div class="product__wrap-btn">
-							<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
 						</div>
 						<!-- /.product__wrap-btn -->
 					</div>
@@ -402,12 +508,13 @@
 						<!-- /.product__wrap-title -->
 						<div class="product__wrap-desc">
 							<p>Стоимость по акции минус <b>30%</b></p>
-							<p><b>ВАША ЭКОНОМИЯ  675 грн.</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
 							<p>Подробнее об условиях акции Вам расскажет наш менеджер, жми получить консультацию</p>
 						</div>
 						<!-- /.product__wrap-desc -->
 						<div class="product__wrap-btn">
-							<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
 						</div>
 						<!-- /.product__wrap-btn -->
 					</div>
@@ -444,12 +551,13 @@
 						<!-- /.product__wrap-title -->
 						<div class="product__wrap-desc">
 							<p>Стоимость по акции минус <b>30%</b></p>
-							<p><b>ВАША ЭКОНОМИЯ  675 грн.</b></p>
+							<p><b>ВАША ЭКОНОМИЯ 675 грн.</b></p>
 							<p>Подробнее об условиях акции Вам расскажет наш менеджер, жми получить консультацию</p>
 						</div>
 						<!-- /.product__wrap-desc -->
 						<div class="product__wrap-btn">
-							<a href="#mpopup-form" class="mpopup mainBtn" onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
+							<a href="#mpopup-form" class="mpopup mainBtn"
+								onclick="setNameScroll('Модель Оливия','Мы перезвоним');">Получить консультацию</a>
 						</div>
 						<!-- /.product__wrap-btn -->
 					</div>
@@ -463,7 +571,8 @@
 	</section>
 
 	<div class="devgen p-1 text-center">
-		<a href="https://generationleadstudio.com/" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>
+		<a href="https://generationleadstudio.com/" target="_blank"> <i class="far fa-copyright"></i> Developed by
+			GenerationLeadStudio</a>
 	</div>
 
 	<div class="hidden">
