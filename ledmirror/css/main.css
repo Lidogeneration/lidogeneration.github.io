@@ -1265,6 +1265,62 @@ section {
   font-size: 14px;
 }
 
+@media (max-width: 992px) {
+  .adv_icon-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .adv_icon-cont {
+    width: 100%;
+  }
+}
+
+.prodInfo {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.prodInfo__titleWhite {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.prodInfo__titleWhite h3 {
+  color: #3D89C0;
+  font-size: 20px;
+}
+
+.prodInfo__wrap-cont {
+  padding: 20px;
+  background: #3D89C0;
+}
+
+.prodInfo__wrap-cont-img {
+  margin-bottom: 10px;
+}
+
+.prodInfo__wrap-cont-img img {
+  width: 100%;
+}
+
+.prodInfo__wrap-cont-title h3 {
+  text-transform: uppercase;
+  color: #F2CC39;
+}
+
+.prodInfo__wrap-cont-text p {
+  margin: 0;
+  color: #F2CC39;
+}
+
+.prodInfo .col-lg-4 {
+  margin-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 .product {
   background: url("../img/prodBg.png");
   background-position: top center;
@@ -1344,6 +1400,83 @@ section {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+}
+
+.formOpen {
+  padding: 0 0 20px 0;
+  background: #092E49;
+}
+
+.formOpen__wrap-title {
+  text-align: center;
+}
+
+.formOpen__wrap-title h4 {
+  text-transform: uppercase;
+  color: #F2CC39;
+}
+
+.formOpen__wrap-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formOpen__wrap-form .mainBtn {
+  width: 100%;
+  margin: 5px;
+  background: #F2CC39;
+}
+
+.formOpen__wrap-form input {
+  padding: 10px 20px;
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  color: #092E49;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.formOpen__wrap-form input:nth-child(1) {
+  background: #B57C31;
+}
+
+.formOpen__wrap-form input:nth-child(2) {
+  background: #CC9544;
+}
+
+.formOpen__wrap-form input:nth-child(3) {
+  background: #E2AF2D;
+}
+
+.formOpen__wrap-form ::-webkit-input-placeholder {
+  color: #092E49;
+}
+
+.formOpen__wrap-form :-ms-input-placeholder {
+  color: #092E49;
+}
+
+.formOpen__wrap-form ::-ms-input-placeholder {
+  color: #092E49;
+}
+
+.formOpen__wrap-form ::placeholder {
+  color: #092E49;
+}
+
+@media (max-width: 992px) {
+  .formOpen__wrap-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
