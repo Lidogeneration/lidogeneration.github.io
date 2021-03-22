@@ -225,7 +225,7 @@ section {
 }
 
 .callButton_call {
-  background: #BC592E;
+  background: #02b305;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -688,7 +688,7 @@ section {
 
 .firstScroll__title h1 {
   padding: 5px 20px;
-  background: #091B21;
+  background: rgba(9, 27, 33, 0.8);
   color: #F2CC39;
   font-weight: bold;
   text-align: center;
@@ -907,7 +907,7 @@ section {
 
 .firstScroll__columnIcon-container {
   width: 32%;
-  background: #091B21;
+  background: rgba(9, 27, 33, 0.8);
   padding: 130px 10px;
 }
 
@@ -1216,6 +1216,8 @@ section {
 .about2Prod .aboutProd__text-btn .mainBtn {
   width: 100%;
   text-transform: uppercase;
+  font-size: 20px;
+  padding: 20px 10px;
 }
 
 .adv_icon {
@@ -1247,6 +1249,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 20px;
+  padding: 50px 10px;
 }
 
 .adv_icon-cont-icon img {
@@ -1287,9 +1290,18 @@ section {
   margin-bottom: 10px;
 }
 
+.prodInfo__titleWhite h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 .prodInfo__titleWhite h3 {
-  color: #3D89C0;
+  padding: 10px;
+  color: #F2CC39;
   font-size: 20px;
+  background: #3D89C0;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 .prodInfo__wrap-cont {
@@ -1319,6 +1331,12 @@ section {
   margin-bottom: 10px;
   padding-right: 5px;
   padding-left: 5px;
+}
+
+@media (max-width: 992px) {
+  .prodInfo__titleWhite h2 {
+    font-size: 22px;
+  }
 }
 
 .product {
@@ -1404,7 +1422,7 @@ section {
 }
 
 .formOpen {
-  padding: 0 0 20px 0;
+  padding: 0 0 0 0;
   background: #092E49;
 }
 
@@ -1471,12 +1489,239 @@ section {
   color: #092E49;
 }
 
+.formOpen__bottomImg img {
+  width: 100%;
+}
+
 @media (max-width: 992px) {
   .formOpen__wrap-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+.reviews {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.reviews__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.reviews__slider-wrap {
+  padding: 40px;
+}
+
+.reviews__slider-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  padding: 0;
+  background: #092E49;
+}
+
+.footer .firstScroll__main-action {
+  padding-bottom: 0;
+}
+
+.footer .firstScroll__main-action .firstScroll__main-action-button {
+  padding: 20px;
+}
+
+.footer .firstScroll__main-action .firstScroll__main-action-button input {
+  border: none;
+  background: #C4C4C4;
+  width: 100%;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+}
+
+.footer .firstScroll__main-action .firstScroll__main-action-button textarea {
+  border: none;
+  background: #C4C4C4;
+  padding: 15px 25px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer .firstScroll__main-action .firstScroll__main-action-button ::-webkit-input-placeholder {
+  color: #092E49;
+  font-weight: bold;
+}
+
+.footer .firstScroll__main-action .firstScroll__main-action-button :-ms-input-placeholder {
+  color: #092E49;
+  font-weight: bold;
+}
+
+.footer .firstScroll__main-action .firstScroll__main-action-button ::-ms-input-placeholder {
+  color: #092E49;
+  font-weight: bold;
+}
+
+.footer .firstScroll__main-action .firstScroll__main-action-button ::placeholder {
+  color: #092E49;
+  font-weight: bold;
+}
+
+.footer .firstScroll__main-action .firstScroll__main-action-button .mainBtn {
+  width: 100%;
+  padding: 20px 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .firstScroll__main-action .firstScroll__main-action-button h5 {
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.footer__form-title h3 {
+  text-align: center;
+  color: #F2CC39;
+  padding: 10px 0;
+}
+
+.footer__form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__form-input input {
+  border: none;
+  width: 49%;
+  background: #C4C4C4;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+}
+
+.footer__form-input ::-webkit-input-placeholder {
+  color: #092E49;
+  font-weight: bold;
+}
+
+.footer__form-input :-ms-input-placeholder {
+  color: #092E49;
+  font-weight: bold;
+}
+
+.footer__form-input ::-ms-input-placeholder {
+  color: #092E49;
+  font-weight: bold;
+}
+
+.footer__form-input ::placeholder {
+  color: #092E49;
+  font-weight: bold;
+}
+
+.footer__form-input .mainBtn {
+  width: 100%;
+}
+
+.footer__contacts {
+  margin-top: 20px;
+}
+
+.footer__contacts h4 {
+  text-align: center;
+  color: #F2CC39;
+}
+
+.footer__contacts-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__contacts-phone-number {
+  width: 100%;
+}
+
+.footer__contacts-phone-number a {
+  color: #F2CC39;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.footer__contacts-phone-social {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__contacts-phone-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+}
+
+.footer__contacts-phone-social a svg {
+  font-size: 28px;
+  color: #fff;
+}
+
+.footer__contacts-phone-social .telegram {
+  background: #0088cc;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.footer__contacts-phone-social .viber {
+  background: #8f5db7;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.footer__contacts-phone-social .call {
+  background: #02b305;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 992px) {
+  .footer .firstScroll__main-action {
+    display: none;
+  }
+  .footer__form-input input {
+    width: 100%;
+  }
+  .footer__contacts-phone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer__contacts-phone-social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

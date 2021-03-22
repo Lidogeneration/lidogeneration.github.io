@@ -72,6 +72,31 @@ $('.product__wrap-img-slider').slick({
   // nextArrow: '<button type="button" class="slick-next"><i class="fas fa-caret-right"></i></button>',
 });
 
+$('.reviews__slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 7000,
+  speed: 1000,
+  dots: true,
+  arrows: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  infinite: true,
+  accessibility: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+  ]
+});
+
 $('.image-popup-no-margins').magnificPopup({
   type: 'image',
   closeOnContentClick: true,
@@ -128,24 +153,16 @@ if(timerDate){
 
     function initializeClock(id, endtime) {
 
-        var clock = document.getElementById(id);
-        var daysSpan = clock.querySelector('#days');
+        var clock = document.querySelector(id);
+        var daysSpan = clock.querySelector('.days');
         var hoursSpan = clock.querySelector('.hours');
         var minutesSpan = clock.querySelector('.minutes');
 
         function updateClock() {
-        var t = getTimeRemaining(endtime);
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        //   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-        // if (t.total <= 0) {
-
-        //   clearInterval(timeinterval);
-        //   var deadline = new Date(Date.parse(new Date()) + 260000 * 1000);
-        //   initializeClock('clockdivS', deadline);
-        //   initializeClock('clockdiv', deadline);
-        // }
+          var t = getTimeRemaining(endtime);
+          daysSpan.innerHTML = t.days;
+          hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+          minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
         }
         
         updateClock();
@@ -156,8 +173,10 @@ if(timerDate){
     var tOld = getTimeRemaining(deadline);
     if (tOld.total <=0)
     {
-    deadline = new Date(Date.parse(new Date()) + 250000 * 1000);
+      deadline = new Date(Date.parse(new Date()) + 250000 * 1000);
     }
-    initializeClock('clockdivS', deadline);
+    initializeClock('.clock', deadline);
+    initializeClock('.clock_footer', deadline);
+    
     //   initializeClock('clockdiv', deadline);
 }

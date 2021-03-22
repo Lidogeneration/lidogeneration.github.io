@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
         loadInit();
     });
 
-    const callButton = document.querySelector('#callButton');
-    callButton.addEventListener('click', () => {
-    callButton.classList.toggle('callBtnOn');
-});
+    // const callButton = document.querySelector('#callButton');
+    // callButton.addEventListener('click', () => {
+    // callButton.classList.toggle('callBtnOn');
+    // });
     
 });
 
